@@ -49,8 +49,7 @@
                         <option>Justiça Gratuita / Pedido de Gratuidade</option>
                         <option>...</option>
                     </select>
-                </label>
-            
+                </label>        
         </div>
     </div>
     <br>
