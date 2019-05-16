@@ -19,7 +19,7 @@
                 selecionadas quando a página carregar! O certo é aparecer um caso diferente de acordo 
                 com a opção selecionada.-->
 
-                <!--Se for selecionado sim-->
+                <!--Se for selecionado sim
                 <div class="custom-control custom-control-inline custom-radio">
                     <input type="radio" class="custom-control-input" name="grerjSim" id="grerjSim" checked>
                     <label class="custom-control-label" for="grerjSim"> Sim </label>
@@ -32,7 +32,7 @@
                 <span><strong>*</strong> Número da GRERJ </span>
                 <input type="text" required>
                 <br>
-            <!--Se for selecionado não
+                Se for selecionado não-->
                 <div class="custom-control custom-control-inline custom-radio">
                     <input type="radio" class="custom-control-input" name="grerjSim" id="grerjSim">
                     <label class="custom-control-label" for="grerjSim"> Sim </label>
@@ -47,9 +47,10 @@
                         <option>Escolha um motivo</option>
                         <option>Juizado Especial Cível</option>
                         <option>Justiça Gratuita / Pedido de Gratuidade</option>
+                        <option>...</option>
                     </select>
                 </label>
-            -->
+            
         </div>
     </div>
     <br>
@@ -149,8 +150,12 @@
                 </select>
             </label>
             <br>
-            <span><strong>*</strong> Valor da Causa </span>
-            <input type="text" required>
+            <form class="form-inline">
+                <div class="col-xs-2">
+                    <span><strong>*</strong> Valor da Causa: </span>
+                    <input type="text" class="form-control" id="valorCausa" placeholder="ex.: 1.000,00" required>
+                </div>
+            </form>
             <br>
         </div>
     </div>
@@ -161,22 +166,29 @@
             <h5><strong>Advogado / Representante</strong></h5>
         </div>
         <div class="card-body">
-            <select>
-                <option>Advogado</option>
-                <option>Defensor Público</option>
-            </select>
-            <!--if(advogado == true)-->
-            <span> Número de OAB </span>
-            <select>
-                <option>RJ</option>
-                <option>SP</option>
-                <option>...</option>
-            </select>
-            <input type="text" required>
+            <form class="form-inline">
+                <label for="selectAR">
+                    <select class="custom-select" id="selectAR">
+                        <option>Advogado</option>
+                        <option>Defensor Público</option>
+                    </select>
+                </label>
+                <div class="col-md-1"><!--espaço--></div>
+                <!--if(advogado == true)-->
+                <span> Número de OAB: </span>
+                <label for="regiaoOAB">
+                    <select class="custom-select" id="regiaoOAB">
+                        <option>RJ</option>
+                        <option>SP</option>
+                        <option>...</option>
+                   </select>
+                </label>
+                <input type="text" class="form-control" required>
             <!--else
             <span> Matrícula </span>
-            <input type="text" required>
+            <input type="text" class="form-control" required>
             endif-->
+            </form>
         </div>
     </div>
     <br>
