@@ -21,11 +21,11 @@
 
                 <!--Se for selecionado sim
                 <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" class="custom-control-input" name="grerjSim" id="grerjSim" checked>
+                    <input type="radio" class="custom-control-input" name="grerj" id="grerjSim" checked>
                     <label class="custom-control-label" for="grerjSim"> Sim </label>
                 </div>
                 <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" class="custom-control-input" name="grerjNao" id="grerjNao">
+                    <input type="radio" class="custom-control-input" name="grerj" id="grerjNao">
                     <label class="custom-control-label" for="grerjNao"> Não </label>
                 </div>
                 <br>
@@ -34,11 +34,11 @@
                 <br>
                 Se for selecionado não-->
                 <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" class="custom-control-input" name="grerjSim" id="grerjSim">
+                    <input type="radio" class="custom-control-input" name="grerj" id="grerjSim">
                     <label class="custom-control-label" for="grerjSim"> Sim </label>
                 </div>
                 <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" class="custom-control-input" name="grerjNao" id="grerjNao" checked>
+                    <input type="radio" class="custom-control-input" name="grerj" id="grerjNao" checked>
                     <label class="custom-control-label" for="grerjNao"> Não </label>
                 </div>
                 <br>
@@ -61,11 +61,11 @@
         <div class="card-body">
             <span><strong>*</strong> Distribuição por Dependência </span>
             <div class="custom-control custom-control-inline custom-radio">
-                <input type="radio" class="custom-control-input" name="dpdSim" id="dpdSim">
+                <input type="radio" class="custom-control-input" name="dpd" id="dpdSim">
                 <label class="custom-control-label" for="dpdSim"> Sim </label>
             </div>
             <div class="custom-control custom-control-inline custom-radio">
-                <input type="radio" class="custom-control-input" name="dpdNao" id="dpdNao">
+                <input type="radio" class="custom-control-input" name="dpd" id="dpdNao">
                 <label class="custom-control-label" for="dpdNao"> Não </label>
             </div>
             <br>
