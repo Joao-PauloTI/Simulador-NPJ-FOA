@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('distribuicao_eletronica');
+    return view('DistribuicaoEletronica/DE_index');
 });

@@ -19,7 +19,12 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('de-grerj', require('./components/DistribuicaoEletronica/DE_grerj.vue').default);
+Vue.component('de-processoprincipal', require('./components/DistribuicaoEletronica/DE_processoPrincipal.vue').default);
+Vue.component('de-dadosdoprocesso', require('./components/DistribuicaoEletronica/DE_dadosDoProcesso.vue').default);
+Vue.component('de-advogadorepresentante', require('./components/DistribuicaoEletronica/DE_advogadoRepresentante.vue').default);
+Vue.component('de-autoresreusdocumentos', require('./components/DistribuicaoEletronica/DE_autoresReusDocumentos.vue').default);
+Vue.component('de-declaracaodeveracidade', require('./components/DistribuicaoEletronica/DE_declaracaoDeVeracidade.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
