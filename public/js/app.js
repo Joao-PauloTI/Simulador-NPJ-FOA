@@ -1754,6 +1754,72 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/DistribuicaoEletronica/DE_grerj.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/DistribuicaoEletronica/DE_grerj.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var app = new Vue({
+  el: '#app',
+  data: {
+    showOpcao: value = ""
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
 /*!*****************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
@@ -37600,113 +37666,207 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("h1", [_vm._v("Distribuição de Petição Inicial")]),
+    _vm._v(" "),
+    _c("hr"),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c("div", { staticClass: "card" }, [
+      _vm._m(2),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-body" }, [
+        _vm._m(3),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "custom-control custom-control-inline custom-radio" },
+          [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.showOpcao,
+                  expression: "showOpcao"
+                }
+              ],
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "radio",
+                name: "grerj",
+                id: "grerjSim",
+                value: "showSim"
+              },
+              domProps: { checked: _vm._q(_vm.showOpcao, "showSim") },
+              on: {
+                change: function($event) {
+                  _vm.showOpcao = "showSim"
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "custom-control-label",
+                attrs: { for: "grerjSim" }
+              },
+              [_vm._v(" Sim ")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "custom-control custom-control-inline custom-radio" },
+          [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.showOpcao,
+                  expression: "showOpcao"
+                }
+              ],
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "radio",
+                name: "grerj",
+                id: "grerjNao",
+                value: "showNao"
+              },
+              domProps: { checked: _vm._q(_vm.showOpcao, "showNao") },
+              on: {
+                change: function($event) {
+                  _vm.showOpcao = "showNao"
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "custom-control-label",
+                attrs: { for: "grerjNao" }
+              },
+              [_vm._v(" Não ")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showOpcao === "showSim",
+                expression: "showOpcao === 'showSim'"
+              }
+            ]
+          },
+          [
+            _c("br"),
+            _vm._v(" "),
+            _vm._m(4),
+            _vm._v(" "),
+            _c("input", { attrs: { type: "text", required: "" } }),
+            _vm._v(" "),
+            _c("br")
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showOpcao === "showNao",
+                expression: "showOpcao === 'showNao'"
+              }
+            ]
+          },
+          [_c("br"), _vm._v(" "), _vm._m(5)]
+        )
+      ]),
+      _vm._v(" "),
+      _c("br")
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("h1", [_vm._v("Distribuição de Petição Inicial")]),
-      _vm._v(" "),
-      _c("hr"),
-      _vm._v(" "),
-      _c("p", [
-        _c("strong", [
-          _vm._v(
-            "ATENÇÃO SENHOR ADVOGADO: SE NÃO HOUVER PEDIDO DE JUSTIÇA GRATUITA, ANTES DE REALIZAR O CADASTRAMENTO DE SUA PETIÇÃO, FAÇA O RECOLHIMENTO DO GRERJ, POIS SEU NÚMERO E VALOR SERÃO NECESSÁRIOS."
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v("Campos marcados com "),
-        _c("strong", [_vm._v("*")]),
-        _vm._v(" são de preenchimento obrigatório.")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [_c("strong", [_vm._v("GRERJ")])])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("span", [_c("strong", [_vm._v("*")]), _vm._v(" Possui GRERJ? ")]),
+    return _c("p", [
+      _c("strong", [
+        _vm._v(
+          "ATENÇÃO SENHOR ADVOGADO: SE NÃO HOUVER PEDIDO DE JUSTIÇA GRATUITA, ANTES DE REALIZAR O CADASTRAMENTO DE SUA PETIÇÃO, FAÇA O RECOLHIMENTO DO GRERJ, POIS SEU NÚMERO E VALOR SERÃO NECESSÁRIOS."
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("Campos marcados com "),
+      _c("strong", [_vm._v("*")]),
+      _vm._v(" são de preenchimento obrigatório.")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h5", [_c("strong", [_vm._v("GRERJ")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("strong", [_vm._v("*")]), _vm._v(" Possui GRERJ? ")])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [
+      _c("strong", [_vm._v("*")]),
+      _vm._v(" Número da GRERJ ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { attrs: { for: "grerjMotivo" } }, [
+      _vm._v("Motivo\n          "),
+      _c(
+        "select",
+        { staticClass: "custom-select", attrs: { id: "grerjMotivo" } },
+        [
+          _c("option", [_vm._v("Escolha um motivo")]),
           _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "custom-control custom-control-inline custom-radio"
-            },
-            [
-              _c("input", {
-                staticClass: "custom-control-input",
-                attrs: { type: "radio", name: "grerj", id: "grerjSim" }
-              }),
-              _vm._v(" "),
-              _c(
-                "label",
-                {
-                  staticClass: "custom-control-label",
-                  attrs: { for: "grerjSim" }
-                },
-                [_vm._v(" Sim ")]
-              )
-            ]
-          ),
+          _c("option", [_vm._v("Juizado Especial Cível")]),
           _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "custom-control custom-control-inline custom-radio"
-            },
-            [
-              _c("input", {
-                staticClass: "custom-control-input",
-                attrs: {
-                  type: "radio",
-                  name: "grerj",
-                  id: "grerjNao",
-                  checked: ""
-                }
-              }),
-              _vm._v(" "),
-              _c(
-                "label",
-                {
-                  staticClass: "custom-control-label",
-                  attrs: { for: "grerjNao" }
-                },
-                [_vm._v(" Não ")]
-              )
-            ]
-          ),
+          _c("option", [_vm._v("Justiça Gratuita / Pedido de Gratuidade")]),
           _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("label", { attrs: { for: "grerjMotivo" } }, [
-            _vm._v("Motivo \n                "),
-            _c(
-              "select",
-              { staticClass: "custom-select", attrs: { id: "grerjMotivo" } },
-              [
-                _c("option", [_vm._v("Escolha um motivo")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Juizado Especial Cível")]),
-                _vm._v(" "),
-                _c("option", [
-                  _vm._v("Justiça Gratuita / Pedido de Gratuidade")
-                ]),
-                _vm._v(" "),
-                _c("option", [_vm._v("...")])
-              ]
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("br")
+          _c("option", [_vm._v("...")])
+        ]
+      )
     ])
   }
 ]
@@ -50261,21 +50421,24 @@ __webpack_require__.r(__webpack_exports__);
 /*!*********************************************************************!*\
   !*** ./resources/js/components/DistribuicaoEletronica/DE_grerj.vue ***!
   \*********************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _DE_grerj_vue_vue_type_template_id_639a1964___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DE_grerj.vue?vue&type=template&id=639a1964& */ "./resources/js/components/DistribuicaoEletronica/DE_grerj.vue?vue&type=template&id=639a1964&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _DE_grerj_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DE_grerj.vue?vue&type=script&lang=js& */ "./resources/js/components/DistribuicaoEletronica/DE_grerj.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _DE_grerj_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _DE_grerj_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _DE_grerj_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _DE_grerj_vue_vue_type_template_id_639a1964___WEBPACK_IMPORTED_MODULE_0__["render"],
   _DE_grerj_vue_vue_type_template_id_639a1964___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -50289,6 +50452,22 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/components/DistribuicaoEletronica/DE_grerj.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/DistribuicaoEletronica/DE_grerj.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/components/DistribuicaoEletronica/DE_grerj.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DE_grerj_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./DE_grerj.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/DistribuicaoEletronica/DE_grerj.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DE_grerj_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DE_grerj_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DE_grerj_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DE_grerj_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DE_grerj_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -50381,8 +50560,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/html/Laravel/Projeto/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /var/www/html/Laravel/Projeto/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /var/www/html/Laravel/Simulador-NPJ-FOA/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/html/Laravel/Simulador-NPJ-FOA/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
