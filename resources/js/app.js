@@ -34,4 +34,12 @@ Vue.component('de-declaracaodeveracidade', require('./components/DistribuicaoEle
 
 const app = new Vue({
     el: '#app',
+    components: [
+      'de-grerj',
+      'de-processoPrincipal',
+      'de-dadosDoProcesso',
+      'de-advogadoRepresentante',
+      'de-autoresReusDocumentos',
+      'de-declaracaoDeVeracidade'
+    ],
 });

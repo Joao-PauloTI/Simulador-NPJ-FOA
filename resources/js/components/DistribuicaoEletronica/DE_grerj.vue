@@ -49,10 +49,12 @@
 </template>
 
 <script>
-    var app = new Vue({
-        el: '#app',
-        data: {
-          showOpcao: value=""
-        }
-    });
+  export default {
+    name: 'de-grerj',
+    data: function(){
+      return{
+        showOpcao: 'value=""'
+      }
+    }
+  }
 </script>
