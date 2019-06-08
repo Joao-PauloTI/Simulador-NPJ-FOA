@@ -1813,7 +1813,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'de-advogadoRepresentante',
   data: function data() {
     return {
-      showOpcao: 'value=""'
+      showOpcao: "advogado"
     };
   }
 });

@@ -49,7 +49,7 @@
     name: 'de-advogadoRepresentante',
     data: function(){
       return{
-        showOpcao: 'value=""'
+        showOpcao: "advogado"
       }
     }
   }
