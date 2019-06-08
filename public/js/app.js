@@ -1754,6 +1754,72 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'de-advogadoRepresentante',
+  data: function data() {
+    return {
+      showOpcao: 'value=""'
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/DistribuicaoEletronica/DE_grerj.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/DistribuicaoEletronica/DE_grerj.vue?vue&type=script&lang=js& ***!
@@ -1763,6 +1829,9 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
 //
 //
 //
@@ -37123,60 +37192,141 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-6" }, [
+            _c("label", { attrs: { for: "selectAR" } }, [
+              _c(
+                "select",
+                {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.showOpcao,
+                      expression: "showOpcao"
+                    }
+                  ],
+                  staticClass: "custom-select",
+                  attrs: { id: "selectAR", required: "" },
+                  on: {
+                    change: function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.showOpcao = $event.target.multiple
+                        ? $$selectedVal
+                        : $$selectedVal[0]
+                    }
+                  }
+                },
+                [
+                  _c("option", { attrs: { value: "advogado" } }, [
+                    _vm._v("Advogado")
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "defensor" } }, [
+                    _vm._v("Defensor Público")
+                  ])
+                ]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-1" }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value: _vm.showOpcao === "advogado",
+                  expression: "showOpcao === 'advogado'"
+                }
+              ],
+              staticClass: "col-xs-6"
+            },
+            [_vm._m(1)]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value: _vm.showOpcao === "defensor",
+                  expression: "showOpcao === 'defensor'"
+                }
+              ],
+              staticClass: "col-xs-2"
+            },
+            [_vm._m(2)]
+          )
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [_c("strong", [_vm._v("Advogado / Representante")])])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("label", { attrs: { for: "selectAR" } }, [
-              _c(
-                "select",
-                { staticClass: "custom-select", attrs: { id: "selectAR" } },
-                [
-                  _c("option", [_vm._v("Advogado")]),
-                  _vm._v(" "),
-                  _c("option", [_vm._v("Defensor Público")])
-                ]
-              )
-            ]),
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h5", [_c("strong", [_vm._v("Advogado / Representante")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("form", { staticClass: "form-inline" }, [
+      _c("span", [_vm._v(" Número de OAB: ")]),
+      _vm._v(" "),
+      _c("label", { attrs: { for: "regiaoOAB" } }, [
+        _c(
+          "select",
+          { staticClass: "custom-select", attrs: { id: "regiaoOAB" } },
+          [
+            _c("option", [_vm._v("RJ")]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-1" }),
-            _vm._v(" "),
-            _c("span", [_vm._v(" Número de OAB: ")]),
-            _vm._v(" "),
-            _c("label", { attrs: { for: "regiaoOAB" } }, [
-              _c(
-                "select",
-                { staticClass: "custom-select", attrs: { id: "regiaoOAB" } },
-                [
-                  _c("option", [_vm._v("RJ")]),
-                  _vm._v(" "),
-                  _c("option", [_vm._v("SP")]),
-                  _vm._v(" "),
-                  _c("option", [_vm._v("...")])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("input", {
-              staticClass: "form-control",
-              attrs: { type: "text", required: "" }
-            })
-          ])
-        ])
+            _c("option", [_vm._v("SP")])
+          ]
+        )
       ]),
       _vm._v(" "),
-      _c("br")
+      _c("input", {
+        staticClass: "form-control",
+        attrs: { type: "text", required: "" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("form", { staticClass: "form-inline" }, [
+      _c("span", [_vm._v(" Matrícula: ")]),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "form-control",
+        attrs: { type: "text", required: "" }
+      })
     ])
   }
 ]
@@ -37775,15 +37925,7 @@ var render = function() {
               }
             ]
           },
-          [
-            _c("br"),
-            _vm._v(" "),
-            _vm._m(4),
-            _vm._v(" "),
-            _c("input", { attrs: { type: "text", required: "" } }),
-            _vm._v(" "),
-            _c("br")
-          ]
+          [_c("br"), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("br")]
         ),
         _vm._v(" "),
         _c(
@@ -37847,9 +37989,15 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [
-      _c("strong", [_vm._v("*")]),
-      _vm._v(" Número da GRERJ ")
+    return _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "col-xs-2" }, [
+        _c("span", [_c("strong", [_vm._v("*")]), _vm._v(" Número da GRERJ: ")]),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: { type: "text", required: "" }
+        })
+      ])
     ])
   },
   function() {
@@ -37857,7 +38005,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("label", { attrs: { for: "grerjMotivo" } }, [
-      _vm._v("Motivo\n          "),
+      _vm._v("Motivo\n            "),
       _c(
         "select",
         { staticClass: "custom-select", attrs: { id: "grerjMotivo" } },
@@ -50220,15 +50368,17 @@ if (token) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _DE_advogadoRepresentante_vue_vue_type_template_id_a7f1e752___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DE_advogadoRepresentante.vue?vue&type=template&id=a7f1e752& */ "./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue?vue&type=template&id=a7f1e752&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _DE_advogadoRepresentante_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DE_advogadoRepresentante.vue?vue&type=script&lang=js& */ "./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _DE_advogadoRepresentante_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _DE_advogadoRepresentante_vue_vue_type_template_id_a7f1e752___WEBPACK_IMPORTED_MODULE_0__["render"],
   _DE_advogadoRepresentante_vue_vue_type_template_id_a7f1e752___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -50242,6 +50392,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************!*\
+  !*** ./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DE_advogadoRepresentante_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./DE_advogadoRepresentante.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DE_advogadoRepresentante_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 

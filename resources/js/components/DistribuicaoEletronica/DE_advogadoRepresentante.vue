@@ -1,35 +1,56 @@
 <template>
-    <div class="container">
-        <div class="card">
-            <div class="card-header">
-                <h5><strong>Advogado / Representante</strong></h5>
+  <div class="container">
+    <div class="card">
+        <div class="card-header">
+          <h5><strong>Advogado / Representante</strong></h5>
+        </div>
+
+        <div class="card-body">
+          <div class="row">
+            <div class="col-xs-6">
+              <label for="selectAR">
+              <select class="custom-select" id="selectAR" v-model="showOpcao" required>
+                <option value="advogado">Advogado</option>
+                <option value="defensor">Defensor Público</option>
+              </select>
+              </label>
             </div>
-            <div class="card-body">
-                <form class="form-inline">
-                    <label for="selectAR">
-                        <select class="custom-select" id="selectAR">
-                            <option>Advogado</option>
-                            <option>Defensor Público</option>
-                        </select>
-                    </label>
-                    <div class="col-md-1"><!--espaço--></div>
-                    <!--if(advogado == true)-->
-                    <span> Número de OAB: </span>
-                    <label for="regiaoOAB">
-                        <select class="custom-select" id="regiaoOAB">
-                            <option>RJ</option>
-                            <option>SP</option>
-                            <option>...</option>
-                        </select>
-                    </label>
-                    <input type="text" class="form-control" required>
-                	<!--else
-                	<span> Matrícula </span>
-                	<input type="text" class="form-control" required>
-                	endif-->
-                </form>
+
+            <div class="col-md-1"><!--espaço entre campos--></div>
+
+            <div v-show="showOpcao === 'advogado'" class="col-xs-6">
+              <form class="form-inline">
+                  <span> Número de OAB: </span>
+                  <label for="regiaoOAB">
+                  <select class="custom-select" id="regiaoOAB">
+                    <option>RJ</option>
+                    <option>SP</option>
+                  </select>
+                  </label>
+                <input type="text" class="form-control" required>
+              </form>
+            </div>
+
+            <div v-show="showOpcao === 'defensor'" class="col-xs-2">
+              <form class="form-inline">
+                <span> Matrícula: </span>
+                <input type="text" class="form-control" required>
+              </form>
             </div>
         </div>
-        <br>
+      </div>
     </div>
+    <br>
+  </div>
 </template>
+
+<script>
+  export default {
+    name: 'de-advogadoRepresentante',
+    data: function(){
+      return{
+        showOpcao: 'value=""'
+      }
+    }
+  }
+</script>
