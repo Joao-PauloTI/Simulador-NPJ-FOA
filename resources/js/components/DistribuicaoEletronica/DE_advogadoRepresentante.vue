@@ -20,7 +20,7 @@
                     <!--espaço entre campos-->
                 </div>
 
-                <div v-show="showOpcao === 'advogado'" class="col-xs-6">
+                <div class="col-xs-6" v-show="showOpcao === 'advogado'">
                     <form class="form-inline">
                         <span> Número de OAB: </span>
                         <label for="regiaoOAB">
@@ -33,7 +33,7 @@
                     </form>
                 </div>
 
-                <div v-show="showOpcao === 'defensor'" class="col-xs-2">
+                <div class="col-xs-2" v-show="showOpcao === 'defensor'">
                     <form class="form-inline">
                         <span> Matrícula: </span>
                         <input type="text" class="form-control" required>

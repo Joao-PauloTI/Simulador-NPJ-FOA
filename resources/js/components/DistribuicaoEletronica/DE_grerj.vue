@@ -10,10 +10,7 @@
             <h5><strong>GRERJ</strong></h5>
         </div>
         <div class="card-body">
-            <span><strong>*</strong> Possui GRERJ? </span>
-            <!--Isto é apenas uma amostra dos casos. No programa real, nenhuma das opções devem estar
-                    selecionadas quando a página carregar! O certo é aparecer um caso diferente de acordo
-                    com a opção selecionada.-->
+            <span><strong>* Possui GRERJ?</strong> </span>
             <div class="custom-control custom-control-inline custom-radio">
                 <input type="radio" class="custom-control-input" name="grerj" id="grerjSim" value="showSim" v-model="showOpcao">
                 <label class="custom-control-label" for="grerjSim"> Sim </label>
@@ -27,15 +24,16 @@
                 <br>
                 <form class="form-inline">
                     <div class="col-xs-2">
-                        <span><strong>*</strong> Número da GRERJ: </span>
+                        <span><strong>* Número da GRERJ:</strong> </span>
                         <input type="text" class="form-control" required>
+                        <!--<span><strong> Valor da GRERJ: </strong> R$ 999,99</span>-->
                     </div>
                 </form>
             </div>
 
             <div v-show="showOpcao === 'showNao'">
                 <br>
-                <label for="grerjMotivo">Motivo
+                <label for="grerjMotivo"><strong>* Motivo</strong>
                     <select id="grerjMotivo" class="custom-select">
                         <option>Escolha um motivo</option>
                         <option>Juizado Especial Cível</option>
@@ -44,7 +42,6 @@
                 </label>
             </div>
         </div>
-        <br>
     </div>
     <br>
 </div>
@@ -55,7 +52,7 @@ export default {
     name: 'de-grerj',
     data: function() {
         return {
-            showOpcao: 'value=""'
+            showOpcao: ""
         }
     }
 }

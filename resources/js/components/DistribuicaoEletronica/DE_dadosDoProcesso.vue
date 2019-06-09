@@ -38,18 +38,23 @@
             <br>
             <!--Comarca-->
             <div>
-                <label for="ddp_comarca"><strong>*</strong> Comarca
-                    <select class="custom-select" id="ddp_comarca">
-                        <option>Escolha uma comarca</option>
-                        <option>Comarca de Volta Redonda</option>
+                <label for="ddp_comarca"><strong>* Comarca</strong>
+                    <select class="custom-select" id="ddp_comarca" v-model="showComarca">
+                        <option value="">Escolha uma comarca</option>
+                        <option value="voltaRedonda">Comarca de Volta Redonda</option>
                     </select>
                 </label>
             </div>
             <br>
-            <!--Competência-->
+            <!--Competência (baseado na comarca)-->
             <div>
-                <label for="ddp_competencia"><strong>*</strong> Competência
-                    <select class="custom-select" id="ddp_competencia" v-model="showCompetencia">
+                <label for="ddp_competencia"><strong>* Competência</strong>
+                    <!--Escolha uma competencia (comarca não foi escolhida)-->
+                    <select class="custom-select" id="ddp_competencia" v-show="showComarca === ''">
+                        <option>Escolha uma competência</option>
+                    </select>
+                    <!--Volta Redonda-->
+                    <select class="custom-select" id="ddp_competencia" v-model="showCompetencia" v-show="showComarca === 'voltaRedonda'">
                         <option value="">Escolha uma competência</option>
                         <option value="acidente">Acidentes de Trabalho</option>
                         <option value="civel">Cível</option>
@@ -65,16 +70,24 @@
                     </select>
                 </label>
             </div>
+            <!--Opção extra para competência Cível, Empresarial, Família, Fazenda Pública e Órfãos e Sucessões-->
+            <div v-show="showCompetencia === 'civel' || showCompetencia === 'empresarial' || showCompetencia === 'familia' || showCompetencia === 'fazenda' || showCompetencia === 'orfaos'">
+                <div class="custom-control custom-control-inline custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="opcaoExtra">
+                    <label class="custom-control-label" for="opcaoExtra">Autor opta pela realização de audiência de conciliação ou de mediação?</label>
+                </div>
+            </div>
             <br>
             <!--Classe (baseado na competência)-->
             <div>
-                <label for="ddp_classe"><strong>*</strong> Classe
+                <label for="ddp_classe"><strong>* Classe</strong>
                     <!--Escolha uma classe (competência não foi escolhida)-->
                     <select class="custom-select" id="ddp_classe" v-show="showCompetencia === ''">
                         <option>Escolha uma classe</option>
                     </select>
                     <!--Acidentes de Trabalho-->
                     <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'acidente'">
+                        <option>Escolha uma classe</option>
                         <option>Ação Civil Coletiva</option>
                         <option>Ação Civil Pública</option>
                         <option>Consignação em Pagamento – CPC</option>
@@ -82,6 +95,7 @@
                     </select>
                     <!--Cível-->
                     <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'civel'">
+                        <option>Escolha uma classe</option>
                         <option>Alienação Judicial</option>
                         <option>Alvará Judicial – Lei 6858/80</option>
                         <option>Compromisso Arbitral</option>
@@ -89,6 +103,7 @@
                     </select>
                     <!--Dívida Ativa Estadual-->
                     <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'dividaEstadual'">
+                        <option>Escolha uma classe</option>
                         <option>Interpelação</option>
                         <option>Homologação do Penhor Legal</option>
                         <option>Exibição de Documento ou Coisa</option>
@@ -96,6 +111,7 @@
                     </select>
                     <!--Dívida Ativa Municipal-->
                     <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'dividaMunicipal'">
+                        <option>Escolha uma classe</option>
                         <option>Execução de Título Judicial – CPC</option>
                         <option>Cumprimento Provisório de Sentença</option>
                         <option>Busca e Apreensão em Alienação Fiduciária</option>
@@ -103,6 +119,7 @@
                     </select>
                     <!--Empresarial-->
                     <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'empresarial'">
+                        <option>Escolha uma classe</option>
                         <option>Embargos à Execução (por Título Extrajudicial), (Contra a Fazenda Pública) e (Carta Precatória)</option>
                         <option>Despejo por Falta de Pagamento Cumulado Com Cobrança</option>
                         <option>Extinção das Obrigações do Falido</option>
@@ -110,6 +127,7 @@
                     </select>
                     <!--Família-->
                     <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'familia'">
+                        <option>Escolha uma classe</option>
                         <option>Adoção – ECA</option>
                         <option>Alteração do Regime de Bens</option>
                         <option>Cumprimento Provisório de Sentença</option>
@@ -117,6 +135,7 @@
                     </select>
                     <!--Fazenda Pública-->
                     <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'fazenda'">
+                        <option>Escolha uma classe</option>
                         <option>Embargos à execução fiscal</option>
                         <option>Habeas Data</option>
                         <option>Habilitação</option>
@@ -124,6 +143,7 @@
                     </select>
                     <!--Juizado Especial Civil-->
                     <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'juizado'">
+                        <option>Escolha uma classe</option>
                         <option>Despejo</option>
                         <option>Restauração de Autos</option>
                         <option>Monitória</option>
@@ -131,6 +151,7 @@
                     </select>
                     <!--Órfãos e Sucessões-->
                     <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'orfaos'">
+                        <option>Escolha uma classe</option>
                         <option>Abertura, Registro e Cumprimento de Testamento</option>
                         <option>Herança Jacente</option>
                         <option>Inventário</option>
@@ -138,6 +159,7 @@
                     </select>
                     <!--Registro Civil de Pessoas Naturais-->
                     <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'registroCivil'">
+                        <option>Escolha uma classe</option>
                         <option>Alteração de Regime de Bens</option>
                         <option>Pedido de Providências</option>
                         <option>Sindicância</option>
@@ -145,6 +167,7 @@
                     </select>
                     <!--Registro Público-->
                     <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'registroPublico'">
+                        <option>Escolha uma classe</option>
                         <option>Dúvida</option>
                         <option>Embargos de Terceiros</option>
                         <option>Registro Torrens</option>
@@ -155,7 +178,7 @@
             <br>
             <!--Distribuição-->
             <div>
-                <label for="ddp_distribuicao"><strong>*</strong> Distribuição
+                <label for="ddp_distribuicao"><strong>* Distribuição</strong>
                     <select class="custom-select" id="ddp_distribuicao">
                         <option>Escolha uma distribuição</option>
                         <option>...</option>
@@ -169,7 +192,7 @@
             <div>
                 <form class="form-inline">
                     <div class="col-xs-2">
-                        <span><strong>*</strong> Valor da Causa: </span>
+                        <span><strong>* Valor da Causa:</strong> </span>
                         <input type="text" class="form-control" id="valorCausa" placeholder="ex.: 1.000,00" required>
                     </div>
                 </form>
@@ -186,7 +209,8 @@ export default {
     name: 'de-dadosdoprocesso',
     data: function() {
         return {
-            showCompetencia: ""
+            showCompetencia: "",
+            showComarca: ""
         }
     }
 }

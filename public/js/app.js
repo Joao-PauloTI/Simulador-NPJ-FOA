@@ -2014,11 +2014,35 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'de-dadosdoprocesso',
   data: function data() {
     return {
-      showCompetencia: ""
+      showCompetencia: "",
+      showComarca: ""
     };
   }
 });
@@ -2083,14 +2107,66 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'de-grerj',
   data: function data() {
     return {
-      showOpcao: 'value=""'
+      showOpcao: ""
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/DistribuicaoEletronica/DE_processoPrincipal.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/DistribuicaoEletronica/DE_processoPrincipal.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'de-processoprincipal',
+  data: function data() {
+    return {
+      showDpd: ""
     };
   }
 });
@@ -37665,14 +37741,75 @@ var render = function() {
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
-        _vm._m(2),
+        _c("div", [
+          _c("label", { attrs: { for: "ddp_comarca" } }, [
+            _c("strong", [_vm._v("* Comarca")]),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showComarca,
+                    expression: "showComarca"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "ddp_comarca" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showComarca = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
+                  }
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma comarca")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "voltaRedonda" } }, [
+                  _vm._v("Comarca de Volta Redonda")
+                ])
+              ]
+            )
+          ])
+        ]),
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
         _c("div", [
           _c("label", { attrs: { for: "ddp_competencia" } }, [
-            _c("strong", [_vm._v("*")]),
-            _vm._v(" Competência\n                    "),
+            _c("strong", [_vm._v("* Competência")]),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.showComarca === "",
+                    expression: "showComarca === ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "ddp_competencia" }
+              },
+              [_c("option", [_vm._v("Escolha uma competência")])]
+            ),
+            _vm._v(" "),
             _c(
               "select",
               {
@@ -37682,6 +37819,12 @@ var render = function() {
                     rawName: "v-model",
                     value: _vm.showCompetencia,
                     expression: "showCompetencia"
+                  },
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.showComarca === "voltaRedonda",
+                    expression: "showComarca === 'voltaRedonda'"
                   }
                 ],
                 staticClass: "custom-select",
@@ -37753,12 +37896,32 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value:
+                  _vm.showCompetencia === "civel" ||
+                  _vm.showCompetencia === "empresarial" ||
+                  _vm.showCompetencia === "familia" ||
+                  _vm.showCompetencia === "fazenda" ||
+                  _vm.showCompetencia === "orfaos",
+                expression:
+                  "showCompetencia === 'civel' || showCompetencia === 'empresarial' || showCompetencia === 'familia' || showCompetencia === 'fazenda' || showCompetencia === 'orfaos'"
+              }
+            ]
+          },
+          [_vm._m(2)]
+        ),
+        _vm._v(" "),
         _c("br"),
         _vm._v(" "),
         _c("div", [
           _c("label", { attrs: { for: "ddp_classe" } }, [
-            _c("strong", [_vm._v("*")]),
-            _vm._v(" Classe\n                    "),
+            _c("strong", [_vm._v("* Classe")]),
             _vm._v(" "),
             _c(
               "select",
@@ -37792,6 +37955,8 @@ var render = function() {
                 attrs: { id: "ddp_classe" }
               },
               [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
                 _c("option", [_vm._v("Ação Civil Coletiva")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Ação Civil Pública")]),
@@ -37817,6 +37982,8 @@ var render = function() {
                 attrs: { id: "ddp_classe" }
               },
               [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
                 _c("option", [_vm._v("Alienação Judicial")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Alvará Judicial – Lei 6858/80")]),
@@ -37842,6 +38009,8 @@ var render = function() {
                 attrs: { id: "ddp_classe" }
               },
               [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
                 _c("option", [_vm._v("Interpelação")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Homologação do Penhor Legal")]),
@@ -37867,6 +38036,8 @@ var render = function() {
                 attrs: { id: "ddp_classe" }
               },
               [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
                 _c("option", [_vm._v("Execução de Título Judicial – CPC")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Cumprimento Provisório de Sentença")]),
@@ -37894,6 +38065,8 @@ var render = function() {
                 attrs: { id: "ddp_classe" }
               },
               [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
                 _c("option", [
                   _vm._v(
                     "Embargos à Execução (por Título Extrajudicial), (Contra a Fazenda Pública) e (Carta Precatória)"
@@ -37925,6 +38098,8 @@ var render = function() {
                 attrs: { id: "ddp_classe" }
               },
               [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
                 _c("option", [_vm._v("Adoção – ECA")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Alteração do Regime de Bens")]),
@@ -37950,6 +38125,8 @@ var render = function() {
                 attrs: { id: "ddp_classe" }
               },
               [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
                 _c("option", [_vm._v("Embargos à execução fiscal")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Habeas Data")]),
@@ -37975,6 +38152,8 @@ var render = function() {
                 attrs: { id: "ddp_classe" }
               },
               [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
                 _c("option", [_vm._v("Despejo")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Restauração de Autos")]),
@@ -38000,6 +38179,8 @@ var render = function() {
                 attrs: { id: "ddp_classe" }
               },
               [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
                 _c("option", [
                   _vm._v("Abertura, Registro e Cumprimento de Testamento")
                 ]),
@@ -38027,6 +38208,8 @@ var render = function() {
                 attrs: { id: "ddp_classe" }
               },
               [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
                 _c("option", [_vm._v("Alteração de Regime de Bens")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Pedido de Providências")]),
@@ -38052,6 +38235,8 @@ var render = function() {
                 attrs: { id: "ddp_classe" }
               },
               [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
                 _c("option", [_vm._v("Dúvida")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Embargos de Terceiros")]),
@@ -38195,21 +38380,26 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("label", { attrs: { for: "ddp_comarca" } }, [
-        _c("strong", [_vm._v("*")]),
-        _vm._v(" Comarca\n                    "),
+    return _c(
+      "div",
+      { staticClass: "custom-control custom-control-inline custom-checkbox" },
+      [
+        _c("input", {
+          staticClass: "custom-control-input",
+          attrs: { type: "checkbox", id: "opcaoExtra" }
+        }),
+        _vm._v(" "),
         _c(
-          "select",
-          { staticClass: "custom-select", attrs: { id: "ddp_comarca" } },
+          "label",
+          { staticClass: "custom-control-label", attrs: { for: "opcaoExtra" } },
           [
-            _c("option", [_vm._v("Escolha uma comarca")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Comarca de Volta Redonda")])
+            _vm._v(
+              "Autor opta pela realização de audiência de conciliação ou de mediação?"
+            )
           ]
         )
-      ])
-    ])
+      ]
+    )
   },
   function() {
     var _vm = this
@@ -38217,8 +38407,8 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("label", { attrs: { for: "ddp_distribuicao" } }, [
-        _c("strong", [_vm._v("*")]),
-        _vm._v(" Distribuição\n                    "),
+        _c("strong", [_vm._v("* Distribuição")]),
+        _vm._v(" "),
         _c(
           "select",
           { staticClass: "custom-select", attrs: { id: "ddp_distribuicao" } },
@@ -38242,10 +38432,7 @@ var staticRenderFns = [
     return _c("div", [
       _c("form", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
-          _c("span", [
-            _c("strong", [_vm._v("*")]),
-            _vm._v(" Valor da Causa: ")
-          ]),
+          _c("span", [_c("strong", [_vm._v("* Valor da Causa:")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
@@ -38485,9 +38672,7 @@ var render = function() {
           },
           [_c("br"), _vm._v(" "), _vm._m(5)]
         )
-      ]),
-      _vm._v(" "),
-      _c("br")
+      ])
     ]),
     _vm._v(" "),
     _c("br")
@@ -38528,7 +38713,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("*")]), _vm._v(" Possui GRERJ? ")])
+    return _c("span", [_c("strong", [_vm._v("* Possui GRERJ?")])])
   },
   function() {
     var _vm = this
@@ -38536,7 +38721,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("form", { staticClass: "form-inline" }, [
       _c("div", { staticClass: "col-xs-2" }, [
-        _c("span", [_c("strong", [_vm._v("*")]), _vm._v(" Número da GRERJ: ")]),
+        _c("span", [_c("strong", [_vm._v("* Número da GRERJ:")])]),
         _vm._v(" "),
         _c("input", {
           staticClass: "form-control",
@@ -38550,7 +38735,8 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("label", { attrs: { for: "grerjMotivo" } }, [
-      _vm._v("Motivo\n                    "),
+      _c("strong", [_vm._v("* Motivo")]),
+      _vm._v(" "),
       _c(
         "select",
         { staticClass: "custom-select", attrs: { id: "grerjMotivo" } },
@@ -38586,74 +38772,143 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-body" }, [
+        _vm._m(1),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "custom-control custom-control-inline custom-radio" },
+          [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.showDpd,
+                  expression: "showDpd"
+                }
+              ],
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "radio",
+                id: "dpdSim",
+                name: "dpd",
+                value: "dpdSim"
+              },
+              domProps: { checked: _vm._q(_vm.showDpd, "dpdSim") },
+              on: {
+                change: function($event) {
+                  _vm.showDpd = "dpdSim"
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "custom-control-label", attrs: { for: "dpdSim" } },
+              [_vm._v(" Sim ")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "custom-control custom-control-inline custom-radio" },
+          [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.showDpd,
+                  expression: "showDpd"
+                }
+              ],
+              staticClass: "custom-control-input",
+              attrs: { type: "radio", id: "dpdNao", name: "" },
+              domProps: { checked: _vm._q(_vm.showDpd, null) },
+              on: {
+                change: function($event) {
+                  _vm.showDpd = null
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "custom-control-label", attrs: { for: "dpdNao" } },
+              [_vm._v(" Não ")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showDpd === "dpdSim",
+                expression: "showDpd === 'dpdSim'"
+              }
+            ]
+          },
+          [_c("br"), _vm._v(" "), _vm._m(2)]
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [_c("strong", [_vm._v("Processo Principal")])])
-        ]),
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h5", [_c("strong", [_vm._v("Processo Principal")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [
+      _c("strong", [_vm._v("* Distribuição por Dependência")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "col-xs-2" }, [
+        _c("span", [_c("strong", [_vm._v("* Número do Processo Principal:")])]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("span", [
-            _c("strong", [_vm._v("*")]),
-            _vm._v(" Distribuição por Dependência ")
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "custom-control custom-control-inline custom-radio"
-            },
-            [
-              _c("input", {
-                staticClass: "custom-control-input",
-                attrs: { type: "radio", name: "dpd", id: "dpdSim" }
-              }),
-              _vm._v(" "),
-              _c(
-                "label",
-                {
-                  staticClass: "custom-control-label",
-                  attrs: { for: "dpdSim" }
-                },
-                [_vm._v(" Sim ")]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "custom-control custom-control-inline custom-radio"
-            },
-            [
-              _c("input", {
-                staticClass: "custom-control-input",
-                attrs: { type: "radio", name: "dpd", id: "dpdNao" }
-              }),
-              _vm._v(" "),
-              _c(
-                "label",
-                {
-                  staticClass: "custom-control-label",
-                  attrs: { for: "dpdNao" }
-                },
-                [_vm._v(" Não ")]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c("br")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("br")
+        _c("input", {
+          staticClass: "form-control",
+          attrs: { type: "text", required: "" }
+        }),
+        _vm._v(" "),
+        _c("span", [_vm._v(" .8.19. ")]),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: { type: "text", required: "" }
+        }),
+        _vm._v(" "),
+        _c(
+          "button",
+          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+          [_vm._v("Consultar")]
+        )
+      ])
     ])
   }
 ]
@@ -51224,15 +51479,17 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _DE_processoPrincipal_vue_vue_type_template_id_40f4d000___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DE_processoPrincipal.vue?vue&type=template&id=40f4d000& */ "./resources/js/components/DistribuicaoEletronica/DE_processoPrincipal.vue?vue&type=template&id=40f4d000&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _DE_processoPrincipal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DE_processoPrincipal.vue?vue&type=script&lang=js& */ "./resources/js/components/DistribuicaoEletronica/DE_processoPrincipal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _DE_processoPrincipal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _DE_processoPrincipal_vue_vue_type_template_id_40f4d000___WEBPACK_IMPORTED_MODULE_0__["render"],
   _DE_processoPrincipal_vue_vue_type_template_id_40f4d000___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -51246,6 +51503,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/components/DistribuicaoEletronica/DE_processoPrincipal.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/DistribuicaoEletronica/DE_processoPrincipal.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/components/DistribuicaoEletronica/DE_processoPrincipal.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DE_processoPrincipal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./DE_processoPrincipal.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/DistribuicaoEletronica/DE_processoPrincipal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DE_processoPrincipal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 

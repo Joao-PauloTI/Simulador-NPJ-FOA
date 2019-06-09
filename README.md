@@ -6,6 +6,10 @@ Instalação do Projeto:
 - Crie o banco de dados e faça a migração das tabelas com o comando 'php artisan migrate';
 - Depois de tudo isso, a aplicação estará funcionando normalmente.
 
+Utilizando o Vue.js:
+- Na pasta do projeto, instale as dependências do Vue com o comando 'npm install' no cmd/terminal.
+- Caso faça alterações em algum arquivo.vue, deixe um terminal aberto executando o comando npm run watch para compilar as alterações automaticamente.
+
 Principais arquivos e pastas:
 - app/Http/Controllers/: é onde os controllers ficam.
 - database/migrations/: é onde as migrações de tabelas do banco de dados ficam.
