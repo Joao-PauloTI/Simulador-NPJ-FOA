@@ -1,7 +1,7 @@
 # Simulador-NPJ-FOA
 Instalação do Projeto (caso o Laravel já esteja instalado em sua máquina):
 - Extraia o arquivo e, dentro dele, instale as dependências do Laravel com o comando 'composer install' no cmd/terminal;
-- Renomeie o arquivo '.env.example' para apenas '.env' e configure o nome do banco de dados e seu usuario e senha (se tiver utilizando). Caso o .env.example tenha sido ignorado após o repositório ser clonado, crie um arquivo .env e copie e cole o código: https://github.com/laravel/laravel/blob/master/.env.example .;
+- Renomeie o arquivo '.env.example' para apenas '.env' e, se tiver utilizando, configure o nome do banco de dados e seu usuario e senha. Caso o .env.example tenha sido ignorado após o repositório ser clonado, crie um arquivo .env e copie e cole o código: https://github.com/laravel/laravel/blob/master/.env.example .;
 - Gere a encryption key do '.env' com o comando 'php artisan key:generate';
 - Crie o banco de dados e faça a migração das tabelas com o comando 'php artisan migrate' (se tiver utilizando);
 - Depois de tudo isso, a aplicação estará funcionando normalmente.
