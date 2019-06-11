@@ -7,7 +7,7 @@ Instalação do Projeto (caso o Laravel já esteja instalado em sua máquina):
 - Depois de tudo isso, a aplicação estará funcionando normalmente.
 
 Compilando o Vue.js:
-- Um projeto em Laravel já vem configurado para receber e usar as depêndencias do Vue, React e Bootstrap. Portanto, para criar e utilizar componentes do Vue nas views deste projeto, apenas instale as dependências do Vue com o comando 'npm install' no cmd/terminal.
+- Um projeto em Laravel já vem configurado para receber e usar as depêndencias do Vue, React e Bootstrap. Portanto, para criar e utilizar componentes do Vue nas views deste projeto, apenas instale as dependências do Vue com o comando 'npm install' no cmd/terminal (se o npm estiver instalado).
 - Quando estiver editando um componente ou qualquer arquivo.vue, deixe um terminal aberto executando o comando npm run watch para compilar as alterações automaticamente.
 
 Principais arquivos e pastas:
