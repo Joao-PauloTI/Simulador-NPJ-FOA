@@ -23,7 +23,7 @@
                     <form class="form-inline">
                         <div class="col-xs-2">
                             <span><strong>* Número da GRERJ:</strong> </span>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control col-md-5" v-mask="'#############'" required>
                             <!--<span><strong> Valor da GRERJ: </strong> R$ 999,99</span>-->
                         </div>
                     </form>
@@ -45,7 +45,7 @@
 </template>
 <script>
 export default {
-    name: 'de-grerj',
+    name: 'degrerj',
     data: function() {
         return {
             showOpcao: ""

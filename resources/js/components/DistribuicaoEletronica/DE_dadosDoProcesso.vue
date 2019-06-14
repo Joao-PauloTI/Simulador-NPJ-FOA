@@ -81,333 +81,333 @@
                             <option>Escolha uma classe</option>
                         </select>
                         <!--Acidentes de Trabalho-->
-                        <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'acidente' && showComarca === 'voltaRedonda'">
-                            <option>Escolha uma classe</option>
-                            <option>Ação Civil Coletiva</option>
-                            <option>Ação Civil Pública</option>
-                            <option>Consignação em Pagamento – CPC</option>
-                            <option>Cumprimento de Sentença</option>
-                            <option>Embargos à Execução (por Título Judicial, Contra a Fazenda Pública e Carta Precatória)</option>
-                            <option>Execução de Título Extrajudicial contra a Fazenda Pública</option>
-                            <option>Execução de Título Extrajudicial – CPC</option>
-                            <option>Habilitação</option>
-                            <option>Mandado de Segurança – CPC</option>
-                            <option>Notificação</option>
-                            <option>Petição – Cível</option>
-                            <option>Procedimento Comum</option>
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'acidente' && showComarca === 'voltaRedonda'">
+                            <option value="">Escolha uma classe</option>
+                            <option value="acidente1">Ação Civil Coletiva</option>
+                            <option value="acidente2">Ação Civil Pública</option>
+                            <option value="acidente3">Consignação em Pagamento – CPC</option>
+                            <option value="acidente4">Cumprimento de Sentença</option>
+                            <option value="acidente5">Embargos à Execução (por Título Judicial, Contra a Fazenda Pública e Carta Precatória)</option>
+                            <option value="acidente6">Execução de Título Extrajudicial contra a Fazenda Pública</option>
+                            <option value="acidente7">Execução de Título Extrajudicial – CPC</option>
+                            <option value="acidente8">Habilitação</option>
+                            <option value="acidente9">Mandado de Segurança – CPC</option>
+                            <option value="acidente10">Notificação</option>
+                            <option value="acidente11">Petição – Cível</option>
+                            <option value="acidente12">Procedimento Comum</option>
                         </select>
                         <!--Cível-->
-                        <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'civel' && showComarca === 'voltaRedonda'">
-                            <option>Escolha uma classe</option>
-                            <option>Ação Civil Coletiva</option>
-                            <option>Ação Civil Pública</option>
-                            <option>Ação Civil Pública- ECA</option>
-                            <option>Ação Popular – Lei 4717/65</option>
-                            <option>Alvará Judicial – Lei 6858/80</option>
-                            <option>Busca e Apreensão em Alienação Fiduciária</option>
-                            <option>Consignação em Pagamento – CPC</option>
-                            <option>Cumprimento de Sentença</option>
-                            <option>Cumprimento Provisório de Decisão</option>
-                            <option>Cumprimento Provisório de Sentença</option>
-                            <option>Desapropriação</option>
-                            <option>Despejo</option>
-                            <option>Despejo por Falta de Pagamento</option>
-                            <option>Despejo por Falta de Pagamento cumulado com Cobranças</option>
-                            <option>Dissolução Parcial de Sociedades</option>
-                            <option>Embargos – ECA</option>
-                            <option>Embargos à execução (por Título Judicial, Contra a Fazenda Pública e Carta Precatória)</option>
-                            <option>Embargos de Terceiro – CPC</option>
-                            <option>Execução de Título extrajudicial – CPC</option>
-                            <option>Execução de Hipoteca</option>
-                            <option>Exibição de Documento ou Coisa</option>
-                            <option>Falência de Empresários, Socied. Empresárias, Microempresas e Empresas de Peq. Porte – Requerimento</option>
-                            <option>Habeas Data</option>
-                            <option>Habilitação</option>
-                            <option>Habilitação de Crédito</option>
-                            <option>Homologação de Transação Extrajudicial</option>
-                            <option>Homologação de Penhor Legal</option>
-                            <option>Imissão na Posse</option>
-                            <option>Insolvência Requerida pelo Credor</option>
-                            <option>Insolvência Requerida pelo Devedor ou pelo Espólio</option>
-                            <option>Interdito Proibitório</option>
-                            <option>Inventário</option>
-                            <option>Liquidação Provisória de Sentença pelo Procedimento Comum</option>
-                            <option>Mandado de Segurança – CPC</option>
-                            <option>Monitória</option>
-                            <option>Notificação</option>
-                            <option>Oposição</option>
-                            <option>Petição – Cível</option>
-                            <option>Procedimento Comum</option>
-                            <option>Protesto – CPC</option>
-                            <option>Reintegração/Manutenção de Posse</option>
-                            <option>Requerimento de Apreensão de Veículo</option>
-                            <option>Requerimento de Reintegração de Posse</option>
-                            <option>Tutela Antecipada Antecedente</option>
-                            <option>Tutela Cautelar Antecedente</option>
-                            <option>Usucapião</option>
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'civel' && showComarca === 'voltaRedonda'">
+                            <option value="">Escolha uma classe</option>
+                            <option value="civel">Ação Civil Coletiva</option>
+                            <option value="civel">Ação Civil Pública</option>
+                            <option value="civel">Ação Civil Pública- ECA</option>
+                            <option value="civel">Ação Popular – Lei 4717/65</option>
+                            <option value="civel">Alvará Judicial – Lei 6858/80</option>
+                            <option value="civel">Busca e Apreensão em Alienação Fiduciária</option>
+                            <option value="civel">Consignação em Pagamento – CPC</option>
+                            <option value="civel">Cumprimento de Sentença</option>
+                            <option value="civel">Cumprimento Provisório de Decisão</option>
+                            <option value="civel">Cumprimento Provisório de Sentença</option>
+                            <option value="civel">Desapropriação</option>
+                            <option value="civel">Despejo</option>
+                            <option value="civel">Despejo por Falta de Pagamento</option>
+                            <option value="civel">Despejo por Falta de Pagamento cumulado com Cobranças</option>
+                            <option value="civel">Dissolução Parcial de Sociedades</option>
+                            <option value="civel">Embargos – ECA</option>
+                            <option value="civel">Embargos à execução (por Título Judicial, Contra a Fazenda Pública e Carta Precatória)</option>
+                            <option value="civel">Embargos de Terceiro – CPC</option>
+                            <option value="civel">Execução de Título extrajudicial – CPC</option>
+                            <option value="civel">Execução de Hipoteca</option>
+                            <option value="civel">Exibição de Documento ou Coisa</option>
+                            <option value="civel">Falência de Empresários, Socied. Empresárias, Microempresas e Empresas de Peq. Porte – Requerimento</option>
+                            <option value="civel">Habeas Data</option>
+                            <option value="civel">Habilitação</option>
+                            <option value="civel">Habilitação de Crédito</option>
+                            <option value="civel">Homologação de Transação Extrajudicial</option>
+                            <option value="civel">Homologação de Penhor Legal</option>
+                            <option value="civel">Imissão na Posse</option>
+                            <option value="civel">Insolvência Requerida pelo Credor</option>
+                            <option value="civel">Insolvência Requerida pelo Devedor ou pelo Espólio</option>
+                            <option value="civel">Interdito Proibitório</option>
+                            <option value="civel">Inventário</option>
+                            <option value="civel">Liquidação Provisória de Sentença pelo Procedimento Comum</option>
+                            <option value="civel">Mandado de Segurança – CPC</option>
+                            <option value="civel">Monitória</option>
+                            <option value="civel">Notificação</option>
+                            <option value="civel">Oposição</option>
+                            <option value="civel">Petição – Cível</option>
+                            <option value="civel">Procedimento Comum</option>
+                            <option value="civel">Protesto – CPC</option>
+                            <option value="civel">Reintegração/Manutenção de Posse</option>
+                            <option value="civel">Requerimento de Apreensão de Veículo</option>
+                            <option value="civel">Requerimento de Reintegração de Posse</option>
+                            <option value="civel">Tutela Antecipada Antecedente</option>
+                            <option value="civel">Tutela Cautelar Antecedente</option>
+                            <option value="civel">Usucapião</option>
                         </select>
                         <!--Dívida Ativa Estadual-->
-                        <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'dividaEstadual' && showComarca === 'voltaRedonda'">
-                            <option>Escolha uma classe</option>
-                            <option>Ação Civil Pública</option>
-                            <option>Alvará Judicial – Lei 6858/80</option>
-                            <option>Busca e Apreensão em Alienação Fiduciária</option>
-                            <option>Cautelar Fiscal</option>
-                            <option>Consignação em Pagamento – CPC</option>
-                            <option>Embargos à Execução Fiscal</option>
-                            <option>Embargos de Terceiro – CPC</option>
-                            <option>Execução de Título Judicial – CPC</option>
-                            <option>Execução Fiscal</option>
-                            <option>Habeas Data</option>
-                            <option>Homologação do Penhor Legal</option>
-                            <option>Imissão na Posse</option>
-                            <option>Mandado de Segurança – CPC</option>
-                            <option>Mandado de Segurança Coletivo</option>
-                            <option>Procedimento Comum</option>
-                            <option>Tutela Antecipada Antecedente</option>
-                            <option>Tutela Cautelar Antecedente</option>
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'dividaEstadual' && showComarca === 'voltaRedonda'">
+                            <option value="">Escolha uma classe</option>
+                            <option value="dividaEstadual">Ação Civil Pública</option>
+                            <option value="dividaEstadual">Alvará Judicial – Lei 6858/80</option>
+                            <option value="dividaEstadual">Busca e Apreensão em Alienação Fiduciária</option>
+                            <option value="dividaEstadual">Cautelar Fiscal</option>
+                            <option value="dividaEstadual">Consignação em Pagamento – CPC</option>
+                            <option value="dividaEstadual">Embargos à Execução Fiscal</option>
+                            <option value="dividaEstadual">Embargos de Terceiro – CPC</option>
+                            <option value="dividaEstadual">Execução de Título Judicial – CPC</option>
+                            <option value="dividaEstadual">Execução Fiscal</option>
+                            <option value="dividaEstadual">Habeas Data</option>
+                            <option value="dividaEstadual">Homologação do Penhor Legal</option>
+                            <option value="dividaEstadual">Imissão na Posse</option>
+                            <option value="dividaEstadual">Mandado de Segurança – CPC</option>
+                            <option value="dividaEstadual">Mandado de Segurança Coletivo</option>
+                            <option value="dividaEstadual">Procedimento Comum</option>
+                            <option value="dividaEstadual">Tutela Antecipada Antecedente</option>
+                            <option value="dividaEstadual">Tutela Cautelar Antecedente</option>
                         </select>
                         <!--Dívida Ativa Municipal-->
-                        <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'dividaMunicipal' && showComarca === 'voltaRedonda'">
-                            <option>Escolha uma classe</option>
-                            <option>Alvará Judicial – Lei 6858/80</option>
-                            <option>Busca e Apreensão em Alienação Fiduciária</option>
-                            <option>Consignação em Pagamento – CPC</option>
-                            <option>Cumprimento Provisório de Sentença</option>
-                            <option>Embargos à Execução Fiscal</option>
-                            <option>Embargos de Terceiro – CPC</option>
-                            <option>Execução de Título Judicial – CPC</option>
-                            <option>Execução Fiscal</option>
-                            <option>Homologação do Penhor Legal</option>
-                            <option>Imissão Na Posse</option>
-                            <option>Mandado de Injunção</option>
-                            <option>Mandado de Segurança – CPC</option>
-                            <option>Mandado de Segurança Coletivo</option>
-                            <option>Petição – Cível</option>
-                            <option>Procedimento Comum</option>
-                            <option>Tutela Antecipada Antecedente</option>
-                            <option>Tutela Cautelar Antecedente</option>
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'dividaMunicipal' && showComarca === 'voltaRedonda'">
+                            <option value="">Escolha uma classe</option>
+                            <option value="dividaMunicipal">Alvará Judicial – Lei 6858/80</option>
+                            <option value="dividaMunicipal">Busca e Apreensão em Alienação Fiduciária</option>
+                            <option value="dividaMunicipal">Consignação em Pagamento – CPC</option>
+                            <option value="dividaMunicipal">Cumprimento Provisório de Sentença</option>
+                            <option value="dividaMunicipal">Embargos à Execução Fiscal</option>
+                            <option value="dividaMunicipal">Embargos de Terceiro – CPC</option>
+                            <option value="dividaMunicipal">Execução de Título Judicial – CPC</option>
+                            <option value="dividaMunicipal">Execução Fiscal</option>
+                            <option value="dividaMunicipal">Homologação do Penhor Legal</option>
+                            <option value="dividaMunicipal">Imissão Na Posse</option>
+                            <option value="dividaMunicipal">Mandado de Injunção</option>
+                            <option value="dividaMunicipal">Mandado de Segurança – CPC</option>
+                            <option value="dividaMunicipal">Mandado de Segurança Coletivo</option>
+                            <option value="dividaMunicipal">Petição – Cível</option>
+                            <option value="dividaMunicipal">Procedimento Comum</option>
+                            <option value="dividaMunicipal">Tutela Antecipada Antecedente</option>
+                            <option value="dividaMunicipal">Tutela Cautelar Antecedente</option>
                         </select>
                         <!--Empresarial-->
-                        <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'empresarial' && showComarca === 'voltaRedonda'">
-                            <option>Escolha uma classe</option>
-                            <option>Ação Civil Coletiva</option>
-                            <option>Ação Civil Pública</option>
-                            <option>Alienação Judicial</option>
-                            <option>Busca e Apreensão em alienação Fiduciária</option>
-                            <option>Consignação em Pagamento – CPC</option>
-                            <option>Cumprimento de Sentença</option>
-                            <option>Cumprimento Provisório de Sentença</option>
-                            <option>Despejo</option>
-                            <option>Despejo por falta de pagamento</option>
-                            <option>Despejo por Falta de Pagamento Cumulado Com Cobrança</option>
-                            <option>Dissolução Parcial de Sociedade</option>
-                            <option>Embargos à execução (por Título Judicial, Contra a Fazenda Pública e Carta Precatória)</option>
-                            <option>Embargos de Terceiro – CPC</option>
-                            <option>Extinção das Obrigações do Falido</option>
-                            <option>Falência de Empresários, Socied. Empresárias, Microempresas e Empresas de Peq. Porte – Requerimento</option>
-                            <option>Habilitação</option>
-                            <option>Habilitação de Crédito</option>
-                            <option>Homologação de Transação Extrajudicial</option>
-                            <option>Imissão na Posse</option>
-                            <option>Impugnação de Crédito</option>
-                            <option>Insolvência Requerida pelo Credor</option>
-                            <option>Insolvência Requerida pelo Devedor ou pelo Espólio</option>
-                            <option>Interdito Proibitório</option>
-                            <option>Liquidação Provisória de Sentença pelo procedimento comum</option>
-                            <option>Monitória</option>
-                            <option>Petição – Cível</option>
-                            <option>Prestação de Contas – Exigidas</option>
-                            <option>Procedimento Comum</option>
-                            <option>Produção Antecipada de Provas – CPC</option>
-                            <option>Protesto – CPC</option>
-                            <option>Reintegração/Manutenção de Posse</option>
-                            <option>Restituição de Coisa ou Dinheiro na Falência do Devedor Empresário</option>
-                            <option>Tutela Antecipada Antecedente</option>
-                            <option>Tutela Cautelar Antecedente</option>
-                            <option>Usucapião</option>
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'empresarial' && showComarca === 'voltaRedonda'">
+                            <option value="">Escolha uma classe</option>
+                            <option value="empresarial">Ação Civil Coletiva</option>
+                            <option value="empresarial">Ação Civil Pública</option>
+                            <option value="empresarial">Alienação Judicial</option>
+                            <option value="empresarial">Busca e Apreensão em alienação Fiduciária</option>
+                            <option value="empresarial">Consignação em Pagamento – CPC</option>
+                            <option value="empresarial">Cumprimento de Sentença</option>
+                            <option value="empresarial">Cumprimento Provisório de Sentença</option>
+                            <option value="empresarial">Despejo</option>
+                            <option value="empresarial">Despejo por falta de pagamento</option>
+                            <option value="empresarial">Despejo por Falta de Pagamento Cumulado Com Cobrança</option>
+                            <option value="empresarial">Dissolução Parcial de Sociedade</option>
+                            <option value="empresarial">Embargos à execução (por Título Judicial, Contra a Fazenda Pública e Carta Precatória)</option>
+                            <option value="empresarial">Embargos de Terceiro – CPC</option>
+                            <option value="empresarial">Extinção das Obrigações do Falido</option>
+                            <option value="empresarial">Falência de Empresários, Socied. Empresárias, Microempresas e Empresas de Peq. Porte – Requerimento</option>
+                            <option value="empresarial">Habilitação</option>
+                            <option value="empresarial">Habilitação de Crédito</option>
+                            <option value="empresarial">Homologação de Transação Extrajudicial</option>
+                            <option value="empresarial">Imissão na Posse</option>
+                            <option value="empresarial">Impugnação de Crédito</option>
+                            <option value="empresarial">Insolvência Requerida pelo Credor</option>
+                            <option value="empresarial">Insolvência Requerida pelo Devedor ou pelo Espólio</option>
+                            <option value="empresarial">Interdito Proibitório</option>
+                            <option value="empresarial">Liquidação Provisória de Sentença pelo procedimento comum</option>
+                            <option value="empresarial">Monitória</option>
+                            <option value="empresarial">Petição – Cível</option>
+                            <option value="empresarial">Prestação de Contas – Exigidas</option>
+                            <option value="empresarial">Procedimento Comum</option>
+                            <option value="empresarial">Produção Antecipada de Provas – CPC</option>
+                            <option value="empresarial">Protesto – CPC</option>
+                            <option value="empresarial">Reintegração/Manutenção de Posse</option>
+                            <option value="empresarial">Restituição de Coisa ou Dinheiro na Falência do Devedor Empresário</option>
+                            <option value="empresarial">Tutela Antecipada Antecedente</option>
+                            <option value="empresarial">Tutela Cautelar Antecedente</option>
+                            <option value="empresarial">Usucapião</option>
                         </select>
                         <!--Família-->
-                        <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'familia' && showComarca === 'voltaRedonda'">
-                            <option>Escolha uma classe</option>
-                            <option>Abertura, Registro e Cumprimento de Testamento</option>
-                            <option>Adoção – ECA</option>
-                            <option>Alimentos – Lei Especial nº 5478/66</option>
-                            <option>Alteração do Regime de Bens</option>
-                            <option>Alvará Judicial – Lei 6858/80</option>
-                            <option>Autorização Judicial – ECA</option>
-                            <option>Busca e Apreensão Infracional</option>
-                            <option>Cautelar – Regulamentação de Visitas</option>
-                            <option>Consignação em Pagamento – CPC</option>
-                            <option>Conversão de Separação Judicial em Divórcio</option>
-                            <option>Cumprimento de Sentença</option>
-                            <option>Cumprimento Provisório de Decisão</option>
-                            <option>Cumprimento Provisório de Sentença</option>
-                            <option>Divórcio</option>
-                            <option>Divórcio Consensual</option>
-                            <option>Execução de Alimentos</option>
-                            <option>Habilitação</option>
-                            <option>Homologação de Transação Judicial</option>
-                            <option>Interdição</option>
-                            <option>Internação Provisória</option>
-                            <option>Inventário</option>
-                            <option>Liquidação Provisória de Sentença pelo Procedimento Comum</option>
-                            <option>Mandado de Segurança – CPC</option>
-                            <option>Outros Procedimentos de Jurisdição Voluntária</option>
-                            <option>Remoção e Dispensa/Tutela e Curatela</option>
-                            <option>Sobrepartilha</option>
-                            <option>Tutela Antecipada Antecedente</option>
-                            <option>Tutela Cautelar Antecedente</option>
-                            <option>Tutela e Curatela – Nomeação</option>
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'familia' && showComarca === 'voltaRedonda'">
+                            <option value="">Escolha uma classe</option>
+                            <option value="familia">Abertura, Registro e Cumprimento de Testamento</option>
+                            <option value="familia">Adoção – ECA</option>
+                            <option value="familia">Alimentos – Lei Especial nº 5478/66</option>
+                            <option value="familia">Alteração do Regime de Bens</option>
+                            <option value="familia">Alvará Judicial – Lei 6858/80</option>
+                            <option value="familia">Autorização Judicial – ECA</option>
+                            <option value="familia">Busca e Apreensão Infracional</option>
+                            <option value="familia">Cautelar – Regulamentação de Visitas</option>
+                            <option value="familia">Consignação em Pagamento – CPC</option>
+                            <option value="familia">Conversão de Separação Judicial em Divórcio</option>
+                            <option value="familia">Cumprimento de Sentença</option>
+                            <option value="familia">Cumprimento Provisório de Decisão</option>
+                            <option value="familia">Cumprimento Provisório de Sentença</option>
+                            <option value="familia">Divórcio</option>
+                            <option value="familia">Divórcio Consensual</option>
+                            <option value="familia">Execução de Alimentos</option>
+                            <option value="familia">Habilitação</option>
+                            <option value="familia">Homologação de Transação Judicial</option>
+                            <option value="familia">Interdição</option>
+                            <option value="familia">Internação Provisória</option>
+                            <option value="familia">Inventário</option>
+                            <option value="familia">Liquidação Provisória de Sentença pelo Procedimento Comum</option>
+                            <option value="familia">Mandado de Segurança – CPC</option>
+                            <option value="familia">Outros Procedimentos de Jurisdição Voluntária</option>
+                            <option value="familia">Remoção e Dispensa/Tutela e Curatela</option>
+                            <option value="familia">Sobrepartilha</option>
+                            <option value="familia">Tutela Antecipada Antecedente</option>
+                            <option value="familia">Tutela Cautelar Antecedente</option>
+                            <option value="familia">Tutela e Curatela – Nomeação</option>
                         </select>
                         <!--Fazenda Pública-->
-                        <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'fazenda' && showComarca === 'voltaRedonda'">
-                            <option>Escolha uma classe</option>
-                            <option>Ação Civil Coletiva</option>
-                            <option>Ação Civil de Improbidade Administrativa</option>
-                            <option>Ação Pública</option>
-                            <option>Ação Popular Lei 4.717/65</option>
-                            <option>Alienação Judicial</option>
-                            <option>Alvará Judicial Lei 6.858/80</option>
-                            <option>Busca e Apreensão Com Alienação Fidunciária</option>
-                            <option>Consignação em Pagamento – CPC</option>
-                            <option>Consignatória de Aluguéis</option>
-                            <option>Contestação em Foro Diverso</option>
-                            <option>Cumprimento de Sentença</option>
-                            <option>Cumprimento Provisório de Sentença</option>
-                            <option>Cumprimento Provisório de Decisão</option>
-                            <option>Demarcação/Divisão</option>
-                            <option>Depósito da Lei 8.866/94</option>
-                            <option>Desapropriação</option>
-                            <option>Despejo</option>
-                            <option>Despejo por Falta de Pagamento</option>
-                            <option>Despejo por Falta de Pagamento Cumulado com Cobrança</option>
-                            <option>Discriminatório</option>
-                            <option>Embargos à Execução Fiscal</option>
-                            <option>Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)</option>
-                            <option>Embargos à Terceiro – CPC</option>
-                            <option>Execução de Título Extrajudicial Contra a Fazenda Pública</option>
-                            <option>Execução de Título Extrajudicial – CPC</option>
-                            <option>Execução Hipotecária</option>
-                            <option>Exibição de Documento ou Coisa</option>
-                            <option>Habeas Data</option>
-                            <option>Habilitação</option>
-                            <option>Homologação de Transação Extrajudicial</option>
-                            <option>Homologação de Penhor Legal</option>
-                            <option>Imissão na Posse</option>
-                            <option>Interdito Proibitório</option>
-                            <option>Interpelação</option>
-                            <option>Liquidação Provisória de Sentença Pelo Procedimento Comum</option>
-                            <option>Mandado de Injunção</option>
-                            <option>Mandado de Segurança – CPC</option>
-                            <option>Mandado de Segurança Coletivo</option>
-                            <option>Monitória</option>
-                            <option>Notificação</option>
-                            <option>Oposição</option>
-                            <option>Outros Procedimentos de Jurisdição Voluntária</option>
-                            <option>Pedido de Providência</option>
-                            <option>Petição – Cível</option>
-                            <option>Prestação de Contas – Exigível</option>
-                            <option>Procedimento Comum</option>
-                            <option>Processo Administrativo</option>
-                            <option>Produção Antecipada de Provas – CPC</option>
-                            <option>Protesto – CPC</option>
-                            <option>Reintegração e manutenção de Posse</option>
-                            <option>Renovatória de Locação</option>
-                            <option>Restauração de Autos</option>
-                            <option>Revisional de Aluguel</option>
-                            <option>Tutela Antecipada Antecedente</option>
-                            <option>Tutela Cautelar Antecedente</option>
-                            <option>Usucapião</option>
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'fazenda' && showComarca === 'voltaRedonda'">
+                            <option value="">Escolha uma classe</option>
+                            <option value="fazenda">Ação Civil Coletiva</option>
+                            <option value="fazenda">Ação Civil de Improbidade Administrativa</option>
+                            <option value="fazenda">Ação Pública</option>
+                            <option value="fazenda">Ação Popular Lei 4.717/65</option>
+                            <option value="fazenda">Alienação Judicial</option>
+                            <option value="fazenda">Alvará Judicial Lei 6.858/80</option>
+                            <option value="fazenda">Busca e Apreensão Com Alienação Fidunciária</option>
+                            <option value="fazenda">Consignação em Pagamento – CPC</option>
+                            <option value="fazenda">Consignatória de Aluguéis</option>
+                            <option value="fazenda">Contestação em Foro Diverso</option>
+                            <option value="fazenda">Cumprimento de Sentença</option>
+                            <option value="fazenda">Cumprimento Provisório de Sentença</option>
+                            <option value="fazenda">Cumprimento Provisório de Decisão</option>
+                            <option value="fazenda">Demarcação/Divisão</option>
+                            <option value="fazenda">Depósito da Lei 8.866/94</option>
+                            <option value="fazenda">Desapropriação</option>
+                            <option value="fazenda">Despejo</option>
+                            <option value="fazenda">Despejo por Falta de Pagamento</option>
+                            <option value="fazenda">Despejo por Falta de Pagamento Cumulado com Cobrança</option>
+                            <option value="fazenda">Discriminatório</option>
+                            <option value="fazenda">Embargos à Execução Fiscal</option>
+                            <option value="fazenda">Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)</option>
+                            <option value="fazenda">Embargos à Terceiro – CPC</option>
+                            <option value="fazenda">Execução de Título Extrajudicial Contra a Fazenda Pública</option>
+                            <option value="fazenda">Execução de Título Extrajudicial – CPC</option>
+                            <option value="fazenda">Execução Hipotecária</option>
+                            <option value="fazenda">Exibição de Documento ou Coisa</option>
+                            <option value="fazenda">Habeas Data</option>
+                            <option value="fazenda">Habilitação</option>
+                            <option value="fazenda">Homologação de Transação Extrajudicial</option>
+                            <option value="fazenda">Homologação de Penhor Legal</option>
+                            <option value="fazenda">Imissão na Posse</option>
+                            <option value="fazenda">Interdito Proibitório</option>
+                            <option value="fazenda">Interpelação</option>
+                            <option value="fazenda">Liquidação Provisória de Sentença Pelo Procedimento Comum</option>
+                            <option value="fazenda">Mandado de Injunção</option>
+                            <option value="fazenda">Mandado de Segurança – CPC</option>
+                            <option value="fazenda">Mandado de Segurança Coletivo</option>
+                            <option value="fazenda">Monitória</option>
+                            <option value="fazenda">Notificação</option>
+                            <option value="fazenda">Oposição</option>
+                            <option value="fazenda">Outros Procedimentos de Jurisdição Voluntária</option>
+                            <option value="fazenda">Pedido de Providência</option>
+                            <option value="fazenda">Petição – Cível</option>
+                            <option value="fazenda">Prestação de Contas – Exigível</option>
+                            <option value="fazenda">Procedimento Comum</option>
+                            <option value="fazenda">Processo Administrativo</option>
+                            <option value="fazenda">Produção Antecipada de Provas – CPC</option>
+                            <option value="fazenda">Protesto – CPC</option>
+                            <option value="fazenda">Reintegração e manutenção de Posse</option>
+                            <option value="fazenda">Renovatória de Locação</option>
+                            <option value="fazenda">Restauração de Autos</option>
+                            <option value="fazenda">Revisional de Aluguel</option>
+                            <option value="fazenda">Tutela Antecipada Antecedente</option>
+                            <option value="fazenda">Tutela Cautelar Antecedente</option>
+                            <option value="fazenda">Usucapião</option>
                         </select>
                         <!--Juizado Especial Civil-->
-                        <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'juizado' && showComarca === 'voltaRedonda'">
-                            <option>Escolha uma classe</option>
-                            <option>Alvará Judicial Lei 6.858/80</option>
-                            <option>Cumprimento de Sentença</option>
-                            <option>Cumprimento Provisório de Sentença</option>
-                            <option>Despejo</option>
-                            <option>Despejo por Falta de Pagamento</option>
-                            <option>Despejo por Falta de Pagamento Cumulado com Cobrança</option>
-                            <option>Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)</option>
-                            <option>Embargos de Terceiro – CPC</option>
-                            <option>Execução de Título Extrajudicial – CPC</option>
-                            <option>Exibição de Documento ou Coisa</option>
-                            <option>Homologação de Transação Extrajudicial</option>
-                            <option>Monitória</option>
-                            <option>Procedimento do Juizado Especial Civil/Fazendário</option>
-                            <option>Protesto – CPC</option>
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'juizado' && showComarca === 'voltaRedonda'">
+                            <option value="">Escolha uma classe</option>
+                            <option value="juizado">Alvará Judicial Lei 6.858/80</option>
+                            <option value="juizado">Cumprimento de Sentença</option>
+                            <option value="juizado">Cumprimento Provisório de Sentença</option>
+                            <option value="juizado">Despejo</option>
+                            <option value="juizado">Despejo por Falta de Pagamento</option>
+                            <option value="juizado">Despejo por Falta de Pagamento Cumulado com Cobrança</option>
+                            <option value="juizado">Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)</option>
+                            <option value="juizado">Embargos de Terceiro – CPC</option>
+                            <option value="juizado">Execução de Título Extrajudicial – CPC</option>
+                            <option value="juizado">Exibição de Documento ou Coisa</option>
+                            <option value="juizado">Homologação de Transação Extrajudicial</option>
+                            <option value="juizado">Monitória</option>
+                            <option value="juizado">Procedimento do Juizado Especial Civil/Fazendário</option>
+                            <option value="juizado">Protesto – CPC</option>
                         </select>
                         <!--Órfãos e Sucessões-->
-                        <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'orfaos' && showComarca === 'voltaRedonda'">
-                            <option>Escolha uma classe</option>
-                            <option>Abertura, Registro e Cumprimento de Testamento</option>
-                            <option>Alienação Judicial</option>
-                            <option>Alvará Judicial Lei 6.858/80</option>
-                            <option>Arrolamento Comum</option>
-                            <option>Arrolamento Sumário</option>
-                            <option>Cumprimento Provisório de Sentença</option>
-                            <option>Declaração de Ausência</option>
-                            <option>Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)</option>
-                            <option>Embargos de Terceiro – CPC</option>
-                            <option>Habilitação</option>
-                            <option>Herança Jacente</option>
-                            <option>Homologação de Transação Extrajudicial</option>
-                            <option>Interdição</option>
-                            <option>Interdito Probatório</option>
-                            <option>Interpelação</option>
-                            <option>Inventário</option>
-                            <option>Notificação</option>
-                            <option>Oposição</option>
-                            <option>Outros Procedimentos de Jurisdição Voluntária</option>
-                            <option>Pedidos de Providências</option>
-                            <option>Petição – Cível</option>
-                            <option>Prestação de Contas – ECA</option>
-                            <option>Prestação de Contas – Exigidas</option>
-                            <option>Procedimento Comum</option>
-                            <option>Remoção e Dispensa/Tutela e Curatela</option>
-                            <option>Sobrepartilha</option>
-                            <option>Tutela Antecipada Antecedente</option>
-                            <option>Tutela e Curatela – Nomeação</option>
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'orfaos' && showComarca === 'voltaRedonda'">
+                            <option value="">Escolha uma classe</option>
+                            <option value="orfaos">Abertura, Registro e Cumprimento de Testamento</option>
+                            <option value="orfaos">Alienação Judicial</option>
+                            <option value="orfaos">Alvará Judicial Lei 6.858/80</option>
+                            <option value="orfaos">Arrolamento Comum</option>
+                            <option value="orfaos">Arrolamento Sumário</option>
+                            <option value="orfaos">Cumprimento Provisório de Sentença</option>
+                            <option value="orfaos">Declaração de Ausência</option>
+                            <option value="orfaos">Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)</option>
+                            <option value="orfaos">Embargos de Terceiro – CPC</option>
+                            <option value="orfaos">Habilitação</option>
+                            <option value="orfaos">Herança Jacente</option>
+                            <option value="orfaos">Homologação de Transação Extrajudicial</option>
+                            <option value="orfaos">Interdição</option>
+                            <option value="orfaos">Interdito Probatório</option>
+                            <option value="orfaos">Interpelação</option>
+                            <option value="orfaos">Inventário</option>
+                            <option value="orfaos">Notificação</option>
+                            <option value="orfaos">Oposição</option>
+                            <option value="orfaos">Outros Procedimentos de Jurisdição Voluntária</option>
+                            <option value="orfaos">Pedidos de Providências</option>
+                            <option value="orfaos">Petição – Cível</option>
+                            <option value="orfaos">Prestação de Contas – ECA</option>
+                            <option value="orfaos">Prestação de Contas – Exigidas</option>
+                            <option value="orfaos">Procedimento Comum</option>
+                            <option value="orfaos">Remoção e Dispensa/Tutela e Curatela</option>
+                            <option value="orfaos">Sobrepartilha</option>
+                            <option value="orfaos">Tutela Antecipada Antecedente</option>
+                            <option value="orfaos">Tutela e Curatela – Nomeação</option>
                         </select>
                         <!--Registro Civil de Pessoas Naturais-->
-                        <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'registroCivil' && showComarca === 'voltaRedonda'">
-                            <option>Escolha uma classe</option>
-                            <option>Alteração de Regime de Bens</option>
-                            <option>Averiguação Oficiosa de Paternidade</option>
-                            <option>Habilitação para Casamento – RCPN</option>
-                            <option>Homologação e Transação Extrajudicial</option>
-                            <option>Mandado de Segurança – CPC</option>
-                            <option>Outros Procedimentos de Jurisdição Voluntária</option>
-                            <option>Petição – Cível</option>
-                            <option>Procedimento Comum</option>
-                            <option>Registro de Casamento Nuncupativo</option>
-                            <option>Sindicância</option>
-                            <option>Retificação ou Suprimento ou Restauração do Registo Cível</option>
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'registroCivil' && showComarca === 'voltaRedonda'">
+                            <option value="">Escolha uma classe</option>
+                            <option value="registroCivel">Alteração de Regime de Bens</option>
+                            <option value="registroCivel">Averiguação Oficiosa de Paternidade</option>
+                            <option value="registroCivel">Habilitação para Casamento – RCPN</option>
+                            <option value="registroCivel">Homologação e Transação Extrajudicial</option>
+                            <option value="registroCivel">Mandado de Segurança – CPC</option>
+                            <option value="registroCivel">Outros Procedimentos de Jurisdição Voluntária</option>
+                            <option value="registroCivel">Petição – Cível</option>
+                            <option value="registroCivel">Procedimento Comum</option>
+                            <option value="registroCivel">Registro de Casamento Nuncupativo</option>
+                            <option value="registroCivel">Sindicância</option>
+                            <option value="registroCivel">Retificação ou Suprimento ou Restauração do Registo Cível</option>
                         </select>
                         <!--Registro Público-->
-                        <select class="custom-select" id="ddp_classe" v-show="showCompetencia === 'registroPublico' && showComarca === 'voltaRedonda'">
-                            <option>Escolha uma classe</option>
-                            <option>Cumprimento Provisório de Sentença</option>
-                            <option>Cumprimento Provisório de Decisão</option>
-                            <option>Demarcação/Divisão</option>
-                            <option>Declaração de Ausência</option>
-                            <option>Dúvida</option>
-                            <option>Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)</option>
-                            <option>Embargos de Terceiro – CPC</option>
-                            <option>Habilitação</option>
-                            <option>Homologação e Transação Extrajudicial</option>
-                            <option>Mandado de Segurança – CPC</option>
-                            <option>Notificação</option>
-                            <option>Oposição</option>
-                            <option>Outros Procedimentos de Jurisdição Voluntária</option>
-                            <option>Pedidos de Providências</option>
-                            <option>Petição – Cível</option>
-                            <option>Procedimento Comum</option>
-                            <option>Processo Administrativo</option>
-                            <option>Protesto – CPC</option>
-                            <option>Registro Torrens</option>
-                            <option>Retificação de Registro de Imóveis</option>
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'registroPublico' && showComarca === 'voltaRedonda'">
+                            <option value="">Escolha uma classe</option>
+                            <option value="registroPublico">Cumprimento Provisório de Sentença</option>
+                            <option value="registroPublico">Cumprimento Provisório de Decisão</option>
+                            <option value="registroPublico">Demarcação/Divisão</option>
+                            <option value="registroPublico">Declaração de Ausência</option>
+                            <option value="registroPublico">Dúvida</option>
+                            <option value="registroPublico">Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)</option>
+                            <option value="registroPublico">Embargos de Terceiro – CPC</option>
+                            <option value="registroPublico">Habilitação</option>
+                            <option value="registroPublico">Homologação e Transação Extrajudicial</option>
+                            <option value="registroPublico">Mandado de Segurança – CPC</option>
+                            <option value="registroPublico">Notificação</option>
+                            <option value="registroPublico">Oposição</option>
+                            <option value="registroPublico">Outros Procedimentos de Jurisdição Voluntária</option>
+                            <option value="registroPublico">Pedidos de Providências</option>
+                            <option value="registroPublico">Petição – Cível</option>
+                            <option value="registroPublico">Procedimento Comum</option>
+                            <option value="registroPublico">Processo Administrativo</option>
+                            <option value="registroPublico">Protesto – CPC</option>
+                            <option value="registroPublico">Registro Torrens</option>
+                            <option value="registroPublico">Retificação de Registro de Imóveis</option>
                         </select>
                     </label>
                 </div>
@@ -415,11 +415,15 @@
                 <!--Distribuição-->
                 <div>
                     <label for="ddp_distribuicao"><strong>* Distribuição</strong>
-                        <select class="custom-select" id="ddp_distribuicao">
+                        <select class="custom-select" id="ddp_distribuicao" v-show="showComarca === '' || showCompetencia === '' || showClasse === ''">
                             <option>Escolha uma distribuição</option>
-                            <option>...</option>
-                            <option>...</option>
-                            <option>...</option>
+                        </select>
+                        <select class="custom-select" id="ddp_distribuicao" v-show="showComarca === 'voltaRedonda' && showCompetencia === 'acidente' && showClasse === 'acidente1'">
+                            <option>Escolha uma distribuição</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
                         </select>
                     </label>
                 </div>
@@ -441,11 +445,12 @@
 </template>
 <script>
 export default {
-    name: 'de-dadosdoprocesso',
+    name: 'dedadosdoprocesso',
     data: function() {
         return {
             showCompetencia: "",
-            showComarca: ""
+            showComarca: "",
+            showClasse: "",
         }
     },
 }

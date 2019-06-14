@@ -19,9 +19,9 @@
                     <form class="form-inline">
                         <div class="col-xs-2">
                             <span><strong>* Número do Processo Principal:</strong> </span>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control col-md-3" v-mask="'#######-##.####'" required>
                             <span> .8.19. </span>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control col-md-1" v-mask="'####'" required>
                             <button type="submit" class="btn btn-primary">Consultar</button>
                         </div>
                     </form>
@@ -33,7 +33,7 @@
 </template>
 <script>
 export default {
-    name: 'de-processoprincipal',
+    name: 'deprocessoprincipal',
     data: function() {
         return {
             showDpd: ""

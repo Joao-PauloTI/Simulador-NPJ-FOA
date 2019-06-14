@@ -19,20 +19,20 @@
                     </div>
                     <div class="col-xs-6" v-show="showOpcao === 'advogado'">
                         <form class="form-inline">
-                            <span> Número de OAB: </span>
+                            <span><strong> Número de OAB:</strong> </span>
                             <label for="regiaoOAB">
                                 <select class="custom-select" id="regiaoOAB">
                                     <option>RJ</option>
                                     <option>SP</option>
                                 </select>
                             </label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control col-md-5" v-mask="'######'" required>
                         </form>
                     </div>
                     <div class="col-xs-2" v-show="showOpcao === 'defensor'">
                         <form class="form-inline">
-                            <span> Matrícula: </span>
-                            <input type="text" class="form-control" required>
+                            <span><strong> Matrícula:</strong> </span>
+                            <input type="text" class="form-control col-md-5" v-mask="'##########'" required>
                         </form>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
 </template>
 <script>
 export default {
-    name: 'de-advogadoRepresentante',
+    name: 'deadvogadoRepresentante',
     data: function() {
         return {
             showOpcao: "advogado"

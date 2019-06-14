@@ -19,27 +19,29 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-Vue.component('de-grerj', require('./components/DistribuicaoEletronica/DE_grerj.vue').default);
-Vue.component('de-processoprincipal', require('./components/DistribuicaoEletronica/DE_processoPrincipal.vue').default);
-Vue.component('de-dadosdoprocesso', require('./components/DistribuicaoEletronica/DE_dadosDoProcesso.vue').default);
-Vue.component('de-advogadorepresentante', require('./components/DistribuicaoEletronica/DE_advogadoRepresentante.vue').default);
-Vue.component('de-autoresreusdocumentos', require('./components/DistribuicaoEletronica/DE_autoresReusDocumentos.vue').default);
-Vue.component('de-declaracaodeveracidade', require('./components/DistribuicaoEletronica/DE_declaracaoDeVeracidade.vue').default);
+Vue.component('degrerj', require('./components/DistribuicaoEletronica/DE_grerj.vue').default);
+Vue.component('deprocessoprincipal', require('./components/DistribuicaoEletronica/DE_processoPrincipal.vue').default);
+Vue.component('dedadosdoprocesso', require('./components/DistribuicaoEletronica/DE_dadosDoProcesso.vue').default);
+Vue.component('deadvogadorepresentante', require('./components/DistribuicaoEletronica/DE_advogadoRepresentante.vue').default);
+Vue.component('deautoresreusdocumentos', require('./components/DistribuicaoEletronica/DE_autoresReusDocumentos.vue').default);
+Vue.component('dedeclaracaodeveracidade', require('./components/DistribuicaoEletronica/DE_declaracaoDeVeracidade.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+import VueTheMask from 'vue-the-mask'
+Vue.use(VueTheMask)
 
 const app = new Vue({
     el: '#app',
     components: [
-      'de-grerj',
-      'de-processoPrincipal',
-      'de-dadosDoProcesso',
-      'de-advogadoRepresentante',
-      'de-autoresReusDocumentos',
-      'de-declaracaoDeVeracidade'
+      'degrerj',
+      'deprocessoPrincipal',
+      'dedadosDoProcesso',
+      'deadvogadoRepresentante',
+      'deautoresReusDocumentos',
+      'dedeclaracaoDeVeracidade'
     ],
 });
