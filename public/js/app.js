@@ -2123,6 +2123,247 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'de-dadosdoprocesso',
   data: function data() {
@@ -37952,13 +38193,14 @@ var render = function() {
                 name: "show",
                 rawName: "v-show",
                 value:
-                  _vm.showCompetencia === "civel" ||
-                  _vm.showCompetencia === "empresarial" ||
-                  _vm.showCompetencia === "familia" ||
-                  _vm.showCompetencia === "fazenda" ||
-                  _vm.showCompetencia === "orfaos",
+                  _vm.showComarca === "voltaRedonda" &&
+                  (_vm.showCompetencia === "civel" ||
+                    _vm.showCompetencia === "empresarial" ||
+                    _vm.showCompetencia === "familia" ||
+                    _vm.showCompetencia === "fazenda" ||
+                    _vm.showCompetencia === "orfaos"),
                 expression:
-                  "showCompetencia === 'civel' || showCompetencia === 'empresarial' || showCompetencia === 'familia' || showCompetencia === 'fazenda' || showCompetencia === 'orfaos'"
+                  "showComarca === 'voltaRedonda' && (showCompetencia === 'civel' || showCompetencia === 'empresarial' || showCompetencia === 'familia' || showCompetencia === 'fazenda' || showCompetencia === 'orfaos')"
               }
             ]
           },
@@ -37978,8 +38220,8 @@ var render = function() {
                   {
                     name: "show",
                     rawName: "v-show",
-                    value: _vm.showCompetencia === "",
-                    expression: "showCompetencia === ''"
+                    value: _vm.showComarca === "" || _vm.showCompetencia === "",
+                    expression: "showComarca === '' || showCompetencia === ''"
                   }
                 ],
                 staticClass: "custom-select",
@@ -37995,8 +38237,11 @@ var render = function() {
                   {
                     name: "show",
                     rawName: "v-show",
-                    value: _vm.showCompetencia === "acidente",
-                    expression: "showCompetencia === 'acidente'"
+                    value:
+                      _vm.showCompetencia === "acidente" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'acidente' && showComarca === 'voltaRedonda'"
                   }
                 ],
                 staticClass: "custom-select",
@@ -38011,7 +38256,33 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", [_vm._v("Consignação em Pagamento – CPC")]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Consignatória de Aluguéis")])
+                _c("option", [_vm._v("Cumprimento de Sentença")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Embargos à Execução (por Título Judicial, Contra a Fazenda Pública e Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Execução de Título Extrajudicial contra a Fazenda Pública"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Execução de Título Extrajudicial – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Habilitação")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Mandado de Segurança – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Notificação")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Petição – Cível")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Procedimento Comum")])
               ]
             ),
             _vm._v(" "),
@@ -38022,8 +38293,11 @@ var render = function() {
                   {
                     name: "show",
                     rawName: "v-show",
-                    value: _vm.showCompetencia === "civel",
-                    expression: "showCompetencia === 'civel'"
+                    value:
+                      _vm.showCompetencia === "civel" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'civel' && showComarca === 'voltaRedonda'"
                   }
                 ],
                 staticClass: "custom-select",
@@ -38032,156 +38306,121 @@ var render = function() {
               [
                 _c("option", [_vm._v("Escolha uma classe")]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Alienação Judicial")]),
+                _c("option", [_vm._v("Ação Civil Coletiva")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Ação Civil Pública")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Ação Civil Pública- ECA")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Ação Popular – Lei 4717/65")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Alvará Judicial – Lei 6858/80")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Compromisso Arbitral")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Consignação em Pagamento – CPC")])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.showCompetencia === "dividaEstadual",
-                    expression: "showCompetencia === 'dividaEstadual'"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { id: "ddp_classe" }
-              },
-              [
-                _c("option", [_vm._v("Escolha uma classe")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Interpelação")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Homologação do Penhor Legal")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Exibição de Documento ou Coisa")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Oposição")])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.showCompetencia === "dividaMunicipal",
-                    expression: "showCompetencia === 'dividaMunicipal'"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { id: "ddp_classe" }
-              },
-              [
-                _c("option", [_vm._v("Escolha uma classe")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Execução de Título Judicial – CPC")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Cumprimento Provisório de Sentença")]),
                 _vm._v(" "),
                 _c("option", [
                   _vm._v("Busca e Apreensão em Alienação Fiduciária")
                 ]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Mandado de Segurança Coletivo")])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.showCompetencia === "empresarial",
-                    expression: "showCompetencia === 'empresarial'"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { id: "ddp_classe" }
-              },
-              [
-                _c("option", [_vm._v("Escolha uma classe")]),
+                _c("option", [_vm._v("Consignação em Pagamento – CPC")]),
                 _vm._v(" "),
-                _c("option", [
-                  _vm._v(
-                    "Embargos à Execução (por Título Extrajudicial), (Contra a Fazenda Pública) e (Carta Precatória)"
-                  )
-                ]),
+                _c("option", [_vm._v("Cumprimento de Sentença")]),
                 _vm._v(" "),
-                _c("option", [
-                  _vm._v("Despejo por Falta de Pagamento Cumulado Com Cobrança")
-                ]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Extinção das Obrigações do Falido")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Inquérito Extrajudicial – Lei 6024/74")])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.showCompetencia === "familia",
-                    expression: "showCompetencia === 'familia'"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { id: "ddp_classe" }
-              },
-              [
-                _c("option", [_vm._v("Escolha uma classe")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Adoção – ECA")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Alteração do Regime de Bens")]),
+                _c("option", [_vm._v("Cumprimento Provisório de Decisão")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Cumprimento Provisório de Sentença")]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Imissão na Posse")])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.showCompetencia === "fazenda",
-                    expression: "showCompetencia === 'fazenda'"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { id: "ddp_classe" }
-              },
-              [
-                _c("option", [_vm._v("Escolha uma classe")]),
+                _c("option", [_vm._v("Desapropriação")]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Embargos à execução fiscal")]),
+                _c("option", [_vm._v("Despejo")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Despejo por Falta de Pagamento")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Despejo por Falta de Pagamento cumulado com Cobranças"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Dissolução Parcial de Sociedades")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Embargos – ECA")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Embargos à execução (por Título Judicial, Contra a Fazenda Pública e Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Embargos de Terceiro – CPC")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Execução de Título extrajudicial – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Execução de Hipoteca")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Exibição de Documento ou Coisa")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Falência de Empresários, Socied. Empresárias, Microempresas e Empresas de Peq. Porte – Requerimento"
+                  )
+                ]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Habeas Data")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Habilitação")]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Petição - Cível")])
+                _c("option", [_vm._v("Habilitação de Crédito")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Homologação de Transação Extrajudicial")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Homologação de Penhor Legal")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Imissão na Posse")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Insolvência Requerida pelo Credor")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Insolvência Requerida pelo Devedor ou pelo Espólio")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Interdito Proibitório")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Inventário")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Liquidação Provisória de Sentença pelo Procedimento Comum"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Mandado de Segurança – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Monitória")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Notificação")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Oposição")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Petição – Cível")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Procedimento Comum")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Protesto – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Reintegração/Manutenção de Posse")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Requerimento de Apreensão de Veículo")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Requerimento de Reintegração de Posse")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela Antecipada Antecedente")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela Cautelar Antecedente")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Usucapião")])
               ]
             ),
             _vm._v(" "),
@@ -38192,8 +38431,11 @@ var render = function() {
                   {
                     name: "show",
                     rawName: "v-show",
-                    value: _vm.showCompetencia === "juizado",
-                    expression: "showCompetencia === 'juizado'"
+                    value:
+                      _vm.showCompetencia === "dividaEstadual" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'dividaEstadual' && showComarca === 'voltaRedonda'"
                   }
                 ],
                 staticClass: "custom-select",
@@ -38202,13 +38444,41 @@ var render = function() {
               [
                 _c("option", [_vm._v("Escolha uma classe")]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Despejo")]),
+                _c("option", [_vm._v("Ação Civil Pública")]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Restauração de Autos")]),
+                _c("option", [_vm._v("Alvará Judicial – Lei 6858/80")]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Monitória")]),
+                _c("option", [
+                  _vm._v("Busca e Apreensão em Alienação Fiduciária")
+                ]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Interdito Probitório")])
+                _c("option", [_vm._v("Cautelar Fiscal")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Consignação em Pagamento – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Embargos à Execução Fiscal")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Embargos de Terceiro – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Execução de Título Judicial – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Execução Fiscal")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Habeas Data")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Homologação do Penhor Legal")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Imissão na Posse")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Mandado de Segurança – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Mandado de Segurança Coletivo")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Procedimento Comum")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela Antecipada Antecedente")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela Cautelar Antecedente")])
               ]
             ),
             _vm._v(" "),
@@ -38219,8 +38489,185 @@ var render = function() {
                   {
                     name: "show",
                     rawName: "v-show",
-                    value: _vm.showCompetencia === "orfaos",
-                    expression: "showCompetencia === 'orfaos'"
+                    value:
+                      _vm.showCompetencia === "dividaMunicipal" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'dividaMunicipal' && showComarca === 'voltaRedonda'"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "ddp_classe" }
+              },
+              [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Alvará Judicial – Lei 6858/80")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Busca e Apreensão em Alienação Fiduciária")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Consignação em Pagamento – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento Provisório de Sentença")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Embargos à Execução Fiscal")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Embargos de Terceiro – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Execução de Título Judicial – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Execução Fiscal")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Homologação do Penhor Legal")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Imissão Na Posse")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Mandado de Injunção")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Mandado de Segurança – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Mandado de Segurança Coletivo")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Petição – Cível")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Procedimento Comum")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela Antecipada Antecedente")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela Cautelar Antecedente")])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "empresarial" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'empresarial' && showComarca === 'voltaRedonda'"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "ddp_classe" }
+              },
+              [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Ação Civil Coletiva")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Ação Civil Pública")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Alienação Judicial")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Busca e Apreensão em alienação Fiduciária")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Consignação em Pagamento – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento de Sentença")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento Provisório de Sentença")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Despejo")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Despejo por falta de pagamento")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Despejo por Falta de Pagamento Cumulado Com Cobrança")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Dissolução Parcial de Sociedade")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Embargos à execução (por Título Judicial, Contra a Fazenda Pública e Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Embargos de Terceiro – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Extinção das Obrigações do Falido")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Falência de Empresários, Socied. Empresárias, Microempresas e Empresas de Peq. Porte – Requerimento"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Habilitação")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Habilitação de Crédito")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Homologação de Transação Extrajudicial")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Imissão na Posse")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Impugnação de Crédito")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Insolvência Requerida pelo Credor")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Insolvência Requerida pelo Devedor ou pelo Espólio")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Interdito Proibitório")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Liquidação Provisória de Sentença pelo procedimento comum"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Monitória")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Petição – Cível")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Prestação de Contas – Exigidas")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Procedimento Comum")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Produção Antecipada de Provas – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Protesto – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Reintegração/Manutenção de Posse")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Restituição de Coisa ou Dinheiro na Falência do Devedor Empresário"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela Antecipada Antecedente")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela Cautelar Antecedente")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Usucapião")])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "familia" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'familia' && showComarca === 'voltaRedonda'"
                   }
                 ],
                 staticClass: "custom-select",
@@ -38233,11 +38680,69 @@ var render = function() {
                   _vm._v("Abertura, Registro e Cumprimento de Testamento")
                 ]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Herança Jacente")]),
+                _c("option", [_vm._v("Adoção – ECA")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Alimentos – Lei Especial nº 5478/66")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Alteração do Regime de Bens")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Alvará Judicial – Lei 6858/80")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Autorização Judicial – ECA")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Busca e Apreensão Infracional")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cautelar – Regulamentação de Visitas")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Consignação em Pagamento – CPC")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Conversão de Separação Judicial em Divórcio")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento de Sentença")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento Provisório de Decisão")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento Provisório de Sentença")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Divórcio")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Divórcio Consensual")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Execução de Alimentos")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Habilitação")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Homologação de Transação Judicial")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Interdição")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Internação Provisória")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Inventário")]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Notificação")])
+                _c("option", [
+                  _vm._v(
+                    "Liquidação Provisória de Sentença pelo Procedimento Comum"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Mandado de Segurança – CPC")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Remoção e Dispensa/Tutela e Curatela")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Sobrepartilha")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela Antecipada Antecedente")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela Cautelar Antecedente")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela e Curatela – Nomeação")])
               ]
             ),
             _vm._v(" "),
@@ -38248,8 +38753,319 @@ var render = function() {
                   {
                     name: "show",
                     rawName: "v-show",
-                    value: _vm.showCompetencia === "registroCivil",
-                    expression: "showCompetencia === 'registroCivil'"
+                    value:
+                      _vm.showCompetencia === "fazenda" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'fazenda' && showComarca === 'voltaRedonda'"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "ddp_classe" }
+              },
+              [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Ação Civil Coletiva")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Ação Civil de Improbidade Administrativa")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Ação Pública")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Ação Popular Lei 4.717/65")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Alienação Judicial")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Alvará Judicial Lei 6.858/80")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Busca e Apreensão Com Alienação Fidunciária")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Consignação em Pagamento – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Consignatória de Aluguéis")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Contestação em Foro Diverso")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento de Sentença")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento Provisório de Sentença")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento Provisório de Decisão")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Demarcação/Divisão")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Depósito da Lei 8.866/94")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Desapropriação")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Despejo")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Despejo por Falta de Pagamento")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Despejo por Falta de Pagamento Cumulado com Cobrança")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Discriminatório")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Embargos à Execução Fiscal")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Embargos à Terceiro – CPC")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Execução de Título Extrajudicial Contra a Fazenda Pública"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Execução de Título Extrajudicial – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Execução Hipotecária")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Exibição de Documento ou Coisa")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Habeas Data")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Habilitação")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Homologação de Transação Extrajudicial")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Homologação de Penhor Legal")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Imissão na Posse")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Interdito Proibitório")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Interpelação")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Liquidação Provisória de Sentença Pelo Procedimento Comum"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Mandado de Injunção")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Mandado de Segurança – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Mandado de Segurança Coletivo")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Monitória")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Notificação")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Oposição")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Pedido de Providência")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Petição – Cível")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Prestação de Contas – Exigível")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Procedimento Comum")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Processo Administrativo")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Produção Antecipada de Provas – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Protesto – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Reintegração e manutenção de Posse")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Renovatória de Locação")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Restauração de Autos")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Revisional de Aluguel")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela Antecipada Antecedente")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela Cautelar Antecedente")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Usucapião")])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "juizado" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'juizado' && showComarca === 'voltaRedonda'"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "ddp_classe" }
+              },
+              [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Alvará Judicial Lei 6.858/80")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento de Sentença")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento Provisório de Sentença")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Despejo")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Despejo por Falta de Pagamento")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Despejo por Falta de Pagamento Cumulado com Cobrança")
+                ]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Embargos de Terceiro – CPC")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Execução de Título Extrajudicial – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Exibição de Documento ou Coisa")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Homologação de Transação Extrajudicial")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Monitória")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Procedimento do Juizado Especial Civil/Fazendário")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Protesto – CPC")])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "orfaos" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'orfaos' && showComarca === 'voltaRedonda'"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "ddp_classe" }
+              },
+              [
+                _c("option", [_vm._v("Escolha uma classe")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Abertura, Registro e Cumprimento de Testamento")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Alienação Judicial")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Alvará Judicial Lei 6.858/80")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Arrolamento Comum")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Arrolamento Sumário")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento Provisório de Sentença")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Declaração de Ausência")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v(
+                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Embargos de Terceiro – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Habilitação")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Herança Jacente")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Homologação de Transação Extrajudicial")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Interdição")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Interdito Probatório")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Interpelação")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Inventário")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Notificação")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Oposição")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Pedidos de Providências")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Petição – Cível")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Prestação de Contas – ECA")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Prestação de Contas – Exigidas")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Procedimento Comum")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Remoção e Dispensa/Tutela e Curatela")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Sobrepartilha")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela Antecipada Antecedente")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Tutela e Curatela – Nomeação")])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "registroCivil" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'registroCivil' && showComarca === 'voltaRedonda'"
                   }
                 ],
                 staticClass: "custom-select",
@@ -38260,11 +39076,31 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", [_vm._v("Alteração de Regime de Bens")]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Pedido de Providências")]),
+                _c("option", [_vm._v("Averiguação Oficiosa de Paternidade")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Habilitação para Casamento – RCPN")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Homologação e Transação Extrajudicial")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Mandado de Segurança – CPC")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Petição – Cível")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Procedimento Comum")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Registro de Casamento Nuncupativo")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Sindicância")]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Processo Administrativo")])
+                _c("option", [
+                  _vm._v(
+                    "Retificação ou Suprimento ou Restauração do Registo Cível"
+                  )
+                ])
               ]
             ),
             _vm._v(" "),
@@ -38275,8 +39111,11 @@ var render = function() {
                   {
                     name: "show",
                     rawName: "v-show",
-                    value: _vm.showCompetencia === "registroPublico",
-                    expression: "showCompetencia === 'registroPublico'"
+                    value:
+                      _vm.showCompetencia === "registroPublico" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'registroPublico' && showComarca === 'voltaRedonda'"
                   }
                 ],
                 staticClass: "custom-select",
@@ -38285,9 +39124,47 @@ var render = function() {
               [
                 _c("option", [_vm._v("Escolha uma classe")]),
                 _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento Provisório de Sentença")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Cumprimento Provisório de Decisão")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Demarcação/Divisão")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Declaração de Ausência")]),
+                _vm._v(" "),
                 _c("option", [_vm._v("Dúvida")]),
                 _vm._v(" "),
-                _c("option", [_vm._v("Embargos de Terceiros")]),
+                _c("option", [
+                  _vm._v(
+                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Embargos de Terceiro – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Habilitação")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Homologação e Transação Extrajudicial")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Mandado de Segurança – CPC")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Notificação")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Oposição")]),
+                _vm._v(" "),
+                _c("option", [
+                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
+                ]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Pedidos de Providências")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Petição – Cível")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Procedimento Comum")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Processo Administrativo")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Protesto – CPC")]),
                 _vm._v(" "),
                 _c("option", [_vm._v("Registro Torrens")]),
                 _vm._v(" "),
