@@ -1,8 +1,11 @@
 <template>
-    <div class="container">
+    <div class="container" id="ajudaadvogado">
         <div class="card">
             <div class="card-header">
-                <h5><strong>Advogado / Representante</strong></h5>
+                <h5>
+                    <strong>Advogado / Representante</strong>
+                    <a href="#ajudaadvogado" v-on:click="ajuda()">(?)</a>
+                </h5>
             </div>
             <div class="card-body">
                 <div class="row">
@@ -32,7 +35,7 @@
                     <div class="col-xs-2" v-show="showOpcao === 'defensor'">
                         <form class="form-inline">
                             <span><strong> Matrícula:</strong> </span>
-                            <input type="text" class="form-control col-md-5" v-mask="'##########'" required>
+                            <input type="text" class="form-control" v-mask="'##########'" required>
                         </form>
                     </div>
                 </div>
@@ -42,13 +45,18 @@
     </div>
 </template>
 <script>
-export default {
-    name: 'deadvogadoRepresentante',
-    data: function() {
-        return {
-            showOpcao: "advogado"
+    export default {
+        name: 'deadvogadoRepresentante',
+        data: function () {
+            return {
+                showOpcao: "advogado"
+            }
+        },
+        methods: {
+            ajuda: function () {
+                alert(
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+            }
         }
     }
-}
-
 </script>
