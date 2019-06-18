@@ -11,6 +11,7 @@
     <title>@yield('titulo')</title>
 </head>
 <body>
+    <br>
     @yield('conteudo')
     <!--Bootstrap JS-->
     <script type="text/javascript" src="{{ asset('js/app.js') }} "></script>

@@ -1851,6 +1851,39 @@ module.exports = function isBuffer (obj) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'cadadosPessoais',
+  data: function data() {
+    return {};
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue?vue&type=script&lang=js&":
 /*!**********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue?vue&type=script&lang=js& ***!
@@ -2458,6 +2491,38 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'dedadosdoprocesso',
   data: function data() {
@@ -2485,6 +2550,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
 //
 //
 //
@@ -2586,6 +2654,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'degrerj',
   data: function data() {
@@ -2611,6 +2682,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -37915,6 +37987,45 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=template&id=200a00da&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=template&id=200a00da& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "card" }, [
+        _c("div", { staticClass: "card-header" }, [
+          _c("h5", [_c("strong", [_vm._v("Dados Pessoais")])])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body" })
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue?vue&type=template&id=a7f1e752&":
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue?vue&type=template&id=a7f1e752& ***!
@@ -38211,7 +38322,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-body" }, [
-      _c("a", { attrs: { href: "#" } }, [_vm._v("Cadastrar Autor ")]),
+      _c("a", { attrs: { href: "localhost:8000/cadastrarautor" } }, [
+        _vm._v("Cadastrar Autor ")
+      ]),
       _vm._v(" "),
       _c("span", [_vm._v(" | ")]),
       _vm._v(" "),
@@ -38571,7 +38684,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", { attrs: { value: "acidente5" } }, [
                   _vm._v(
-                    "Embargos à Execução (por Título Judicial, Contra a Fazenda Pública e Carta Precatória)"
+                    "Embargos à Execução (por Título Judicial, Contra a Fazenda Pública\n                            e Carta Precatória)"
                   )
                 ]),
                 _vm._v(" "),
@@ -38718,7 +38831,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", { attrs: { value: "civel" } }, [
                   _vm._v(
-                    "Embargos à execução (por Título Judicial, Contra a Fazenda Pública e Carta Precatória)"
+                    "Embargos à execução (por Título Judicial, Contra a Fazenda Pública e\n                            Carta Precatória)"
                   )
                 ]),
                 _vm._v(" "),
@@ -38740,7 +38853,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", { attrs: { value: "civel" } }, [
                   _vm._v(
-                    "Falência de Empresários, Socied. Empresárias, Microempresas e Empresas de Peq. Porte – Requerimento"
+                    "Falência de Empresários, Socied. Empresárias, Microempresas e Empresas\n                            de Peq. Porte – Requerimento"
                   )
                 ]),
                 _vm._v(" "),
@@ -39159,7 +39272,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", { attrs: { value: "empresarial" } }, [
                   _vm._v(
-                    "Embargos à execução (por Título Judicial, Contra a Fazenda Pública e Carta Precatória)"
+                    "Embargos à execução (por Título Judicial, Contra a Fazenda\n                            Pública e Carta Precatória)"
                   )
                 ]),
                 _vm._v(" "),
@@ -39173,7 +39286,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", { attrs: { value: "empresarial" } }, [
                   _vm._v(
-                    "Falência de Empresários, Socied. Empresárias, Microempresas e Empresas de Peq. Porte – Requerimento"
+                    "Falência de Empresários, Socied. Empresárias, Microempresas e\n                            Empresas de Peq. Porte – Requerimento"
                   )
                 ]),
                 _vm._v(" "),
@@ -39211,7 +39324,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", { attrs: { value: "empresarial" } }, [
                   _vm._v(
-                    "Liquidação Provisória de Sentença pelo procedimento comum"
+                    "Liquidação Provisória de Sentença pelo procedimento comum\n                        "
                   )
                 ]),
                 _vm._v(" "),
@@ -39245,7 +39358,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", { attrs: { value: "empresarial" } }, [
                   _vm._v(
-                    "Restituição de Coisa ou Dinheiro na Falência do Devedor Empresário"
+                    "Restituição de Coisa ou Dinheiro na Falência do Devedor\n                            Empresário"
                   )
                 ]),
                 _vm._v(" "),
@@ -39555,7 +39668,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", { attrs: { value: "fazenda" } }, [
                   _vm._v(
-                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)"
+                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
                   )
                 ]),
                 _vm._v(" "),
@@ -39770,7 +39883,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", { attrs: { value: "juizado" } }, [
                   _vm._v(
-                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)"
+                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
                   )
                 ]),
                 _vm._v(" "),
@@ -39877,7 +39990,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", { attrs: { value: "orfaos" } }, [
                   _vm._v(
-                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)"
+                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
                   )
                 ]),
                 _vm._v(" "),
@@ -40048,7 +40161,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", { attrs: { value: "registroCivel" } }, [
                   _vm._v(
-                    "Retificação ou Suprimento ou Restauração do Registo Cível"
+                    "Retificação ou Suprimento ou Restauração do Registo Cível\n                        "
                   )
                 ])
               ]
@@ -40119,7 +40232,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("option", { attrs: { value: "registroPublico" } }, [
                   _vm._v(
-                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a Fazenda Pública e Carta Precatória)"
+                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra\n                            a Fazenda Pública e Carta Precatória)"
                   )
                 ]),
                 _vm._v(" "),
@@ -40275,7 +40388,11 @@ var staticRenderFns = [
             _c(
               "label",
               { staticClass: "custom-control-label", attrs: { for: "ddp1" } },
-              [_vm._v(" Prioridade p/ deficiente físico ou mental ")]
+              [
+                _vm._v(
+                  " Prioridade p/ deficiente físico ou mental\n                        "
+                )
+              ]
             )
           ]
         ),
@@ -40313,7 +40430,11 @@ var staticRenderFns = [
             _c(
               "label",
               { staticClass: "custom-control-label", attrs: { for: "ddp3" } },
-              [_vm._v(" Prioridade p/ portador de doença grave ")]
+              [
+                _vm._v(
+                  " Prioridade p/ portador de doença grave\n                        "
+                )
+              ]
             )
           ]
         ),
@@ -40376,7 +40497,7 @@ var staticRenderFns = [
           { staticClass: "custom-control-label", attrs: { for: "opcaoExtra" } },
           [
             _vm._v(
-              "Autor opta pela realização de audiência de conciliação ou de mediação?"
+              "Autor opta pela realização de audiência de\n                        conciliação ou de mediação?"
             )
           ]
         )
@@ -40480,7 +40601,7 @@ var staticRenderFns = [
             { staticClass: "custom-control-label", attrs: { for: "ddvCheck" } },
             [
               _vm._v(
-                ' "Declaro sob as penas da Lei, que as informações acima prestadas correspondem à verdade, tendo sido prestadas em obediência à lealdade processual e à boa fé, nos termos do Art.\n                        5º do CPC/15, ciente de que a eventual prestação de informações inverídicas poderá acarretar a incidência das penalidades previstas em lei."'
+                ' "Declaro sob as penas da Lei, que as\n                        informações acima prestadas correspondem à verdade, tendo sido prestadas em obediência à\n                        lealdade processual e à boa fé, nos termos do Art.\n                        5º do CPC/15, ciente de que a eventual prestação de informações inverídicas poderá acarretar\n                        a incidência das penalidades previstas em lei."'
               )
             ]
           )
@@ -40704,7 +40825,7 @@ var staticRenderFns = [
     return _c("p", [
       _c("strong", [
         _vm._v(
-          "ATENÇÃO SENHOR ADVOGADO: SE NÃO HOUVER PEDIDO DE JUSTIÇA GRATUITA, ANTES DE REALIZAR O CADASTRAMENTO DE SUA PETIÇÃO, FAÇA O RECOLHIMENTO DO GRERJ, POIS SEU NÚMERO E VALOR SERÃO NECESSÁRIOS."
+          "ATENÇÃO SENHOR ADVOGADO: SE NÃO HOUVER PEDIDO DE JUSTIÇA GRATUITA, ANTES DE REALIZAR O CADASTRAMENTO\n            DE SUA PETIÇÃO, FAÇA O RECOLHIMENTO DO GRERJ, POIS SEU NÚMERO E VALOR SERÃO NECESSÁRIOS."
         )
       ])
     ])
@@ -53142,13 +53263,16 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
  */
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+//Componentes da pasta DistribuicaoEletronica
 
 Vue.component('degrerj', __webpack_require__(/*! ./components/DistribuicaoEletronica/DE_grerj.vue */ "./resources/js/components/DistribuicaoEletronica/DE_grerj.vue")["default"]);
 Vue.component('deprocessoprincipal', __webpack_require__(/*! ./components/DistribuicaoEletronica/DE_processoPrincipal.vue */ "./resources/js/components/DistribuicaoEletronica/DE_processoPrincipal.vue")["default"]);
 Vue.component('dedadosdoprocesso', __webpack_require__(/*! ./components/DistribuicaoEletronica/DE_dadosDoProcesso.vue */ "./resources/js/components/DistribuicaoEletronica/DE_dadosDoProcesso.vue")["default"]);
 Vue.component('deadvogadorepresentante', __webpack_require__(/*! ./components/DistribuicaoEletronica/DE_advogadoRepresentante.vue */ "./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue")["default"]);
 Vue.component('deautoresreusdocumentos', __webpack_require__(/*! ./components/DistribuicaoEletronica/DE_autoresReusDocumentos.vue */ "./resources/js/components/DistribuicaoEletronica/DE_autoresReusDocumentos.vue")["default"]);
-Vue.component('dedeclaracaodeveracidade', __webpack_require__(/*! ./components/DistribuicaoEletronica/DE_declaracaoDeVeracidade.vue */ "./resources/js/components/DistribuicaoEletronica/DE_declaracaoDeVeracidade.vue")["default"]);
+Vue.component('dedeclaracaodeveracidade', __webpack_require__(/*! ./components/DistribuicaoEletronica/DE_declaracaoDeVeracidade.vue */ "./resources/js/components/DistribuicaoEletronica/DE_declaracaoDeVeracidade.vue")["default"]); //Componentes da pasta CadastrarAutor
+
+Vue.component('cadadospessoais', __webpack_require__(/*! ./components/CadastrarAutor/CA_dadosPessoais.vue */ "./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -53159,7 +53283,9 @@ Vue.component('dedeclaracaodeveracidade', __webpack_require__(/*! ./components/D
 Vue.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_0___default.a);
 var app = new Vue({
   el: '#app',
-  components: ['degrerj', 'deprocessoPrincipal', 'dedadosDoProcesso', 'deadvogadoRepresentante', 'deautoresReusDocumentos', 'dedeclaracaoDeVeracidade']
+  components: [//DistribuicaoEletronica
+  'degrerj', 'deprocessoPrincipal', 'dedadosDoProcesso', 'deadvogadoRepresentante', 'deautoresReusDocumentos', 'dedeclaracaoDeVeracidade', //CadastrarAutor
+  'cadadosPessoais']
 });
 
 /***/ }),
@@ -53219,6 +53345,75 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CA_dadosPessoais_vue_vue_type_template_id_200a00da___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CA_dadosPessoais.vue?vue&type=template&id=200a00da& */ "./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=template&id=200a00da&");
+/* harmony import */ var _CA_dadosPessoais_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CA_dadosPessoais.vue?vue&type=script&lang=js& */ "./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CA_dadosPessoais_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CA_dadosPessoais_vue_vue_type_template_id_200a00da___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CA_dadosPessoais_vue_vue_type_template_id_200a00da___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CadastrarAutor/CA_dadosPessoais.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_dadosPessoais_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CA_dadosPessoais.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_dadosPessoais_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=template&id=200a00da&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=template&id=200a00da& ***!
+  \****************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_dadosPessoais_vue_vue_type_template_id_200a00da___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CA_dadosPessoais.vue?vue&type=template&id=200a00da& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=template&id=200a00da&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_dadosPessoais_vue_vue_type_template_id_200a00da___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_dadosPessoais_vue_vue_type_template_id_200a00da___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

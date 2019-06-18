@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('DistribuicaoEletronica/DE_index');
 });
+
+Route::get('cadastrarautor', function () {
+	return view('CadastrarAutor/CA_index');
+});

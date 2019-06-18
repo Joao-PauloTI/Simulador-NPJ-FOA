@@ -9,7 +9,7 @@
                 </h5>
             </div>
             <div class="card-body">
-                <a href="#">Cadastrar Autor </a>
+                <a href="localhost:8000/cadastrarautor">Cadastrar Autor </a>
                 <span> | </span>
                 <a href="#"> Cadastrar Representante do Autor </a>
             </div>
