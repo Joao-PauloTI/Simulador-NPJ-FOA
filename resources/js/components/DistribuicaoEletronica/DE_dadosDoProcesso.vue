@@ -54,8 +54,7 @@
                             <option>Escolha uma competência</option>
                         </select>
                         <!--Volta Redonda-->
-                        <select class="custom-select" id="ddp_competencia" v-model="showCompetencia"
-                            v-show="showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="ddp_competencia" v-model="showCompetencia" v-show="showComarca === 'voltaRedonda'">
                             <option value="">Escolha uma competência</option>
                             <option value="acidente">Acidentes de Trabalho</option>
                             <option value="civel">Cível</option>
@@ -72,8 +71,7 @@
                     </label>
                 </div>
                 <!--Opção extra para competência Cível, Empresarial, Família, Fazenda Pública e Órfãos e Sucessões-->
-                <div
-                    v-show="showComarca === 'voltaRedonda' && (showCompetencia === 'civel' || showCompetencia === 'empresarial' || showCompetencia === 'familia' || showCompetencia === 'fazenda' || showCompetencia === 'orfaos')">
+                <div v-show="showComarca === 'voltaRedonda' && (showCompetencia === 'civel' || showCompetencia === 'empresarial' || showCompetencia === 'familia' || showCompetencia === 'fazenda' || showCompetencia === 'orfaos')">
                     <div class="custom-control custom-control-inline custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="opcaoExtra">
                         <label class="custom-control-label" for="opcaoExtra">Autor opta pela realização de audiência de
@@ -85,13 +83,11 @@
                 <div>
                     <label for="ddp_classe"><strong>* Classe</strong>
                         <!--Escolha uma classe (competência não foi escolhida)-->
-                        <select class="custom-select" id="ddp_classe"
-                            v-show="showComarca === '' || showCompetencia === ''">
+                        <select class="custom-select" id="ddp_classe" v-show="showComarca === '' || showCompetencia === ''">
                             <option>Escolha uma classe</option>
                         </select>
                         <!--Acidentes de Trabalho-->
-                        <select class="custom-select" id="ddp_classe" v-model="showClasse"
-                            v-show="showCompetencia === 'acidente' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'acidente' && showComarca === 'voltaRedonda'">
                             <option value="">Escolha uma classe</option>
                             <option value="acidente1">Ação Civil Coletiva</option>
                             <option value="acidente2">Ação Civil Pública</option>
@@ -108,8 +104,7 @@
                             <option value="acidente12">Procedimento Comum</option>
                         </select>
                         <!--Cível-->
-                        <select class="custom-select" id="ddp_classe" v-model="showClasse"
-                            v-show="showCompetencia === 'civel' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'civel' && showComarca === 'voltaRedonda'">
                             <option value="">Escolha uma classe</option>
                             <option value="civel">Ação Civil Coletiva</option>
                             <option value="civel">Ação Civil Pública</option>
@@ -161,8 +156,7 @@
                             <option value="civel">Usucapião</option>
                         </select>
                         <!--Dívida Ativa Estadual-->
-                        <select class="custom-select" id="ddp_classe" v-model="showClasse"
-                            v-show="showCompetencia === 'dividaEstadual' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'dividaEstadual' && showComarca === 'voltaRedonda'">
                             <option value="">Escolha uma classe</option>
                             <option value="dividaEstadual">Ação Civil Pública</option>
                             <option value="dividaEstadual">Alvará Judicial – Lei 6858/80</option>
@@ -183,8 +177,7 @@
                             <option value="dividaEstadual">Tutela Cautelar Antecedente</option>
                         </select>
                         <!--Dívida Ativa Municipal-->
-                        <select class="custom-select" id="ddp_classe" v-model="showClasse"
-                            v-show="showCompetencia === 'dividaMunicipal' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'dividaMunicipal' && showComarca === 'voltaRedonda'">
                             <option value="">Escolha uma classe</option>
                             <option value="dividaMunicipal">Alvará Judicial – Lei 6858/80</option>
                             <option value="dividaMunicipal">Busca e Apreensão em Alienação Fiduciária</option>
@@ -205,8 +198,7 @@
                             <option value="dividaMunicipal">Tutela Cautelar Antecedente</option>
                         </select>
                         <!--Empresarial-->
-                        <select class="custom-select" id="ddp_classe" v-model="showClasse"
-                            v-show="showCompetencia === 'empresarial' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'empresarial' && showComarca === 'voltaRedonda'">
                             <option value="">Escolha uma classe</option>
                             <option value="empresarial">Ação Civil Coletiva</option>
                             <option value="empresarial">Ação Civil Pública</option>
@@ -249,8 +241,7 @@
                             <option value="empresarial">Usucapião</option>
                         </select>
                         <!--Família-->
-                        <select class="custom-select" id="ddp_classe" v-model="showClasse"
-                            v-show="showCompetencia === 'familia' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'familia' && showComarca === 'voltaRedonda'">
                             <option value="">Escolha uma classe</option>
                             <option value="familia">Abertura, Registro e Cumprimento de Testamento</option>
                             <option value="familia">Adoção – ECA</option>
@@ -283,8 +274,7 @@
                             <option value="familia">Tutela e Curatela – Nomeação</option>
                         </select>
                         <!--Fazenda Pública-->
-                        <select class="custom-select" id="ddp_classe" v-model="showClasse"
-                            v-show="showCompetencia === 'fazenda' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'fazenda' && showComarca === 'voltaRedonda'">
                             <option value="">Escolha uma classe</option>
                             <option value="fazenda">Ação Civil Coletiva</option>
                             <option value="fazenda">Ação Civil de Improbidade Administrativa</option>
@@ -345,8 +335,7 @@
                             <option value="fazenda">Usucapião</option>
                         </select>
                         <!--Juizado Especial Civil-->
-                        <select class="custom-select" id="ddp_classe" v-model="showClasse"
-                            v-show="showCompetencia === 'juizado' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'juizado' && showComarca === 'voltaRedonda'">
                             <option value="">Escolha uma classe</option>
                             <option value="juizado">Alvará Judicial Lei 6.858/80</option>
                             <option value="juizado">Cumprimento de Sentença</option>
@@ -365,8 +354,7 @@
                             <option value="juizado">Protesto – CPC</option>
                         </select>
                         <!--Órfãos e Sucessões-->
-                        <select class="custom-select" id="ddp_classe" v-model="showClasse"
-                            v-show="showCompetencia === 'orfaos' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'orfaos' && showComarca === 'voltaRedonda'">
                             <option value="">Escolha uma classe</option>
                             <option value="orfaos">Abertura, Registro e Cumprimento de Testamento</option>
                             <option value="orfaos">Alienação Judicial</option>
@@ -399,8 +387,7 @@
                             <option value="orfaos">Tutela e Curatela – Nomeação</option>
                         </select>
                         <!--Registro Civil de Pessoas Naturais-->
-                        <select class="custom-select" id="ddp_classe" v-model="showClasse"
-                            v-show="showCompetencia === 'registroCivil' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'registroCivil' && showComarca === 'voltaRedonda'">
                             <option value="">Escolha uma classe</option>
                             <option value="registroCivel">Alteração de Regime de Bens</option>
                             <option value="registroCivel">Averiguação Oficiosa de Paternidade</option>
@@ -416,8 +403,7 @@
                             </option>
                         </select>
                         <!--Registro Público-->
-                        <select class="custom-select" id="ddp_classe" v-model="showClasse"
-                            v-show="showCompetencia === 'registroPublico' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="ddp_classe" v-model="showClasse" v-show="showCompetencia === 'registroPublico' && showComarca === 'voltaRedonda'">
                             <option value="">Escolha uma classe</option>
                             <option value="registroPublico">Cumprimento Provisório de Sentença</option>
                             <option value="registroPublico">Cumprimento Provisório de Decisão</option>
@@ -447,12 +433,10 @@
                 <!--Distribuição-->
                 <div>
                     <label for="ddp_distribuicao"><strong>* Distribuição</strong>
-                        <select class="custom-select" id="ddp_distribuicao"
-                            v-show="showComarca === '' || showCompetencia === '' || showClasse === ''">
+                        <select class="custom-select" id="ddp_distribuicao" v-show="showComarca === '' || showCompetencia === '' || showClasse === ''">
                             <option>Escolha uma distribuição</option>
                         </select>
-                        <select class="custom-select" id="ddp_distribuicao"
-                            v-show="showComarca === 'voltaRedonda' && showCompetencia === 'acidente' && showClasse === 'acidente1'">
+                        <select class="custom-select" id="ddp_distribuicao" v-show="showComarca === 'voltaRedonda' && showCompetencia === 'acidente' && showClasse === 'acidente1'">
                             <option>Escolha uma distribuição</option>
                             <option>1</option>
                             <option>2</option>
@@ -467,8 +451,7 @@
                     <form class="form-inline">
                         <div class="col-xs-2">
                             <span><strong>* Valor da Causa:</strong> </span>
-                            <input type="text" class="form-control" id="valorCausa" placeholder="ex.: 1.000,00"
-                                required>
+                            <input type="text" class="form-control" id="valorCausa" placeholder="ex.: 1.000,00" required>
                         </div>
                     </form>
                 </div>
@@ -479,20 +462,21 @@
     </div>
 </template>
 <script>
-    export default {
-        name: 'dedadosdoprocesso',
-        data: function () {
-            return {
-                showCompetencia: "",
-                showComarca: "",
-                showClasse: "",
-            }
-        },
-        methods: {
-            ajuda: function () {
-                alert(
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-            }
+export default {
+    name: 'dedadosdoprocesso',
+    data: function() {
+        return {
+            showCompetencia: "",
+            showComarca: "",
+            showClasse: "",
+        }
+    },
+    methods: {
+        ajuda: function() {
+            alert(
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
         }
     }
+}
+
 </script>

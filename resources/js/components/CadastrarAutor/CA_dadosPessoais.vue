@@ -1,18 +1,196 @@
 <template>
-  <div class="container">
-    <div class="card">
-      <div class="card-header">
-        <h5>
-          <strong>Dados Pessoais</strong>
-        </h5>
-      </div>
-      <div class="card-body">
-
-      </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h5>
+                    <strong>Dados Pessoais</strong>
+                </h5>
+            </div>
+            <div class="card-body">
+                <p align="center"><strong>Tipo</strong> Autor</p>
+                <div class="container">
+                    <div align="center">
+                        <!--Opções de marcar-->
+                        <form action="">
+                            <div class="custom-control custom-control-inline custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="autorOpcao1" id="autorOpcao1">
+                                <label class="custom-control-label" for="autorOpcao1"> Incapaz
+                                </label>
+                            </div>
+                            <div class="custom-control custom-control-inline custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="autorOpcao2" id="autorOpcao2">
+                                <label class="custom-control-label" for="autorOpcao2"> Massa Falida </label>
+                            </div>
+                            <div class="custom-control custom-control-inline custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="autorOpcao3" id="autorOpcao3">
+                                <label class="custom-control-label" for="autorOpcao3"> Insolvente Civil
+                                </label>
+                            </div>
+                            <div class="custom-control custom-control-inline custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="autorOpcao4" id="autorOpcao4">
+                                <label class="custom-control-label" for="autorOpcao4"> Preso </label>
+                            </div>
+                            <div class="custom-control custom-control-inline custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="autorOpcao5" id="autorOpcao5">
+                                <label class="custom-control-label" for="autorOpcao5"> Espólio com interesse de Incapaz </label>
+                            </div>
+                            <div class="custom-control custom-control-inline custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="autorOpcao6" id="autorOpcao6">
+                                <label class="custom-control-label" for="autorOpcao6"> Condomínio </label>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <!-- Ministério Público -->
+                    <div>
+                        <form action="">
+                            <div class="custom-control custom-control-inline custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="autorOpcao7" id="autorOpcao7">
+                                <label class="custom-control-label" for="autorOpcao7"><strong>Ministério Público? </strong> </label>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <!-- Pessoa Física ou Jurídica -->
+                    <div>
+                        <form class="form-inline">
+                            <div class="col-xs-2">
+                                <span><strong>Pessoa Física ou Jurídica </strong> </span>
+                                <select class="custom-select">
+                                    <option>Pessoa Física</option>
+                                    <option>Pessoa Jurídica</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <!-- Ministério Público -->
+                    <div>
+                        <form action="">
+                            <div class="custom-control custom-control-inline custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="autorOpcao8" id="autorOpcao8">
+                                <label class="custom-control-label" for="autorOpcao8"><strong>Estrangeiro e/ou brasileiro residente no exterior? </strong> </label>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <!-- Sexo -->
+                    <div>
+                        <form class="form-inline">
+                            <div class="col-xs-2">
+                                <span><strong>* Sexo </strong> </span>
+                                <select class="custom-select">
+                                    <option>Escolha um sexo</option>
+                                    <option>Masculino</option>
+                                    <option>Feminino</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <!-- CPF/CNPJ-->
+                    <div>
+                        <form class="form-inline">
+                            <div class="col-xs-2">
+                                <span><strong>* CPF/CNPJ </strong> </span>
+                                <input type="text" class="form-control" v-mask="'###.###.###-##'" required>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <!-- Nome-->
+                    <div>
+                        <form class="form-inline">
+                            <div class="col-xs-2">
+                                <span><strong>* Nome </strong> </span>
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <!-- Menor de idade -->
+                    <div>
+                        <form action="">
+                            <div class="custom-control custom-control-inline custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="autorOpcao9" id="autorOpcao9">
+                                <label class="custom-control-label" for="autorOpcao9"><strong>Menor de idade</strong> </label>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <!-- Documento de identificação -->
+                    <div>
+                        <form class="form-inline">
+                            <div class="col-xs-2">
+                                <span><strong>Documento de identificação </strong> </span>
+                                <select class="custom-select">
+                                    <option>Escolha um tipo</option>
+                                    <option>Registro Geral</option>
+                                    <option>Carteira Nacional de Habilitação</option>
+                                    <option>Passaporte</option>
+                                    <option>Carteira de Trabalho</option>
+                                    <option>Carteira de Identidade</option>
+                                    <option>Certificado de Dispensa de Incorporação</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <!-- Número -->
+                    <div>
+                        <form class="form-inline">
+                            <div class="col-xs-2">
+                                <span><strong>Número </strong> </span>
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <!-- Órgão Expedidor -->
+                    <div>
+                        <form class="form-inline">
+                            <div class="col-xs-2">
+                                <span><strong>Órgão Expedidor </strong> </span>
+                                <input type="text" class="form-control" required>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <!-- Data de expedição -->
+                    <div>
+                        <form class="form-inline">
+                            <div class="col-xs-2">
+                                <span><strong>Data de expedição </strong> </span>
+                                <input type="date" class="form-control" required>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <!-- Telefone -->
+                    <div>
+                        <form class="form-inline">
+                            <div class="col-xs-2">
+                                <span><strong>Telefone </strong> </span>
+                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" required>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                    <!-- E-mail -->
+                    <div>
+                        <form class="form-inline">
+                            <div class="col-xs-2">
+                                <span><strong>E-mail </strong> </span>
+                                <input type="email" class="form-control" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
     </div>
-  </div>
 </template>
-
 <script>
 export default {
     name: 'cadadosPessoais',
@@ -22,4 +200,5 @@ export default {
         }
     }
 }
+
 </script>

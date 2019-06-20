@@ -29,6 +29,9 @@ Vue.component('dedeclaracaodeveracidade', require('./components/DistribuicaoElet
 
 //Componentes da pasta CadastrarAutor
 Vue.component('cadadospessoais', require('./components/CadastrarAutor/CA_dadosPessoais.vue').default);
+Vue.component('caadvogadorepresentante', require('./components/CadastrarAutor/CA_advogadoRepresentante.vue').default);
+Vue.component('caendereco', require('./components/CadastrarAutor/CA_endereco.vue').default);
+Vue.component('cadadoscomplementares', require('./components/CadastrarAutor/CA_dadosComplementares.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -50,5 +53,8 @@ const app = new Vue({
       'dedeclaracaoDeVeracidade',
       //CadastrarAutor
       'cadadosPessoais',
+      'caadvogadoRepresentante',
+      'caendereco',
+      'cadadosComplementares'
     ],
 });

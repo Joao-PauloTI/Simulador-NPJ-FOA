@@ -1851,6 +1851,204 @@ module.exports = function isBuffer (obj) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'caadvogadoRepresentante',
+  data: function data() {
+    return {};
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'cadadosComplementares',
+  data: function data() {
+    return {};
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=script&lang=js& ***!
@@ -1875,8 +2073,354 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'cadadosPessoais',
+  data: function data() {
+    return {};
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_endereco.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_endereco.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'caendereco',
   data: function data() {
     return {};
   }
@@ -2019,7 +2563,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'deautoresReusDocumentos',
   data: function data() {
@@ -2043,23 +2586,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -2655,8 +3181,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'degrerj',
   data: function data() {
@@ -2682,7 +3206,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -37987,10 +38510,10 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=template&id=200a00da&":
-/*!**********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=template&id=200a00da& ***!
-  \**********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=template&id=35d8793c&":
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=template&id=35d8793c& ***!
+  \******************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -38012,10 +38535,1195 @@ var staticRenderFns = [
     return _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "card" }, [
         _c("div", { staticClass: "card-header" }, [
-          _c("h5", [_c("strong", [_vm._v("Dados Pessoais")])])
+          _c("h5", [_c("strong", [_vm._v("Advogado Representante")])])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body" })
+        _c("div", { staticClass: "card-body" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-sm" }, [
+                _c("p", [_c("strong", [_vm._v("OAB")])]),
+                _vm._v(" "),
+                _c("p", [_vm._v("RJ123456")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-sm" }, [
+                _c("p", [_c("strong", [_vm._v("Nome")])]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Lorem Ipsum Dolor Sit Amet")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-sm", attrs: { align: "center" } }, [
+                _c("p", [_c("strong", [_vm._v("Representa")])]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "custom-control custom-control-inline custom-checkbox"
+                  },
+                  [
+                    _c("input", {
+                      staticClass: "custom-control-input",
+                      attrs: {
+                        type: "checkbox",
+                        name: "autorOpcao10",
+                        id: "autorOpcao10"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("label", {
+                      staticClass: "custom-control-label",
+                      attrs: { for: "autorOpcao10" }
+                    })
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-sm", attrs: { align: "center" } }, [
+                _c("p", [_c("strong", [_vm._v("Intimação")])]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "custom-control custom-control-inline custom-checkbox"
+                  },
+                  [
+                    _c("input", {
+                      staticClass: "custom-control-input",
+                      attrs: {
+                        type: "checkbox",
+                        name: "autorOpcao11",
+                        id: "autorOpcao11"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("label", {
+                      staticClass: "custom-control-label",
+                      attrs: { for: "autorOpcao11" }
+                    })
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("br")
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue?vue&type=template&id=5359b2c7&":
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue?vue&type=template&id=5359b2c7& ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "card" }, [
+        _c("div", { staticClass: "card-header" }, [
+          _c("h5", [_c("strong", [_vm._v("Dados Complementares")])])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", [
+              _c("form", { staticClass: "form-inline" }, [
+                _c("div", { staticClass: "col-xs-2" }, [
+                  _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
+                  _vm._v(" "),
+                  _c("select", { staticClass: "custom-select" }, [
+                    _c("option", [_vm._v("Escolha o estado civil")]),
+                    _vm._v(" "),
+                    _c("option", [_vm._v("Solteiro")]),
+                    _vm._v(" "),
+                    _c("option", [_vm._v("Casado")]),
+                    _vm._v(" "),
+                    _c("option", [_vm._v("Divorciado")])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("div", [
+              _c("form", { staticClass: "form-inline" }, [
+                _c("div", { staticClass: "col-xs-2" }, [
+                  _c("span", [_c("strong", [_vm._v("Profissão ")])]),
+                  _vm._v(" "),
+                  _c("select", { staticClass: "custom-select" }, [
+                    _c("option", [_vm._v("Escolha a profissão")]),
+                    _vm._v(" "),
+                    _c("option", [_vm._v("Professor")]),
+                    _vm._v(" "),
+                    _c("option", [_vm._v("Desembargador")]),
+                    _vm._v(" "),
+                    _c("option", [_vm._v("Médico")]),
+                    _vm._v(" "),
+                    _c("option", [_vm._v("Contador")])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("div", [
+              _c("form", { staticClass: "form-inline" }, [
+                _c("div", { staticClass: "col-xs-2" }, [
+                  _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
+                  _vm._v(" "),
+                  _c("select", { staticClass: "custom-select" }, [
+                    _c("option", [_vm._v("Brasileira")]),
+                    _vm._v(" "),
+                    _c("option", [_vm._v("Naturalizado brasileiro")]),
+                    _vm._v(" "),
+                    _c("option", [_vm._v("Estrangeira")])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("div", [
+              _c("form", { staticClass: "form-inline" }, [
+                _c("div", { staticClass: "col-xs-2" }, [
+                  _c("span", [
+                    _c("strong", [_vm._v("Escolha a Naturalidade ")])
+                  ]),
+                  _vm._v(" "),
+                  _c("select", { staticClass: "custom-select" }, [
+                    _c("option", [_vm._v("Estado")]),
+                    _vm._v(" "),
+                    _c("option", [_vm._v("Rio de Janeiro")]),
+                    _vm._v(" "),
+                    _c("option", [_vm._v("São Paulo")])
+                  ]),
+                  _vm._v(" "),
+                  _c("select", { staticClass: "custom-select" }, [
+                    _c("option", [_vm._v("Cidade")]),
+                    _vm._v(" "),
+                    _c("option", [_vm._v("Volta Redonda")]),
+                    _vm._v(" "),
+                    _c("option", [_vm._v("Barra Mansa")])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("div", [
+              _c("form", { staticClass: "form-inline" }, [
+                _c("div", { staticClass: "col-xs-2" }, [
+                  _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: { type: "text", required: "" }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("div", [
+              _c("form", { staticClass: "form-inline" }, [
+                _c("div", { staticClass: "col-xs-2" }, [
+                  _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: { type: "text", required: "" }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("div", [
+              _c("form", { staticClass: "form-inline" }, [
+                _c("div", { staticClass: "col-xs-2" }, [
+                  _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])]),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: { type: "date", required: "" }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("br")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("div", { attrs: { align: "center" } }, [
+        _c("form", { attrs: { action: "" } }, [
+          _c(
+            "button",
+            { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+            [_vm._v("SALVAR")]
+          ),
+          _vm._v(" "),
+          _c(
+            "button",
+            { staticClass: "btn btn-danger", attrs: { type: "button" } },
+            [_vm._v("FECHAR")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("br")
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=template&id=200a00da&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue?vue&type=template&id=200a00da& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-body" }, [
+        _vm._m(1),
+        _vm._v(" "),
+        _c("div", { staticClass: "container" }, [
+          _vm._m(2),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(4),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(5),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(6),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", [
+            _c("form", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(7),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "###.###.###-##",
+                      expression: "'###.###.###-##'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", required: "" }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(8),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(9),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(10),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(11),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(12),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(13),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", [
+            _c("form", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(14),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "(##)#####-####",
+                      expression: "'(##)#####-####'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "tel", required: "" }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(15)
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("br")
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h5", [_c("strong", [_vm._v("Dados Pessoais")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { attrs: { align: "center" } }, [
+      _c("strong", [_vm._v("Tipo")]),
+      _vm._v(" Autor")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { align: "center" } }, [
+      _c("form", { attrs: { action: "" } }, [
+        _c(
+          "div",
+          {
+            staticClass: "custom-control custom-control-inline custom-checkbox"
+          },
+          [
+            _c("input", {
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "checkbox",
+                name: "autorOpcao1",
+                id: "autorOpcao1"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "custom-control-label",
+                attrs: { for: "autorOpcao1" }
+              },
+              [_vm._v(" Incapaz\n                            ")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "custom-control custom-control-inline custom-checkbox"
+          },
+          [
+            _c("input", {
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "checkbox",
+                name: "autorOpcao2",
+                id: "autorOpcao2"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "custom-control-label",
+                attrs: { for: "autorOpcao2" }
+              },
+              [_vm._v(" Massa Falida ")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "custom-control custom-control-inline custom-checkbox"
+          },
+          [
+            _c("input", {
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "checkbox",
+                name: "autorOpcao3",
+                id: "autorOpcao3"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "custom-control-label",
+                attrs: { for: "autorOpcao3" }
+              },
+              [_vm._v(" Insolvente Civil\n                            ")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "custom-control custom-control-inline custom-checkbox"
+          },
+          [
+            _c("input", {
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "checkbox",
+                name: "autorOpcao4",
+                id: "autorOpcao4"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "custom-control-label",
+                attrs: { for: "autorOpcao4" }
+              },
+              [_vm._v(" Preso ")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "custom-control custom-control-inline custom-checkbox"
+          },
+          [
+            _c("input", {
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "checkbox",
+                name: "autorOpcao5",
+                id: "autorOpcao5"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "custom-control-label",
+                attrs: { for: "autorOpcao5" }
+              },
+              [_vm._v(" Espólio com interesse de Incapaz ")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "custom-control custom-control-inline custom-checkbox"
+          },
+          [
+            _c("input", {
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "checkbox",
+                name: "autorOpcao6",
+                id: "autorOpcao6"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "custom-control-label",
+                attrs: { for: "autorOpcao6" }
+              },
+              [_vm._v(" Condomínio ")]
+            )
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { attrs: { action: "" } }, [
+        _c(
+          "div",
+          {
+            staticClass: "custom-control custom-control-inline custom-checkbox"
+          },
+          [
+            _c("input", {
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "checkbox",
+                name: "autorOpcao7",
+                id: "autorOpcao7"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "custom-control-label",
+                attrs: { for: "autorOpcao7" }
+              },
+              [_c("strong", [_vm._v("Ministério Público? ")])]
+            )
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Pessoa Física ou Jurídica ")])]),
+          _vm._v(" "),
+          _c("select", { staticClass: "custom-select" }, [
+            _c("option", [_vm._v("Pessoa Física")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Pessoa Jurídica")])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { attrs: { action: "" } }, [
+        _c(
+          "div",
+          {
+            staticClass: "custom-control custom-control-inline custom-checkbox"
+          },
+          [
+            _c("input", {
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "checkbox",
+                name: "autorOpcao8",
+                id: "autorOpcao8"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "custom-control-label",
+                attrs: { for: "autorOpcao8" }
+              },
+              [
+                _c("strong", [
+                  _vm._v("Estrangeiro e/ou brasileiro residente no exterior? ")
+                ])
+              ]
+            )
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("* Sexo ")])]),
+          _vm._v(" "),
+          _c("select", { staticClass: "custom-select" }, [
+            _c("option", [_vm._v("Escolha um sexo")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Masculino")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Feminino")])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("strong", [_vm._v("* CPF/CNPJ ")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("* Nome ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", required: "" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { attrs: { action: "" } }, [
+        _c(
+          "div",
+          {
+            staticClass: "custom-control custom-control-inline custom-checkbox"
+          },
+          [
+            _c("input", {
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "checkbox",
+                name: "autorOpcao9",
+                id: "autorOpcao9"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "custom-control-label",
+                attrs: { for: "autorOpcao9" }
+              },
+              [_c("strong", [_vm._v("Menor de idade")])]
+            )
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Documento de identificação ")])]),
+          _vm._v(" "),
+          _c("select", { staticClass: "custom-select" }, [
+            _c("option", [_vm._v("Escolha um tipo")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Registro Geral")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Carteira Nacional de Habilitação")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Passaporte")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Carteira de Trabalho")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Carteira de Identidade")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Certificado de Dispensa de Incorporação")])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Número ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", required: "" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Órgão Expedidor ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", required: "" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Data de expedição ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "date", required: "" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("strong", [_vm._v("Telefone ")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("E-mail ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "email", required: "" }
+          })
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_endereco.vue?vue&type=template&id=63665f62&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_endereco.vue?vue&type=template&id=63665f62& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", [
+            _c("form", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "#####-###",
+                      expression: "'#####-###'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", required: "" }
+                }),
+                _vm._v(" "),
+                _vm._m(2),
+                _vm._v(" "),
+                _vm._m(3)
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(4),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(5),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(6),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(7),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(8),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(9),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(10),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(11),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(12),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(13)
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("br")
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h5", [_c("strong", [_vm._v("Endereço")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("strong", [_vm._v("* CEP ")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "" } }, [
+      _c("ins", [_vm._v(" verificar CEP")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "" } }, [_c("ins", [_vm._v(" Correios")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("* Estado ")])]),
+          _vm._v(" "),
+          _c("select", { staticClass: "custom-select" }, [
+            _c("option", [_vm._v("Escolha o estado")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Rio de Janeiro")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("São Paulo")])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("* Cidade ")])]),
+          _vm._v(" "),
+          _c("select", { staticClass: "custom-select" }, [
+            _c("option", [_vm._v("Escolha a cidade")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Rio de Janeiro")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Volta Redonda")])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("* Bairro ")])]),
+          _vm._v(" "),
+          _c("select", { staticClass: "custom-select" }, [
+            _c("option", [_vm._v("Escolha o bairro")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Vila Santa Cecília")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Três Poços")])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro ")])]),
+          _vm._v(" "),
+          _c("select", { staticClass: "custom-select" }, [
+            _c("option", [_vm._v("Escolha o tipo de logradouro")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Avenida")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Bloco")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Condomínio")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Distrito")])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("* Logradouro ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", required: "" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("* Número ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", required: "" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Complemento ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", required: "" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("* Tipo de Endereço ")])]),
+          _vm._v(" "),
+          _c("select", { staticClass: "custom-select" }, [
+            _c("option", [_vm._v("Escolha o tipo de endereço")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Residencial")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Empresarial")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Comercial")])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Referência ")])]),
+          _vm._v(" "),
+          _c("textarea", {
+            staticClass: "form-control",
+            attrs: { rows: "3", required: "" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("form", { attrs: { action: "" } }, [
+        _c(
+          "div",
+          {
+            staticClass: "custom-control custom-control-inline custom-checkbox"
+          },
+          [
+            _c("input", {
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "checkbox",
+                name: "autorOpcao12",
+                id: "autorOpcao12"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "custom-control-label",
+                attrs: { for: "autorOpcao12" }
+              },
+              [
+                _vm._v(
+                  "O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial? "
+                )
+              ]
+            )
+          ]
+        )
       ])
     ])
   }
@@ -40613,7 +42321,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticStyle: { "text-align": "center" } }, [
+    return _c("div", { attrs: { align: "center" } }, [
       _c("form", { attrs: { action: "" } }, [
         _c(
           "button",
@@ -53273,6 +54981,9 @@ Vue.component('deautoresreusdocumentos', __webpack_require__(/*! ./components/Di
 Vue.component('dedeclaracaodeveracidade', __webpack_require__(/*! ./components/DistribuicaoEletronica/DE_declaracaoDeVeracidade.vue */ "./resources/js/components/DistribuicaoEletronica/DE_declaracaoDeVeracidade.vue")["default"]); //Componentes da pasta CadastrarAutor
 
 Vue.component('cadadospessoais', __webpack_require__(/*! ./components/CadastrarAutor/CA_dadosPessoais.vue */ "./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue")["default"]);
+Vue.component('caadvogadorepresentante', __webpack_require__(/*! ./components/CadastrarAutor/CA_advogadoRepresentante.vue */ "./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue")["default"]);
+Vue.component('caendereco', __webpack_require__(/*! ./components/CadastrarAutor/CA_endereco.vue */ "./resources/js/components/CadastrarAutor/CA_endereco.vue")["default"]);
+Vue.component('cadadoscomplementares', __webpack_require__(/*! ./components/CadastrarAutor/CA_dadosComplementares.vue */ "./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -53285,7 +54996,7 @@ var app = new Vue({
   el: '#app',
   components: [//DistribuicaoEletronica
   'degrerj', 'deprocessoPrincipal', 'dedadosDoProcesso', 'deadvogadoRepresentante', 'deautoresReusDocumentos', 'dedeclaracaoDeVeracidade', //CadastrarAutor
-  'cadadosPessoais']
+  'cadadosPessoais', 'caadvogadoRepresentante', 'caendereco', 'cadadosComplementares']
 });
 
 /***/ }),
@@ -53345,6 +55056,144 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CA_advogadoRepresentante_vue_vue_type_template_id_35d8793c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CA_advogadoRepresentante.vue?vue&type=template&id=35d8793c& */ "./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=template&id=35d8793c&");
+/* harmony import */ var _CA_advogadoRepresentante_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CA_advogadoRepresentante.vue?vue&type=script&lang=js& */ "./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CA_advogadoRepresentante_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CA_advogadoRepresentante_vue_vue_type_template_id_35d8793c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CA_advogadoRepresentante_vue_vue_type_template_id_35d8793c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_advogadoRepresentante_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CA_advogadoRepresentante.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_advogadoRepresentante_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=template&id=35d8793c&":
+/*!************************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=template&id=35d8793c& ***!
+  \************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_advogadoRepresentante_vue_vue_type_template_id_35d8793c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CA_advogadoRepresentante.vue?vue&type=template&id=35d8793c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=template&id=35d8793c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_advogadoRepresentante_vue_vue_type_template_id_35d8793c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_advogadoRepresentante_vue_vue_type_template_id_35d8793c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CA_dadosComplementares_vue_vue_type_template_id_5359b2c7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CA_dadosComplementares.vue?vue&type=template&id=5359b2c7& */ "./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue?vue&type=template&id=5359b2c7&");
+/* harmony import */ var _CA_dadosComplementares_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CA_dadosComplementares.vue?vue&type=script&lang=js& */ "./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CA_dadosComplementares_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CA_dadosComplementares_vue_vue_type_template_id_5359b2c7___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CA_dadosComplementares_vue_vue_type_template_id_5359b2c7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CadastrarAutor/CA_dadosComplementares.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_dadosComplementares_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CA_dadosComplementares.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_dadosComplementares_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue?vue&type=template&id=5359b2c7&":
+/*!**********************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue?vue&type=template&id=5359b2c7& ***!
+  \**********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_dadosComplementares_vue_vue_type_template_id_5359b2c7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CA_dadosComplementares.vue?vue&type=template&id=5359b2c7& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue?vue&type=template&id=5359b2c7&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_dadosComplementares_vue_vue_type_template_id_5359b2c7___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_dadosComplementares_vue_vue_type_template_id_5359b2c7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
@@ -53412,6 +55261,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_dadosPessoais_vue_vue_type_template_id_200a00da___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_dadosPessoais_vue_vue_type_template_id_200a00da___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_endereco.vue":
+/*!****************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_endereco.vue ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CA_endereco_vue_vue_type_template_id_63665f62___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CA_endereco.vue?vue&type=template&id=63665f62& */ "./resources/js/components/CadastrarAutor/CA_endereco.vue?vue&type=template&id=63665f62&");
+/* harmony import */ var _CA_endereco_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CA_endereco.vue?vue&type=script&lang=js& */ "./resources/js/components/CadastrarAutor/CA_endereco.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CA_endereco_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CA_endereco_vue_vue_type_template_id_63665f62___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CA_endereco_vue_vue_type_template_id_63665f62___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CadastrarAutor/CA_endereco.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_endereco.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_endereco.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_endereco_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CA_endereco.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_endereco.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_endereco_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_endereco.vue?vue&type=template&id=63665f62&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_endereco.vue?vue&type=template&id=63665f62& ***!
+  \***********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_endereco_vue_vue_type_template_id_63665f62___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CA_endereco.vue?vue&type=template&id=63665f62& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_endereco.vue?vue&type=template&id=63665f62&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_endereco_vue_vue_type_template_id_63665f62___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_endereco_vue_vue_type_template_id_63665f62___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -15,13 +15,11 @@
             <div class="card-body">
                 <span><strong>* Possui GRERJ?</strong> </span>
                 <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" class="custom-control-input" name="grerj" id="grerjSim" value="showSim"
-                        v-model="showOpcao">
+                    <input type="radio" class="custom-control-input" name="grerj" id="grerjSim" value="showSim" v-model="showOpcao">
                     <label class="custom-control-label" for="grerjSim"> Sim </label>
                 </div>
                 <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" class="custom-control-input" name="grerj" id="grerjNao" value="showNao"
-                        v-model="showOpcao">
+                    <input type="radio" class="custom-control-input" name="grerj" id="grerjNao" value="showNao" v-model="showOpcao">
                     <label class="custom-control-label" for="grerjNao"> Não </label>
                 </div>
                 <div v-show="showOpcao === 'showSim'">
@@ -50,18 +48,19 @@
     </div>
 </template>
 <script>
-    export default {
-        name: 'degrerj',
-        data: function () {
-            return {
-                showOpcao: ""
-            }
-        },
-        methods: {
-            ajuda: function () {
-                alert(
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-            }
+export default {
+    name: 'degrerj',
+    data: function() {
+        return {
+            showOpcao: ""
+        }
+    },
+    methods: {
+        ajuda: function() {
+            alert(
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
         }
     }
+}
+
 </script>
