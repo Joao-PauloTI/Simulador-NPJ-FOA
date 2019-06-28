@@ -9,7 +9,7 @@
             <div class="card-body">
             	<div class="container">
             		<!-- Estado Civil -->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Estado Civil </strong> </span>
@@ -24,7 +24,7 @@
                     </div>
                     <br>
                     <!-- Profissão -->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Profissão </strong> </span>
@@ -40,7 +40,7 @@
                     </div>
                     <br>
                     <!-- Nacionalidade -->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nacionalidade </strong> </span>
@@ -54,7 +54,7 @@
                     </div>
                     <br>
                     <!-- Naturalidade -->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Escolha a Naturalidade </strong> </span>
@@ -73,7 +73,7 @@
                     </div>
                     <br>
                     <!-- Nome do Pai-->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nome do Pai </strong> </span>
@@ -83,7 +83,7 @@
                     </div>
                     <br>
                     <!-- Nome da Mãe-->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nome da Mãe </strong> </span>
@@ -93,7 +93,7 @@
                     </div>
                     <br>
                     <!-- Data de Nascimento -->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Data de Nascimento </strong> </span>
@@ -127,3 +127,8 @@ export default {
 }
 
 </script>
+<style type="text/css" scoped>
+    #alinhado{
+        margin-left: 30%
+    }
+</style>

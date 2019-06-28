@@ -42,7 +42,7 @@
                     </div>
                     <br>
                     <!-- Ministério Público -->
-                    <div>
+                    <div id="alinhado">
                         <form action="">
                             <div class="custom-control custom-control-inline custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" name="autorOpcao7" id="autorOpcao7">
@@ -52,7 +52,7 @@
                     </div>
                     <br>
                     <!-- Pessoa Física ou Jurídica -->
-                    <div>
+                    <div  id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Pessoa Física ou Jurídica </strong> </span>
@@ -64,8 +64,8 @@
                         </form>
                     </div>
                     <br>
-                    <!-- Ministério Público -->
-                    <div>
+                    <!-- Estrangeiro/Brasileiro -->
+                    <div  id="alinhado">
                         <form action="">
                             <div class="custom-control custom-control-inline custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" name="autorOpcao8" id="autorOpcao8">
@@ -75,7 +75,7 @@
                     </div>
                     <br>
                     <!-- Sexo -->
-                    <div>
+                    <div  id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Sexo </strong> </span>
@@ -89,7 +89,7 @@
                     </div>
                     <br>
                     <!-- CPF/CNPJ-->
-                    <div>
+                    <div  id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CPF/CNPJ </strong> </span>
@@ -99,7 +99,7 @@
                     </div>
                     <br>
                     <!-- Nome-->
-                    <div>
+                    <div  id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Nome </strong> </span>
@@ -109,7 +109,7 @@
                     </div>
                     <br>
                     <!-- Menor de idade -->
-                    <div>
+                    <div  id="alinhado">
                         <form action="">
                             <div class="custom-control custom-control-inline custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" name="autorOpcao9" id="autorOpcao9">
@@ -119,7 +119,7 @@
                     </div>
                     <br>
                     <!-- Documento de identificação -->
-                    <div>
+                    <div  id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Documento de identificação </strong> </span>
@@ -137,7 +137,7 @@
                     </div>
                     <br>
                     <!-- Número -->
-                    <div>
+                    <div  id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Número </strong> </span>
@@ -147,7 +147,7 @@
                     </div>
                     <br>
                     <!-- Órgão Expedidor -->
-                    <div>
+                    <div  id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Órgão Expedidor </strong> </span>
@@ -157,7 +157,7 @@
                     </div>
                     <br>
                     <!-- Data de expedição -->
-                    <div>
+                    <div  id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Data de expedição </strong> </span>
@@ -167,7 +167,7 @@
                     </div>
                     <br>
                     <!-- Telefone -->
-                    <div>
+                    <div  id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Telefone </strong> </span>
@@ -177,7 +177,7 @@
                     </div>
                     <br>
                     <!-- E-mail -->
-                    <div>
+                    <div  id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>E-mail </strong> </span>
@@ -202,3 +202,8 @@ export default {
 }
 
 </script>
+<style type="text/css" scoped>
+    #alinhado{
+        margin-left: 30%
+    }
+</style>

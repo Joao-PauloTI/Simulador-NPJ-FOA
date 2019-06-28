@@ -9,7 +9,7 @@
             <div class="card-body">
                 <div class="container">
                     <!-- CEP -->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CEP </strong> </span>
@@ -21,7 +21,7 @@
                     </div>
                     <br>
                     <!-- Estado -->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Estado </strong> </span>
@@ -35,7 +35,7 @@
                     </div>
                     <br>
                     <!-- Cidade -->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Cidade </strong> </span>
@@ -49,7 +49,7 @@
                     </div>
                     <br>
                     <!-- Bairro -->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Bairro </strong> </span>
@@ -63,7 +63,7 @@
                     </div>
                     <br>
                     <!-- Tipo de Logradouro -->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Tipo de Logradouro </strong> </span>
@@ -79,7 +79,7 @@
                     </div>
                     <br>
                     <!-- Logradouro-->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Logradouro </strong> </span>
@@ -89,7 +89,7 @@
                     </div>
                     <br>
                     <!-- Número -->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Número </strong> </span>
@@ -99,7 +99,7 @@
                     </div>
                     <br>
                     <!-- Complemento-->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Complemento </strong> </span>
@@ -109,7 +109,7 @@
                     </div>
                     <br>
                     <!-- Tipo de Endereço -->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Tipo de Endereço </strong> </span>
@@ -124,7 +124,7 @@
                     </div>
                     <br>
                     <!-- Referência-->
-                    <div>
+                    <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Referência </strong> </span>
@@ -134,7 +134,7 @@
                     </div>
                     <br>
                     <!-- Õpção extra -->
-                    <div>
+                    <div id="alinhado">
                         <form action="">
                             <div class="custom-control custom-control-inline custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" name="autorOpcao12" id="autorOpcao12">
@@ -159,3 +159,8 @@ export default {
 }
 
 </script>
+<style type="text/css" scoped>
+    #alinhado{
+        margin-left: 30%
+    }
+</style>
