@@ -33,6 +33,12 @@ Vue.component('caadvogadorepresentante', require('./components/CadastrarAutor/CA
 Vue.component('caendereco', require('./components/CadastrarAutor/CA_endereco.vue').default);
 Vue.component('cadadoscomplementares', require('./components/CadastrarAutor/CA_dadosComplementares.vue').default);
 
+//Componentes da pasta CadastrarRepresentanteAutor
+Vue.component('cradadospessoais', require('./components/CadastrarRepresentanteAutor/CRA_dadosPessoais.vue').default);
+Vue.component('craadvogadorepresentante', require('./components/CadastrarRepresentanteAutor/CRA_advogadoRepresentante.vue').default);
+Vue.component('craendereco', require('./components/CadastrarRepresentanteAutor/CRA_endereco.vue').default);
+Vue.component('cradadoscomplementares', require('./components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -55,6 +61,11 @@ const app = new Vue({
       'cadadosPessoais',
       'caadvogadoRepresentante',
       'caendereco',
-      'cadadosComplementares'
+      'cadadosComplementares',
+      //CadastrarRepresentanteAutor
+      'cradadosPessoais',
+      'craadvogadoRepresentante',
+      'craendereco',
+      'cradadosComplementares',
     ],
 });

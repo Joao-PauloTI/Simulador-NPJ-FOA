@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('cadastrarautor', function () {
 	return view('CadastrarAutor/CA_index');
 });
+
+Route::get('cadastrarrepresentanteautor', function () {
+	return view('CadastrarRepresentanteAutor/CRA_index');
+});
