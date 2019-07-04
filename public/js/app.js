@@ -2828,25 +2828,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'cradadosPessoais',
   data: function data() {
@@ -8368,7 +8349,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-22aa52dd] {\n    margin-left: 30%\n}\n\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-22aa52dd]{\n    margin-left: 30%\n}\n", ""]);
 
 // exports
 
@@ -8387,7 +8368,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-2ff2e829] {\n    margin-left: 30%\n}\n\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-2ff2e829]{\n    margin-left: 30%\n}\n", ""]);
 
 // exports
 
@@ -8406,7 +8387,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-6f78f10c] {\n    margin-left: 30%\n}\n\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-6f78f10c]{\n    margin-left: 30%\n}\n", ""]);
 
 // exports
 
@@ -41545,11 +41526,9 @@ var render = function() {
       _vm._m(0),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
+        _vm._m(1),
+        _vm._v(" "),
         _c("div", { staticClass: "container" }, [
-          _vm._m(1),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
           _vm._m(2),
           _vm._v(" "),
           _c("br"),
@@ -41655,6 +41634,15 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("h5", [_c("strong", [_vm._v("Dados Pessoais")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { attrs: { align: "center" } }, [
+      _c("strong", [_vm._v("Tipo")]),
+      _vm._v(" Autor")
     ])
   },
   function() {
@@ -41818,38 +41806,6 @@ var staticRenderFns = [
             )
           ]
         )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
-        _c("div", { staticClass: "col-xs-2" }, [
-          _c("span", [_c("strong", [_vm._v("* Parte ")])]),
-          _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha um tipo")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Curador")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Síndico")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Tutor")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Assistente")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Representante Geral")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Procurador")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Amicus Curiae")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Escritório de Advocacia")])
-          ])
-        ])
       ])
     ])
   },
