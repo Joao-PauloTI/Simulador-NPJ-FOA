@@ -22,3 +22,11 @@ Route::get('cadastrarautor', function () {
 Route::get('cadastrarrepresentanteautor', function () {
 	return view('CadastrarRepresentanteAutor/CRA_index');
 });
+
+Route::get('cadastrarreu', function () {
+	return view('CadastrarReu/CR_index');
+});
+
+Route::get('cadastrarrepresentantereu', function () {
+	return view('CadastrarRepresentanteReu/CRR_index');
+});

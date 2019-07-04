@@ -1,14 +1,14 @@
 <template>
-	<div class="container">
-		<div class="card">
-			<div class="card-header">
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
                 <h5>
                     <strong>Dados Complementares</strong>
                 </h5>
             </div>
             <div class="card-body">
-            	<div class="container">
-            		<!-- Estado Civil -->
+                <div class="container">
+                    <!-- Estado Civil -->
                     <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
@@ -102,22 +102,22 @@
                         </form>
                     </div>
                     <br>
-            	</div>
+                </div>
             </div>
-		</div>
-		<br>
-		<!--Botões SALVAR/FECHAR-->
+        </div>
+        <br>
+        <!--Botões SALVAR/FECHAR-->
         <div align="center">
             <form action="">
                 <button type="submit" class="btn btn-primary">SALVAR</button>
                 <button type="button" class="btn btn-danger">FECHAR</button>
             </form>
         </div>
-		<br>
-	</div>
+        <br>
+    </div>
 </template>
 <script>
-export default {
+    export default {
     name: 'cadadosComplementares',
     data: function() {
         return {
@@ -128,7 +128,8 @@ export default {
 
 </script>
 <style type="text/css" scoped>
-    #alinhado{
-        margin-left: 30%
-    }
+#alinhado {
+    margin-left: 30%
+}
+
 </style>

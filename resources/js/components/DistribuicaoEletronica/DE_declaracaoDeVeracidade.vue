@@ -1,5 +1,5 @@
 <template>
-    <div class="container" id="ajudadeclaracao">
+    <div class="container" id="DE_dDV_ajudadeclaracao">
         <div class="card">
             <div class="card-header">
                 <h5>
@@ -10,8 +10,8 @@
             <div class="card-body">
                 <form action="">
                     <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="ddvCheck">
-                        <label class="custom-control-label" for="ddvCheck"> "Declaro sob as penas da Lei, que as
+                        <input type="checkbox" class="custom-control-input" id="DE_dDV1">
+                        <label class="custom-control-label" for="DE_dDV1"> "Declaro sob as penas da Lei, que as
                             informações acima prestadas correspondem à verdade, tendo sido prestadas em obediência à
                             lealdade processual e à boa fé, nos termos do Art.
                             5º do CPC/15, ciente de que a eventual prestação de informações inverídicas poderá acarretar

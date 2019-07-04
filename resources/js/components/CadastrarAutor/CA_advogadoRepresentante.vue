@@ -23,16 +23,16 @@
                         <div class="col-sm" align="center">
                             <p><strong>Representa</strong></p>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="autorOpcao10" id="autorOpcao10">
-                                <label class="custom-control-label" for="autorOpcao10"></label>
+                                <input type="checkbox" class="custom-control-input" name="CA_aR1" id="CA_aR1">
+                                <label class="custom-control-label" for="CA_aR1"></label>
                             </div>
                         </div>
                         <!-- Intimação -->
                         <div class="col-sm" align="center">
                             <p><strong>Intimação</strong></p>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="autorOpcao11" id="autorOpcao11">
-                                <label class="custom-control-label" for="autorOpcao11"></label>
+                                <input type="checkbox" class="custom-control-input" name="CA_aR2" id="CA_aR2">
+                                <label class="custom-control-label" for="CA_aR2"></label>
                             </div>
                         </div>
                     </div>

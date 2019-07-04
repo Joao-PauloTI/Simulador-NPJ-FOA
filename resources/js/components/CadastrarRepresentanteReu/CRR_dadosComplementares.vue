@@ -118,7 +118,7 @@
 </template>
 <script>
     export default {
-    name: 'cradadosComplementares',
+    name: 'crrdadosComplementares',
     data: function() {
         return {
 

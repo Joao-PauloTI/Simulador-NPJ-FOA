@@ -35,9 +35,18 @@ Vue.component('cadadoscomplementares', require('./components/CadastrarAutor/CA_d
 
 //Componentes da pasta CadastrarRepresentanteAutor
 Vue.component('cradadospessoais', require('./components/CadastrarRepresentanteAutor/CRA_dadosPessoais.vue').default);
-Vue.component('craadvogadorepresentante', require('./components/CadastrarRepresentanteAutor/CRA_advogadoRepresentante.vue').default);
 Vue.component('craendereco', require('./components/CadastrarRepresentanteAutor/CRA_endereco.vue').default);
 Vue.component('cradadoscomplementares', require('./components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue').default);
+
+//Componentes da pasta CadastrarReu
+Vue.component('crdadospessoais', require('./components/CadastrarReu/CR_dadosPessoais.vue').default);
+Vue.component('crendereco', require('./components/CadastrarReu/CR_endereco.vue').default);
+Vue.component('crdadoscomplementares', require('./components/CadastrarReu/CR_dadosComplementares.vue').default);
+
+//Componentes da pasta CadastrarRepresentanteReu
+Vue.component('crrdadospessoais', require('./components/CadastrarRepresentanteReu/CRR_dadosPessoais.vue').default);
+Vue.component('crrendereco', require('./components/CadastrarRepresentanteReu/CRR_endereco.vue').default);
+Vue.component('crrdadoscomplementares', require('./components/CadastrarRepresentanteReu/CRR_dadosComplementares.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -50,22 +59,29 @@ Vue.use(VueTheMask)
 const app = new Vue({
     el: '#app',
     components: [
-      //DistribuicaoEletronica
-      'degrerj',
-      'deprocessoPrincipal',
-      'dedadosDoProcesso',
-      'deadvogadoRepresentante',
-      'deautoresReusDocumentos',
-      'dedeclaracaoDeVeracidade',
-      //CadastrarAutor
-      'cadadosPessoais',
-      'caadvogadoRepresentante',
-      'caendereco',
-      'cadadosComplementares',
-      //CadastrarRepresentanteAutor
-      'cradadosPessoais',
-      'craadvogadoRepresentante',
-      'craendereco',
-      'cradadosComplementares',
+        //DistribuicaoEletronica
+        'degrerj',
+        'deprocessoPrincipal',
+        'dedadosDoProcesso',
+        'deadvogadoRepresentante',
+        'deautoresReusDocumentos',
+        'dedeclaracaoDeVeracidade',
+        //CadastrarAutor
+        'cadadosPessoais',
+        'caadvogadoRepresentante',
+        'caendereco',
+        'cadadosComplementares',
+        //CadastrarRepresentanteAutor
+        'cradadosPessoais',
+        'craendereco',
+        'cradadosComplementares',
+        //CadastrarReu
+        'crdadosPessoais',
+        'crendereco',
+        'crdadosComplementares',
+        //CadastrarRepresentanteReu
+        'crrdadosPessoais',
+        'crrendereco',
+        'crrdadosComplementares',
     ],
 });

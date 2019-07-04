@@ -5,7 +5,7 @@
         <p><strong>ATENÇÃO SENHOR ADVOGADO: SE NÃO HOUVER PEDIDO DE JUSTIÇA GRATUITA, ANTES DE REALIZAR O CADASTRAMENTO
                 DE SUA PETIÇÃO, FAÇA O RECOLHIMENTO DO GRERJ, POIS SEU NÚMERO E VALOR SERÃO NECESSÁRIOS.</strong></p>
         <p>Campos marcados com <strong>*</strong> são de preenchimento obrigatório.</p>
-        <div class="card" id="ajudagrerj">
+        <div class="card" id="DE_g_ajudagrerj">
             <div class="card-header">
                 <h5>
                     <strong>GRERJ</strong>
@@ -15,12 +15,12 @@
             <div class="card-body">
                 <span><strong>* Possui GRERJ?</strong> </span>
                 <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" class="custom-control-input" name="grerj" id="grerjSim" value="showSim" v-model="showOpcao">
-                    <label class="custom-control-label" for="grerjSim"> Sim </label>
+                    <input type="radio" class="custom-control-input" name="DE_g_grerj" id="DE_g_grerjSim" value="showSim" v-model="showOpcao">
+                    <label class="custom-control-label" for="DE_g_grerjSim"> Sim </label>
                 </div>
                 <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" class="custom-control-input" name="grerj" id="grerjNao" value="showNao" v-model="showOpcao">
-                    <label class="custom-control-label" for="grerjNao"> Não </label>
+                    <input type="radio" class="custom-control-input" name="DE_g_grerj" id="DE_g_grerjNao" value="showNao" v-model="showOpcao">
+                    <label class="custom-control-label" for="DE_g_grerjNao"> Não </label>
                 </div>
                 <div v-show="showOpcao === 'showSim'">
                     <br>

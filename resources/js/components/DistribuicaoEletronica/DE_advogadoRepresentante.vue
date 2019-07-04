@@ -1,5 +1,5 @@
 <template>
-    <div class="container" id="ajudaadvogado">
+    <div class="container" id="DE_aR_ajudaadvogado">
         <div class="card">
             <div class="card-header">
                 <h5>
@@ -10,8 +10,8 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-xs-6">
-                        <label for="selectAR">
-                            <select class="custom-select" id="selectAR" v-model="showOpcao" required>
+                        <label for="DE_aR1">
+                            <select class="custom-select" id="DE_aR1" v-model="showOpcao" required>
                                 <option value="advogado">Advogado</option>
                                 <option value="defensor">Defensor Público</option>
                             </select>
@@ -23,8 +23,8 @@
                     <div class="col-xs-6" v-show="showOpcao === 'advogado'">
                         <form class="form-inline">
                             <span><strong> Número de OAB:</strong> </span>
-                            <label for="regiaoOAB">
-                                <select class="custom-select" id="regiaoOAB">
+                            <label for="DE_aR2">
+                                <select class="custom-select" id="DE_aR2">
                                     <option>RJ</option>
                                     <option>SP</option>
                                 </select>

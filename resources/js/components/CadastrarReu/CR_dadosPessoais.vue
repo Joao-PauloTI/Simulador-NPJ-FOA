@@ -8,77 +8,14 @@
             </div>
             <div class="card-body">
                 <div class="container">
-                    <div align="center">
-                        <!--Opções de marcar-->
-                        <form action="">
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP1" id="CRA_dP1">
-                                <label class="custom-control-label" for="CRA_dP1"> Incapaz
-                                </label>
-                            </div>
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP2" id="CRA_dP2">
-                                <label class="custom-control-label" for="CRA_dP2"> Massa Falida </label>
-                            </div>
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP3" id="CRA_dP3">
-                                <label class="custom-control-label" for="CRA_dP3"> Insolvente Civil
-                                </label>
-                            </div>
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP4" id="CRA_dP4">
-                                <label class="custom-control-label" for="CRA_dP4"> Preso </label>
-                            </div>
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP5" id="CRA_dP5">
-                                <label class="custom-control-label" for="CRA_dP5"> Espólio com interesse de Incapaz </label>
-                            </div>
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP6" id="CRA_dP6">
-                                <label class="custom-control-label" for="CRA_dP6"> Condomínio </label>
-                            </div>
-                        </form>
-                    </div>
-                    <br>
-                    <!-- Parte -->
-                    <div id="alinhado">
-                        <form class="form-inline">
-                            <div class="col-xs-2">
-                                <span><strong>* Parte </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha um tipo</option>
-                                    <option>Curador</option>
-                                    <option>Síndico</option>
-                                    <option>Tutor</option>
-                                    <option>Assistente</option>
-                                    <option>Representante</option>
-                                    <option>Procurador</option>
-                                    <option>Amicus Curiae</option>
-                                    <option>Escritório de Advocacia</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-                    <br>
-                    <!-- Ministério Público -->
+                    <!-- Tipo -->
+                    <p id="alinhado"><strong>Tipo</strong> Réu</p>
+                    <!-- Estrangeiro/Brasileiro -->
                     <div id="alinhado">
                         <form action="">
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP7" id="CRA_dP7">
-                                <label class="custom-control-label" for="CRA_dP7"><strong>Ministério Público? </strong> </label>
-                            </div>
-                        </form>
-                    </div>
-                    <br>
-                    <!-- Pessoa Física ou Jurídica -->
-                    <div id="alinhado">
-                        <form class="form-inline">
-                            <div class="col-xs-2">
-                                <span><strong>Pessoa Física ou Jurídica </strong> </span>
-                                <select class="custom-select">
-                                    <option>Pessoa Física</option>
-                                    <option>Pessoa Jurídica</option>
-                                </select>
+                                <input type="checkbox" class="custom-control-input" name="CR_dP1" id="CR_dP1">
+                                <label class="custom-control-label" for="CR_dP1"><strong>Estrangeiro e/ou brasileiro residente no exterior? </strong> </label>
                             </div>
                         </form>
                     </div>
@@ -149,28 +86,18 @@
                     <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
-                                <span><strong>Órgão Emissor </strong> </span>
+                                <span><strong>Órgão Expedidor </strong> </span>
                                 <input type="text" class="form-control" required>
                             </div>
                         </form>
                     </div>
                     <br>
-                    <!-- Data de Emissão -->
+                    <!-- Data de emissão -->
                     <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Data de Emissão </strong> </span>
                                 <input type="date" class="form-control" required>
-                            </div>
-                        </form>
-                    </div>
-                    <br>
-                    <!-- Telefone -->
-                    <div id="alinhado">
-                        <form class="form-inline">
-                            <div class="col-xs-2">
-                                <span><strong>Telefone </strong> </span>
-                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" required>
                             </div>
                         </form>
                     </div>
@@ -192,7 +119,7 @@
 </template>
 <script>
     export default {
-    name: 'cradadosPessoais',
+    name: 'crdadosPessoais',
     data: function() {
         return {
 

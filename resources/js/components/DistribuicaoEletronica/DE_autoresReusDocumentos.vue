@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <!--Autores-->
-        <div class="card" id="ajudaautor">
+        <div class="card" id="DE_aRD_ajudaautor">
             <div class="card-header">
                 <h5>
                     <strong>Autor(es)</strong>
@@ -13,10 +13,42 @@
                 <span> | </span>
                 <a href="/cadastrarrepresentanteautor" target="popup"> Cadastrar Representante do Autor </a>
             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Autor</p>
+                        <p>Representante Legal</p>
+                    </div>
+                    <div class="col-sm">
+                        <p>Pessoa Física</p> <!-- Autor -->
+                        <p>Pessoa Jurídica</p> <!-- Representante -->
+                    </div>
+                    <div class="col-sm">
+                        <p>FULANO DE TAL</p> <!-- Autor -->
+                        <p>BELTRANO DE TAL</p> <!-- Representante -->
+                    </div>
+                    <div class="col-sm">
+                        <form action="">
+                            <!-- Autor -->
+                            <p>
+                                <a href="#"><ins>Alterar</ins></a>
+                                <a href="#"><ins>Excluir</ins></a>
+                            </p>
+                        </form>
+                        <form action="">
+                            <!-- Representante -->
+                            <p>
+                                <a href="#"><ins>Alterar</ins></a>
+                                <a href="#"><ins>Excluir</ins></a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
         <br>
         <!--Réus-->
-        <div class="card" id="ajudareu">
+        <div class="card" id="DE_aRD_ajudareu">
             <div class="card-header">
                 <h5>
                     <strong>Réu(s)</strong>
@@ -24,14 +56,14 @@
                 </h5>
             </div>
             <div class="card-body">
-                <a href="#">Cadastrar Réu </a>
+                <a href="/cadastrarreu" target="popup">Cadastrar Réu </a>
                 <span> | </span>
-                <a href="#"> Cadastrar Representante do Réu </a>
+                <a href="/cadastrarrepresentantereu" target="popup"> Cadastrar Representante do Réu </a>
             </div>
         </div>
         <br>
         <!--Documentos-->
-        <div class="card" id="ajudadocumentos">
+        <div class="card" id="DE_aRD_ajudadocumentos">
             <div class="card-header">
                 <h5>
                     <strong>Documento(s)</strong>

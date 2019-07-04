@@ -8,6 +8,16 @@
             </div>
             <div class="card-body">
                 <div class="container">
+                    <!-- Endereco Incerto -->
+                    <div id="alinhado">
+                        <form action="">
+                            <div class="custom-control custom-control-inline custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" name="CRR_e1" id="CRR_e1">
+                                <label class="custom-control-label" for="CRR_e1"><strong>Endereco Incerto </strong> </label>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
                     <!-- CEP -->
                     <div id="alinhado">
                         <form class="form-inline">
@@ -137,8 +147,8 @@
                     <div id="alinhado">
                         <form action="">
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_e1" id="CRA_e1">
-                                <label class="custom-control-label" for="CRA_e1">O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial? </label>
+                                <input type="checkbox" class="custom-control-input" name="CRR_e2" id="CRR_e2">
+                                <label class="custom-control-label" for="CRR_e2">O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial? </label>
                             </div>
                         </form>
                     </div>
@@ -150,7 +160,7 @@
 </template>
 <script>
     export default {
-    name: 'craendereco',
+    name: 'crrendereco',
     data: function() {
         return {
 

@@ -137,8 +137,8 @@
                     <div id="alinhado">
                         <form action="">
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="autorOpcao12" id="autorOpcao12">
-                                <label class="custom-control-label" for="autorOpcao12">O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial? </label>
+                                <input type="checkbox" class="custom-control-input" name="CA_e1" id="CA_e1">
+                                <label class="custom-control-label" for="CA_e1">O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial? </label>
                             </div>
                         </form>
                     </div>
@@ -149,7 +149,7 @@
     </div>
 </template>
 <script>
-export default {
+    export default {
     name: 'caendereco',
     data: function() {
         return {
@@ -160,7 +160,8 @@ export default {
 
 </script>
 <style type="text/css" scoped>
-    #alinhado{
-        margin-left: 30%
-    }
+#alinhado {
+    margin-left: 30%
+}
+
 </style>

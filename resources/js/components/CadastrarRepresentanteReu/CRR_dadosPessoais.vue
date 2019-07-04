@@ -8,38 +8,6 @@
             </div>
             <div class="card-body">
                 <div class="container">
-                    <div align="center">
-                        <!--Opções de marcar-->
-                        <form action="">
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP1" id="CRA_dP1">
-                                <label class="custom-control-label" for="CRA_dP1"> Incapaz
-                                </label>
-                            </div>
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP2" id="CRA_dP2">
-                                <label class="custom-control-label" for="CRA_dP2"> Massa Falida </label>
-                            </div>
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP3" id="CRA_dP3">
-                                <label class="custom-control-label" for="CRA_dP3"> Insolvente Civil
-                                </label>
-                            </div>
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP4" id="CRA_dP4">
-                                <label class="custom-control-label" for="CRA_dP4"> Preso </label>
-                            </div>
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP5" id="CRA_dP5">
-                                <label class="custom-control-label" for="CRA_dP5"> Espólio com interesse de Incapaz </label>
-                            </div>
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP6" id="CRA_dP6">
-                                <label class="custom-control-label" for="CRA_dP6"> Condomínio </label>
-                            </div>
-                        </form>
-                    </div>
-                    <br>
                     <!-- Parte -->
                     <div id="alinhado">
                         <form class="form-inline">
@@ -56,16 +24,6 @@
                                     <option>Amicus Curiae</option>
                                     <option>Escritório de Advocacia</option>
                                 </select>
-                            </div>
-                        </form>
-                    </div>
-                    <br>
-                    <!-- Ministério Público -->
-                    <div id="alinhado">
-                        <form action="">
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP7" id="CRA_dP7">
-                                <label class="custom-control-label" for="CRA_dP7"><strong>Ministério Público? </strong> </label>
                             </div>
                         </form>
                     </div>
@@ -145,7 +103,7 @@
                         </form>
                     </div>
                     <br>
-                    <!-- Órgão Expedidor -->
+                    <!-- Órgão Emissor -->
                     <div id="alinhado">
                         <form class="form-inline">
                             <div class="col-xs-2">
@@ -192,7 +150,7 @@
 </template>
 <script>
     export default {
-    name: 'cradadosPessoais',
+    name: 'crrdadosPessoais',
     data: function() {
         return {
 

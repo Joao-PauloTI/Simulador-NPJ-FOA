@@ -4,7 +4,6 @@
 @section('conteudo')
 	<div id="app">
 		<cradadospessoais></cradadospessoais>
-		<craadvogadorepresentante></craadvogadorepresentante>
 		<craendereco></craendereco>
 		<cradadoscomplementares></cradadoscomplementares>
 	</div>
