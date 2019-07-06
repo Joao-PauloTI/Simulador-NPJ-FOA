@@ -31,21 +31,25 @@ Vue.component('dedeclaracaodeveracidade', require('./components/DistribuicaoElet
 Vue.component('cadadospessoais', require('./components/CadastrarAutor/CA_dadosPessoais.vue').default);
 Vue.component('caadvogadorepresentante', require('./components/CadastrarAutor/CA_advogadoRepresentante.vue').default);
 Vue.component('caendereco', require('./components/CadastrarAutor/CA_endereco.vue').default);
+Vue.component('cavalorpedidocausa', require('./components/CadastrarAutor/CA_valorPedidoCausa.vue').default);
 Vue.component('cadadoscomplementares', require('./components/CadastrarAutor/CA_dadosComplementares.vue').default);
 
 //Componentes da pasta CadastrarRepresentanteAutor
 Vue.component('cradadospessoais', require('./components/CadastrarRepresentanteAutor/CRA_dadosPessoais.vue').default);
 Vue.component('craendereco', require('./components/CadastrarRepresentanteAutor/CRA_endereco.vue').default);
+Vue.component('cravalorpedidocausa', require('./components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue').default);
 Vue.component('cradadoscomplementares', require('./components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue').default);
 
 //Componentes da pasta CadastrarReu
 Vue.component('crdadospessoais', require('./components/CadastrarReu/CR_dadosPessoais.vue').default);
 Vue.component('crendereco', require('./components/CadastrarReu/CR_endereco.vue').default);
+Vue.component('crvalorpedidocausa', require('./components/CadastrarReu/CR_valorPedidoCausa.vue').default);
 Vue.component('crdadoscomplementares', require('./components/CadastrarReu/CR_dadosComplementares.vue').default);
 
 //Componentes da pasta CadastrarRepresentanteReu
 Vue.component('crrdadospessoais', require('./components/CadastrarRepresentanteReu/CRR_dadosPessoais.vue').default);
 Vue.component('crrendereco', require('./components/CadastrarRepresentanteReu/CRR_endereco.vue').default);
+Vue.component('crrvalorpedidocausa', require('./components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue').default);
 Vue.component('crrdadoscomplementares', require('./components/CadastrarRepresentanteReu/CRR_dadosComplementares.vue').default);
 
 /**
@@ -70,18 +74,22 @@ const app = new Vue({
         'cadadosPessoais',
         'caadvogadoRepresentante',
         'caendereco',
+        'cavalorPedidoCausa',
         'cadadosComplementares',
         //CadastrarRepresentanteAutor
         'cradadosPessoais',
         'craendereco',
+        'cravalorPedidoCausa',
         'cradadosComplementares',
         //CadastrarReu
         'crdadosPessoais',
         'crendereco',
+        'crvalorPedidoCausa',
         'crdadosComplementares',
         //CadastrarRepresentanteReu
         'crrdadosPessoais',
         'crrendereco',
+        'crrvalorPedidoCausa',
         'crrdadosComplementares',
     ],
 });

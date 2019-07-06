@@ -1,10 +1,10 @@
 <template>
-    <div class="container" id="DE_aR_ajudaadvogado">
+    <div class="container">
         <div class="card">
             <div class="card-header">
                 <h5>
                     <strong>Advogado / Representante</strong>
-                    <a href="#ajudaadvogado" v-on:click="ajuda()">(?)</a>
+                    <a href="#ajuda" v-on:click="ajuda()">(?)</a>
                 </h5>
             </div>
             <div class="card-body">

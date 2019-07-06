@@ -1,11 +1,11 @@
 <template>
     <div class="container">
         <!--Autores-->
-        <div class="card" id="DE_aRD_ajudaautor">
+        <div class="card">
             <div class="card-header">
                 <h5>
                     <strong>Autor(es)</strong>
-                    <a href="#ajudaautor" v-on:click="ajuda()">(?)</a>
+                    <a href="#ajuda" v-on:click="ajuda()">(?)</a>
                 </h5>
             </div>
             <div class="card-body">
@@ -48,11 +48,11 @@
         </div>
         <br>
         <!--Réus-->
-        <div class="card" id="DE_aRD_ajudareu">
+        <div class="card">
             <div class="card-header">
                 <h5>
                     <strong>Réu(s)</strong>
-                    <a href="#ajudareu" v-on:click="ajuda()">(?)</a>
+                    <a href="#ajuda" v-on:click="ajuda()">(?)</a>
                 </h5>
             </div>
             <div class="card-body">
@@ -63,11 +63,11 @@
         </div>
         <br>
         <!--Documentos-->
-        <div class="card" id="DE_aRD_ajudadocumentos">
+        <div class="card">
             <div class="card-header">
                 <h5>
                     <strong>Documento(s)</strong>
-                    <a href="#ajudadocumentos" v-on:click="ajuda()">(?)</a>
+                    <a href="#ajuda" v-on:click="ajuda()">(?)</a>
                 </h5>
             </div>
             <div class="card-body">

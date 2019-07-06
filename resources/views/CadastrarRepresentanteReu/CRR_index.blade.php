@@ -5,6 +5,7 @@
 	<div id="app">
 		<crrdadospessoais></crrdadospessoais>
 		<crrendereco></crrendereco>
+		<crrvalorpedidocausa></crrvalorpedidocausa>
 		<crrdadoscomplementares></crrdadoscomplementares>
 	</div>
 @endsection

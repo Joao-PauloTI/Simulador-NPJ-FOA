@@ -1904,10 +1904,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'caadvogadoRepresentante',
   data: function data() {
     return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
   }
 });
 
@@ -2040,10 +2046,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'cadadosComplementares',
   data: function data() {
     return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
   }
 });
 
@@ -2251,10 +2263,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'cadadosPessoais',
   data: function data() {
     return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
   }
 });
 
@@ -2419,10 +2437,99 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'caendereco',
   data: function data() {
     return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'cavalorPedidoCausa',
+  data: function data() {
+    return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
   }
 });
 
@@ -2555,10 +2662,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'cradadosComplementares',
   data: function data() {
     return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
   }
 });
 
@@ -2765,10 +2878,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'cradadosPessoais',
   data: function data() {
     return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
   }
 });
 
@@ -2933,10 +3052,99 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'craendereco',
   data: function data() {
     return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'cravalorPedidoCausa',
+  data: function data() {
+    return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
   }
 });
 
@@ -3069,10 +3277,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'crrdadosComplementares',
   data: function data() {
     return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
   }
 });
 
@@ -3237,10 +3451,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'crrdadosPessoais',
   data: function data() {
     return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
   }
 });
 
@@ -3415,10 +3635,99 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'crrendereco',
   data: function data() {
     return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'crrvalorPedidoCausa',
+  data: function data() {
+    return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
   }
 });
 
@@ -3551,10 +3860,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'crdadosComplementares',
   data: function data() {
     return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
   }
 });
 
@@ -3688,10 +4003,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'crdadosPessoais',
   data: function data() {
     return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
   }
 });
 
@@ -3866,10 +4187,99 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'crendereco',
   data: function data() {
     return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'crvalorPedidoCausa',
+  data: function data() {
+    return {};
+  },
+  methods: {
+    ajuda: function ajuda() {
+      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    }
   }
 });
 
@@ -9239,6 +9649,25 @@ exports.push([module.i, "\n#alinhado[data-v-63665f62] {\n    margin-left: 30%\n}
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=style&index=0&id=5b7199d5&scoped=true&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=style&index=0&id=5b7199d5&scoped=true&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#alinhado[data-v-5b7199d5] {\n    margin-left: 30%\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue?vue&type=style&index=0&id=22aa52dd&scoped=true&lang=css&":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue?vue&type=style&index=0&id=22aa52dd&scoped=true&lang=css& ***!
@@ -9290,6 +9719,25 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 // module
 exports.push([module.i, "\n#alinhado[data-v-6f78f10c] {\n    margin-left: 30%\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=style&index=0&id=6dd4e17f&scoped=true&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=style&index=0&id=6dd4e17f&scoped=true&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#alinhado[data-v-6dd4e17f] {\n    margin-left: 30%\n}\n\n", ""]);
 
 // exports
 
@@ -9353,6 +9801,25 @@ exports.push([module.i, "\n#alinhado[data-v-34144208] {\n    margin-left: 30%\n}
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=style&index=0&id=033cdf6f&scoped=true&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=style&index=0&id=033cdf6f&scoped=true&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#alinhado[data-v-033cdf6f] {\n    margin-left: 30%\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarReu/CR_dadosComplementares.vue?vue&type=style&index=0&id=44bccd79&scoped=true&lang=css&":
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarReu/CR_dadosComplementares.vue?vue&type=style&index=0&id=44bccd79&scoped=true&lang=css& ***!
@@ -9404,6 +9871,25 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 // module
 exports.push([module.i, "\n#alinhado[data-v-40a8fff0] {\n    margin-left: 30%\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=style&index=0&id=4bec673a&scoped=true&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=style&index=0&id=4bec673a&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#alinhado[data-v-4bec673a] {\n    margin-left: 30%\n}\n\n", ""]);
 
 // exports
 
@@ -40319,6 +40805,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=style&index=0&id=5b7199d5&scoped=true&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=style&index=0&id=5b7199d5&scoped=true&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./CA_valorPedidoCausa.vue?vue&type=style&index=0&id=5b7199d5&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=style&index=0&id=5b7199d5&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue?vue&type=style&index=0&id=22aa52dd&scoped=true&lang=css&":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue?vue&type=style&index=0&id=22aa52dd&scoped=true&lang=css& ***!
@@ -40388,6 +40904,36 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./CRA_endereco.vue?vue&type=style&index=0&id=6f78f10c&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteAutor/CRA_endereco.vue?vue&type=style&index=0&id=6f78f10c&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=style&index=0&id=6dd4e17f&scoped=true&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=style&index=0&id=6dd4e17f&scoped=true&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./CRA_valorPedidoCausa.vue?vue&type=style&index=0&id=6dd4e17f&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=style&index=0&id=6dd4e17f&scoped=true&lang=css&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -40499,6 +41045,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=style&index=0&id=033cdf6f&scoped=true&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=style&index=0&id=033cdf6f&scoped=true&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./CRR_valorPedidoCausa.vue?vue&type=style&index=0&id=033cdf6f&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=style&index=0&id=033cdf6f&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarReu/CR_dadosComplementares.vue?vue&type=style&index=0&id=44bccd79&scoped=true&lang=css&":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarReu/CR_dadosComplementares.vue?vue&type=style&index=0&id=44bccd79&scoped=true&lang=css& ***!
@@ -40568,6 +41144,36 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./CR_endereco.vue?vue&type=style&index=0&id=40a8fff0&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarReu/CR_endereco.vue?vue&type=style&index=0&id=40a8fff0&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=style&index=0&id=4bec673a&scoped=true&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=style&index=0&id=4bec673a&scoped=true&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./CR_valorPedidoCausa.vue?vue&type=style&index=0&id=4bec673a&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=style&index=0&id=4bec673a&scoped=true&lang=css&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -41188,85 +41794,100 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Advogado Representante")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [_c("strong", [_vm._v("Advogado Representante")])])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-sm" }, [
-                _c("p", [_c("strong", [_vm._v("OAB")])]),
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm" }, [
+            _c("p", [_c("strong", [_vm._v("OAB")])]),
+            _vm._v(" "),
+            _c("p", [_vm._v("RJ123456")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm" }, [
+            _c("p", [_c("strong", [_vm._v("Nome")])]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Lorem Ipsum Dolor Sit Amet")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm", attrs: { align: "center" } }, [
+            _c("p", [_c("strong", [_vm._v("Representa")])]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "custom-control custom-control-inline custom-checkbox"
+              },
+              [
+                _c("input", {
+                  staticClass: "custom-control-input",
+                  attrs: { type: "checkbox", name: "CA_aR1", id: "CA_aR1" }
+                }),
                 _vm._v(" "),
-                _c("p", [_vm._v("RJ123456")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-sm" }, [
-                _c("p", [_c("strong", [_vm._v("Nome")])]),
+                _c("label", {
+                  staticClass: "custom-control-label",
+                  attrs: { for: "CA_aR1" }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm", attrs: { align: "center" } }, [
+            _c("p", [_c("strong", [_vm._v("Intimação")])]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "custom-control custom-control-inline custom-checkbox"
+              },
+              [
+                _c("input", {
+                  staticClass: "custom-control-input",
+                  attrs: { type: "checkbox", name: "CA_aR2", id: "CA_aR2" }
+                }),
                 _vm._v(" "),
-                _c("p", [_vm._v("Lorem Ipsum Dolor Sit Amet")])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-sm", attrs: { align: "center" } }, [
-                _c("p", [_c("strong", [_vm._v("Representa")])]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "custom-control custom-control-inline custom-checkbox"
-                  },
-                  [
-                    _c("input", {
-                      staticClass: "custom-control-input",
-                      attrs: { type: "checkbox", name: "CA_aR1", id: "CA_aR1" }
-                    }),
-                    _vm._v(" "),
-                    _c("label", {
-                      staticClass: "custom-control-label",
-                      attrs: { for: "CA_aR1" }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-sm", attrs: { align: "center" } }, [
-                _c("p", [_c("strong", [_vm._v("Intimação")])]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "custom-control custom-control-inline custom-checkbox"
-                  },
-                  [
-                    _c("input", {
-                      staticClass: "custom-control-input",
-                      attrs: { type: "checkbox", name: "CA_aR2", id: "CA_aR2" }
-                    }),
-                    _vm._v(" "),
-                    _c("label", {
-                      staticClass: "custom-control-label",
-                      attrs: { for: "CA_aR2" }
-                    })
-                  ]
-                )
-              ])
-            ])
+                _c("label", {
+                  staticClass: "custom-control-label",
+                  attrs: { for: "CA_aR2" }
+                })
+              ]
+            )
           ])
         ])
-      ]),
-      _vm._v(" "),
-      _c("br")
+      ])
     ])
   }
 ]
@@ -41291,176 +41912,195 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Dados Complementares")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [_c("strong", [_vm._v("Dados Complementares")])])
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Escolha o estado civil")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Solteiro")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Casado")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Divorciado")])
+              ])
+            ])
+          ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Escolha o estado civil")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Solteiro")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Casado")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Divorciado")])
-                  ])
-                ])
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Profissão ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Escolha a profissão")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Professor")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Desembargador")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Médico")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Contador")])
               ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Profissão ")])]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Escolha a profissão")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Professor")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Desembargador")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Médico")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Contador")])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Brasileira")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Naturalizado brasileiro")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Estrangeira")])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [
-                    _c("strong", [_vm._v("Escolha a Naturalidade ")])
-                  ]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Estado")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Rio de Janeiro")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("São Paulo")])
-                  ]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Cidade")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Volta Redonda")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Barra Mansa")])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: { type: "text", required: "" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: { type: "text", required: "" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: { type: "date", required: "" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br")
+            ])
           ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("div", { attrs: { align: "center" } }, [
-        _c("form", { attrs: { action: "" } }, [
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-            [_vm._v("SALVAR")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-danger", attrs: { type: "button" } },
-            [_vm._v("FECHAR")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("br")
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Brasileira")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Naturalizado brasileiro")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Estrangeira")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Estado")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Rio de Janeiro")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("São Paulo")])
+              ]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Cidade")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Volta Redonda")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Barra Mansa")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", required: "" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", required: "" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "date", required: "" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { align: "center" } }, [
+      _c("form", { attrs: { action: "" } }, [
+        _c(
+          "button",
+          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+          [_vm._v("SALVAR")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          { staticClass: "btn btn-danger", attrs: { type: "button" } },
+          [_vm._v("FECHAR")]
+        )
+      ])
     ])
   }
 ]
@@ -41487,12 +42127,33 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "card" }, [
-      _vm._m(0),
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Dados Pessoais")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
-        _vm._m(1),
+        _vm._m(0),
         _vm._v(" "),
         _c("div", { staticClass: "container" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
           _vm._m(2),
           _vm._v(" "),
           _c("br"),
@@ -41509,14 +42170,10 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(6),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("form", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(7),
+                _vm._m(6),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -41533,6 +42190,10 @@ var render = function() {
               ])
             ])
           ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(7),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
@@ -41556,14 +42217,10 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(13),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("form", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(14),
+                _vm._m(13),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -41583,7 +42240,7 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(15)
+          _vm._m(14)
         ])
       ])
     ]),
@@ -41592,14 +42249,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h5", [_c("strong", [_vm._v("Dados Pessoais")])])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -42003,14 +42652,31 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "card" }, [
-      _vm._m(0),
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Endereço")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("form", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(1),
+                _vm._m(0),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -42025,12 +42691,16 @@ var render = function() {
                   attrs: { type: "text", required: "" }
                 }),
                 _vm._v(" "),
-                _vm._m(2),
+                _vm._m(1),
                 _vm._v(" "),
-                _vm._m(3)
+                _vm._m(2)
               ])
             ])
           ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(3),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
@@ -42066,11 +42736,7 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(12),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _vm._m(13)
+          _vm._m(12)
         ])
       ])
     ]),
@@ -42079,14 +42745,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h5", [_c("strong", [_vm._v("Endereço")])])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -42319,6 +42977,185 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=template&id=5b7199d5&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=template&id=5b7199d5&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Valor do Pedido")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Valor da Causa")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(1)
+    ]),
+    _vm._v(" "),
+    _c("br")
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { attrs: { action: "" } }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "custom-control custom-control-inline custom-checkbox"
+              },
+              [
+                _c("input", {
+                  staticClass: "custom-control-input",
+                  attrs: { type: "checkbox", name: "CA_vPC1", id: "CA_vPC1" }
+                }),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  {
+                    staticClass: "custom-control-label",
+                    attrs: { for: "CA_vPC1" }
+                  },
+                  [_vm._v("O valor postulado é liquido? ")]
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("* Valor Postulado")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "text",
+                  placeholder: "ex.: 1.000,00",
+                  required: ""
+                }
+              })
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Valor da Causa")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "text",
+                  placeholder: "ex.: 1.000,00",
+                  required: ""
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("form", { attrs: { action: "" } }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "custom-control custom-control-inline custom-checkbox"
+              },
+              [
+                _c("input", {
+                  staticClass: "custom-control-input",
+                  attrs: { type: "checkbox", name: "CA_vPC2", id: "CA_vPC2" }
+                }),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  {
+                    staticClass: "custom-control-label",
+                    attrs: { for: "CA_vPC2" }
+                  },
+                  [
+                    _vm._v(
+                      "A pretensão deduzida versa sobre obrigações vincendas? "
+                    )
+                  ]
+                )
+              ]
+            )
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue?vue&type=template&id=22aa52dd&scoped=true&":
 /*!******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue?vue&type=template&id=22aa52dd&scoped=true& ***!
@@ -42334,176 +43171,195 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Dados Complementares")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [_c("strong", [_vm._v("Dados Complementares")])])
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Escolha o estado civil")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Solteiro")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Casado")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Divorciado")])
+              ])
+            ])
+          ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Escolha o estado civil")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Solteiro")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Casado")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Divorciado")])
-                  ])
-                ])
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Profissão ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Escolha a profissão")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Professor")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Desembargador")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Médico")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Contador")])
               ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Profissão ")])]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Escolha a profissão")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Professor")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Desembargador")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Médico")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Contador")])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Brasileira")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Naturalizado brasileiro")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Estrangeira")])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [
-                    _c("strong", [_vm._v("Escolha a Naturalidade ")])
-                  ]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Estado")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Rio de Janeiro")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("São Paulo")])
-                  ]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Cidade")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Volta Redonda")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Barra Mansa")])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: { type: "text", required: "" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: { type: "text", required: "" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: { type: "date", required: "" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br")
+            ])
           ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("div", { attrs: { align: "center" } }, [
-        _c("form", { attrs: { action: "" } }, [
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-            [_vm._v("SALVAR")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-danger", attrs: { type: "button" } },
-            [_vm._v("FECHAR")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("br")
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Brasileira")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Naturalizado brasileiro")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Estrangeira")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Estado")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Rio de Janeiro")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("São Paulo")])
+              ]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Cidade")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Volta Redonda")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Barra Mansa")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", required: "" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", required: "" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "date", required: "" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { align: "center" } }, [
+      _c("form", { attrs: { action: "" } }, [
+        _c(
+          "button",
+          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+          [_vm._v("SALVAR")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          { staticClass: "btn btn-danger", attrs: { type: "button" } },
+          [_vm._v("FECHAR")]
+        )
+      ])
     ])
   }
 ]
@@ -42530,10 +43386,31 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "card" }, [
-      _vm._m(0),
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Dados Pessoais")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
         _c("div", { staticClass: "container" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
           _vm._m(1),
           _vm._v(" "),
           _c("br"),
@@ -42550,14 +43427,10 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(5),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("form", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(6),
+                _vm._m(5),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -42577,6 +43450,10 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
+          _vm._m(6),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
           _vm._m(7),
           _vm._v(" "),
           _c("br"),
@@ -42593,14 +43470,10 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(11),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("form", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(12),
+                _vm._m(11),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -42620,7 +43493,7 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(13)
+          _vm._m(12)
         ])
       ])
     ]),
@@ -42629,14 +43502,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h5", [_c("strong", [_vm._v("Dados Pessoais")])])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -43026,14 +43891,31 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "card" }, [
-      _vm._m(0),
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Endereço")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("form", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(1),
+                _vm._m(0),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -43048,12 +43930,16 @@ var render = function() {
                   attrs: { type: "text", required: "" }
                 }),
                 _vm._v(" "),
-                _vm._m(2),
+                _vm._m(1),
                 _vm._v(" "),
-                _vm._m(3)
+                _vm._m(2)
               ])
             ])
           ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(3),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
@@ -43089,11 +43975,7 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(12),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _vm._m(13)
+          _vm._m(12)
         ])
       ])
     ]),
@@ -43102,14 +43984,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h5", [_c("strong", [_vm._v("Endereço")])])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -43342,6 +44216,185 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=template&id=6dd4e17f&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=template&id=6dd4e17f&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Valor do Pedido")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Valor da Causa")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(1)
+    ]),
+    _vm._v(" "),
+    _c("br")
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { attrs: { action: "" } }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "custom-control custom-control-inline custom-checkbox"
+              },
+              [
+                _c("input", {
+                  staticClass: "custom-control-input",
+                  attrs: { type: "checkbox", name: "CRA_vPC1", id: "CRA_vPC1" }
+                }),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  {
+                    staticClass: "custom-control-label",
+                    attrs: { for: "CRA_vPC1" }
+                  },
+                  [_vm._v("O valor postulado é liquido? ")]
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("* Valor Postulado")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "text",
+                  placeholder: "ex.: 1.000,00",
+                  required: ""
+                }
+              })
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Valor da Causa")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "text",
+                  placeholder: "ex.: 1.000,00",
+                  required: ""
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("form", { attrs: { action: "" } }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "custom-control custom-control-inline custom-checkbox"
+              },
+              [
+                _c("input", {
+                  staticClass: "custom-control-input",
+                  attrs: { type: "checkbox", name: "CRA_vPC2", id: "CRA_vPC2" }
+                }),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  {
+                    staticClass: "custom-control-label",
+                    attrs: { for: "CRA_vPC2" }
+                  },
+                  [
+                    _vm._v(
+                      "A pretensão deduzida versa sobre obrigações vincendas? "
+                    )
+                  ]
+                )
+              ]
+            )
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteReu/CRR_dadosComplementares.vue?vue&type=template&id=995b6226&scoped=true&":
 /*!****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarRepresentanteReu/CRR_dadosComplementares.vue?vue&type=template&id=995b6226&scoped=true& ***!
@@ -43357,176 +44410,195 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Dados Complementares")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [_c("strong", [_vm._v("Dados Complementares")])])
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Escolha o estado civil")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Solteiro")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Casado")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Divorciado")])
+              ])
+            ])
+          ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Escolha o estado civil")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Solteiro")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Casado")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Divorciado")])
-                  ])
-                ])
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Profissão ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Escolha a profissão")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Professor")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Desembargador")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Médico")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Contador")])
               ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Profissão ")])]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Escolha a profissão")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Professor")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Desembargador")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Médico")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Contador")])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Brasileira")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Naturalizado brasileiro")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Estrangeira")])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [
-                    _c("strong", [_vm._v("Escolha a Naturalidade ")])
-                  ]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Estado")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Rio de Janeiro")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("São Paulo")])
-                  ]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Cidade")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Volta Redonda")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Barra Mansa")])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: { type: "text", required: "" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: { type: "text", required: "" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: { type: "date", required: "" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br")
+            ])
           ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("div", { attrs: { align: "center" } }, [
-        _c("form", { attrs: { action: "" } }, [
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-            [_vm._v("SALVAR")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-danger", attrs: { type: "button" } },
-            [_vm._v("FECHAR")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("br")
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Brasileira")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Naturalizado brasileiro")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Estrangeira")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Estado")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Rio de Janeiro")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("São Paulo")])
+              ]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Cidade")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Volta Redonda")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Barra Mansa")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", required: "" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", required: "" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "date", required: "" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { align: "center" } }, [
+      _c("form", { attrs: { action: "" } }, [
+        _c(
+          "button",
+          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+          [_vm._v("SALVAR")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          { staticClass: "btn btn-danger", attrs: { type: "button" } },
+          [_vm._v("FECHAR")]
+        )
+      ])
     ])
   }
 ]
@@ -43553,10 +44625,31 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "card" }, [
-      _vm._m(0),
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Dados Pessoais")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
         _c("div", { staticClass: "container" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
           _vm._m(1),
           _vm._v(" "),
           _c("br"),
@@ -43565,14 +44658,10 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(3),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("form", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(4),
+                _vm._m(3),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -43592,6 +44681,10 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
+          _vm._m(4),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
           _vm._m(5),
           _vm._v(" "),
           _c("br"),
@@ -43608,14 +44701,10 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(9),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("form", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(10),
+                _vm._m(9),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -43635,7 +44724,7 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(11)
+          _vm._m(10)
         ])
       ])
     ]),
@@ -43644,14 +44733,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h5", [_c("strong", [_vm._v("Dados Pessoais")])])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -43871,18 +44952,35 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "card" }, [
-      _vm._m(0),
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Endereço")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
         _c("div", { staticClass: "container" }, [
-          _vm._m(1),
+          _vm._m(0),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("form", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(2),
+                _vm._m(1),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -43897,12 +44995,16 @@ var render = function() {
                   attrs: { type: "text", required: "" }
                 }),
                 _vm._v(" "),
-                _vm._m(3),
+                _vm._m(2),
                 _vm._v(" "),
-                _vm._m(4)
+                _vm._m(3)
               ])
             ])
           ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(4),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
@@ -43938,11 +45040,7 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(13),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _vm._m(14)
+          _vm._m(13)
         ])
       ])
     ]),
@@ -43951,14 +45049,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h5", [_c("strong", [_vm._v("Endereço")])])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -44218,6 +45308,185 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=template&id=033cdf6f&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=template&id=033cdf6f&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Valor do Pedido")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Valor da Causa")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(1)
+    ]),
+    _vm._v(" "),
+    _c("br")
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { attrs: { action: "" } }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "custom-control custom-control-inline custom-checkbox"
+              },
+              [
+                _c("input", {
+                  staticClass: "custom-control-input",
+                  attrs: { type: "checkbox", name: "CRR_vPC1", id: "CRR_vPC1" }
+                }),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  {
+                    staticClass: "custom-control-label",
+                    attrs: { for: "CRR_vPC1" }
+                  },
+                  [_vm._v("O valor postulado é liquido? ")]
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("* Valor Postulado")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "text",
+                  placeholder: "ex.: 1.000,00",
+                  required: ""
+                }
+              })
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Valor da Causa")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "text",
+                  placeholder: "ex.: 1.000,00",
+                  required: ""
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("form", { attrs: { action: "" } }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "custom-control custom-control-inline custom-checkbox"
+              },
+              [
+                _c("input", {
+                  staticClass: "custom-control-input",
+                  attrs: { type: "checkbox", name: "CRR_vPC2", id: "CRR_vPC2" }
+                }),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  {
+                    staticClass: "custom-control-label",
+                    attrs: { for: "CRR_vPC2" }
+                  },
+                  [
+                    _vm._v(
+                      "A pretensão deduzida versa sobre obrigações vincendas? "
+                    )
+                  ]
+                )
+              ]
+            )
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarReu/CR_dadosComplementares.vue?vue&type=template&id=44bccd79&scoped=true&":
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarReu/CR_dadosComplementares.vue?vue&type=template&id=44bccd79&scoped=true& ***!
@@ -44233,176 +45502,195 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Dados Complementares")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [_c("strong", [_vm._v("Dados Complementares")])])
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Escolha o estado civil")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Solteiro")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Casado")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Divorciado")])
+              ])
+            ])
+          ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Escolha o estado civil")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Solteiro")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Casado")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Divorciado")])
-                  ])
-                ])
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Profissão ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Escolha a profissão")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Professor")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Desembargador")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Médico")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Contador")])
               ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Profissão ")])]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Escolha a profissão")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Professor")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Desembargador")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Médico")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Contador")])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Brasileira")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Naturalizado brasileiro")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Estrangeira")])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [
-                    _c("strong", [_vm._v("Escolha a Naturalidade ")])
-                  ]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Estado")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Rio de Janeiro")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("São Paulo")])
-                  ]),
-                  _vm._v(" "),
-                  _c("select", { staticClass: "custom-select" }, [
-                    _c("option", [_vm._v("Cidade")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Volta Redonda")]),
-                    _vm._v(" "),
-                    _c("option", [_vm._v("Barra Mansa")])
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: { type: "text", required: "" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: { type: "text", required: "" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "alinhado" } }, [
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control",
-                    attrs: { type: "date", required: "" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br")
+            ])
           ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("div", { attrs: { align: "center" } }, [
-        _c("form", { attrs: { action: "" } }, [
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-            [_vm._v("SALVAR")]
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            { staticClass: "btn btn-danger", attrs: { type: "button" } },
-            [_vm._v("FECHAR")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("br")
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Brasileira")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Naturalizado brasileiro")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Estrangeira")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Estado")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Rio de Janeiro")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("São Paulo")])
+              ]),
+              _vm._v(" "),
+              _c("select", { staticClass: "custom-select" }, [
+                _c("option", [_vm._v("Cidade")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Volta Redonda")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("Barra Mansa")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", required: "" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", required: "" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "date", required: "" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { align: "center" } }, [
+      _c("form", { attrs: { action: "" } }, [
+        _c(
+          "button",
+          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+          [_vm._v("SALVAR")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          { staticClass: "btn btn-danger", attrs: { type: "button" } },
+          [_vm._v("FECHAR")]
+        )
+      ])
     ])
   }
 ]
@@ -44429,24 +45717,41 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "card" }, [
-      _vm._m(0),
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Dados Pessoais")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
         _c("div", { staticClass: "container" }, [
-          _vm._m(1),
+          _vm._m(0),
           _vm._v(" "),
-          _vm._m(2),
+          _vm._m(1),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(3),
+          _vm._m(2),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("form", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(4),
+                _vm._m(3),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -44466,6 +45771,10 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
+          _vm._m(4),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
           _vm._m(5),
           _vm._v(" "),
           _c("br"),
@@ -44482,11 +45791,7 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(9),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _vm._m(10)
+          _vm._m(9)
         ])
       ])
     ]),
@@ -44495,14 +45800,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h5", [_c("strong", [_vm._v("Dados Pessoais")])])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -44706,18 +46003,35 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "card" }, [
-      _vm._m(0),
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Endereço")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
         _c("div", { staticClass: "container" }, [
-          _vm._m(1),
+          _vm._m(0),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("form", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(2),
+                _vm._m(1),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -44732,12 +46046,16 @@ var render = function() {
                   attrs: { type: "text", required: "" }
                 }),
                 _vm._v(" "),
-                _vm._m(3),
+                _vm._m(2),
                 _vm._v(" "),
-                _vm._m(4)
+                _vm._m(3)
               ])
             ])
           ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(4),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
@@ -44773,11 +46091,7 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(13),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _vm._m(14)
+          _vm._m(13)
         ])
       ])
     ]),
@@ -44786,14 +46100,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h5", [_c("strong", [_vm._v("Endereço")])])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -45053,6 +46359,185 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=template&id=4bec673a&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=template&id=4bec673a&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Valor do Pedido")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Valor da Causa")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(1)
+    ]),
+    _vm._v(" "),
+    _c("br")
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { attrs: { action: "" } }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "custom-control custom-control-inline custom-checkbox"
+              },
+              [
+                _c("input", {
+                  staticClass: "custom-control-input",
+                  attrs: { type: "checkbox", name: "CR_vPC1", id: "CR_vPC1" }
+                }),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  {
+                    staticClass: "custom-control-label",
+                    attrs: { for: "CR_vPC1" }
+                  },
+                  [_vm._v("O valor postulado é liquido? ")]
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("* Valor Postulado")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "text",
+                  placeholder: "ex.: 1.000,00",
+                  required: ""
+                }
+              })
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { attrs: { id: "alinhado" } }, [
+          _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _c("span", [_c("strong", [_vm._v("Valor da Causa")])]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "text",
+                  placeholder: "ex.: 1.000,00",
+                  required: ""
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("form", { attrs: { action: "" } }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "custom-control custom-control-inline custom-checkbox"
+              },
+              [
+                _c("input", {
+                  staticClass: "custom-control-input",
+                  attrs: { type: "checkbox", name: "CR_vPC2", id: "CR_vPC2" }
+                }),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  {
+                    staticClass: "custom-control-label",
+                    attrs: { for: "CR_vPC2" }
+                  },
+                  [
+                    _vm._v(
+                      "A pretensão deduzida versa sobre obrigações vincendas? "
+                    )
+                  ]
+                )
+              ]
+            )
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue?vue&type=template&id=a7f1e752&":
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/DistribuicaoEletronica/DE_advogadoRepresentante.vue?vue&type=template&id=a7f1e752& ***!
@@ -45068,152 +46553,148 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container", attrs: { id: "DE_aR_ajudaadvogado" } },
-    [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [
-            _c("strong", [_vm._v("Advogado / Representante")]),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                attrs: { href: "#ajudaadvogado" },
-                on: {
-                  click: function($event) {
-                    return _vm.ajuda()
-                  }
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Advogado / Representante")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
                 }
-              },
-              [_vm._v("(?)")]
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-xs-6" }, [
-              _c("label", { attrs: { for: "DE_aR1" } }, [
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.showOpcao,
-                        expression: "showOpcao"
-                      }
-                    ],
-                    staticClass: "custom-select",
-                    attrs: { id: "DE_aR1", required: "" },
-                    on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.showOpcao = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      }
-                    }
-                  },
-                  [
-                    _c("option", { attrs: { value: "advogado" } }, [
-                      _vm._v("Advogado")
-                    ]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "defensor" } }, [
-                      _vm._v("Defensor Público")
-                    ])
-                  ]
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-1" }),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.showOpcao === "advogado",
-                    expression: "showOpcao === 'advogado'"
-                  }
-                ],
-                staticClass: "col-xs-6"
-              },
-              [
-                _c("form", { staticClass: "form-inline" }, [
-                  _vm._m(0),
-                  _vm._v(" "),
-                  _vm._m(1),
-                  _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "mask",
-                        rawName: "v-mask",
-                        value: "######",
-                        expression: "'######'"
-                      }
-                    ],
-                    staticClass: "form-control col-md-5",
-                    attrs: { type: "text", required: "" }
-                  })
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.showOpcao === "defensor",
-                    expression: "showOpcao === 'defensor'"
-                  }
-                ],
-                staticClass: "col-xs-2"
-              },
-              [
-                _c("form", { staticClass: "form-inline" }, [
-                  _vm._m(2),
-                  _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "mask",
-                        rawName: "v-mask",
-                        value: "##########",
-                        expression: "'##########'"
-                      }
-                    ],
-                    staticClass: "form-control",
-                    attrs: { type: "text", required: "" }
-                  })
-                ])
-              ]
-            )
-          ])
+              }
+            },
+            [_vm._v("(?)")]
+          )
         ])
       ]),
       _vm._v(" "),
-      _c("br")
-    ]
-  )
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-xs-6" }, [
+            _c("label", { attrs: { for: "DE_aR1" } }, [
+              _c(
+                "select",
+                {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.showOpcao,
+                      expression: "showOpcao"
+                    }
+                  ],
+                  staticClass: "custom-select",
+                  attrs: { id: "DE_aR1", required: "" },
+                  on: {
+                    change: function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.showOpcao = $event.target.multiple
+                        ? $$selectedVal
+                        : $$selectedVal[0]
+                    }
+                  }
+                },
+                [
+                  _c("option", { attrs: { value: "advogado" } }, [
+                    _vm._v("Advogado")
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "defensor" } }, [
+                    _vm._v("Defensor Público")
+                  ])
+                ]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-1" }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value: _vm.showOpcao === "advogado",
+                  expression: "showOpcao === 'advogado'"
+                }
+              ],
+              staticClass: "col-xs-6"
+            },
+            [
+              _c("form", { staticClass: "form-inline" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _vm._m(1),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "######",
+                      expression: "'######'"
+                    }
+                  ],
+                  staticClass: "form-control col-md-5",
+                  attrs: { type: "text", required: "" }
+                })
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value: _vm.showOpcao === "defensor",
+                  expression: "showOpcao === 'defensor'"
+                }
+              ],
+              staticClass: "col-xs-2"
+            },
+            [
+              _c("form", { staticClass: "form-inline" }, [
+                _vm._m(2),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "##########",
+                      expression: "'##########'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", required: "" }
+                })
+              ])
+            ]
+          )
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -45263,7 +46744,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "card", attrs: { id: "DE_aRD_ajudaautor" } }, [
+    _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "card-header" }, [
         _c("h5", [
           _c("strong", [_vm._v("Autor(es)")]),
@@ -45271,7 +46752,7 @@ var render = function() {
           _c(
             "a",
             {
-              attrs: { href: "#ajudaautor" },
+              attrs: { href: "#ajuda" },
               on: {
                 click: function($event) {
                   return _vm.ajuda()
@@ -45290,7 +46771,7 @@ var render = function() {
     _vm._v(" "),
     _c("br"),
     _vm._v(" "),
-    _c("div", { staticClass: "card", attrs: { id: "DE_aRD_ajudareu" } }, [
+    _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "card-header" }, [
         _c("h5", [
           _c("strong", [_vm._v("Réu(s)")]),
@@ -45298,7 +46779,7 @@ var render = function() {
           _c(
             "a",
             {
-              attrs: { href: "#ajudareu" },
+              attrs: { href: "#ajuda" },
               on: {
                 click: function($event) {
                   return _vm.ajuda()
@@ -45315,32 +46796,28 @@ var render = function() {
     _vm._v(" "),
     _c("br"),
     _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "card", attrs: { id: "DE_aRD_ajudadocumentos" } },
-      [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [
-            _c("strong", [_vm._v("Documento(s)")]),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                attrs: { href: "#ajudadocumentos" },
-                on: {
-                  click: function($event) {
-                    return _vm.ajuda()
-                  }
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Documento(s)")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
                 }
-              },
-              [_vm._v("(?)")]
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _vm._m(3)
-      ]
-    ),
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(3)
+    ]),
     _vm._v(" "),
     _c("br")
   ])
@@ -45484,1988 +46961,1975 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container", attrs: { id: "DE_DE_dDPajudadados" } },
-    [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [
-            _c("strong", [_vm._v("Dados do Processo")]),
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Dados do Processo")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-body" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", [
+          _c("label", { attrs: { for: "DE_dDP_comarca" } }, [
+            _c("strong", [_vm._v("* Comarca")]),
             _vm._v(" "),
             _c(
-              "a",
+              "select",
               {
-                attrs: { href: "#ajudadados" },
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showComarca,
+                    expression: "showComarca"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_comarca" },
                 on: {
-                  click: function($event) {
-                    return _vm.ajuda()
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showComarca = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
                   }
                 }
               },
-              [_vm._v("(?)")]
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma comarca")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "voltaRedonda" } }, [
+                  _vm._v("Comarca de Volta Redonda")
+                ])
+              ]
             )
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", [
-            _c("label", { attrs: { for: "DE_dDP_comarca" } }, [
-              _c("strong", [_vm._v("* Comarca")]),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showComarca,
-                      expression: "showComarca"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_comarca" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showComarca = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+        _c("br"),
+        _vm._v(" "),
+        _c("div", [
+          _c("label", { attrs: { for: "DE_dDP_competencia" } }, [
+            _c("strong", [_vm._v("* Competência")]),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.showComarca === "",
+                    expression: "showComarca === ''"
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "" } }, [
-                    _vm._v("Escolha uma comarca")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "voltaRedonda" } }, [
-                    _vm._v("Comarca de Volta Redonda")
-                  ])
-                ]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", [
-            _c("label", { attrs: { for: "DE_dDP_competencia" } }, [
-              _c("strong", [_vm._v("* Competência")]),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value: _vm.showComarca === "",
-                      expression: "showComarca === ''"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_competencia" }
-                },
-                [_c("option", [_vm._v("Escolha uma competência")])]
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showCompetencia,
-                      expression: "showCompetencia"
-                    },
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value: _vm.showComarca === "voltaRedonda",
-                      expression: "showComarca === 'voltaRedonda'"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_competencia" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showCompetencia = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_competencia" }
+              },
+              [_c("option", [_vm._v("Escolha uma competência")])]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showCompetencia,
+                    expression: "showCompetencia"
+                  },
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.showComarca === "voltaRedonda",
+                    expression: "showComarca === 'voltaRedonda'"
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "" } }, [
-                    _vm._v("Escolha uma competência")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "acidente" } }, [
-                    _vm._v("Acidentes de Trabalho")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Cível")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Dívida Ativa Estadual")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Dívida Ativa Municipal")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Empresarial")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Família")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Fazenda Pública")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v("Juizado Especial Civil")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Órfãos e Sucessões")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroCivil" } }, [
-                    _vm._v("Registro Civil de Pessoas Naturais")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Registro Público")
-                  ])
-                ]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "voltaRedonda" &&
-                    (_vm.showCompetencia === "civel" ||
-                      _vm.showCompetencia === "empresarial" ||
-                      _vm.showCompetencia === "familia" ||
-                      _vm.showCompetencia === "fazenda" ||
-                      _vm.showCompetencia === "orfaos"),
-                  expression:
-                    "showComarca === 'voltaRedonda' && (showCompetencia === 'civel' || showCompetencia === 'empresarial' || showCompetencia === 'familia' || showCompetencia === 'fazenda' || showCompetencia === 'orfaos')"
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_competencia" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showCompetencia = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
+                  }
                 }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma competência")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "acidente" } }, [
+                  _vm._v("Acidentes de Trabalho")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [_vm._v("Cível")]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Dívida Ativa Estadual")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Dívida Ativa Municipal")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Empresarial")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Família")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Fazenda Pública")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Juizado Especial Civil")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Órfãos e Sucessões")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroCivil" } }, [
+                  _vm._v("Registro Civil de Pessoas Naturais")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Registro Público")
+                ])
               ]
-            },
-            [_vm._m(1)]
-          ),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", [
-            _c("label", { attrs: { for: "DE_dDP_classe" } }, [
-              _c("strong", [_vm._v("* Classe")]),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showComarca === "" || _vm.showCompetencia === "",
-                      expression: "showComarca === '' || showCompetencia === ''"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_classe" }
-                },
-                [_c("option", [_vm._v("Escolha uma classe")])]
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showClasse,
-                      expression: "showClasse"
-                    },
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showCompetencia === "acidente" &&
-                        _vm.showComarca === "voltaRedonda",
-                      expression:
-                        "showCompetencia === 'acidente' && showComarca === 'voltaRedonda'"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_classe" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showClasse = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value:
+                  _vm.showComarca === "voltaRedonda" &&
+                  (_vm.showCompetencia === "civel" ||
+                    _vm.showCompetencia === "empresarial" ||
+                    _vm.showCompetencia === "familia" ||
+                    _vm.showCompetencia === "fazenda" ||
+                    _vm.showCompetencia === "orfaos"),
+                expression:
+                  "showComarca === 'voltaRedonda' && (showCompetencia === 'civel' || showCompetencia === 'empresarial' || showCompetencia === 'familia' || showCompetencia === 'fazenda' || showCompetencia === 'orfaos')"
+              }
+            ]
+          },
+          [_vm._m(1)]
+        ),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", [
+          _c("label", { attrs: { for: "DE_dDP_classe" } }, [
+            _c("strong", [_vm._v("* Classe")]),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.showComarca === "" || _vm.showCompetencia === "",
+                    expression: "showComarca === '' || showCompetencia === ''"
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "" } }, [
-                    _vm._v("Escolha uma classe")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "acidente1" } }, [
-                    _vm._v("Ação Civil Coletiva")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "acidente2" } }, [
-                    _vm._v("Ação Civil Pública")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "acidente3" } }, [
-                    _vm._v("Consignação em Pagamento – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "acidente4" } }, [
-                    _vm._v("Cumprimento de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "acidente5" } }, [
-                    _vm._v(
-                      "Embargos à Execução (por Título Judicial, Contra a Fazenda Pública\n                            e Carta Precatória)"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "acidente6" } }, [
-                    _vm._v(
-                      "Execução de Título Extrajudicial contra a Fazenda Pública"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "acidente7" } }, [
-                    _vm._v("Execução de Título Extrajudicial – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "acidente8" } }, [
-                    _vm._v("Habilitação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "acidente9" } }, [
-                    _vm._v("Mandado de Segurança – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "acidente10" } }, [
-                    _vm._v("Notificação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "acidente11" } }, [
-                    _vm._v("Petição – Cível")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "acidente12" } }, [
-                    _vm._v("Procedimento Comum")
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showClasse,
-                      expression: "showClasse"
-                    },
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showCompetencia === "civel" &&
-                        _vm.showComarca === "voltaRedonda",
-                      expression:
-                        "showCompetencia === 'civel' && showComarca === 'voltaRedonda'"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_classe" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showClasse = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_classe" }
+              },
+              [_c("option", [_vm._v("Escolha uma classe")])]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showClasse,
+                    expression: "showClasse"
+                  },
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "acidente" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'acidente' && showComarca === 'voltaRedonda'"
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "" } }, [
-                    _vm._v("Escolha uma classe")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Ação Civil Coletiva")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Ação Civil Pública")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Ação Civil Pública- ECA")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Ação Popular – Lei 4717/65")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Alvará Judicial – Lei 6858/80")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Busca e Apreensão em Alienação Fiduciária")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Consignação em Pagamento – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Cumprimento de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Cumprimento Provisório de Decisão")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Cumprimento Provisório de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Desapropriação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Despejo")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Despejo por Falta de Pagamento")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v(
-                      "Despejo por Falta de Pagamento cumulado com Cobranças"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Dissolução Parcial de Sociedades")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Embargos – ECA")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v(
-                      "Embargos à execução (por Título Judicial, Contra a Fazenda Pública e\n                            Carta Precatória)"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Embargos de Terceiro – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Execução de Título extrajudicial – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Execução de Hipoteca")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Exibição de Documento ou Coisa")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v(
-                      "Falência de Empresários, Socied. Empresárias, Microempresas e Empresas\n                            de Peq. Porte – Requerimento"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Habeas Data")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Habilitação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Habilitação de Crédito")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Homologação de Transação Extrajudicial")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Homologação de Penhor Legal")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Imissão na Posse")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Insolvência Requerida pelo Credor")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Insolvência Requerida pelo Devedor ou pelo Espólio")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Interdito Proibitório")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Inventário")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v(
-                      "Liquidação Provisória de Sentença pelo Procedimento Comum"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Mandado de Segurança – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Monitória")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Notificação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Oposição")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Petição – Cível")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Procedimento Comum")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Protesto – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Reintegração/Manutenção de Posse")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Requerimento de Apreensão de Veículo")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Requerimento de Reintegração de Posse")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Tutela Antecipada Antecedente")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Tutela Cautelar Antecedente")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "civel" } }, [
-                    _vm._v("Usucapião")
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showClasse,
-                      expression: "showClasse"
-                    },
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showCompetencia === "dividaEstadual" &&
-                        _vm.showComarca === "voltaRedonda",
-                      expression:
-                        "showCompetencia === 'dividaEstadual' && showComarca === 'voltaRedonda'"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_classe" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showClasse = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_classe" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showClasse = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "" } }, [
-                    _vm._v("Escolha uma classe")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Ação Civil Pública")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Alvará Judicial – Lei 6858/80")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Busca e Apreensão em Alienação Fiduciária")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Cautelar Fiscal")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Consignação em Pagamento – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Embargos à Execução Fiscal")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Embargos de Terceiro – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Execução de Título Judicial – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Execução Fiscal")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Habeas Data")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Homologação do Penhor Legal")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Imissão na Posse")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Mandado de Segurança – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Mandado de Segurança Coletivo")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Procedimento Comum")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Tutela Antecipada Antecedente")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaEstadual" } }, [
-                    _vm._v("Tutela Cautelar Antecedente")
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showClasse,
-                      expression: "showClasse"
-                    },
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showCompetencia === "dividaMunicipal" &&
-                        _vm.showComarca === "voltaRedonda",
-                      expression:
-                        "showCompetencia === 'dividaMunicipal' && showComarca === 'voltaRedonda'"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_classe" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showClasse = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma classe")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "acidente1" } }, [
+                  _vm._v("Ação Civil Coletiva")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "acidente2" } }, [
+                  _vm._v("Ação Civil Pública")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "acidente3" } }, [
+                  _vm._v("Consignação em Pagamento – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "acidente4" } }, [
+                  _vm._v("Cumprimento de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "acidente5" } }, [
+                  _vm._v(
+                    "Embargos à Execução (por Título Judicial, Contra a Fazenda Pública\n                            e Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "acidente6" } }, [
+                  _vm._v(
+                    "Execução de Título Extrajudicial contra a Fazenda Pública"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "acidente7" } }, [
+                  _vm._v("Execução de Título Extrajudicial – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "acidente8" } }, [
+                  _vm._v("Habilitação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "acidente9" } }, [
+                  _vm._v("Mandado de Segurança – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "acidente10" } }, [
+                  _vm._v("Notificação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "acidente11" } }, [
+                  _vm._v("Petição – Cível")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "acidente12" } }, [
+                  _vm._v("Procedimento Comum")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showClasse,
+                    expression: "showClasse"
+                  },
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "civel" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'civel' && showComarca === 'voltaRedonda'"
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "" } }, [
-                    _vm._v("Escolha uma classe")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Alvará Judicial – Lei 6858/80")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Busca e Apreensão em Alienação Fiduciária")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Consignação em Pagamento – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Cumprimento Provisório de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Embargos à Execução Fiscal")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Embargos de Terceiro – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Execução de Título Judicial – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Execução Fiscal")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Homologação do Penhor Legal")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Imissão Na Posse")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Mandado de Injunção")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Mandado de Segurança – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Mandado de Segurança Coletivo")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Petição – Cível")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Procedimento Comum")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Tutela Antecipada Antecedente")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                    _vm._v("Tutela Cautelar Antecedente")
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showClasse,
-                      expression: "showClasse"
-                    },
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showCompetencia === "empresarial" &&
-                        _vm.showComarca === "voltaRedonda",
-                      expression:
-                        "showCompetencia === 'empresarial' && showComarca === 'voltaRedonda'"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_classe" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showClasse = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_classe" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showClasse = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "" } }, [
-                    _vm._v("Escolha uma classe")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Ação Civil Coletiva")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Ação Civil Pública")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Alienação Judicial")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Busca e Apreensão em alienação Fiduciária")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Consignação em Pagamento – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Cumprimento de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Cumprimento Provisório de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Despejo")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Despejo por falta de pagamento")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v(
-                      "Despejo por Falta de Pagamento Cumulado Com Cobrança"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Dissolução Parcial de Sociedade")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v(
-                      "Embargos à execução (por Título Judicial, Contra a Fazenda\n                            Pública e Carta Precatória)"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Embargos de Terceiro – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Extinção das Obrigações do Falido")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v(
-                      "Falência de Empresários, Socied. Empresárias, Microempresas e\n                            Empresas de Peq. Porte – Requerimento"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Habilitação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Habilitação de Crédito")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Homologação de Transação Extrajudicial")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Imissão na Posse")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Impugnação de Crédito")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Insolvência Requerida pelo Credor")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Insolvência Requerida pelo Devedor ou pelo Espólio")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Interdito Proibitório")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v(
-                      "Liquidação Provisória de Sentença pelo procedimento comum\n                        "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Monitória")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Petição – Cível")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Prestação de Contas – Exigidas")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Procedimento Comum")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Produção Antecipada de Provas – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Protesto – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Reintegração/Manutenção de Posse")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v(
-                      "Restituição de Coisa ou Dinheiro na Falência do Devedor\n                            Empresário"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Tutela Antecipada Antecedente")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Tutela Cautelar Antecedente")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "empresarial" } }, [
-                    _vm._v("Usucapião")
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showClasse,
-                      expression: "showClasse"
-                    },
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showCompetencia === "familia" &&
-                        _vm.showComarca === "voltaRedonda",
-                      expression:
-                        "showCompetencia === 'familia' && showComarca === 'voltaRedonda'"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_classe" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showClasse = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma classe")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Ação Civil Coletiva")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Ação Civil Pública")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Ação Civil Pública- ECA")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Ação Popular – Lei 4717/65")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Alvará Judicial – Lei 6858/80")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Busca e Apreensão em Alienação Fiduciária")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Consignação em Pagamento – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Cumprimento de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Cumprimento Provisório de Decisão")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Cumprimento Provisório de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Desapropriação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Despejo")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Despejo por Falta de Pagamento")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v(
+                    "Despejo por Falta de Pagamento cumulado com Cobranças"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Dissolução Parcial de Sociedades")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Embargos – ECA")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v(
+                    "Embargos à execução (por Título Judicial, Contra a Fazenda Pública e\n                            Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Embargos de Terceiro – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Execução de Título extrajudicial – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Execução de Hipoteca")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Exibição de Documento ou Coisa")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v(
+                    "Falência de Empresários, Socied. Empresárias, Microempresas e Empresas\n                            de Peq. Porte – Requerimento"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Habeas Data")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Habilitação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Habilitação de Crédito")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Homologação de Transação Extrajudicial")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Homologação de Penhor Legal")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Imissão na Posse")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Insolvência Requerida pelo Credor")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Insolvência Requerida pelo Devedor ou pelo Espólio")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Interdito Proibitório")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Inventário")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v(
+                    "Liquidação Provisória de Sentença pelo Procedimento Comum"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Mandado de Segurança – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Monitória")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Notificação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Oposição")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Petição – Cível")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Procedimento Comum")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Protesto – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Reintegração/Manutenção de Posse")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Requerimento de Apreensão de Veículo")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Requerimento de Reintegração de Posse")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Tutela Antecipada Antecedente")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Tutela Cautelar Antecedente")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "civel" } }, [
+                  _vm._v("Usucapião")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showClasse,
+                    expression: "showClasse"
+                  },
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "dividaEstadual" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'dividaEstadual' && showComarca === 'voltaRedonda'"
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "" } }, [
-                    _vm._v("Escolha uma classe")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Abertura, Registro e Cumprimento de Testamento")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Adoção – ECA")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Alimentos – Lei Especial nº 5478/66")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Alteração do Regime de Bens")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Alvará Judicial – Lei 6858/80")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Autorização Judicial – ECA")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Busca e Apreensão Infracional")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Cautelar – Regulamentação de Visitas")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Consignação em Pagamento – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Conversão de Separação Judicial em Divórcio")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Cumprimento de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Cumprimento Provisório de Decisão")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Cumprimento Provisório de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Divórcio")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Divórcio Consensual")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Execução de Alimentos")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Habilitação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Homologação de Transação Judicial")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Interdição")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Internação Provisória")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Inventário")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v(
-                      "Liquidação Provisória de Sentença pelo Procedimento Comum"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Mandado de Segurança – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Outros Procedimentos de Jurisdição Voluntária")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Remoção e Dispensa/Tutela e Curatela")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Sobrepartilha")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Tutela Antecipada Antecedente")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Tutela Cautelar Antecedente")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "familia" } }, [
-                    _vm._v("Tutela e Curatela – Nomeação")
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showClasse,
-                      expression: "showClasse"
-                    },
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showCompetencia === "fazenda" &&
-                        _vm.showComarca === "voltaRedonda",
-                      expression:
-                        "showCompetencia === 'fazenda' && showComarca === 'voltaRedonda'"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_classe" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showClasse = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_classe" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showClasse = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "" } }, [
-                    _vm._v("Escolha uma classe")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Ação Civil Coletiva")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Ação Civil de Improbidade Administrativa")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Ação Pública")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Ação Popular Lei 4.717/65")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Alienação Judicial")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Alvará Judicial Lei 6.858/80")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Busca e Apreensão Com Alienação Fidunciária")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Consignação em Pagamento – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Consignatória de Aluguéis")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Contestação em Foro Diverso")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Cumprimento de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Cumprimento Provisório de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Cumprimento Provisório de Decisão")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Demarcação/Divisão")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Depósito da Lei 8.866/94")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Desapropriação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Despejo")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Despejo por Falta de Pagamento")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v(
-                      "Despejo por Falta de Pagamento Cumulado com Cobrança"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Discriminatório")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Embargos à Execução Fiscal")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v(
-                      "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Embargos à Terceiro – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v(
-                      "Execução de Título Extrajudicial Contra a Fazenda Pública"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Execução de Título Extrajudicial – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Execução Hipotecária")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Exibição de Documento ou Coisa")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Habeas Data")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Habilitação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Homologação de Transação Extrajudicial")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Homologação de Penhor Legal")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Imissão na Posse")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Interdito Proibitório")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Interpelação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v(
-                      "Liquidação Provisória de Sentença Pelo Procedimento Comum"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Mandado de Injunção")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Mandado de Segurança – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Mandado de Segurança Coletivo")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Monitória")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Notificação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Oposição")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Outros Procedimentos de Jurisdição Voluntária")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Pedido de Providência")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Petição – Cível")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Prestação de Contas – Exigível")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Procedimento Comum")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Processo Administrativo")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Produção Antecipada de Provas – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Protesto – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Reintegração e manutenção de Posse")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Renovatória de Locação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Restauração de Autos")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Revisional de Aluguel")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Tutela Antecipada Antecedente")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Tutela Cautelar Antecedente")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "fazenda" } }, [
-                    _vm._v("Usucapião")
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showClasse,
-                      expression: "showClasse"
-                    },
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showCompetencia === "juizado" &&
-                        _vm.showComarca === "voltaRedonda",
-                      expression:
-                        "showCompetencia === 'juizado' && showComarca === 'voltaRedonda'"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_classe" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showClasse = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma classe")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Ação Civil Pública")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Alvará Judicial – Lei 6858/80")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Busca e Apreensão em Alienação Fiduciária")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Cautelar Fiscal")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Consignação em Pagamento – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Embargos à Execução Fiscal")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Embargos de Terceiro – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Execução de Título Judicial – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Execução Fiscal")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Habeas Data")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Homologação do Penhor Legal")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Imissão na Posse")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Mandado de Segurança – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Mandado de Segurança Coletivo")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Procedimento Comum")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Tutela Antecipada Antecedente")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                  _vm._v("Tutela Cautelar Antecedente")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showClasse,
+                    expression: "showClasse"
+                  },
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "dividaMunicipal" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'dividaMunicipal' && showComarca === 'voltaRedonda'"
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "" } }, [
-                    _vm._v("Escolha uma classe")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v("Alvará Judicial Lei 6.858/80")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v("Cumprimento de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v("Cumprimento Provisório de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v("Despejo")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v("Despejo por Falta de Pagamento")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v(
-                      "Despejo por Falta de Pagamento Cumulado com Cobrança"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v(
-                      "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v("Embargos de Terceiro – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v("Execução de Título Extrajudicial – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v("Exibição de Documento ou Coisa")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v("Homologação de Transação Extrajudicial")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v("Monitória")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v("Procedimento do Juizado Especial Civil/Fazendário")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "juizado" } }, [
-                    _vm._v("Protesto – CPC")
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showClasse,
-                      expression: "showClasse"
-                    },
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showCompetencia === "orfaos" &&
-                        _vm.showComarca === "voltaRedonda",
-                      expression:
-                        "showCompetencia === 'orfaos' && showComarca === 'voltaRedonda'"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_classe" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showClasse = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_classe" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showClasse = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "" } }, [
-                    _vm._v("Escolha uma classe")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Abertura, Registro e Cumprimento de Testamento")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Alienação Judicial")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Alvará Judicial Lei 6.858/80")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Arrolamento Comum")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Arrolamento Sumário")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Cumprimento Provisório de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Declaração de Ausência")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v(
-                      "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Embargos de Terceiro – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Habilitação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Herança Jacente")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Homologação de Transação Extrajudicial")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Interdição")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Interdito Probatório")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Interpelação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Inventário")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Notificação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Oposição")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Outros Procedimentos de Jurisdição Voluntária")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Pedidos de Providências")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Petição – Cível")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Prestação de Contas – ECA")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Prestação de Contas – Exigidas")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Procedimento Comum")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Remoção e Dispensa/Tutela e Curatela")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Sobrepartilha")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Tutela Antecipada Antecedente")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "orfaos" } }, [
-                    _vm._v("Tutela e Curatela – Nomeação")
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showClasse,
-                      expression: "showClasse"
-                    },
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showCompetencia === "registroCivil" &&
-                        _vm.showComarca === "voltaRedonda",
-                      expression:
-                        "showCompetencia === 'registroCivil' && showComarca === 'voltaRedonda'"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_classe" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showClasse = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma classe")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Alvará Judicial – Lei 6858/80")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Busca e Apreensão em Alienação Fiduciária")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Consignação em Pagamento – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Cumprimento Provisório de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Embargos à Execução Fiscal")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Embargos de Terceiro – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Execução de Título Judicial – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Execução Fiscal")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Homologação do Penhor Legal")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Imissão Na Posse")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Mandado de Injunção")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Mandado de Segurança – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Mandado de Segurança Coletivo")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Petição – Cível")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Procedimento Comum")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Tutela Antecipada Antecedente")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                  _vm._v("Tutela Cautelar Antecedente")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showClasse,
+                    expression: "showClasse"
+                  },
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "empresarial" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'empresarial' && showComarca === 'voltaRedonda'"
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "" } }, [
-                    _vm._v("Escolha uma classe")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroCivel" } }, [
-                    _vm._v("Alteração de Regime de Bens")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroCivel" } }, [
-                    _vm._v("Averiguação Oficiosa de Paternidade")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroCivel" } }, [
-                    _vm._v("Habilitação para Casamento – RCPN")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroCivel" } }, [
-                    _vm._v("Homologação e Transação Extrajudicial")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroCivel" } }, [
-                    _vm._v("Mandado de Segurança – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroCivel" } }, [
-                    _vm._v("Outros Procedimentos de Jurisdição Voluntária")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroCivel" } }, [
-                    _vm._v("Petição – Cível")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroCivel" } }, [
-                    _vm._v("Procedimento Comum")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroCivel" } }, [
-                    _vm._v("Registro de Casamento Nuncupativo")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroCivel" } }, [
-                    _vm._v("Sindicância")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroCivel" } }, [
-                    _vm._v(
-                      "Retificação ou Suprimento ou Restauração do Registo Cível\n                        "
-                    )
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showClasse,
-                      expression: "showClasse"
-                    },
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showCompetencia === "registroPublico" &&
-                        _vm.showComarca === "voltaRedonda",
-                      expression:
-                        "showCompetencia === 'registroPublico' && showComarca === 'voltaRedonda'"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_classe" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showClasse = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_classe" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showClasse = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "" } }, [
-                    _vm._v("Escolha uma classe")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Cumprimento Provisório de Sentença")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Cumprimento Provisório de Decisão")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Demarcação/Divisão")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Declaração de Ausência")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Dúvida")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v(
-                      "Embargos à Execução Fiscal (com Título Extrajudicial, Contra\n                            a Fazenda Pública e Carta Precatória)"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Embargos de Terceiro – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Habilitação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Homologação e Transação Extrajudicial")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Mandado de Segurança – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Notificação")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Oposição")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Outros Procedimentos de Jurisdição Voluntária")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Pedidos de Providências")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Petição – Cível")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Procedimento Comum")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Processo Administrativo")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Protesto – CPC")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Registro Torrens")
-                  ]),
-                  _vm._v(" "),
-                  _c("option", { attrs: { value: "registroPublico" } }, [
-                    _vm._v("Retificação de Registro de Imóveis")
-                  ])
-                ]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", [
-            _c("label", { attrs: { for: "DE_dDP_distribuicao" } }, [
-              _c("strong", [_vm._v("* Distribuição")]),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showComarca === "" ||
-                        _vm.showCompetencia === "" ||
-                        _vm.showClasse === "",
-                      expression:
-                        "showComarca === '' || showCompetencia === '' || showClasse === ''"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_distribuicao" }
-                },
-                [_c("option", [_vm._v("Escolha uma distribuição")])]
-              ),
-              _vm._v(" "),
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "show",
-                      rawName: "v-show",
-                      value:
-                        _vm.showComarca === "voltaRedonda" &&
-                        _vm.showCompetencia === "acidente" &&
-                        _vm.showClasse === "acidente1",
-                      expression:
-                        "showComarca === 'voltaRedonda' && showCompetencia === 'acidente' && showClasse === 'acidente1'"
-                    }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_dDP_distribuicao" }
-                },
-                [
-                  _c("option", [_vm._v("Escolha uma distribuição")]),
-                  _vm._v(" "),
-                  _c("option", [_vm._v("1")]),
-                  _vm._v(" "),
-                  _c("option", [_vm._v("2")]),
-                  _vm._v(" "),
-                  _c("option", [_vm._v("3")]),
-                  _vm._v(" "),
-                  _c("option", [_vm._v("4")])
-                ]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _vm._m(2),
-          _vm._v(" "),
-          _c("br")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("br")
-    ]
-  )
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma classe")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Ação Civil Coletiva")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Ação Civil Pública")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Alienação Judicial")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Busca e Apreensão em alienação Fiduciária")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Consignação em Pagamento – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Cumprimento de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Cumprimento Provisório de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Despejo")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Despejo por falta de pagamento")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Despejo por Falta de Pagamento Cumulado Com Cobrança")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Dissolução Parcial de Sociedade")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v(
+                    "Embargos à execução (por Título Judicial, Contra a Fazenda\n                            Pública e Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Embargos de Terceiro – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Extinção das Obrigações do Falido")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v(
+                    "Falência de Empresários, Socied. Empresárias, Microempresas e\n                            Empresas de Peq. Porte – Requerimento"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Habilitação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Habilitação de Crédito")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Homologação de Transação Extrajudicial")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Imissão na Posse")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Impugnação de Crédito")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Insolvência Requerida pelo Credor")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Insolvência Requerida pelo Devedor ou pelo Espólio")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Interdito Proibitório")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v(
+                    "Liquidação Provisória de Sentença pelo procedimento comum\n                        "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Monitória")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Petição – Cível")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Prestação de Contas – Exigidas")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Procedimento Comum")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Produção Antecipada de Provas – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Protesto – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Reintegração/Manutenção de Posse")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v(
+                    "Restituição de Coisa ou Dinheiro na Falência do Devedor\n                            Empresário"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Tutela Antecipada Antecedente")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Tutela Cautelar Antecedente")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "empresarial" } }, [
+                  _vm._v("Usucapião")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showClasse,
+                    expression: "showClasse"
+                  },
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "familia" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'familia' && showComarca === 'voltaRedonda'"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_classe" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showClasse = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
+                  }
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma classe")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Abertura, Registro e Cumprimento de Testamento")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Adoção – ECA")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Alimentos – Lei Especial nº 5478/66")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Alteração do Regime de Bens")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Alvará Judicial – Lei 6858/80")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Autorização Judicial – ECA")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Busca e Apreensão Infracional")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Cautelar – Regulamentação de Visitas")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Consignação em Pagamento – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Conversão de Separação Judicial em Divórcio")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Cumprimento de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Cumprimento Provisório de Decisão")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Cumprimento Provisório de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Divórcio")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Divórcio Consensual")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Execução de Alimentos")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Habilitação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Homologação de Transação Judicial")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Interdição")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Internação Provisória")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Inventário")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v(
+                    "Liquidação Provisória de Sentença pelo Procedimento Comum"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Mandado de Segurança – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Remoção e Dispensa/Tutela e Curatela")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Sobrepartilha")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Tutela Antecipada Antecedente")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Tutela Cautelar Antecedente")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "familia" } }, [
+                  _vm._v("Tutela e Curatela – Nomeação")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showClasse,
+                    expression: "showClasse"
+                  },
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "fazenda" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'fazenda' && showComarca === 'voltaRedonda'"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_classe" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showClasse = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
+                  }
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma classe")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Ação Civil Coletiva")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Ação Civil de Improbidade Administrativa")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Ação Pública")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Ação Popular Lei 4.717/65")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Alienação Judicial")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Alvará Judicial Lei 6.858/80")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Busca e Apreensão Com Alienação Fidunciária")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Consignação em Pagamento – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Consignatória de Aluguéis")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Contestação em Foro Diverso")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Cumprimento de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Cumprimento Provisório de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Cumprimento Provisório de Decisão")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Demarcação/Divisão")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Depósito da Lei 8.866/94")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Desapropriação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Despejo")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Despejo por Falta de Pagamento")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Despejo por Falta de Pagamento Cumulado com Cobrança")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Discriminatório")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Embargos à Execução Fiscal")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v(
+                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Embargos à Terceiro – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v(
+                    "Execução de Título Extrajudicial Contra a Fazenda Pública"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Execução de Título Extrajudicial – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Execução Hipotecária")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Exibição de Documento ou Coisa")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Habeas Data")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Habilitação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Homologação de Transação Extrajudicial")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Homologação de Penhor Legal")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Imissão na Posse")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Interdito Proibitório")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Interpelação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v(
+                    "Liquidação Provisória de Sentença Pelo Procedimento Comum"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Mandado de Injunção")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Mandado de Segurança – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Mandado de Segurança Coletivo")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Monitória")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Notificação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Oposição")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Pedido de Providência")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Petição – Cível")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Prestação de Contas – Exigível")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Procedimento Comum")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Processo Administrativo")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Produção Antecipada de Provas – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Protesto – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Reintegração e manutenção de Posse")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Renovatória de Locação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Restauração de Autos")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Revisional de Aluguel")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Tutela Antecipada Antecedente")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Tutela Cautelar Antecedente")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "fazenda" } }, [
+                  _vm._v("Usucapião")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showClasse,
+                    expression: "showClasse"
+                  },
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "juizado" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'juizado' && showComarca === 'voltaRedonda'"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_classe" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showClasse = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
+                  }
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma classe")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Alvará Judicial Lei 6.858/80")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Cumprimento de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Cumprimento Provisório de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Despejo")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Despejo por Falta de Pagamento")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Despejo por Falta de Pagamento Cumulado com Cobrança")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v(
+                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Embargos de Terceiro – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Execução de Título Extrajudicial – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Exibição de Documento ou Coisa")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Homologação de Transação Extrajudicial")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Monitória")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Procedimento do Juizado Especial Civil/Fazendário")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "juizado" } }, [
+                  _vm._v("Protesto – CPC")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showClasse,
+                    expression: "showClasse"
+                  },
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "orfaos" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'orfaos' && showComarca === 'voltaRedonda'"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_classe" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showClasse = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
+                  }
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma classe")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Abertura, Registro e Cumprimento de Testamento")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Alienação Judicial")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Alvará Judicial Lei 6.858/80")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Arrolamento Comum")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Arrolamento Sumário")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Cumprimento Provisório de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Declaração de Ausência")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v(
+                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Embargos de Terceiro – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Habilitação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Herança Jacente")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Homologação de Transação Extrajudicial")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Interdição")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Interdito Probatório")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Interpelação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Inventário")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Notificação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Oposição")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Pedidos de Providências")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Petição – Cível")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Prestação de Contas – ECA")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Prestação de Contas – Exigidas")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Procedimento Comum")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Remoção e Dispensa/Tutela e Curatela")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Sobrepartilha")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Tutela Antecipada Antecedente")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "orfaos" } }, [
+                  _vm._v("Tutela e Curatela – Nomeação")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showClasse,
+                    expression: "showClasse"
+                  },
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "registroCivil" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'registroCivil' && showComarca === 'voltaRedonda'"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_classe" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showClasse = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
+                  }
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma classe")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroCivel" } }, [
+                  _vm._v("Alteração de Regime de Bens")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroCivel" } }, [
+                  _vm._v("Averiguação Oficiosa de Paternidade")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroCivel" } }, [
+                  _vm._v("Habilitação para Casamento – RCPN")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroCivel" } }, [
+                  _vm._v("Homologação e Transação Extrajudicial")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroCivel" } }, [
+                  _vm._v("Mandado de Segurança – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroCivel" } }, [
+                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroCivel" } }, [
+                  _vm._v("Petição – Cível")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroCivel" } }, [
+                  _vm._v("Procedimento Comum")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroCivel" } }, [
+                  _vm._v("Registro de Casamento Nuncupativo")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroCivel" } }, [
+                  _vm._v("Sindicância")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroCivel" } }, [
+                  _vm._v(
+                    "Retificação ou Suprimento ou Restauração do Registo Cível\n                        "
+                  )
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showClasse,
+                    expression: "showClasse"
+                  },
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showCompetencia === "registroPublico" &&
+                      _vm.showComarca === "voltaRedonda",
+                    expression:
+                      "showCompetencia === 'registroPublico' && showComarca === 'voltaRedonda'"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_classe" },
+                on: {
+                  change: function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.showClasse = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
+                  }
+                }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma classe")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Cumprimento Provisório de Sentença")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Cumprimento Provisório de Decisão")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Demarcação/Divisão")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Declaração de Ausência")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Dúvida")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v(
+                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra\n                            a Fazenda Pública e Carta Precatória)"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Embargos de Terceiro – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Habilitação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Homologação e Transação Extrajudicial")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Mandado de Segurança – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Notificação")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Oposição")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Pedidos de Providências")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Petição – Cível")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Procedimento Comum")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Processo Administrativo")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Protesto – CPC")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Registro Torrens")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "registroPublico" } }, [
+                  _vm._v("Retificação de Registro de Imóveis")
+                ])
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", [
+          _c("label", { attrs: { for: "DE_dDP_distribuicao" } }, [
+            _c("strong", [_vm._v("* Distribuição")]),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "" ||
+                      _vm.showCompetencia === "" ||
+                      _vm.showClasse === "",
+                    expression:
+                      "showComarca === '' || showCompetencia === '' || showClasse === ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_distribuicao" }
+              },
+              [_c("option", [_vm._v("Escolha uma distribuição")])]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "voltaRedonda" &&
+                      _vm.showCompetencia === "acidente" &&
+                      _vm.showClasse === "acidente1",
+                    expression:
+                      "showComarca === 'voltaRedonda' && showCompetencia === 'acidente' && showClasse === 'acidente1'"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c("option", [_vm._v("Escolha uma distribuição")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("1")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("2")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("3")]),
+                _vm._v(" "),
+                _c("option", [_vm._v("4")])
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _c("br")
+      ])
+    ]),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -47632,7 +49096,7 @@ var staticRenderFns = [
             staticClass: "form-control",
             attrs: {
               type: "text",
-              id: "valorCausa",
+              id: "DE_dDP_valorCausa",
               placeholder: "ex.: 1.000,00",
               required: ""
             }
@@ -47663,40 +49127,36 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container", attrs: { id: "DE_dDV_ajudadeclaracao" } },
-    [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [
-            _c("strong", [_vm._v("Declaração de Veracidade")]),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                attrs: { href: "#ajudadeclaracao" },
-                on: {
-                  click: function($event) {
-                    return _vm.ajuda()
-                  }
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Declaração de Veracidade")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
                 }
-              },
-              [_vm._v("(?)")]
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _vm._m(0)
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
       ]),
       _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _vm._m(1),
-      _vm._v(" "),
-      _c("br")
-    ]
-  )
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -47775,7 +49235,7 @@ var render = function() {
     _vm._v(" "),
     _vm._m(1),
     _vm._v(" "),
-    _c("div", { staticClass: "card", attrs: { id: "DE_g_ajudagrerj" } }, [
+    _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "card-header" }, [
         _c("h5", [
           _c("strong", [_vm._v("GRERJ")]),
@@ -47783,7 +49243,7 @@ var render = function() {
           _c(
             "a",
             {
-              attrs: { href: "#ajudagrerj" },
+              attrs: { href: "#ajuda" },
               on: {
                 click: function($event) {
                   return _vm.ajuda()
@@ -48009,175 +49469,158 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container", attrs: { id: "ajudaprocesso" } },
-    [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [
-            _c("strong", [_vm._v("Processo Principal")]),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                attrs: { href: "#ajudaprocesso" },
-                on: {
-                  click: function($event) {
-                    return _vm.ajuda()
-                  }
-                }
-              },
-              [_vm._v("(?)")]
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _vm._m(0),
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Processo Principal")]),
           _vm._v(" "),
           _c(
-            "div",
+            "a",
             {
-              staticClass: "custom-control custom-control-inline custom-radio"
-            },
-            [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.showDpd,
-                    expression: "showDpd"
-                  }
-                ],
-                staticClass: "custom-control-input",
-                attrs: {
-                  type: "radio",
-                  id: "dpdSim",
-                  name: "dpd",
-                  value: "dpdSim"
-                },
-                domProps: { checked: _vm._q(_vm.showDpd, "dpdSim") },
-                on: {
-                  change: function($event) {
-                    _vm.showDpd = "dpdSim"
-                  }
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
                 }
-              }),
-              _vm._v(" "),
-              _c(
-                "label",
-                {
-                  staticClass: "custom-control-label",
-                  attrs: { for: "dpdSim" }
-                },
-                [_vm._v(" Sim ")]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "custom-control custom-control-inline custom-radio"
+              }
             },
-            [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.showDpd,
-                    expression: "showDpd"
-                  }
-                ],
-                staticClass: "custom-control-input",
-                attrs: { type: "radio", id: "dpdNao", name: "" },
-                domProps: { checked: _vm._q(_vm.showDpd, null) },
-                on: {
-                  change: function($event) {
-                    _vm.showDpd = null
-                  }
-                }
-              }),
-              _vm._v(" "),
-              _c(
-                "label",
-                {
-                  staticClass: "custom-control-label",
-                  attrs: { for: "dpdNao" }
-                },
-                [_vm._v(" Não ")]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.showDpd === "dpdSim",
-                  expression: "showDpd === 'dpdSim'"
-                }
-              ]
-            },
-            [
-              _c("br"),
-              _vm._v(" "),
-              _c("form", { staticClass: "form-inline" }, [
-                _c("div", { staticClass: "col-xs-2" }, [
-                  _vm._m(1),
-                  _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "mask",
-                        rawName: "v-mask",
-                        value: "#######-##.####",
-                        expression: "'#######-##.####'"
-                      }
-                    ],
-                    staticClass: "form-control col-md-3",
-                    attrs: { type: "text", required: "" }
-                  }),
-                  _vm._v(" "),
-                  _c("span", [_vm._v(" .8.19. ")]),
-                  _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "mask",
-                        rawName: "v-mask",
-                        value: "####",
-                        expression: "'####'"
-                      }
-                    ],
-                    staticClass: "form-control col-md-1",
-                    attrs: { type: "text", required: "" }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-primary",
-                      attrs: { type: "submit" }
-                    },
-                    [_vm._v("Consultar")]
-                  )
-                ])
-              ])
-            ]
+            [_vm._v("(?)")]
           )
         ])
       ]),
       _vm._v(" "),
-      _c("br")
-    ]
-  )
+      _c("div", { staticClass: "card-body" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "custom-control custom-control-inline custom-radio" },
+          [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.showDpd,
+                  expression: "showDpd"
+                }
+              ],
+              staticClass: "custom-control-input",
+              attrs: {
+                type: "radio",
+                id: "dpdSim",
+                name: "dpd",
+                value: "dpdSim"
+              },
+              domProps: { checked: _vm._q(_vm.showDpd, "dpdSim") },
+              on: {
+                change: function($event) {
+                  _vm.showDpd = "dpdSim"
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "custom-control-label", attrs: { for: "dpdSim" } },
+              [_vm._v(" Sim ")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "custom-control custom-control-inline custom-radio" },
+          [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.showDpd,
+                  expression: "showDpd"
+                }
+              ],
+              staticClass: "custom-control-input",
+              attrs: { type: "radio", id: "dpdNao", name: "" },
+              domProps: { checked: _vm._q(_vm.showDpd, null) },
+              on: {
+                change: function($event) {
+                  _vm.showDpd = null
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              { staticClass: "custom-control-label", attrs: { for: "dpdNao" } },
+              [_vm._v(" Não ")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showDpd === "dpdSim",
+                expression: "showDpd === 'dpdSim'"
+              }
+            ]
+          },
+          [
+            _c("br"),
+            _vm._v(" "),
+            _c("form", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "#######-##.####",
+                      expression: "'#######-##.####'"
+                    }
+                  ],
+                  staticClass: "form-control col-md-3",
+                  attrs: { type: "text", required: "" }
+                }),
+                _vm._v(" "),
+                _c("span", [_vm._v(" .8.19. ")]),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "####",
+                      expression: "'####'"
+                    }
+                  ],
+                  staticClass: "form-control col-md-1",
+                  attrs: { type: "text", required: "" }
+                }),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+                  [_vm._v("Consultar")]
+                )
+              ])
+            ])
+          ]
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -60390,18 +61833,22 @@ Vue.component('dedeclaracaodeveracidade', __webpack_require__(/*! ./components/D
 Vue.component('cadadospessoais', __webpack_require__(/*! ./components/CadastrarAutor/CA_dadosPessoais.vue */ "./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue")["default"]);
 Vue.component('caadvogadorepresentante', __webpack_require__(/*! ./components/CadastrarAutor/CA_advogadoRepresentante.vue */ "./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue")["default"]);
 Vue.component('caendereco', __webpack_require__(/*! ./components/CadastrarAutor/CA_endereco.vue */ "./resources/js/components/CadastrarAutor/CA_endereco.vue")["default"]);
+Vue.component('cavalorpedidocausa', __webpack_require__(/*! ./components/CadastrarAutor/CA_valorPedidoCausa.vue */ "./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue")["default"]);
 Vue.component('cadadoscomplementares', __webpack_require__(/*! ./components/CadastrarAutor/CA_dadosComplementares.vue */ "./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue")["default"]); //Componentes da pasta CadastrarRepresentanteAutor
 
 Vue.component('cradadospessoais', __webpack_require__(/*! ./components/CadastrarRepresentanteAutor/CRA_dadosPessoais.vue */ "./resources/js/components/CadastrarRepresentanteAutor/CRA_dadosPessoais.vue")["default"]);
 Vue.component('craendereco', __webpack_require__(/*! ./components/CadastrarRepresentanteAutor/CRA_endereco.vue */ "./resources/js/components/CadastrarRepresentanteAutor/CRA_endereco.vue")["default"]);
+Vue.component('cravalorpedidocausa', __webpack_require__(/*! ./components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue */ "./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue")["default"]);
 Vue.component('cradadoscomplementares', __webpack_require__(/*! ./components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue */ "./resources/js/components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue")["default"]); //Componentes da pasta CadastrarReu
 
 Vue.component('crdadospessoais', __webpack_require__(/*! ./components/CadastrarReu/CR_dadosPessoais.vue */ "./resources/js/components/CadastrarReu/CR_dadosPessoais.vue")["default"]);
 Vue.component('crendereco', __webpack_require__(/*! ./components/CadastrarReu/CR_endereco.vue */ "./resources/js/components/CadastrarReu/CR_endereco.vue")["default"]);
+Vue.component('crvalorpedidocausa', __webpack_require__(/*! ./components/CadastrarReu/CR_valorPedidoCausa.vue */ "./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue")["default"]);
 Vue.component('crdadoscomplementares', __webpack_require__(/*! ./components/CadastrarReu/CR_dadosComplementares.vue */ "./resources/js/components/CadastrarReu/CR_dadosComplementares.vue")["default"]); //Componentes da pasta CadastrarRepresentanteReu
 
 Vue.component('crrdadospessoais', __webpack_require__(/*! ./components/CadastrarRepresentanteReu/CRR_dadosPessoais.vue */ "./resources/js/components/CadastrarRepresentanteReu/CRR_dadosPessoais.vue")["default"]);
 Vue.component('crrendereco', __webpack_require__(/*! ./components/CadastrarRepresentanteReu/CRR_endereco.vue */ "./resources/js/components/CadastrarRepresentanteReu/CRR_endereco.vue")["default"]);
+Vue.component('crrvalorpedidocausa', __webpack_require__(/*! ./components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue */ "./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue")["default"]);
 Vue.component('crrdadoscomplementares', __webpack_require__(/*! ./components/CadastrarRepresentanteReu/CRR_dadosComplementares.vue */ "./resources/js/components/CadastrarRepresentanteReu/CRR_dadosComplementares.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -60415,10 +61862,10 @@ var app = new Vue({
   el: '#app',
   components: [//DistribuicaoEletronica
   'degrerj', 'deprocessoPrincipal', 'dedadosDoProcesso', 'deadvogadoRepresentante', 'deautoresReusDocumentos', 'dedeclaracaoDeVeracidade', //CadastrarAutor
-  'cadadosPessoais', 'caadvogadoRepresentante', 'caendereco', 'cadadosComplementares', //CadastrarRepresentanteAutor
-  'cradadosPessoais', 'craendereco', 'cradadosComplementares', //CadastrarReu
-  'crdadosPessoais', 'crendereco', 'crdadosComplementares', //CadastrarRepresentanteReu
-  'crrdadosPessoais', 'crrendereco', 'crrdadosComplementares']
+  'cadadosPessoais', 'caadvogadoRepresentante', 'caendereco', 'cavalorPedidoCausa', 'cadadosComplementares', //CadastrarRepresentanteAutor
+  'cradadosPessoais', 'craendereco', 'cravalorPedidoCausa', 'cradadosComplementares', //CadastrarReu
+  'crdadosPessoais', 'crendereco', 'crvalorPedidoCausa', 'crdadosComplementares', //CadastrarRepresentanteReu
+  'crrdadosPessoais', 'crrendereco', 'crrvalorPedidoCausa', 'crrdadosComplementares']
 });
 
 /***/ }),
@@ -60811,6 +62258,93 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CA_valorPedidoCausa_vue_vue_type_template_id_5b7199d5_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CA_valorPedidoCausa.vue?vue&type=template&id=5b7199d5&scoped=true& */ "./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=template&id=5b7199d5&scoped=true&");
+/* harmony import */ var _CA_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CA_valorPedidoCausa.vue?vue&type=script&lang=js& */ "./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _CA_valorPedidoCausa_vue_vue_type_style_index_0_id_5b7199d5_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CA_valorPedidoCausa.vue?vue&type=style&index=0&id=5b7199d5&scoped=true&lang=css& */ "./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=style&index=0&id=5b7199d5&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _CA_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CA_valorPedidoCausa_vue_vue_type_template_id_5b7199d5_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CA_valorPedidoCausa_vue_vue_type_template_id_5b7199d5_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "5b7199d5",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CA_valorPedidoCausa.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=style&index=0&id=5b7199d5&scoped=true&lang=css&":
+/*!*********************************************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=style&index=0&id=5b7199d5&scoped=true&lang=css& ***!
+  \*********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_valorPedidoCausa_vue_vue_type_style_index_0_id_5b7199d5_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./CA_valorPedidoCausa.vue?vue&type=style&index=0&id=5b7199d5&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=style&index=0&id=5b7199d5&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_valorPedidoCausa_vue_vue_type_style_index_0_id_5b7199d5_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_valorPedidoCausa_vue_vue_type_style_index_0_id_5b7199d5_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_valorPedidoCausa_vue_vue_type_style_index_0_id_5b7199d5_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_valorPedidoCausa_vue_vue_type_style_index_0_id_5b7199d5_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_valorPedidoCausa_vue_vue_type_style_index_0_id_5b7199d5_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=template&id=5b7199d5&scoped=true&":
+/*!*******************************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=template&id=5b7199d5&scoped=true& ***!
+  \*******************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_valorPedidoCausa_vue_vue_type_template_id_5b7199d5_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CA_valorPedidoCausa.vue?vue&type=template&id=5b7199d5&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue?vue&type=template&id=5b7199d5&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_valorPedidoCausa_vue_vue_type_template_id_5b7199d5_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CA_valorPedidoCausa_vue_vue_type_template_id_5b7199d5_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue":
 /*!*****************************************************************************************!*\
   !*** ./resources/js/components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue ***!
@@ -61067,6 +62601,93 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CRA_endereco_vue_vue_type_template_id_6f78f10c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CRA_endereco_vue_vue_type_template_id_6f78f10c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CRA_valorPedidoCausa_vue_vue_type_template_id_6dd4e17f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CRA_valorPedidoCausa.vue?vue&type=template&id=6dd4e17f&scoped=true& */ "./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=template&id=6dd4e17f&scoped=true&");
+/* harmony import */ var _CRA_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CRA_valorPedidoCausa.vue?vue&type=script&lang=js& */ "./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _CRA_valorPedidoCausa_vue_vue_type_style_index_0_id_6dd4e17f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CRA_valorPedidoCausa.vue?vue&type=style&index=0&id=6dd4e17f&scoped=true&lang=css& */ "./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=style&index=0&id=6dd4e17f&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _CRA_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CRA_valorPedidoCausa_vue_vue_type_template_id_6dd4e17f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CRA_valorPedidoCausa_vue_vue_type_template_id_6dd4e17f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "6dd4e17f",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CRA_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CRA_valorPedidoCausa.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CRA_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=style&index=0&id=6dd4e17f&scoped=true&lang=css&":
+/*!***********************************************************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=style&index=0&id=6dd4e17f&scoped=true&lang=css& ***!
+  \***********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CRA_valorPedidoCausa_vue_vue_type_style_index_0_id_6dd4e17f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./CRA_valorPedidoCausa.vue?vue&type=style&index=0&id=6dd4e17f&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=style&index=0&id=6dd4e17f&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CRA_valorPedidoCausa_vue_vue_type_style_index_0_id_6dd4e17f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CRA_valorPedidoCausa_vue_vue_type_style_index_0_id_6dd4e17f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CRA_valorPedidoCausa_vue_vue_type_style_index_0_id_6dd4e17f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CRA_valorPedidoCausa_vue_vue_type_style_index_0_id_6dd4e17f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CRA_valorPedidoCausa_vue_vue_type_style_index_0_id_6dd4e17f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=template&id=6dd4e17f&scoped=true&":
+/*!*********************************************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=template&id=6dd4e17f&scoped=true& ***!
+  \*********************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CRA_valorPedidoCausa_vue_vue_type_template_id_6dd4e17f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CRA_valorPedidoCausa.vue?vue&type=template&id=6dd4e17f&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue?vue&type=template&id=6dd4e17f&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CRA_valorPedidoCausa_vue_vue_type_template_id_6dd4e17f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CRA_valorPedidoCausa_vue_vue_type_template_id_6dd4e17f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -61333,6 +62954,93 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CRR_valorPedidoCausa_vue_vue_type_template_id_033cdf6f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CRR_valorPedidoCausa.vue?vue&type=template&id=033cdf6f&scoped=true& */ "./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=template&id=033cdf6f&scoped=true&");
+/* harmony import */ var _CRR_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CRR_valorPedidoCausa.vue?vue&type=script&lang=js& */ "./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _CRR_valorPedidoCausa_vue_vue_type_style_index_0_id_033cdf6f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CRR_valorPedidoCausa.vue?vue&type=style&index=0&id=033cdf6f&scoped=true&lang=css& */ "./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=style&index=0&id=033cdf6f&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _CRR_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CRR_valorPedidoCausa_vue_vue_type_template_id_033cdf6f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CRR_valorPedidoCausa_vue_vue_type_template_id_033cdf6f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "033cdf6f",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CRR_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CRR_valorPedidoCausa.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CRR_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=style&index=0&id=033cdf6f&scoped=true&lang=css&":
+/*!*********************************************************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=style&index=0&id=033cdf6f&scoped=true&lang=css& ***!
+  \*********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CRR_valorPedidoCausa_vue_vue_type_style_index_0_id_033cdf6f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./CRR_valorPedidoCausa.vue?vue&type=style&index=0&id=033cdf6f&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=style&index=0&id=033cdf6f&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CRR_valorPedidoCausa_vue_vue_type_style_index_0_id_033cdf6f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CRR_valorPedidoCausa_vue_vue_type_style_index_0_id_033cdf6f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CRR_valorPedidoCausa_vue_vue_type_style_index_0_id_033cdf6f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CRR_valorPedidoCausa_vue_vue_type_style_index_0_id_033cdf6f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CRR_valorPedidoCausa_vue_vue_type_style_index_0_id_033cdf6f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=template&id=033cdf6f&scoped=true&":
+/*!*******************************************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=template&id=033cdf6f&scoped=true& ***!
+  \*******************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CRR_valorPedidoCausa_vue_vue_type_template_id_033cdf6f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CRR_valorPedidoCausa.vue?vue&type=template&id=033cdf6f&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue?vue&type=template&id=033cdf6f&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CRR_valorPedidoCausa_vue_vue_type_template_id_033cdf6f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CRR_valorPedidoCausa_vue_vue_type_template_id_033cdf6f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/CadastrarReu/CR_dadosComplementares.vue":
 /*!*************************************************************************!*\
   !*** ./resources/js/components/CadastrarReu/CR_dadosComplementares.vue ***!
@@ -61589,6 +63297,93 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CR_endereco_vue_vue_type_template_id_40a8fff0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CR_endereco_vue_vue_type_template_id_40a8fff0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue":
+/*!**********************************************************************!*\
+  !*** ./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CR_valorPedidoCausa_vue_vue_type_template_id_4bec673a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CR_valorPedidoCausa.vue?vue&type=template&id=4bec673a&scoped=true& */ "./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=template&id=4bec673a&scoped=true&");
+/* harmony import */ var _CR_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CR_valorPedidoCausa.vue?vue&type=script&lang=js& */ "./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _CR_valorPedidoCausa_vue_vue_type_style_index_0_id_4bec673a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CR_valorPedidoCausa.vue?vue&type=style&index=0&id=4bec673a&scoped=true&lang=css& */ "./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=style&index=0&id=4bec673a&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _CR_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CR_valorPedidoCausa_vue_vue_type_template_id_4bec673a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CR_valorPedidoCausa_vue_vue_type_template_id_4bec673a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "4bec673a",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CR_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./CR_valorPedidoCausa.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CR_valorPedidoCausa_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=style&index=0&id=4bec673a&scoped=true&lang=css&":
+/*!*******************************************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=style&index=0&id=4bec673a&scoped=true&lang=css& ***!
+  \*******************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CR_valorPedidoCausa_vue_vue_type_style_index_0_id_4bec673a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--6-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./CR_valorPedidoCausa.vue?vue&type=style&index=0&id=4bec673a&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=style&index=0&id=4bec673a&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CR_valorPedidoCausa_vue_vue_type_style_index_0_id_4bec673a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CR_valorPedidoCausa_vue_vue_type_style_index_0_id_4bec673a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CR_valorPedidoCausa_vue_vue_type_style_index_0_id_4bec673a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CR_valorPedidoCausa_vue_vue_type_style_index_0_id_4bec673a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CR_valorPedidoCausa_vue_vue_type_style_index_0_id_4bec673a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=template&id=4bec673a&scoped=true&":
+/*!*****************************************************************************************************************!*\
+  !*** ./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=template&id=4bec673a&scoped=true& ***!
+  \*****************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CR_valorPedidoCausa_vue_vue_type_template_id_4bec673a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./CR_valorPedidoCausa.vue?vue&type=template&id=4bec673a&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue?vue&type=template&id=4bec673a&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CR_valorPedidoCausa_vue_vue_type_template_id_4bec673a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CR_valorPedidoCausa_vue_vue_type_template_id_4bec673a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

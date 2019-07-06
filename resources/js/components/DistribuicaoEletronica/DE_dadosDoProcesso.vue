@@ -1,10 +1,10 @@
 <template>
-    <div class="container" id="DE_DE_dDPajudadados">
+    <div class="container">
         <div class="card">
             <div class="card-header">
                 <h5>
                     <strong>Dados do Processo</strong>
-                    <a href="#ajudadados" v-on:click="ajuda()">(?)</a>
+                    <a href="#ajuda" v-on:click="ajuda()">(?)</a>
                 </h5>
             </div>
             <div class="card-body">
@@ -451,7 +451,7 @@
                     <form class="form-inline">
                         <div class="col-xs-2">
                             <span><strong>* Valor da Causa:</strong> </span>
-                            <input type="text" class="form-control" id="valorCausa" placeholder="ex.: 1.000,00" required>
+                            <input type="text" class="form-control" id="DE_dDP_valorCausa" placeholder="ex.: 1.000,00" required>
                         </div>
                     </form>
                 </div>

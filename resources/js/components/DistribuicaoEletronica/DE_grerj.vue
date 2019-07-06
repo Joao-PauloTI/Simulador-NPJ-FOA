@@ -5,11 +5,11 @@
         <p><strong>ATENÇÃO SENHOR ADVOGADO: SE NÃO HOUVER PEDIDO DE JUSTIÇA GRATUITA, ANTES DE REALIZAR O CADASTRAMENTO
                 DE SUA PETIÇÃO, FAÇA O RECOLHIMENTO DO GRERJ, POIS SEU NÚMERO E VALOR SERÃO NECESSÁRIOS.</strong></p>
         <p>Campos marcados com <strong>*</strong> são de preenchimento obrigatório.</p>
-        <div class="card" id="DE_g_ajudagrerj">
+        <div class="card">
             <div class="card-header">
                 <h5>
                     <strong>GRERJ</strong>
-                    <a href="#ajudagrerj" v-on:click="ajuda()">(?)</a>
+                    <a href="#ajuda" v-on:click="ajuda()">(?)</a>
                 </h5>
             </div>
             <div class="card-body">

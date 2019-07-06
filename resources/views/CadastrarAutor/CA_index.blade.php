@@ -6,6 +6,7 @@
 		<cadadospessoais></cadadospessoais>
 		<caadvogadorepresentante></caadvogadorepresentante>
 		<caendereco></caendereco>
+		<cavalorpedidocausa></cavalorpedidocausa>
 		<cadadoscomplementares></cadadoscomplementares>
 	</div>
 @endsection
