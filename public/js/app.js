@@ -61859,13 +61859,7 @@ Vue.component('crrdadoscomplementares', __webpack_require__(/*! ./components/Cad
 
 Vue.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_0___default.a);
 var app = new Vue({
-  el: '#app',
-  components: [//DistribuicaoEletronica
-  'degrerj', 'deprocessoPrincipal', 'dedadosDoProcesso', 'deadvogadoRepresentante', 'deautoresReusDocumentos', 'dedeclaracaoDeVeracidade', //CadastrarAutor
-  'cadadosPessoais', 'caadvogadoRepresentante', 'caendereco', 'cavalorPedidoCausa', 'cadadosComplementares', //CadastrarRepresentanteAutor
-  'cradadosPessoais', 'craendereco', 'cravalorPedidoCausa', 'cradadosComplementares', //CadastrarReu
-  'crdadosPessoais', 'crendereco', 'crvalorPedidoCausa', 'crdadosComplementares', //CadastrarRepresentanteReu
-  'crrdadosPessoais', 'crrendereco', 'crrvalorPedidoCausa', 'crrdadosComplementares']
+  el: '#app'
 });
 
 /***/ }),

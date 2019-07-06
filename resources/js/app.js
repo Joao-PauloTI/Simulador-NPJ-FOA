@@ -62,34 +62,5 @@ Vue.use(VueTheMask)
 
 const app = new Vue({
     el: '#app',
-    components: [
-        //DistribuicaoEletronica
-        'degrerj',
-        'deprocessoPrincipal',
-        'dedadosDoProcesso',
-        'deadvogadoRepresentante',
-        'deautoresReusDocumentos',
-        'dedeclaracaoDeVeracidade',
-        //CadastrarAutor
-        'cadadosPessoais',
-        'caadvogadoRepresentante',
-        'caendereco',
-        'cavalorPedidoCausa',
-        'cadadosComplementares',
-        //CadastrarRepresentanteAutor
-        'cradadosPessoais',
-        'craendereco',
-        'cravalorPedidoCausa',
-        'cradadosComplementares',
-        //CadastrarReu
-        'crdadosPessoais',
-        'crendereco',
-        'crvalorPedidoCausa',
-        'crdadosComplementares',
-        //CadastrarRepresentanteReu
-        'crrdadosPessoais',
-        'crrendereco',
-        'crrvalorPedidoCausa',
-        'crrdadosComplementares',
-    ],
+    
 });

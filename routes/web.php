@@ -11,22 +11,23 @@
 |
 */
 
+//Distribuição Eletronica
 Route::get('/', function () {
     return view('DistribuicaoEletronica/DE_index');
 });
-
+//Cadastro de autor
 Route::get('cadastrarautor', function () {
 	return view('CadastrarAutor/CA_index');
 });
-
+//Cadastro de representante de autor
 Route::get('cadastrarrepresentanteautor', function () {
 	return view('CadastrarRepresentanteAutor/CRA_index');
 });
-
+//Cadastro de réu
 Route::get('cadastrarreu', function () {
 	return view('CadastrarReu/CR_index');
 });
-
+//Cadastro de representante de réu
 Route::get('cadastrarrepresentantereu', function () {
 	return view('CadastrarRepresentanteReu/CRR_index');
 });
