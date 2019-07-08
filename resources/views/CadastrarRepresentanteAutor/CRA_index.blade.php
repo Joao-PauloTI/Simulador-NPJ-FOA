@@ -2,6 +2,7 @@
 @section('titulo') Cadastro de Representante do Autor @endsection
 
 @section('conteudo')
+	<br>
 	<div id="app">
 		<cradadospessoais></cradadospessoais>
 		<craendereco></craendereco>

@@ -19,6 +19,8 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
+//Componentes da pasta PaginaInicial
+
 //Componentes da pasta DistribuicaoEletronica
 Vue.component('degrerj', require('./components/DistribuicaoEletronica/DE_grerj.vue').default);
 Vue.component('deprocessoprincipal', require('./components/DistribuicaoEletronica/DE_processoPrincipal.vue').default);

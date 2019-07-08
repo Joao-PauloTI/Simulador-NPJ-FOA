@@ -10,9 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-//Distribuição Eletronica
+//Página Inicial
 Route::get('/', function () {
+	return view('PaginaInicial/PI_index');
+});
+//Distribuição Eletronica
+Route::get('distribuicaoeletronica', function () {
     return view('DistribuicaoEletronica/DE_index');
 });
 //Cadastro de autor
