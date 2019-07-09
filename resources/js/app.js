@@ -20,6 +20,7 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 //Componentes da pasta PaginaInicial
+Vue.component('pipainelavisos', require('./components/PaginaInicial/PI_painelAvisos.vue').default);
 
 //Componentes da pasta DistribuicaoEletronica
 Vue.component('degrerj', require('./components/DistribuicaoEletronica/DE_grerj.vue').default);
