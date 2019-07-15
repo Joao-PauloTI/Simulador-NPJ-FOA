@@ -1,5 +1,7 @@
 <template>
     <div class="container">
+        <h1>Cadastro de Autor</h1>
+        <hr>
         <div class="card">
             <div class="card-header">
                 <h5>

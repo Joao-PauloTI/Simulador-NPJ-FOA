@@ -3,6 +3,12 @@
 
 @section('conteudo')
 	<div id="app">
-	 	<pipainelavisos></pipainelavisos>
+		<pimenulateral id="PI_mostrarEsconderMenu"></pimenulateral>
+		<div class="container">
+			<div class="card">
+		 		<pipainelavisos></pipainelavisos>
+		 		<br>
+		 	</div>
+		 </div>	
 	</div>
 @endsection

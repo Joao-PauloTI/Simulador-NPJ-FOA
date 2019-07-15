@@ -1,5 +1,7 @@
 <template>
     <div class="container">
+        <h1>Página Inicial</h1>
+        <hr>
         <div class="card">
             <div class="card-header">
                 <h5>

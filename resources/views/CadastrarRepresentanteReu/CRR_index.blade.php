@@ -3,9 +3,15 @@
 
 @section('conteudo')
 	<div id="app">
-		<crrdadospessoais></crrdadospessoais>
-		<crrendereco></crrendereco>
-		<crrvalorpedidocausa></crrvalorpedidocausa>
-		<crrdadoscomplementares></crrdadoscomplementares>
+		<pimenulateral id="PI_mostrarEsconderMenu"></pimenulateral>
+		<div class="container">
+			<div class="card">
+				<crrdadospessoais></crrdadospessoais>
+				<crrendereco></crrendereco>
+				<crrvalorpedidocausa></crrvalorpedidocausa>
+				<crrdadoscomplementares></crrdadoscomplementares>
+			</div>
+		</div>
+		<br>
 	</div>
 @endsection

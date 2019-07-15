@@ -21,6 +21,7 @@ window.Vue = require('vue');
 
 //Componentes da pasta PaginaInicial
 Vue.component('pipainelavisos', require('./components/PaginaInicial/PI_painelAvisos.vue').default);
+Vue.component('pimenulateral', require('./components/PaginaInicial/PI_menuLateral.vue').default);
 
 //Componentes da pasta DistribuicaoEletronica
 Vue.component('degrerj', require('./components/DistribuicaoEletronica/DE_grerj.vue').default);
