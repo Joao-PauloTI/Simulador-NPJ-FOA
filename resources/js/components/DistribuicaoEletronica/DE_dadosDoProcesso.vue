@@ -41,6 +41,30 @@
                     <label for="DE_dDP_comarca"><strong>* Comarca</strong>
                         <select class="custom-select" id="DE_dDP_comarca" v-model="showComarca">
                             <option value="">Escolha uma comarca</option>
+                            <option value="angraDosReis">Comarca de Angra dos Reis</option>
+                            <option value="paraty">Comarca de Paraty</option>
+                            <option value="barraDoPirai">Comarca de Barra do Piraí</option>
+                            <option value="rioDasFlores">Comarca de Rio das Flores</option>
+                            <option value="valença">Comarca de Valença</option>
+                            <option value="barraMansa">Comarca de Barra Mansa</option>
+                            <option value="itatiaia">Comarca de Itatiaia</option>
+                            <option value="pinheiral">Comarca de Pinheiral</option>
+                            <option value="portoReal">Comarca de Porto Real</option>
+                            <option value="quatis">Comarca de Quatis</option>
+                            <option value="resende">Comarca de Resende</option>
+                            <option value="rioClaro">Comarca de Rio Claro</option>
+                            <option value="pirai">Comarca de Piraí</option>
+                            <option value="engenheiroPauloDeFrontin">Comarca de Engenheiro Paulo de Frontin</option>
+                            <option value="mendes">Comarca de Mendes</option>
+                            <option value="miguelPereira">Comarca de Miguel Pereira</option>
+                            <option value="paracambi">Comarca de Paracambi</option>
+                            <option value="patyDoAlferes">Comarca de Paty do Alferes</option>
+                            <option value="vassouras">Comarca de Vassouras</option>
+                            <option value="areal">Comarca de Areal</option>
+                            <option value="comendadorLevyGasparian">Comarca de Comendador Levy Gasparian</option>
+                            <option value="paraibaDoSul">Comarca de Paraíba do Sul</option>
+                            <option value="sapucaia">Comarca de Sapucaia</option>
+                            <option value="tresRios">Comarca de Três Rios</option>
                             <option value="voltaRedonda">Comarca de Volta Redonda</option>
                         </select>
                     </label>
@@ -54,7 +78,7 @@
                             <option>Escolha uma competência</option>
                         </select>
                         <!--Volta Redonda-->
-                        <select class="custom-select" id="DE_dDP_competencia" v-model="showCompetencia" v-show="showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="DE_dDP_competencia" v-model="showCompetencia" v-show="showComarca !== ''">
                             <option value="">Escolha uma competência</option>
                             <option value="acidente">Acidentes de Trabalho</option>
                             <option value="civel">Cível</option>
@@ -71,7 +95,7 @@
                     </label>
                 </div>
                 <!--Opção extra para competência Cível, Empresarial, Família, Fazenda Pública e Órfãos e Sucessões-->
-                <div v-show="showComarca === 'voltaRedonda' && (showCompetencia === 'civel' || showCompetencia === 'empresarial' || showCompetencia === 'familia' || showCompetencia === 'fazenda' || showCompetencia === 'orfaos')">
+                <div v-show="showComarca !== '' && (showCompetencia === 'civel' || showCompetencia === 'empresarial' || showCompetencia === 'familia' || showCompetencia === 'fazenda' || showCompetencia === 'orfaos')">
                     <div class="custom-control custom-control-inline custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="opcaoExtra">
                         <label class="custom-control-label" for="opcaoExtra">Autor opta pela realização de audiência de
@@ -87,7 +111,7 @@
                             <option>Escolha uma classe</option>
                         </select>
                         <!--Acidentes de Trabalho-->
-                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'acidente' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'acidente' && showComarca !== ''">
                             <option value="">Escolha uma classe</option>
                             <option value="acidente1">Ação Civil Coletiva</option>
                             <option value="acidente2">Ação Civil Pública</option>
@@ -104,7 +128,7 @@
                             <option value="acidente12">Procedimento Comum</option>
                         </select>
                         <!--Cível-->
-                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'civel' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'civel' && showComarca !== ''">
                             <option value="">Escolha uma classe</option>
                             <option value="civel">Ação Civil Coletiva</option>
                             <option value="civel">Ação Civil Pública</option>
@@ -156,7 +180,7 @@
                             <option value="civel">Usucapião</option>
                         </select>
                         <!--Dívida Ativa Estadual-->
-                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'dividaEstadual' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'dividaEstadual' && showComarca !== ''">
                             <option value="">Escolha uma classe</option>
                             <option value="dividaEstadual">Ação Civil Pública</option>
                             <option value="dividaEstadual">Alvará Judicial – Lei 6858/80</option>
@@ -177,7 +201,7 @@
                             <option value="dividaEstadual">Tutela Cautelar Antecedente</option>
                         </select>
                         <!--Dívida Ativa Municipal-->
-                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'dividaMunicipal' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'dividaMunicipal' && showComarca !== ''">
                             <option value="">Escolha uma classe</option>
                             <option value="dividaMunicipal">Alvará Judicial – Lei 6858/80</option>
                             <option value="dividaMunicipal">Busca e Apreensão em Alienação Fiduciária</option>
@@ -198,7 +222,7 @@
                             <option value="dividaMunicipal">Tutela Cautelar Antecedente</option>
                         </select>
                         <!--Empresarial-->
-                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'empresarial' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'empresarial' && showComarca !== ''">
                             <option value="">Escolha uma classe</option>
                             <option value="empresarial">Ação Civil Coletiva</option>
                             <option value="empresarial">Ação Civil Pública</option>
@@ -241,7 +265,7 @@
                             <option value="empresarial">Usucapião</option>
                         </select>
                         <!--Família-->
-                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'familia' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'familia' && showComarca !== ''">
                             <option value="">Escolha uma classe</option>
                             <option value="familia">Abertura, Registro e Cumprimento de Testamento</option>
                             <option value="familia">Adoção – ECA</option>
@@ -274,7 +298,7 @@
                             <option value="familia">Tutela e Curatela – Nomeação</option>
                         </select>
                         <!--Fazenda Pública-->
-                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'fazenda' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'fazenda' && showComarca !== ''">
                             <option value="">Escolha uma classe</option>
                             <option value="fazenda">Ação Civil Coletiva</option>
                             <option value="fazenda">Ação Civil de Improbidade Administrativa</option>
@@ -335,7 +359,7 @@
                             <option value="fazenda">Usucapião</option>
                         </select>
                         <!--Juizado Especial Civil-->
-                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'juizado' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'juizado' && showComarca !== ''">
                             <option value="">Escolha uma classe</option>
                             <option value="juizado">Alvará Judicial Lei 6.858/80</option>
                             <option value="juizado">Cumprimento de Sentença</option>
@@ -354,7 +378,7 @@
                             <option value="juizado">Protesto – CPC</option>
                         </select>
                         <!--Órfãos e Sucessões-->
-                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'orfaos' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'orfaos' && showComarca !== ''">
                             <option value="">Escolha uma classe</option>
                             <option value="orfaos">Abertura, Registro e Cumprimento de Testamento</option>
                             <option value="orfaos">Alienação Judicial</option>
@@ -387,7 +411,7 @@
                             <option value="orfaos">Tutela e Curatela – Nomeação</option>
                         </select>
                         <!--Registro Civil de Pessoas Naturais-->
-                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'registroCivil' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'registroCivil' && showComarca !== ''">
                             <option value="">Escolha uma classe</option>
                             <option value="registroCivel">Alteração de Regime de Bens</option>
                             <option value="registroCivel">Averiguação Oficiosa de Paternidade</option>
@@ -403,7 +427,7 @@
                             </option>
                         </select>
                         <!--Registro Público-->
-                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'registroPublico' && showComarca === 'voltaRedonda'">
+                        <select class="custom-select" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'registroPublico' && showComarca !== ''">
                             <option value="">Escolha uma classe</option>
                             <option value="registroPublico">Cumprimento Provisório de Sentença</option>
                             <option value="registroPublico">Cumprimento Provisório de Decisão</option>
@@ -436,7 +460,7 @@
                         <select class="custom-select" id="DE_dDP_distribuicao" v-show="showComarca === '' || showCompetencia === '' || showClasse === ''">
                             <option>Escolha uma distribuição</option>
                         </select>
-                        <select class="custom-select" id="DE_dDP_distribuicao" v-show="showComarca === 'voltaRedonda' && showCompetencia === 'acidente' && showClasse === 'acidente1'">
+                        <select class="custom-select" id="DE_dDP_distribuicao" v-show="showComarca !== '' && showCompetencia === 'acidente' && showClasse === 'acidente1'">
                             <option>Escolha uma distribuição</option>
                             <option>1</option>
                             <option>2</option>
