@@ -85,7 +85,7 @@
                     <div class="collapse" id="PI_menu4_opcoes">
                         <p>
                             <i class="fas fa-file-alt"></i>
-                            <a href="#">Consultas Processuais</a>
+                            <a href="/consultasprocessuais">Consultas Processuais</a>
                         </p>
                         <p>
                             <i class="fas fa-file-alt"></i>

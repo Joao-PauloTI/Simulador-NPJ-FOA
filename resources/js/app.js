@@ -56,6 +56,9 @@ Vue.component('crrendereco', require('./components/CadastrarRepresentanteReu/CRR
 Vue.component('crrvalorpedidocausa', require('./components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue').default);
 Vue.component('crrdadoscomplementares', require('./components/CadastrarRepresentanteReu/CRR_dadosComplementares.vue').default);
 
+//Componentes da pasta ConsultasProcessuais
+Vue.component('cpconsultaprocessual', require('./components/ConsultasProcessuais/CP_consultaProcessual.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

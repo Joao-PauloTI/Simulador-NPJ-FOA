@@ -18,6 +18,10 @@ Route::get('/', function () {
 Route::get('distribuicaoeletronica', function () {
     return view('DistribuicaoEletronica/DE_index');
 });
+//Consultas Processuais
+Route::get('consultasprocessuais', function () {
+    return view('ConsultasProcessuais/CP_index');
+});
 //Cadastro de autor
 Route::get('cadastrarautor', function () {
 	return view('CadastrarAutor/CA_index');
