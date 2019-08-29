@@ -5046,6 +5046,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'dedadosdoprocesso',
   data: function data() {
@@ -49693,66 +49707,512 @@ var render = function() {
         _c("br"),
         _vm._v(" "),
         _c("div", [
-          _c("label", { attrs: { for: "DE_dDP_distribuicao" } }, [
-            _c("strong", [_vm._v("* Distribuição")]),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "" ||
-                      _vm.showCompetencia === "" ||
-                      _vm.showClasse === "",
-                    expression:
-                      "showComarca === '' || showCompetencia === '' || showClasse === ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { id: "DE_dDP_distribuicao" }
-              },
-              [_c("option", [_vm._v("Escolha uma distribuição")])]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca !== "" &&
-                      _vm.showCompetencia === "acidente" &&
-                      _vm.showClasse === "acidente1",
-                    expression:
-                      "showComarca !== '' && showCompetencia === 'acidente' && showClasse === 'acidente1'"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c("option", [_vm._v("Escolha uma distribuição")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("1")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("2")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("3")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("4")])
-              ]
-            )
-          ])
+          _vm._m(2),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "angraDosReis" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'angraDosReis' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Angra dos Reis")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "paraty" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'paraty' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Paraty")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "barraDoPirai" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'barraDoPirai' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Barra do Piraí")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "rioDasFlores" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'rioDasFlores' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Rio das Flores")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "valença" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'valença' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Valença")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "barraMansa" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'barraMansa' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Barra Mansa")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "itatiaia" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'itatiaia' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Itatiaia")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "pinheiral" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'pinheiral' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Pinheiral")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "portoReal" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'portoReal' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Porto Real")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "quatis" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'quatis' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Quatis")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "resende" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'resende' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Resende")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "rioClaro" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'rioClaro' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Rio Claro")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "pirai" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'pirai' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Piraí")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "engenheiroPauloDeFrontin" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'engenheiroPauloDeFrontin' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Engenheiro Paulo de Frontin")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "mendes" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'mendes' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Mendes")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "miguelPereira" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'miguelPereira' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Miguel Pereira")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "paracambi" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'paracambi' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Paracambi")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "patyDoAlferes" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'patyDoAlferes' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Paty do Alferes")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "vassouras" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'vassouras' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Vassouras")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "areal" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'areal' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Areal")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "comendadorLevyGasparian" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'comendadorLevyGasparian' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Comendador Levy Gasparian")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "paraibaDoSul" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'paraibaDoSul' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Paraíba do Sul")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "sapucaia" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'sapucaia' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Sapucaia")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "tresRios" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'tresRios' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Três Rios")])]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value:
+                    _vm.showComarca === "voltaRedonda" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != "",
+                  expression:
+                    "showComarca === 'voltaRedonda' && showCompetencia != '' && showClasse != ''"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_c("ins", [_vm._v("Distribuição de Volta Redonda")])]
+          )
         ]),
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
-        _vm._m(2),
+        _vm._m(3),
         _vm._v(" "),
         _c("br")
       ])
@@ -49912,6 +50372,12 @@ var staticRenderFns = [
         )
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("strong", [_vm._v("* Distribuição:")])])
   },
   function() {
     var _vm = this
