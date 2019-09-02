@@ -457,31 +457,31 @@
                 <!--Distribuição-->
                 <div>
                     <span><strong>* Distribuição:</strong></span>
-                    <a href="#" v-show="showComarca === 'angraDosReis' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Angra dos Reis</ins></a>
-                    <a href="#" v-show="showComarca === 'paraty' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Paraty</ins></a>
-                    <a href="#" v-show="showComarca === 'barraDoPirai' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Barra do Piraí</ins></a>
-                    <a href="#" v-show="showComarca === 'rioDasFlores' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Rio das Flores</ins></a>
-                    <a href="#" v-show="showComarca === 'valença' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Valença</ins></a>
-                    <a href="#" v-show="showComarca === 'barraMansa' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Barra Mansa</ins></a>
-                    <a href="#" v-show="showComarca === 'itatiaia' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Itatiaia</ins></a>
-                    <a href="#" v-show="showComarca === 'pinheiral' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Pinheiral</ins></a>
-                    <a href="#" v-show="showComarca === 'portoReal' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Porto Real</ins></a>
-                    <a href="#" v-show="showComarca === 'quatis' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Quatis</ins></a>
-                    <a href="#" v-show="showComarca === 'resende' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Resende</ins></a>
-                    <a href="#" v-show="showComarca === 'rioClaro' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Rio Claro</ins></a>
-                    <a href="#" v-show="showComarca === 'pirai' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Piraí</ins></a>
-                    <a href="#" v-show="showComarca === 'engenheiroPauloDeFrontin' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Engenheiro Paulo de Frontin</ins></a>
-                    <a href="#" v-show="showComarca === 'mendes' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Mendes</ins></a>
-                    <a href="#" v-show="showComarca === 'miguelPereira' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Miguel Pereira</ins></a>
-                    <a href="#" v-show="showComarca === 'paracambi' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Paracambi</ins></a>
-                    <a href="#" v-show="showComarca === 'patyDoAlferes' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Paty do Alferes</ins></a>
-                    <a href="#" v-show="showComarca === 'vassouras' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Vassouras</ins></a>
-                    <a href="#" v-show="showComarca === 'areal' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Areal</ins></a>
-                    <a href="#" v-show="showComarca === 'comendadorLevyGasparian' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Comendador Levy Gasparian</ins></a>
-                    <a href="#" v-show="showComarca === 'paraibaDoSul' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Paraíba do Sul</ins></a>
-                    <a href="#" v-show="showComarca === 'sapucaia' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Sapucaia</ins></a>
-                    <a href="#" v-show="showComarca === 'tresRios' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Três Rios</ins></a>
-                    <a href="#" v-show="showComarca === 'voltaRedonda' && showCompetencia != '' && showClasse != ''"><ins>Distribuição de Volta Redonda</ins></a>
+                    <a href="#" v-show="showComarca === 'angraDosReis' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Angra dos Reis</ins></a>
+                    <a href="#" v-show="showComarca === 'paraty' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Paraty</ins></a>
+                    <a href="#" v-show="showComarca === 'barraDoPirai' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Barra do Piraí</ins></a>
+                    <a href="#" v-show="showComarca === 'rioDasFlores' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Rio das Flores</ins></a>
+                    <a href="#" v-show="showComarca === 'valença' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Valença</ins></a>
+                    <a href="#" v-show="showComarca === 'barraMansa' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Barra Mansa</ins></a>
+                    <a href="#" v-show="showComarca === 'itatiaia' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Itatiaia</ins></a>
+                    <a href="#" v-show="showComarca === 'pinheiral' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Pinheiral</ins></a>
+                    <a href="#" v-show="showComarca === 'portoReal' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Porto Real</ins></a>
+                    <a href="#" v-show="showComarca === 'quatis' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Quatis</ins></a>
+                    <a href="#" v-show="showComarca === 'resende' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Resende</ins></a>
+                    <a href="#" v-show="showComarca === 'rioClaro' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Rio Claro</ins></a>
+                    <a href="#" v-show="showComarca === 'pirai' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Piraí</ins></a>
+                    <a href="#" v-show="showComarca === 'engenheiroPauloDeFrontin' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Engenheiro Paulo de Frontin</ins></a>
+                    <a href="#" v-show="showComarca === 'mendes' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Mendes</ins></a>
+                    <a href="#" v-show="showComarca === 'miguelPereira' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Miguel Pereira</ins></a>
+                    <a href="#" v-show="showComarca === 'paracambi' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Paracambi</ins></a>
+                    <a href="#" v-show="showComarca === 'patyDoAlferes' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Paty do Alferes</ins></a>
+                    <a href="#" v-show="showComarca === 'vassouras' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Vassouras</ins></a>
+                    <a href="#" v-show="showComarca === 'areal' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Areal</ins></a>
+                    <a href="#" v-show="showComarca === 'comendadorLevyGasparian' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Comendador Levy Gasparian</ins></a>
+                    <a href="#" v-show="showComarca === 'paraibaDoSul' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Paraíba do Sul</ins></a>
+                    <a href="#" v-show="showComarca === 'sapucaia' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Sapucaia</ins></a>
+                    <a href="#" v-show="showComarca === 'tresRios' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Três Rios</ins></a>
+                    <a href="#" v-show="showComarca === 'voltaRedonda' && showCompetencia != '' && showClasse != ''"><ins>Distribuidor de Volta Redonda</ins></a>
                 </div>
                 <br>
                 <!--Valor da Causa-->

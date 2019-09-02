@@ -59,6 +59,13 @@ Vue.component('crrdadoscomplementares', require('./components/CadastrarRepresent
 //Componentes da pasta ConsultasProcessuais
 Vue.component('cpconsultaprocessual', require('./components/ConsultasProcessuais/CP_consultaProcessual.vue').default);
 
+//Componentes da pasta Documentos
+Vue.component('duploadpeticaoinicial', require('./components/Documentos/D_uploadPeticaoInicial.vue').default);
+Vue.component('denviarcpf', require('./components/Documentos/D_enviarCPF.vue').default);
+Vue.component('denviarcomprovanteresidencia', require('./components/Documentos/D_enviarComprovanteResidencia.vue').default);
+Vue.component('denviarprocuracao', require('./components/Documentos/D_enviarProcuracao.vue').default);
+Vue.component('duploadanexopeticao', require('./components/Documentos/D_uploadAnexoPeticao.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

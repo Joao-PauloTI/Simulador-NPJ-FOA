@@ -9,41 +9,9 @@
                 </h5>
             </div>
             <div class="card-body">
-                <a href="/cadastrarautor" target="popup">Cadastrar Autor </a>
+                <a href="cadastrarautor" target="popup" onclick="window.open('cadastrarautor', 'popup', 'width=1000, height=700');">Cadastrar Autor </a>
                 <span> | </span>
-                <a href="/cadastrarrepresentanteautor" target="popup"> Cadastrar Representante do Autor </a>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm">
-                        <p>Autor</p>
-                        <p>Representante Legal</p>
-                    </div>
-                    <div class="col-sm">
-                        <p>Pessoa Física</p> <!-- Autor -->
-                        <p>Pessoa Jurídica</p> <!-- Representante -->
-                    </div>
-                    <div class="col-sm">
-                        <p>FULANO DE TAL</p> <!-- Autor -->
-                        <p>BELTRANO DE TAL</p> <!-- Representante -->
-                    </div>
-                    <div class="col-sm">
-                        <form action="">
-                            <!-- Autor -->
-                            <p>
-                                <a href="#"><ins>Alterar</ins></a>
-                                <a href="#"><ins>Excluir</ins></a>
-                            </p>
-                        </form>
-                        <form action="">
-                            <!-- Representante -->
-                            <p>
-                                <a href="#"><ins>Alterar</ins></a>
-                                <a href="#"><ins>Excluir</ins></a>
-                            </p>
-                        </form>
-                    </div>
-                </div>
+                <a href="cadastrarrepresentanteautor" target="popup" onclick="window.open('cadastrarrepresentanteautor', 'popup', 'width=1000, height=700');"> Cadastrar Representante do Autor </a>
             </div>
         </div>
         <br>
@@ -56,9 +24,9 @@
                 </h5>
             </div>
             <div class="card-body">
-                <a href="/cadastrarreu" target="popup">Cadastrar Réu </a>
+                <a href="cadastrarreu" target="popup" onclick="window.open('cadastrarreu', 'popup', 'width=1000, height=700');">Cadastrar Réu </a>
                 <span> | </span>
-                <a href="/cadastrarrepresentantereu" target="popup"> Cadastrar Representante do Réu </a>
+                <a href="cadastrarrepresentantereu" target="popup" onclick="window.open('cadastrarrepresentantereu', 'popup', 'width=1000, height=700');"> Cadastrar Representante do Réu </a>
             </div>
         </div>
         <br>
@@ -71,15 +39,15 @@
                 </h5>
             </div>
             <div class="card-body">
-                <a href="#">Upload da Petição Inicial </a>
+                <a href="uploadpeticaoinicial" target="popup" onclick="window.open('uploadpeticaoinicial', 'popup', 'width=800, height=600');">Upload da Petição Inicial </a>
                 <span> | </span>
-                <a href="#"> Enviar CPF </a>
+                <a href="enviarcpf" target="popup" onclick="window.open('enviarcpf', 'popup', 'width=800, height=600');"> Enviar CPF </a>
                 <span> | </span>
-                <a href="#"> Enviar Comprovante de Residência </a>
+                <a href="enviarcomprovantederesidencia" target="popup" onclick="window.open('enviarcomprovantederesidencia', 'popup', 'width=800, height=600');"> Enviar Comprovante de Residência </a>
                 <span> | </span>
-                <a href="#"> Enviar Procuração </a>
+                <a href="enviarprocuracao" target="popup" onclick="window.open('enviarprocuracao', 'popup', 'width=800, height=600');"> Enviar Procuração </a>
                 <span> | </span>
-                <a href="#"> Upload do(s) Anexo(s) da Petição Inicial </a>
+                <a href="uploaddoanexodapeticaoinicial" target="popup" onclick="window.open('uploaddoanexodapeticaoinicial', 'popup', 'width=800, height=600');"> Upload do(s) Anexo(s) da Petição Inicial </a>
             </div>
         </div>
         <br>

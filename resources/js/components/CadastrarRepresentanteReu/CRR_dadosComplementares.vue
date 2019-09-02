@@ -18,6 +18,8 @@
                                     <option>Escolha o estado civil</option>
                                     <option>Solteiro</option>
                                     <option>Casado</option>
+                                    <option>Viúvo</option>
+                                    <option>Separado Judicialmente</option>
                                     <option>Divorciado</option>
                                 </select>
                             </div>
@@ -29,13 +31,7 @@
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Profissão </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha a profissão</option>
-                                    <option>Professor</option>
-                                    <option>Desembargador</option>
-                                    <option>Médico</option>
-                                    <option>Contador</option>
-                                </select>
+                                <input type="text" class="form-control" required>
                             </div>
                         </form>
                     </div>
@@ -59,16 +55,8 @@
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Escolha a Naturalidade </strong> </span>
-                                <select class="custom-select">
-                                    <option>Estado</option>
-                                    <option>Rio de Janeiro</option>
-                                    <option>São Paulo</option>
-                                </select>
-                                <select class="custom-select">
-                                    <option>Cidade</option>
-                                    <option>Volta Redonda</option>
-                                    <option>Barra Mansa</option>
-                                </select>
+                                <input type="text" class="form-control" placeholder="Cidade" required>
+                                <input type="text" class="form-control" placeholder="Estado" required>
                             </div>
                         </form>
                     </div>

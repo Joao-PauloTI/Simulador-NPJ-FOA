@@ -36,11 +36,7 @@
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Estado </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha o estado</option>
-                                    <option>Rio de Janeiro</option>
-                                    <option>São Paulo</option>
-                                </select>
+                                <input type="text" class="form-control" required>
                             </div>
                         </form>
                     </div>
@@ -50,11 +46,7 @@
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Cidade </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha a cidade</option>
-                                    <option>Rio de Janeiro</option>
-                                    <option>Volta Redonda</option>
-                                </select>
+                                <input type="text" class="form-control" required>
                             </div>
                         </form>
                     </div>
@@ -64,11 +56,7 @@
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Bairro </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha o bairro</option>
-                                    <option>Vila Santa Cecília</option>
-                                    <option>Três Poços</option>
-                                </select>
+                                <input type="text" class="form-control" required>
                             </div>
                         </form>
                     </div>
@@ -78,13 +66,7 @@
                         <form class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Tipo de Logradouro </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha o tipo de logradouro</option>
-                                    <option>Avenida</option>
-                                    <option>Bloco</option>
-                                    <option>Condomínio</option>
-                                    <option>Distrito</option>
-                                </select>
+                                <input type="text" class="form-control" required>
                             </div>
                         </form>
                     </div>
