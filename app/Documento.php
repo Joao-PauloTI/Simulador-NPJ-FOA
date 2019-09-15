@@ -11,9 +11,9 @@ class Documento extends Model
 		'd_arquivo',
 		'd_descricao',
 		'd_tipoArquivo'
-    );
+    );/*
     //Documento 1:1 Processo
     public function p_documento(){
     	return $this->belongsTo('App\Processo');
-    }
+    }*/
 }

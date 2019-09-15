@@ -52,9 +52,9 @@ class Autor extends Model
 		'a_pai',
 		'a_mae',
 		'a_nascimento'
-    );
+    );/*
     //Autor 1:1 Processo
     public function p_autor(){
     	return $this->belongsTo('App\Processo');
-    }
+    }*/
 }

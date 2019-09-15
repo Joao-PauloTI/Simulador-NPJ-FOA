@@ -21,13 +21,6 @@
                 <p style="color: red">Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".</p>
             </div>
         </div>
-        <div align="center">
-            <form action="">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-                <button type="reset" class="btn btn-danger">Fechar</button>
-            </form>
-        </div>
-        <br>
     </div>
 </template>
 <script>

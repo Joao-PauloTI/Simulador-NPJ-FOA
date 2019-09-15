@@ -18,22 +18,23 @@ class CreateTbProcessos extends Migration
         Schema::create('tb_processos', function (Blueprint $table){
             $table->increments('id');
             //GRERJ
-            $table->string('p_grerjMotivo'); //PossuiGrerj = não -> Motivo
-            $table->integer('p_grerjNumero'); //PossuiGrerj = sim -> Número
+            $table->string('p_grerjMotivo')->nullable(); //PossuiGrerj = não -> Motivo
+            $table->integer('p_grerjNumero')->nullable(); //PossuiGrerj = sim -> Número
             //Processo Principal
-            $table->string('p_dependencia'); //Distribuição por Dependência
+            $table->string('p_dependencia')->nullable(); //Distribuição por Dependência
             //Dados do Processo
-            $table->string('p_prioridadeDeficiente'); //Prioridade p/ deficiente físico ou mental
-            $table->string('p_tutela'); //Tutela de Urgência
-            $table->string('p_prioridadePortador'); //Prioridade p/ portador de doença grave
-            $table->string('p_gratuidade'); //Gratuidade de Justiça
-            $table->string('p_exame'); //Exame Técnico
-            $table->string('p_comarca');
-            $table->string('p_competencia');
-            $table->string('p_classe');
-            $table->string('p_distribuicao');
-            $table->decimal('p_valor', 9, 2); //Valor da Causa
-            $table->string('p_veracidade'); //Declaração de Veracidade
+            $table->string('p_prioridadeDeficiente')->nullable(); //Prioridade p/ deficiente físico ou mental
+            $table->string('p_tutela')->nullable(); //Tutela de Urgência
+            $table->string('p_prioridadePortador')->nullable(); //Prioridade p/ portador de doença grave
+            $table->string('p_gratuidade')->nullable(); //Gratuidade de Justiça
+            $table->string('p_exame')->nullable(); //Exame Técnico
+            $table->string('p_comarca')->nullable();
+            $table->string('p_competencia')->nullable();
+            $table->string('p_conciliacao')->nullable(); //Autor opta pela realização de audiência de conciliação ou de mediação?
+            $table->string('p_classe')->nullable();
+            $table->string('p_distribuicao')->nullable();
+            $table->string('p_valor')->nullable(); //Valor da Causa
+            $table->longText('p_veracidade')->nullable(); //Declaração de Veracidade
             $table->timestamps(); //Hora e Data de cadastro
         });
     }

@@ -6,6 +6,14 @@
 		<div class="container">
 			<div class="card">
 				<denviarprocuracao></denviarprocuracao>
+				<!--Botões SALVAR/FECHAR-->
+				<div align="center">
+					<form action="">
+						<button type="submit" class="btn btn-primary">SALVAR</button>
+						<button type="button" onclick="window.close()" class="btn btn-danger">FECHAR</button>
+					</form>
+				</div>
+				<br>
 			</div>
 		</div>
 	</div>

@@ -6,14 +6,26 @@
 		<pimenulateral id="PI_mostrarEsconderMenu"></pimenulateral>
 		<div class="container">
 			<div class="card">
-				<degrerj></degrerj>
-				<deprocessoprincipal></deprocessoprincipal>
-				<dedadosdoprocesso></dedadosdoprocesso>
-				<deadvogadorepresentante></deadvogadorepresentante>
-				<deautoresreusdocumentos></deautoresreusdocumentos>
-				<dedeclaracaodeveracidade></dedeclaracaodeveracidade>
+				<form action="{{ route('p_processos.store') }}" method="POST">
+					@csrf
+					<degrerj></degrerj>
+					<deprocessoprincipal></deprocessoprincipal>
+					<dedadosdoprocesso></dedadosdoprocesso>
+					<deadvogadorepresentante></deadvogadorepresentante>
+					<deautoresreusdocumentos></deautoresreusdocumentos>
+					<dedeclaracaodeveracidade></dedeclaracaodeveracidade>
+					<br>
+					<!--Botões SALVAR/LIMPAR-->
+					<div align="center">
+						<form action="">
+							<button type="submit" class="btn btn-primary">SALVAR</button>
+							<button type="reset" class="btn btn-danger">LIMPAR</button>
+						</form>
+					</div>
+				</form>
+				<br>
 			</div>
+			<br>
 		</div>
-		<br>
 	</div>
 @endsection

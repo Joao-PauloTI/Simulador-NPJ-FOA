@@ -39,9 +39,9 @@ class Reu extends Model
 		'r_pai',
 		'r_mae',
 		'r_nascimento'
-    );
+    );/*
     //Reu 1:1 Processo
     public function p_reu(){
     	return $this->belongsTo('App\Processo');
-    }
+    }*/
 }

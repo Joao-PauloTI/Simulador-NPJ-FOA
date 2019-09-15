@@ -11,119 +11,119 @@
                 <div class="container">
                     <!-- CEP -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CEP </strong> </span>
-                                <input type="text" class="form-control" v-mask="'#####-###'" required>
+                                <input type="text" class="form-control" name="a_cep" v-mask="'#####-###'">
                                 <a href=""><ins> verificar CEP</ins> </a>
                                 <a href=""><ins> Correios</ins> </a>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Estado -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Estado </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="a_estado">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Cidade -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Cidade </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="a_cidade">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Bairro -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Bairro </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="a_bairro">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Tipo de Logradouro -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Tipo de Logradouro </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="a_tipoLogradouro">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Logradouro-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Logradouro </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="a_logradouro">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Número -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Número </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="a_numeroEndereco">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Complemento-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Complemento </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="a_complemento">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Tipo de Endereço -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Tipo de Endereço </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha o tipo de endereço</option>
-                                    <option>Residencial</option>
-                                    <option>Empresarial</option>
-                                    <option>Comercial</option>
+                                <select class="custom-select" name="a_tipoEndereco">
+                                    <option value="">Escolha o tipo de endereço</option>
+                                    <option value="Residencial">Residencial</option>
+                                    <option value="Empresarial">Empresarial</option>
+                                    <option value="Comercial">Comercial</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Referência-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Referência </strong> </span>
-                                <textarea rows="3" class="form-control" required></textarea>
+                                <textarea rows="3" class="form-control" name="a_referencia"></textarea>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Õpção extra -->
                     <div id="alinhado">
-                        <form action="">
+                        <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CA_e1" id="CA_e1">
+                                <input type="checkbox" class="custom-control-input" name="a_comprovante" value="O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial" id="CA_e1">
                                 <label class="custom-control-label" for="CA_e1">O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial? </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -24,21 +24,21 @@
                 </div>
                 <div v-show="showOpcao === 'showSim'">
                     <br>
-                    <form class="form-inline">
+                    <div class="form-inline">
                         <div class="col-xs-2">
                             <span><strong>* Número da GRERJ:</strong> </span>
-                            <input type="text" class="form-control col-md-5" v-mask="'#############'" required>
+                            <input type="text" name="p_grerjNumero" class="form-control col-md-5" v-mask="'#############'">
                             <!--<span><strong> Valor da GRERJ: </strong> R$ 999,99</span>-->
                         </div>
-                    </form>
+                    </div>
                 </div>
                 <div v-show="showOpcao === 'showNao'">
                     <br>
                     <label for="grerjMotivo"><strong>* Motivo</strong>
-                        <select id="grerjMotivo" class="custom-select">
-                            <option>Escolha um motivo</option>
-                            <option>Juizado Especial Cível</option>
-                            <option>Justiça Gratuita / Pedido de Gratuidade</option>
+                        <select name="p_grerjMotivo" id="grerjMotivo" class="custom-select">
+                            <option value="">Escolha um motivo</option>
+                            <option value="Juizado Especial Cível">Juizado Especial Cível</option>
+                            <option value="Justiça Gratuita / Pedido de Gratuidade">Justiça Gratuita / Pedido de Gratuidade</option>
                         </select>
                     </label>
                 </div>

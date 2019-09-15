@@ -18,14 +18,15 @@ class Processo extends Model
 	    'p_exame',
 	    'p_comarca',
 	    'p_competencia',
+	    'p_conciliacao',
 	    'p_classe',
 	    'p_distribuicao',
 	    'p_valor',
 	    'p_veracidade'
-	);
+	);/*
     //Processo N:N AdvogadoRepresentante
-	public function ar_processo(){
-		return $this->belongsToMany('App\AdvogadoRepresentante', 'advogado_representante_processos', 'p_advogado_representante_id', 'ar_processo_id');
+	public function ar_p(){
+		return $this->belongsToMany('App\AdvogadoRepresentante', 'tb_advogados_representantes_processos', 'p_ar_id', 'ar_p_id');
 	}
 	//Processo 1:N Autor
 	public function a_processo(){
@@ -46,5 +47,5 @@ class Processo extends Model
 	//Processo 1:N Documento
 	public function d_processo(){
 		return $this->hasMany('App\Documento');
-	}
+	}*/
 }

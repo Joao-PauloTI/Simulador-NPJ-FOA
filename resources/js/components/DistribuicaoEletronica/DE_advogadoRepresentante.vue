@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-xs-6">
                         <label for="DE_aR1">
-                            <select class="custom-select" id="DE_aR1" v-model="showOpcao" required>
+                            <select class="custom-select" id="DE_aR1" v-model="showOpcao">
                                 <option value="advogado">Advogado</option>
                                 <option value="defensor">Defensor Público</option>
                             </select>
@@ -21,22 +21,22 @@
                         <!--espaço entre campos-->
                     </div>
                     <div class="col-xs-6" v-show="showOpcao === 'advogado'">
-                        <form class="form-inline">
-                            <span><strong> Número de OAB:</strong> </span>
+                        <div class="form-inline">
+                            <span style="margin-right: 3px"><strong> Número de OAB </strong> </span>
                             <label for="DE_aR2">
                                 <select class="custom-select" id="DE_aR2">
                                     <option>RJ</option>
                                     <option>SP</option>
                                 </select>
                             </label>
-                            <input type="text" class="form-control col-md-5" v-mask="'######'" required>
-                        </form>
+                            <input type="text" class="form-control col-md-5" v-mask="'######'">
+                        </div>
                     </div>
                     <div class="col-xs-2" v-show="showOpcao === 'defensor'">
-                        <form class="form-inline">
-                            <span><strong> Matrícula:</strong> </span>
-                            <input type="text" class="form-control" v-mask="'##########'" required>
-                        </form>
+                        <div class="form-inline">
+                            <span style="margin-right: 3px"><strong> Matrícula </strong> </span>
+                            <input type="text" class="form-control" v-mask="'##########'">
+                        </div>
                     </div>
                 </div>
             </div>

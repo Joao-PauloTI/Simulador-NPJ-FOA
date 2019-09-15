@@ -50,9 +50,9 @@ class RepresentanteAutor extends Model
 		'ra_pai',
 		'ra_mae',
 		'ra_nascimento'
-	);
+	);/*
 	//RepresentanteAutor 1:1 Processo
     public function p_representante_autor(){
     	return $this->belongsTo('App\Processo');
-    }
+    }*/
 }

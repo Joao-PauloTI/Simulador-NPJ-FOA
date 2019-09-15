@@ -10,24 +10,24 @@
             <div class="card-body">
                 <span><strong>* Distribuição por Dependência</strong> </span>
                 <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" class="custom-control-input" id="dpdSim" name="dpd" value="dpdSim" v-model="showDpd">
+                    <input type="radio" class="custom-control-input" id="dpdSim" name="p_dependencia" value="dpdSim" v-model="showDpd">
                     <label class="custom-control-label" for="dpdSim"> Sim </label>
                 </div>
                 <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" class="custom-control-input" id="dpdNao" name="" v-model="showDpd">
+                    <input type="radio" class="custom-control-input" id="dpdNao" name="p_dependencia" value="Nao" v-model="showDpd">
                     <label class="custom-control-label" for="dpdNao"> Não </label>
                 </div>
                 <div v-show="showDpd === 'dpdSim'">
                     <br>
-                    <form class="form-inline">
+                    <div class="form-inline">
                         <div class="col-xs-2">
                             <span><strong>* Número do Processo Principal:</strong> </span>
-                            <input type="text" class="form-control col-md-3" v-mask="'#######-##.####'" required>
+                            <input type="text" class="form-control col-md-3" v-mask="'#######-##.####'">
                             <span> .8.19. </span>
-                            <input type="text" class="form-control col-md-1" v-mask="'####'" required>
+                            <input type="text" class="form-control col-md-1" v-mask="'####'">
                             <button type="submit" class="btn btn-primary">Consultar</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

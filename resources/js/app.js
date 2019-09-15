@@ -74,6 +74,9 @@ Vue.component('duploadanexopeticao', require('./components/Documentos/D_uploadAn
 import VueTheMask from 'vue-the-mask'
 Vue.use(VueTheMask)
 
+import money from 'v-money'
+Vue.use(money, {precision: 2})
+
 const app = new Vue({
     el: '#app',
     

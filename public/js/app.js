@@ -2026,15 +2026,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'cadadosComplementares',
   data: function data() {
@@ -2058,8 +2049,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -2516,15 +2505,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -3201,15 +3181,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'crrdadosComplementares',
   data: function data() {
@@ -3658,15 +3629,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -4908,6 +4870,68 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'dedadosdoprocesso',
   data: function data() {
@@ -4935,11 +4959,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
 //
 //
 //
@@ -5151,13 +5170,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'denviarcpf',
   data: function data() {
@@ -5181,13 +5193,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -5261,13 +5266,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'denviarprocuracao',
   data: function data() {
@@ -5316,13 +5314,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'duploadanexopeticao',
   data: function data() {
@@ -5346,13 +5337,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -42396,6 +42380,17 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/v-money/dist/v-money.js":
+/*!**********************************************!*\
+  !*** ./node_modules/v-money/dist/v-money.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function(e,t){ true?module.exports=t():undefined})(this,function(){return function(e){function t(r){if(n[r])return n[r].exports;var i=n[r]={i:r,l:!1,exports:{}};return e[r].call(i.exports,i,i.exports,t),i.l=!0,i.exports}var n={};return t.m=e,t.c=n,t.i=function(e){return e},t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:r})},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p=".",t(t.s=9)}([function(e,t,n){"use strict";t.a={prefix:"",suffix:"",thousands:",",decimal:".",precision:2}},function(e,t,n){"use strict";var r=n(2),i=n(5),u=n(0);t.a=function(e,t){if(t.value){var o=n.i(i.a)(u.a,t.value);if("INPUT"!==e.tagName.toLocaleUpperCase()){var a=e.getElementsByTagName("input");1!==a.length||(e=a[0])}e.oninput=function(){var t=e.value.length-e.selectionEnd;e.value=n.i(r.a)(e.value,o),t=Math.max(t,o.suffix.length),t=e.value.length-t,t=Math.max(t,o.prefix.length+1),n.i(r.b)(e,t),e.dispatchEvent(n.i(r.c)("change"))},e.onfocus=function(){n.i(r.b)(e,e.value.length-o.suffix.length)},e.oninput(),e.dispatchEvent(n.i(r.c)("input"))}}},function(e,t,n){"use strict";function r(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:m.a;"number"==typeof e&&(e=e.toFixed(o(t.precision)));var n=e.indexOf("-")>=0?"-":"",r=u(e),i=c(r,t.precision),a=d(i).split("."),p=a[0],l=a[1];return p=f(p,t.thousands),t.prefix+n+s(p,l,t.decimal)+t.suffix}function i(e,t){var n=e.indexOf("-")>=0?-1:1,r=u(e),i=c(r,t);return parseFloat(i)*n}function u(e){return d(e).replace(/\D+/g,"")||"0"}function o(e){return a(0,e,20)}function a(e,t,n){return Math.max(e,Math.min(t,n))}function c(e,t){var n=Math.pow(10,t);return(parseFloat(e)/n).toFixed(o(t))}function f(e,t){return e.replace(/(\d)(?=(?:\d{3})+\b)/gm,"$1"+t)}function s(e,t,n){return t?e+n+t:e}function d(e){return e?e.toString():""}function p(e,t){var n=function(){e.setSelectionRange(t,t)};e===document.activeElement&&(n(),setTimeout(n,1))}function l(e){var t=document.createEvent("Event");return t.initEvent(e,!0,!0),t}var m=n(0);n.d(t,"a",function(){return r}),n.d(t,"d",function(){return i}),n.d(t,"b",function(){return p}),n.d(t,"c",function(){return l})},function(e,t,n){"use strict";function r(e,t){t&&Object.keys(t).map(function(e){a.a[e]=t[e]}),e.directive("money",o.a),e.component("money",u.a)}Object.defineProperty(t,"__esModule",{value:!0});var i=n(6),u=n.n(i),o=n(1),a=n(0);n.d(t,"Money",function(){return u.a}),n.d(t,"VMoney",function(){return o.a}),n.d(t,"options",function(){return a.a}),n.d(t,"VERSION",function(){return c});var c="0.8.1";t.default=r,"undefined"!=typeof window&&window.Vue&&window.Vue.use(r)},function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r=n(1),i=n(0),u=n(2);t.default={name:"Money",props:{value:{required:!0,type:[Number,String],default:0},masked:{type:Boolean,default:!1},precision:{type:Number,default:function(){return i.a.precision}},decimal:{type:String,default:function(){return i.a.decimal}},thousands:{type:String,default:function(){return i.a.thousands}},prefix:{type:String,default:function(){return i.a.prefix}},suffix:{type:String,default:function(){return i.a.suffix}}},directives:{money:r.a},data:function(){return{formattedValue:""}},watch:{value:{immediate:!0,handler:function(e,t){var r=n.i(u.a)(e,this.$props);r!==this.formattedValue&&(this.formattedValue=r)}}},methods:{change:function(e){this.$emit("input",this.masked?e.target.value:n.i(u.d)(e.target.value,this.precision))}}}},function(e,t,n){"use strict";t.a=function(e,t){return e=e||{},t=t||{},Object.keys(e).concat(Object.keys(t)).reduce(function(n,r){return n[r]=void 0===t[r]?e[r]:t[r],n},{})}},function(e,t,n){var r=n(7)(n(4),n(8),null,null);e.exports=r.exports},function(e,t){e.exports=function(e,t,n,r){var i,u=e=e||{},o=typeof e.default;"object"!==o&&"function"!==o||(i=e,u=e.default);var a="function"==typeof u?u.options:u;if(t&&(a.render=t.render,a.staticRenderFns=t.staticRenderFns),n&&(a._scopeId=n),r){var c=a.computed||(a.computed={});Object.keys(r).forEach(function(e){var t=r[e];c[e]=function(){return t}})}return{esModule:i,exports:u,options:a}}},function(e,t){e.exports={render:function(){var e=this,t=e.$createElement;return(e._self._c||t)("input",{directives:[{name:"money",rawName:"v-money",value:{precision:e.precision,decimal:e.decimal,thousands:e.thousands,prefix:e.prefix,suffix:e.suffix},expression:"{precision, decimal, thousands, prefix, suffix}"}],staticClass:"v-money",attrs:{type:"tel"},domProps:{value:e.formattedValue},on:{change:e.change}})},staticRenderFns:[]}},function(e,t,n){e.exports=n(3)}])});
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=template&id=35d8793c&":
 /*!******************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue?vue&type=template&id=35d8793c& ***!
@@ -42470,7 +42465,12 @@ var staticRenderFns = [
               [
                 _c("input", {
                   staticClass: "custom-control-input",
-                  attrs: { type: "checkbox", name: "CA_aR1", id: "CA_aR1" }
+                  attrs: {
+                    type: "checkbox",
+                    name: "a_representa",
+                    value: "Representa",
+                    id: "CA_aR1"
+                  }
                 }),
                 _vm._v(" "),
                 _c("label", {
@@ -42493,7 +42493,12 @@ var staticRenderFns = [
               [
                 _c("input", {
                   staticClass: "custom-control-input",
-                  attrs: { type: "checkbox", name: "CA_aR2", id: "CA_aR2" }
+                  attrs: {
+                    type: "checkbox",
+                    name: "a_intimacao",
+                    value: "Intimação",
+                    id: "CA_aR2"
+                  }
                 }),
                 _vm._v(" "),
                 _c("label", {
@@ -42550,14 +42555,57 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
-    _c("br")
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(2),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(4),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(5),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(6),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "##/##/####",
+                      expression: "'##/##/####'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "a_nascimento" }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br")
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -42565,129 +42613,37 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
+          _vm._v(" "),
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "a_estadoCivil" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha o estado civil")
+              ]),
               _vm._v(" "),
-              _c("select", { staticClass: "custom-select" }, [
-                _c("option", [_vm._v("Escolha o estado civil")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Solteiro")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Casado")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Víuvo")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Separado Judicialmente")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Divorciado")])
+              _c("option", { attrs: { value: "Solteiro" } }, [
+                _vm._v("Solteiro")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Casado" } }, [_vm._v("Casado")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Víuvo" } }, [_vm._v("Víuvo")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Separado Judicialmente" } }, [
+                _vm._v("Separado Judicialmente")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Divorciado" } }, [
+                _vm._v("Divorciado")
               ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Profissão ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
-              _vm._v(" "),
-              _c("select", { staticClass: "custom-select" }, [
-                _c("option", [_vm._v("Brasileira")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Naturalizado brasileiro")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Estrangeira")])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Estado", required: "" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Cidade", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "date", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br")
+            ]
+          )
+        ])
       ])
     ])
   },
@@ -42695,21 +42651,119 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c("form", { attrs: { action: "" } }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_vm._v("SALVAR")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "btn btn-danger", attrs: { type: "button" } },
-          [_vm._v("FECHAR")]
-        )
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Profissão ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", name: "a_profissao" }
+          })
+        ])
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              staticClass: "custom-select",
+              attrs: { name: "a_nacionalidade" }
+            },
+            [
+              _c("option", { attrs: { value: "" } }, [_vm._v("Brasileira")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Naturalizado brasileiro" } }, [
+                _vm._v("Naturalizado brasileiro")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Estrangeira" } }, [
+                _vm._v("Estrangeira")
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              placeholder: "Estado",
+              name: "a_estadoNaturalidade"
+            }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              placeholder: "Cidade",
+              name: "a_cidadeNaturalidade"
+            }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", name: "a_pai" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", name: "a_mae" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])])
   }
 ]
 render._withStripped = true
@@ -42783,7 +42837,7 @@ var render = function() {
           _c("br"),
           _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
-            _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(6),
                 _vm._v(" "),
@@ -42797,7 +42851,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", required: "" }
+                  attrs: { type: "text", name: "a_cpf" }
                 })
               ])
             ])
@@ -42825,12 +42879,31 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(12),
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(12),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "##/##/####",
+                      expression: "'##/##/####'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "a_emissao" }
+                })
+              ])
+            ])
+          ]),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
-            _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(13),
                 _vm._v(" "),
@@ -42844,7 +42917,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "tel", required: "" }
+                  attrs: { type: "tel", name: "a_telefone" }
                 })
               ])
             ])
@@ -42875,7 +42948,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { align: "center" } }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c(
           "div",
           {
@@ -42884,13 +42957,18 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CA_dP1", id: "CA_dP1" }
+              attrs: {
+                type: "checkbox",
+                name: "a_incapaz",
+                value: "Incapaz",
+                id: "CA_dP1"
+              }
             }),
             _vm._v(" "),
             _c(
               "label",
               { staticClass: "custom-control-label", attrs: { for: "CA_dP1" } },
-              [_vm._v(" Incapaz\n                            ")]
+              [_vm._v(" Incapaz ")]
             )
           ]
         ),
@@ -42903,7 +42981,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CA_dP2", id: "CA_dP2" }
+              attrs: {
+                type: "checkbox",
+                name: "a_massa",
+                value: "Massa Falida",
+                id: "CA_dP2"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -42922,13 +43005,18 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CA_dP3", id: "CA_dP3" }
+              attrs: {
+                type: "checkbox",
+                name: "a_insolvente",
+                value: "Insolvente Civil",
+                id: "CA_dP3"
+              }
             }),
             _vm._v(" "),
             _c(
               "label",
               { staticClass: "custom-control-label", attrs: { for: "CA_dP3" } },
-              [_vm._v(" Insolvente Civil\n                            ")]
+              [_vm._v(" Insolvente Civil")]
             )
           ]
         ),
@@ -42941,7 +43029,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CA_dP4", id: "CA_dP4" }
+              attrs: {
+                type: "checkbox",
+                name: "a_preso",
+                value: "Preso",
+                id: "CA_dP4"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -42960,7 +43053,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CA_dP5", id: "CA_dP5" }
+              attrs: {
+                type: "checkbox",
+                name: "a_espolio",
+                value: "Espólio com interesse de Incapaz",
+                id: "CA_dP5"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -42979,7 +43077,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CA_dP6", id: "CA_dP6" }
+              attrs: {
+                type: "checkbox",
+                name: "a_condominio",
+                value: "Condomínio",
+                id: "CA_dP6"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -42997,7 +43100,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c(
           "div",
           {
@@ -43006,7 +43109,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CA_dP7", id: "CA_dP7" }
+              attrs: {
+                type: "checkbox",
+                name: "a_ministerio",
+                value: "Ministério Público",
+                id: "CA_dP7"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -43024,15 +43132,23 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Pessoa Física ou Jurídica ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Pessoa Física")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Pessoa Jurídica")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "a_pessoa" } },
+            [
+              _c("option", { attrs: { value: "Pessoa Física" } }, [
+                _vm._v("Pessoa Física")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Pessoa Jurídica" } }, [
+                _vm._v("Pessoa Jurídica")
+              ])
+            ]
+          )
         ])
       ])
     ])
@@ -43042,7 +43158,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c(
           "div",
           {
@@ -43051,7 +43167,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CA_dP8", id: "CA_dP8" }
+              attrs: {
+                type: "checkbox",
+                name: "a_estrangeiro",
+                value: "Estrangeiro e/ou brasileiro residente no exterior",
+                id: "CA_dP8"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -43073,17 +43194,27 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Sexo ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha um sexo")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Masculino")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Feminino")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "a_sexo" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha um sexo")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Masculino" } }, [
+                _vm._v("Masculino")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Feminino" } }, [
+                _vm._v("Feminino")
+              ])
+            ]
+          )
         ])
       ])
     ])
@@ -43099,13 +43230,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Nome ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "a_nome" }
           })
         ])
       ])
@@ -43116,7 +43247,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c(
           "div",
           {
@@ -43125,7 +43256,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CA_dP9", id: "CA_dP9" }
+              attrs: {
+                type: "checkbox",
+                name: "a_menor",
+                value: "Menor de idade",
+                id: "CA_dP9"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -43143,25 +43279,47 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Documento de identificação ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha um tipo")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Registro Geral")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Carteira Nacional de Habilitação")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Passaporte")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Carteira de Trabalho")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Carteira de Identidade")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Certificado de Dispensa de Incorporação")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "a_documento" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha um tipo")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Registro Geral" } }, [
+                _vm._v("Registro Geral")
+              ]),
+              _vm._v(" "),
+              _c(
+                "option",
+                { attrs: { value: "Carteira Nacional de Habilitação" } },
+                [_vm._v("Carteira Nacional de Habilitação")]
+              ),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Passaporte" } }, [
+                _vm._v("Passaporte")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Carteira de Trabalho" } }, [
+                _vm._v("Carteira de Trabalho")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Carteira de Identidade" } }, [
+                _vm._v("Carteira de Identidade")
+              ]),
+              _vm._v(" "),
+              _c(
+                "option",
+                { attrs: { value: "Certificado de Dispensa de Incorporação" } },
+                [_vm._v("Certificado de Dispensa de Incorporação")]
+              )
+            ]
+          )
         ])
       ])
     ])
@@ -43171,13 +43329,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Número ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "a_numeroIdentificacao" }
           })
         ])
       ])
@@ -43188,13 +43346,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Órgão Expedidor ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "a_expedidor" }
           })
         ])
       ])
@@ -43204,18 +43362,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
-        _c("div", { staticClass: "col-xs-2" }, [
-          _c("span", [_c("strong", [_vm._v("Data de Emissão ")])]),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "date", required: "" }
-          })
-        ])
-      ])
-    ])
+    return _c("span", [_c("strong", [_vm._v("Data de Emissão ")])])
   },
   function() {
     var _vm = this
@@ -43228,13 +43375,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("E-mail ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "email", required: "" }
+            attrs: { type: "email", name: "a_email" }
           })
         ])
       ])
@@ -43286,7 +43433,7 @@ var render = function() {
       _c("div", { staticClass: "card-body" }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { attrs: { id: "alinhado" } }, [
-            _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(0),
                 _vm._v(" "),
@@ -43300,7 +43447,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", required: "" }
+                  attrs: { type: "text", name: "a_cep" }
                 }),
                 _vm._v(" "),
                 _vm._m(1),
@@ -43382,13 +43529,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Estado ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "a_estado" }
           })
         ])
       ])
@@ -43399,13 +43546,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Cidade ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "a_cidade" }
           })
         ])
       ])
@@ -43416,13 +43563,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Bairro ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "a_bairro" }
           })
         ])
       ])
@@ -43433,13 +43580,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "a_tipoLogradouro" }
           })
         ])
       ])
@@ -43450,13 +43597,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Logradouro ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "a_logradouro" }
           })
         ])
       ])
@@ -43467,13 +43614,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Número ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "a_numeroEndereco" }
           })
         ])
       ])
@@ -43484,13 +43631,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Complemento ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "a_complemento" }
           })
         ])
       ])
@@ -43501,19 +43648,31 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Tipo de Endereço ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha o tipo de endereço")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Residencial")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Empresarial")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Comercial")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "a_tipoEndereco" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha o tipo de endereço")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Residencial" } }, [
+                _vm._v("Residencial")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Empresarial" } }, [
+                _vm._v("Empresarial")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Comercial" } }, [
+                _vm._v("Comercial")
+              ])
+            ]
+          )
         ])
       ])
     ])
@@ -43523,13 +43682,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Referência ")])]),
           _vm._v(" "),
           _c("textarea", {
             staticClass: "form-control",
-            attrs: { rows: "3", required: "" }
+            attrs: { rows: "3", name: "a_referencia" }
           })
         ])
       ])
@@ -43540,7 +43699,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c(
           "div",
           {
@@ -43549,7 +43708,13 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CA_e1", id: "CA_e1" }
+              attrs: {
+                type: "checkbox",
+                name: "a_comprovante",
+                value:
+                  "O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial",
+                id: "CA_e1"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -43609,7 +43774,32 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "money",
+                      rawName: "v-money",
+                      value: "R$",
+                      expression: "'R$'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "a_valorPedido" }
+                })
+              ])
+            ])
+          ])
+        ])
+      ])
     ]),
     _vm._v(" "),
     _c("br"),
@@ -43634,7 +43824,32 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(1)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(2),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "money",
+                      rawName: "v-money",
+                      value: "R$",
+                      expression: "'R$'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "a_valorCausa" }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(3)
+          ])
+        ])
+      ])
     ]),
     _vm._v(" "),
     _c("br")
@@ -43645,104 +43860,68 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { attrs: { action: "" } }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "custom-control custom-control-inline custom-checkbox"
-              },
-              [
-                _c("input", {
-                  staticClass: "custom-control-input",
-                  attrs: { type: "checkbox", name: "CA_vPC1", id: "CA_vPC1" }
-                }),
-                _vm._v(" "),
-                _c(
-                  "label",
-                  {
-                    staticClass: "custom-control-label",
-                    attrs: { for: "CA_vPC1" }
-                  },
-                  [_vm._v("O valor postulado é liquido? ")]
-                )
-              ]
-            )
-          ]),
+    return _c("div", [
+      _c(
+        "div",
+        { staticClass: "custom-control custom-control-inline custom-checkbox" },
+        [
+          _c("input", {
+            staticClass: "custom-control-input",
+            attrs: {
+              type: "checkbox",
+              name: "a_valorLiquido",
+              value: "O valor postulado é liquido?",
+              id: "CA_vPC1"
+            }
+          }),
           _vm._v(" "),
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("* Valor Postulado")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  placeholder: "ex.: 1.000,00",
-                  required: ""
-                }
-              })
-            ])
-          ])
-        ])
-      ])
+          _c(
+            "label",
+            { staticClass: "custom-control-label", attrs: { for: "CA_vPC1" } },
+            [_vm._v("O valor postulado é liquido? ")]
+          )
+        ]
+      )
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Valor da Causa")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  placeholder: "ex.: 1.000,00",
-                  required: ""
-                }
-              })
-            ])
-          ]),
+    return _c("span", [_c("strong", [_vm._v("* Valor Postulado")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("strong", [_vm._v("Valor da Causa")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "div",
+        { staticClass: "custom-control custom-control-inline custom-checkbox" },
+        [
+          _c("input", {
+            staticClass: "custom-control-input",
+            attrs: {
+              type: "checkbox",
+              name: "a_pretensao",
+              value: "A pretensão deduzida versa sobre obrigações vincendas?",
+              id: "CA_vPC2"
+            }
+          }),
           _vm._v(" "),
-          _c("form", { attrs: { action: "" } }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "custom-control custom-control-inline custom-checkbox"
-              },
-              [
-                _c("input", {
-                  staticClass: "custom-control-input",
-                  attrs: { type: "checkbox", name: "CA_vPC2", id: "CA_vPC2" }
-                }),
-                _vm._v(" "),
-                _c(
-                  "label",
-                  {
-                    staticClass: "custom-control-label",
-                    attrs: { for: "CA_vPC2" }
-                  },
-                  [
-                    _vm._v(
-                      "A pretensão deduzida versa sobre obrigações vincendas? "
-                    )
-                  ]
-                )
-              ]
-            )
-          ])
-        ])
-      ])
+          _c(
+            "label",
+            { staticClass: "custom-control-label", attrs: { for: "CA_vPC2" } },
+            [_vm._v("A pretensão deduzida versa sobre obrigações vincendas? ")]
+          )
+        ]
+      )
     ])
   }
 ]
@@ -43789,13 +43968,7 @@ var render = function() {
       ]),
       _vm._v(" "),
       _vm._m(0)
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
-    _c("br")
+    ])
   ])
 }
 var staticRenderFns = [
@@ -43926,26 +44099,6 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("br")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c("form", { attrs: { action: "" } }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_vm._v("SALVAR")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "btn btn-danger", attrs: { type: "button" } },
-          [_vm._v("FECHAR")]
-        )
       ])
     ])
   }
@@ -45007,13 +45160,7 @@ var render = function() {
       ]),
       _vm._v(" "),
       _vm._m(0)
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
-    _c("br")
+    ])
   ])
 }
 var staticRenderFns = [
@@ -45144,26 +45291,6 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("br")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c("form", { attrs: { action: "" } }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_vm._v("SALVAR")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "btn btn-danger", attrs: { type: "button" } },
-          [_vm._v("FECHAR")]
-        )
       ])
     ])
   }
@@ -46078,13 +46205,7 @@ var render = function() {
       ]),
       _vm._v(" "),
       _vm._m(0)
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
-    _c("br")
+    ])
   ])
 }
 var staticRenderFns = [
@@ -46215,26 +46336,6 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("br")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c("form", { attrs: { action: "" } }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_vm._v("SALVAR")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "btn btn-danger", attrs: { type: "button" } },
-          [_vm._v("FECHAR")]
-        )
       ])
     ])
   }
@@ -47362,7 +47463,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "custom-select",
-                  attrs: { id: "DE_aR1", required: "" },
+                  attrs: { id: "DE_aR1" },
                   on: {
                     change: function($event) {
                       var $$selectedVal = Array.prototype.filter
@@ -47408,7 +47509,7 @@ var render = function() {
               staticClass: "col-xs-6"
             },
             [
-              _c("form", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "form-inline" }, [
                 _vm._m(0),
                 _vm._v(" "),
                 _vm._m(1),
@@ -47423,7 +47524,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control col-md-5",
-                  attrs: { type: "text", required: "" }
+                  attrs: { type: "text" }
                 })
               ])
             ]
@@ -47443,7 +47544,7 @@ var render = function() {
               staticClass: "col-xs-2"
             },
             [
-              _c("form", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "form-inline" }, [
                 _vm._m(2),
                 _vm._v(" "),
                 _c("input", {
@@ -47456,7 +47557,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", required: "" }
+                  attrs: { type: "text" }
                 })
               ])
             ]
@@ -47473,7 +47574,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v(" Número de OAB:")])])
+    return _c("span", { staticStyle: { "margin-right": "3px" } }, [
+      _c("strong", [_vm._v(" Número de OAB ")])
+    ])
   },
   function() {
     var _vm = this
@@ -47491,7 +47594,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v(" Matrícula:")])])
+    return _c("span", { staticStyle: { "margin-right": "3px" } }, [
+      _c("strong", [_vm._v(" Matrícula ")])
+    ])
   }
 ]
 render._withStripped = true
@@ -47804,7 +47909,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_comarca" },
+                attrs: { name: "p_comarca", id: "DE_dDP_comarca" },
                 on: {
                   change: function($event) {
                     var $$selectedVal = Array.prototype.filter
@@ -47826,103 +47931,107 @@ var render = function() {
                   _vm._v("Escolha uma comarca")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "angraDosReis" } }, [
+                _c("option", { attrs: { value: "Angra dos Reis" } }, [
                   _vm._v("Comarca de Angra dos Reis")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "paraty" } }, [
+                _c("option", { attrs: { value: "Paraty" } }, [
                   _vm._v("Comarca de Paraty")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "barraDoPirai" } }, [
+                _c("option", { attrs: { value: "Barra do Piraí" } }, [
                   _vm._v("Comarca de Barra do Piraí")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "rioDasFlores" } }, [
+                _c("option", { attrs: { value: "Rio das Flores" } }, [
                   _vm._v("Comarca de Rio das Flores")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "valença" } }, [
+                _c("option", { attrs: { value: "Valença" } }, [
                   _vm._v("Comarca de Valença")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "barraMansa" } }, [
+                _c("option", { attrs: { value: "Barra Mansa" } }, [
                   _vm._v("Comarca de Barra Mansa")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "itatiaia" } }, [
+                _c("option", { attrs: { value: "Itatiaia" } }, [
                   _vm._v("Comarca de Itatiaia")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "pinheiral" } }, [
+                _c("option", { attrs: { value: "Pinheiral" } }, [
                   _vm._v("Comarca de Pinheiral")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "portoReal" } }, [
+                _c("option", { attrs: { value: "Porto Real" } }, [
                   _vm._v("Comarca de Porto Real")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "quatis" } }, [
+                _c("option", { attrs: { value: "Quatis" } }, [
                   _vm._v("Comarca de Quatis")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "resende" } }, [
+                _c("option", { attrs: { value: "Resende" } }, [
                   _vm._v("Comarca de Resende")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "rioClaro" } }, [
+                _c("option", { attrs: { value: "Rio Claro" } }, [
                   _vm._v("Comarca de Rio Claro")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "pirai" } }, [
+                _c("option", { attrs: { value: "Piraí" } }, [
                   _vm._v("Comarca de Piraí")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "engenheiroPauloDeFrontin" } }, [
-                  _vm._v("Comarca de Engenheiro Paulo de Frontin")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Engenheiro Paulo de Frontin" } },
+                  [_vm._v("Comarca de Engenheiro Paulo de Frontin")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "mendes" } }, [
+                _c("option", { attrs: { value: "Mendes" } }, [
                   _vm._v("Comarca de Mendes")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "miguelPereira" } }, [
+                _c("option", { attrs: { value: "Miguel Pereira" } }, [
                   _vm._v("Comarca de Miguel Pereira")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "paracambi" } }, [
+                _c("option", { attrs: { value: "Paracambi" } }, [
                   _vm._v("Comarca de Paracambi")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "patyDoAlferes" } }, [
+                _c("option", { attrs: { value: "Paty do Alferes" } }, [
                   _vm._v("Comarca de Paty do Alferes")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "vassouras" } }, [
+                _c("option", { attrs: { value: "Vassouras" } }, [
                   _vm._v("Comarca de Vassouras")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "areal" } }, [
+                _c("option", { attrs: { value: "Areal" } }, [
                   _vm._v("Comarca de Areal")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "comendadorLevyGasparian" } }, [
-                  _vm._v("Comarca de Comendador Levy Gasparian")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Comendador Levy Gasparian" } },
+                  [_vm._v("Comarca de Comendador Levy Gasparian")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "paraibaDoSul" } }, [
+                _c("option", { attrs: { value: "Paraíba do Sul" } }, [
                   _vm._v("Comarca de Paraíba do Sul")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "sapucaia" } }, [
+                _c("option", { attrs: { value: "Sapucaia" } }, [
                   _vm._v("Comarca de Sapucaia")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "tresRios" } }, [
+                _c("option", { attrs: { value: "Três Rios" } }, [
                   _vm._v("Comarca de Três Rios")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "voltaRedonda" } }, [
+                _c("option", { attrs: { value: "Volta Redonda" } }, [
                   _vm._v("Comarca de Volta Redonda")
                 ])
               ]
@@ -47948,9 +48057,13 @@ var render = function() {
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_competencia" }
+                attrs: { name: "p_competencia", id: "DE_dDP_competencia" }
               },
-              [_c("option", [_vm._v("Escolha uma competência")])]
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma competência")
+                ])
+              ]
             ),
             _vm._v(" "),
             _c(
@@ -47971,7 +48084,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_competencia" },
+                attrs: { name: "p_competencia", id: "DE_dDP_competencia" },
                 on: {
                   change: function($event) {
                     var $$selectedVal = Array.prototype.filter
@@ -47993,45 +48106,47 @@ var render = function() {
                   _vm._v("Escolha uma competência")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "acidente" } }, [
+                _c("option", { attrs: { value: "Acidentes de Trabalho" } }, [
                   _vm._v("Acidentes de Trabalho")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [_vm._v("Cível")]),
+                _c("option", { attrs: { value: "Cível" } }, [_vm._v("Cível")]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                _c("option", { attrs: { value: "Dívida Ativa Estadual" } }, [
                   _vm._v("Dívida Ativa Estadual")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                _c("option", { attrs: { value: "Dívida Ativa Municipal" } }, [
                   _vm._v("Dívida Ativa Municipal")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Empresarial" } }, [
                   _vm._v("Empresarial")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
+                _c("option", { attrs: { value: "Família" } }, [
                   _vm._v("Família")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Fazenda Pública" } }, [
                   _vm._v("Fazenda Pública")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
+                _c("option", { attrs: { value: "Juizado Especial Civil" } }, [
                   _vm._v("Juizado Especial Civil")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Órfãos" } }, [
                   _vm._v("Órfãos e Sucessões")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroCivil" } }, [
-                  _vm._v("Registro Civil de Pessoas Naturais")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Registro Civil de Pessoas Naturais" } },
+                  [_vm._v("Registro Civil de Pessoas Naturais")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
+                _c("option", { attrs: { value: "Registro Público" } }, [
                   _vm._v("Registro Público")
                 ])
               ]
@@ -48048,13 +48163,13 @@ var render = function() {
                 rawName: "v-show",
                 value:
                   _vm.showComarca !== "" &&
-                  (_vm.showCompetencia === "civel" ||
-                    _vm.showCompetencia === "empresarial" ||
-                    _vm.showCompetencia === "familia" ||
-                    _vm.showCompetencia === "fazenda" ||
-                    _vm.showCompetencia === "orfaos"),
+                  (_vm.showCompetencia === "Cível" ||
+                    _vm.showCompetencia === "Empresarial" ||
+                    _vm.showCompetencia === "Família" ||
+                    _vm.showCompetencia === "Fazenda Pública" ||
+                    _vm.showCompetencia === "Órfãos"),
                 expression:
-                  "showComarca !== '' && (showCompetencia === 'civel' || showCompetencia === 'empresarial' || showCompetencia === 'familia' || showCompetencia === 'fazenda' || showCompetencia === 'orfaos')"
+                  "showComarca !== '' && (showCompetencia === 'Cível' || showCompetencia === 'Empresarial' || showCompetencia === 'Família' || showCompetencia === 'Fazenda Pública' || showCompetencia === 'Órfãos')"
               }
             ]
           },
@@ -48079,9 +48194,13 @@ var render = function() {
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_classe" }
+                attrs: { name: "p_classe", id: "DE_dDP_classe" }
               },
-              [_c("option", [_vm._v("Escolha uma classe")])]
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma classe")
+                ])
+              ]
             ),
             _vm._v(" "),
             _c(
@@ -48098,14 +48217,14 @@ var render = function() {
                     name: "show",
                     rawName: "v-show",
                     value:
-                      _vm.showCompetencia === "acidente" &&
+                      _vm.showCompetencia === "Acidentes de Trabalho" &&
                       _vm.showComarca !== "",
                     expression:
-                      "showCompetencia === 'acidente' && showComarca !== ''"
+                      "showCompetencia === 'Acidentes de Trabalho' && showComarca !== ''"
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_classe" },
+                attrs: { name: "p_classe", id: "DE_dDP_classe" },
                 on: {
                   change: function($event) {
                     var $$selectedVal = Array.prototype.filter
@@ -48127,55 +48246,81 @@ var render = function() {
                   _vm._v("Escolha uma classe")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "acidente1" } }, [
+                _c("option", { attrs: { value: "Ação Civil Coletiva" } }, [
                   _vm._v("Ação Civil Coletiva")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "acidente2" } }, [
+                _c("option", { attrs: { value: "Ação Civil Pública" } }, [
                   _vm._v("Ação Civil Pública")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "acidente3" } }, [
-                  _vm._v("Consignação em Pagamento – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Consignação em Pagamento – CPC" } },
+                  [_vm._v("Consignação em Pagamento – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "acidente4" } }, [
+                _c("option", { attrs: { value: "Cumprimento de Sentença" } }, [
                   _vm._v("Cumprimento de Sentença")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "acidente5" } }, [
-                  _vm._v(
-                    "Embargos à Execução (por Título Judicial, Contra a Fazenda Pública\n                            e Carta Precatória)"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Embargos à Execução (por Título Judicial, Contra a Fazenda Pública\n                            e Carta Precatória)"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Embargos à Execução (por Título Judicial, Contra a Fazenda Pública\n                            e Carta Precatória)"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "acidente6" } }, [
-                  _vm._v(
-                    "Execução de Título Extrajudicial contra a Fazenda Pública"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Execução de Título Extrajudicial contra a Fazenda Pública"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Execução de Título Extrajudicial contra a Fazenda Pública"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "acidente7" } }, [
-                  _vm._v("Execução de Título Extrajudicial – CPC")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: { value: "Execução de Título Extrajudicial – CPC" }
+                  },
+                  [_vm._v("Execução de Título Extrajudicial – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "acidente8" } }, [
+                _c("option", { attrs: { value: "Habilitação" } }, [
                   _vm._v("Habilitação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "acidente9" } }, [
-                  _vm._v("Mandado de Segurança – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Mandado de Segurança – CPC" } },
+                  [_vm._v("Mandado de Segurança – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "acidente10" } }, [
+                _c("option", { attrs: { value: "Notificação" } }, [
                   _vm._v("Notificação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "acidente11" } }, [
+                _c("option", { attrs: { value: "Petição – Cível" } }, [
                   _vm._v("Petição – Cível")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "acidente12" } }, [
+                _c("option", { attrs: { value: "Procedimento Comum" } }, [
                   _vm._v("Procedimento Comum")
                 ])
               ]
@@ -48195,13 +48340,13 @@ var render = function() {
                     name: "show",
                     rawName: "v-show",
                     value:
-                      _vm.showCompetencia === "civel" && _vm.showComarca !== "",
+                      _vm.showCompetencia === "Cível" && _vm.showComarca !== "",
                     expression:
-                      "showCompetencia === 'civel' && showComarca !== ''"
+                      "showCompetencia === 'Cível' && showComarca !== ''"
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_classe" },
+                attrs: { name: "p_classe", id: "DE_dDP_classe" },
                 on: {
                   change: function($event) {
                     var $$selectedVal = Array.prototype.filter
@@ -48223,195 +48368,286 @@ var render = function() {
                   _vm._v("Escolha uma classe")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Ação Civil Coletiva" } }, [
                   _vm._v("Ação Civil Coletiva")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Ação Civil Pública" } }, [
                   _vm._v("Ação Civil Pública")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Ação Civil Pública- ECA" } }, [
                   _vm._v("Ação Civil Pública- ECA")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Ação Popular – Lei 4717/65")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Ação Popular – Lei 4717/65" } },
+                  [_vm._v("Ação Popular – Lei 4717/65")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Alvará Judicial – Lei 6858/80")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Alvará Judicial – Lei 6858/80" } },
+                  [_vm._v("Alvará Judicial – Lei 6858/80")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Busca e Apreensão em Alienação Fiduciária")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Busca e Apreensão em Alienação Fiduciária"
+                    }
+                  },
+                  [_vm._v("Busca e Apreensão em Alienação Fiduciária")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Consignação em Pagamento – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Consignação em Pagamento – CPC" } },
+                  [_vm._v("Consignação em Pagamento – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Cumprimento de Sentença" } }, [
                   _vm._v("Cumprimento de Sentença")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Cumprimento Provisório de Decisão")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Cumprimento Provisório de Decisão" } },
+                  [_vm._v("Cumprimento Provisório de Decisão")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Cumprimento Provisório de Sentença")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Cumprimento Provisório de Sentença" } },
+                  [_vm._v("Cumprimento Provisório de Sentença")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Desapropriação" } }, [
                   _vm._v("Desapropriação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Despejo" } }, [
                   _vm._v("Despejo")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Despejo por Falta de Pagamento")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Despejo por Falta de Pagamento" } },
+                  [_vm._v("Despejo por Falta de Pagamento")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v(
-                    "Despejo por Falta de Pagamento cumulado com Cobranças"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Despejo por Falta de Pagamento cumulado com Cobranças"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Despejo por Falta de Pagamento cumulado com Cobranças"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Dissolução Parcial de Sociedades")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Dissolução Parcial de Sociedades" } },
+                  [_vm._v("Dissolução Parcial de Sociedades")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Embargos – ECA" } }, [
                   _vm._v("Embargos – ECA")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v(
-                    "Embargos à execução (por Título Judicial, Contra a Fazenda Pública e\n                            Carta Precatória)"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Embargos à execução (por Título Judicial, Contra a Fazenda Pública e\n                            Carta Precatória)"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Embargos à execução (por Título Judicial, Contra a Fazenda Pública e\n                            Carta Precatória)"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Embargos de Terceiro – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Embargos de Terceiro – CPC" } },
+                  [_vm._v("Embargos de Terceiro – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Execução de Título extrajudicial – CPC")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: { value: "Execução de Título extrajudicial – CPC" }
+                  },
+                  [_vm._v("Execução de Título extrajudicial – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Execução de Hipoteca" } }, [
                   _vm._v("Execução de Hipoteca")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Exibição de Documento ou Coisa")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Exibição de Documento ou Coisa" } },
+                  [_vm._v("Exibição de Documento ou Coisa")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v(
-                    "Falência de Empresários, Socied. Empresárias, Microempresas e Empresas\n                            de Peq. Porte – Requerimento"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Falência de Empresários, Socied. Empresárias, Microempresas e Empresas\n                            de Peq. Porte – Requerimento"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Falência de Empresários, Socied. Empresárias, Microempresas e Empresas\n                            de Peq. Porte – Requerimento"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Habeas Data" } }, [
                   _vm._v("Habeas Data")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Habilitação" } }, [
                   _vm._v("Habilitação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Habilitação de Crédito" } }, [
                   _vm._v("Habilitação de Crédito")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Homologação de Transação Extrajudicial")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: { value: "Homologação de Transação Extrajudicial" }
+                  },
+                  [_vm._v("Homologação de Transação Extrajudicial")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Homologação de Penhor Legal")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Homologação de Penhor Legal" } },
+                  [_vm._v("Homologação de Penhor Legal")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Imissão na Posse" } }, [
                   _vm._v("Imissão na Posse")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Insolvência Requerida pelo Credor")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Insolvência Requerida pelo Credor" } },
+                  [_vm._v("Insolvência Requerida pelo Credor")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Insolvência Requerida pelo Devedor ou pelo Espólio")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Insolvência Requerida pelo Devedor ou pelo Espólio"
+                    }
+                  },
+                  [_vm._v("Insolvência Requerida pelo Devedor ou pelo Espólio")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Interdito Proibitório" } }, [
                   _vm._v("Interdito Proibitório")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Inventário" } }, [
                   _vm._v("Inventário")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v(
-                    "Liquidação Provisória de Sentença pelo Procedimento Comum"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Liquidação Provisória de Sentença pelo Procedimento Comum"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Liquidação Provisória de Sentença pelo Procedimento Comum"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Mandado de Segurança – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Mandado de Segurança – CPC" } },
+                  [_vm._v("Mandado de Segurança – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Monitória" } }, [
                   _vm._v("Monitória")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Notificação" } }, [
                   _vm._v("Notificação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Oposição" } }, [
                   _vm._v("Oposição")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Petição – Cível" } }, [
                   _vm._v("Petição – Cível")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Procedimento Comum" } }, [
                   _vm._v("Procedimento Comum")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Protesto – CPC" } }, [
                   _vm._v("Protesto – CPC")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Reintegração/Manutenção de Posse")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Reintegração/Manutenção de Posse" } },
+                  [_vm._v("Reintegração/Manutenção de Posse")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Requerimento de Apreensão de Veículo")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Requerimento de Apreensão de Veículo" } },
+                  [_vm._v("Requerimento de Apreensão de Veículo")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Requerimento de Reintegração de Posse")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Requerimento de Reintegração de Posse" } },
+                  [_vm._v("Requerimento de Reintegração de Posse")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Tutela Antecipada Antecedente")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela Antecipada Antecedente" } },
+                  [_vm._v("Tutela Antecipada Antecedente")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
-                  _vm._v("Tutela Cautelar Antecedente")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela Cautelar Antecedente" } },
+                  [_vm._v("Tutela Cautelar Antecedente")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "civel" } }, [
+                _c("option", { attrs: { value: "Usucapião" } }, [
                   _vm._v("Usucapião")
                 ])
               ]
@@ -48431,14 +48667,14 @@ var render = function() {
                     name: "show",
                     rawName: "v-show",
                     value:
-                      _vm.showCompetencia === "dividaEstadual" &&
+                      _vm.showCompetencia === "Dívida Ativa Estadual" &&
                       _vm.showComarca !== "",
                     expression:
-                      "showCompetencia === 'dividaEstadual' && showComarca !== ''"
+                      "showCompetencia === 'Dívida Ativa Estadual' && showComarca !== ''"
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_classe" },
+                attrs: { name: "p_classe", id: "DE_dDP_classe" },
                 on: {
                   change: function($event) {
                     var $$selectedVal = Array.prototype.filter
@@ -48460,73 +48696,99 @@ var render = function() {
                   _vm._v("Escolha uma classe")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                _c("option", { attrs: { value: "Ação Civil Pública" } }, [
                   _vm._v("Ação Civil Pública")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
-                  _vm._v("Alvará Judicial – Lei 6858/80")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Alvará Judicial – Lei 6858/80" } },
+                  [_vm._v("Alvará Judicial – Lei 6858/80")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
-                  _vm._v("Busca e Apreensão em Alienação Fiduciária")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Busca e Apreensão em Alienação Fiduciária"
+                    }
+                  },
+                  [_vm._v("Busca e Apreensão em Alienação Fiduciária")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                _c("option", { attrs: { value: "Cautelar Fiscal" } }, [
                   _vm._v("Cautelar Fiscal")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
-                  _vm._v("Consignação em Pagamento – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Consignação em Pagamento – CPC" } },
+                  [_vm._v("Consignação em Pagamento – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
-                  _vm._v("Embargos à Execução Fiscal")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Embargos à Execução Fiscal" } },
+                  [_vm._v("Embargos à Execução Fiscal")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
-                  _vm._v("Embargos de Terceiro – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Embargos de Terceiro – CPC" } },
+                  [_vm._v("Embargos de Terceiro – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
-                  _vm._v("Execução de Título Judicial – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Execução de Título Judicial – CPC" } },
+                  [_vm._v("Execução de Título Judicial – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                _c("option", { attrs: { value: "Execução Fiscal" } }, [
                   _vm._v("Execução Fiscal")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                _c("option", { attrs: { value: "Habeas Data" } }, [
                   _vm._v("Habeas Data")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
-                  _vm._v("Homologação do Penhor Legal")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Homologação do Penhor Legal" } },
+                  [_vm._v("Homologação do Penhor Legal")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                _c("option", { attrs: { value: "Imissão na Posse" } }, [
                   _vm._v("Imissão na Posse")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
-                  _vm._v("Mandado de Segurança – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Mandado de Segurança – CPC" } },
+                  [_vm._v("Mandado de Segurança – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
-                  _vm._v("Mandado de Segurança Coletivo")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Mandado de Segurança Coletivo" } },
+                  [_vm._v("Mandado de Segurança Coletivo")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
+                _c("option", { attrs: { value: "Procedimento Comum" } }, [
                   _vm._v("Procedimento Comum")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
-                  _vm._v("Tutela Antecipada Antecedente")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela Antecipada Antecedente" } },
+                  [_vm._v("Tutela Antecipada Antecedente")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaEstadual" } }, [
-                  _vm._v("Tutela Cautelar Antecedente")
-                ])
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela Cautelar Antecedente" } },
+                  [_vm._v("Tutela Cautelar Antecedente")]
+                )
               ]
             ),
             _vm._v(" "),
@@ -48544,14 +48806,14 @@ var render = function() {
                     name: "show",
                     rawName: "v-show",
                     value:
-                      _vm.showCompetencia === "dividaMunicipal" &&
+                      _vm.showCompetencia === "Dívida Ativa Municipal" &&
                       _vm.showComarca !== "",
                     expression:
-                      "showCompetencia === 'dividaMunicipal' && showComarca !== ''"
+                      "showCompetencia === 'Dívida Ativa Municipal' && showComarca !== ''"
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_classe" },
+                attrs: { name: "p_classe", id: "DE_dDP_classe" },
                 on: {
                   change: function($event) {
                     var $$selectedVal = Array.prototype.filter
@@ -48573,73 +48835,101 @@ var render = function() {
                   _vm._v("Escolha uma classe")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                  _vm._v("Alvará Judicial – Lei 6858/80")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Alvará Judicial – Lei 6858/80" } },
+                  [_vm._v("Alvará Judicial – Lei 6858/80")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                  _vm._v("Busca e Apreensão em Alienação Fiduciária")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Busca e Apreensão em Alienação Fiduciária"
+                    }
+                  },
+                  [_vm._v("Busca e Apreensão em Alienação Fiduciária")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                  _vm._v("Consignação em Pagamento – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Consignação em Pagamento – CPC" } },
+                  [_vm._v("Consignação em Pagamento – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                  _vm._v("Cumprimento Provisório de Sentença")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Cumprimento Provisório de Sentença" } },
+                  [_vm._v("Cumprimento Provisório de Sentença")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                  _vm._v("Embargos à Execução Fiscal")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Embargos à Execução Fiscal" } },
+                  [_vm._v("Embargos à Execução Fiscal")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                  _vm._v("Embargos de Terceiro – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Embargos de Terceiro – CPC" } },
+                  [_vm._v("Embargos de Terceiro – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                  _vm._v("Execução de Título Judicial – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Execução de Título Judicial – CPC" } },
+                  [_vm._v("Execução de Título Judicial – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                _c("option", { attrs: { value: "Execução Fiscal" } }, [
                   _vm._v("Execução Fiscal")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                  _vm._v("Homologação do Penhor Legal")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Homologação do Penhor Legal" } },
+                  [_vm._v("Homologação do Penhor Legal")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                _c("option", { attrs: { value: "Imissão Na Posse" } }, [
                   _vm._v("Imissão Na Posse")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                _c("option", { attrs: { value: "Mandado de Injunção" } }, [
                   _vm._v("Mandado de Injunção")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                  _vm._v("Mandado de Segurança – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Mandado de Segurança – CPC" } },
+                  [_vm._v("Mandado de Segurança – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                  _vm._v("Mandado de Segurança Coletivo")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Mandado de Segurança Coletivo" } },
+                  [_vm._v("Mandado de Segurança Coletivo")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                _c("option", { attrs: { value: "Petição – Cível" } }, [
                   _vm._v("Petição – Cível")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
+                _c("option", { attrs: { value: "Procedimento Comum" } }, [
                   _vm._v("Procedimento Comum")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                  _vm._v("Tutela Antecipada Antecedente")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela Antecipada Antecedente" } },
+                  [_vm._v("Tutela Antecipada Antecedente")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "dividaMunicipal" } }, [
-                  _vm._v("Tutela Cautelar Antecedente")
-                ])
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela Cautelar Antecedente" } },
+                  [_vm._v("Tutela Cautelar Antecedente")]
+                )
               ]
             ),
             _vm._v(" "),
@@ -48657,14 +48947,14 @@ var render = function() {
                     name: "show",
                     rawName: "v-show",
                     value:
-                      _vm.showCompetencia === "empresarial" &&
+                      _vm.showCompetencia === "Empresarial" &&
                       _vm.showComarca !== "",
                     expression:
-                      "showCompetencia === 'empresarial' && showComarca !== ''"
+                      "showCompetencia === 'Empresarial' && showComarca !== ''"
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_classe" },
+                attrs: { name: "p_classe", id: "DE_dDP_classe" },
                 on: {
                   change: function($event) {
                     var $$selectedVal = Array.prototype.filter
@@ -48686,151 +48976,239 @@ var render = function() {
                   _vm._v("Escolha uma classe")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Ação Civil Coletiva" } }, [
                   _vm._v("Ação Civil Coletiva")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Ação Civil Pública" } }, [
                   _vm._v("Ação Civil Pública")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Alienação Judicial" } }, [
                   _vm._v("Alienação Judicial")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Busca e Apreensão em alienação Fiduciária")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Busca e Apreensão em alienação Fiduciária"
+                    }
+                  },
+                  [_vm._v("Busca e Apreensão em alienação Fiduciária")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Consignação em Pagamento – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Consignação em Pagamento – CPC" } },
+                  [_vm._v("Consignação em Pagamento – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Cumprimento de Sentença" } }, [
                   _vm._v("Cumprimento de Sentença")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Cumprimento Provisório de Sentença")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Cumprimento Provisório de Sentença" } },
+                  [_vm._v("Cumprimento Provisório de Sentença")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Despejo" } }, [
                   _vm._v("Despejo")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Despejo por falta de pagamento")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Despejo por falta de pagamento" } },
+                  [_vm._v("Despejo por falta de pagamento")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Despejo por Falta de Pagamento Cumulado Com Cobrança")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Despejo por Falta de Pagamento Cumulado Com Cobrança"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Despejo por Falta de Pagamento Cumulado Com Cobrança"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Dissolução Parcial de Sociedade")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Dissolução Parcial de Sociedade" } },
+                  [_vm._v("Dissolução Parcial de Sociedade")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v(
-                    "Embargos à execução (por Título Judicial, Contra a Fazenda\n                            Pública e Carta Precatória)"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Embargos à execução (por Título Judicial, Contra a Fazenda Pública\n                            Pública e Carta Precatória)"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Embargos à execução (por Título Judicial, Contra a Fazenda Pública\n                            Pública e Carta Precatória)"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Embargos de Terceiro – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Embargos de Terceiro – CPC" } },
+                  [_vm._v("Embargos de Terceiro – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Extinção das Obrigações do Falido")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Extinção das Obrigações do Falido" } },
+                  [_vm._v("Extinção das Obrigações do Falido")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v(
-                    "Falência de Empresários, Socied. Empresárias, Microempresas e\n                            Empresas de Peq. Porte – Requerimento"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Falência de Empresários, Socied. Empresárias, Microempresas e\n                            Empresas de Peq. Porte – Requerimento"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Falência de Empresários, Socied. Empresárias, Microempresas e\n                            Empresas de Peq. Porte – Requerimento"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Habilitação" } }, [
                   _vm._v("Habilitação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Habilitação de Crédito" } }, [
                   _vm._v("Habilitação de Crédito")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Homologação de Transação Extrajudicial")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: { value: "Homologação de Transação Extrajudicial" }
+                  },
+                  [_vm._v("Homologação de Transação Extrajudicial")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Imissão na Posse" } }, [
                   _vm._v("Imissão na Posse")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Impugnação de Crédito" } }, [
                   _vm._v("Impugnação de Crédito")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Insolvência Requerida pelo Credor")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Insolvência Requerida pelo Credor" } },
+                  [_vm._v("Insolvência Requerida pelo Credor")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Insolvência Requerida pelo Devedor ou pelo Espólio")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Insolvência Requerida pelo Devedor ou pelo Espólio"
+                    }
+                  },
+                  [_vm._v("Insolvência Requerida pelo Devedor ou pelo Espólio")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Interdito Proibitório" } }, [
                   _vm._v("Interdito Proibitório")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v(
-                    "Liquidação Provisória de Sentença pelo procedimento comum\n                        "
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Liquidação Provisória de Sentença pelo procedimento comum"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Liquidação Provisória de Sentença pelo procedimento comum\n                        "
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Monitória" } }, [
                   _vm._v("Monitória")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Petição – Cível" } }, [
                   _vm._v("Petição – Cível")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Prestação de Contas – Exigidas")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Prestação de Contas – Exigidas" } },
+                  [_vm._v("Prestação de Contas – Exigidas")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Procedimento Comum" } }, [
                   _vm._v("Procedimento Comum")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Produção Antecipada de Provas – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Produção Antecipada de Provas – CPC" } },
+                  [_vm._v("Produção Antecipada de Provas – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Protesto – CPC" } }, [
                   _vm._v("Protesto – CPC")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Reintegração/Manutenção de Posse")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Reintegração/Manutenção de Posse" } },
+                  [_vm._v("Reintegração/Manutenção de Posse")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v(
-                    "Restituição de Coisa ou Dinheiro na Falência do Devedor\n                            Empresário"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Restituição de Coisa ou Dinheiro na Falência do Devedor\n                            Empresário"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Restituição de Coisa ou Dinheiro na Falência do Devedor\n                            Empresário"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Tutela Antecipada Antecedente")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela Antecipada Antecedente" } },
+                  [_vm._v("Tutela Antecipada Antecedente")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
-                  _vm._v("Tutela Cautelar Antecedente")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela Cautelar Antecedente" } },
+                  [_vm._v("Tutela Cautelar Antecedente")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "empresarial" } }, [
+                _c("option", { attrs: { value: "Usucapião" } }, [
                   _vm._v("Usucapião")
                 ])
               ]
@@ -48850,14 +49228,14 @@ var render = function() {
                     name: "show",
                     rawName: "v-show",
                     value:
-                      _vm.showCompetencia === "familia" &&
+                      _vm.showCompetencia === "Família" &&
                       _vm.showComarca !== "",
                     expression:
-                      "showCompetencia === 'familia' && showComarca !== ''"
+                      "showCompetencia === 'Família' && showComarca !== ''"
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_classe" },
+                attrs: { name: "p_classe", id: "DE_dDP_classe" },
                 on: {
                   change: function($event) {
                     var $$selectedVal = Array.prototype.filter
@@ -48879,123 +49257,180 @@ var render = function() {
                   _vm._v("Escolha uma classe")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Abertura, Registro e Cumprimento de Testamento")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Abertura, Registro e Cumprimento de Testamento"
+                    }
+                  },
+                  [_vm._v("Abertura, Registro e Cumprimento de Testamento")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
+                _c("option", { attrs: { value: "Adoção – ECA" } }, [
                   _vm._v("Adoção – ECA")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Alimentos – Lei Especial nº 5478/66")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Alimentos – Lei Especial nº 5478/66" } },
+                  [_vm._v("Alimentos – Lei Especial nº 5478/66")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Alteração do Regime de Bens")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Alteração do Regime de Bens" } },
+                  [_vm._v("Alteração do Regime de Bens")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Alvará Judicial – Lei 6858/80")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Alvará Judicial – Lei 6858/80" } },
+                  [_vm._v("Alvará Judicial – Lei 6858/80")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Autorização Judicial – ECA")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Autorização Judicial – ECA" } },
+                  [_vm._v("Autorização Judicial – ECA")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Busca e Apreensão Infracional")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Busca e Apreensão Infracional" } },
+                  [_vm._v("Busca e Apreensão Infracional")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Cautelar – Regulamentação de Visitas")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Cautelar – Regulamentação de Visitas" } },
+                  [_vm._v("Cautelar – Regulamentação de Visitas")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Consignação em Pagamento – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Consignação em Pagamento – CPC" } },
+                  [_vm._v("Consignação em Pagamento – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Conversão de Separação Judicial em Divórcio")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Conversão de Separação Judicial em Divórcio"
+                    }
+                  },
+                  [_vm._v("Conversão de Separação Judicial em Divórcio")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
+                _c("option", { attrs: { value: "Cumprimento de Sentença" } }, [
                   _vm._v("Cumprimento de Sentença")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Cumprimento Provisório de Decisão")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Cumprimento Provisório de Decisão" } },
+                  [_vm._v("Cumprimento Provisório de Decisão")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Cumprimento Provisório de Sentença")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Cumprimento Provisório de Sentença" } },
+                  [_vm._v("Cumprimento Provisório de Sentença")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
+                _c("option", { attrs: { value: "Divórcio" } }, [
                   _vm._v("Divórcio")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
+                _c("option", { attrs: { value: "Divórcio Consensual" } }, [
                   _vm._v("Divórcio Consensual")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
+                _c("option", { attrs: { value: "Execução de Alimentos" } }, [
                   _vm._v("Execução de Alimentos")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
+                _c("option", { attrs: { value: "Habilitação" } }, [
                   _vm._v("Habilitação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Homologação de Transação Judicial")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Homologação de Transação Judicial" } },
+                  [_vm._v("Homologação de Transação Judicial")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
+                _c("option", { attrs: { value: "Interdição" } }, [
                   _vm._v("Interdição")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
+                _c("option", { attrs: { value: "Internação Provisória" } }, [
                   _vm._v("Internação Provisória")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
+                _c("option", { attrs: { value: "Inventário" } }, [
                   _vm._v("Inventário")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v(
-                    "Liquidação Provisória de Sentença pelo Procedimento Comum"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Liquidação Provisória de Sentença pelo Procedimento Comum"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Liquidação Provisória de Sentença pelo Procedimento Comum"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Mandado de Segurança – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Mandado de Segurança – CPC" } },
+                  [_vm._v("Mandado de Segurança – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Outros Procedimentos de Jurisdição Voluntária"
+                    }
+                  },
+                  [_vm._v("Outros Procedimentos de Jurisdição Voluntária")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Remoção e Dispensa/Tutela e Curatela")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Remoção e Dispensa/Tutela e Curatela" } },
+                  [_vm._v("Remoção e Dispensa/Tutela e Curatela")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
+                _c("option", { attrs: { value: "Sobrepartilha" } }, [
                   _vm._v("Sobrepartilha")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Tutela Antecipada Antecedente")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela Antecipada Antecedente" } },
+                  [_vm._v("Tutela Antecipada Antecedente")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Tutela Cautelar Antecedente")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela Cautelar Antecedente" } },
+                  [_vm._v("Tutela Cautelar Antecedente")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "familia" } }, [
-                  _vm._v("Tutela e Curatela – Nomeação")
-                ])
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela e Curatela – Nomeação" } },
+                  [_vm._v("Tutela e Curatela – Nomeação")]
+                )
               ]
             ),
             _vm._v(" "),
@@ -49013,14 +49448,14 @@ var render = function() {
                     name: "show",
                     rawName: "v-show",
                     value:
-                      _vm.showCompetencia === "fazenda" &&
+                      _vm.showCompetencia === "Fazenda Pública" &&
                       _vm.showComarca !== "",
                     expression:
-                      "showCompetencia === 'fazenda' && showComarca !== ''"
+                      "showCompetencia === 'Fazenda Pública' && showComarca !== ''"
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_classe" },
+                attrs: { name: "p_classe", id: "DE_dDP_classe" },
                 on: {
                   change: function($event) {
                     var $$selectedVal = Array.prototype.filter
@@ -49042,233 +49477,333 @@ var render = function() {
                   _vm._v("Escolha uma classe")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Ação Civil Coletiva" } }, [
                   _vm._v("Ação Civil Coletiva")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Ação Civil de Improbidade Administrativa")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: { value: "Ação Civil de Improbidade Administrativa" }
+                  },
+                  [_vm._v("Ação Civil de Improbidade Administrativa")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Ação Pública" } }, [
                   _vm._v("Ação Pública")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Ação Popular Lei 4.717/65")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Ação Popular Lei 4.717/65" } },
+                  [_vm._v("Ação Popular Lei 4.717/65")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Alienação Judicial" } }, [
                   _vm._v("Alienação Judicial")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Alvará Judicial Lei 6.858/80")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Alvará Judicial Lei 6.858/80" } },
+                  [_vm._v("Alvará Judicial Lei 6.858/80")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Busca e Apreensão Com Alienação Fidunciária")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Busca e Apreensão Com Alienação Fidunciária"
+                    }
+                  },
+                  [_vm._v("Busca e Apreensão Com Alienação Fidunciária")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Consignação em Pagamento – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Consignação em Pagamento – CPC" } },
+                  [_vm._v("Consignação em Pagamento – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Consignatória de Aluguéis")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Consignatória de Aluguéis" } },
+                  [_vm._v("Consignatória de Aluguéis")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Contestação em Foro Diverso")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Contestação em Foro Diverso" } },
+                  [_vm._v("Contestação em Foro Diverso")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Cumprimento de Sentença" } }, [
                   _vm._v("Cumprimento de Sentença")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Cumprimento Provisório de Sentença")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Cumprimento Provisório de Sentença" } },
+                  [_vm._v("Cumprimento Provisório de Sentença")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Cumprimento Provisório de Decisão")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Cumprimento Provisório de Decisão" } },
+                  [_vm._v("Cumprimento Provisório de Decisão")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Demarcação/Divisão" } }, [
                   _vm._v("Demarcação/Divisão")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Depósito da Lei 8.866/94" } }, [
                   _vm._v("Depósito da Lei 8.866/94")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Desapropriação" } }, [
                   _vm._v("Desapropriação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Despejo" } }, [
                   _vm._v("Despejo")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Despejo por Falta de Pagamento")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Despejo por Falta de Pagamento" } },
+                  [_vm._v("Despejo por Falta de Pagamento")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Despejo por Falta de Pagamento Cumulado com Cobrança")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Despejo por Falta de Pagamento Cumulado com Cobrança"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Despejo por Falta de Pagamento Cumulado com Cobrança"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Discriminatório" } }, [
                   _vm._v("Discriminatório")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Embargos à Execução Fiscal")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Embargos à Execução Fiscal" } },
+                  [_vm._v("Embargos à Execução Fiscal")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v(
-                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Embargos à Terceiro – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Embargos à Terceiro – CPC" } },
+                  [_vm._v("Embargos à Terceiro – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v(
-                    "Execução de Título Extrajudicial Contra a Fazenda Pública"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Execução de Título Extrajudicial Contra a Fazenda Pública"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Execução de Título Extrajudicial Contra a Fazenda Pública"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Execução de Título Extrajudicial – CPC")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: { value: "Execução de Título Extrajudicial – CPC" }
+                  },
+                  [_vm._v("Execução de Título Extrajudicial – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Execução Hipotecária" } }, [
                   _vm._v("Execução Hipotecária")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Exibição de Documento ou Coisa")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Exibição de Documento ou Coisa" } },
+                  [_vm._v("Exibição de Documento ou Coisa")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Habeas Data" } }, [
                   _vm._v("Habeas Data")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Habilitação" } }, [
                   _vm._v("Habilitação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Homologação de Transação Extrajudicial")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: { value: "Homologação de Transação Extrajudicial" }
+                  },
+                  [_vm._v("Homologação de Transação Extrajudicial")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Homologação de Penhor Legal")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Homologação de Penhor Legal" } },
+                  [_vm._v("Homologação de Penhor Legal")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Imissão na Posse" } }, [
                   _vm._v("Imissão na Posse")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Interdito Proibitório" } }, [
                   _vm._v("Interdito Proibitório")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Interpelação" } }, [
                   _vm._v("Interpelação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v(
-                    "Liquidação Provisória de Sentença Pelo Procedimento Comum"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Liquidação Provisória de Sentença Pelo Procedimento Comum"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Liquidação Provisória de Sentença Pelo Procedimento Comum"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Mandado de Injunção" } }, [
                   _vm._v("Mandado de Injunção")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Mandado de Segurança – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Mandado de Segurança – CPC" } },
+                  [_vm._v("Mandado de Segurança – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Mandado de Segurança Coletivo")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Mandado de Segurança Coletivo" } },
+                  [_vm._v("Mandado de Segurança Coletivo")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Monitória" } }, [
                   _vm._v("Monitória")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Notificação" } }, [
                   _vm._v("Notificação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Oposição" } }, [
                   _vm._v("Oposição")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Outros Procedimentos de Jurisdição Voluntária"
+                    }
+                  },
+                  [_vm._v("Outros Procedimentos de Jurisdição Voluntária")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Pedido de Providência" } }, [
                   _vm._v("Pedido de Providência")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Petição – Cível" } }, [
                   _vm._v("Petição – Cível")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Prestação de Contas – Exigível")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Prestação de Contas – Exigível" } },
+                  [_vm._v("Prestação de Contas – Exigível")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Procedimento Comum" } }, [
                   _vm._v("Procedimento Comum")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Processo Administrativo" } }, [
                   _vm._v("Processo Administrativo")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Produção Antecipada de Provas – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Produção Antecipada de Provas – CPC" } },
+                  [_vm._v("Produção Antecipada de Provas – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Protesto – CPC" } }, [
                   _vm._v("Protesto – CPC")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Reintegração e manutenção de Posse")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Reintegração e manutenção de Posse" } },
+                  [_vm._v("Reintegração e manutenção de Posse")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Renovatória de Locação" } }, [
                   _vm._v("Renovatória de Locação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Restauração de Autos" } }, [
                   _vm._v("Restauração de Autos")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Revisional de Aluguel" } }, [
                   _vm._v("Revisional de Aluguel")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Tutela Antecipada Antecedente")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela Antecipada Antecedente" } },
+                  [_vm._v("Tutela Antecipada Antecedente")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
-                  _vm._v("Tutela Cautelar Antecedente")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela Cautelar Antecedente" } },
+                  [_vm._v("Tutela Cautelar Antecedente")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "fazenda" } }, [
+                _c("option", { attrs: { value: "Usucapião" } }, [
                   _vm._v("Usucapião")
                 ])
               ]
@@ -49288,14 +49823,14 @@ var render = function() {
                     name: "show",
                     rawName: "v-show",
                     value:
-                      _vm.showCompetencia === "juizado" &&
+                      _vm.showCompetencia === "Juizado Especial Civil" &&
                       _vm.showComarca !== "",
                     expression:
-                      "showCompetencia === 'juizado' && showComarca !== ''"
+                      "showCompetencia === 'Juizado Especial Civil' && showComarca !== ''"
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_classe" },
+                attrs: { name: "p_classe", id: "DE_dDP_classe" },
                 on: {
                   change: function($event) {
                     var $$selectedVal = Array.prototype.filter
@@ -49317,61 +49852,105 @@ var render = function() {
                   _vm._v("Escolha uma classe")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
-                  _vm._v("Alvará Judicial Lei 6.858/80")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Alvará Judicial Lei 6.858/80" } },
+                  [_vm._v("Alvará Judicial Lei 6.858/80")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
+                _c("option", { attrs: { value: "Cumprimento de Sentença" } }, [
                   _vm._v("Cumprimento de Sentença")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
-                  _vm._v("Cumprimento Provisório de Sentença")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Cumprimento Provisório de Sentença" } },
+                  [_vm._v("Cumprimento Provisório de Sentença")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
+                _c("option", { attrs: { value: "Despejo" } }, [
                   _vm._v("Despejo")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
-                  _vm._v("Despejo por Falta de Pagamento")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Despejo por Falta de Pagamento" } },
+                  [_vm._v("Despejo por Falta de Pagamento")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
-                  _vm._v("Despejo por Falta de Pagamento Cumulado com Cobrança")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Despejo por Falta de Pagamento Cumulado com Cobrança"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Despejo por Falta de Pagamento Cumulado com Cobrança"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
-                  _vm._v(
-                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
-                  _vm._v("Embargos de Terceiro – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Embargos de Terceiro – CPC" } },
+                  [_vm._v("Embargos de Terceiro – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
-                  _vm._v("Execução de Título Extrajudicial – CPC")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: { value: "Execução de Título Extrajudicial – CPC" }
+                  },
+                  [_vm._v("Execução de Título Extrajudicial – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
-                  _vm._v("Exibição de Documento ou Coisa")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Exibição de Documento ou Coisa" } },
+                  [_vm._v("Exibição de Documento ou Coisa")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
-                  _vm._v("Homologação de Transação Extrajudicial")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: { value: "Homologação de Transação Extrajudicial" }
+                  },
+                  [_vm._v("Homologação de Transação Extrajudicial")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
+                _c("option", { attrs: { value: "Monitória" } }, [
                   _vm._v("Monitória")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
-                  _vm._v("Procedimento do Juizado Especial Civil/Fazendário")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Procedimento do Juizado Especial Civil/Fazendário"
+                    }
+                  },
+                  [_vm._v("Procedimento do Juizado Especial Civil/Fazendário")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "juizado" } }, [
+                _c("option", { attrs: { value: "Protesto – CPC" } }, [
                   _vm._v("Protesto – CPC")
                 ])
               ]
@@ -49391,14 +49970,14 @@ var render = function() {
                     name: "show",
                     rawName: "v-show",
                     value:
-                      _vm.showCompetencia === "orfaos" &&
+                      _vm.showCompetencia === "Órfãos" &&
                       _vm.showComarca !== "",
                     expression:
-                      "showCompetencia === 'orfaos' && showComarca !== ''"
+                      "showCompetencia === 'Órfãos' && showComarca !== ''"
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_classe" },
+                attrs: { name: "p_classe", id: "DE_dDP_classe" },
                 on: {
                   change: function($event) {
                     var $$selectedVal = Array.prototype.filter
@@ -49420,119 +49999,160 @@ var render = function() {
                   _vm._v("Escolha uma classe")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
-                  _vm._v("Abertura, Registro e Cumprimento de Testamento")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Abertura, Registro e Cumprimento de Testamento"
+                    }
+                  },
+                  [_vm._v("Abertura, Registro e Cumprimento de Testamento")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Alienação Judicial" } }, [
                   _vm._v("Alienação Judicial")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
-                  _vm._v("Alvará Judicial Lei 6.858/80")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Alvará Judicial Lei 6.858/80" } },
+                  [_vm._v("Alvará Judicial Lei 6.858/80")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Arrolamento Comum" } }, [
                   _vm._v("Arrolamento Comum")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Arrolamento Sumário" } }, [
                   _vm._v("Arrolamento Sumário")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
-                  _vm._v("Cumprimento Provisório de Sentença")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Cumprimento Provisório de Sentença" } },
+                  [_vm._v("Cumprimento Provisório de Sentença")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Declaração de Ausência" } }, [
                   _vm._v("Declaração de Ausência")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
-                  _vm._v(
-                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
-                  _vm._v("Embargos de Terceiro – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Embargos de Terceiro – CPC" } },
+                  [_vm._v("Embargos de Terceiro – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Habilitação" } }, [
                   _vm._v("Habilitação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Herança Jacente" } }, [
                   _vm._v("Herança Jacente")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
-                  _vm._v("Homologação de Transação Extrajudicial")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: { value: "Homologação de Transação Extrajudicial" }
+                  },
+                  [_vm._v("Homologação de Transação Extrajudicial")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Interdição" } }, [
                   _vm._v("Interdição")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Interdito Probatório" } }, [
                   _vm._v("Interdito Probatório")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Interpelação" } }, [
                   _vm._v("Interpelação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Inventário" } }, [
                   _vm._v("Inventário")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Notificação" } }, [
                   _vm._v("Notificação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Oposição" } }, [
                   _vm._v("Oposição")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
-                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Outros Procedimentos de Jurisdição Voluntária"
+                    }
+                  },
+                  [_vm._v("Outros Procedimentos de Jurisdição Voluntária")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Pedidos de Providências" } }, [
                   _vm._v("Pedidos de Providências")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Petição – Cível" } }, [
                   _vm._v("Petição – Cível")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
-                  _vm._v("Prestação de Contas – ECA")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Prestação de Contas – ECA" } },
+                  [_vm._v("Prestação de Contas – ECA")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
-                  _vm._v("Prestação de Contas – Exigidas")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Prestação de Contas – Exigidas" } },
+                  [_vm._v("Prestação de Contas – Exigidas")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Procedimento Comum" } }, [
                   _vm._v("Procedimento Comum")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
-                  _vm._v("Remoção e Dispensa/Tutela e Curatela")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Remoção e Dispensa/Tutela e Curatela" } },
+                  [_vm._v("Remoção e Dispensa/Tutela e Curatela")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
+                _c("option", { attrs: { value: "Sobrepartilha" } }, [
                   _vm._v("Sobrepartilha")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
-                  _vm._v("Tutela Antecipada Antecedente")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela Antecipada Antecedente" } },
+                  [_vm._v("Tutela Antecipada Antecedente")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "orfaos" } }, [
-                  _vm._v("Tutela e Curatela – Nomeação")
-                ])
+                _c(
+                  "option",
+                  { attrs: { value: "Tutela e Curatela – Nomeação" } },
+                  [_vm._v("Tutela e Curatela – Nomeação")]
+                )
               ]
             ),
             _vm._v(" "),
@@ -49550,14 +50170,15 @@ var render = function() {
                     name: "show",
                     rawName: "v-show",
                     value:
-                      _vm.showCompetencia === "registroCivil" &&
+                      _vm.showCompetencia ===
+                        "Registro Civil de Pessoas Naturais" &&
                       _vm.showComarca !== "",
                     expression:
-                      "showCompetencia === 'registroCivil' && showComarca !== ''"
+                      "showCompetencia === 'Registro Civil de Pessoas Naturais' && showComarca !== ''"
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_classe" },
+                attrs: { name: "p_classe", id: "DE_dDP_classe" },
                 on: {
                   change: function($event) {
                     var $$selectedVal = Array.prototype.filter
@@ -49579,51 +50200,78 @@ var render = function() {
                   _vm._v("Escolha uma classe")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroCivel" } }, [
-                  _vm._v("Alteração de Regime de Bens")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Alteração de Regime de Bens" } },
+                  [_vm._v("Alteração de Regime de Bens")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroCivel" } }, [
-                  _vm._v("Averiguação Oficiosa de Paternidade")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Averiguação Oficiosa de Paternidade" } },
+                  [_vm._v("Averiguação Oficiosa de Paternidade")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroCivel" } }, [
-                  _vm._v("Habilitação para Casamento – RCPN")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Habilitação para Casamento – RCPN" } },
+                  [_vm._v("Habilitação para Casamento – RCPN")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroCivel" } }, [
-                  _vm._v("Homologação e Transação Extrajudicial")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Homologação e Transação Extrajudicial" } },
+                  [_vm._v("Homologação e Transação Extrajudicial")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroCivel" } }, [
-                  _vm._v("Mandado de Segurança – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Mandado de Segurança – CPC" } },
+                  [_vm._v("Mandado de Segurança – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroCivel" } }, [
-                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Outros Procedimentos de Jurisdição Voluntária"
+                    }
+                  },
+                  [_vm._v("Outros Procedimentos de Jurisdição Voluntária")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroCivel" } }, [
+                _c("option", { attrs: { value: "Petição – Cível" } }, [
                   _vm._v("Petição – Cível")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroCivel" } }, [
+                _c("option", { attrs: { value: "Procedimento Comum" } }, [
                   _vm._v("Procedimento Comum")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroCivel" } }, [
-                  _vm._v("Registro de Casamento Nuncupativo")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Registro de Casamento Nuncupativo" } },
+                  [_vm._v("Registro de Casamento Nuncupativo")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroCivel" } }, [
+                _c("option", { attrs: { value: "Sindicância" } }, [
                   _vm._v("Sindicância")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroCivel" } }, [
-                  _vm._v(
-                    "Retificação ou Suprimento ou Restauração do Registo Cível\n                        "
-                  )
-                ])
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Retificação ou Suprimento ou Restauração do Registo Cível"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Retificação ou Suprimento ou Restauração do Registo Cível\n                        "
+                    )
+                  ]
+                )
               ]
             ),
             _vm._v(" "),
@@ -49641,14 +50289,14 @@ var render = function() {
                     name: "show",
                     rawName: "v-show",
                     value:
-                      _vm.showCompetencia === "registroPublico" &&
+                      _vm.showCompetencia === "Registro Público" &&
                       _vm.showComarca !== "",
                     expression:
-                      "showCompetencia === 'registroPublico' && showComarca !== ''"
+                      "showCompetencia === 'Registro Público' && showComarca !== ''"
                   }
                 ],
                 staticClass: "custom-select",
-                attrs: { id: "DE_dDP_classe" },
+                attrs: { name: "p_classe", id: "DE_dDP_classe" },
                 on: {
                   change: function($event) {
                     var $$selectedVal = Array.prototype.filter
@@ -49670,87 +50318,114 @@ var render = function() {
                   _vm._v("Escolha uma classe")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
-                  _vm._v("Cumprimento Provisório de Sentença")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Cumprimento Provisório de Sentença" } },
+                  [_vm._v("Cumprimento Provisório de Sentença")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
-                  _vm._v("Cumprimento Provisório de Decisão")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Cumprimento Provisório de Decisão" } },
+                  [_vm._v("Cumprimento Provisório de Decisão")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
+                _c("option", { attrs: { value: "Demarcação/Divisão" } }, [
                   _vm._v("Demarcação/Divisão")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
+                _c("option", { attrs: { value: "Declaração de Ausência" } }, [
                   _vm._v("Declaração de Ausência")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
+                _c("option", { attrs: { value: "Dúvida" } }, [
                   _vm._v("Dúvida")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
-                  _vm._v(
-                    "Embargos à Execução Fiscal (com Título Extrajudicial, Contra\n                            a Fazenda Pública e Carta Precatória)"
-                  )
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value:
+                        "Embargos à Execução Fiscal (com Título Extrajudicial, Contra\n                            a Fazenda Pública e Carta Precatória)"
+                    }
+                  },
+                  [
+                    _vm._v(
+                      "Embargos à Execução Fiscal (com Título Extrajudicial, Contra\n                            a Fazenda Pública e Carta Precatória)"
+                    )
+                  ]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
-                  _vm._v("Embargos de Terceiro – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Embargos de Terceiro – CPC" } },
+                  [_vm._v("Embargos de Terceiro – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
+                _c("option", { attrs: { value: "Habilitação" } }, [
                   _vm._v("Habilitação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
-                  _vm._v("Homologação e Transação Extrajudicial")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Homologação e Transação Extrajudicial" } },
+                  [_vm._v("Homologação e Transação Extrajudicial")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
-                  _vm._v("Mandado de Segurança – CPC")
-                ]),
+                _c(
+                  "option",
+                  { attrs: { value: "Mandado de Segurança – CPC" } },
+                  [_vm._v("Mandado de Segurança – CPC")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
+                _c("option", { attrs: { value: "Notificação" } }, [
                   _vm._v("Notificação")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
+                _c("option", { attrs: { value: "Oposição" } }, [
                   _vm._v("Oposição")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
-                  _vm._v("Outros Procedimentos de Jurisdição Voluntária")
-                ]),
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Outros Procedimentos de Jurisdição Voluntária"
+                    }
+                  },
+                  [_vm._v("Outros Procedimentos de Jurisdição Voluntária")]
+                ),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
+                _c("option", { attrs: { value: "Pedidos de Providências" } }, [
                   _vm._v("Pedidos de Providências")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
+                _c("option", { attrs: { value: "Petição – Cível" } }, [
                   _vm._v("Petição – Cível")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
+                _c("option", { attrs: { value: "Procedimento Comum" } }, [
                   _vm._v("Procedimento Comum")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
+                _c("option", { attrs: { value: "Processo Administrativo" } }, [
                   _vm._v("Processo Administrativo")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
+                _c("option", { attrs: { value: "Protesto – CPC" } }, [
                   _vm._v("Protesto – CPC")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
+                _c("option", { attrs: { value: "Registro Torrens" } }, [
                   _vm._v("Registro Torrens")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "registroPublico" } }, [
-                  _vm._v("Retificação de Registro de Imóveis")
-                ])
+                _c(
+                  "option",
+                  { attrs: { value: "Retificação de Registro de Imóveis" } },
+                  [_vm._v("Retificação de Registro de Imóveis")]
+                )
               ]
             )
           ])
@@ -49759,512 +50434,727 @@ var render = function() {
         _c("br"),
         _vm._v(" "),
         _c("div", [
-          _vm._m(2),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "angraDosReis" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'angraDosReis' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Angra dos Reis")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "paraty" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'paraty' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Paraty")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "barraDoPirai" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'barraDoPirai' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Barra do Piraí")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "rioDasFlores" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'rioDasFlores' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Rio das Flores")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "valença" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'valença' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Valença")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "barraMansa" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'barraMansa' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Barra Mansa")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "itatiaia" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'itatiaia' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Itatiaia")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "pinheiral" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'pinheiral' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Pinheiral")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "portoReal" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'portoReal' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Porto Real")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "quatis" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'quatis' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Quatis")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "resende" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'resende' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Resende")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "rioClaro" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'rioClaro' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Rio Claro")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "pirai" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'pirai' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Piraí")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "engenheiroPauloDeFrontin" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'engenheiroPauloDeFrontin' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Engenheiro Paulo de Frontin")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "mendes" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'mendes' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Mendes")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "miguelPereira" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'miguelPereira' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Miguel Pereira")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "paracambi" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'paracambi' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Paracambi")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "patyDoAlferes" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'patyDoAlferes' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Paty do Alferes")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "vassouras" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'vassouras' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Vassouras")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "areal" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'areal' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Areal")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "comendadorLevyGasparian" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'comendadorLevyGasparian' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Comendador Levy Gasparian")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "paraibaDoSul" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'paraibaDoSul' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Paraíba do Sul")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "sapucaia" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'sapucaia' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Sapucaia")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "tresRios" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'tresRios' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Três Rios")])]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value:
-                    _vm.showComarca === "voltaRedonda" &&
-                    _vm.showCompetencia != "" &&
-                    _vm.showClasse != "",
-                  expression:
-                    "showComarca === 'voltaRedonda' && showCompetencia != '' && showClasse != ''"
-                }
-              ],
-              attrs: { href: "#" }
-            },
-            [_c("ins", [_vm._v("Distribuidor de Volta Redonda")])]
-          )
+          _c("label", { attrs: { for: "DE_dDP_distribuicao" } }, [
+            _c("strong", [_vm._v("* Distribuição")]),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "" ||
+                      _vm.showCompetencia === "" ||
+                      _vm.showClasse === "",
+                    expression:
+                      "showComarca === '' || showCompetencia === '' || showClasse === ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c("option", { attrs: { value: "" } }, [
+                  _vm._v("Escolha uma distribuição")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Angra dos Reis" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Angra dos Reis' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Angra dos Reis" } },
+                  [_vm._v("Distribuidor de Angra dos Reis")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Paraty" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Paraty' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c("option", { attrs: { value: "Distribuidor de Paraty" } }, [
+                  _vm._v("Distribuidor de Paraty")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Barra do Piraí" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Barra do Piraí' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Barra do Piraí" } },
+                  [_vm._v("Distribuidor de Barra do Piraí")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Rio das Flores" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Rio das Flores' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Rio das Flores" } },
+                  [_vm._v("Distribuidor de Rio das Flores")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Valença" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Valença' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c("option", { attrs: { value: "Distribuidor de Valença" } }, [
+                  _vm._v("Distribuidor de Valença")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Barra Mansa" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Barra Mansa' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Barra Mansa" } },
+                  [_vm._v("Distribuidor de Barra Mansa")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Itatiaia" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Itatiaia' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c("option", { attrs: { value: "Distribuidor de Itatiaia" } }, [
+                  _vm._v("Distribuidor de Itatiaia")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Pinheiral" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Pinheiral' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Pinheiral" } },
+                  [_vm._v("Distribuidor de Pinheiral")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Porto Real" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Porto Real' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Porto Real" } },
+                  [_vm._v("Distribuidor de Porto Real")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Quatis" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Quatis' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c("option", { attrs: { value: "Distribuidor de Quatis" } }, [
+                  _vm._v("Distribuidor de Quatis")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Resende" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Resende' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c("option", { attrs: { value: "Distribuidor de Resende" } }, [
+                  _vm._v("Distribuidor de Resende")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Rio Claro" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Rio Claro' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Rio Claro" } },
+                  [_vm._v("Distribuidor de Rio Claro")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Piraí" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Piraí' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c("option", { attrs: { value: "Distribuidor de Piraí" } }, [
+                  _vm._v("Distribuidor de Piraí")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Engenheiro Paulo de Frontin" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Engenheiro Paulo de Frontin' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Distribuidor de Engenheiro Paulo de Frontin"
+                    }
+                  },
+                  [_vm._v("Distribuidor de Engenheiro Paulo de Frontin")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Mendes" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Mendes' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c("option", { attrs: { value: "Distribuidor de Mendes" } }, [
+                  _vm._v("Distribuidor de Mendes")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Miguel Pereira" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Miguel Pereira' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Miguel Pereira" } },
+                  [_vm._v("Distribuidor de Miguel Pereira")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Paracambi" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Paracambi' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Paracambi" } },
+                  [_vm._v("Distribuidor de Paracambi")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Paty do Alferes" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Paty do Alferes' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Paty do Alferes" } },
+                  [_vm._v("Distribuidor de Paty do Alferes")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Vassouras" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Vassouras' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Vassouras" } },
+                  [_vm._v("Distribuidor de Vassouras")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Areal" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Areal' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c("option", { attrs: { value: "Distribuidor de Areal" } }, [
+                  _vm._v("Distribuidor de Areal")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Comendador Levy Gasparian" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Comendador Levy Gasparian' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  {
+                    attrs: {
+                      value: "Distribuidor de Comendador Levy Gasparian"
+                    }
+                  },
+                  [_vm._v("Distribuidor de Comendador Levy Gasparian")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Paraíba do Sul" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Paraíba do Sul' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Paraíba do Sul" } },
+                  [_vm._v("Distribuidor de Paraíba do Sul")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Sapucaia" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Sapucaia' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c("option", { attrs: { value: "Distribuidor de Sapucaia" } }, [
+                  _vm._v("Distribuidor de Sapucaia")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Três Rios" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Três Rios' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Três Rios" } },
+                  [_vm._v("Distribuidor de Três Rios")]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value:
+                      _vm.showComarca === "Volta Redonda" &&
+                      _vm.showCompetencia != "" &&
+                      _vm.showClasse != "",
+                    expression:
+                      "showComarca === 'Volta Redonda' && showCompetencia != '' && showClasse != ''"
+                  }
+                ],
+                staticClass: "custom-select",
+                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
+              },
+              [
+                _c(
+                  "option",
+                  { attrs: { value: "Distribuidor de Volta Redonda" } },
+                  [_vm._v("Distribuidor de Volta Redonda")]
+                )
+              ]
+            )
+          ])
         ]),
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
-        _vm._m(3),
+        _c("div", [
+          _c("div", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "col-xs-2" }, [
+              _vm._m(2),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "money",
+                    rawName: "v-money",
+                    value: "R$",
+                    expression: "'R$'"
+                  }
+                ],
+                staticClass: "form-control",
+                attrs: {
+                  type: "text",
+                  name: "p_valor",
+                  id: "DE_dDP_valorCausa"
+                }
+              })
+            ])
+          ])
+        ]),
         _vm._v(" "),
         _c("br")
       ])
@@ -50279,125 +51169,123 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("form", { attrs: { action: "" } }, [
-        _c(
-          "div",
-          {
-            staticClass: "custom-control custom-control-inline custom-checkbox"
-          },
-          [
-            _c("input", {
-              staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "DE_dDP1", id: "DE_dDP1" }
-            }),
-            _vm._v(" "),
-            _c(
-              "label",
-              {
-                staticClass: "custom-control-label",
-                attrs: { for: "DE_dDP1" }
-              },
-              [
-                _vm._v(
-                  " Prioridade p/ deficiente físico ou mental\n                        "
-                )
-              ]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "custom-control custom-control-inline custom-checkbox"
-          },
-          [
-            _c("input", {
-              staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "DE_dDP2", id: "DE_dDP2" }
-            }),
-            _vm._v(" "),
-            _c(
-              "label",
-              {
-                staticClass: "custom-control-label",
-                attrs: { for: "DE_dDP2" }
-              },
-              [_vm._v(" Tutela de Urgência ")]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "custom-control custom-control-inline custom-checkbox"
-          },
-          [
-            _c("input", {
-              staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "DE_dDP3", id: "DE_dDP3" }
-            }),
-            _vm._v(" "),
-            _c(
-              "label",
-              {
-                staticClass: "custom-control-label",
-                attrs: { for: "DE_dDP3" }
-              },
-              [
-                _vm._v(
-                  " Prioridade p/ portador de doença grave\n                        "
-                )
-              ]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "custom-control custom-control-inline custom-checkbox"
-          },
-          [
-            _c("input", {
-              staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "DE_dDP4", id: "DE_dDP4" }
-            }),
-            _vm._v(" "),
-            _c(
-              "label",
-              {
-                staticClass: "custom-control-label",
-                attrs: { for: "DE_dDP4" }
-              },
-              [_vm._v(" Gratuidade de Justiça ")]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "custom-control custom-control-inline custom-checkbox"
-          },
-          [
-            _c("input", {
-              staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "DE_dDP5", id: "DE_dDP5" }
-            }),
-            _vm._v(" "),
-            _c(
-              "label",
-              {
-                staticClass: "custom-control-label",
-                attrs: { for: "DE_dDP5" }
-              },
-              [_vm._v(" Exame Técnico ")]
-            )
-          ]
-        )
-      ])
+      _c(
+        "div",
+        { staticClass: "custom-control custom-control-inline custom-checkbox" },
+        [
+          _c("input", {
+            staticClass: "custom-control-input",
+            attrs: {
+              type: "checkbox",
+              name: "p_prioridadeDeficiente",
+              value: "Prioridade p/ deficiente físico ou mental",
+              id: "DE_dDP1"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "label",
+            { staticClass: "custom-control-label", attrs: { for: "DE_dDP1" } },
+            [
+              _vm._v(
+                " Prioridade p/ deficiente físico ou mental\n                    "
+              )
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "custom-control custom-control-inline custom-checkbox" },
+        [
+          _c("input", {
+            staticClass: "custom-control-input",
+            attrs: {
+              type: "checkbox",
+              name: "p_tutela",
+              value: "Tutela de Urgência",
+              id: "DE_dDP2"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "label",
+            { staticClass: "custom-control-label", attrs: { for: "DE_dDP2" } },
+            [_vm._v(" Tutela de Urgência ")]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "custom-control custom-control-inline custom-checkbox" },
+        [
+          _c("input", {
+            staticClass: "custom-control-input",
+            attrs: {
+              type: "checkbox",
+              name: "p_prioridadePortador",
+              value: "Prioridade p/ portador de doença grave",
+              id: "DE_dDP3"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "label",
+            { staticClass: "custom-control-label", attrs: { for: "DE_dDP3" } },
+            [
+              _vm._v(
+                " Prioridade p/ portador de doença grave\n                    "
+              )
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "custom-control custom-control-inline custom-checkbox" },
+        [
+          _c("input", {
+            staticClass: "custom-control-input",
+            attrs: {
+              type: "checkbox",
+              name: "p_gratuidade",
+              value: "Gratuidade de Justiça",
+              id: "DE_dDP4"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "label",
+            { staticClass: "custom-control-label", attrs: { for: "DE_dDP4" } },
+            [_vm._v(" Gratuidade de Justiça ")]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "custom-control custom-control-inline custom-checkbox" },
+        [
+          _c("input", {
+            staticClass: "custom-control-input",
+            attrs: {
+              type: "checkbox",
+              name: "p_exame",
+              value: "Exame Técnico",
+              id: "DE_dDP5"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "label",
+            { staticClass: "custom-control-label", attrs: { for: "DE_dDP5" } },
+            [_vm._v(" Exame Técnico ")]
+          )
+        ]
+      )
     ])
   },
   function() {
@@ -50410,7 +51298,13 @@ var staticRenderFns = [
       [
         _c("input", {
           staticClass: "custom-control-input",
-          attrs: { type: "checkbox", id: "opcaoExtra" }
+          attrs: {
+            type: "checkbox",
+            name: "p_conciliacao",
+            value:
+              "Autor opta pela realização de audiência de\n                        conciliação ou de mediação",
+            id: "opcaoExtra"
+          }
         }),
         _vm._v(" "),
         _c(
@@ -50429,29 +51323,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Distribuição:")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("form", { staticClass: "form-inline" }, [
-        _c("div", { staticClass: "col-xs-2" }, [
-          _c("span", [_c("strong", [_vm._v("* Valor da Causa:")])]),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "form-control",
-            attrs: {
-              type: "text",
-              id: "DE_dDP_valorCausa",
-              placeholder: "ex.: 1.000,00",
-              required: ""
-            }
-          })
-        ])
-      ])
-    ])
+    return _c("span", [_c("strong", [_vm._v("* Valor da Causa")])])
   }
 ]
 render._withStripped = true
@@ -50497,13 +51369,7 @@ var render = function() {
       ]),
       _vm._v(" "),
       _vm._m(0)
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
-    _c("br")
+    ])
   ])
 }
 var staticRenderFns = [
@@ -50512,11 +51378,17 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-body" }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c("div", { staticClass: "custom-control custom-checkbox" }, [
           _c("input", {
             staticClass: "custom-control-input",
-            attrs: { type: "checkbox", id: "DE_dDV1" }
+            attrs: {
+              type: "checkbox",
+              id: "DE_dDV1",
+              name: "p_veracidade",
+              value:
+                "Declaro sob as penas da Lei, que as\n                        informações acima prestadas correspondem à verdade, tendo sido prestadas em obediência à\n                        lealdade processual e à boa fé, nos termos do Art.\n                        5º do CPC/15, ciente de que a eventual prestação de informações inverídicas poderá acarretar\n                        a incidência das penalidades previstas em lei."
+            }
           }),
           _vm._v(" "),
           _c(
@@ -50529,26 +51401,6 @@ var staticRenderFns = [
             ]
           )
         ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c("form", { attrs: { action: "" } }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_vm._v("SALVAR")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "btn btn-danger", attrs: { type: "reset" } },
-          [_vm._v("LIMPAR")]
-        )
       ])
     ])
   }
@@ -50699,7 +51551,7 @@ var render = function() {
           [
             _c("br"),
             _vm._v(" "),
-            _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(3),
                 _vm._v(" "),
@@ -50713,7 +51565,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control col-md-5",
-                  attrs: { type: "text", required: "" }
+                  attrs: { type: "text", name: "p_grerjNumero" }
                 })
               ])
             ])
@@ -50784,13 +51636,22 @@ var staticRenderFns = [
       _vm._v(" "),
       _c(
         "select",
-        { staticClass: "custom-select", attrs: { id: "grerjMotivo" } },
+        {
+          staticClass: "custom-select",
+          attrs: { name: "p_grerjMotivo", id: "grerjMotivo" }
+        },
         [
-          _c("option", [_vm._v("Escolha um motivo")]),
+          _c("option", { attrs: { value: "" } }, [_vm._v("Escolha um motivo")]),
           _vm._v(" "),
-          _c("option", [_vm._v("Juizado Especial Cível")]),
+          _c("option", { attrs: { value: "Juizado Especial Cível" } }, [
+            _vm._v("Juizado Especial Cível")
+          ]),
           _vm._v(" "),
-          _c("option", [_vm._v("Justiça Gratuita / Pedido de Gratuidade")])
+          _c(
+            "option",
+            { attrs: { value: "Justiça Gratuita / Pedido de Gratuidade" } },
+            [_vm._v("Justiça Gratuita / Pedido de Gratuidade")]
+          )
         ]
       )
     ])
@@ -50858,7 +51719,7 @@ var render = function() {
               attrs: {
                 type: "radio",
                 id: "dpdSim",
-                name: "dpd",
+                name: "p_dependencia",
                 value: "dpdSim"
               },
               domProps: { checked: _vm._q(_vm.showDpd, "dpdSim") },
@@ -50891,11 +51752,16 @@ var render = function() {
                 }
               ],
               staticClass: "custom-control-input",
-              attrs: { type: "radio", id: "dpdNao", name: "" },
-              domProps: { checked: _vm._q(_vm.showDpd, null) },
+              attrs: {
+                type: "radio",
+                id: "dpdNao",
+                name: "p_dependencia",
+                value: "Nao"
+              },
+              domProps: { checked: _vm._q(_vm.showDpd, "Nao") },
               on: {
                 change: function($event) {
-                  _vm.showDpd = null
+                  _vm.showDpd = "Nao"
                 }
               }
             }),
@@ -50923,7 +51789,7 @@ var render = function() {
           [
             _c("br"),
             _vm._v(" "),
-            _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(1),
                 _vm._v(" "),
@@ -50937,7 +51803,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control col-md-3",
-                  attrs: { type: "text", required: "" }
+                  attrs: { type: "text" }
                 }),
                 _vm._v(" "),
                 _c("span", [_vm._v(" .8.19. ")]),
@@ -50952,7 +51818,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control col-md-1",
-                  attrs: { type: "text", required: "" }
+                  attrs: { type: "text" }
                 }),
                 _vm._v(" "),
                 _c(
@@ -51029,11 +51895,7 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
-    _c("br")
+    _vm._m(0)
   ])
 }
 var staticRenderFns = [
@@ -51071,26 +51933,6 @@ var staticRenderFns = [
             'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
           )
         ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c("form", { attrs: { action: "" } }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_vm._v("Enviar")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "btn btn-danger", attrs: { type: "reset" } },
-          [_vm._v("Fechar")]
-        )
       ])
     ])
   }
@@ -51136,11 +51978,7 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
-    _c("br")
+    _vm._m(0)
   ])
 }
 var staticRenderFns = [
@@ -51178,26 +52016,6 @@ var staticRenderFns = [
             'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
           )
         ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c("form", { attrs: { action: "" } }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_vm._v("Enviar")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "btn btn-danger", attrs: { type: "reset" } },
-          [_vm._v("Fechar")]
-        )
       ])
     ])
   }
@@ -51243,11 +52061,7 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
-    _c("br")
+    _vm._m(0)
   ])
 }
 var staticRenderFns = [
@@ -51285,26 +52099,6 @@ var staticRenderFns = [
             'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
           )
         ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c("form", { attrs: { action: "" } }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_vm._v("Enviar")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "btn btn-danger", attrs: { type: "reset" } },
-          [_vm._v("Fechar")]
-        )
       ])
     ])
   }
@@ -51350,11 +52144,7 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
-    _c("br")
+    _vm._m(0)
   ])
 }
 var staticRenderFns = [
@@ -51392,26 +52182,6 @@ var staticRenderFns = [
             'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
           )
         ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c("form", { attrs: { action: "" } }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_vm._v("Enviar")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "btn btn-danger", attrs: { type: "reset" } },
-          [_vm._v("Fechar")]
-        )
       ])
     ])
   }
@@ -51457,11 +52227,7 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
-    _c("br")
+    _vm._m(0)
   ])
 }
 var staticRenderFns = [
@@ -51499,26 +52265,6 @@ var staticRenderFns = [
             'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
           )
         ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c("form", { attrs: { action: "" } }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_vm._v("Enviar")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "btn btn-danger", attrs: { type: "reset" } },
-          [_vm._v("Fechar")]
-        )
       ])
     ])
   }
@@ -64221,6 +64967,8 @@ module.exports = function(module) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_the_mask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-the-mask */ "./node_modules/vue-the-mask/dist/vue-the-mask.js");
 /* harmony import */ var vue_the_mask__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_the_mask__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var v_money__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! v-money */ "./node_modules/v-money/dist/v-money.js");
+/* harmony import */ var v_money__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(v_money__WEBPACK_IMPORTED_MODULE_1__);
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -64286,6 +65034,10 @@ Vue.component('duploadanexopeticao', __webpack_require__(/*! ./components/Docume
 
 
 Vue.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_0___default.a);
+
+Vue.use(v_money__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  precision: 2
+});
 var app = new Vue({
   el: '#app'
 });

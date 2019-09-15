@@ -94,15 +94,6 @@
                 </div>
             </div>
         </div>
-        <br>
-        <!--Botões SALVAR/FECHAR-->
-        <div align="center">
-            <form action="">
-                <button type="submit" class="btn btn-primary">SALVAR</button>
-                <button type="button" class="btn btn-danger">FECHAR</button>
-            </form>
-        </div>
-        <br>
     </div>
 </template>
 <script>

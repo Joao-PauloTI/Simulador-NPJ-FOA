@@ -11,18 +11,18 @@
                 <div class="container">
                     <!--Valor do Pedido-->
                     <div id="alinhado">
-                    	<form action="">
+                    	<div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CA_vPC1" id="CA_vPC1">
+                                <input type="checkbox" class="custom-control-input" name="a_valorLiquido" value="O valor postulado é liquido?" id="CA_vPC1">
                                 <label class="custom-control-label" for="CA_vPC1">O valor postulado é liquido? </label>
                             </div>
-                        </form>
-                        <form class="form-inline">
+                        </div>
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Valor Postulado</strong> </span>
-                                <input type="text" class="form-control" placeholder="ex.: 1.000,00" required>
+                                <input type="text" class="form-control" name="a_valorPedido" v-money="'R$'">
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -39,18 +39,18 @@
                 <div class="container">
                     <!--Valor da Causa-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Valor da Causa</strong> </span>
-                                <input type="text" class="form-control" placeholder="ex.: 1.000,00" required>
+                                <input type="text" class="form-control" name="a_valorCausa" v-money="'R$'">
                             </div>
-                        </form>
-                        <form action="">
+                        </div>
+                        <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CA_vPC2" id="CA_vPC2">
+                                <input type="checkbox" class="custom-control-input" name="a_pretensao" value="A pretensão deduzida versa sobre obrigações vincendas?" id="CA_vPC2">
                                 <label class="custom-control-label" for="CA_vPC2">A pretensão deduzida versa sobre obrigações vincendas? </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

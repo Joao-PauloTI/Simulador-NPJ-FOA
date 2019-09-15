@@ -14,179 +14,177 @@
                 <div class="container">
                     <div align="center">
                         <!--Opções de marcar-->
-                        <form action="">
+                        <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CA_dP1" id="CA_dP1">
-                                <label class="custom-control-label" for="CA_dP1"> Incapaz
-                                </label>
+                                <input type="checkbox" class="custom-control-input" name="a_incapaz" value="Incapaz" id="CA_dP1">
+                                <label class="custom-control-label" for="CA_dP1"> Incapaz </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CA_dP2" id="CA_dP2">
+                                <input type="checkbox" class="custom-control-input" name="a_massa" value="Massa Falida" id="CA_dP2">
                                 <label class="custom-control-label" for="CA_dP2"> Massa Falida </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CA_dP3" id="CA_dP3">
-                                <label class="custom-control-label" for="CA_dP3"> Insolvente Civil
-                                </label>
+                                <input type="checkbox" class="custom-control-input" name="a_insolvente" value="Insolvente Civil" id="CA_dP3">
+                                <label class="custom-control-label" for="CA_dP3"> Insolvente Civil</label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CA_dP4" id="CA_dP4">
+                                <input type="checkbox" class="custom-control-input" name="a_preso" value="Preso" id="CA_dP4">
                                 <label class="custom-control-label" for="CA_dP4"> Preso </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CA_dP5" id="CA_dP5">
+                                <input type="checkbox" class="custom-control-input" name="a_espolio" value="Espólio com interesse de Incapaz" id="CA_dP5">
                                 <label class="custom-control-label" for="CA_dP5"> Espólio com interesse de Incapaz </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CA_dP6" id="CA_dP6">
+                                <input type="checkbox" class="custom-control-input" name="a_condominio" value="Condomínio" id="CA_dP6">
                                 <label class="custom-control-label" for="CA_dP6"> Condomínio </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Ministério Público -->
                     <div id="alinhado">
-                        <form action="">
+                        <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CA_dP7" id="CA_dP7">
+                                <input type="checkbox" class="custom-control-input" name="a_ministerio" value="Ministério Público" id="CA_dP7">
                                 <label class="custom-control-label" for="CA_dP7"><strong>Ministério Público? </strong> </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Pessoa Física ou Jurídica -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
-                                <span><strong>Pessoa Física ou Jurídica </strong> </span>
-                                <select class="custom-select">
-                                    <option>Pessoa Física</option>
-                                    <option>Pessoa Jurídica</option>
+                                <span><strong>Pessoa Física ou Jurídica </strong></span>
+                                <select class="custom-select" name="a_pessoa">
+                                    <option value="Pessoa Física">Pessoa Física</option>
+                                    <option value="Pessoa Jurídica">Pessoa Jurídica</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Estrangeiro/Brasileiro -->
                     <div id="alinhado">
-                        <form action="">
+                        <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CA_dP8" id="CA_dP8">
+                                <input type="checkbox" class="custom-control-input" name="a_estrangeiro" value="Estrangeiro e/ou brasileiro residente no exterior" id="CA_dP8">
                                 <label class="custom-control-label" for="CA_dP8"><strong>Estrangeiro e/ou brasileiro residente no exterior? </strong> </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Sexo -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Sexo </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha um sexo</option>
-                                    <option>Masculino</option>
-                                    <option>Feminino</option>
+                                <select class="custom-select" name="a_sexo">
+                                    <option value="">Escolha um sexo</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Feminino">Feminino</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- CPF/CNPJ-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CPF/CNPJ </strong> </span>
-                                <input type="text" class="form-control" v-mask="'###.###.###-##'" required>
+                                <input type="text" class="form-control" name="a_cpf" v-mask="'###.###.###-##'" >
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Nome-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Nome </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="a_nome">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Menor de idade -->
                     <div id="alinhado">
-                        <form action="">
+                        <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CA_dP9" id="CA_dP9">
+                                <input type="checkbox" class="custom-control-input" name="a_menor" value="Menor de idade" id="CA_dP9">
                                 <label class="custom-control-label" for="CA_dP9"><strong>Menor de idade</strong> </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Documento de identificação -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Documento de identificação </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha um tipo</option>
-                                    <option>Registro Geral</option>
-                                    <option>Carteira Nacional de Habilitação</option>
-                                    <option>Passaporte</option>
-                                    <option>Carteira de Trabalho</option>
-                                    <option>Carteira de Identidade</option>
-                                    <option>Certificado de Dispensa de Incorporação</option>
+                                <select class="custom-select" name="a_documento">
+                                    <option value="">Escolha um tipo</option>
+                                    <option value="Registro Geral">Registro Geral</option>
+                                    <option value="Carteira Nacional de Habilitação">Carteira Nacional de Habilitação</option>
+                                    <option value="Passaporte">Passaporte</option>
+                                    <option value="Carteira de Trabalho">Carteira de Trabalho</option>
+                                    <option value="Carteira de Identidade">Carteira de Identidade</option>
+                                    <option value="Certificado de Dispensa de Incorporação">Certificado de Dispensa de Incorporação</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Número -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Número </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="a_numeroIdentificacao">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Órgão Expedidor -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Órgão Expedidor </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="a_expedidor">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Data de Emissão -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Data de Emissão </strong> </span>
-                                <input type="date" class="form-control" required>
+                                <input type="text" class="form-control" name="a_emissao" v-mask="'##/##/####'">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Telefone -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Telefone </strong> </span>
-                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" required>
+                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" name="a_telefone">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- E-mail -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>E-mail </strong> </span>
-                                <input type="email" class="form-control" required>
+                                <input type="email" class="form-control" name="a_email">
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

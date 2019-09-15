@@ -43,9 +43,9 @@ class RepresentanteReu extends Model
 		'rr_pai',
 		'rr_mae',
 		'rr_nascimento'
-    );
+    );/*
     //RepresentanteReu 1:1 Processo
     public function p_representante_reu(){
     	return $this->belongsTo('App\Processo');
-    }
+    }*/
 }
