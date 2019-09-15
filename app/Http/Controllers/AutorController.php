@@ -130,6 +130,7 @@ class AutorController extends Controller
         ]);
 
         $autor->save();
+        return redirect('/');
     }
 
     /**

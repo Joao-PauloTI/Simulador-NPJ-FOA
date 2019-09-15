@@ -43967,7 +43967,56 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(2),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(4),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(5),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(6),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "##/##/####",
+                      expression: "'##/##/####'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "string", name: "ra_nascimento" }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br")
+        ])
+      ])
     ])
   ])
 }
@@ -43976,131 +44025,159 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
+          _vm._v(" "),
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "ra_estadoCivil" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha o estado civil")
+              ]),
               _vm._v(" "),
-              _c("select", { staticClass: "custom-select" }, [
-                _c("option", [_vm._v("Escolha o estado civil")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Solteiro")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Casado")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Viúvo")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Separado Judicialmente")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Divorciado")])
+              _c("option", { attrs: { value: "Solteiro" } }, [
+                _vm._v("Solteiro")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Casado" } }, [_vm._v("Casado")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Viúvo" } }, [_vm._v("Viúvo")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Separado Judicialmente" } }, [
+                _vm._v("Separado Judicialmente")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Divorciado" } }, [
+                _vm._v("Divorciado")
               ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Profissão ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
-              _vm._v(" "),
-              _c("select", { staticClass: "custom-select" }, [
-                _c("option", [_vm._v("Brasileira")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Naturalizado brasileiro")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Estrangeira")])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Estado", required: "" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Cidade", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "date", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br")
+            ]
+          )
+        ])
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Profissão ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", name: "ra_profissao" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              staticClass: "custom-select",
+              attrs: { name: "ra_nacionalidade" }
+            },
+            [
+              _c("option", { attrs: { value: "Brasileira" } }, [
+                _vm._v("Brasileira")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Naturalizado brasileiro" } }, [
+                _vm._v("Naturalizado brasileiro")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Estrangeira" } }, [
+                _vm._v("Estrangeira")
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              placeholder: "Estado",
+              name: "ra_estadoNaturalidade"
+            }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              placeholder: "Cidade",
+              name: "ra_cidadeNaturalidade"
+            }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", name: "ra_pai" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", name: "ra_mae" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])])
   }
 ]
 render._withStripped = true
@@ -44172,7 +44249,7 @@ var render = function() {
           _c("br"),
           _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
-            _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(5),
                 _vm._v(" "),
@@ -44186,7 +44263,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", required: "" }
+                  attrs: { type: "text", name: "ra_cpf" }
                 })
               ])
             ])
@@ -44210,12 +44287,31 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(10),
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(10),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "##/##/####",
+                      expression: "'##/##/####'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "string", name: "ra_emissao" }
+                })
+              ])
+            ])
+          ]),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
-            _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(11),
                 _vm._v(" "),
@@ -44229,7 +44325,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "tel", required: "" }
+                  attrs: { type: "tel", name: "ra_telefone" }
                 })
               ])
             ])
@@ -44251,7 +44347,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { align: "center" } }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c(
           "div",
           {
@@ -44260,7 +44356,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CRA_dP1", id: "CRA_dP1" }
+              attrs: {
+                type: "checkbox",
+                name: "ra_incapaz",
+                value: "Incapaz",
+                id: "CRA_dP1"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -44282,7 +44383,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CRA_dP2", id: "CRA_dP2" }
+              attrs: {
+                type: "checkbox",
+                name: "ra_massa",
+                value: "Massa Falida",
+                id: "CRA_dP2"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -44304,7 +44410,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CRA_dP3", id: "CRA_dP3" }
+              attrs: {
+                type: "checkbox",
+                name: "ra_insolvente",
+                value: "Insolvente Civil",
+                id: "CRA_dP3"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -44326,7 +44437,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CRA_dP4", id: "CRA_dP4" }
+              attrs: {
+                type: "checkbox",
+                name: "ra_preso",
+                value: "Preso",
+                id: "CRA_dP4"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -44348,7 +44464,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CRA_dP5", id: "CRA_dP5" }
+              attrs: {
+                type: "checkbox",
+                name: "ra_espolio",
+                value: "Espólio com interesse de Incapaz",
+                id: "CRA_dP5"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -44370,7 +44491,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CRA_dP6", id: "CRA_dP6" }
+              attrs: {
+                type: "checkbox",
+                name: "ra_condominio",
+                value: "Condomínio",
+                id: "CRA_dP6"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -44391,29 +44517,49 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Parte ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha um tipo")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Curador")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Síndico")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Tutor")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Assistente")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Representante")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Procurador")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Amicus Curiae")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Escritório de Advocacia")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "ra_parte" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha um tipo")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Curador" } }, [
+                _vm._v("Curador")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Síndico" } }, [
+                _vm._v("Síndico")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Tutor" } }, [_vm._v("Tutor")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Assistente" } }, [
+                _vm._v("Assistente")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Representante" } }, [
+                _vm._v("Representante")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Procurador" } }, [
+                _vm._v("Procurador")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Amicus Curiae" } }, [
+                _vm._v("Amicus Curiae")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Escritório de Advocacia" } }, [
+                _vm._v("Escritório de Advocacia")
+              ])
+            ]
+          )
         ])
       ])
     ])
@@ -44423,7 +44569,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c(
           "div",
           {
@@ -44432,7 +44578,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CRA_dP7", id: "CRA_dP7" }
+              attrs: {
+                type: "checkbox",
+                name: "ra_ministerio",
+                value: "Ministério Público?",
+                id: "CRA_dP7"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -44453,15 +44604,23 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Pessoa Física ou Jurídica ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Pessoa Física")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Pessoa Jurídica")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "ra_pessoa" } },
+            [
+              _c("option", { attrs: { value: "Pessoa Física" } }, [
+                _vm._v("Pessoa Física")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Pessoa Jurídica" } }, [
+                _vm._v("Pessoa Jurídica")
+              ])
+            ]
+          )
         ])
       ])
     ])
@@ -44471,17 +44630,27 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Sexo ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha um sexo")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Masculino")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Feminino")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "ra_sexo" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha um sexo")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Masculino" } }, [
+                _vm._v("Masculino")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Feminino" } }, [
+                _vm._v("Feminino")
+              ])
+            ]
+          )
         ])
       ])
     ])
@@ -44497,13 +44666,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Nome ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "ra_nome" }
           })
         ])
       ])
@@ -44514,25 +44683,47 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Documento de identificação ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha um tipo")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Registro Geral")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Carteira Nacional de Habilitação")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Passaporte")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Carteira de Trabalho")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Carteira de Identidade")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Certificado de Dispensa de Incorporação")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "ra_documento" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha um tipo")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Registro Geral" } }, [
+                _vm._v("Registro Geral")
+              ]),
+              _vm._v(" "),
+              _c(
+                "option",
+                { attrs: { value: "Carteira Nacional de Habilitação" } },
+                [_vm._v("Carteira Nacional de Habilitação")]
+              ),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Passaporte" } }, [
+                _vm._v("Passaporte")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Carteira de Trabalho" } }, [
+                _vm._v("Carteira de Trabalho")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Carteira de Identidade" } }, [
+                _vm._v("Carteira de Identidade")
+              ]),
+              _vm._v(" "),
+              _c(
+                "option",
+                { attrs: { value: "Certificado de Dispensa de Incorporação" } },
+                [_vm._v("Certificado de Dispensa de Incorporação")]
+              )
+            ]
+          )
         ])
       ])
     ])
@@ -44542,13 +44733,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Número ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "ra_numeroIdentificacao" }
           })
         ])
       ])
@@ -44559,13 +44750,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Órgão Emissor ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "ra_emissor" }
           })
         ])
       ])
@@ -44575,18 +44766,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
-        _c("div", { staticClass: "col-xs-2" }, [
-          _c("span", [_c("strong", [_vm._v("Data de Emissão ")])]),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "date", required: "" }
-          })
-        ])
-      ])
-    ])
+    return _c("span", [_c("strong", [_vm._v("Data de Emissão ")])])
   },
   function() {
     var _vm = this
@@ -44599,13 +44779,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("E-mail ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "email", required: "" }
+            attrs: { type: "email", name: "ra_email" }
           })
         ])
       ])
@@ -44657,7 +44837,7 @@ var render = function() {
       _c("div", { staticClass: "card-body" }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { attrs: { id: "alinhado" } }, [
-            _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(0),
                 _vm._v(" "),
@@ -44671,7 +44851,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", required: "" }
+                  attrs: { type: "text", name: "ra_cep" }
                 }),
                 _vm._v(" "),
                 _vm._m(1),
@@ -44753,13 +44933,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Estado ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "ra_estado" }
           })
         ])
       ])
@@ -44770,13 +44950,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Cidade ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "ra_cidade" }
           })
         ])
       ])
@@ -44787,13 +44967,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Bairro ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "ra_bairro" }
           })
         ])
       ])
@@ -44804,13 +44984,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "ra_tipoLogradouro" }
           })
         ])
       ])
@@ -44821,13 +45001,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Logradouro ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "ra_logradouro" }
           })
         ])
       ])
@@ -44838,13 +45018,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Número ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "ra_numeroEndereco" }
           })
         ])
       ])
@@ -44855,13 +45035,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Complemento ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "ra_complemento" }
           })
         ])
       ])
@@ -44872,19 +45052,34 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Tipo de Endereço ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha o tipo de endereço")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Residencial")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Empresarial")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Comercial")])
-          ])
+          _c(
+            "select",
+            {
+              staticClass: "custom-select",
+              attrs: { name: "ra_tipoEndereco" }
+            },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha o tipo de endereço")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Residencial" } }, [
+                _vm._v("Residencial")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Empresarial" } }, [
+                _vm._v("Empresarial")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Comercial" } }, [
+                _vm._v("Comercial")
+              ])
+            ]
+          )
         ])
       ])
     ])
@@ -44894,13 +45089,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Referência ")])]),
           _vm._v(" "),
           _c("textarea", {
             staticClass: "form-control",
-            attrs: { rows: "3", required: "" }
+            attrs: { rows: "3", name: "ra_referencia" }
           })
         ])
       ])
@@ -44911,7 +45106,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c(
           "div",
           {
@@ -44920,7 +45115,13 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CRA_e1", id: "CRA_e1" }
+              attrs: {
+                type: "checkbox",
+                name: "ra_comprovante",
+                value:
+                  "O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial",
+                id: "CRA_e1"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -44980,7 +45181,32 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "money",
+                      rawName: "v-money",
+                      value: "R$",
+                      expression: "'R$'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "ra_valorPedido" }
+                })
+              ])
+            ])
+          ])
+        ])
+      ])
     ]),
     _vm._v(" "),
     _c("br"),
@@ -45005,7 +45231,32 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(1)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(2),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "money",
+                      rawName: "v-money",
+                      value: "R$",
+                      expression: "'R$'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "ra_valorCausa" }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(3)
+          ])
+        ])
+      ])
     ]),
     _vm._v(" "),
     _c("br")
@@ -45016,104 +45267,68 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { attrs: { action: "" } }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "custom-control custom-control-inline custom-checkbox"
-              },
-              [
-                _c("input", {
-                  staticClass: "custom-control-input",
-                  attrs: { type: "checkbox", name: "CRA_vPC1", id: "CRA_vPC1" }
-                }),
-                _vm._v(" "),
-                _c(
-                  "label",
-                  {
-                    staticClass: "custom-control-label",
-                    attrs: { for: "CRA_vPC1" }
-                  },
-                  [_vm._v("O valor postulado é liquido? ")]
-                )
-              ]
-            )
-          ]),
+    return _c("div", [
+      _c(
+        "div",
+        { staticClass: "custom-control custom-control-inline custom-checkbox" },
+        [
+          _c("input", {
+            staticClass: "custom-control-input",
+            attrs: {
+              type: "checkbox",
+              name: "ra_valorLiquido",
+              value: "O valor postulado é liquido",
+              id: "CRA_vPC1"
+            }
+          }),
           _vm._v(" "),
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("* Valor Postulado")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  placeholder: "ex.: 1.000,00",
-                  required: ""
-                }
-              })
-            ])
-          ])
-        ])
-      ])
+          _c(
+            "label",
+            { staticClass: "custom-control-label", attrs: { for: "CRA_vPC1" } },
+            [_vm._v("O valor postulado é liquido? ")]
+          )
+        ]
+      )
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Valor da Causa")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  placeholder: "ex.: 1.000,00",
-                  required: ""
-                }
-              })
-            ])
-          ]),
+    return _c("span", [_c("strong", [_vm._v("* Valor Postulado")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("strong", [_vm._v("Valor da Causa")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "div",
+        { staticClass: "custom-control custom-control-inline custom-checkbox" },
+        [
+          _c("input", {
+            staticClass: "custom-control-input",
+            attrs: {
+              type: "checkbox",
+              name: "ra_pretensao",
+              value: "A pretensão deduzida versa sobre obrigações vincendas",
+              id: "CRA_vPC2"
+            }
+          }),
           _vm._v(" "),
-          _c("form", { attrs: { action: "" } }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "custom-control custom-control-inline custom-checkbox"
-              },
-              [
-                _c("input", {
-                  staticClass: "custom-control-input",
-                  attrs: { type: "checkbox", name: "CRA_vPC2", id: "CRA_vPC2" }
-                }),
-                _vm._v(" "),
-                _c(
-                  "label",
-                  {
-                    staticClass: "custom-control-label",
-                    attrs: { for: "CRA_vPC2" }
-                  },
-                  [
-                    _vm._v(
-                      "A pretensão deduzida versa sobre obrigações vincendas? "
-                    )
-                  ]
-                )
-              ]
-            )
-          ])
-        ])
-      ])
+          _c(
+            "label",
+            { staticClass: "custom-control-label", attrs: { for: "CRA_vPC2" } },
+            [_vm._v("A pretensão deduzida versa sobre obrigações vincendas? ")]
+          )
+        ]
+      )
     ])
   }
 ]
@@ -45159,7 +45374,56 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(2),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(4),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(5),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(6),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "##/##/####",
+                      expression: "'##/##/####'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "rr_nascimento" }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br")
+        ])
+      ])
     ])
   ])
 }
@@ -45168,131 +45432,159 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
+          _vm._v(" "),
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "rr_estadoCivil" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha o estado civil")
+              ]),
               _vm._v(" "),
-              _c("select", { staticClass: "custom-select" }, [
-                _c("option", [_vm._v("Escolha o estado civil")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Solteiro")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Casado")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Viúvo")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Separado Judicialmente")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Divorciado")])
+              _c("option", { attrs: { value: "Solteiro" } }, [
+                _vm._v("Solteiro")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Casado" } }, [_vm._v("Casado")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Viúvo" } }, [_vm._v("Viúvo")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Separado Judicialmente" } }, [
+                _vm._v("Separado Judicialmente")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Divorciado" } }, [
+                _vm._v("Divorciado")
               ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Profissão ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
-              _vm._v(" "),
-              _c("select", { staticClass: "custom-select" }, [
-                _c("option", [_vm._v("Brasileira")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Naturalizado brasileiro")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Estrangeira")])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Cidade", required: "" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Estado", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "date", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br")
+            ]
+          )
+        ])
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Profissão ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", name: "rr_profissao" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              staticClass: "custom-select",
+              attrs: { name: "rr_nacionalidade" }
+            },
+            [
+              _c("option", { attrs: { value: "Brasileira" } }, [
+                _vm._v("Brasileira")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Naturalizado brasileiro" } }, [
+                _vm._v("Naturalizado brasileiro")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Estrangeira" } }, [
+                _vm._v("Estrangeira")
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              placeholder: "Cidade",
+              name: "rr_estadoNaturalidade"
+            }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              placeholder: "Estado",
+              name: "rr_cidadeNaturalidade"
+            }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", name: "rr_pai" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", name: "rr_mae" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])])
   }
 ]
 render._withStripped = true
@@ -45356,7 +45648,7 @@ var render = function() {
           _c("br"),
           _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
-            _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(3),
                 _vm._v(" "),
@@ -45370,7 +45662,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", required: "" }
+                  attrs: { type: "text", name: "rr_cpf" }
                 })
               ])
             ])
@@ -45394,12 +45686,31 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(8),
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(8),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "##/##/####",
+                      expression: "'##/##/####'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "rr_emissao" }
+                })
+              ])
+            ])
+          ]),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
-            _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(9),
                 _vm._v(" "),
@@ -45413,7 +45724,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "tel", required: "" }
+                  attrs: { type: "tel", name: "rr_telefone" }
                 })
               ])
             ])
@@ -45435,29 +45746,49 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Parte ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha um tipo")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Curador")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Síndico")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Tutor")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Assistente")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Representante")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Procurador")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Amicus Curiae")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Escritório de Advocacia")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "rr_parte" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha um tipo")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Curador" } }, [
+                _vm._v("Curador")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Síndico" } }, [
+                _vm._v("Síndico")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Tutor" } }, [_vm._v("Tutor")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Assistente" } }, [
+                _vm._v("Assistente")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Representante" } }, [
+                _vm._v("Representante")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Procurador" } }, [
+                _vm._v("Procurador")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Amicus Curiae" } }, [
+                _vm._v("Amicus Curiae")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Escritório de Advocacia" } }, [
+                _vm._v("Escritório de Advocacia")
+              ])
+            ]
+          )
         ])
       ])
     ])
@@ -45467,15 +45798,23 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Pessoa Física ou Jurídica ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Pessoa Física")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Pessoa Jurídica")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "rr_pessoa" } },
+            [
+              _c("option", { attrs: { value: "Pessoa Física" } }, [
+                _vm._v("Pessoa Física")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Pessoa Jurídica" } }, [
+                _vm._v("Pessoa Jurídica")
+              ])
+            ]
+          )
         ])
       ])
     ])
@@ -45485,17 +45824,27 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Sexo ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha um sexo")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Masculino")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Feminino")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "rr_sexo" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha um sexo")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Masculino" } }, [
+                _vm._v("Masculino")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Feminino" } }, [
+                _vm._v("Feminino")
+              ])
+            ]
+          )
         ])
       ])
     ])
@@ -45511,13 +45860,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Nome ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "rr_nome" }
           })
         ])
       ])
@@ -45528,25 +45877,47 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Documento de identificação ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha um tipo")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Registro Geral")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Carteira Nacional de Habilitação")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Passaporte")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Carteira de Trabalho")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Carteira de Identidade")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Certificado de Dispensa de Incorporação")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "rr_documento" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha um tipo")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Registro Geral" } }, [
+                _vm._v("Registro Geral")
+              ]),
+              _vm._v(" "),
+              _c(
+                "option",
+                { attrs: { value: "Carteira Nacional de Habilitação" } },
+                [_vm._v("Carteira Nacional de Habilitação")]
+              ),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Passaporte" } }, [
+                _vm._v("Passaporte")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Carteira de Trabalho" } }, [
+                _vm._v("Carteira de Trabalho")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Carteira de Identidade" } }, [
+                _vm._v("Carteira de Identidade")
+              ]),
+              _vm._v(" "),
+              _c(
+                "option",
+                { attrs: { value: "Certificado de Dispensa de Incorporação" } },
+                [_vm._v("Certificado de Dispensa de Incorporação")]
+              )
+            ]
+          )
         ])
       ])
     ])
@@ -45556,13 +45927,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Número ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "rr_numeroIdentificacao" }
           })
         ])
       ])
@@ -45573,13 +45944,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Órgão Emissor ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "rr_emissor" }
           })
         ])
       ])
@@ -45589,18 +45960,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
-        _c("div", { staticClass: "col-xs-2" }, [
-          _c("span", [_c("strong", [_vm._v("Data de Emissão ")])]),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "date", required: "" }
-          })
-        ])
-      ])
-    ])
+    return _c("span", [_c("strong", [_vm._v("Data de Emissão ")])])
   },
   function() {
     var _vm = this
@@ -45613,13 +45973,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("E-mail ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "email", required: "" }
+            attrs: { type: "email", name: "rr_email" }
           })
         ])
       ])
@@ -45675,7 +46035,7 @@ var render = function() {
           _c("br"),
           _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
-            _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(1),
                 _vm._v(" "),
@@ -45689,7 +46049,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", required: "" }
+                  attrs: { type: "text", name: "rr_cep" }
                 }),
                 _vm._v(" "),
                 _vm._m(2),
@@ -45751,7 +46111,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c(
           "div",
           {
@@ -45760,7 +46120,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CRR_e1", id: "CRR_e1" }
+              attrs: {
+                type: "checkbox",
+                name: "rr_incerto",
+                value: "Endereco Incerto",
+                id: "CRR_e1"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -45798,13 +46163,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Estado ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "rr_estado" }
           })
         ])
       ])
@@ -45815,13 +46180,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Cidade ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "rr_cidade" }
           })
         ])
       ])
@@ -45832,13 +46197,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Bairro ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "rr_bairro" }
           })
         ])
       ])
@@ -45849,13 +46214,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "rr_tipoLogradouro" }
           })
         ])
       ])
@@ -45866,13 +46231,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Logradouro ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "rr_logradouro" }
           })
         ])
       ])
@@ -45883,13 +46248,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Número ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "rr_numeroEndereco" }
           })
         ])
       ])
@@ -45900,13 +46265,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Complemento ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "rr_complemento" }
           })
         ])
       ])
@@ -45917,19 +46282,34 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Tipo de Endereço ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha o tipo de endereço")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Residencial")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Empresarial")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Comercial")])
-          ])
+          _c(
+            "select",
+            {
+              staticClass: "custom-select",
+              attrs: { name: "rr_tipoEndereco" }
+            },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha o tipo de endereço")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Residencial" } }, [
+                _vm._v("Residencial")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Empresarial" } }, [
+                _vm._v("Empresarial")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Comercial" } }, [
+                _vm._v("Comercial")
+              ])
+            ]
+          )
         ])
       ])
     ])
@@ -45939,13 +46319,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Referência ")])]),
           _vm._v(" "),
           _c("textarea", {
             staticClass: "form-control",
-            attrs: { rows: "3", required: "" }
+            attrs: { rows: "3", name: "rr_referencia" }
           })
         ])
       ])
@@ -45956,7 +46336,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c(
           "div",
           {
@@ -45965,7 +46345,13 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CRR_e2", id: "CRR_e2" }
+              attrs: {
+                type: "checkbox",
+                name: "rr_comprovante",
+                value:
+                  "O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial",
+                id: "CRR_e2"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -46025,7 +46411,32 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "money",
+                      rawName: "v-money",
+                      value: "R$",
+                      expression: "'R$'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "rr_valorPedido" }
+                })
+              ])
+            ])
+          ])
+        ])
+      ])
     ]),
     _vm._v(" "),
     _c("br"),
@@ -46050,7 +46461,32 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(1)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(2),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "money",
+                      rawName: "v-money",
+                      value: "R$",
+                      expression: "'R$'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "rr_valorCausa" }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(3)
+          ])
+        ])
+      ])
     ]),
     _vm._v(" "),
     _c("br")
@@ -46061,104 +46497,68 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { attrs: { action: "" } }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "custom-control custom-control-inline custom-checkbox"
-              },
-              [
-                _c("input", {
-                  staticClass: "custom-control-input",
-                  attrs: { type: "checkbox", name: "CRR_vPC1", id: "CRR_vPC1" }
-                }),
-                _vm._v(" "),
-                _c(
-                  "label",
-                  {
-                    staticClass: "custom-control-label",
-                    attrs: { for: "CRR_vPC1" }
-                  },
-                  [_vm._v("O valor postulado é liquido? ")]
-                )
-              ]
-            )
-          ]),
+    return _c("div", [
+      _c(
+        "div",
+        { staticClass: "custom-control custom-control-inline custom-checkbox" },
+        [
+          _c("input", {
+            staticClass: "custom-control-input",
+            attrs: {
+              type: "checkbox",
+              name: "rr_valorLiquido",
+              value: "O valor postulado é liquido",
+              id: "CRR_vPC1"
+            }
+          }),
           _vm._v(" "),
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("* Valor Postulado")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  placeholder: "ex.: 1.000,00",
-                  required: ""
-                }
-              })
-            ])
-          ])
-        ])
-      ])
+          _c(
+            "label",
+            { staticClass: "custom-control-label", attrs: { for: "CRR_vPC1" } },
+            [_vm._v("O valor postulado é liquido? ")]
+          )
+        ]
+      )
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Valor da Causa")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  placeholder: "ex.: 1.000,00",
-                  required: ""
-                }
-              })
-            ])
-          ]),
+    return _c("span", [_c("strong", [_vm._v("* Valor Postulado")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("strong", [_vm._v("Valor da Causa")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "div",
+        { staticClass: "custom-control custom-control-inline custom-checkbox" },
+        [
+          _c("input", {
+            staticClass: "custom-control-input",
+            attrs: {
+              type: "checkbox",
+              name: "rr_pretensao",
+              value: "A pretensão deduzida versa sobre obrigações vincendas",
+              id: "CRR_vPC2"
+            }
+          }),
           _vm._v(" "),
-          _c("form", { attrs: { action: "" } }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "custom-control custom-control-inline custom-checkbox"
-              },
-              [
-                _c("input", {
-                  staticClass: "custom-control-input",
-                  attrs: { type: "checkbox", name: "CRR_vPC2", id: "CRR_vPC2" }
-                }),
-                _vm._v(" "),
-                _c(
-                  "label",
-                  {
-                    staticClass: "custom-control-label",
-                    attrs: { for: "CRR_vPC2" }
-                  },
-                  [
-                    _vm._v(
-                      "A pretensão deduzida versa sobre obrigações vincendas? "
-                    )
-                  ]
-                )
-              ]
-            )
-          ])
-        ])
-      ])
+          _c(
+            "label",
+            { staticClass: "custom-control-label", attrs: { for: "CRR_vPC2" } },
+            [_vm._v("A pretensão deduzida versa sobre obrigações vincendas? ")]
+          )
+        ]
+      )
     ])
   }
 ]
@@ -46204,7 +46604,56 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(2),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(4),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(5),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(6),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "##/##/####",
+                      expression: "'##/##/####'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "string", name: "r_nascimento" }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br")
+        ])
+      ])
     ])
   ])
 }
@@ -46213,131 +46662,159 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Estado Civil ")])]),
+          _vm._v(" "),
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "r_estadoCivil" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha o estado civil")
+              ]),
               _vm._v(" "),
-              _c("select", { staticClass: "custom-select" }, [
-                _c("option", [_vm._v("Escolha o estado civil")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Solteiro")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Casado")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Viúvo")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Separado Judicialmente")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Divorciado")])
+              _c("option", { attrs: { value: "Solteiro" } }, [
+                _vm._v("Solteiro")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Casado" } }, [_vm._v("Casado")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Viúvo" } }, [_vm._v("Viúvo")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Separado Judicialmente" } }, [
+                _vm._v("Separado Judicialmente")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Divorciado" } }, [
+                _vm._v("Divorciado")
               ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Profissão ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
-              _vm._v(" "),
-              _c("select", { staticClass: "custom-select" }, [
-                _c("option", [_vm._v("Brasileira")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Naturalizado brasileiro")]),
-                _vm._v(" "),
-                _c("option", [_vm._v("Estrangeira")])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Estado", required: "" }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Cidade", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "date", required: "" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br")
+            ]
+          )
+        ])
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Profissão ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", name: "r_profissao" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Nacionalidade ")])]),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              staticClass: "custom-select",
+              attrs: { name: "r_nacionalidade" }
+            },
+            [
+              _c("option", { attrs: { value: "Brasileira" } }, [
+                _vm._v("Brasileira")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Naturalizado brasileiro" } }, [
+                _vm._v("Naturalizado brasileiro")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Estrangeira" } }, [
+                _vm._v("Estrangeira")
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              placeholder: "Estado",
+              name: "r_estadoNaturalidade"
+            }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              placeholder: "Cidade",
+              name: "r_cidadeNaturalidade"
+            }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Nome do Pai ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", name: "r_pai" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "alinhado" } }, [
+      _c("div", { staticClass: "form-inline" }, [
+        _c("div", { staticClass: "col-xs-2" }, [
+          _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", name: "r_mae" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])])
   }
 ]
 render._withStripped = true
@@ -46399,7 +46876,7 @@ var render = function() {
           _c("br"),
           _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
-            _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(3),
                 _vm._v(" "),
@@ -46413,7 +46890,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", required: "" }
+                  attrs: { type: "text", name: "r_cpf" }
                 })
               ])
             ])
@@ -46437,7 +46914,26 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _vm._m(8),
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(8),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "##/##/####",
+                      expression: "'##/##/####'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "r_emissao" }
+                })
+              ])
+            ])
+          ]),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
@@ -46464,7 +46960,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c(
           "div",
           {
@@ -46473,7 +46969,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CR_dP1", id: "CR_dP1" }
+              attrs: {
+                type: "checkbox",
+                name: "r_estrangeiro",
+                value: "Estrangeiro e/ou brasileiro residente no exterior?",
+                id: "CR_dP1"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -46495,17 +46996,27 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Sexo ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha um sexo")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Masculino")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Feminino")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "r_sexo" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha um sexo")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Masculino" } }, [
+                _vm._v("Masculino")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Feminino" } }, [
+                _vm._v("Feminino")
+              ])
+            ]
+          )
         ])
       ])
     ])
@@ -46521,13 +47032,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Nome ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "r_nome" }
           })
         ])
       ])
@@ -46538,25 +47049,47 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Documento de identificação ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha um tipo")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Registro Geral")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Carteira Nacional de Habilitação")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Passaporte")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Carteira de Trabalho")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Carteira de Identidade")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Certificado de Dispensa de Incorporação")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "r_documento" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha um tipo")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Registro Geral" } }, [
+                _vm._v("Registro Geral")
+              ]),
+              _vm._v(" "),
+              _c(
+                "option",
+                { attrs: { value: "Carteira Nacional de Habilitação" } },
+                [_vm._v("Carteira Nacional de Habilitação")]
+              ),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Passaporte" } }, [
+                _vm._v("Passaporte")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Carteira de Trabalho" } }, [
+                _vm._v("Carteira de Trabalho")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Carteira de Identidade" } }, [
+                _vm._v("Carteira de Identidade")
+              ]),
+              _vm._v(" "),
+              _c(
+                "option",
+                { attrs: { value: "Certificado de Dispensa de Incorporação" } },
+                [_vm._v("Certificado de Dispensa de Incorporação")]
+              )
+            ]
+          )
         ])
       ])
     ])
@@ -46566,13 +47099,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Número ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "r_numeroIdentificacao" }
           })
         ])
       ])
@@ -46583,13 +47116,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Órgão Expedidor ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "r_expedidor" }
           })
         ])
       ])
@@ -46599,31 +47132,20 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
-        _c("div", { staticClass: "col-xs-2" }, [
-          _c("span", [_c("strong", [_vm._v("Data de Emissão ")])]),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "date", required: "" }
-          })
-        ])
-      ])
-    ])
+    return _c("span", [_c("strong", [_vm._v("Data de Emissão ")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("E-mail ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "email", required: "" }
+            attrs: { type: "email", name: "r_email" }
           })
         ])
       ])
@@ -46679,7 +47201,7 @@ var render = function() {
           _c("br"),
           _vm._v(" "),
           _c("div", { attrs: { id: "alinhado" } }, [
-            _c("form", { staticClass: "form-inline" }, [
+            _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(1),
                 _vm._v(" "),
@@ -46693,7 +47215,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", required: "" }
+                  attrs: { type: "text", name: "r_cep" }
                 }),
                 _vm._v(" "),
                 _vm._m(2),
@@ -46755,7 +47277,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c(
           "div",
           {
@@ -46764,7 +47286,12 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CR_e1", id: "CR_e1" }
+              attrs: {
+                type: "checkbox",
+                name: "r_incerto",
+                value: "Endereco Incerto",
+                id: "CR_e1"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -46802,13 +47329,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Estado ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "r_estado" }
           })
         ])
       ])
@@ -46819,13 +47346,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Cidade ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "r_cidade" }
           })
         ])
       ])
@@ -46836,13 +47363,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Bairro ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "r_bairro" }
           })
         ])
       ])
@@ -46853,13 +47380,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "r_tipoLogradouro" }
           })
         ])
       ])
@@ -46870,13 +47397,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Logradouro ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "r_logradouro" }
           })
         ])
       ])
@@ -46887,13 +47414,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Número ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "r_numeroEndereco" }
           })
         ])
       ])
@@ -46904,13 +47431,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Complemento ")])]),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control",
-            attrs: { type: "text", required: "" }
+            attrs: { type: "text", name: "r_complemento" }
           })
         ])
       ])
@@ -46921,19 +47448,31 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("* Tipo de Endereço ")])]),
           _vm._v(" "),
-          _c("select", { staticClass: "custom-select" }, [
-            _c("option", [_vm._v("Escolha o tipo de endereço")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Residencial")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Empresarial")]),
-            _vm._v(" "),
-            _c("option", [_vm._v("Comercial")])
-          ])
+          _c(
+            "select",
+            { staticClass: "custom-select", attrs: { name: "r_tipoEndereco" } },
+            [
+              _c("option", { attrs: { value: "" } }, [
+                _vm._v("Escolha o tipo de endereço")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Residencial" } }, [
+                _vm._v("Residencial")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Empresarial" } }, [
+                _vm._v("Empresarial")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "Comercial" } }, [
+                _vm._v("Comercial")
+              ])
+            ]
+          )
         ])
       ])
     ])
@@ -46943,13 +47482,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { staticClass: "form-inline" }, [
+      _c("div", { staticClass: "form-inline" }, [
         _c("div", { staticClass: "col-xs-2" }, [
           _c("span", [_c("strong", [_vm._v("Referência ")])]),
           _vm._v(" "),
           _c("textarea", {
             staticClass: "form-control",
-            attrs: { rows: "3", required: "" }
+            attrs: { rows: "3", name: "r_referencia" }
           })
         ])
       ])
@@ -46960,7 +47499,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { attrs: { id: "alinhado" } }, [
-      _c("form", { attrs: { action: "" } }, [
+      _c("div", [
         _c(
           "div",
           {
@@ -46969,7 +47508,13 @@ var staticRenderFns = [
           [
             _c("input", {
               staticClass: "custom-control-input",
-              attrs: { type: "checkbox", name: "CR_E2", id: "CR_E2" }
+              attrs: {
+                type: "checkbox",
+                name: "r_comprovante",
+                value:
+                  "O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial?",
+                id: "CR_E2"
+              }
             }),
             _vm._v(" "),
             _c(
@@ -47029,7 +47574,32 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "money",
+                      rawName: "v-money",
+                      value: "R$",
+                      expression: "'R$'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "r_valorPedido" }
+                })
+              ])
+            ])
+          ])
+        ])
+      ])
     ]),
     _vm._v(" "),
     _c("br"),
@@ -47054,7 +47624,32 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(1)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { attrs: { id: "alinhado" } }, [
+            _c("div", { staticClass: "form-inline" }, [
+              _c("div", { staticClass: "col-xs-2" }, [
+                _vm._m(2),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "money",
+                      rawName: "v-money",
+                      value: "R$",
+                      expression: "'R$'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "r_valorCausa" }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(3)
+          ])
+        ])
+      ])
     ]),
     _vm._v(" "),
     _c("br")
@@ -47065,104 +47660,68 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { attrs: { action: "" } }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "custom-control custom-control-inline custom-checkbox"
-              },
-              [
-                _c("input", {
-                  staticClass: "custom-control-input",
-                  attrs: { type: "checkbox", name: "CR_vPC1", id: "CR_vPC1" }
-                }),
-                _vm._v(" "),
-                _c(
-                  "label",
-                  {
-                    staticClass: "custom-control-label",
-                    attrs: { for: "CR_vPC1" }
-                  },
-                  [_vm._v("O valor postulado é liquido? ")]
-                )
-              ]
-            )
-          ]),
+    return _c("div", [
+      _c(
+        "div",
+        { staticClass: "custom-control custom-control-inline custom-checkbox" },
+        [
+          _c("input", {
+            staticClass: "custom-control-input",
+            attrs: {
+              type: "checkbox",
+              name: "r_valorLiquido",
+              value: "O valor postulado é liquido",
+              id: "CR_vPC1"
+            }
+          }),
           _vm._v(" "),
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("* Valor Postulado")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  placeholder: "ex.: 1.000,00",
-                  required: ""
-                }
-              })
-            ])
-          ])
-        ])
-      ])
+          _c(
+            "label",
+            { staticClass: "custom-control-label", attrs: { for: "CR_vPC1" } },
+            [_vm._v("O valor postulado é liquido? ")]
+          )
+        ]
+      )
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { attrs: { id: "alinhado" } }, [
-          _c("form", { staticClass: "form-inline" }, [
-            _c("div", { staticClass: "col-xs-2" }, [
-              _c("span", [_c("strong", [_vm._v("Valor da Causa")])]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: {
-                  type: "text",
-                  placeholder: "ex.: 1.000,00",
-                  required: ""
-                }
-              })
-            ])
-          ]),
+    return _c("span", [_c("strong", [_vm._v("* Valor Postulado")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", [_c("strong", [_vm._v("Valor da Causa")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "div",
+        { staticClass: "custom-control custom-control-inline custom-checkbox" },
+        [
+          _c("input", {
+            staticClass: "custom-control-input",
+            attrs: {
+              type: "checkbox",
+              name: "r_pretensao",
+              value: "A pretensão deduzida versa sobre obrigações vincendas",
+              id: "CR_vPC2"
+            }
+          }),
           _vm._v(" "),
-          _c("form", { attrs: { action: "" } }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "custom-control custom-control-inline custom-checkbox"
-              },
-              [
-                _c("input", {
-                  staticClass: "custom-control-input",
-                  attrs: { type: "checkbox", name: "CR_vPC2", id: "CR_vPC2" }
-                }),
-                _vm._v(" "),
-                _c(
-                  "label",
-                  {
-                    staticClass: "custom-control-label",
-                    attrs: { for: "CR_vPC2" }
-                  },
-                  [
-                    _vm._v(
-                      "A pretensão deduzida versa sobre obrigações vincendas? "
-                    )
-                  ]
-                )
-              ]
-            )
-          ])
-        ])
-      ])
+          _c(
+            "label",
+            { staticClass: "custom-control-label", attrs: { for: "CR_vPC2" } },
+            [_vm._v("A pretensão deduzida versa sobre obrigações vincendas? ")]
+          )
+        ]
+      )
     ])
   }
 ]
@@ -48136,7 +48695,7 @@ var render = function() {
                   _vm._v("Juizado Especial Civil")
                 ]),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "Órfãos" } }, [
+                _c("option", { attrs: { value: "Órfãos e Sucessões" } }, [
                   _vm._v("Órfãos e Sucessões")
                 ]),
                 _vm._v(" "),
@@ -48167,9 +48726,9 @@ var render = function() {
                     _vm.showCompetencia === "Empresarial" ||
                     _vm.showCompetencia === "Família" ||
                     _vm.showCompetencia === "Fazenda Pública" ||
-                    _vm.showCompetencia === "Órfãos"),
+                    _vm.showCompetencia === "Órfãos e Sucessões"),
                 expression:
-                  "showComarca !== '' && (showCompetencia === 'Cível' || showCompetencia === 'Empresarial' || showCompetencia === 'Família' || showCompetencia === 'Fazenda Pública' || showCompetencia === 'Órfãos')"
+                  "showComarca !== '' && (showCompetencia === 'Cível' || showCompetencia === 'Empresarial' || showCompetencia === 'Família' || showCompetencia === 'Fazenda Pública' || showCompetencia === 'Órfãos e Sucessões')"
               }
             ]
           },
@@ -49970,10 +50529,10 @@ var render = function() {
                     name: "show",
                     rawName: "v-show",
                     value:
-                      _vm.showCompetencia === "Órfãos" &&
+                      _vm.showCompetencia === "Órfãos e Sucessões" &&
                       _vm.showComarca !== "",
                     expression:
-                      "showCompetencia === 'Órfãos' && showComarca !== ''"
+                      "showCompetencia === 'Órfãos e Sucessões' && showComarca !== ''"
                   }
                 ],
                 staticClass: "custom-select",

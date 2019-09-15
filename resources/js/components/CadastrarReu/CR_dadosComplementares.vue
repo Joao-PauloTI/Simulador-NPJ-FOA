@@ -11,84 +11,84 @@
                 <div class="container">
                     <!-- Estado Civil -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Estado Civil </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha o estado civil</option>
-                                    <option>Solteiro</option>
-                                    <option>Casado</option>
-                                    <option>Viúvo</option>
-                                    <option>Separado Judicialmente</option>
-                                    <option>Divorciado</option>
+                                <select class="custom-select" name="r_estadoCivil">
+                                    <option value="">Escolha o estado civil</option>
+                                    <option value="Solteiro">Solteiro</option>
+                                    <option value="Casado">Casado</option>
+                                    <option value="Viúvo">Viúvo</option>
+                                    <option value="Separado Judicialmente">Separado Judicialmente</option>
+                                    <option value="Divorciado">Divorciado</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Profissão -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Profissão </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="r_profissao">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Nacionalidade -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nacionalidade </strong> </span>
-                                <select class="custom-select">
-                                    <option>Brasileira</option>
-                                    <option>Naturalizado brasileiro</option>
-                                    <option>Estrangeira</option>
+                                <select class="custom-select" name="r_nacionalidade">
+                                    <option value="Brasileira">Brasileira</option>
+                                    <option value="Naturalizado brasileiro">Naturalizado brasileiro</option>
+                                    <option value="Estrangeira">Estrangeira</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Naturalidade -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Escolha a Naturalidade </strong> </span>
-                                <input type="text" class="form-control" placeholder="Estado" required>
-                                <input type="text" class="form-control" placeholder="Cidade" required>
+                                <input type="text" class="form-control" placeholder="Estado" name="r_estadoNaturalidade">
+                                <input type="text" class="form-control" placeholder="Cidade" name="r_cidadeNaturalidade">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Nome do Pai-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nome do Pai </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="r_pai">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Nome da Mãe-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nome da Mãe </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="r_mae">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Data de Nascimento -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Data de Nascimento </strong> </span>
-                                <input type="date" class="form-control" required>
+                                <input type="string" class="form-control" v-mask="'##/##/####'" name="r_nascimento">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                 </div>

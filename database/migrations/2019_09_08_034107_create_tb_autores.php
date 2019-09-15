@@ -21,55 +21,55 @@ class CreateTbAutores extends Migration
             //$table->integer('a_processo_id')->unsigned();
             //$table->foreign('a_processo_id')->references('id')->on('tb_processos')->onDelete('cascade');
             //Dados Pessoais
-            $table->string('a_incapaz');
-            $table->string('a_massa'); //Massa Falida
-            $table->string('a_insolvente'); //Insolvente Civil
-            $table->string('a_preso');
-            $table->string('a_espolio'); //Espólio com interesse de Incapaz
-            $table->string('a_condominio');
-            $table->string('a_ministerio'); //Ministério Público
-            $table->string('a_pessoa'); //Pessoa Física ou Jurídica
-            $table->string('a_estrangeiro'); //Estrangeiro e/ou brasileiro residente no exterior?
-            $table->string('a_sexo');
-            $table->string('a_cpf'); //CPF/CPNJ
-            $table->string('a_nome');
-            $table->string('a_menor'); //Menor de idade
-            $table->string('a_documento'); //Documento de identificação
-            $table->string('a_numeroIdentificacao');
-            $table->string('a_expedidor'); //Orgão expedidor
-            $table->string('a_emissao'); //Data de emissão
-            $table->string('a_telefone');
-            $table->string('a_email');
+            $table->string('a_incapaz')->nullable();
+            $table->string('a_massa')->nullable(); //Massa Falida
+            $table->string('a_insolvente')->nullable(); //Insolvente Civil
+            $table->string('a_preso')->nullable();
+            $table->string('a_espolio')->nullable(); //Espólio com interesse de Incapaz
+            $table->string('a_condominio')->nullable();
+            $table->string('a_ministerio')->nullable(); //Ministério Público
+            $table->string('a_pessoa')->nullable(); //Pessoa Física ou Jurídica
+            $table->string('a_estrangeiro')->nullable(); //Estrangeiro e/ou brasileiro residente no exterior?
+            $table->string('a_sexo')->nullable();
+            $table->string('a_cpf')->nullable(); //CPF/CPNJ
+            $table->string('a_nome')->nullable();
+            $table->string('a_menor')->nullable(); //Menor de idade
+            $table->string('a_documento')->nullable(); //Documento de identificação
+            $table->string('a_numeroIdentificacao')->nullable();
+            $table->string('a_expedidor')->nullable(); //Orgão expedidor
+            $table->string('a_emissao')->nullable(); //Data de emissão
+            $table->string('a_telefone')->nullable();
+            $table->string('a_email')->nullable();
             //Advogado Representante
-            $table->string('a_representa');
-            $table->string('a_intimacao');
+            $table->string('a_representa')->nullable();
+            $table->string('a_intimacao')->nullable();
             //Endereço
-            $table->string('a_cep');
-            $table->string('a_estado');
-            $table->string('a_cidade');
-            $table->string('a_bairro');
-            $table->string('a_tipoLogradouro');
-            $table->string('a_logradouro');
-            $table->string('a_numeroEndereco');
-            $table->string('a_complemento');
-            $table->string('a_tipoEndereco');
-            $table->longText('a_referencia');
-            $table->string('a_comprovante'); //O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial?
+            $table->string('a_cep')->nullable();
+            $table->string('a_estado')->nullable();
+            $table->string('a_cidade')->nullable();
+            $table->string('a_bairro')->nullable();
+            $table->string('a_tipoLogradouro')->nullable();
+            $table->string('a_logradouro')->nullable();
+            $table->string('a_numeroEndereco')->nullable();
+            $table->string('a_complemento')->nullable();
+            $table->string('a_tipoEndereco')->nullable();
+            $table->longText('a_referencia')->nullable();
+            $table->string('a_comprovante')->nullable(); //O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial?
             //Valor do Pedido
-            $table->string('a_valorPedido');
-            $table->string('a_valorLiquido'); //O valor postulado é liquido?
+            $table->string('a_valorPedido')->nullable();
+            $table->string('a_valorLiquido')->nullable(); //O valor postulado é liquido?
             //Valor da Causa
-            $table->string('a_valorCausa');
-            $table->string('a_pretensao'); //A pretensão deduzida versa sobre obrigações vincendas?
+            $table->string('a_valorCausa')->nullable();
+            $table->string('a_pretensao')->nullable(); //A pretensão deduzida versa sobre obrigações vincendas?
             //Dados Complementares
-            $table->string('a_estadoCivil');
-            $table->string('a_profissao');
-            $table->string('a_nacionalidade');
-            $table->string('a_estadoNaturalidade');
-            $table->string('a_cidadeNaturalidade');
-            $table->string('a_pai'); //Nome do Pai
-            $table->string('a_mae'); //Nome do Mãe
-            $table->string('a_nascimento'); //Data de Nascimento
+            $table->string('a_estadoCivil')->nullable();
+            $table->string('a_profissao')->nullable();
+            $table->string('a_nacionalidade')->nullable();
+            $table->string('a_estadoNaturalidade')->nullable();
+            $table->string('a_cidadeNaturalidade')->nullable();
+            $table->string('a_pai')->nullable(); //Nome do Pai
+            $table->string('a_mae')->nullable(); //Nome do Mãe
+            $table->string('a_nascimento')->nullable(); //Data de Nascimento
             $table->timestamps(); //Hora e Data de cadastro
         });
     }

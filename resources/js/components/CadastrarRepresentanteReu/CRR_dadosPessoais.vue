@@ -13,137 +13,137 @@
                 <div class="container">
                     <!-- Parte -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Parte </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha um tipo</option>
-                                    <option>Curador</option>
-                                    <option>Síndico</option>
-                                    <option>Tutor</option>
-                                    <option>Assistente</option>
-                                    <option>Representante</option>
-                                    <option>Procurador</option>
-                                    <option>Amicus Curiae</option>
-                                    <option>Escritório de Advocacia</option>
+                                <select class="custom-select" name="rr_parte">
+                                    <option value="">Escolha um tipo</option>
+                                    <option value="Curador">Curador</option>
+                                    <option value="Síndico">Síndico</option>
+                                    <option value="Tutor">Tutor</option>
+                                    <option value="Assistente">Assistente</option>
+                                    <option value="Representante">Representante</option>
+                                    <option value="Procurador">Procurador</option>
+                                    <option value="Amicus Curiae">Amicus Curiae</option>
+                                    <option value="Escritório de Advocacia">Escritório de Advocacia</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Pessoa Física ou Jurídica -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Pessoa Física ou Jurídica </strong> </span>
-                                <select class="custom-select">
-                                    <option>Pessoa Física</option>
-                                    <option>Pessoa Jurídica</option>
+                                <select class="custom-select" name="rr_pessoa">
+                                    <option value="Pessoa Física">Pessoa Física</option>
+                                    <option value="Pessoa Jurídica">Pessoa Jurídica</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Sexo -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Sexo </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha um sexo</option>
-                                    <option>Masculino</option>
-                                    <option>Feminino</option>
+                                <select class="custom-select" name="rr_sexo">
+                                    <option value="">Escolha um sexo</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Feminino">Feminino</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- CPF/CNPJ-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CPF/CNPJ </strong> </span>
-                                <input type="text" class="form-control" v-mask="'###.###.###-##'" required>
+                                <input type="text" class="form-control" v-mask="'###.###.###-##'" name="rr_cpf">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Nome-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Nome </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="rr_nome">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Documento de identificação -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Documento de identificação </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha um tipo</option>
-                                    <option>Registro Geral</option>
-                                    <option>Carteira Nacional de Habilitação</option>
-                                    <option>Passaporte</option>
-                                    <option>Carteira de Trabalho</option>
-                                    <option>Carteira de Identidade</option>
-                                    <option>Certificado de Dispensa de Incorporação</option>
+                                <select class="custom-select" name="rr_documento">
+                                    <option value="">Escolha um tipo</option>
+                                    <option value="Registro Geral">Registro Geral</option>
+                                    <option value="Carteira Nacional de Habilitação">Carteira Nacional de Habilitação</option>
+                                    <option value="Passaporte">Passaporte</option>
+                                    <option value="Carteira de Trabalho">Carteira de Trabalho</option>
+                                    <option value="Carteira de Identidade">Carteira de Identidade</option>
+                                    <option value="Certificado de Dispensa de Incorporação">Certificado de Dispensa de Incorporação</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Número -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Número </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="rr_numeroIdentificacao">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Órgão Emissor -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Órgão Emissor </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="rr_emissor">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Data de Emissão -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Data de Emissão </strong> </span>
-                                <input type="date" class="form-control" required>
+                                <input type="text" class="form-control" name="rr_emissao" v-mask="'##/##/####'">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Telefone -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Telefone </strong> </span>
-                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" required>
+                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" name="rr_telefone">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- E-mail -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>E-mail </strong> </span>
-                                <input type="email" class="form-control" required>
+                                <input type="email" class="form-control" name="rr_email">
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

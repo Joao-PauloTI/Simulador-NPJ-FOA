@@ -20,7 +20,6 @@ class RepresentanteAutor extends Model
 		'ra_sexo',
 		'ra_cpf',
 		'ra_nome',
-		'ra_menor',
 		'ra_documento',
 		'ra_numeroIdentificacao',
 		'ra_emissor',

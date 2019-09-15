@@ -15,104 +15,104 @@
                     <p id="alinhado"><strong>Tipo</strong> Réu</p>
                     <!-- Estrangeiro/Brasileiro -->
                     <div id="alinhado">
-                        <form action="">
+                        <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CR_dP1" id="CR_dP1">
+                                <input type="checkbox" class="custom-control-input" name="r_estrangeiro" value="Estrangeiro e/ou brasileiro residente no exterior?" id="CR_dP1">
                                 <label class="custom-control-label" for="CR_dP1"><strong>Estrangeiro e/ou brasileiro residente no exterior? </strong> </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Sexo -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Sexo </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha um sexo</option>
-                                    <option>Masculino</option>
-                                    <option>Feminino</option>
+                                <select class="custom-select" name="r_sexo">
+                                    <option value="">Escolha um sexo</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Feminino">Feminino</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- CPF/CNPJ-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CPF/CNPJ </strong> </span>
-                                <input type="text" class="form-control" v-mask="'###.###.###-##'" required>
+                                <input type="text" class="form-control" v-mask="'###.###.###-##'" name="r_cpf">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Nome-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Nome </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="r_nome">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Documento de identificação -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Documento de identificação </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha um tipo</option>
-                                    <option>Registro Geral</option>
-                                    <option>Carteira Nacional de Habilitação</option>
-                                    <option>Passaporte</option>
-                                    <option>Carteira de Trabalho</option>
-                                    <option>Carteira de Identidade</option>
-                                    <option>Certificado de Dispensa de Incorporação</option>
+                                <select class="custom-select" name="r_documento">
+                                    <option value="">Escolha um tipo</option>
+                                    <option value="Registro Geral">Registro Geral</option>
+                                    <option value="Carteira Nacional de Habilitação">Carteira Nacional de Habilitação</option>
+                                    <option value="Passaporte">Passaporte</option>
+                                    <option value="Carteira de Trabalho">Carteira de Trabalho</option>
+                                    <option value="Carteira de Identidade">Carteira de Identidade</option>
+                                    <option value="Certificado de Dispensa de Incorporação">Certificado de Dispensa de Incorporação</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Número -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Número </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="r_numeroIdentificacao">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Órgão Expedidor -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Órgão Expedidor </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="r_expedidor">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Data de emissão -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Data de Emissão </strong> </span>
-                                <input type="date" class="form-control" required>
+                                <input type="text" class="form-control" name="r_emissao" v-mask="'##/##/####'">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- E-mail -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>E-mail </strong> </span>
-                                <input type="email" class="form-control" required>
+                                <input type="email" class="form-control" name="r_email">
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

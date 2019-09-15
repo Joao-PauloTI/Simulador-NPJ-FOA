@@ -12,6 +12,8 @@ class Reu extends Model
 		'r_sexo',
 		'r_cpf',
 		'r_nome',
+		'r_documento',
+		'r_numeroIdentificacao',
 		'r_expedidor',
 		'r_emissao',
 		'r_email',

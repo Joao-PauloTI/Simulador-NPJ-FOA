@@ -13,179 +13,179 @@
                 <div class="container">
                     <div align="center">
                         <!--Opções de marcar-->
-                        <form action="">
+                        <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP1" id="CRA_dP1">
+                                <input type="checkbox" class="custom-control-input" name="ra_incapaz" value="Incapaz" id="CRA_dP1">
                                 <label class="custom-control-label" for="CRA_dP1"> Incapaz
                                 </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP2" id="CRA_dP2">
+                                <input type="checkbox" class="custom-control-input" name="ra_massa" value="Massa Falida" id="CRA_dP2">
                                 <label class="custom-control-label" for="CRA_dP2"> Massa Falida </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP3" id="CRA_dP3">
+                                <input type="checkbox" class="custom-control-input" name="ra_insolvente" value="Insolvente Civil" id="CRA_dP3">
                                 <label class="custom-control-label" for="CRA_dP3"> Insolvente Civil
                                 </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP4" id="CRA_dP4">
+                                <input type="checkbox" class="custom-control-input" name="ra_preso" value="Preso" id="CRA_dP4">
                                 <label class="custom-control-label" for="CRA_dP4"> Preso </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP5" id="CRA_dP5">
+                                <input type="checkbox" class="custom-control-input" name="ra_espolio" value="Espólio com interesse de Incapaz" id="CRA_dP5">
                                 <label class="custom-control-label" for="CRA_dP5"> Espólio com interesse de Incapaz </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP6" id="CRA_dP6">
+                                <input type="checkbox" class="custom-control-input" name="ra_condominio" value="Condomínio" id="CRA_dP6">
                                 <label class="custom-control-label" for="CRA_dP6"> Condomínio </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Parte -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Parte </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha um tipo</option>
-                                    <option>Curador</option>
-                                    <option>Síndico</option>
-                                    <option>Tutor</option>
-                                    <option>Assistente</option>
-                                    <option>Representante</option>
-                                    <option>Procurador</option>
-                                    <option>Amicus Curiae</option>
-                                    <option>Escritório de Advocacia</option>
+                                <select class="custom-select" name="ra_parte">
+                                    <option value="">Escolha um tipo</option>
+                                    <option value="Curador">Curador</option>
+                                    <option value="Síndico">Síndico</option>
+                                    <option value="Tutor">Tutor</option>
+                                    <option value="Assistente">Assistente</option>
+                                    <option value="Representante">Representante</option>
+                                    <option value="Procurador">Procurador</option>
+                                    <option value="Amicus Curiae">Amicus Curiae</option>
+                                    <option value="Escritório de Advocacia">Escritório de Advocacia</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Ministério Público -->
                     <div id="alinhado">
-                        <form action="">
+                        <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="CRA_dP7" id="CRA_dP7">
+                                <input type="checkbox" class="custom-control-input" name="ra_ministerio" value="Ministério Público?" id="CRA_dP7">
                                 <label class="custom-control-label" for="CRA_dP7"><strong>Ministério Público? </strong> </label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Pessoa Física ou Jurídica -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Pessoa Física ou Jurídica </strong> </span>
-                                <select class="custom-select">
-                                    <option>Pessoa Física</option>
-                                    <option>Pessoa Jurídica</option>
+                                <select class="custom-select" name="ra_pessoa">
+                                    <option value="Pessoa Física">Pessoa Física</option>
+                                    <option value="Pessoa Jurídica">Pessoa Jurídica</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Sexo -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Sexo </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha um sexo</option>
-                                    <option>Masculino</option>
-                                    <option>Feminino</option>
+                                <select class="custom-select" name="ra_sexo">
+                                    <option value="">Escolha um sexo</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Feminino">Feminino</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- CPF/CNPJ-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CPF/CNPJ </strong> </span>
-                                <input type="text" class="form-control" v-mask="'###.###.###-##'" required>
+                                <input type="text" class="form-control" v-mask="'###.###.###-##'" name="ra_cpf">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Nome-->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Nome </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="ra_nome">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Documento de identificação -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Documento de identificação </strong> </span>
-                                <select class="custom-select">
-                                    <option>Escolha um tipo</option>
-                                    <option>Registro Geral</option>
-                                    <option>Carteira Nacional de Habilitação</option>
-                                    <option>Passaporte</option>
-                                    <option>Carteira de Trabalho</option>
-                                    <option>Carteira de Identidade</option>
-                                    <option>Certificado de Dispensa de Incorporação</option>
+                                <select class="custom-select" name="ra_documento">
+                                    <option value="">Escolha um tipo</option>
+                                    <option value="Registro Geral">Registro Geral</option>
+                                    <option value="Carteira Nacional de Habilitação">Carteira Nacional de Habilitação</option>
+                                    <option value="Passaporte">Passaporte</option>
+                                    <option value="Carteira de Trabalho">Carteira de Trabalho</option>
+                                    <option value="Carteira de Identidade">Carteira de Identidade</option>
+                                    <option value="Certificado de Dispensa de Incorporação">Certificado de Dispensa de Incorporação</option>
                                 </select>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Número -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Número </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="ra_numeroIdentificacao">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
-                    <!-- Órgão Expedidor -->
+                    <!-- Órgão Emissor -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Órgão Emissor </strong> </span>
-                                <input type="text" class="form-control" required>
+                                <input type="text" class="form-control" name="ra_emissor">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Data de Emissão -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Data de Emissão </strong> </span>
-                                <input type="date" class="form-control" required>
+                                <input type="string" class="form-control" name="ra_emissao" v-mask="'##/##/####'">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- Telefone -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Telefone </strong> </span>
-                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" required>
+                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" name="ra_telefone">
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <br>
                     <!-- E-mail -->
                     <div id="alinhado">
-                        <form class="form-inline">
+                        <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>E-mail </strong> </span>
-                                <input type="email" class="form-control" required>
+                                <input type="email" class="form-control" name="ra_email">
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>

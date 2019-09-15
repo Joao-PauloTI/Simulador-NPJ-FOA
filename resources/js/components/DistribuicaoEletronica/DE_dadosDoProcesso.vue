@@ -85,14 +85,14 @@
                             <option value="Família">Família</option>
                             <option value="Fazenda Pública">Fazenda Pública</option>
                             <option value="Juizado Especial Civil">Juizado Especial Civil</option>
-                            <option value="Órfãos">Órfãos e Sucessões</option>
+                            <option value="Órfãos e Sucessões">Órfãos e Sucessões</option>
                             <option value="Registro Civil de Pessoas Naturais">Registro Civil de Pessoas Naturais</option>
                             <option value="Registro Público">Registro Público</option>
                         </select>
                     </label>
                 </div>
                 <!--Opção extra para competência Cível, Empresarial, Família, Fazenda Pública e Órfãos e Sucessões-->
-                <div v-show="showComarca !== '' && (showCompetencia === 'Cível' || showCompetencia === 'Empresarial' || showCompetencia === 'Família' || showCompetencia === 'Fazenda Pública' || showCompetencia === 'Órfãos')">
+                <div v-show="showComarca !== '' && (showCompetencia === 'Cível' || showCompetencia === 'Empresarial' || showCompetencia === 'Família' || showCompetencia === 'Fazenda Pública' || showCompetencia === 'Órfãos e Sucessões')">
                     <div class="custom-control custom-control-inline custom-checkbox">
                         <input type="checkbox" name="p_conciliacao" value="Autor opta pela realização de audiência de
                             conciliação ou de mediação" class="custom-control-input" id="opcaoExtra">
@@ -384,7 +384,7 @@
                             <option value="Protesto – CPC">Protesto – CPC</option>
                         </select>
                         <!--Órfãos e Sucessões-->
-                        <select class="custom-select" name="p_classe" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'Órfãos' && showComarca !== ''">
+                        <select class="custom-select" name="p_classe" id="DE_dDP_classe" v-model="showClasse" v-show="showCompetencia === 'Órfãos e Sucessões' && showComarca !== ''">
                             <option value="">Escolha uma classe</option>
                             <option value="Abertura, Registro e Cumprimento de Testamento">Abertura, Registro e Cumprimento de Testamento</option>
                             <option value="Alienação Judicial">Alienação Judicial</option>

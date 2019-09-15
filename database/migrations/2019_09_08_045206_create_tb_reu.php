@@ -18,44 +18,46 @@ class CreateTbReu extends Migration
         Schema::create('tb_reus', function (Blueprint $table) {
             $table->increments('id');
             //Chave estrangeira
-            $table->integer('r_processo_id')->unsigned();
-            $table->foreign('r_processo_id')->references('id')->on('tb_processos');
+            //$table->integer('r_processo_id')->unsigned();
+            //$table->foreign('r_processo_id')->references('id')->on('tb_processos');
             //Dados Pessoais
-            $table->string('r_estrangeiro'); //Estrangeiro e/ou brasileiro residente no exterior?
-            $table->string('r_sexo');
-            $table->bigInteger('r_cpf'); //CPF/CPNJ
-            $table->string('r_nome');
-            $table->string('r_expedidor'); //Orgão expedidor
-            $table->date('r_emissao'); //Data de emissão
-            $table->string('r_email');
+            $table->string('r_estrangeiro')->nullable(); //Estrangeiro e/ou brasileiro residente no exterior?
+            $table->string('r_sexo')->nullable();
+            $table->string('r_cpf')->nullable(); //CPF/CPNJ
+            $table->string('r_nome')->nullable();
+            $table->string('r_documento')->nullable();
+            $table->string('r_numeroIdentificacao')->nullable();
+            $table->string('r_expedidor')->nullable(); //Orgão expedidor
+            $table->string('r_emissao')->nullable(); //Data de emissão
+            $table->string('r_email')->nullable();
             //Endereço
-            $table->string('r_incerto'); //Endereço incerto
-            $table->integer('r_cep');
-            $table->string('r_estado');
-            $table->string('r_cidade');
-            $table->string('r_bairro');
-            $table->string('r_tipoLogradouro');
-            $table->string('r_logradouro');
-            $table->integer('r_numeroEndereco');
-            $table->string('r_complemento');
-            $table->string('r_tipoEndereco');
-            $table->string('r_referencia');
-            $table->string('r_comprovante'); //O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial?
+            $table->string('r_incerto')->nullable(); //Endereço incerto
+            $table->string('r_cep')->nullable();
+            $table->string('r_estado')->nullable();
+            $table->string('r_cidade')->nullable();
+            $table->string('r_bairro')->nullable();
+            $table->string('r_tipoLogradouro')->nullable();
+            $table->string('r_logradouro')->nullable();
+            $table->string('r_numeroEndereco')->nullable();
+            $table->string('r_complemento')->nullable();
+            $table->string('r_tipoEndereco')->nullable();
+            $table->string('r_referencia')->nullable();
+            $table->string('r_comprovante')->nullable(); //O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial?
             //Valor do Pedido
-            $table->decimal('r_valorPedido', 9, 2);
-            $table->string('r_valorLiquido'); //O valor postulado é liquido?
+            $table->string('r_valorPedido');
+            $table->string('r_valorLiquido')->nullable(); //O valor postulado é liquido?
             //Valor da Causa
-            $table->decimal('r_valorCausa', 9, 2);
-            $table->string('r_pretensao'); //A pretensão deduzida versa sobre obrigações vincendas?
+            $table->string('r_valorCausa');
+            $table->string('r_pretensao')->nullable(); //A pretensão deduzida versa sobre obrigações vincendas?
             //Dados Complementares
-            $table->string('r_estadoCivil');
-            $table->string('r_profissao');
-            $table->string('r_nacionalidade');
-            $table->string('r_estadoNaturalidade');
-            $table->string('r_cidadeNaturalidade');
-            $table->string('r_pai'); //Nome do Pai
-            $table->string('r_mae'); //Nome do Mãe
-            $table->date('r_nascimento'); //Data de Nascimento
+            $table->string('r_estadoCivil')->nullable();
+            $table->string('r_profissao')->nullable();
+            $table->string('r_nacionalidade')->nullable();
+            $table->string('r_estadoNaturalidade')->nullable();
+            $table->string('r_cidadeNaturalidade')->nullable();
+            $table->string('r_pai')->nullable(); //Nome do Pai
+            $table->string('r_mae')->nullable(); //Nome do Mãe
+            $table->string('r_nascimento')->nullable(); //Data de Nascimento
             $table->timestamps(); //Hora e data de cadastro
         });
     }

@@ -20,6 +20,7 @@ class RepresentanteReu extends Model
 		'rr_emissao',
 		'rr_telefone',
 		'rr_email',
+		'rr_incerto',
 		'rr_cep',
 		'rr_estado',
 		'rr_cidade',

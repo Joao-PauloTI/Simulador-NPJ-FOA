@@ -17,10 +17,8 @@
 					<br>
 					<!--Botões SALVAR/LIMPAR-->
 					<div align="center">
-						<form action="">
-							<button type="submit" class="btn btn-primary">SALVAR</button>
-							<button type="reset" class="btn btn-danger">LIMPAR</button>
-						</form>
+						<button type="submit" class="btn btn-primary">SALVAR</button>
+						<button type="reset" class="btn btn-danger">LIMPAR</button>
 					</div>
 				</form>
 				<br>
