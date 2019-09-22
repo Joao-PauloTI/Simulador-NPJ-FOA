@@ -17,13 +17,10 @@ class CreateTbDocumentos extends Migration
 
         Schema::create('tb_documentos', function (Blueprint $table) {
             $table->increments('id');
-            //Chave estrangeira
-            $table->integer('d_processo_id')->unsigned();
-            $table->foreign('d_processo_id')->references('id')->on('tb_processos')->onDelete('cascade');
             //Documentos
-            $table->string('d_arquivo');
-            $table->string('d_descricao');
-            $table->string('d_tipoArquivo'); //atributo para categorizar os arquivos, mudando de acordo com a página de documento
+            $table->string('d_arquivo')->nullable();
+            $table->string('d_descricao')->nullable();
+            $table->string('d_tipoArquivo')->nullable(); //atributo para categorizar os arquivos, mudando de acordo com a página de documento
             $table->timestamps(); //Hora e Data de cadsatro
         });
     }

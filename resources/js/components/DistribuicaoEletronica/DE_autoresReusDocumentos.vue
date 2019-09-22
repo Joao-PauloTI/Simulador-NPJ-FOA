@@ -9,7 +9,28 @@
                 </h5>
             </div>
             <div class="card-body">
-                <a href="cadastrarautor" target="popup" onclick="window.open('cadastrarautor', 'popup', 'width=1000, height=700');">Cadastrar Autor </a>
+                <!--
+                <a href="cadastrarautor" target="popup" onclick="window.open('cadastrarautor', 'popup', 'width=1000, height=700');">Cadastrar Autor </a> -->
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#autorModal">Cadastrar Autor</button>
+                <div class="modal fade" id="autorModal">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <cadadospessoais></cadadospessoais>
+                                <caadvogadorepresentante></caadvogadorepresentante>
+                                <caendereco></caendereco>
+                                <cavalorpedidocausa></cavalorpedidocausa>
+                                <cadadoscomplementares></cadadoscomplementares>
+                                <br>
+                                <!--Botões SALVAR/FECHAR-->
+                                <div align="center">
+                                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <span> | </span>
                 <a href="cadastrarrepresentanteautor" target="popup" onclick="window.open('cadastrarrepresentanteautor', 'popup', 'width=1000, height=700');"> Cadastrar Representante do Autor </a>
             </div>
@@ -54,6 +75,13 @@
     </div>
 </template>
 <script>
+//Modal de cadastro de autor
+import cadadospessoais from '../CadastrarAutor/CA_dadosPessoais'
+import caadvogadorepresentante from '../CadastrarAutor/CA_advogadoRepresentante'
+import caendereco from '../CadastrarAutor/CA_endereco'
+import cavalorpedidocausa from '../CadastrarAutor/CA_valorPedidoCausa'
+import cadadoscomplementares from '../CadastrarAutor/CA_dadosComplementares'
+
 export default {
     name: 'deautoresReusDocumentos',
     data: function() {

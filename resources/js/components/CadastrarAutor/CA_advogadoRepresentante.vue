@@ -9,34 +9,30 @@
             </div>
             <div class="card-body">
                 <div class="container">
-                    <div class="row">
-                        <!-- OAB -->
-                        <div class="col-sm">
-                            <p><strong>OAB</strong></p>
-                            <p>RJ123456</p>
-                        </div>
-                        <!-- Nome -->
-                        <div class="col-sm">
-                            <p><strong>Nome</strong></p>
-                            <p>Lorem Ipsum Dolor Sit Amet</p>
-                        </div>
-                        <!-- Representa -->
-                        <div class="col-sm" align="center">
-                            <p><strong>Representa</strong></p>
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_representa" value="Representa" id="CA_aR1">
-                                <label class="custom-control-label" for="CA_aR1"></label>
-                            </div>
-                        </div>
-                        <!-- Intimação -->
-                        <div class="col-sm" align="center">
-                            <p><strong>Intimação</strong></p>
-                            <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_intimacao" value="Intimação" id="CA_aR2">
-                                <label class="custom-control-label" for="CA_aR2"></label>
-                            </div>
-                        </div>
-                    </div>
+                    <table class="table table-borderless">
+                        <thead>
+                            <th>OAB</th>
+                            <th>Nome</th>
+                            <th>Representa</th>
+                            <th>Intimação</th>
+                        </thead>
+                        <tbody>
+                            <td>RJ123456</td>
+                            <td>Lorem Ipsum Dolor Sit Amet</td>
+                            <td>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="a_representa" value="Representa" id="CA_aR1">
+                                    <label class="custom-control-label" for="CA_aR1"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="a_intimacao" value="Intimação" id="CA_aR2">
+                                    <label class="custom-control-label" for="CA_aR2"></label>
+                                </div>
+                            </td>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

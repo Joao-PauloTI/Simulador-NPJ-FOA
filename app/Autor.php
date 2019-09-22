@@ -8,6 +8,7 @@ class Autor extends Model
 {
     protected $table = 'tb_autores';
     protected $fillable = array(
+    	'a_processo_id',
       	'a_incapaz',
 		'a_massa',
 		'a_insolvente',
@@ -52,9 +53,9 @@ class Autor extends Model
 		'a_pai',
 		'a_mae',
 		'a_nascimento'
-    );/*
+    );
     //Autor 1:1 Processo
-    public function p_autor(){
-    	return $this->belongsTo('App\Processo');
-    }*/
+    public function autor_processo(){
+    	return $this->belongsTo('App\Processo', 'a_processo_id');
+    }
 }

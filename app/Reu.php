@@ -8,6 +8,7 @@ class Reu extends Model
 {
     protected $table = 'tb_reus';
     protected $fillable = array(
+    	'r_processo_id',
 		'r_estrangeiro',
 		'r_sexo',
 		'r_cpf',
@@ -41,9 +42,9 @@ class Reu extends Model
 		'r_pai',
 		'r_mae',
 		'r_nascimento'
-    );/*
+    );
     //Reu 1:1 Processo
-    public function p_reu(){
-    	return $this->belongsTo('App\Processo');
-    }*/
+    public function reu_processo(){
+    	return $this->belongsTo('App\Processo', 'r_processo_id');
+    }
 }

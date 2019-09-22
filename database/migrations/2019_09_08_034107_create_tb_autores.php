@@ -17,9 +17,6 @@ class CreateTbAutores extends Migration
 
         Schema::create('tb_autores', function (Blueprint $table) {
             $table->increments('id');
-            //Chave estrangeira
-            //$table->integer('a_processo_id')->unsigned();
-            //$table->foreign('a_processo_id')->references('id')->on('tb_processos')->onDelete('cascade');
             //Dados Pessoais
             $table->string('a_incapaz')->nullable();
             $table->string('a_massa')->nullable(); //Massa Falida

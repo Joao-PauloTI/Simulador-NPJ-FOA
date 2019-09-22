@@ -17,9 +17,6 @@ class CreateTbReu extends Migration
         
         Schema::create('tb_reus', function (Blueprint $table) {
             $table->increments('id');
-            //Chave estrangeira
-            //$table->integer('r_processo_id')->unsigned();
-            //$table->foreign('r_processo_id')->references('id')->on('tb_processos');
             //Dados Pessoais
             $table->string('r_estrangeiro')->nullable(); //Estrangeiro e/ou brasileiro residente no exterior?
             $table->string('r_sexo')->nullable();
@@ -44,10 +41,10 @@ class CreateTbReu extends Migration
             $table->string('r_referencia')->nullable();
             $table->string('r_comprovante')->nullable(); //O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial?
             //Valor do Pedido
-            $table->string('r_valorPedido');
+            $table->string('r_valorPedido')->nullable();
             $table->string('r_valorLiquido')->nullable(); //O valor postulado é liquido?
             //Valor da Causa
-            $table->string('r_valorCausa');
+            $table->string('r_valorCausa')->nullable();
             $table->string('r_pretensao')->nullable(); //A pretensão deduzida versa sobre obrigações vincendas?
             //Dados Complementares
             $table->string('r_estadoCivil')->nullable();

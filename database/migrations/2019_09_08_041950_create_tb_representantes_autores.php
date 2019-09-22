@@ -17,9 +17,6 @@ class CreateTbRepresentantesAutores extends Migration
 
         Schema::create('tb_representantes_autores', function (Blueprint $table) {
             $table->increments('id');
-            //Chave estrangeira
-            //$table->integer('ra_processo_id')->unsigned();
-            //$table->foreign('ra_processo_id')->references('id')->on('tb_processos')->onDelete('cascade');
             //Dados Pessoais
             $table->string('ra_incapaz')->nullable();
             $table->string('ra_massa')->nullable(); //Massa Falida

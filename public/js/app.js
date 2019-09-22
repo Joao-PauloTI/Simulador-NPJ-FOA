@@ -1901,10 +1901,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'caadvogadoRepresentante',
   data: function data() {
@@ -4291,6 +4287,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CadastrarAutor_CA_dadosPessoais__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../CadastrarAutor/CA_dadosPessoais */ "./resources/js/components/CadastrarAutor/CA_dadosPessoais.vue");
+/* harmony import */ var _CadastrarAutor_CA_advogadoRepresentante__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../CadastrarAutor/CA_advogadoRepresentante */ "./resources/js/components/CadastrarAutor/CA_advogadoRepresentante.vue");
+/* harmony import */ var _CadastrarAutor_CA_endereco__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../CadastrarAutor/CA_endereco */ "./resources/js/components/CadastrarAutor/CA_endereco.vue");
+/* harmony import */ var _CadastrarAutor_CA_valorPedidoCausa__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../CadastrarAutor/CA_valorPedidoCausa */ "./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue");
+/* harmony import */ var _CadastrarAutor_CA_dadosComplementares__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../CadastrarAutor/CA_dadosComplementares */ "./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue");
 //
 //
 //
@@ -4346,6 +4347,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//Modal de cadastro de autor
+
+
+
+
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'deautoresReusDocumentos',
   data: function data() {
@@ -42440,29 +42468,24 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-body" }, [
       _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-sm" }, [
-            _c("p", [_c("strong", [_vm._v("OAB")])]),
+        _c("table", { staticClass: "table table-borderless" }, [
+          _c("thead", [
+            _c("th", [_vm._v("OAB")]),
             _vm._v(" "),
-            _c("p", [_vm._v("RJ123456")])
+            _c("th", [_vm._v("Nome")]),
+            _vm._v(" "),
+            _c("th", [_vm._v("Representa")]),
+            _vm._v(" "),
+            _c("th", [_vm._v("Intimação")])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-sm" }, [
-            _c("p", [_c("strong", [_vm._v("Nome")])]),
+          _c("tbody", [
+            _c("td", [_vm._v("RJ123456")]),
             _vm._v(" "),
-            _c("p", [_vm._v("Lorem Ipsum Dolor Sit Amet")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-sm", attrs: { align: "center" } }, [
-            _c("p", [_c("strong", [_vm._v("Representa")])]),
+            _c("td", [_vm._v("Lorem Ipsum Dolor Sit Amet")]),
             _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "custom-control custom-control-inline custom-checkbox"
-              },
-              [
+            _c("td", [
+              _c("div", { staticClass: "custom-control custom-checkbox" }, [
                 _c("input", {
                   staticClass: "custom-control-input",
                   attrs: {
@@ -42477,20 +42500,11 @@ var staticRenderFns = [
                   staticClass: "custom-control-label",
                   attrs: { for: "CA_aR1" }
                 })
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-sm", attrs: { align: "center" } }, [
-            _c("p", [_c("strong", [_vm._v("Intimação")])]),
+              ])
+            ]),
             _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "custom-control custom-control-inline custom-checkbox"
-              },
-              [
+            _c("td", [
+              _c("div", { staticClass: "custom-control custom-checkbox" }, [
                 _c("input", {
                   staticClass: "custom-control-input",
                   attrs: {
@@ -42505,8 +42519,8 @@ var staticRenderFns = [
                   staticClass: "custom-control-label",
                   attrs: { for: "CA_aR2" }
                 })
-              ]
-            )
+              ])
+            ])
           ])
         ])
       ])
@@ -48200,7 +48214,62 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-link",
+            attrs: {
+              type: "button",
+              "data-toggle": "modal",
+              "data-target": "#autorModal"
+            }
+          },
+          [_vm._v("Cadastrar Autor")]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "modal fade", attrs: { id: "autorModal" } }, [
+          _c("div", { staticClass: "modal-dialog modal-xl" }, [
+            _c("div", { staticClass: "modal-content" }, [
+              _c(
+                "div",
+                { staticClass: "modal-body" },
+                [
+                  _c("cadadospessoais"),
+                  _vm._v(" "),
+                  _c("caadvogadorepresentante"),
+                  _vm._v(" "),
+                  _c("caendereco"),
+                  _vm._v(" "),
+                  _c("cavalorpedidocausa"),
+                  _vm._v(" "),
+                  _c("cadadoscomplementares"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _vm._m(0)
+                ],
+                1
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("span", [_vm._v(" | ")]),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "cadastrarrepresentanteautor",
+              target: "popup",
+              onclick:
+                "window.open('cadastrarrepresentanteautor', 'popup', 'width=1000, height=700');"
+            }
+          },
+          [_vm._v(" Cadastrar Representante do Autor ")]
+        )
+      ])
     ]),
     _vm._v(" "),
     _c("br"),
@@ -48261,33 +48330,20 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
+    return _c("div", { attrs: { align: "center" } }, [
       _c(
-        "a",
-        {
-          attrs: {
-            href: "cadastrarautor",
-            target: "popup",
-            onclick:
-              "window.open('cadastrarautor', 'popup', 'width=1000, height=700');"
-          }
-        },
-        [_vm._v("Cadastrar Autor ")]
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_vm._v("SALVAR")]
       ),
       _vm._v(" "),
-      _c("span", [_vm._v(" | ")]),
-      _vm._v(" "),
       _c(
-        "a",
+        "button",
         {
-          attrs: {
-            href: "cadastrarrepresentanteautor",
-            target: "popup",
-            onclick:
-              "window.open('cadastrarrepresentanteautor', 'popup', 'width=1000, height=700');"
-          }
+          staticClass: "btn btn-danger",
+          attrs: { type: "button", "data-dismiss": "modal" }
         },
-        [_vm._v(" Cadastrar Representante do Autor ")]
+        [_vm._v("FECHAR")]
       )
     ])
   },
@@ -65599,7 +65655,7 @@ Vue.use(v_money__WEBPACK_IMPORTED_MODULE_1___default.a, {
 });
 var app = new Vue({
   el: '#app'
-});
+}); //https://stackoverflow.com/questions/51307837/adding-data-from-modal-form-to-the-table-via-vue-js
 
 /***/ }),
 

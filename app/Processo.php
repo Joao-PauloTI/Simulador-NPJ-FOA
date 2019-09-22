@@ -23,29 +23,29 @@ class Processo extends Model
 	    'p_distribuicao',
 	    'p_valor',
 	    'p_veracidade'
-	);/*
+	);
     //Processo N:N AdvogadoRepresentante
-	public function ar_p(){
+	/*public function ar_p(){
 		return $this->belongsToMany('App\AdvogadoRepresentante', 'tb_advogados_representantes_processos', 'p_ar_id', 'ar_p_id');
-	}
+	}*/
 	//Processo 1:N Autor
-	public function a_processo(){
-		return $this->hasMany('App\Autor');
+	public function processo_autor(){
+		return $this->hasMany('App\Autor', 'a_processo_id');
 	}
 	//Processo 1:N RepresentanteAutor
-	public function ra_processo(){
-		return $this->hasMany('App\RepresentanteAutor');
+	public function processo_representanteAutor(){
+		return $this->hasMany('App\RepresentanteAutor', 'ra_processo_id');
 	}
 	//Processo 1:N Reu
-	public function r_processo(){
-		return $this->hasMany('App\Reu');
+	public function processo_reu(){
+		return $this->hasMany('App\Reu', 'r_processo_id');
 	}
 	//Processo 1:N RepresentanteReu
-	public function rr_processo(){
-		return $this->hasMany('App\RepresentanteReu');
+	public function processo_representanteReu(){
+		return $this->hasMany('App\RepresentanteReu', 'rr_processo_id');
 	}
 	//Processo 1:N Documento
-	public function d_processo(){
-		return $this->hasMany('App\Documento');
-	}*/
+	public function processo_documento(){
+		return $this->hasMany('App\Documento', 'd_processo_id');
+	}
 }

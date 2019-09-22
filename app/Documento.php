@@ -8,12 +8,13 @@ class Documento extends Model
 {
     protected $table = 'tb_documentos';
     protected $fillable = array(
+        'd_processo_id',
 		'd_arquivo',
 		'd_descricao',
 		'd_tipoArquivo'
     );/*
     //Documento 1:1 Processo
-    public function p_documento(){
-    	return $this->belongsTo('App\Processo');
+    public function documento_processo(){
+    	return $this->belongsTo('App\Processo', 'd_processo_id');
     }*/
 }

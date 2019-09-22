@@ -17,9 +17,6 @@ class CreateTbRepresentantesReu extends Migration
 
         Schema::create('tb_representantes_reu', function (Blueprint $table) {
             $table->increments('id');
-            //Chave estrangeira
-            //$table->integer('rr_processo_id')->unsigned();
-            //$table->foreign('rr_processo_id')->references('id')->on('tb_processos')->onDelete('cascade');
             //Dados Pessoais
             $table->string('rr_parte')->nullable();
             $table->string('rr_pessoa')->nullable(); //Pessoa Física ou Jurídica

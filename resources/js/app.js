@@ -81,3 +81,5 @@ const app = new Vue({
     el: '#app',
     
 });
+
+//https://stackoverflow.com/questions/51307837/adding-data-from-modal-form-to-the-table-via-vue-js

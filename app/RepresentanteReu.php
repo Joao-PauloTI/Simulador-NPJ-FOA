@@ -8,6 +8,7 @@ class RepresentanteReu extends Model
 {
     protected $table = 'tb_representantes_reu';
     protected $fillable = array(
+    	'rr_processo_id',
 		'rr_parte',
 		'rr_pessoa',
 		'rr_sexo',
@@ -44,9 +45,9 @@ class RepresentanteReu extends Model
 		'rr_pai',
 		'rr_mae',
 		'rr_nascimento'
-    );/*
+    );
     //RepresentanteReu 1:1 Processo
-    public function p_representante_reu(){
-    	return $this->belongsTo('App\Processo');
-    }*/
+    public function representanteReu_processo(){
+    	return $this->belongsTo('App\Processo', 'rr_processo_id');
+    }
 }

@@ -8,6 +8,7 @@ class RepresentanteAutor extends Model
 {
     protected $table = 'tb_representantes_autores';
     protected $fillable = array(
+    	'ra_processo_id',
  	  	'ra_incapaz',
 		'ra_massa',
 		'ra_insolvente',
@@ -49,9 +50,9 @@ class RepresentanteAutor extends Model
 		'ra_pai',
 		'ra_mae',
 		'ra_nascimento'
-	);/*
+	);
 	//RepresentanteAutor 1:1 Processo
-    public function p_representante_autor(){
-    	return $this->belongsTo('App\Processo');
-    }*/
+    public function representanteAutor_processo(){
+    	return $this->belongsTo('App\Processo', 'ra_processo_id');
+    }
 }
