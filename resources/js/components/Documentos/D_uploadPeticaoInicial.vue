@@ -1,24 +1,28 @@
 <template>
-    <div>
-        <div class="card-header">
-            <h5>
-                <strong>Upload da Petição Inicial</strong>
-                <a href="#ajuda" v-on:click="ajuda()">(?)</a>
-            </h5>
-        </div>
-        <div class="card-body">
-            <div class="container">
-                <div>
-                    <button type="button" class="btn btn-primary">Escolher Arquivo</button>
-                    <span>Nenhum arquivo selecionado</span>
+    <div class="container">
+        <h1>Cadastro de Documentos</h1>
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                <h5>
+                    <strong>Upload da Petição Inicial</strong>
+                    <a href="#ajuda" v-on:click="ajuda()">(?)</a>
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="container">
+                    <div>
+                        <button type="button" class="btn btn-primary">Escolher Arquivo</button>
+                        <span>Nenhum arquivo selecionado</span>
+                    </div>
+                    <br>
+                    <div>
+                        <span><strong>* Descrição </strong> </span>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <br>
+                    <p style="color: red">Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".</p>
                 </div>
-                <br>
-                <div>
-                    <span><strong>* Descrição </strong> </span>
-                    <input type="text" class="form-control" required>
-                </div>
-                <br>
-                <p style="color: red">Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".</p>
             </div>
         </div>
     </div>

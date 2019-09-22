@@ -9,8 +9,7 @@
                 </h5>
             </div>
             <div class="card-body">
-                <!--
-                <a href="cadastrarautor" target="popup" onclick="window.open('cadastrarautor', 'popup', 'width=1000, height=700');">Cadastrar Autor </a> -->
+                <!--Cadastrar Autor-->
                 <button type="button" class="btn btn-link" data-toggle="modal" data-target="#autorModal">Cadastrar Autor</button>
                 <div class="modal fade" id="autorModal">
                     <div class="modal-dialog modal-xl">
@@ -32,7 +31,26 @@
                     </div>
                 </div>
                 <span> | </span>
-                <a href="cadastrarrepresentanteautor" target="popup" onclick="window.open('cadastrarrepresentanteautor', 'popup', 'width=1000, height=700');"> Cadastrar Representante do Autor </a>
+                <!--Cadastrar Representante do Autor-->
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#representanteAutorModal">Cadastrar Representante do Autor</button>
+                <div class="modal fade" id="representanteAutorModal">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <cradadospessoais></cradadospessoais>
+                                <craendereco></craendereco>
+                                <cravalorpedidocausa></cravalorpedidocausa>
+                                <cradadoscomplementares></cradadoscomplementares>
+                                <br>
+                                <!--Botões SALVAR/FECHAR-->
+                                <div align="center">
+                                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <br>
@@ -45,9 +63,47 @@
                 </h5>
             </div>
             <div class="card-body">
-                <a href="cadastrarreu" target="popup" onclick="window.open('cadastrarreu', 'popup', 'width=1000, height=700');">Cadastrar Réu </a>
+                <!--Cadastrar Réu-->
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#reuModal">Cadastrar Réu</button>
+                <div class="modal fade" id="reuModal">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <crdadospessoais></crdadospessoais>
+                                <crendereco></crendereco>
+                                <crvalorpedidocausa></crvalorpedidocausa>
+                                <crdadoscomplementares></crdadoscomplementares>
+                                <br>
+                                <!--Botões SALVAR/FECHAR-->
+                                <div align="center">
+                                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <span> | </span>
-                <a href="cadastrarrepresentantereu" target="popup" onclick="window.open('cadastrarrepresentantereu', 'popup', 'width=1000, height=700');"> Cadastrar Representante do Réu </a>
+                <!--Cadastrar Representante do Réu-->
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#representanteReuModal">Cadastrar Representante do Réu</button>
+                <div class="modal fade" id="representanteReuModal">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <crrdadospessoais></crrdadospessoais>
+                                <crrendereco></crrendereco>
+                                <crrvalorpedidocausa></crrvalorpedidocausa>
+                                <crrdadoscomplementares></crrdadoscomplementares>
+                                <br>
+                                <!--Botões SALVAR/FECHAR-->
+                                <div align="center">
+                                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <br>
@@ -60,15 +116,95 @@
                 </h5>
             </div>
             <div class="card-body">
-                <a href="uploadpeticaoinicial" target="popup" onclick="window.open('uploadpeticaoinicial', 'popup', 'width=800, height=600');">Upload da Petição Inicial </a>
+                <!--Upload da Petição Inicial-->
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#peticaoModal">Upload da Petição Inicial</button>
+                <div class="modal fade" id="peticaoModal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <duploadpeticaoinicial></duploadpeticaoinicial>
+                                <br>
+                                <!--Botões SALVAR/FECHAR-->
+                                <div align="center">
+                                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <span> | </span>
-                <a href="enviarcpf" target="popup" onclick="window.open('enviarcpf', 'popup', 'width=800, height=600');"> Enviar CPF </a>
+                <!--Enviar CPF-->
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#cpfModal">Enviar CPF</button>
+                <div class="modal fade" id="cpfModal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <denviarcpf></denviarcpf>
+                                <br>
+                                <!--Botões SALVAR/FECHAR-->
+                                <div align="center">
+                                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <span> | </span>
-                <a href="enviarcomprovantederesidencia" target="popup" onclick="window.open('enviarcomprovantederesidencia', 'popup', 'width=800, height=600');"> Enviar Comprovante de Residência </a>
+                <!--Enviar Comprovante de Residência-->
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#comprovanteModal">Enviar Comprovante de Residência</button>
+                <div class="modal fade" id="comprovanteModal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <denviarcomprovanteresidencia></denviarcomprovanteresidencia>
+                                <br>
+                                <!--Botões SALVAR/FECHAR-->
+                                <div align="center">
+                                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <span> | </span>
-                <a href="enviarprocuracao" target="popup" onclick="window.open('enviarprocuracao', 'popup', 'width=800, height=600');"> Enviar Procuração </a>
+                <!--Enviar Procuração-->
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#procuracaoModal">Enviar Procuração</button>
+                <div class="modal fade" id="procuracaoModal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <denviarprocuracao></denviarprocuracao>
+                                <br>
+                                <!--Botões SALVAR/FECHAR-->
+                                <div align="center">
+                                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <span> | </span>
-                <a href="uploaddoanexodapeticaoinicial" target="popup" onclick="window.open('uploaddoanexodapeticaoinicial', 'popup', 'width=800, height=600');"> Upload do(s) Anexo(s) da Petição Inicial </a>
+                <!--Upload do(s) Anexo(s) da Petição Inicial-->
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#anexoModal">Upload do(s) Anexo(s) da Petição Inicial</button>
+                <div class="modal fade" id="anexoModal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <duploadanexopeticao></duploadanexopeticao>
+                                <br>
+                                <!--Botões SALVAR/FECHAR-->
+                                <div align="center">
+                                    <button type="submit" class="btn btn-primary">SALVAR</button>
+                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <br>
@@ -81,6 +217,27 @@ import caadvogadorepresentante from '../CadastrarAutor/CA_advogadoRepresentante'
 import caendereco from '../CadastrarAutor/CA_endereco'
 import cavalorpedidocausa from '../CadastrarAutor/CA_valorPedidoCausa'
 import cadadoscomplementares from '../CadastrarAutor/CA_dadosComplementares'
+//Modal de cadastro de representante de autor
+import cradadospessoais from '../CadastrarRepresentanteAutor/CRA_dadosPessoais'
+import craendereco from '../CadastrarRepresentanteAutor/CRA_endereco'
+import cravalorpedidocausa from '../CadastrarRepresentanteAutor/CRA_valorPedidoCausa'
+import cradadoscomplementares from '../CadastrarRepresentanteAutor/CRA_dadosComplementares'
+//Modal de cadastro de réu
+import crdadospessoais from '../CadastrarReu/CR_dadosPessoais'
+import crendereco from '../CadastrarReu/CR_endereco'
+import crvalorpedidocausa from '../CadastrarReu/CR_valorPedidoCausa'
+import crdadoscomplementares from '../CadastrarReu/CR_dadosComplementares'
+//Modal de cadastro de representante de réu
+import crrdadospessoais from '../CadastrarRepresentanteReu/CRR_dadosPessoais'
+import crrendereco from '../CadastrarRepresentanteReu/CRR_endereco'
+import crrvalorpedidocausa from '../CadastrarRepresentanteReu/CRR_valorPedidoCausa'
+import crrdadoscomplementares from '../CadastrarRepresentanteReu/CRR_dadosComplementares'
+//Modal de cadastro de documentos
+import duploadpeticaoinicial from '../Documentos/D_uploadPeticaoInicial'
+import denviarcpf from '../Documentos/D_enviarCPF'
+import denviarcomprovanteresidencia from '../Documentos/D_enviarComprovanteResidencia'
+import denviarprocuracao from '../Documentos/D_enviarProcuracao'
+import duploadanexopeticao from '../Documentos/D_uploadAnexoPeticao'
 
 export default {
     name: 'deautoresReusDocumentos',

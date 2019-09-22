@@ -4292,6 +4292,159 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CadastrarAutor_CA_endereco__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../CadastrarAutor/CA_endereco */ "./resources/js/components/CadastrarAutor/CA_endereco.vue");
 /* harmony import */ var _CadastrarAutor_CA_valorPedidoCausa__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../CadastrarAutor/CA_valorPedidoCausa */ "./resources/js/components/CadastrarAutor/CA_valorPedidoCausa.vue");
 /* harmony import */ var _CadastrarAutor_CA_dadosComplementares__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../CadastrarAutor/CA_dadosComplementares */ "./resources/js/components/CadastrarAutor/CA_dadosComplementares.vue");
+/* harmony import */ var _CadastrarRepresentanteAutor_CRA_dadosPessoais__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../CadastrarRepresentanteAutor/CRA_dadosPessoais */ "./resources/js/components/CadastrarRepresentanteAutor/CRA_dadosPessoais.vue");
+/* harmony import */ var _CadastrarRepresentanteAutor_CRA_endereco__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../CadastrarRepresentanteAutor/CRA_endereco */ "./resources/js/components/CadastrarRepresentanteAutor/CRA_endereco.vue");
+/* harmony import */ var _CadastrarRepresentanteAutor_CRA_valorPedidoCausa__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../CadastrarRepresentanteAutor/CRA_valorPedidoCausa */ "./resources/js/components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue");
+/* harmony import */ var _CadastrarRepresentanteAutor_CRA_dadosComplementares__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../CadastrarRepresentanteAutor/CRA_dadosComplementares */ "./resources/js/components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue");
+/* harmony import */ var _CadastrarReu_CR_dadosPessoais__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../CadastrarReu/CR_dadosPessoais */ "./resources/js/components/CadastrarReu/CR_dadosPessoais.vue");
+/* harmony import */ var _CadastrarReu_CR_endereco__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../CadastrarReu/CR_endereco */ "./resources/js/components/CadastrarReu/CR_endereco.vue");
+/* harmony import */ var _CadastrarReu_CR_valorPedidoCausa__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../CadastrarReu/CR_valorPedidoCausa */ "./resources/js/components/CadastrarReu/CR_valorPedidoCausa.vue");
+/* harmony import */ var _CadastrarReu_CR_dadosComplementares__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../CadastrarReu/CR_dadosComplementares */ "./resources/js/components/CadastrarReu/CR_dadosComplementares.vue");
+/* harmony import */ var _CadastrarRepresentanteReu_CRR_dadosPessoais__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../CadastrarRepresentanteReu/CRR_dadosPessoais */ "./resources/js/components/CadastrarRepresentanteReu/CRR_dadosPessoais.vue");
+/* harmony import */ var _CadastrarRepresentanteReu_CRR_endereco__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../CadastrarRepresentanteReu/CRR_endereco */ "./resources/js/components/CadastrarRepresentanteReu/CRR_endereco.vue");
+/* harmony import */ var _CadastrarRepresentanteReu_CRR_valorPedidoCausa__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../CadastrarRepresentanteReu/CRR_valorPedidoCausa */ "./resources/js/components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue");
+/* harmony import */ var _CadastrarRepresentanteReu_CRR_dadosComplementares__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../CadastrarRepresentanteReu/CRR_dadosComplementares */ "./resources/js/components/CadastrarRepresentanteReu/CRR_dadosComplementares.vue");
+/* harmony import */ var _Documentos_D_uploadPeticaoInicial__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../Documentos/D_uploadPeticaoInicial */ "./resources/js/components/Documentos/D_uploadPeticaoInicial.vue");
+/* harmony import */ var _Documentos_D_enviarCPF__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../Documentos/D_enviarCPF */ "./resources/js/components/Documentos/D_enviarCPF.vue");
+/* harmony import */ var _Documentos_D_enviarComprovanteResidencia__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../Documentos/D_enviarComprovanteResidencia */ "./resources/js/components/Documentos/D_enviarComprovanteResidencia.vue");
+/* harmony import */ var _Documentos_D_enviarProcuracao__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../Documentos/D_enviarProcuracao */ "./resources/js/components/Documentos/D_enviarProcuracao.vue");
+/* harmony import */ var _Documentos_D_uploadAnexoPeticao__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../Documentos/D_uploadAnexoPeticao */ "./resources/js/components/Documentos/D_uploadAnexoPeticao.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4369,6 +4522,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //Modal de cadastro de autor
+
+
+
+
+ //Modal de cadastro de representante de autor
+
+
+
+
+ //Modal de cadastro de réu
+
+
+
+
+ //Modal de cadastro de representante de réu
+
+
+
+
+ //Modal de cadastro de documentos
+
 
 
 
@@ -5198,6 +5372,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'denviarcpf',
   data: function data() {
@@ -5221,6 +5399,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -5294,6 +5476,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'denviarprocuracao',
   data: function data() {
@@ -5342,6 +5528,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'duploadanexopeticao',
   data: function data() {
@@ -5365,6 +5555,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -48258,16 +48452,48 @@ var render = function() {
         _c("span", [_vm._v(" | ")]),
         _vm._v(" "),
         _c(
-          "a",
+          "button",
           {
+            staticClass: "btn btn-link",
             attrs: {
-              href: "cadastrarrepresentanteautor",
-              target: "popup",
-              onclick:
-                "window.open('cadastrarrepresentanteautor', 'popup', 'width=1000, height=700');"
+              type: "button",
+              "data-toggle": "modal",
+              "data-target": "#representanteAutorModal"
             }
           },
-          [_vm._v(" Cadastrar Representante do Autor ")]
+          [_vm._v("Cadastrar Representante do Autor")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "modal fade",
+            attrs: { id: "representanteAutorModal" }
+          },
+          [
+            _c("div", { staticClass: "modal-dialog modal-xl" }, [
+              _c("div", { staticClass: "modal-content" }, [
+                _c(
+                  "div",
+                  { staticClass: "modal-body" },
+                  [
+                    _c("cradadospessoais"),
+                    _vm._v(" "),
+                    _c("craendereco"),
+                    _vm._v(" "),
+                    _c("cravalorpedidocausa"),
+                    _vm._v(" "),
+                    _c("cradadoscomplementares"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _vm._m(1)
+                  ],
+                  1
+                )
+              ])
+            ])
+          ]
         )
       ])
     ]),
@@ -48294,7 +48520,89 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(1)
+      _c("div", { staticClass: "card-body" }, [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-link",
+            attrs: {
+              type: "button",
+              "data-toggle": "modal",
+              "data-target": "#reuModal"
+            }
+          },
+          [_vm._v("Cadastrar Réu")]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "modal fade", attrs: { id: "reuModal" } }, [
+          _c("div", { staticClass: "modal-dialog modal-xl" }, [
+            _c("div", { staticClass: "modal-content" }, [
+              _c(
+                "div",
+                { staticClass: "modal-body" },
+                [
+                  _c("crdadospessoais"),
+                  _vm._v(" "),
+                  _c("crendereco"),
+                  _vm._v(" "),
+                  _c("crvalorpedidocausa"),
+                  _vm._v(" "),
+                  _c("crdadoscomplementares"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _vm._m(2)
+                ],
+                1
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("span", [_vm._v(" | ")]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-link",
+            attrs: {
+              type: "button",
+              "data-toggle": "modal",
+              "data-target": "#representanteReuModal"
+            }
+          },
+          [_vm._v("Cadastrar Representante do Réu")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "modal fade", attrs: { id: "representanteReuModal" } },
+          [
+            _c("div", { staticClass: "modal-dialog modal-xl" }, [
+              _c("div", { staticClass: "modal-content" }, [
+                _c(
+                  "div",
+                  { staticClass: "modal-body" },
+                  [
+                    _c("crrdadospessoais"),
+                    _vm._v(" "),
+                    _c("crrendereco"),
+                    _vm._v(" "),
+                    _c("crrvalorpedidocausa"),
+                    _vm._v(" "),
+                    _c("crrdadoscomplementares"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _vm._m(3)
+                  ],
+                  1
+                )
+              ])
+            ])
+          ]
+        )
+      ])
     ]),
     _vm._v(" "),
     _c("br"),
@@ -48319,7 +48627,187 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(2)
+      _c("div", { staticClass: "card-body" }, [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-link",
+            attrs: {
+              type: "button",
+              "data-toggle": "modal",
+              "data-target": "#peticaoModal"
+            }
+          },
+          [_vm._v("Upload da Petição Inicial")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "modal fade", attrs: { id: "peticaoModal" } },
+          [
+            _c("div", { staticClass: "modal-dialog modal-lg" }, [
+              _c("div", { staticClass: "modal-content" }, [
+                _c(
+                  "div",
+                  { staticClass: "modal-body" },
+                  [
+                    _c("duploadpeticaoinicial"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _vm._m(4)
+                  ],
+                  1
+                )
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("span", [_vm._v(" | ")]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-link",
+            attrs: {
+              type: "button",
+              "data-toggle": "modal",
+              "data-target": "#cpfModal"
+            }
+          },
+          [_vm._v("Enviar CPF")]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "modal fade", attrs: { id: "cpfModal" } }, [
+          _c("div", { staticClass: "modal-dialog modal-lg" }, [
+            _c("div", { staticClass: "modal-content" }, [
+              _c(
+                "div",
+                { staticClass: "modal-body" },
+                [
+                  _c("denviarcpf"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _vm._m(5)
+                ],
+                1
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("span", [_vm._v(" | ")]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-link",
+            attrs: {
+              type: "button",
+              "data-toggle": "modal",
+              "data-target": "#comprovanteModal"
+            }
+          },
+          [_vm._v("Enviar Comprovante de Residência")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "modal fade", attrs: { id: "comprovanteModal" } },
+          [
+            _c("div", { staticClass: "modal-dialog modal-lg" }, [
+              _c("div", { staticClass: "modal-content" }, [
+                _c(
+                  "div",
+                  { staticClass: "modal-body" },
+                  [
+                    _c("denviarcomprovanteresidencia"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _vm._m(6)
+                  ],
+                  1
+                )
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("span", [_vm._v(" | ")]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-link",
+            attrs: {
+              type: "button",
+              "data-toggle": "modal",
+              "data-target": "#procuracaoModal"
+            }
+          },
+          [_vm._v("Enviar Procuração")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "modal fade", attrs: { id: "procuracaoModal" } },
+          [
+            _c("div", { staticClass: "modal-dialog modal-lg" }, [
+              _c("div", { staticClass: "modal-content" }, [
+                _c(
+                  "div",
+                  { staticClass: "modal-body" },
+                  [
+                    _c("denviarprocuracao"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _vm._m(7)
+                  ],
+                  1
+                )
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("span", [_vm._v(" | ")]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-link",
+            attrs: {
+              type: "button",
+              "data-toggle": "modal",
+              "data-target": "#anexoModal"
+            }
+          },
+          [_vm._v("Upload do(s) Anexo(s) da Petição Inicial")]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "modal fade", attrs: { id: "anexoModal" } }, [
+          _c("div", { staticClass: "modal-dialog modal-lg" }, [
+            _c("div", { staticClass: "modal-content" }, [
+              _c(
+                "div",
+                { staticClass: "modal-body" },
+                [
+                  _c("duploadanexopeticao"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _vm._m(8)
+                ],
+                1
+              )
+            ])
+          ])
+        ])
+      ])
     ]),
     _vm._v(" "),
     _c("br")
@@ -48351,33 +48839,20 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
+    return _c("div", { attrs: { align: "center" } }, [
       _c(
-        "a",
-        {
-          attrs: {
-            href: "cadastrarreu",
-            target: "popup",
-            onclick:
-              "window.open('cadastrarreu', 'popup', 'width=1000, height=700');"
-          }
-        },
-        [_vm._v("Cadastrar Réu ")]
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_vm._v("SALVAR")]
       ),
       _vm._v(" "),
-      _c("span", [_vm._v(" | ")]),
-      _vm._v(" "),
       _c(
-        "a",
+        "button",
         {
-          attrs: {
-            href: "cadastrarrepresentantereu",
-            target: "popup",
-            onclick:
-              "window.open('cadastrarrepresentantereu', 'popup', 'width=1000, height=700');"
-          }
+          staticClass: "btn btn-danger",
+          attrs: { type: "button", "data-dismiss": "modal" }
         },
-        [_vm._v(" Cadastrar Representante do Réu ")]
+        [_vm._v("FECHAR")]
       )
     ])
   },
@@ -48385,78 +48860,146 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
+    return _c("div", { attrs: { align: "center" } }, [
       _c(
-        "a",
-        {
-          attrs: {
-            href: "uploadpeticaoinicial",
-            target: "popup",
-            onclick:
-              "window.open('uploadpeticaoinicial', 'popup', 'width=800, height=600');"
-          }
-        },
-        [_vm._v("Upload da Petição Inicial ")]
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_vm._v("SALVAR")]
       ),
       _vm._v(" "),
-      _c("span", [_vm._v(" | ")]),
-      _vm._v(" "),
       _c(
-        "a",
+        "button",
         {
-          attrs: {
-            href: "enviarcpf",
-            target: "popup",
-            onclick:
-              "window.open('enviarcpf', 'popup', 'width=800, height=600');"
-          }
+          staticClass: "btn btn-danger",
+          attrs: { type: "button", "data-dismiss": "modal" }
         },
-        [_vm._v(" Enviar CPF ")]
+        [_vm._v("FECHAR")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { align: "center" } }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_vm._v("SALVAR")]
       ),
       _vm._v(" "),
-      _c("span", [_vm._v(" | ")]),
-      _vm._v(" "),
       _c(
-        "a",
+        "button",
         {
-          attrs: {
-            href: "enviarcomprovantederesidencia",
-            target: "popup",
-            onclick:
-              "window.open('enviarcomprovantederesidencia', 'popup', 'width=800, height=600');"
-          }
+          staticClass: "btn btn-danger",
+          attrs: { type: "button", "data-dismiss": "modal" }
         },
-        [_vm._v(" Enviar Comprovante de Residência ")]
+        [_vm._v("FECHAR")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { align: "center" } }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_vm._v("SALVAR")]
       ),
       _vm._v(" "),
-      _c("span", [_vm._v(" | ")]),
-      _vm._v(" "),
       _c(
-        "a",
+        "button",
         {
-          attrs: {
-            href: "enviarprocuracao",
-            target: "popup",
-            onclick:
-              "window.open('enviarprocuracao', 'popup', 'width=800, height=600');"
-          }
+          staticClass: "btn btn-danger",
+          attrs: { type: "button", "data-dismiss": "modal" }
         },
-        [_vm._v(" Enviar Procuração ")]
+        [_vm._v("FECHAR")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { align: "center" } }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_vm._v("SALVAR")]
       ),
       _vm._v(" "),
-      _c("span", [_vm._v(" | ")]),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-danger",
+          attrs: { type: "button", "data-dismiss": "modal" }
+        },
+        [_vm._v("FECHAR")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { align: "center" } }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_vm._v("SALVAR")]
+      ),
       _vm._v(" "),
       _c(
-        "a",
+        "button",
         {
-          attrs: {
-            href: "uploaddoanexodapeticaoinicial",
-            target: "popup",
-            onclick:
-              "window.open('uploaddoanexodapeticaoinicial', 'popup', 'width=800, height=600');"
-          }
+          staticClass: "btn btn-danger",
+          attrs: { type: "button", "data-dismiss": "modal" }
         },
-        [_vm._v(" Upload do(s) Anexo(s) da Petição Inicial ")]
+        [_vm._v("FECHAR")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { align: "center" } }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_vm._v("SALVAR")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-danger",
+          attrs: { type: "button", "data-dismiss": "modal" }
+        },
+        [_vm._v("FECHAR")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { align: "center" } }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_vm._v("SALVAR")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-danger",
+          attrs: { type: "button", "data-dismiss": "modal" }
+        },
+        [_vm._v("FECHAR")]
       )
     ])
   }
@@ -52490,27 +53033,33 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "card-header" }, [
-      _c("h5", [
-        _c("strong", [_vm._v("Enviar CPF")]),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            attrs: { href: "#ajuda" },
-            on: {
-              click: function($event) {
-                return _vm.ajuda()
-              }
-            }
-          },
-          [_vm._v("(?)")]
-        )
-      ])
-    ]),
+  return _c("div", { staticClass: "container" }, [
+    _c("h1", [_vm._v("Cadastro de Documentos")]),
     _vm._v(" "),
-    _vm._m(0)
+    _c("hr"),
+    _vm._v(" "),
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Enviar CPF")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ])
   ])
 }
 var staticRenderFns = [
@@ -52573,27 +53122,33 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "card-header" }, [
-      _c("h5", [
-        _c("strong", [_vm._v("Enviar comprovante de residência")]),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            attrs: { href: "#ajuda" },
-            on: {
-              click: function($event) {
-                return _vm.ajuda()
-              }
-            }
-          },
-          [_vm._v("(?)")]
-        )
-      ])
-    ]),
+  return _c("div", { staticClass: "container" }, [
+    _c("h1", [_vm._v("Cadastro de Documentos")]),
     _vm._v(" "),
-    _vm._m(0)
+    _c("hr"),
+    _vm._v(" "),
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Enviar comprovante de residência")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ])
   ])
 }
 var staticRenderFns = [
@@ -52656,27 +53211,33 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "card-header" }, [
-      _c("h5", [
-        _c("strong", [_vm._v("Enviar Procuração")]),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            attrs: { href: "#ajuda" },
-            on: {
-              click: function($event) {
-                return _vm.ajuda()
-              }
-            }
-          },
-          [_vm._v("(?)")]
-        )
-      ])
-    ]),
+  return _c("div", { staticClass: "container" }, [
+    _c("h1", [_vm._v("Cadastro de Documentos")]),
     _vm._v(" "),
-    _vm._m(0)
+    _c("hr"),
+    _vm._v(" "),
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Enviar Procuração")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ])
   ])
 }
 var staticRenderFns = [
@@ -52739,27 +53300,33 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "card-header" }, [
-      _c("h5", [
-        _c("strong", [_vm._v("Upload do(s) Anexo(s) da Petição Inicial")]),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            attrs: { href: "#ajuda" },
-            on: {
-              click: function($event) {
-                return _vm.ajuda()
-              }
-            }
-          },
-          [_vm._v("(?)")]
-        )
-      ])
-    ]),
+  return _c("div", { staticClass: "container" }, [
+    _c("h1", [_vm._v("Cadastro de Documentos")]),
     _vm._v(" "),
-    _vm._m(0)
+    _c("hr"),
+    _vm._v(" "),
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Upload do(s) Anexo(s) da Petição Inicial")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ])
   ])
 }
 var staticRenderFns = [
@@ -52822,27 +53389,33 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "card-header" }, [
-      _c("h5", [
-        _c("strong", [_vm._v("Upload da Petição Inicial")]),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            attrs: { href: "#ajuda" },
-            on: {
-              click: function($event) {
-                return _vm.ajuda()
-              }
-            }
-          },
-          [_vm._v("(?)")]
-        )
-      ])
-    ]),
+  return _c("div", { staticClass: "container" }, [
+    _c("h1", [_vm._v("Cadastro de Documentos")]),
     _vm._v(" "),
-    _vm._m(0)
+    _c("hr"),
+    _vm._v(" "),
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h5", [
+          _c("strong", [_vm._v("Upload da Petição Inicial")]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              attrs: { href: "#ajuda" },
+              on: {
+                click: function($event) {
+                  return _vm.ajuda()
+                }
+              }
+            },
+            [_vm._v("(?)")]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ])
   ])
 }
 var staticRenderFns = [
