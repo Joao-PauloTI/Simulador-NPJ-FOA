@@ -32,29 +32,16 @@ Vue.component('deautoresreusdocumentos', require('./components/DistribuicaoEletr
 Vue.component('dedeclaracaodeveracidade', require('./components/DistribuicaoEletronica/DE_declaracaoDeVeracidade.vue').default);
 
 //Componentes da pasta CadastrarAutor
-Vue.component('cadadospessoais', require('./components/CadastrarAutor/CA_dadosPessoais.vue').default);
-Vue.component('caadvogadorepresentante', require('./components/CadastrarAutor/CA_advogadoRepresentante.vue').default);
-Vue.component('caendereco', require('./components/CadastrarAutor/CA_endereco.vue').default);
-Vue.component('cavalorpedidocausa', require('./components/CadastrarAutor/CA_valorPedidoCausa.vue').default);
-Vue.component('cadadoscomplementares', require('./components/CadastrarAutor/CA_dadosComplementares.vue').default);
+Vue.component('camodal', require('./components/CadastrarAutor/CA_modal.vue').default);
 
 //Componentes da pasta CadastrarRepresentanteAutor
-Vue.component('cradadospessoais', require('./components/CadastrarRepresentanteAutor/CRA_dadosPessoais.vue').default);
-Vue.component('craendereco', require('./components/CadastrarRepresentanteAutor/CRA_endereco.vue').default);
-Vue.component('cravalorpedidocausa', require('./components/CadastrarRepresentanteAutor/CRA_valorPedidoCausa.vue').default);
-Vue.component('cradadoscomplementares', require('./components/CadastrarRepresentanteAutor/CRA_dadosComplementares.vue').default);
+Vue.component('cramodal', require('./components/CadastrarRepresentanteAutor/CRA_modal.vue').default);
 
 //Componentes da pasta CadastrarReu
-Vue.component('crdadospessoais', require('./components/CadastrarReu/CR_dadosPessoais.vue').default);
-Vue.component('crendereco', require('./components/CadastrarReu/CR_endereco.vue').default);
-Vue.component('crvalorpedidocausa', require('./components/CadastrarReu/CR_valorPedidoCausa.vue').default);
-Vue.component('crdadoscomplementares', require('./components/CadastrarReu/CR_dadosComplementares.vue').default);
+Vue.component('crmodal', require('./components/CadastrarReu/CR_modal.vue').default);
 
 //Componentes da pasta CadastrarRepresentanteReu
-Vue.component('crrdadospessoais', require('./components/CadastrarRepresentanteReu/CRR_dadosPessoais.vue').default);
-Vue.component('crrendereco', require('./components/CadastrarRepresentanteReu/CRR_endereco.vue').default);
-Vue.component('crrvalorpedidocausa', require('./components/CadastrarRepresentanteReu/CRR_valorPedidoCausa.vue').default);
-Vue.component('crrdadoscomplementares', require('./components/CadastrarRepresentanteReu/CRR_dadosComplementares.vue').default);
+Vue.component('crrmodal', require('./components/CadastrarRepresentanteReu/CRR_modal.vue').default);
 
 //Componentes da pasta ConsultasProcessuais
 Vue.component('cpconsultaprocessual', require('./components/ConsultasProcessuais/CP_consultaProcessual.vue').default);
