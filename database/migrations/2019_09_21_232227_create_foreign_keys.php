@@ -30,6 +30,11 @@ class CreateForeignKeys extends Migration
             $table->foreign('r_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
         });
 
+        Schema::table('tb_reus_juridicos', function (Blueprint $table) {
+            $table->integer('rj_processo_id')->unsigned()->nullable();
+            $table->foreign('rj_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
+        });
+
         Schema::table('tb_representantes_reu', function (Blueprint $table) {
             $table->integer('rr_processo_id')->unsigned()->nullable();
             $table->foreign('rr_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
@@ -51,6 +56,7 @@ class CreateForeignKeys extends Migration
         Schema::dropIfExists('tb_autores');
         Schema::dropIfExists('tb_representantes_autores');
         Schema::dropIfExists('tb_reus');
+        Schema::dropIfExists('tb_reus_juridicos');
         Schema::dropIfExists('tb_representantes_reu');
         Schema::dropIfExists('tb_documentos');
     }

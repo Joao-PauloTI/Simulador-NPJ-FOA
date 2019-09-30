@@ -6,6 +6,7 @@ use App\Processo;
 use App\Autor;
 use App\RepresentanteAutor;
 use App\Reu;
+use App\ReuJuridico;
 use App\RepresentanteReu;
 use App\Documento;
 
@@ -179,6 +180,20 @@ class ProcessoController extends Controller
             'r_pai' => 'nullable',
             'r_mae' => 'nullable',
             'r_nascimento' => 'nullable',
+            //Réu - Pessoa Jurídica
+            'rj_nome' => 'nullable',
+            'rj_cnpj' => 'nullable',
+            'rj_tipoEmpresa' => 'nullable',
+            'rj_cep' => 'nullable',
+            'rj_estado' => 'nullable',
+            'rj_cidade' => 'nullable',
+            'rj_bairro' => 'nullable',
+            'rj_tipoLogradouro' => 'nullable',
+            'rj_logradouro' => 'nullable',
+            'rj_numeroEndereco' => 'nullable',
+            'rj_complemento' => 'nullable',
+            'rj_tipoEndereco' => 'nullable',
+            'rj_referencia' => 'nullable',
             //Representante do Réu
             'rr_parte' => 'nullable',
             'rr_pessoa' => 'nullable',
@@ -377,6 +392,25 @@ class ProcessoController extends Controller
 
         $reu->reu_processo()->associate($processo);
         $reu->save();
+
+        $reuJuridico = new ReuJuridico([
+            'rj_nome' => $request->get('rj_nome'),
+            'rj_cnpj' => $request->get('rj_cnpj'),
+            'rj_tipoEmpresa' => $request->get('rj_tipoEmpresa'),
+            'rj_cep' => $request->get('rj_cep'),
+            'rj_estado' => $request->get('rj_estado'),
+            'rj_cidade' => $request->get('rj_cidade'),
+            'rj_bairro' => $request->get('rj_bairro'),
+            'rj_tipoLogradouro' => $request->get('rj_tipoLogradouro'),
+            'rj_logradouro' => $request->get('rj_logradouro'),
+            'rj_numeroEndereco' => $request->get('rj_numeroEndereco'),
+            'rj_complemento' => $request->get('rj_complemento'),
+            'rj_tipoEndereco' => $request->get('rj_tipoEndereco'),
+            'rj_referencia' => $request->get('rj_referencia')
+        ]);
+
+        $reuJuridico->reuJuridico_processo()->associate($processo);
+        $reuJuridico->save();
 
         $representanteReu = new RepresentanteReu([
             'rr_parte' => $request->get('rr_parte'),

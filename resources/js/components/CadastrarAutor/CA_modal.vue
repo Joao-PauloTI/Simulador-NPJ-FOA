@@ -16,27 +16,27 @@
                         <!--Opções de marcar-->
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_incapaz" value="Incapaz" id="CA_dP1">
+                                <input type="checkbox" class="custom-control-input" v-model="aIncapaz" name="a_incapaz" value="Incapaz" id="CA_dP1">
                                 <label class="custom-control-label" for="CA_dP1"> Incapaz </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_massa" value="Massa Falida" id="CA_dP2">
+                                <input type="checkbox" class="custom-control-input" v-model="aMassa" name="a_massa" value="Massa Falida" id="CA_dP2">
                                 <label class="custom-control-label" for="CA_dP2"> Massa Falida </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_insolvente" value="Insolvente Civil" id="CA_dP3">
+                                <input type="checkbox" class="custom-control-input" v-model="aInsolvente" name="a_insolvente" value="Insolvente Civil" id="CA_dP3">
                                 <label class="custom-control-label" for="CA_dP3"> Insolvente Civil</label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_preso" value="Preso" id="CA_dP4">
+                                <input type="checkbox" class="custom-control-input" v-model="aPreso" name="a_preso" value="Preso" id="CA_dP4">
                                 <label class="custom-control-label" for="CA_dP4"> Preso </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_espolio" value="Espólio com interesse de Incapaz" id="CA_dP5">
+                                <input type="checkbox" class="custom-control-input" v-model="aEspolio" name="a_espolio" value="Espólio com interesse de Incapaz" id="CA_dP5">
                                 <label class="custom-control-label" for="CA_dP5"> Espólio com interesse de Incapaz </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_condominio" value="Condomínio" id="CA_dP6">
+                                <input type="checkbox" class="custom-control-input" v-model="aCondominio" name="a_condominio" value="Condomínio" id="CA_dP6">
                                 <label class="custom-control-label" for="CA_dP6"> Condomínio </label>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                     <div id="alinhado">
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_ministerio" value="Ministério Público" id="CA_dP7">
+                                <input type="checkbox" class="custom-control-input" v-model="aMinisterio" name="a_ministerio" value="Ministério Público" id="CA_dP7">
                                 <label class="custom-control-label" for="CA_dP7"><strong>Ministério Público? </strong> </label>
                             </div>
                         </div>
@@ -57,7 +57,8 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Pessoa Física ou Jurídica </strong></span>
-                                <select class="custom-select" name="a_pessoa" v-model="caPessoa">
+                                <select class="custom-select" v-model="aPessoa" name="a_pessoa">
+                                    <option value="">Escolha um tipo de pessoa</option>
                                     <option value="Pessoa Física">Pessoa Física</option>
                                     <option value="Pessoa Jurídica">Pessoa Jurídica</option>
                                 </select>
@@ -69,7 +70,7 @@
                     <div id="alinhado">
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_estrangeiro" value="Estrangeiro e/ou brasileiro residente no exterior" id="CA_dP8">
+                                <input type="checkbox" class="custom-control-input" v-model="aEstrangeiro" name="a_estrangeiro" value="Estrangeiro e/ou brasileiro residente no exterior" id="CA_dP8">
                                 <label class="custom-control-label" for="CA_dP8"><strong>Estrangeiro e/ou brasileiro residente no exterior? </strong> </label>
                             </div>
                         </div>
@@ -80,7 +81,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Sexo </strong> </span>
-                                <select class="custom-select" name="a_sexo">
+                                <select class="custom-select" v-model="aSexo" name="a_sexo">
                                     <option value="">Escolha um sexo</option>
                                     <option value="Masculino">Masculino</option>
                                     <option value="Feminino">Feminino</option>
@@ -94,7 +95,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CPF/CNPJ </strong> </span>
-                                <input type="text" class="form-control" name="a_cpf" v-mask="'###.###.###-##'">
+                                <input type="text" class="form-control" v-model="aCpf" name="a_cpf" v-mask="'###.###.###-##'">
                             </div>
                         </div>
                     </div>
@@ -104,7 +105,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Nome </strong> </span>
-                                <input type="text" class="form-control" name="a_nome" v-model="caNome">
+                                <input type="text" class="form-control" v-model="aNome" name="a_nome">
                             </div>
                         </div>
                     </div>
@@ -113,7 +114,7 @@
                     <div id="alinhado">
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_menor" value="Menor de idade" id="CA_dP9">
+                                <input type="checkbox" class="custom-control-input" v-model="aMenor" name="a_menor" value="Menor de idade" id="CA_dP9">
                                 <label class="custom-control-label" for="CA_dP9"><strong>Menor de idade</strong> </label>
                             </div>
                         </div>
@@ -124,7 +125,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Documento de identificação </strong> </span>
-                                <select class="custom-select" name="a_documento">
+                                <select class="custom-select" v-model="aDocumento" name="a_documento">
                                     <option value="">Escolha um tipo</option>
                                     <option value="Registro Geral">Registro Geral</option>
                                     <option value="Carteira Nacional de Habilitação">Carteira Nacional de Habilitação</option>
@@ -142,7 +143,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Número </strong> </span>
-                                <input type="text" class="form-control" name="a_numeroIdentificacao">
+                                <input type="text" class="form-control" v-model="aNumeroIdentificacao" name="a_numeroIdentificacao">
                             </div>
                         </div>
                     </div>
@@ -152,7 +153,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Órgão Expedidor </strong> </span>
-                                <input type="text" class="form-control" name="a_expedidor">
+                                <input type="text" class="form-control" v-model="aExpedidor" name="a_expedidor">
                             </div>
                         </div>
                     </div>
@@ -162,7 +163,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Data de Emissão </strong> </span>
-                                <input type="text" class="form-control" name="a_emissao" v-mask="'##/##/####'">
+                                <input type="text" class="form-control" v-model="aEmissao" name="a_emissao" v-mask="'##/##/####'">
                             </div>
                         </div>
                     </div>
@@ -172,7 +173,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Telefone </strong> </span>
-                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" name="a_telefone">
+                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" v-model="aTelefone" name="a_telefone">
                             </div>
                         </div>
                     </div>
@@ -182,7 +183,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>E-mail </strong> </span>
-                                <input type="email" class="form-control" name="a_email">
+                                <input type="email" class="form-control" v-model="aEmail" name="a_email">
                             </div>
                         </div>
                     </div>
@@ -211,13 +212,13 @@
                             <td>Lorem Ipsum Dolor Sit Amet</td>
                             <td>
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" name="a_representa" value="Representa" id="CA_aR1">
+                                    <input type="checkbox" class="custom-control-input" v-model="aRepresenta" name="a_representa" value="Representa" id="CA_aR1">
                                     <label class="custom-control-label" for="CA_aR1"></label>
                                 </div>
                             </td>
                             <td>
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" name="a_intimacao" value="Intimação" id="CA_aR2">
+                                    <input type="checkbox" class="custom-control-input" v-model="aIntimacao" name="a_intimacao" value="Intimação" id="CA_aR2">
                                     <label class="custom-control-label" for="CA_aR2"></label>
                                 </div>
                             </td>
@@ -241,7 +242,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CEP </strong> </span>
-                                <input type="text" class="form-control" name="a_cep" v-mask="'#####-###'">
+                                <input type="text" class="form-control" v-model="aCep" name="a_cep" v-mask="'#####-###'">
                                 <a href=""><ins> verificar CEP</ins> </a>
                                 <a href=""><ins> Correios</ins> </a>
                             </div>
@@ -253,7 +254,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Estado </strong> </span>
-                                <input type="text" class="form-control" name="a_estado">
+                                <input type="text" class="form-control" v-model="aEstado" name="a_estado">
                             </div>
                         </div>
                     </div>
@@ -263,7 +264,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Cidade </strong> </span>
-                                <input type="text" class="form-control" name="a_cidade">
+                                <input type="text" class="form-control" v-model="aCidade" name="a_cidade">
                             </div>
                         </div>
                     </div>
@@ -273,7 +274,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Bairro </strong> </span>
-                                <input type="text" class="form-control" name="a_bairro">
+                                <input type="text" class="form-control" v-model="aBairro" name="a_bairro">
                             </div>
                         </div>
                     </div>
@@ -283,7 +284,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Tipo de Logradouro </strong> </span>
-                                <input type="text" class="form-control" name="a_tipoLogradouro">
+                                <input type="text" class="form-control" v-model="aTipoLogradouro" name="a_tipoLogradouro">
                             </div>
                         </div>
                     </div>
@@ -293,7 +294,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Logradouro </strong> </span>
-                                <input type="text" class="form-control" name="a_logradouro">
+                                <input type="text" class="form-control" v-model="aLogradouro" name="a_logradouro">
                             </div>
                         </div>
                     </div>
@@ -303,7 +304,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Número </strong> </span>
-                                <input type="text" class="form-control" name="a_numeroEndereco">
+                                <input type="text" class="form-control" v-model="aNumeroEndereco" name="a_numeroEndereco">
                             </div>
                         </div>
                     </div>
@@ -313,7 +314,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Complemento </strong> </span>
-                                <input type="text" class="form-control" name="a_complemento">
+                                <input type="text" class="form-control" v-model="aComplemento" name="a_complemento">
                             </div>
                         </div>
                     </div>
@@ -323,7 +324,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Tipo de Endereço </strong> </span>
-                                <select class="custom-select" name="a_tipoEndereco">
+                                <select class="custom-select" v-model="aTipoEndereco" name="a_tipoEndereco">
                                     <option value="">Escolha o tipo de endereço</option>
                                     <option value="Residencial">Residencial</option>
                                     <option value="Empresarial">Empresarial</option>
@@ -338,7 +339,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Referência </strong> </span>
-                                <textarea rows="3" class="form-control" name="a_referencia"></textarea>
+                                <textarea rows="3" class="form-control" v-model="aReferencia" name="a_referencia"></textarea>
                             </div>
                         </div>
                     </div>
@@ -347,7 +348,7 @@
                     <div id="alinhado">
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_comprovante" value="O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial" id="CA_e1">
+                                <input type="checkbox" class="custom-control-input" v-model="aComprovante" name="a_comprovante" value="O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial" id="CA_e1">
                                 <label class="custom-control-label" for="CA_e1">O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial? </label>
                             </div>
                         </div>
@@ -369,14 +370,14 @@
                     <div id="alinhado">
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_valorLiquido" value="O valor postulado é liquido?" id="CA_vPC1">
+                                <input type="checkbox" class="custom-control-input" v-model="aValorLiquido" name="a_valorLiquido" value="O valor postulado é liquido?" id="CA_vPC1">
                                 <label class="custom-control-label" for="CA_vPC1">O valor postulado é liquido? </label>
                             </div>
                         </div>
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Valor Postulado</strong> </span>
-                                <input type="text" class="form-control" name="a_valorPedido" v-money="'R$'">
+                                <input type="text" class="form-control" v-model="aValorPedido" name="a_valorPedido" v-money="'R$'">
                             </div>
                         </div>
                     </div>
@@ -398,12 +399,12 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Valor da Causa</strong> </span>
-                                <input type="text" class="form-control" name="a_valorCausa" v-money="'R$'">
+                                <input type="text" class="form-control" v-model="aValorCausa" name="a_valorCausa" v-money="'R$'">
                             </div>
                         </div>
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="a_pretensao" value="A pretensão deduzida versa sobre obrigações vincendas?" id="CA_vPC2">
+                                <input type="checkbox" class="custom-control-input" v-model="aPretensao" name="a_pretensao" value="A pretensão deduzida versa sobre obrigações vincendas?" id="CA_vPC2">
                                 <label class="custom-control-label" for="CA_vPC2">A pretensão deduzida versa sobre obrigações vincendas? </label>
                             </div>
                         </div>
@@ -426,7 +427,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Estado Civil </strong> </span>
-                                <select class="custom-select" name="a_estadoCivil">
+                                <select class="custom-select" v-model="aEstadoCivil" name="a_estadoCivil">
                                     <option value="">Escolha o estado civil</option>
                                     <option value="Solteiro">Solteiro</option>
                                     <option value="Casado">Casado</option>
@@ -443,7 +444,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Profissão </strong> </span>
-                                <input type="text" class="form-control" name="a_profissao">
+                                <input type="text" class="form-control" v-model="aProfissao" name="a_profissao">
                             </div>
                         </div>
                     </div>
@@ -453,7 +454,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nacionalidade </strong> </span>
-                                <select class="custom-select" name="a_nacionalidade">
+                                <select class="custom-select" v-model="aNacionalidade" name="a_nacionalidade">
                                     <option value="">Brasileira</option>
                                     <option value="Naturalizado brasileiro">Naturalizado brasileiro</option>
                                     <option value="Estrangeira">Estrangeira</option>
@@ -467,8 +468,8 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Escolha a Naturalidade </strong> </span>
-                                <input type="text" class="form-control" placeholder="Estado" name="a_estadoNaturalidade">
-                                <input type="text" class="form-control" placeholder="Cidade" name="a_cidadeNaturalidade">
+                                <input type="text" class="form-control" placeholder="Estado" v-model="aEstadoNaturalidade" name="a_estadoNaturalidade">
+                                <input type="text" class="form-control" placeholder="Cidade" v-model="aCidadeNaturalidade" name="a_cidadeNaturalidade">
                             </div>
                         </div>
                     </div>
@@ -478,7 +479,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nome do Pai </strong> </span>
-                                <input type="text" class="form-control" name="a_pai">
+                                <input type="text" class="form-control" v-model="aPai" name="a_pai">
                             </div>
                         </div>
                     </div>
@@ -488,7 +489,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nome da Mãe </strong> </span>
-                                <input type="text" class="form-control" name="a_mae">
+                                <input type="text" class="form-control" v-model="aMae" name="a_mae">
                             </div>
                         </div>
                     </div>
@@ -498,7 +499,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Data de Nascimento </strong> </span>
-                                <input type="text" class="form-control" name="a_nascimento" v-mask="'##/##/####'">
+                                <input type="text" class="form-control" v-model="aNascimento" name="a_nascimento" v-mask="'##/##/####'">
                             </div>
                         </div>
                     </div>
@@ -519,9 +520,50 @@
     name: 'camodal',
     data: function() {
         return {
-            caTipo: 'Autor',
-            caPessoa: '',
-            caNome: '',
+            aIncapaz: '',
+            aMassa: '',
+            aInsolvente: '',
+            aPreso: '',
+            aEspolio: '',
+            aCondominio: '',
+            aMinisterio: '',
+            aPessoa: '',
+            aEstrangeiro: '',
+            aSexo: '',
+            aCpf: '',
+            aNome: '',
+            aMenor: '',
+            aDocumento: '',
+            aNumeroIdentificacao: '',
+            aExpedidor: '',
+            aEmissao: '',
+            aTelefone: '',
+            aEmail: '',
+            aRepresenta: '',
+            aIntimacao: '',
+            aCep: '',
+            aEstado: '',
+            aCidade: '',
+            aBairro: '',
+            aTipoLogradouro: '',
+            aLogradouro: '',
+            aNumeroEndereco: '',
+            aComplemento: '',
+            aTipoEndereco: '',
+            aReferencia: '',
+            aComprovante: '',
+            aValorPedido: '',
+            aValorLiquido: '',
+            aValorCausa: '',
+            aPretensao: '',
+            aEstadoCivil: '',
+            aProfissao: '',
+            aNacionalidade: '',
+            aEstadoNaturalidade: '',
+            aCidadeNaturalidade: '',
+            aPai: '',
+            aMae: '',
+            aNascimento: ''
         }
     },
     methods: {
@@ -530,7 +572,53 @@
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
         },
         novoAutor: function() {
-            this.$emit('CA_dados', this.caTipo, this.caPessoa, this.caNome)
+            this.$emit('caDados', this.aIncapaz, this.aMassa, this.aInsolvente, this.aPreso, this.aEspolio, this.aCondominio, this.aMinisterio, this.aPessoa, this.aEstrangeiro, this.aSexo, this.aCpf, this.aNome, this.aMenor, this.aDocumento, this.aNumeroIdentificacao, this.aExpedidor, this.aEmissao, this.aTelefone, this.aEmail, this.aRepresenta, this.aIntimacao, this.aCep, this.aEstado, this.aCidade, this.aBairro, this.aTipoLogradouro, this.aLogradouro, this.aNumeroEndereco, this.aComplemento, this.aTipoEndereco, this.aReferencia, this.aComprovante, this.aValorPedido, this.aValorLiquido, this.aValorCausa, this.aPretensao, this.aEstadoCivil, this.aProfissao, this.aNacionalidade, this.aEstadoNaturalidade, this.aCidadeNaturalidade, this.aPai, this.aMae, this.aNascimento)
+        },
+        limparAutorModal: function() {
+            this.aIncapaz = '',
+            this.aMassa = '',
+            this.aInsolvente = '',
+            this.aPreso = '',
+            this.aEspolio = '',
+            this.aCondominio = '',
+            this.aMinisterio = '',
+            this.aPessoa = '',
+            this.aEstrangeiro = '',
+            this.aSexo = '',
+            this.aCpf = '',
+            this.aNome = '',
+            this.aMenor = '',
+            this.aDocumento = '',
+            this.aNumeroIdentificacao = '',
+            this.aExpedidor = '',
+            this.aEmissao = '',
+            this.aTelefone = '',
+            this.aEmail = '',
+            this.aRepresenta = '',
+            this.aIntimacao = '',
+            this.aCep = '',
+            this.aEstado = '',
+            this.aCidade = '',
+            this.aBairro = '',
+            this.aTipoLogradouro = '',
+            this.aLogradouro = '',
+            this.aNumeroEndereco = '',
+            this.aComplemento = '',
+            this.aTipoEndereco = '',
+            this.aReferencia = '',
+            this.aComprovante = '',
+            this.aValorPedido = '',
+            this.aValorLiquido = '',
+            this.aValorCausa = '',
+            this.aPretensao = '',
+            this.aEstadoCivil = '',
+            this.aProfissao = '',
+            this.aNacionalidade = '',
+            this.aEstadoNaturalidade = '',
+            this.aCidadeNaturalidade = '',
+            this.aPai = '',
+            this.aMae = '',
+            this.aNascimento = ''
         }
     }
 }

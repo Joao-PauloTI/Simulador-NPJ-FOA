@@ -57,6 +57,26 @@ class CreateTbReu extends Migration
             $table->string('r_nascimento')->nullable(); //Data de Nascimento
             $table->timestamps(); //Hora e data de cadastro
         });
+
+        Schema::create('tb_reus_juridicos', function (Blueprint $table) {
+            $table->increments('id');
+            //Informações do Réu
+            $table->string('rj_nome')->nullable();
+            $table->string('rj_cnpj')->nullable();
+            $table->string('rj_tipoEmpresa')->nullable();
+            //Endereço
+            $table->string('rj_cep')->nullable();
+            $table->string('rj_estado')->nullable();
+            $table->string('rj_cidade')->nullable();
+            $table->string('rj_bairro')->nullable();
+            $table->string('rj_tipoLogradouro')->nullable();
+            $table->string('rj_logradouro')->nullable();
+            $table->string('rj_numeroEndereco')->nullable();
+            $table->string('rj_complemento')->nullable();
+            $table->string('rj_tipoEndereco')->nullable();
+            $table->string('rj_referencia')->nullable();
+            $table->timestamps(); //Hora e data de cadastro
+        });
     }
 
     /**
@@ -66,6 +86,7 @@ class CreateTbReu extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tb_reu');
+        Schema::dropIfExists('tb_reus');
+        Schema::dropIfExists('tb_reus_juridicos');
     }
 }

@@ -16,7 +16,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Parte </strong> </span>
-                                <select class="custom-select" name="rr_parte">
+                                <select class="custom-select" v-model="rrParte" name="rr_parte">
                                     <option value="">Escolha um tipo</option>
                                     <option value="Curador">Curador</option>
                                     <option value="Síndico">Síndico</option>
@@ -36,7 +36,8 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Pessoa Física ou Jurídica </strong> </span>
-                                <select class="custom-select" name="rr_pessoa">
+                                <select class="custom-select" v-model="rrPessoa" name="rr_pessoa">
+                                    <option value="">Escolha um tipo de pessoa</option>
                                     <option value="Pessoa Física">Pessoa Física</option>
                                     <option value="Pessoa Jurídica">Pessoa Jurídica</option>
                                 </select>
@@ -49,7 +50,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Sexo </strong> </span>
-                                <select class="custom-select" name="rr_sexo">
+                                <select class="custom-select" v-model="rrSexo" name="rr_sexo">
                                     <option value="">Escolha um sexo</option>
                                     <option value="Masculino">Masculino</option>
                                     <option value="Feminino">Feminino</option>
@@ -63,7 +64,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CPF/CNPJ </strong> </span>
-                                <input type="text" class="form-control" v-mask="'###.###.###-##'" name="rr_cpf">
+                                <input type="text" class="form-control" v-mask="'###.###.###-##'" v-model="rrCpf" name="rr_cpf">
                             </div>
                         </div>
                     </div>
@@ -73,7 +74,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Nome </strong> </span>
-                                <input type="text" class="form-control" name="rr_nome">
+                                <input type="text" class="form-control" v-model="rrNome" name="rr_nome">
                             </div>
                         </div>
                     </div>
@@ -83,7 +84,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Documento de identificação </strong> </span>
-                                <select class="custom-select" name="rr_documento">
+                                <select class="custom-select" v-model="rrDocumento" name="rr_documento">
                                     <option value="">Escolha um tipo</option>
                                     <option value="Registro Geral">Registro Geral</option>
                                     <option value="Carteira Nacional de Habilitação">Carteira Nacional de Habilitação</option>
@@ -101,7 +102,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Número </strong> </span>
-                                <input type="text" class="form-control" name="rr_numeroIdentificacao">
+                                <input type="text" class="form-control" v-model="rrNumeroIdentificacao" name="rr_numeroIdentificacao">
                             </div>
                         </div>
                     </div>
@@ -111,7 +112,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Órgão Emissor </strong> </span>
-                                <input type="text" class="form-control" name="rr_emissor">
+                                <input type="text" class="form-control" v-model="rrEmissor" name="rr_emissor">
                             </div>
                         </div>
                     </div>
@@ -121,7 +122,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Data de Emissão </strong> </span>
-                                <input type="text" class="form-control" name="rr_emissao" v-mask="'##/##/####'">
+                                <input type="text" class="form-control" v-model="rrEmissao" name="rr_emissao" v-mask="'##/##/####'">
                             </div>
                         </div>
                     </div>
@@ -131,7 +132,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Telefone </strong> </span>
-                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" name="rr_telefone">
+                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" v-model="rrTelefone" name="rr_telefone">
                             </div>
                         </div>
                     </div>
@@ -141,7 +142,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>E-mail </strong> </span>
-                                <input type="email" class="form-control" name="rr_email">
+                                <input type="email" class="form-control" v-model="rrEmail" name="rr_email">
                             </div>
                         </div>
                     </div>
@@ -162,7 +163,7 @@
                     <div id="alinhado">
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="rr_incerto" value="Endereco Incerto" id="CRR_e1">
+                                <input type="checkbox" class="custom-control-input" v-model="rrIncerto" name="rr_incerto" value="Endereco Incerto" id="CRR_e1">
                                 <label class="custom-control-label" for="CRR_e1"><strong>Endereco Incerto </strong> </label>
                             </div>
                         </div>
@@ -173,7 +174,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CEP </strong> </span>
-                                <input type="text" class="form-control" v-mask="'#####-###'" name="rr_cep">
+                                <input type="text" class="form-control" v-mask="'#####-###'" v-model="rrCep" name="rr_cep">
                                 <a href=""><ins> verificar CEP</ins> </a>
                                 <a href=""><ins> Correios</ins> </a>
                             </div>
@@ -185,7 +186,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Estado </strong> </span>
-                                <input type="text" class="form-control" name="rr_estado">
+                                <input type="text" class="form-control" v-model="rrEstado" name="rr_estado">
                             </div>
                         </div>
                     </div>
@@ -195,7 +196,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Cidade </strong> </span>
-                                <input type="text" class="form-control" name="rr_cidade">
+                                <input type="text" class="form-control" v-model="rrCidade" name="rr_cidade">
                             </div>
                         </div>
                     </div>
@@ -205,7 +206,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Bairro </strong> </span>
-                                <input type="text" class="form-control" name="rr_bairro">
+                                <input type="text" class="form-control" v-model="rrBairro" name="rr_bairro">
                             </div>
                         </div>
                     </div>
@@ -215,7 +216,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Tipo de Logradouro </strong> </span>
-                                <input type="text" class="form-control" name="rr_tipoLogradouro">
+                                <input type="text" class="form-control" v-model="rrTipoLogradouro" name="rr_tipoLogradouro">
                             </div>
                         </div>
                     </div>
@@ -225,7 +226,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Logradouro </strong> </span>
-                                <input type="text" class="form-control" name="rr_logradouro">
+                                <input type="text" class="form-control" v-model="rrLogradouro" name="rr_logradouro">
                             </div>
                         </div>
                     </div>
@@ -235,7 +236,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Número </strong> </span>
-                                <input type="text" class="form-control" name="rr_numeroEndereco">
+                                <input type="text" class="form-control" v-model="rrNumeroEndereco" name="rr_numeroEndereco">
                             </div>
                         </div>
                     </div>
@@ -245,7 +246,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Complemento </strong> </span>
-                                <input type="text" class="form-control" name="rr_complemento">
+                                <input type="text" class="form-control" v-model="rrComplemento" name="rr_complemento">
                             </div>
                         </div>
                     </div>
@@ -255,7 +256,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Tipo de Endereço </strong> </span>
-                                <select class="custom-select" name="rr_tipoEndereco">
+                                <select class="custom-select" v-model="rrTipoEndereco" name="rr_tipoEndereco">
                                     <option value="">Escolha o tipo de endereço</option>
                                     <option value="Residencial">Residencial</option>
                                     <option value="Empresarial">Empresarial</option>
@@ -270,7 +271,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Referência </strong> </span>
-                                <textarea rows="3" class="form-control" name="rr_referencia"></textarea>
+                                <textarea rows="3" class="form-control" v-model="rrReferencia" name="rr_referencia"></textarea>
                             </div>
                         </div>
                     </div>
@@ -279,7 +280,7 @@
                     <div id="alinhado">
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="rr_comprovante" value="O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial" id="CRR_e2">
+                                <input type="checkbox" class="custom-control-input" v-model="rrComprovante" name="rr_comprovante" value="O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial" id="CRR_e2">
                                 <label class="custom-control-label" for="CRR_e2">O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial? </label>
                             </div>
                         </div>
@@ -301,14 +302,14 @@
                     <div id="alinhado">
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="rr_valorLiquido" value="O valor postulado é liquido" id="CRR_vPC1">
+                                <input type="checkbox" class="custom-control-input" v-model="rrValorLiquido" name="rr_valorLiquido" value="O valor postulado é liquido" id="CRR_vPC1">
                                 <label class="custom-control-label" for="CRR_vPC1">O valor postulado é liquido? </label>
                             </div>
                         </div>
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Valor Postulado</strong> </span>
-                                <input type="text" class="form-control" v-money="'R$'" name="rr_valorPedido">
+                                <input type="text" class="form-control" v-money="'R$'" v-model="rrValorPedido" name="rr_valorPedido">
                             </div>
                         </div>
                     </div>
@@ -330,12 +331,12 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Valor da Causa</strong> </span>
-                                <input type="text" class="form-control" v-money="'R$'" name="rr_valorCausa">
+                                <input type="text" class="form-control" v-money="'R$'" v-model="rrValorCausa" name="rr_valorCausa">
                             </div>
                         </div>
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="rr_pretensao" value="A pretensão deduzida versa sobre obrigações vincendas" id="CRR_vPC2">
+                                <input type="checkbox" class="custom-control-input" v-model="rrPretensao" name="rr_pretensao" value="A pretensão deduzida versa sobre obrigações vincendas" id="CRR_vPC2">
                                 <label class="custom-control-label" for="CRR_vPC2">A pretensão deduzida versa sobre obrigações vincendas? </label>
                             </div>
                         </div>
@@ -358,7 +359,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Estado Civil </strong> </span>
-                                <select class="custom-select" name="rr_estadoCivil">
+                                <select class="custom-select" v-model="rrEstadoCivil" name="rr_estadoCivil">
                                     <option value="">Escolha o estado civil</option>
                                     <option value="Solteiro">Solteiro</option>
                                     <option value="Casado">Casado</option>
@@ -375,7 +376,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Profissão </strong> </span>
-                                <input type="text" class="form-control" name="rr_profissao">
+                                <input type="text" class="form-control" v-model="rrProfissao" name="rr_profissao">
                             </div>
                         </div>
                     </div>
@@ -385,7 +386,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nacionalidade </strong> </span>
-                                <select class="custom-select" name="rr_nacionalidade">
+                                <select class="custom-select" v-model="rrNacionalidade" name="rr_nacionalidade">
                                     <option value="Brasileira">Brasileira</option>
                                     <option value="Naturalizado brasileiro">Naturalizado brasileiro</option>
                                     <option value="Estrangeira">Estrangeira</option>
@@ -399,8 +400,8 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Escolha a Naturalidade </strong> </span>
-                                <input type="text" class="form-control" placeholder="Cidade" name="rr_estadoNaturalidade">
-                                <input type="text" class="form-control" placeholder="Estado" name="rr_cidadeNaturalidade">
+                                <input type="text" class="form-control" placeholder="Cidade" v-model="rrEstadoNaturalidade" name="rr_estadoNaturalidade">
+                                <input type="text" class="form-control" placeholder="Estado" v-model="rrCidadeNaturalidade" name="rr_cidadeNaturalidade">
                             </div>
                         </div>
                     </div>
@@ -410,7 +411,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nome do Pai </strong> </span>
-                                <input type="text" class="form-control" name="rr_pai">
+                                <input type="text" class="form-control" v-model="rrPai" name="rr_pai">
                             </div>
                         </div>
                     </div>
@@ -420,7 +421,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nome da Mãe </strong> </span>
-                                <input type="text" class="form-control" name="rr_mae">
+                                <input type="text" class="form-control" v-model="rrMae" name="rr_mae">
                             </div>
                         </div>
                     </div>
@@ -430,7 +431,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Data de Nascimento </strong> </span>
-                                <input type="text" class="form-control" v-mask="'##/##/####'" name="rr_nascimento">
+                                <input type="text" class="form-control" v-mask="'##/##/####'" v-model="rrNascimento" name="rr_nascimento">
                             </div>
                         </div>
                     </div>
@@ -441,7 +442,7 @@
         <br>
         <!--Botões SALVAR/FECHAR-->
         <div align="center">
-            <button type="submit" class="btn btn-primary">SALVAR</button>
+            <button type="button" @click="novoRepresentanteReu" data-dismiss="modal" class="btn btn-primary">SALVAR</button>
             <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
         </div>
     </div>
@@ -451,13 +452,89 @@
     name: 'crrmodal',
     data: function() {
         return {
-
+            rrParte: '',
+            rrPessoa: '',
+            rrSexo: '',
+            rrCpf: '',
+            rrNome: '',
+            rrMenor: '',
+            rrDocumento: '',
+            rrNumeroIdentificacao: '',
+            rrEmissor: '',
+            rrEmissao: '',
+            rrTelefone: '',
+            rrEmail: '',
+            rrIncerto: '',
+            rrCep: '',
+            rrEstado: '',
+            rrCidade: '',
+            rrBairro: '',
+            rrTipoLogradouro: '',
+            rrLogradouro: '',
+            rrNumeroEndereco: '',
+            rrComplemento: '',
+            rrTipoEndereco: '',
+            rrReferencia: '',
+            rrComprovante: '',
+            rrValorPedido: '',
+            rrValorLiquido: '',
+            rrValorCausa: '',
+            rrPretensao: '',
+            rrEstadoCivil: '',
+            rrProfissao: '',
+            rrNacionalidade: '',
+            rrEstadoNaturalidade: '',
+            rrCidadeNaturalidade: '',
+            rrPai: '',
+            rrMae: '',
+            rrNascimento: ''
         }
     },
     methods: {
         ajuda: function() {
             alert(
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+        },
+        novoRepresentanteReu: function() {
+            this.$emit('crrDados', this.rrParte, this.rrPessoa, this.rrSexo, this.rrCpf, this.rrNome, this.rrMenor, this.rrDocumento, this.rrNumeroIdentificacao, this.rrEmissor, this.rrEmissao, this.rrTelefone, this.rrEmail, this.rrIncerto, this.rrCep, this.rrEstado, this.rrCidade, this.rrBairro, this.rrTipoLogradouro, this.rrLogradouro, this.rrNumeroEndereco, this.rrComplemento, this.rrTipoEndereco, this.rrReferencia, this.rrComprovante, this.rrValorPedido, this.rrValorLiquido, this.rrValorCausa, this.rrPretensao, this.rrEstadoCivil, this.rrProfissao, this.rrNacionalidade, this.rrEstadoNaturalidade, this.rrCidadeNaturalidade, this.rrPai, this.rrMae, this.rrNascimento)
+        },
+        limparRepresentanteReuModal: function() {
+            this.rrParte = '',
+            this.rrPessoa = '',
+            this.rrSexo = '',
+            this.rrCpf = '',
+            this.rrNome = '',
+            this.rrMenor = '',
+            this.rrDocumento = '',
+            this.rrNumeroIdentificacao = '',
+            this.rrEmissor = '',
+            this.rrEmissao = '',
+            this.rrTelefone = '',
+            this.rrEmail = '',
+            this.rrIncerto = '',
+            this.rrCep = '',
+            this.rrEstado = '',
+            this.rrCidade = '',
+            this.rrBairro = '',
+            this.rrTipoLogradouro = '',
+            this.rrLogradouro = '',
+            this.rrNumeroEndereco = '',
+            this.rrComplemento = '',
+            this.rrTipoEndereco = '',
+            this.rrReferencia = '',
+            this.rrComprovante = '',
+            this.rrValorPedido = '',
+            this.rrValorLiquido = '',
+            this.rrValorCausa = '',
+            this.rrPretensao = '',
+            this.rrEstadoCivil = '',
+            this.rrProfissao = '',
+            this.rrNacionalidade = '',
+            this.rrEstadoNaturalidade = '',
+            this.rrCidadeNaturalidade = '',
+            this.rrPai = '',
+            this.rrMae = '',
+            this.rrNascimento = ''
         }
     }
 }

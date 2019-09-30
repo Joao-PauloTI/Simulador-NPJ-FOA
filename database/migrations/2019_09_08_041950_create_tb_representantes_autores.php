@@ -30,7 +30,6 @@ class CreateTbRepresentantesAutores extends Migration
             $table->string('ra_sexo')->nullable();
             $table->string('ra_cpf')->nullable(); //CPF/CPNJ
             $table->string('ra_nome')->nullable();
-            $table->string('ra_menor')->nullable(); //Menor de idade
             $table->string('ra_documento')->nullable(); //Documento de identificação
             $table->string('ra_numeroIdentificacao')->nullable();
             $table->string('ra_emissor')->nullable(); //Orgão emissor

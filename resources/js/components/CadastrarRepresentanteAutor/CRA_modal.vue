@@ -15,29 +15,29 @@
                         <!--Opções de marcar-->
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="ra_incapaz" value="Incapaz" id="CRA_dP1">
+                                <input type="checkbox" class="custom-control-input" v-model="raIncapaz" name="ra_incapaz" value="Incapaz" id="CRA_dP1">
                                 <label class="custom-control-label" for="CRA_dP1"> Incapaz
                                 </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="ra_massa" value="Massa Falida" id="CRA_dP2">
+                                <input type="checkbox" class="custom-control-input" v-model="raMassa" name="ra_massa" value="Massa Falida" id="CRA_dP2">
                                 <label class="custom-control-label" for="CRA_dP2"> Massa Falida </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="ra_insolvente" value="Insolvente Civil" id="CRA_dP3">
+                                <input type="checkbox" class="custom-control-input" v-model="raInsolvente" name="ra_insolvente" value="Insolvente Civil" id="CRA_dP3">
                                 <label class="custom-control-label" for="CRA_dP3"> Insolvente Civil
                                 </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="ra_preso" value="Preso" id="CRA_dP4">
+                                <input type="checkbox" class="custom-control-input" v-model="raPreso" name="ra_preso" value="Preso" id="CRA_dP4">
                                 <label class="custom-control-label" for="CRA_dP4"> Preso </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="ra_espolio" value="Espólio com interesse de Incapaz" id="CRA_dP5">
+                                <input type="checkbox" class="custom-control-input" v-model="raEspolio" name="ra_espolio" value="Espólio com interesse de Incapaz" id="CRA_dP5">
                                 <label class="custom-control-label" for="CRA_dP5"> Espólio com interesse de Incapaz </label>
                             </div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="ra_condominio" value="Condomínio" id="CRA_dP6">
+                                <input type="checkbox" class="custom-control-input" v-model="raCondominio" name="ra_condominio" value="Condomínio" id="CRA_dP6">
                                 <label class="custom-control-label" for="CRA_dP6"> Condomínio </label>
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Parte </strong> </span>
-                                <select class="custom-select" name="ra_parte">
+                                <select class="custom-select" v-model="raParte" name="ra_parte">
                                     <option value="">Escolha um tipo</option>
                                     <option value="Curador">Curador</option>
                                     <option value="Síndico">Síndico</option>
@@ -67,7 +67,7 @@
                     <div id="alinhado">
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="ra_ministerio" value="Ministério Público?" id="CRA_dP7">
+                                <input type="checkbox" class="custom-control-input" v-model="raMinisterio" name="ra_ministerio" value="Ministério Público?" id="CRA_dP7">
                                 <label class="custom-control-label" for="CRA_dP7"><strong>Ministério Público? </strong> </label>
                             </div>
                         </div>
@@ -78,7 +78,8 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Pessoa Física ou Jurídica </strong> </span>
-                                <select class="custom-select" name="ra_pessoa">
+                                <select class="custom-select" v-model="raPessoa" name="ra_pessoa">
+                                    <option value="">Escolha um tipo de pessoa</option>
                                     <option value="Pessoa Física">Pessoa Física</option>
                                     <option value="Pessoa Jurídica">Pessoa Jurídica</option>
                                 </select>
@@ -91,7 +92,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Sexo </strong> </span>
-                                <select class="custom-select" name="ra_sexo">
+                                <select class="custom-select" v-model="raSexo" name="ra_sexo">
                                     <option value="">Escolha um sexo</option>
                                     <option value="Masculino">Masculino</option>
                                     <option value="Feminino">Feminino</option>
@@ -105,7 +106,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CPF/CNPJ </strong> </span>
-                                <input type="text" class="form-control" v-mask="'###.###.###-##'" name="ra_cpf">
+                                <input type="text" class="form-control" v-mask="'###.###.###-##'" v-model="raCpf" name="ra_cpf">
                             </div>
                         </div>
                     </div>
@@ -115,7 +116,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Nome </strong> </span>
-                                <input type="text" class="form-control" name="ra_nome">
+                                <input type="text" class="form-control" v-model="raNome" name="ra_nome">
                             </div>
                         </div>
                     </div>
@@ -125,7 +126,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Documento de identificação </strong> </span>
-                                <select class="custom-select" name="ra_documento">
+                                <select class="custom-select" v-model="raDocumento" name="ra_documento">
                                     <option value="">Escolha um tipo</option>
                                     <option value="Registro Geral">Registro Geral</option>
                                     <option value="Carteira Nacional de Habilitação">Carteira Nacional de Habilitação</option>
@@ -143,7 +144,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Número </strong> </span>
-                                <input type="text" class="form-control" name="ra_numeroIdentificacao">
+                                <input type="text" class="form-control" v-model="raNumeroIdentificacao" name="ra_numeroIdentificacao">
                             </div>
                         </div>
                     </div>
@@ -153,7 +154,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Órgão Emissor </strong> </span>
-                                <input type="text" class="form-control" name="ra_emissor">
+                                <input type="text" class="form-control" v-model="raEmissor" name="ra_emissor">
                             </div>
                         </div>
                     </div>
@@ -163,7 +164,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Data de Emissão </strong> </span>
-                                <input type="string" class="form-control" name="ra_emissao" v-mask="'##/##/####'">
+                                <input type="string" class="form-control" v-model="raEmissao" name="ra_emissao" v-mask="'##/##/####'">
                             </div>
                         </div>
                     </div>
@@ -173,7 +174,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Telefone </strong> </span>
-                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" name="ra_telefone">
+                                <input type="tel" class="form-control" v-mask="'(##)#####-####'" v-model="raTelefone" name="ra_telefone">
                             </div>
                         </div>
                     </div>
@@ -183,7 +184,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>E-mail </strong> </span>
-                                <input type="email" class="form-control" name="ra_email">
+                                <input type="email" class="form-control" v-model="raEmail" name="ra_email">
                             </div>
                         </div>
                     </div>
@@ -205,7 +206,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CEP </strong> </span>
-                                <input type="text" class="form-control" v-mask="'#####-###'" name="ra_cep">
+                                <input type="text" class="form-control" v-mask="'#####-###'" v-model="raCep" name="ra_cep">
                                 <a href=""><ins> verificar CEP</ins> </a>
                                 <a href=""><ins> Correios</ins> </a>
                             </div>
@@ -217,7 +218,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Estado </strong> </span>
-                                <input type="text" class="form-control" name="ra_estado">
+                                <input type="text" class="form-control" v-model="raEstado" name="ra_estado">
                             </div>
                         </div>
                     </div>
@@ -227,7 +228,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Cidade </strong> </span>
-                                <input type="text" class="form-control" name="ra_cidade">
+                                <input type="text" class="form-control" v-model="raCidade" name="ra_cidade">
                             </div>
                         </div>
                     </div>
@@ -237,7 +238,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Bairro </strong> </span>
-                                <input type="text" class="form-control" name="ra_bairro">
+                                <input type="text" class="form-control" v-model="raBairro" name="ra_bairro">
                             </div>
                         </div>
                     </div>
@@ -247,7 +248,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Tipo de Logradouro </strong> </span>
-                                <input type="text" class="form-control" name="ra_tipoLogradouro">
+                                <input type="text" class="form-control" v-model="raTipoLogradouro" name="ra_tipoLogradouro">
                             </div>
                         </div>
                     </div>
@@ -257,7 +258,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Logradouro </strong> </span>
-                                <input type="text" class="form-control" name="ra_logradouro">
+                                <input type="text" class="form-control" v-model="raLogradouro" name="ra_logradouro">
                             </div>
                         </div>
                     </div>
@@ -267,7 +268,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Número </strong> </span>
-                                <input type="text" class="form-control" name="ra_numeroEndereco">
+                                <input type="text" class="form-control" v-model="raNumeroEndereco" name="ra_numeroEndereco">
                             </div>
                         </div>
                     </div>
@@ -277,7 +278,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Complemento </strong> </span>
-                                <input type="text" class="form-control" name="ra_complemento">
+                                <input type="text" class="form-control" v-model="raComplemento" name="ra_complemento">
                             </div>
                         </div>
                     </div>
@@ -287,7 +288,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Tipo de Endereço </strong> </span>
-                                <select class="custom-select" name="ra_tipoEndereco">
+                                <select class="custom-select" v-model="raTipoEndereco" name="ra_tipoEndereco">
                                     <option value="">Escolha o tipo de endereço</option>
                                     <option value="Residencial">Residencial</option>
                                     <option value="Empresarial">Empresarial</option>
@@ -302,7 +303,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Referência </strong> </span>
-                                <textarea rows="3" class="form-control" name="ra_referencia"></textarea>
+                                <textarea rows="3" class="form-control" v-model="raReferencia" name="ra_referencia"></textarea>
                             </div>
                         </div>
                     </div>
@@ -311,7 +312,7 @@
                     <div id="alinhado">
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="ra_comprovante" value="O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial" id="CRA_e1">
+                                <input type="checkbox" class="custom-control-input" v-model="raComprovante" name="ra_comprovante" value="O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial" id="CRA_e1">
                                 <label class="custom-control-label" for="CRA_e1">O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial? </label>
                             </div>
                         </div>
@@ -333,14 +334,14 @@
                     <div id="alinhado">
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="ra_valorLiquido" value="O valor postulado é liquido" id="CRA_vPC1">
+                                <input type="checkbox" class="custom-control-input" v-model="raValorLiquido" name="ra_valorLiquido" value="O valor postulado é liquido" id="CRA_vPC1">
                                 <label class="custom-control-label" for="CRA_vPC1">O valor postulado é liquido? </label>
                             </div>
                         </div>
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Valor Postulado</strong> </span>
-                                <input type="text" class="form-control" v-money="'R$'" name="ra_valorPedido">
+                                <input type="text" class="form-control" v-money="'R$'" v-model="raValorPedido" name="ra_valorPedido">
                             </div>
                         </div>
                     </div>
@@ -362,12 +363,12 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Valor da Causa</strong> </span>
-                                <input type="text" class="form-control" v-money="'R$'" name="ra_valorCausa">
+                                <input type="text" class="form-control" v-money="'R$'" v-model="raValorCausa" name="ra_valorCausa">
                             </div>
                         </div>
                         <div>
                             <div class="custom-control custom-control-inline custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="ra_pretensao" value="A pretensão deduzida versa sobre obrigações vincendas" id="CRA_vPC2">
+                                <input type="checkbox" class="custom-control-input" v-model="raPretensao" name="ra_pretensao" value="A pretensão deduzida versa sobre obrigações vincendas" id="CRA_vPC2">
                                 <label class="custom-control-label" for="CRA_vPC2">A pretensão deduzida versa sobre obrigações vincendas? </label>
                             </div>
                         </div>
@@ -390,7 +391,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Estado Civil </strong> </span>
-                                <select class="custom-select" name="ra_estadoCivil">
+                                <select class="custom-select" v-model="raEstadoCivil" name="ra_estadoCivil">
                                     <option value="">Escolha o estado civil</option>
                                     <option value="Solteiro">Solteiro</option>
                                     <option value="Casado">Casado</option>
@@ -407,7 +408,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Profissão </strong> </span>
-                                <input type="text" class="form-control" name="ra_profissao">
+                                <input type="text" class="form-control" v-model="raProfissao" name="ra_profissao">
                             </div>
                         </div>
                     </div>
@@ -417,7 +418,8 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nacionalidade </strong> </span>
-                                <select class="custom-select" name="ra_nacionalidade">
+                                <select class="custom-select" v-model="raNacionalidade" name="ra_nacionalidade">
+                                    <option value="">Escolha uma naturalidade</option>
                                     <option value="Brasileira">Brasileira</option>
                                     <option value="Naturalizado brasileiro">Naturalizado brasileiro</option>
                                     <option value="Estrangeira">Estrangeira</option>
@@ -431,8 +433,8 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Escolha a Naturalidade </strong> </span>
-                                <input type="text" class="form-control" placeholder="Estado" name="ra_estadoNaturalidade">
-                                <input type="text" class="form-control" placeholder="Cidade" name="ra_cidadeNaturalidade">
+                                <input type="text" class="form-control" placeholder="Estado" v-model="raEstadoNaturalidade" name="ra_estadoNaturalidade">
+                                <input type="text" class="form-control" placeholder="Cidade" v-model="raCidadeNaturalidade" name="ra_cidadeNaturalidade">
                             </div>
                         </div>
                     </div>
@@ -442,7 +444,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nome do Pai </strong> </span>
-                                <input type="text" class="form-control" name="ra_pai">
+                                <input type="text" class="form-control" v-model="raPai" name="ra_pai">
                             </div>
                         </div>
                     </div>
@@ -452,7 +454,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nome da Mãe </strong> </span>
-                                <input type="text" class="form-control" name="ra_mae">
+                                <input type="text" class="form-control" v-model="raMae" name="ra_mae">
                             </div>
                         </div>
                     </div>
@@ -462,7 +464,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Data de Nascimento </strong> </span>
-                                <input type="string" class="form-control" name="ra_nascimento" v-mask="'##/##/####'">
+                                <input type="string" class="form-control" v-model="raNascimento" name="ra_nascimento" v-mask="'##/##/####'">
                             </div>
                         </div>
                     </div>
@@ -473,7 +475,7 @@
         <br>
         <!--Botões SALVAR/FECHAR-->
         <div align="center">
-            <button type="submit" class="btn btn-primary">SALVAR</button>
+            <button type="button" @click="novoRepresentanteAutor" data-dismiss="modal" class="btn btn-primary">SALVAR</button>
             <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
         </div>
     </div>
@@ -483,13 +485,99 @@
     name: 'cramodal',
     data: function() {
         return {
-
+            raIncapaz: '',
+            raMassa: '',
+            raInsolvente: '',
+            raPreso: '',
+            raEspolio: '',
+            raCondominio: '',
+            raParte: '',
+            raMinisterio: '',
+            raPessoa: '',
+            raSexo: '',
+            raCpf: '',
+            raNome: '',
+            raDocumento: '',
+            raNumeroIdentificacao: '',
+            raEmissor: '',
+            raEmissao: '',
+            raTelefone: '',
+            raEmail: '',
+            raCep: '',
+            raEstado: '',
+            raCidade: '',
+            raBairro: '',
+            raTipoLogradouro: '',
+            raLogradouro: '',
+            raNumeroEndereco: '',
+            raComplemento: '',
+            raTipoEndereco: '',
+            raReferencia: '',
+            raComprovante: '',
+            raValorPedido: '',
+            raValorLiquido: '',
+            raValorCausa: '',
+            raPretensao: '',
+            raEstadoCivil: '',
+            raProfissao: '',
+            raNacionalidade: '',
+            raEstadoNaturalidade: '',
+            raCidadeNaturalidade: '',
+            raPai: '',
+            raMae: '',
+            raNascimento: ''
         }
     },
     methods: {
         ajuda: function() {
             alert(
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+        },
+        novoRepresentanteAutor: function() {
+            this.$emit('craDados', this.raIncapaz, this.raMassa, this.raInsolvente, this.raPreso, this.raEspolio, this.raCondominio, this.raParte, this.raMinisterio, this.raPessoa, this.raSexo, this.raCpf, this.raNome, this.raDocumento, this.raNumeroIdentificacao, this.raEmissor, this.raEmissao, this.raTelefone, this.raEmail, this.raCep, this.raEstado, this.raCidade, this.raBairro, this.raTipoLogradouro, this.raLogradouro, this.raNumeroEndereco, this.raComplemento, this.raTipoEndereco, this.raReferencia, this.raComprovante, this.raValorPedido, this.raValorLiquido, this.raValorCausa, this.raPretensao, this.raEstadoCivil, this.raProfissao, this.raNacionalidade, this.raEstadoNaturalidade, this.raCidadeNaturalidade, this.raPai, this.raMae, this.raNascimento)
+        },
+        limparRepresentanteAutorModal: function() {
+            this.raIncapaz = '',
+            this.raMassa = '',
+            this.raInsolvente = '',
+            this.raPreso = '',
+            this.raEspolio = '',
+            this.raCondominio = '',
+            this.raParte = '',
+            this.raMinisterio = '',
+            this.raPessoa = '',
+            this.raSexo = '',
+            this.raCpf = '',
+            this.raNome = '',
+            this.raDocumento = '',
+            this.raNumeroIdentificacao = '',
+            this.raEmissor = '',
+            this.raEmissao = '',
+            this.raTelefone = '',
+            this.raEmail = '',
+            this.raCep = '',
+            this.raEstado = '',
+            this.raCidade = '',
+            this.raBairro = '',
+            this.raTipoLogradouro = '',
+            this.raLogradouro = '',
+            this.raNumeroEndereco = '',
+            this.raComplemento = '',
+            this.raTipoEndereco = '',
+            this.raReferencia = '',
+            this.raComprovante = '',
+            this.raValorPedido = '',
+            this.raValorLiquido = '',
+            this.raValorCausa = '',
+            this.raPretensao = '',
+            this.raEstadoCivil = '',
+            this.raProfissao = '',
+            this.raNacionalidade = '',
+            this.raEstadoNaturalidade = '',
+            this.raCidadeNaturalidade = '',
+            this.raPai = '',
+            this.raMae = '',
+            this.raNascimento = ''
         }
     }
 }

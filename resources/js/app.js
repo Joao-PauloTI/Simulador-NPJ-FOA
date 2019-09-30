@@ -33,19 +33,16 @@ Vue.component('dedeclaracaodeveracidade', require('./components/DistribuicaoElet
 
 //Componentes da pasta CadastrarAutor
 Vue.component('camodal', require('./components/CadastrarAutor/CA_modal.vue').default);
-
 //Componentes da pasta CadastrarRepresentanteAutor
 Vue.component('cramodal', require('./components/CadastrarRepresentanteAutor/CRA_modal.vue').default);
-
 //Componentes da pasta CadastrarReu
 Vue.component('crmodal', require('./components/CadastrarReu/CR_modal.vue').default);
-
+//Componentes da pasta CadastrarReuJuridico
+Vue.component('crjmodal', require('./components/CadastrarReuJuridico/CRJ_modal.vue').default);
 //Componentes da pasta CadastrarRepresentanteReu
 Vue.component('crrmodal', require('./components/CadastrarRepresentanteReu/CRR_modal.vue').default);
-
 //Componentes da pasta ConsultasProcessuais
 Vue.component('cpconsultaprocessual', require('./components/ConsultasProcessuais/CP_consultaProcessual.vue').default);
-
 //Componentes da pasta Documentos
 Vue.component('duploadpeticaoinicial', require('./components/Documentos/D_uploadPeticaoInicial.vue').default);
 Vue.component('denviarcpf', require('./components/Documentos/D_enviarCPF.vue').default);

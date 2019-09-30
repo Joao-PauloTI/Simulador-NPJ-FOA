@@ -40,6 +40,10 @@ class Processo extends Model
 	public function processo_reu(){
 		return $this->hasMany('App\Reu', 'r_processo_id');
 	}
+	//Processo 1:N Reu Jurídico
+	public function processo_reuJuridico(){
+		return $this->hasMany('App\ReuJuridico', 'rj_processo_id');
+	}
 	//Processo 1:N RepresentanteReu
 	public function processo_representanteReu(){
 		return $this->hasMany('App\RepresentanteReu', 'rr_processo_id');
