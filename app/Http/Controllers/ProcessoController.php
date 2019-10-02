@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Processo;
+use App\AdvogadoRepresentante;
 use App\Autor;
 use App\RepresentanteAutor;
 use App\Reu;
@@ -59,6 +60,14 @@ class ProcessoController extends Controller
             'p_distribuicao' => 'nullable',
             'p_valor' => 'nullable',
             'p_veracidade' => 'nullable',
+            //AdvogadoRepresentante
+            'ar_advogadoRepresentante' => 'nullable',
+            'ar_nome' => 'nullable',
+            'ar_estadoOAB' => 'nullable',
+            'ar_numeroOAB' => 'nullable',
+            'ar_matriculaRepresentante' => 'nullable',
+            'ar_representa' => 'nullable',
+            'ar_intimacao' => 'nullable',
             //Autor
             'a_incapaz' => 'nullable',
             'a_massa' => 'nullable',
@@ -79,8 +88,6 @@ class ProcessoController extends Controller
             'a_emissao' => 'nullable',
             'a_telefone' => 'nullable',
             'a_email' => 'nullable',
-            'a_representa' => 'nullable',
-            'a_intimacao' => 'nullable',
             'a_cep' => 'nullable',
             'a_estado' => 'nullable',
             'a_cidade' => 'nullable',
@@ -256,6 +263,19 @@ class ProcessoController extends Controller
 
         $processo->save(); //O processo precisa ser salvo primeiro, senão as chaves estrangeiras não terão referência
 
+        $advogadoRepresentante = new AdvogadoRepresentante([
+            'ar_advogadoRepresentante' => $request->get('ar_advogadoRepresentante'),
+            'ar_nome' => $request->get('ar_nome'),
+            'ar_estadoOAB' => $request->get('ar_estadoOAB'),
+            'ar_numeroOAB' => $request->get('ar_numeroOAB'),
+            'ar_matriculaRepresentante' => $request->get('ar_matriculaRepresentante'),
+            'ar_representa' => $request->get('ar_representa'),
+            'ar_intimacao' => $request->get('ar_intimacao'),
+        ]);
+
+        $advogadoRepresentante->advogadoRepresentante_processo()->associate($processo);
+        $advogadoRepresentante->save();
+
         $autor = new Autor([
             'a_incapaz' => $request->get('a_incapaz'),
             'a_massa' => $request->get('a_massa'),
@@ -276,8 +296,6 @@ class ProcessoController extends Controller
             'a_emissao' => $request->get('a_emissao'),
             'a_telefone' => $request->get('a_telefone'),
             'a_email' => $request->get('a_email'),
-            'a_representa' => $request->get('a_representa'),
-            'a_intimacao' => $request->get('a_intimacao'),
             'a_cep' => $request->get('a_cep'),
             'a_estado' => $request->get('a_estado'),
             'a_cidade' => $request->get('a_cidade'),

@@ -28,8 +28,6 @@ class Autor extends Model
 		'a_emissao',
 		'a_telefone',
 		'a_email',
-		'a_representa',
-		'a_intimacao',
 		'a_cep',
 		'a_estado',
 		'a_cidade',

@@ -12,10 +12,12 @@ class AdvogadoRepresentante extends Model
 		'ar_nome',
 		'ar_estadoOAB',
 		'ar_numeroOAB',
-		'ar_matriculaRepresentante'
-	);/*
-    //AdvogadoRepresentante N:N Processo
-	public function p_ar(){
-		return $this->belongsToMany('App\Processo', 'tb_advogados_representantes_processos', 'ar_p_id', 'p_ar_id');
-	}*/
+		'ar_matriculaRepresentante',
+		'ar_representa',
+		'ar_intimacao',
+	);
+    //AdvogadoRepresentante 1:1 Processo
+	public function advogadoRepresentante_processo(){
+		return $this->belongsTo('App\Processo', 'ar_processo_id');
+	}
 }

@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "v-money": "^0.8.1",
+        "vue-input-autowidth": "^1.0.9",
         "vue-the-mask": "^0.11.1"
     }
 }

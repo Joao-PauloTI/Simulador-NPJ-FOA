@@ -8,36 +8,98 @@
                 </h5>
             </div>
             <div class="card-body">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <label for="DE_aR1">
-                            <select class="custom-select" id="DE_aR1" v-model="showOpcao">
-                                <option value="advogado">Advogado</option>
-                                <option value="defensor">Defensor Público</option>
-                            </select>
-                        </label>
-                    </div>
-                    <div class="col-md-1">
-                        <!--espaço entre campos-->
-                    </div>
-                    <div class="col-xs-6" v-show="showOpcao === 'advogado'">
-                        <div class="form-inline">
-                            <span style="margin-right: 3px"><strong> Número de OAB </strong> </span>
-                            <label for="DE_aR2">
-                                <select class="custom-select" id="DE_aR2">
-                                    <option>RJ</option>
-                                    <option>SP</option>
+                <table class="table table-borderless">
+                    <tr>
+                        <td>
+                            <label for="DE_aR1">
+                                <select class="custom-select" id="DE_aR1" v-model="arAdvogadoRepresentante" v-on:blur="gerarNome">
+                                    <option value="Advogado">Advogado</option>
+                                    <option value="Defensor Público">Defensor Público</option>
                                 </select>
                             </label>
-                            <input type="text" class="form-control col-md-5" v-mask="'######'">
-                        </div>
-                    </div>
-                    <div class="col-xs-2" v-show="showOpcao === 'defensor'">
-                        <div class="form-inline">
-                            <span style="margin-right: 3px"><strong> Matrícula </strong> </span>
-                            <input type="text" class="form-control" v-mask="'##########'">
-                        </div>
-                    </div>
+                        </td>
+                        <td v-show="arAdvogadoRepresentante === 'Advogado'">
+                            <div class="form-inline">
+                                <span style="margin-right: 3px"><strong> Número de OAB </strong> </span>
+                                <label for="DE_aR2">
+                                    <select class="custom-select" id="DE_aR2" v-model="arEstadoOAB" v-on:blur="gerarNome">
+                                        <option value="AC">AC</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AP">AP</option>
+                                        <option value="AM">AM</option>
+                                        <option value="BA">BA</option>
+                                        <option value="CE">CE</option>
+                                        <option value="DF">DF</option>
+                                        <option value="ES">ES</option>
+                                        <option value="GO">GO</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MT">MT</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MG">MG</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PB">PB</option>
+                                        <option value="PR">PR</option>
+                                        <option value="PE">PE</option>
+                                        <option value="PI">PI</option>
+                                        <option value="RJ">RJ</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RS">RS</option>
+                                        <option value="RO">RO</option>
+                                        <option value="RR">RR</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SP">SP</option>
+                                        <option value="SE">SE</option>
+                                        <option value="TO">TO</option>
+                                    </select>
+                                </label>
+                                <input type="text" class="form-control col-md-5" v-mask="'######'" v-model="arNumeroOAB" v-on:input="gerarNome">
+                            </div>
+                        </td>
+                        <td v-show="arAdvogadoRepresentante === 'Defensor Público'">
+                            <div class="form-inline">
+                                <span style="margin-right: 3px"><strong> Matrícula </strong> </span>
+                                <input type="text" class="form-control" v-mask="'##########'" v-model="arMatriculaRepresentante" v-on:input="gerarNome">
+                            </div>
+                        </td>
+                        <td>
+                            <input type="text" v-model="arNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; margin-top: 5px; outline: none">
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary" v-if="arAdvogadoRepresentante === 'Advogado' && arEstadoOAB != '' && arNumeroOAB != '' && arNome != ''" v-on:click="adicionarAdvogado">Adicionar</button>
+                            <button type="button" class="btn btn-primary" v-if="arAdvogadoRepresentante === 'Defensor Público' && arMatriculaRepresentante != '' && arNome != ''" v-on:click="adicionarDefensor">Adicionar</button>
+                        </td>
+                    </tr>
+                </table>
+                <div v-if="arAdvogadoDados != null || arDefensorDados != null">
+                    <table class="table table-borderless">
+                        <tr v-for="advogado, index in arAdvogadoDados">
+                            <td>
+                                <input type="text" name="ar_advogadoRepresentante" value="Advogado" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"></td>
+                            <td>
+                                <input type="text" name="ar_estadoOAB" v-bind:value="advogado.arEstadoOAB" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                            </td>
+                            <td>
+                                <input type="text" name="ar_numeroOAB" v-bind:value="advogado.arNumeroOAB" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                            </td>
+                            <td>
+                                <input type="text" name="ar_nome" v-bind:value="advogado.arNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                            </td>
+                            <td><a href="#" v-on:click="excluirAdvogado(index)">Excluir</a></td>
+                        </tr>
+                        <tr v-for="defensor, index in arDefensorDados">
+                            <td>
+                                <input type="text" name="ar_advogadoRepresentante" value="Defensor Público" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"></td>
+                            </td>
+                            <td><!--coluna vazia para ficar alinhado--></td>
+                            <td>
+                                <input type="text" name="ar_matriculaRepresentante" v-bind:value="defensor.arMatriculaRepresentante" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                            </td>
+                            <td>
+                                <input type="text" name="ar_nome" v-bind:value="defensor.arNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                            </td>
+                            <td><a href="#" v-on:click="excluirDefensor(index)">Excluir</a></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -45,17 +107,75 @@
     </div>
 </template>
 <script>
+//Modal de cadastro de autor
+import camodal from '../CadastrarAutor/CA_modal'
+
 export default {
     name: 'deadvogadoRepresentante',
+    components: { camodal },
     data: function() {
         return {
-            showOpcao: "advogado"
+            arAdvogadoRepresentante: 'Advogado',
+            arEstadoOAB: 'RJ',
+            arNumeroOAB: '',
+            arMatriculaRepresentante: '',
+            arNome: '',
+            arAdvogadoDados: [],
+            arDefensorDados: []
         }
     },
     methods: {
         ajuda: function() {
             alert(
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+                "Advogado - RJ 111111 - Fernanda Canedo; \nAdvogado - RJ 222222 - Thainá Brigida; \nAdvogado - SP 333333 - Daniele Souza; \nDefensor Público - 4444444444 - Adilson Gustavo; \nDefensor Público - 5555555555 - Rosenclever Lopes; \nDefensor Público - 6666666666 - Leonardo Feliciano")
+        },
+        gerarNome: function() {
+            if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'RJ' && this.arNumeroOAB === '111111') {
+                this.arMatriculaRepresentante = ''
+                this.arNome = 'Fernanda Canedo'
+            } else if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'RJ' && this.arNumeroOAB === '222222') {
+                this.arMatriculaRepresentante = ''
+                this.arNome = 'Thainá Brigida'
+            } else if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'SP' && this.arNumeroOAB === '333333') {
+                this.arMatriculaRepresentante = ''
+                this.arNome = 'Daniele Souza'
+            } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatriculaRepresentante === '4444444444') {
+                this.arNumeroOAB = ''
+                this.arNome = 'Adilson Gustavo'
+            } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatriculaRepresentante === '5555555555') {
+                this.arNumeroOAB = ''
+                this.arNome = 'Rosenclever Lopes'
+            } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatriculaRepresentante === '6666666666') {
+                this.arNumeroOAB = ''
+                this.arNome = 'Leonardo Feliciano'
+            } else {
+                this.arNome = ''
+            }
+        },
+        adicionarAdvogado: function() {
+            this.arAdvogadoDados.push({
+                'arEstadoOAB': this.arEstadoOAB,
+                'arNumeroOAB': this.arNumeroOAB,
+                'arNome': this.arNome
+            })
+            this.arNumeroOAB = ''
+            this.arMatriculaRepresentante = ''
+            this.arNome = ''
+        },
+        excluirAdvogado: function(index) {
+            this.$delete(this.arAdvogadoDados, index)
+        },
+        adicionarDefensor: function() {
+            this.arDefensorDados.push({
+                'arMatriculaRepresentante': this.arMatriculaRepresentante,
+                'arNome': this.arNome
+            })
+            this.arNumeroOAB = ''
+            this.arMatriculaRepresentante = ''
+            this.arNome = ''
+        },
+        excluirDefensor: function(index) {
+            this.$delete(this.arDefensorDados, index)
         }
     }
 }

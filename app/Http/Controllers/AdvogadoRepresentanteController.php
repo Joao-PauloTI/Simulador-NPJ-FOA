@@ -35,7 +35,28 @@ class AdvogadoRepresentanteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'ar_advogadoRepresentante' => 'nullable',
+            'ar_nome' => 'nullable',
+            'ar_estadoOAB' => 'nullable',
+            'ar_numeroOAB' => 'nullable',
+            'ar_matriculaRepresentante' => 'nullable',
+            'ar_representa' => 'nullable',
+            'ar_intimacao' => 'nullable'
+        ]);
+
+        $advogadoRepresentante = new AdvogadoRepresentante([
+            'ar_advogadoRepresentante' => $request->get('ar_advogadoRepresentante'),
+            'ar_nome' => $request->get('ar_nome'),
+            'ar_estadoOAB' => $request->get('ar_estadoOAB'),
+            'ar_numeroOAB' => $request->get('ar_numeroOAB'),
+            'ar_matriculaRepresentante' => $request->get('ar_matriculaRepresentante'),
+            'ar_representa' => $request->get('ar_representa'),
+            'ar_intimacao' => $request->get('ar_intimacao'),
+        ]);
+
+        $advogadoRepresentante->save();
+        return redirect('/');
     }
 
     /**

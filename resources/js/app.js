@@ -61,9 +61,13 @@ Vue.use(VueTheMask)
 import money from 'v-money'
 Vue.use(money, {precision: 2})
 
+import VueInputAutowidth from 'vue-input-autowidth'
+Vue.use(VueInputAutowidth)
+
 const app = new Vue({
     el: '#app',
     
 });
 
-//https://stackoverflow.com/questions/51307837/adding-data-from-modal-form-to-the-table-via-vue-js
+//https://stackoverflow.com/questions/29799900/how-to-save-multiple-inputs-of-rows-in-the-same-column-of-database
+//https://stackoverflow.com/questions/47102608/laravel-save-multiple-data-to-one-column-in-database

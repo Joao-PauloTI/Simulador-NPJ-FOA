@@ -182,7 +182,7 @@
 </template>
 <script>
     export default {
-    name: 'crmodal',
+    name: 'crjmodal',
     data: function() {
         return {
             rjNome: '',

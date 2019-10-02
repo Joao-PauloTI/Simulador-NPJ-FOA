@@ -24,10 +24,10 @@ class Processo extends Model
 	    'p_valor',
 	    'p_veracidade'
 	);
-    //Processo N:N AdvogadoRepresentante
-	/*public function ar_p(){
-		return $this->belongsToMany('App\AdvogadoRepresentante', 'tb_advogados_representantes_processos', 'p_ar_id', 'ar_p_id');
-	}*/
+    //Processo 1:N AdvogadoRepresentante
+	public function ar_p(){
+		return $this->hasMany('App\AdvogadoRepresentante', 'ar_processo_id');
+	}
 	//Processo 1:N Autor
 	public function processo_autor(){
 		return $this->hasMany('App\Autor', 'a_processo_id');

@@ -212,13 +212,13 @@
                             <td>Lorem Ipsum Dolor Sit Amet</td>
                             <td>
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" v-model="aRepresenta" name="a_representa" value="Representa" id="CA_aR1">
+                                    <input type="checkbox" class="custom-control-input" v-model="aRepresenta" name="ar_representa" value="Sim" id="CA_aR1">
                                     <label class="custom-control-label" for="CA_aR1"></label>
                                 </div>
                             </td>
                             <td>
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" v-model="aIntimacao" name="a_intimacao" value="Intimação" id="CA_aR2">
+                                    <input type="checkbox" class="custom-control-input" v-model="aIntimacao" name="ar_intimacao" value="Sim" id="CA_aR2">
                                     <label class="custom-control-label" for="CA_aR2"></label>
                                 </div>
                             </td>

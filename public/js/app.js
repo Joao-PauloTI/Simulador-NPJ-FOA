@@ -4182,7 +4182,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'crmodal',
+  name: 'crjmodal',
   data: function data() {
     return {
       rjNome: '',
@@ -4300,6 +4300,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CadastrarAutor_CA_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../CadastrarAutor/CA_modal */ "./resources/js/components/CadastrarAutor/CA_modal.vue");
 //
 //
 //
@@ -4346,16 +4347,137 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//Modal de cadastro de autor
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'deadvogadoRepresentante',
+  components: {
+    camodal: _CadastrarAutor_CA_modal__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
   data: function data() {
     return {
-      showOpcao: "advogado"
+      arAdvogadoRepresentante: 'Advogado',
+      arEstadoOAB: 'RJ',
+      arNumeroOAB: '',
+      arMatriculaRepresentante: '',
+      arNome: '',
+      arAdvogadoDados: [],
+      arDefensorDados: []
     };
   },
   methods: {
     ajuda: function ajuda() {
-      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+      alert("Advogado - RJ 111111 - Fernanda Canedo; \nAdvogado - RJ 222222 - Thainá Brigida; \nAdvogado - SP 333333 - Daniele Souza; \nDefensor Público - 4444444444 - Adilson Gustavo; \nDefensor Público - 5555555555 - Rosenclever Lopes; \nDefensor Público - 6666666666 - Leonardo Feliciano");
+    },
+    gerarNome: function gerarNome() {
+      if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'RJ' && this.arNumeroOAB === '111111') {
+        this.arMatriculaRepresentante = '';
+        this.arNome = 'Fernanda Canedo';
+      } else if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'RJ' && this.arNumeroOAB === '222222') {
+        this.arMatriculaRepresentante = '';
+        this.arNome = 'Thainá Brigida';
+      } else if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'SP' && this.arNumeroOAB === '333333') {
+        this.arMatriculaRepresentante = '';
+        this.arNome = 'Daniele Souza';
+      } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatriculaRepresentante === '4444444444') {
+        this.arNumeroOAB = '';
+        this.arNome = 'Adilson Gustavo';
+      } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatriculaRepresentante === '5555555555') {
+        this.arNumeroOAB = '';
+        this.arNome = 'Rosenclever Lopes';
+      } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatriculaRepresentante === '6666666666') {
+        this.arNumeroOAB = '';
+        this.arNome = 'Leonardo Feliciano';
+      } else {
+        this.arNome = '';
+      }
+    },
+    adicionarAdvogado: function adicionarAdvogado() {
+      this.arAdvogadoDados.push({
+        'arEstadoOAB': this.arEstadoOAB,
+        'arNumeroOAB': this.arNumeroOAB,
+        'arNome': this.arNome
+      });
+      this.arNumeroOAB = '';
+      this.arMatriculaRepresentante = '';
+      this.arNome = '';
+    },
+    excluirAdvogado: function excluirAdvogado(index) {
+      this.$delete(this.arAdvogadoDados, index);
+    },
+    adicionarDefensor: function adicionarDefensor() {
+      this.arDefensorDados.push({
+        'arMatriculaRepresentante': this.arMatriculaRepresentante,
+        'arNome': this.arNome
+      });
+      this.arNumeroOAB = '';
+      this.arMatriculaRepresentante = '';
+      this.arNome = '';
+    },
+    excluirDefensor: function excluirDefensor(index) {
+      this.$delete(this.arDefensorDados, index);
     }
   }
 });
@@ -10877,6 +10999,79 @@ function toComment(sourceMap) {
 
 	return '/*# ' + data + ' */';
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/es6-object-assign/auto.js":
+/*!************************************************!*\
+  !*** ./node_modules/es6-object-assign/auto.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(/*! ./index */ "./node_modules/es6-object-assign/index.js").polyfill();
+
+
+/***/ }),
+
+/***/ "./node_modules/es6-object-assign/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/es6-object-assign/index.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Code refactored from Mozilla Developer Network:
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
+ */
+
+
+
+function assign(target, firstSource) {
+  if (target === undefined || target === null) {
+    throw new TypeError('Cannot convert first argument to object');
+  }
+
+  var to = Object(target);
+  for (var i = 1; i < arguments.length; i++) {
+    var nextSource = arguments[i];
+    if (nextSource === undefined || nextSource === null) {
+      continue;
+    }
+
+    var keysArray = Object.keys(Object(nextSource));
+    for (var nextIndex = 0, len = keysArray.length; nextIndex < len; nextIndex++) {
+      var nextKey = keysArray[nextIndex];
+      var desc = Object.getOwnPropertyDescriptor(nextSource, nextKey);
+      if (desc !== undefined && desc.enumerable) {
+        to[nextKey] = nextSource[nextKey];
+      }
+    }
+  }
+  return to;
+}
+
+function polyfill() {
+  if (!Object.assign) {
+    Object.defineProperty(Object, 'assign', {
+      enumerable: false,
+      configurable: true,
+      writable: true,
+      value: assign
+    });
+  }
+}
+
+module.exports = {
+  assign: assign,
+  polyfill: polyfill
+};
 
 
 /***/ }),
@@ -42423,6 +42618,101 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-input-autowidth/dist/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/vue-input-autowidth/dist/index.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(/*! es6-object-assign/auto */ "./node_modules/es6-object-assign/auto.js");
+
+function checkWidth (el, binding) {
+  var mirror = document.querySelector(".vue-input-autowidth-mirror-".concat(el.dataset.uuid));
+  var defaults = {
+    maxWidth: "none",
+    minWidth: "none",
+    comfortZone: 0
+  };
+  var options = Object.assign({}, defaults, binding.value);
+  el.style.maxWidth = options.maxWidth;
+  el.style.minWidth = options.minWidth;
+  var val = el.value;
+
+  if (!val) {
+    val = el.placeholder || "";
+  }
+
+  while (mirror.childNodes.length) {
+    mirror.removeChild(mirror.childNodes[0]);
+  }
+
+  mirror.appendChild(document.createTextNode(val));
+  var newWidth = mirror.scrollWidth + options.comfortZone + 2;
+
+  if (newWidth != el.scrollWidth) {
+    el.style.width = "".concat(newWidth, "px");
+  }
+}
+
+var directive = {
+  bind: function bind(el) {
+    if (el.tagName.toLocaleUpperCase() !== "INPUT") {
+      throw new Error("v-input-autowidth can only be used on input elements.");
+    }
+
+    el.dataset.uuid = Math.random().toString(36).slice(-5);
+    el.style.boxSizing = "content-box";
+  },
+  inserted: function inserted(el, binding) {
+    var styles = window.getComputedStyle(el);
+    el.mirror = document.createElement("span");
+    Object.assign(el.mirror.style, {
+      position: "absolute",
+      top: "0",
+      left: "0",
+      visibility: "hidden",
+      height: "0",
+      overflow: "hidden",
+      whiteSpace: "pre",
+      fontSize: styles.fontSize,
+      fontFamily: styles.fontFamily,
+      fontWeight: styles.fontWeight,
+      fontStyle: styles.fontStyle,
+      letterSpacing: styles.letterSpacing,
+      textTransform: styles.textTransform
+    });
+    el.mirror.classList.add("vue-input-autowidth-mirror-".concat(el.dataset.uuid));
+    el.mirror.setAttribute("aria-hidden", "true");
+    document.body.appendChild(el.mirror);
+    checkWidth(el, binding);
+  },
+  componentUpdated: function componentUpdated(el, binding) {
+    checkWidth(el, binding);
+  },
+  unbind: function unbind(el) {
+    document.body.removeChild(el.mirror);
+  }
+};
+
+var install = function install(Vue) {
+  Vue.directive("autowidth", directive);
+};
+
+if (typeof window !== "undefined" && window.Vue) {
+  window.Vue.use(install);
+}
+
+directive.install = install;
+
+module.exports = directive;
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CadastrarAutor/CA_modal.vue?vue&type=template&id=680e94e4&scoped=true&":
 /*!**************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CadastrarAutor/CA_modal.vue?vue&type=template&id=680e94e4&scoped=true& ***!
@@ -43513,13 +43803,13 @@ var render = function() {
                     staticClass: "custom-control-input",
                     attrs: {
                       type: "checkbox",
-                      name: "a_representa",
-                      value: "Representa",
+                      name: "ar_representa",
+                      value: "Sim",
                       id: "CA_aR1"
                     },
                     domProps: {
                       checked: Array.isArray(_vm.aRepresenta)
-                        ? _vm._i(_vm.aRepresenta, "Representa") > -1
+                        ? _vm._i(_vm.aRepresenta, "Sim") > -1
                         : _vm.aRepresenta
                     },
                     on: {
@@ -43528,7 +43818,7 @@ var render = function() {
                           $$el = $event.target,
                           $$c = $$el.checked ? true : false
                         if (Array.isArray($$a)) {
-                          var $$v = "Representa",
+                          var $$v = "Sim",
                             $$i = _vm._i($$a, $$v)
                           if ($$el.checked) {
                             $$i < 0 && (_vm.aRepresenta = $$a.concat([$$v]))
@@ -43566,13 +43856,13 @@ var render = function() {
                     staticClass: "custom-control-input",
                     attrs: {
                       type: "checkbox",
-                      name: "a_intimacao",
-                      value: "Intimação",
+                      name: "ar_intimacao",
+                      value: "Sim",
                       id: "CA_aR2"
                     },
                     domProps: {
                       checked: Array.isArray(_vm.aIntimacao)
-                        ? _vm._i(_vm.aIntimacao, "Intimação") > -1
+                        ? _vm._i(_vm.aIntimacao, "Sim") > -1
                         : _vm.aIntimacao
                     },
                     on: {
@@ -43581,7 +43871,7 @@ var render = function() {
                           $$el = $event.target,
                           $$c = $$el.checked ? true : false
                         if (Array.isArray($$a)) {
-                          var $$v = "Intimação",
+                          var $$v = "Sim",
                             $$i = _vm._i($$a, $$v)
                           if ($$el.checked) {
                             $$i < 0 && (_vm.aIntimacao = $$a.concat([$$v]))
@@ -52005,121 +52295,591 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-xs-6" }, [
-            _c("label", { attrs: { for: "DE_aR1" } }, [
-              _c(
-                "select",
-                {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.showOpcao,
-                      expression: "showOpcao"
+        _c("table", { staticClass: "table table-borderless" }, [
+          _c("tr", [
+            _c("td", [
+              _c("label", { attrs: { for: "DE_aR1" } }, [
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.arAdvogadoRepresentante,
+                        expression: "arAdvogadoRepresentante"
+                      }
+                    ],
+                    staticClass: "custom-select",
+                    attrs: { id: "DE_aR1" },
+                    on: {
+                      blur: _vm.gerarNome,
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.arAdvogadoRepresentante = $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      }
                     }
-                  ],
-                  staticClass: "custom-select",
-                  attrs: { id: "DE_aR1" },
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.showOpcao = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+                  },
+                  [
+                    _c("option", { attrs: { value: "Advogado" } }, [
+                      _vm._v("Advogado")
+                    ]),
+                    _vm._v(" "),
+                    _c("option", { attrs: { value: "Defensor Público" } }, [
+                      _vm._v("Defensor Público")
+                    ])
+                  ]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "td",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.arAdvogadoRepresentante === "Advogado",
+                    expression: "arAdvogadoRepresentante === 'Advogado'"
                   }
-                },
-                [
-                  _c("option", { attrs: { value: "advogado" } }, [
-                    _vm._v("Advogado")
+                ]
+              },
+              [
+                _c("div", { staticClass: "form-inline" }, [
+                  _vm._m(0),
+                  _vm._v(" "),
+                  _c("label", { attrs: { for: "DE_aR2" } }, [
+                    _c(
+                      "select",
+                      {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.arEstadoOAB,
+                            expression: "arEstadoOAB"
+                          }
+                        ],
+                        staticClass: "custom-select",
+                        attrs: { id: "DE_aR2" },
+                        on: {
+                          blur: _vm.gerarNome,
+                          change: function($event) {
+                            var $$selectedVal = Array.prototype.filter
+                              .call($event.target.options, function(o) {
+                                return o.selected
+                              })
+                              .map(function(o) {
+                                var val = "_value" in o ? o._value : o.value
+                                return val
+                              })
+                            _vm.arEstadoOAB = $event.target.multiple
+                              ? $$selectedVal
+                              : $$selectedVal[0]
+                          }
+                        }
+                      },
+                      [
+                        _c("option", { attrs: { value: "AC" } }, [
+                          _vm._v("AC")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "AL" } }, [
+                          _vm._v("AL")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "AP" } }, [
+                          _vm._v("AP")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "AM" } }, [
+                          _vm._v("AM")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "BA" } }, [
+                          _vm._v("BA")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "CE" } }, [
+                          _vm._v("CE")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "DF" } }, [
+                          _vm._v("DF")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "ES" } }, [
+                          _vm._v("ES")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "GO" } }, [
+                          _vm._v("GO")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "MA" } }, [
+                          _vm._v("MA")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "MT" } }, [
+                          _vm._v("MT")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "MS" } }, [
+                          _vm._v("MS")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "MG" } }, [
+                          _vm._v("MG")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "PA" } }, [
+                          _vm._v("PA")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "PB" } }, [
+                          _vm._v("PB")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "PR" } }, [
+                          _vm._v("PR")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "PE" } }, [
+                          _vm._v("PE")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "PI" } }, [
+                          _vm._v("PI")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "RJ" } }, [
+                          _vm._v("RJ")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "RN" } }, [
+                          _vm._v("RN")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "RS" } }, [
+                          _vm._v("RS")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "RO" } }, [
+                          _vm._v("RO")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "RR" } }, [
+                          _vm._v("RR")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "SC" } }, [
+                          _vm._v("SC")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "SP" } }, [
+                          _vm._v("SP")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "SE" } }, [
+                          _vm._v("SE")
+                        ]),
+                        _vm._v(" "),
+                        _c("option", { attrs: { value: "TO" } }, [_vm._v("TO")])
+                      ]
+                    )
                   ]),
                   _vm._v(" "),
-                  _c("option", { attrs: { value: "defensor" } }, [
-                    _vm._v("Defensor Público")
-                  ])
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "mask",
+                        rawName: "v-mask",
+                        value: "######",
+                        expression: "'######'"
+                      },
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.arNumeroOAB,
+                        expression: "arNumeroOAB"
+                      }
+                    ],
+                    staticClass: "form-control col-md-5",
+                    attrs: { type: "text" },
+                    domProps: { value: _vm.arNumeroOAB },
+                    on: {
+                      input: [
+                        function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.arNumeroOAB = $event.target.value
+                        },
+                        _vm.gerarNome
+                      ]
+                    }
+                  })
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "td",
+              {
+                directives: [
+                  {
+                    name: "show",
+                    rawName: "v-show",
+                    value: _vm.arAdvogadoRepresentante === "Defensor Público",
+                    expression: "arAdvogadoRepresentante === 'Defensor Público'"
+                  }
                 ]
+              },
+              [
+                _c("div", { staticClass: "form-inline" }, [
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "mask",
+                        rawName: "v-mask",
+                        value: "##########",
+                        expression: "'##########'"
+                      },
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.arMatriculaRepresentante,
+                        expression: "arMatriculaRepresentante"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "text" },
+                    domProps: { value: _vm.arMatriculaRepresentante },
+                    on: {
+                      input: [
+                        function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.arMatriculaRepresentante = $event.target.value
+                        },
+                        _vm.gerarNome
+                      ]
+                    }
+                  })
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c("td", [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.arNome,
+                    expression: "arNome"
+                  },
+                  {
+                    name: "autowidth",
+                    rawName: "v-autowidth",
+                    value: {
+                      maxWidth: "960px",
+                      minWidth: "20px",
+                      comfortZone: 0
+                    },
+                    expression:
+                      "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                  }
+                ],
+                staticStyle: {
+                  border: "0",
+                  "margin-top": "5px",
+                  outline: "none"
+                },
+                attrs: { type: "text", readonly: "" },
+                domProps: { value: _vm.arNome },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.arNome = $event.target.value
+                  }
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("td", [
+              _vm.arAdvogadoRepresentante === "Advogado" &&
+              _vm.arEstadoOAB != "" &&
+              _vm.arNumeroOAB != "" &&
+              _vm.arNome != ""
+                ? _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { type: "button" },
+                      on: { click: _vm.adicionarAdvogado }
+                    },
+                    [_vm._v("Adicionar")]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.arAdvogadoRepresentante === "Defensor Público" &&
+              _vm.arMatriculaRepresentante != "" &&
+              _vm.arNome != ""
+                ? _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary",
+                      attrs: { type: "button" },
+                      on: { click: _vm.adicionarDefensor }
+                    },
+                    [_vm._v("Adicionar")]
+                  )
+                : _vm._e()
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _vm.arAdvogadoDados != null || _vm.arDefensorDados != null
+          ? _c("div", [
+              _c(
+                "table",
+                { staticClass: "table table-borderless" },
+                [
+                  _vm._l(_vm.arAdvogadoDados, function(advogado, index) {
+                    return _c("tr", [
+                      _c("td", [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "autowidth",
+                              rawName: "v-autowidth",
+                              value: {
+                                maxWidth: "960px",
+                                minWidth: "20px",
+                                comfortZone: 0
+                              },
+                              expression:
+                                "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                            }
+                          ],
+                          staticStyle: { border: "0", outline: "none" },
+                          attrs: {
+                            type: "text",
+                            name: "ar_advogadoRepresentante",
+                            value: "Advogado",
+                            readonly: ""
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "autowidth",
+                              rawName: "v-autowidth",
+                              value: {
+                                maxWidth: "960px",
+                                minWidth: "20px",
+                                comfortZone: 0
+                              },
+                              expression:
+                                "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                            }
+                          ],
+                          staticStyle: { border: "0", outline: "none" },
+                          attrs: {
+                            type: "text",
+                            name: "ar_estadoOAB",
+                            readonly: ""
+                          },
+                          domProps: { value: advogado.arEstadoOAB }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "autowidth",
+                              rawName: "v-autowidth",
+                              value: {
+                                maxWidth: "960px",
+                                minWidth: "20px",
+                                comfortZone: 0
+                              },
+                              expression:
+                                "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                            }
+                          ],
+                          staticStyle: { border: "0", outline: "none" },
+                          attrs: {
+                            type: "text",
+                            name: "ar_numeroOAB",
+                            readonly: ""
+                          },
+                          domProps: { value: advogado.arNumeroOAB }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "autowidth",
+                              rawName: "v-autowidth",
+                              value: {
+                                maxWidth: "960px",
+                                minWidth: "20px",
+                                comfortZone: 0
+                              },
+                              expression:
+                                "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                            }
+                          ],
+                          staticStyle: { border: "0", outline: "none" },
+                          attrs: {
+                            type: "text",
+                            name: "ar_nome",
+                            readonly: ""
+                          },
+                          domProps: { value: advogado.arNome }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            attrs: { href: "#" },
+                            on: {
+                              click: function($event) {
+                                return _vm.excluirAdvogado(index)
+                              }
+                            }
+                          },
+                          [_vm._v("Excluir")]
+                        )
+                      ])
+                    ])
+                  }),
+                  _vm._v(" "),
+                  _vm._l(_vm.arDefensorDados, function(defensor, index) {
+                    return _c("tr", [
+                      _c("td", [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "autowidth",
+                              rawName: "v-autowidth",
+                              value: {
+                                maxWidth: "960px",
+                                minWidth: "20px",
+                                comfortZone: 0
+                              },
+                              expression:
+                                "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                            }
+                          ],
+                          staticStyle: { border: "0", outline: "none" },
+                          attrs: {
+                            type: "text",
+                            name: "ar_advogadoRepresentante",
+                            value: "Defensor Público",
+                            readonly: ""
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td"),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "autowidth",
+                              rawName: "v-autowidth",
+                              value: {
+                                maxWidth: "960px",
+                                minWidth: "20px",
+                                comfortZone: 0
+                              },
+                              expression:
+                                "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                            }
+                          ],
+                          staticStyle: { border: "0", outline: "none" },
+                          attrs: {
+                            type: "text",
+                            name: "ar_matriculaRepresentante",
+                            readonly: ""
+                          },
+                          domProps: { value: defensor.arMatriculaRepresentante }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "autowidth",
+                              rawName: "v-autowidth",
+                              value: {
+                                maxWidth: "960px",
+                                minWidth: "20px",
+                                comfortZone: 0
+                              },
+                              expression:
+                                "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                            }
+                          ],
+                          staticStyle: { border: "0", outline: "none" },
+                          attrs: {
+                            type: "text",
+                            name: "ar_nome",
+                            readonly: ""
+                          },
+                          domProps: { value: defensor.arNome }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            attrs: { href: "#" },
+                            on: {
+                              click: function($event) {
+                                return _vm.excluirDefensor(index)
+                              }
+                            }
+                          },
+                          [_vm._v("Excluir")]
+                        )
+                      ])
+                    ])
+                  })
+                ],
+                2
               )
             ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-1" }),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.showOpcao === "advogado",
-                  expression: "showOpcao === 'advogado'"
-                }
-              ],
-              staticClass: "col-xs-6"
-            },
-            [
-              _c("div", { staticClass: "form-inline" }, [
-                _vm._m(0),
-                _vm._v(" "),
-                _vm._m(1),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "mask",
-                      rawName: "v-mask",
-                      value: "######",
-                      expression: "'######'"
-                    }
-                  ],
-                  staticClass: "form-control col-md-5",
-                  attrs: { type: "text" }
-                })
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.showOpcao === "defensor",
-                  expression: "showOpcao === 'defensor'"
-                }
-              ],
-              staticClass: "col-xs-2"
-            },
-            [
-              _c("div", { staticClass: "form-inline" }, [
-                _vm._m(2),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "mask",
-                      rawName: "v-mask",
-                      value: "##########",
-                      expression: "'##########'"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text" }
-                })
-              ])
-            ]
-          )
-        ])
+          : _vm._e()
       ])
     ]),
     _vm._v(" "),
@@ -52133,18 +52893,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("span", { staticStyle: { "margin-right": "3px" } }, [
       _c("strong", [_vm._v(" Número de OAB ")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", { attrs: { for: "DE_aR2" } }, [
-      _c("select", { staticClass: "custom-select", attrs: { id: "DE_aR2" } }, [
-        _c("option", [_vm._v("RJ")]),
-        _vm._v(" "),
-        _c("option", [_vm._v("SP")])
-      ])
     ])
   },
   function() {
@@ -70126,6 +70874,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_the_mask__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_the_mask__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var v_money__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! v-money */ "./node_modules/v-money/dist/v-money.js");
 /* harmony import */ var v_money__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(v_money__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var vue_input_autowidth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-input-autowidth */ "./node_modules/vue-input-autowidth/dist/index.js");
+/* harmony import */ var vue_input_autowidth__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_input_autowidth__WEBPACK_IMPORTED_MODULE_2__);
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -70184,9 +70934,12 @@ Vue.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_0___default.a);
 Vue.use(v_money__WEBPACK_IMPORTED_MODULE_1___default.a, {
   precision: 2
 });
+
+Vue.use(vue_input_autowidth__WEBPACK_IMPORTED_MODULE_2___default.a);
 var app = new Vue({
   el: '#app'
-}); //https://stackoverflow.com/questions/51307837/adding-data-from-modal-form-to-the-table-via-vue-js
+}); //https://stackoverflow.com/questions/29799900/how-to-save-multiple-inputs-of-rows-in-the-same-column-of-database
+//https://stackoverflow.com/questions/47102608/laravel-save-multiple-data-to-one-column-in-database
 
 /***/ }),
 
@@ -70600,15 +71353,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!********************************************************************!*\
   !*** ./resources/js/components/CadastrarReuJuridico/CRJ_modal.vue ***!
   \********************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CRJ_modal_vue_vue_type_template_id_87895cda_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CRJ_modal.vue?vue&type=template&id=87895cda&scoped=true& */ "./resources/js/components/CadastrarReuJuridico/CRJ_modal.vue?vue&type=template&id=87895cda&scoped=true&");
 /* harmony import */ var _CRJ_modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CRJ_modal.vue?vue&type=script&lang=js& */ "./resources/js/components/CadastrarReuJuridico/CRJ_modal.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _CRJ_modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _CRJ_modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _CRJ_modal_vue_vue_type_style_index_0_id_87895cda_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CRJ_modal.vue?vue&type=style&index=0&id=87895cda&scoped=true&lang=css& */ "./resources/js/components/CadastrarReuJuridico/CRJ_modal.vue?vue&type=style&index=0&id=87895cda&scoped=true&lang=css&");
+/* empty/unused harmony star reexport *//* harmony import */ var _CRJ_modal_vue_vue_type_style_index_0_id_87895cda_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CRJ_modal.vue?vue&type=style&index=0&id=87895cda&scoped=true&lang=css& */ "./resources/js/components/CadastrarReuJuridico/CRJ_modal.vue?vue&type=style&index=0&id=87895cda&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -70640,7 +71392,7 @@ component.options.__file = "resources/js/components/CadastrarReuJuridico/CRJ_mod
 /*!*********************************************************************************************!*\
   !*** ./resources/js/components/CadastrarReuJuridico/CRJ_modal.vue?vue&type=script&lang=js& ***!
   \*********************************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
