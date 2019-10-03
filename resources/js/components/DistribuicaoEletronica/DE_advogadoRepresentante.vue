@@ -74,12 +74,10 @@
                     <table class="table table-borderless">
                         <tr v-for="advogado, index in arAdvogadoDados">
                             <td>
-                                <input type="text" name="ar_advogadoRepresentante" value="Advogado" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"></td>
-                            <td>
-                                <input type="text" name="ar_estadoOAB" v-bind:value="advogado.arEstadoOAB" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                                <input type="text" name="ar_advogadoRepresentante" value="Advogado" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                             </td>
                             <td>
-                                <input type="text" name="ar_numeroOAB" v-bind:value="advogado.arNumeroOAB" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                                <input type="text" name="ar_estadoOAB" v-bind:value="advogado.arEstadoOAB" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"><input type="text" name="ar_numeroOAB" v-bind:value="advogado.arNumeroOAB" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                             </td>
                             <td>
                                 <input type="text" name="ar_nome" v-bind:value="advogado.arNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
@@ -88,9 +86,8 @@
                         </tr>
                         <tr v-for="defensor, index in arDefensorDados">
                             <td>
-                                <input type="text" name="ar_advogadoRepresentante" value="Defensor Público" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"></td>
+                                <input type="text" name="ar_advogadoRepresentante" value="Defensor Público" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                             </td>
-                            <td><!--coluna vazia para ficar alinhado--></td>
                             <td>
                                 <input type="text" name="ar_matriculaRepresentante" v-bind:value="defensor.arMatriculaRepresentante" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                             </td>
@@ -107,12 +104,8 @@
     </div>
 </template>
 <script>
-//Modal de cadastro de autor
-import camodal from '../CadastrarAutor/CA_modal'
-
 export default {
     name: 'deadvogadoRepresentante',
-    components: { camodal },
     data: function() {
         return {
             arAdvogadoRepresentante: 'Advogado',
@@ -158,6 +151,7 @@ export default {
                 'arNumeroOAB': this.arNumeroOAB,
                 'arNome': this.arNome
             })
+            this.$eventHub.$emit('enviarAdvogadoDados', this.arAdvogadoDados)
             this.arNumeroOAB = ''
             this.arMatriculaRepresentante = ''
             this.arNome = ''
@@ -170,6 +164,7 @@ export default {
                 'arMatriculaRepresentante': this.arMatriculaRepresentante,
                 'arNome': this.arNome
             })
+            this.$eventHub.$emit('enviarDefensorDados', this.arDefensorDados)
             this.arNumeroOAB = ''
             this.arMatriculaRepresentante = ''
             this.arNome = ''

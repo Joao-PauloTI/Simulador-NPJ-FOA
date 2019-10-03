@@ -2377,10 +2377,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'camodal',
   data: function data() {
     return {
+      aAdvogadoRepresentanteDados: [],
+      aDefensorRepresentanteDados: [],
       aIncapaz: '',
       aMassa: '',
       aInsolvente: '',
@@ -2427,15 +2445,29 @@ __webpack_require__.r(__webpack_exports__);
       aNascimento: ''
     };
   },
+  created: function created() {
+    this.$eventHub.$on('enviarAdvogadoDados', this.receberAdvogadoDados);
+    this.$eventHub.$on('enviarDefensorDados', this.receberDefensorDados);
+  },
+  beforeDestroy: function beforeDestroy() {
+    this.$eventHub.$off('enviarAdvogadoDados');
+    this.$eventHub.$off('enviarDefensorDados');
+  },
   methods: {
     ajuda: function ajuda() {
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
+    receberAdvogadoDados: function receberAdvogadoDados(advogado) {
+      this.aAdvogadoRepresentanteDados = advogado;
+    },
+    receberDefensorDados: function receberDefensorDados(defensor) {
+      this.aDefensorRepresentanteDados = defensor;
+    },
     novoAutor: function novoAutor() {
-      this.$emit('caDados', this.aIncapaz, this.aMassa, this.aInsolvente, this.aPreso, this.aEspolio, this.aCondominio, this.aMinisterio, this.aPessoa, this.aEstrangeiro, this.aSexo, this.aCpf, this.aNome, this.aMenor, this.aDocumento, this.aNumeroIdentificacao, this.aExpedidor, this.aEmissao, this.aTelefone, this.aEmail, this.aRepresenta, this.aIntimacao, this.aCep, this.aEstado, this.aCidade, this.aBairro, this.aTipoLogradouro, this.aLogradouro, this.aNumeroEndereco, this.aComplemento, this.aTipoEndereco, this.aReferencia, this.aComprovante, this.aValorPedido, this.aValorLiquido, this.aValorCausa, this.aPretensao, this.aEstadoCivil, this.aProfissao, this.aNacionalidade, this.aEstadoNaturalidade, this.aCidadeNaturalidade, this.aPai, this.aMae, this.aNascimento);
+      this.$emit('caDados', this.aIncapaz, this.aMassa, this.aInsolvente, this.aPreso, this.aEspolio, this.aCondominio, this.aMinisterio, this.aPessoa, this.aEstrangeiro, this.aSexo, this.aCpf, this.aNome, this.aMenor, this.aDocumento, this.aNumeroIdentificacao, this.aExpedidor, this.aEmissao, this.aTelefone, this.aEmail, this.aCep, this.aEstado, this.aCidade, this.aBairro, this.aTipoLogradouro, this.aLogradouro, this.aNumeroEndereco, this.aComplemento, this.aTipoEndereco, this.aReferencia, this.aComprovante, this.aValorPedido, this.aValorLiquido, this.aValorCausa, this.aPretensao, this.aEstadoCivil, this.aProfissao, this.aNacionalidade, this.aEstadoNaturalidade, this.aCidadeNaturalidade, this.aPai, this.aMae, this.aNascimento);
     },
     limparAutorModal: function limparAutorModal() {
-      this.aIncapaz = '', this.aMassa = '', this.aInsolvente = '', this.aPreso = '', this.aEspolio = '', this.aCondominio = '', this.aMinisterio = '', this.aPessoa = '', this.aEstrangeiro = '', this.aSexo = '', this.aCpf = '', this.aNome = '', this.aMenor = '', this.aDocumento = '', this.aNumeroIdentificacao = '', this.aExpedidor = '', this.aEmissao = '', this.aTelefone = '', this.aEmail = '', this.aRepresenta = '', this.aIntimacao = '', this.aCep = '', this.aEstado = '', this.aCidade = '', this.aBairro = '', this.aTipoLogradouro = '', this.aLogradouro = '', this.aNumeroEndereco = '', this.aComplemento = '', this.aTipoEndereco = '', this.aReferencia = '', this.aComprovante = '', this.aValorPedido = '', this.aValorLiquido = '', this.aValorCausa = '', this.aPretensao = '', this.aEstadoCivil = '', this.aProfissao = '', this.aNacionalidade = '', this.aEstadoNaturalidade = '', this.aCidadeNaturalidade = '', this.aPai = '', this.aMae = '', this.aNascimento = '';
+      this.aIncapaz = '', this.aMassa = '', this.aInsolvente = '', this.aPreso = '', this.aEspolio = '', this.aCondominio = '', this.aMinisterio = '', this.aPessoa = '', this.aEstrangeiro = '', this.aSexo = '', this.aCpf = '', this.aNome = '', this.aMenor = '', this.aDocumento = '', this.aNumeroIdentificacao = '', this.aExpedidor = '', this.aEmissao = '', this.aTelefone = '', this.aEmail = '', this.aCep = '', this.aEstado = '', this.aCidade = '', this.aBairro = '', this.aTipoLogradouro = '', this.aLogradouro = '', this.aNumeroEndereco = '', this.aComplemento = '', this.aTipoEndereco = '', this.aReferencia = '', this.aComprovante = '', this.aValorPedido = '', this.aValorLiquido = '', this.aValorCausa = '', this.aPretensao = '', this.aEstadoCivil = '', this.aProfissao = '', this.aNacionalidade = '', this.aEstadoNaturalidade = '', this.aCidadeNaturalidade = '', this.aPai = '', this.aMae = '', this.aNascimento = '';
     }
   }
 });
@@ -4300,7 +4332,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _CadastrarAutor_CA_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../CadastrarAutor/CA_modal */ "./resources/js/components/CadastrarAutor/CA_modal.vue");
 //
 //
 //
@@ -4406,16 +4437,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//Modal de cadastro de autor
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'deadvogadoRepresentante',
-  components: {
-    camodal: _CadastrarAutor_CA_modal__WEBPACK_IMPORTED_MODULE_0__["default"]
-  },
   data: function data() {
     return {
       arAdvogadoRepresentante: 'Advogado',
@@ -4460,6 +4483,7 @@ __webpack_require__.r(__webpack_exports__);
         'arNumeroOAB': this.arNumeroOAB,
         'arNome': this.arNome
       });
+      this.$eventHub.$emit('enviarAdvogadoDados', this.arAdvogadoDados);
       this.arNumeroOAB = '';
       this.arMatriculaRepresentante = '';
       this.arNome = '';
@@ -4472,6 +4496,7 @@ __webpack_require__.r(__webpack_exports__);
         'arMatriculaRepresentante': this.arMatriculaRepresentante,
         'arNome': this.arNome
       });
+      this.$eventHub.$emit('enviarDefensorDados', this.arDefensorDados);
       this.arNumeroOAB = '';
       this.arMatriculaRepresentante = '';
       this.arNome = '';
@@ -43781,121 +43806,272 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
         _c("div", { staticClass: "container" }, [
-          _c("table", { staticClass: "table table-borderless" }, [
-            _vm._m(14),
-            _vm._v(" "),
-            _c("tbody", [
-              _c("td", [_vm._v("RJ123456")]),
-              _vm._v(" "),
-              _c("td", [_vm._v("Lorem Ipsum Dolor Sit Amet")]),
-              _vm._v(" "),
-              _c("td", [
-                _c("div", { staticClass: "custom-control custom-checkbox" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.aRepresenta,
-                        expression: "aRepresenta"
-                      }
-                    ],
-                    staticClass: "custom-control-input",
-                    attrs: {
-                      type: "checkbox",
-                      name: "ar_representa",
-                      value: "Sim",
-                      id: "CA_aR1"
-                    },
-                    domProps: {
-                      checked: Array.isArray(_vm.aRepresenta)
-                        ? _vm._i(_vm.aRepresenta, "Sim") > -1
-                        : _vm.aRepresenta
-                    },
-                    on: {
-                      change: function($event) {
-                        var $$a = _vm.aRepresenta,
-                          $$el = $event.target,
-                          $$c = $$el.checked ? true : false
-                        if (Array.isArray($$a)) {
-                          var $$v = "Sim",
-                            $$i = _vm._i($$a, $$v)
-                          if ($$el.checked) {
-                            $$i < 0 && (_vm.aRepresenta = $$a.concat([$$v]))
-                          } else {
-                            $$i > -1 &&
-                              (_vm.aRepresenta = $$a
-                                .slice(0, $$i)
-                                .concat($$a.slice($$i + 1)))
-                          }
-                        } else {
-                          _vm.aRepresenta = $$c
-                        }
-                      }
-                    }
+          _vm.aAdvogadoRepresentanteDados != null ||
+          _vm.aDefensorRepresentanteDados != null
+            ? _c(
+                "table",
+                { staticClass: "table table-borderless" },
+                [
+                  _vm._m(14),
+                  _vm._v(" "),
+                  _vm._l(_vm.aAdvogadoRepresentanteDados, function(advogado) {
+                    return _c("tr", [
+                      _c("td", [
+                        _vm._v(
+                          _vm._s(advogado.arEstadoOAB) +
+                            _vm._s(advogado.arNumeroOAB)
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(advogado.arNome))]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "div",
+                          { staticClass: "custom-control custom-checkbox" },
+                          [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.aRepresenta,
+                                  expression: "aRepresenta"
+                                }
+                              ],
+                              staticClass: "custom-control-input",
+                              attrs: {
+                                type: "checkbox",
+                                name: "ar_representa",
+                                value: "Sim",
+                                id: "CA_aR1"
+                              },
+                              domProps: {
+                                checked: Array.isArray(_vm.aRepresenta)
+                                  ? _vm._i(_vm.aRepresenta, "Sim") > -1
+                                  : _vm.aRepresenta
+                              },
+                              on: {
+                                change: function($event) {
+                                  var $$a = _vm.aRepresenta,
+                                    $$el = $event.target,
+                                    $$c = $$el.checked ? true : false
+                                  if (Array.isArray($$a)) {
+                                    var $$v = "Sim",
+                                      $$i = _vm._i($$a, $$v)
+                                    if ($$el.checked) {
+                                      $$i < 0 &&
+                                        (_vm.aRepresenta = $$a.concat([$$v]))
+                                    } else {
+                                      $$i > -1 &&
+                                        (_vm.aRepresenta = $$a
+                                          .slice(0, $$i)
+                                          .concat($$a.slice($$i + 1)))
+                                    }
+                                  } else {
+                                    _vm.aRepresenta = $$c
+                                  }
+                                }
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("label", {
+                              staticClass: "custom-control-label",
+                              attrs: { for: "CA_aR1" }
+                            })
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "div",
+                          { staticClass: "custom-control custom-checkbox" },
+                          [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.aIntimacao,
+                                  expression: "aIntimacao"
+                                }
+                              ],
+                              staticClass: "custom-control-input",
+                              attrs: {
+                                type: "checkbox",
+                                name: "ar_intimacao",
+                                value: "Sim",
+                                id: "CA_aR2"
+                              },
+                              domProps: {
+                                checked: Array.isArray(_vm.aIntimacao)
+                                  ? _vm._i(_vm.aIntimacao, "Sim") > -1
+                                  : _vm.aIntimacao
+                              },
+                              on: {
+                                change: function($event) {
+                                  var $$a = _vm.aIntimacao,
+                                    $$el = $event.target,
+                                    $$c = $$el.checked ? true : false
+                                  if (Array.isArray($$a)) {
+                                    var $$v = "Sim",
+                                      $$i = _vm._i($$a, $$v)
+                                    if ($$el.checked) {
+                                      $$i < 0 &&
+                                        (_vm.aIntimacao = $$a.concat([$$v]))
+                                    } else {
+                                      $$i > -1 &&
+                                        (_vm.aIntimacao = $$a
+                                          .slice(0, $$i)
+                                          .concat($$a.slice($$i + 1)))
+                                    }
+                                  } else {
+                                    _vm.aIntimacao = $$c
+                                  }
+                                }
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("label", {
+                              staticClass: "custom-control-label",
+                              attrs: { for: "CA_aR2" }
+                            })
+                          ]
+                        )
+                      ])
+                    ])
                   }),
                   _vm._v(" "),
-                  _c("label", {
-                    staticClass: "custom-control-label",
-                    attrs: { for: "CA_aR1" }
+                  _vm._l(_vm.aDefensorRepresentanteDados, function(defensor) {
+                    return _c("tr", [
+                      _c("td", [
+                        _vm._v(_vm._s(defensor.arMatriculaRepresentante))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v(_vm._s(defensor.arNome))]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "div",
+                          { staticClass: "custom-control custom-checkbox" },
+                          [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.aRepresenta,
+                                  expression: "aRepresenta"
+                                }
+                              ],
+                              staticClass: "custom-control-input",
+                              attrs: {
+                                type: "checkbox",
+                                name: "ar_representa",
+                                value: "Sim",
+                                id: "CA_aR1"
+                              },
+                              domProps: {
+                                checked: Array.isArray(_vm.aRepresenta)
+                                  ? _vm._i(_vm.aRepresenta, "Sim") > -1
+                                  : _vm.aRepresenta
+                              },
+                              on: {
+                                change: function($event) {
+                                  var $$a = _vm.aRepresenta,
+                                    $$el = $event.target,
+                                    $$c = $$el.checked ? true : false
+                                  if (Array.isArray($$a)) {
+                                    var $$v = "Sim",
+                                      $$i = _vm._i($$a, $$v)
+                                    if ($$el.checked) {
+                                      $$i < 0 &&
+                                        (_vm.aRepresenta = $$a.concat([$$v]))
+                                    } else {
+                                      $$i > -1 &&
+                                        (_vm.aRepresenta = $$a
+                                          .slice(0, $$i)
+                                          .concat($$a.slice($$i + 1)))
+                                    }
+                                  } else {
+                                    _vm.aRepresenta = $$c
+                                  }
+                                }
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("label", {
+                              staticClass: "custom-control-label",
+                              attrs: { for: "CA_aR1" }
+                            })
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "div",
+                          { staticClass: "custom-control custom-checkbox" },
+                          [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.aIntimacao,
+                                  expression: "aIntimacao"
+                                }
+                              ],
+                              staticClass: "custom-control-input",
+                              attrs: {
+                                type: "checkbox",
+                                name: "ar_intimacao",
+                                value: "Sim",
+                                id: "CA_aR2"
+                              },
+                              domProps: {
+                                checked: Array.isArray(_vm.aIntimacao)
+                                  ? _vm._i(_vm.aIntimacao, "Sim") > -1
+                                  : _vm.aIntimacao
+                              },
+                              on: {
+                                change: function($event) {
+                                  var $$a = _vm.aIntimacao,
+                                    $$el = $event.target,
+                                    $$c = $$el.checked ? true : false
+                                  if (Array.isArray($$a)) {
+                                    var $$v = "Sim",
+                                      $$i = _vm._i($$a, $$v)
+                                    if ($$el.checked) {
+                                      $$i < 0 &&
+                                        (_vm.aIntimacao = $$a.concat([$$v]))
+                                    } else {
+                                      $$i > -1 &&
+                                        (_vm.aIntimacao = $$a
+                                          .slice(0, $$i)
+                                          .concat($$a.slice($$i + 1)))
+                                    }
+                                  } else {
+                                    _vm.aIntimacao = $$c
+                                  }
+                                }
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("label", {
+                              staticClass: "custom-control-label",
+                              attrs: { for: "CA_aR2" }
+                            })
+                          ]
+                        )
+                      ])
+                    ])
                   })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("td", [
-                _c("div", { staticClass: "custom-control custom-checkbox" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.aIntimacao,
-                        expression: "aIntimacao"
-                      }
-                    ],
-                    staticClass: "custom-control-input",
-                    attrs: {
-                      type: "checkbox",
-                      name: "ar_intimacao",
-                      value: "Sim",
-                      id: "CA_aR2"
-                    },
-                    domProps: {
-                      checked: Array.isArray(_vm.aIntimacao)
-                        ? _vm._i(_vm.aIntimacao, "Sim") > -1
-                        : _vm.aIntimacao
-                    },
-                    on: {
-                      change: function($event) {
-                        var $$a = _vm.aIntimacao,
-                          $$el = $event.target,
-                          $$c = $$el.checked ? true : false
-                        if (Array.isArray($$a)) {
-                          var $$v = "Sim",
-                            $$i = _vm._i($$a, $$v)
-                          if ($$el.checked) {
-                            $$i < 0 && (_vm.aIntimacao = $$a.concat([$$v]))
-                          } else {
-                            $$i > -1 &&
-                              (_vm.aIntimacao = $$a
-                                .slice(0, $$i)
-                                .concat($$a.slice($$i + 1)))
-                          }
-                        } else {
-                          _vm.aIntimacao = $$c
-                        }
-                      }
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("label", {
-                    staticClass: "custom-control-label",
-                    attrs: { for: "CA_aR2" }
-                  })
-                ])
-              ])
-            ])
-          ])
+                ],
+                2
+              )
+            : _vm._e()
         ])
       ])
     ]),
@@ -45103,8 +45279,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("th", [_vm._v("OAB")]),
+    return _c("tr", [
+      _c("th", [_vm._v("OAB / Matrícula")]),
       _vm._v(" "),
       _c("th", [_vm._v("Nome")]),
       _vm._v(" "),
@@ -52710,10 +52886,7 @@ var render = function() {
                             readonly: ""
                           },
                           domProps: { value: advogado.arEstadoOAB }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [
+                        }),
                         _c("input", {
                           directives: [
                             {
@@ -52806,8 +52979,6 @@ var render = function() {
                           }
                         })
                       ]),
-                      _vm._v(" "),
-                      _c("td"),
                       _vm._v(" "),
                       _c("td", [
                         _c("input", {
@@ -70928,18 +71099,22 @@ Vue.component('duploadanexopeticao', __webpack_require__(/*! ./components/Docume
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+Vue.prototype.$eventHub = new Vue(); //Necessário para compartilhar dados entre componentes que não se relacionam)
+
+ //dependência para criar mascaras de input para RG, CPF, CNPJ, etc ...
 
 Vue.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_0___default.a);
+ //dependência para criar mascaras de input para dinheiro
 
 Vue.use(v_money__WEBPACK_IMPORTED_MODULE_1___default.a, {
   precision: 2
 });
+ //dependência para criar inputs que se ajustam de acordo com o conteúdo inserido
 
 Vue.use(vue_input_autowidth__WEBPACK_IMPORTED_MODULE_2___default.a);
 var app = new Vue({
   el: '#app'
-}); //https://stackoverflow.com/questions/29799900/how-to-save-multiple-inputs-of-rows-in-the-same-column-of-database
-//https://stackoverflow.com/questions/47102608/laravel-save-multiple-data-to-one-column-in-database
+});
 
 /***/ }),
 

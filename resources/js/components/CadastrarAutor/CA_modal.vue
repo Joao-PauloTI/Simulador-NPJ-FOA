@@ -200,16 +200,16 @@
             </div>
             <div class="card-body">
                 <div class="container">
-                    <table class="table table-borderless">
-                        <thead>
-                            <th>OAB</th>
+                    <table class="table table-borderless" v-if="aAdvogadoRepresentanteDados != null || aDefensorRepresentanteDados != null">
+                        <tr>
+                            <th>OAB / Matrícula</th>
                             <th>Nome</th>
                             <th>Representa</th>
                             <th>Intimação</th>
-                        </thead>
-                        <tbody>
-                            <td>RJ123456</td>
-                            <td>Lorem Ipsum Dolor Sit Amet</td>
+                        </tr>
+                        <tr v-for="advogado in aAdvogadoRepresentanteDados">
+                            <td>{{advogado.arEstadoOAB}}{{advogado.arNumeroOAB}}</td>
+                            <td>{{advogado.arNome}}</td>
                             <td>
                                 <div class="custom-control custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" v-model="aRepresenta" name="ar_representa" value="Sim" id="CA_aR1">
@@ -222,7 +222,23 @@
                                     <label class="custom-control-label" for="CA_aR2"></label>
                                 </div>
                             </td>
-                        </tbody>
+                        </tr>
+                        <tr v-for="defensor in aDefensorRepresentanteDados">
+                            <td>{{defensor.arMatriculaRepresentante}}</td>
+                            <td>{{defensor.arNome}}</td>
+                            <td>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" v-model="aRepresenta" name="ar_representa" value="Sim" id="CA_aR1">
+                                    <label class="custom-control-label" for="CA_aR1"></label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" v-model="aIntimacao" name="ar_intimacao" value="Sim" id="CA_aR2">
+                                    <label class="custom-control-label" for="CA_aR2"></label>
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
             </div>
@@ -520,6 +536,8 @@
     name: 'camodal',
     data: function() {
         return {
+            aAdvogadoRepresentanteDados: [],
+            aDefensorRepresentanteDados: [],
             aIncapaz: '',
             aMassa: '',
             aInsolvente: '',
@@ -566,13 +584,27 @@
             aNascimento: ''
         }
     },
+    created: function() {
+        this.$eventHub.$on('enviarAdvogadoDados', this.receberAdvogadoDados)
+        this.$eventHub.$on('enviarDefensorDados', this.receberDefensorDados)
+    },
+    beforeDestroy: function() {
+        this.$eventHub.$off('enviarAdvogadoDados')
+        this.$eventHub.$off('enviarDefensorDados')
+    },
     methods: {
         ajuda: function() {
             alert(
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
         },
+        receberAdvogadoDados: function(advogado) {
+            this.aAdvogadoRepresentanteDados = advogado
+        },
+        receberDefensorDados: function(defensor) {
+            this.aDefensorRepresentanteDados = defensor
+        },
         novoAutor: function() {
-            this.$emit('caDados', this.aIncapaz, this.aMassa, this.aInsolvente, this.aPreso, this.aEspolio, this.aCondominio, this.aMinisterio, this.aPessoa, this.aEstrangeiro, this.aSexo, this.aCpf, this.aNome, this.aMenor, this.aDocumento, this.aNumeroIdentificacao, this.aExpedidor, this.aEmissao, this.aTelefone, this.aEmail, this.aRepresenta, this.aIntimacao, this.aCep, this.aEstado, this.aCidade, this.aBairro, this.aTipoLogradouro, this.aLogradouro, this.aNumeroEndereco, this.aComplemento, this.aTipoEndereco, this.aReferencia, this.aComprovante, this.aValorPedido, this.aValorLiquido, this.aValorCausa, this.aPretensao, this.aEstadoCivil, this.aProfissao, this.aNacionalidade, this.aEstadoNaturalidade, this.aCidadeNaturalidade, this.aPai, this.aMae, this.aNascimento)
+            this.$emit('caDados', this.aIncapaz, this.aMassa, this.aInsolvente, this.aPreso, this.aEspolio, this.aCondominio, this.aMinisterio, this.aPessoa, this.aEstrangeiro, this.aSexo, this.aCpf, this.aNome, this.aMenor, this.aDocumento, this.aNumeroIdentificacao, this.aExpedidor, this.aEmissao, this.aTelefone, this.aEmail, this.aCep, this.aEstado, this.aCidade, this.aBairro, this.aTipoLogradouro, this.aLogradouro, this.aNumeroEndereco, this.aComplemento, this.aTipoEndereco, this.aReferencia, this.aComprovante, this.aValorPedido, this.aValorLiquido, this.aValorCausa, this.aPretensao, this.aEstadoCivil, this.aProfissao, this.aNacionalidade, this.aEstadoNaturalidade, this.aCidadeNaturalidade, this.aPai, this.aMae, this.aNascimento)
         },
         limparAutorModal: function() {
             this.aIncapaz = '',
@@ -594,8 +626,6 @@
             this.aEmissao = '',
             this.aTelefone = '',
             this.aEmail = '',
-            this.aRepresenta = '',
-            this.aIntimacao = '',
             this.aCep = '',
             this.aEstado = '',
             this.aCidade = '',

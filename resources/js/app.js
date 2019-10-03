@@ -55,19 +55,19 @@ Vue.component('duploadanexopeticao', require('./components/Documentos/D_uploadAn
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-import VueTheMask from 'vue-the-mask'
+
+Vue.prototype.$eventHub = new Vue(); //Necessário para compartilhar dados entre componentes que não se relacionam)
+
+import VueTheMask from 'vue-the-mask' //dependência para criar mascaras de input para RG, CPF, CNPJ, etc ...
 Vue.use(VueTheMask)
 
-import money from 'v-money'
+import money from 'v-money' //dependência para criar mascaras de input para dinheiro
 Vue.use(money, {precision: 2})
 
-import VueInputAutowidth from 'vue-input-autowidth'
+import VueInputAutowidth from 'vue-input-autowidth' //dependência para criar inputs que se ajustam de acordo com o conteúdo inserido
 Vue.use(VueInputAutowidth)
 
 const app = new Vue({
     el: '#app',
     
 });
-
-//https://stackoverflow.com/questions/29799900/how-to-save-multiple-inputs-of-rows-in-the-same-column-of-database
-//https://stackoverflow.com/questions/47102608/laravel-save-multiple-data-to-one-column-in-database
