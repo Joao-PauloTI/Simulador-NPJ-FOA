@@ -46,15 +46,6 @@ class CreateTbReu extends Migration
             //Valor da Causa
             $table->string('r_valorCausa')->nullable();
             $table->string('r_pretensao')->nullable(); //A pretensão deduzida versa sobre obrigações vincendas?
-            //Dados Complementares
-            $table->string('r_estadoCivil')->nullable();
-            $table->string('r_profissao')->nullable();
-            $table->string('r_nacionalidade')->nullable();
-            $table->string('r_estadoNaturalidade')->nullable();
-            $table->string('r_cidadeNaturalidade')->nullable();
-            $table->string('r_pai')->nullable(); //Nome do Pai
-            $table->string('r_mae')->nullable(); //Nome do Mãe
-            $table->string('r_nascimento')->nullable(); //Data de Nascimento
             $table->timestamps(); //Hora e data de cadastro
         });
 

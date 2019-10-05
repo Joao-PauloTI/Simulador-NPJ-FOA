@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Processo;
-use App\AdvogadoRepresentante;
+use App\Advogado;
+use App\Defensor;
 use App\Autor;
 use App\RepresentanteAutor;
 use App\Reu;
@@ -60,14 +61,19 @@ class ProcessoController extends Controller
             'p_distribuicao' => 'nullable',
             'p_valor' => 'nullable',
             'p_veracidade' => 'nullable',
-            //AdvogadoRepresentante
-            'ar_advogadoRepresentante' => 'nullable',
-            'ar_nome' => 'nullable',
-            'ar_estadoOAB' => 'nullable',
-            'ar_numeroOAB' => 'nullable',
-            'ar_matriculaRepresentante' => 'nullable',
-            'ar_representa' => 'nullable',
-            'ar_intimacao' => 'nullable',
+            //Advogado
+            'ad_categoria' => 'nullable',
+            'ad_nome' => 'nullable',
+            'ad_estadoOAB' => 'nullable',
+            'ad_numeroOAB' => 'nullable',
+            'ad_representa' => 'nullable',
+            'ad_intimacao' => 'nullable',
+            //Defensor
+            'dp_categoria' => 'nullable',
+            'dp_nome' => 'nullable',
+            'dp_matricula' => 'nullable',
+            'dp_representa' => 'nullable',
+            'dp_intimacao' => 'nullable',
             //Autor
             'a_incapaz' => 'nullable',
             'a_massa' => 'nullable',
@@ -179,14 +185,6 @@ class ProcessoController extends Controller
             'r_valorLiquido' => 'nullable',
             'r_valorCausa' => 'nullable',
             'r_pretensao' => 'nullable',
-            'r_estadoCivil' => 'nullable',
-            'r_profissao' => 'nullable',
-            'r_nacionalidade' => 'nullable',
-            'r_estadoNaturalidade' => 'nullable',
-            'r_cidadeNaturalidade' => 'nullable',
-            'r_pai' => 'nullable',
-            'r_mae' => 'nullable',
-            'r_nascimento' => 'nullable',
             //Réu - Pessoa Jurídica
             'rj_nome' => 'nullable',
             'rj_cnpj' => 'nullable',
@@ -229,20 +227,11 @@ class ProcessoController extends Controller
             'rr_valorLiquido' => 'nullable',
             'rr_valorCausa' => 'nullable',
             'rr_pretensao' => 'nullable',
-            'rr_estadoCivil' => 'nullable',
-            'rr_profissao' => 'nullable',
-            'rr_nacionalidade' => 'nullable',
-            'rr_estadoNaturalidade' => 'nullable',
-            'rr_cidadeNaturalidade' => 'nullable',
-            'rr_pai' => 'nullable',
-            'rr_mae' => 'nullable',
-            'rr_nascimento' => 'nullable',
             //Documentos
             'd_arquivo' => 'nullable',
             'd_descricao' => 'nullable',
             'd_tipoArquivo' => 'nullable'
         ]);
-
         $processo = new Processo([
             'p_grerjMotivo' => $request->get('p_grerjMotivo'),
             'p_grerjNumero' => $request->get('p_grerjNumero'),
@@ -260,21 +249,104 @@ class ProcessoController extends Controller
             'p_valor' => $request->get('p_valor'),
             'p_veracidade' => $request->get('p_veracidade')
         ]);
-
         $processo->save(); //O processo precisa ser salvo primeiro, senão as chaves estrangeiras não terão referência
 
-        $advogadoRepresentante = new AdvogadoRepresentante([
-            'ar_advogadoRepresentante' => $request->get('ar_advogadoRepresentante'),
-            'ar_nome' => $request->get('ar_nome'),
-            'ar_estadoOAB' => $request->get('ar_estadoOAB'),
-            'ar_numeroOAB' => $request->get('ar_numeroOAB'),
-            'ar_matriculaRepresentante' => $request->get('ar_matriculaRepresentante'),
-            'ar_representa' => $request->get('ar_representa'),
-            'ar_intimacao' => $request->get('ar_intimacao'),
-        ]);
-
-        $advogadoRepresentante->advogadoRepresentante_processo()->associate($processo);
-        $advogadoRepresentante->save();
+        //Loops para salvar vários advogados no sistema
+        if(isset($request->ad_numeroOAB)){
+            foreach($request->ad_numeroOAB as $key => $numero){
+                if(isset($request->ad_intimacao[$key]) && isset($request->ad_representa[$key])){
+                    $advogado = new Advogado([
+                        'ad_numeroOAB' => $numero,
+                        'ad_categoria' => $request->ad_categoria[$key],
+                        'ad_nome' => $request->ad_nome[$key],
+                        'ad_estadoOAB' => $request->ad_estadoOAB[$key],
+                        'ad_representa' => $request->ad_representa[$key],
+                        'ad_intimacao' => $request->ad_intimacao[$key]
+                    ]);
+                    $advogado->advogado_processo()->associate($processo);
+                    $advogado->save();
+                }elseif(isset($request->ad_intimacao[$key]) && empty($request->ad_representa[$key])){
+                    $advogado = new Advogado([
+                        'ad_numeroOAB' => $numero,
+                        'ad_categoria' => $request->ad_categoria[$key],
+                        'ad_nome' => $request->ad_nome[$key],
+                        'ad_estadoOAB' => $request->ad_estadoOAB[$key],
+                        'ad_representa' => 'Não',
+                        'ad_intimacao' => $request->ad_intimacao[$key]
+                    ]);
+                    $advogado->advogado_processo()->associate($processo);
+                    $advogado->save();
+                }elseif(empty($request->ad_intimacao[$key]) && isset($request->ad_representa[$key])){
+                    $advogado = new Advogado([
+                        'ad_numeroOAB' => $numero,
+                        'ad_categoria' => $request->ad_categoria[$key],
+                        'ad_nome' => $request->ad_nome[$key],
+                        'ad_estadoOAB' => $request->ad_estadoOAB[$key],
+                        'ad_representa' => $request->ad_representa[$key],
+                        'ad_intimacao' => 'Não'
+                    ]);
+                    $advogado->advogado_processo()->associate($processo);
+                    $advogado->save();
+                }elseif(empty($request->ad_intimacao[$key]) && empty($request->ad_representa[$key])){
+                    $advogado = new Advogado([
+                        'ad_numeroOAB' => $numero,
+                        'ad_categoria' => $request->ad_categoria[$key],
+                        'ad_nome' => $request->ad_nome[$key],
+                        'ad_estadoOAB' => $request->ad_estadoOAB[$key],
+                        'ad_representa' => 'Não',
+                        'ad_intimacao' => 'Não'
+                    ]);
+                    $advogado->advogado_processo()->associate($processo);
+                    $advogado->save();
+                }
+            }
+        }
+        //Loops para salvar vários defensores no sistema
+        if(isset($request->dp_matricula)){
+            foreach($request->dp_matricula as $key => $matricula){
+                if(isset($request->dp_intimacao[$key]) && isset($request->dp_representa[$key])){
+                    $defensor = new Defensor([
+                        'dp_matricula' => $matricula,
+                        'dp_categoria' => $request->dp_categoria[$key],
+                        'dp_nome' => $request->dp_nome[$key],
+                        'dp_representa' => $request->dp_representa[$key],
+                        'dp_intimacao' => $request->dp_intimacao[$key]
+                    ]);
+                    $defensor->defensor_processo()->associate($processo);
+                    $defensor->save();
+                }elseif(isset($request->dp_intimacao[$key]) && empty($request->dp_representa[$key])){
+                    $defensor = new Defensor([
+                        'dp_matricula' => $matricula,
+                        'dp_categoria' => $request->dp_categoria[$key],
+                        'dp_nome' => $request->dp_nome[$key],
+                        'dp_representa' => 'Não',
+                        'dp_intimacao' => $request->dp_intimacao[$key]
+                    ]);
+                    $defensor->defensor_processo()->associate($processo);
+                    $defensor->save();
+                }elseif(empty($request->dp_intimacao[$key]) && isset($request->dp_representa[$key])){
+                    $defensor = new Defensor([
+                        'dp_matricula' => $matricula,
+                        'dp_categoria' => $request->dp_categoria[$key],
+                        'dp_nome' => $request->dp_nome[$key],
+                        'dp_representa' => $request->dp_representa[$key],
+                        'dp_intimacao' => 'Não'
+                    ]);
+                    $defensor->defensor_processo()->associate($processo);
+                    $defensor->save();
+                }elseif(empty($request->dp_intimacao[$key]) && empty($request->dp_representa[$key])){
+                    $defensor = new Defensor([
+                        'dp_matricula' => $matricula,
+                        'dp_categoria' => $request->dp_categoria[$key],
+                        'dp_nome' => $request->dp_nome[$key],
+                        'dp_representa' => 'Não',
+                        'dp_intimacao' => 'Não'
+                    ]);
+                    $defensor->defensor_processo()->associate($processo);
+                    $defensor->save();
+                }
+            }
+        }
 
         $autor = new Autor([
             'a_incapaz' => $request->get('a_incapaz'),
@@ -320,7 +392,6 @@ class ProcessoController extends Controller
             'a_mae' => $request->get('a_mae'),
             'a_nascimento' => $request->get('a_nascimento')
         ]);
-
         $autor->autor_processo()->associate($processo);
         $autor->save();
 
@@ -368,7 +439,6 @@ class ProcessoController extends Controller
             'ra_mae' => $request->get('ra_mae'),
             'ra_nascimento' => $request->get('ra_nascimento')
         ]);
-
         $representanteAutor->representanteAutor_processo()->associate($processo);
         $representanteAutor->save();
 
@@ -397,17 +467,8 @@ class ProcessoController extends Controller
             'r_valorPedido' => $request->get('r_valorPedido'),
             'r_valorLiquido' => $request->get('r_valorLiquido'),
             'r_valorCausa' => $request->get('r_valorCausa'),
-            'r_pretensao' => $request->get('r_pretensao'),
-            'r_estadoCivil' => $request->get('r_estadoCivil'),
-            'r_profissao' => $request->get('r_profissao'),
-            'r_nacionalidade' => $request->get('r_nacionalidade'),
-            'r_estadoNaturalidade' => $request->get('r_estadoNaturalidade'),
-            'r_cidadeNaturalidade' => $request->get('r_cidadeNaturalidade'),
-            'r_pai' => $request->get('r_pai'),
-            'r_mae' => $request->get('r_mae'),
-            'r_nascimento' => $request->get('r_nascimento')
+            'r_pretensao' => $request->get('r_pretensao')
         ]);
-
         $reu->reu_processo()->associate($processo);
         $reu->save();
 
@@ -426,7 +487,6 @@ class ProcessoController extends Controller
             'rj_tipoEndereco' => $request->get('rj_tipoEndereco'),
             'rj_referencia' => $request->get('rj_referencia')
         ]);
-
         $reuJuridico->reuJuridico_processo()->associate($processo);
         $reuJuridico->save();
 
@@ -457,17 +517,8 @@ class ProcessoController extends Controller
             'rr_valorPedido' => $request->get('rr_valorPedido'),
             'rr_valorLiquido' => $request->get('rr_valorLiquido'),
             'rr_valorCausa' => $request->get('rr_valorCausa'),
-            'rr_pretensao' => $request->get('rr_pretensao'),
-            'rr_estadoCivil' => $request->get('rr_estadoCivil'),
-            'rr_profissao' => $request->get('rr_profissao'),
-            'rr_nacionalidade' => $request->get('rr_nacionalidade'),
-            'rr_estadoNaturalidade' => $request->get('rr_estadoNaturalidade'),
-            'rr_cidadeNaturalidade' => $request->get('rr_cidadeNaturalidade'),
-            'rr_pai' => $request->get('rr_pai'),
-            'rr_mae' => $request->get('rr_mae'),
-            'rr_nascimento' => $request->get('rr_nascimento')
+            'rr_pretensao' => $request->get('rr_pretensao')
         ]);
-
         $representanteReu->representanteReu_processo()->associate($processo);
         $representanteReu->save();
         /*

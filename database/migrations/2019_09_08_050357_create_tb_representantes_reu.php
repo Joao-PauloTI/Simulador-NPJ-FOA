@@ -48,15 +48,6 @@ class CreateTbRepresentantesReu extends Migration
             //Valor da Causa
             $table->string('rr_valorCausa')->nullable();
             $table->string('rr_pretensao')->nullable(); //A pretensão deduzida versa sobre obrigações vincendas?
-            //Dados Complementares
-            $table->string('rr_estadoCivil')->nullable();
-            $table->string('rr_profissao')->nullable();
-            $table->string('rr_nacionalidade')->nullable();
-            $table->string('rr_estadoNaturalidade')->nullable();
-            $table->string('rr_cidadeNaturalidade')->nullable();
-            $table->string('rr_pai')->nullable(); //Nome do Pai
-            $table->string('rr_mae')->nullable(); //Nome do Mãe
-            $table->string('rr_nascimento')->nullable(); //Data de Nascimento
             $table->timestamps(); //Hora e data de cadastro
         });
     }

@@ -38,14 +38,14 @@
                     <table class="table table-borderless">
                         <tr v-for="autor in deAutor">
                             <td>Autor</td>
-                            <td>{{autor.aPessoa}}</td>
-                            <td>{{autor.aNome}}</td>
+                            <td><input type="text" name="a_pessoa" v-bind:value="autor.aPessoa" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"></td>
+                            <td><input type="text" name="a_nome" v-bind:value="autor.aNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"></td>
                             <td><a href="#" @click="excluirAutor">Excluir</a></td>
                         </tr>
                         <tr v-for="representante in deRepresentanteAutor">
                             <td>Representante</td>
-                            <td>{{representante.raPessoa}}</td>
-                            <td>{{representante.raNome}}</td>
+                            <td><input type="text" name="ra_pessoa" v-bind:value="representante.raPessoa" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"></td>
+                            <td><input type="text" name="ra_nome" v-bind:value="representante.raNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"></td>
                             <td><a href="#" @click="excluirRepresentanteAutor">Excluir</a></td>
                         </tr>
                     </table>
@@ -115,19 +115,19 @@
                         <tr v-for="reu in deReu">
                             <td>Réu</td>
                             <td>Pessoa Física</td>
-                            <td>{{reu.rNome}}</td>
+                            <td><input type="text" name="r_nome" v-bind:value="reu.rNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"></td>
                             <td><a href="#" @click="excluirReu">Excluir</a></td>
                         </tr>
                         <tr v-for="reuJuridico in deReuJuridico">
                             <td>Réu</td>
                             <td>Pessoa Jurídica</td>
-                            <td>{{reuJuridico.rjNome}}</td>
+                            <td><input type="text" name="rj_nome" v-bind:value="reuJuridico.rjNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"></td>
                             <td><a href="#" @click="excluirReuJuridico">Excluir</a></td>
                         </tr>
                         <tr v-for="representante in deRepresentanteReu">
                             <td>Representante</td>
-                            <td>{{representante.rrPessoa}}</td>
-                            <td>{{representante.rrNome}}</td>
+                            <td><input type="text" name="rr_pessoa" v-bind:value="representante.rrPessoa" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"></td>
+                            <td><input type="text" name="rr_nome" v-bind:value="representante.rrNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"></td>
                             <td><a href="#" @click="excluirRepresentanteReu">Excluir</a></td>
                         </tr>
                     </table>
@@ -395,7 +395,7 @@ export default {
             this.$refs.resetarRepresentanteAutor.limparRepresentanteAutorModal()
         },
         //funções para o array deReu
-        adicionarReu: function(rEstrangeiro, rSexo, rCpf, rNome, rDocumento, rNumeroIdentificacao, rExpedidor, rEmissao, rEmail, rIncerto, rCep, rEstado, rCidade, rBairro, rTipoLogradouro, rLogradouro, rNumeroEndereco, rComplemento, rTipoEndereco, rReferencia, rComprovante, rValorPedido, rValorLiquido, rValorCausa, rPretensao, rEstadoCivil, rProfissao, rNacionalidade, rEstadoNaturalidade, rCidadeNaturalidade, rPai, rMae, rNascimento) {
+        adicionarReu: function(rEstrangeiro, rSexo, rCpf, rNome, rDocumento, rNumeroIdentificacao, rExpedidor, rEmissao, rEmail, rIncerto, rCep, rEstado, rCidade, rBairro, rTipoLogradouro, rLogradouro, rNumeroEndereco, rComplemento, rTipoEndereco, rReferencia, rComprovante, rValorPedido, rValorLiquido, rValorCausa, rPretensao) {
 
             while (this.deReu.length > 0) {
                 this.deReu.pop()
@@ -425,15 +425,7 @@ export default {
                 'rValorPedido': rValorPedido,
                 'rValorLiquido': rValorLiquido,
                 'rValorCausa': rValorCausa,
-                'rPretensao': rPretensao,
-                'rEstadoCivil': rEstadoCivil,
-                'rProfissao': rProfissao,
-                'rNacionalidade': rNacionalidade,
-                'rEstadoNaturalidade': rEstadoNaturalidade,
-                'rCidadeNaturalidade': rCidadeNaturalidade,
-                'rPai': rPai,
-                'rMae': rMae,
-                'rNascimento': rNascimento
+                'rPretensao': rPretensao
             })
         },
         excluirReu: function() {
@@ -471,7 +463,7 @@ export default {
             this.$refs.resetarReuJuridico.limparReuJuridicoModal()
         },
         //funções para o array deRepresentanteReu
-        adicionarRepresentanteReu: function(rrParte, rrPessoa, rrSexo, rrCpf, rrNome, rrMenor, rrDocumento, rrNumeroIdentificacao, rrEmissor, rrEmissao, rrTelefone, rrEmail, rrIncerto, rrCep, rrEstado, rrCidade, rrBairro, rrTipoLogradouro, rrLogradouro, rrNumeroEndereco, rrComplemento, rrTipoEndereco, rrReferencia, rrComprovante, rrValorPedido, rrValorLiquido, rrValorCausa, rrPretensao, rrEstadoCivil, rrProfissao, rrNacionalidade, rrEstadoNaturalidade, rrCidadeNaturalidade, rrPai, rrMae, rrNascimento) {
+        adicionarRepresentanteReu: function(rrParte, rrPessoa, rrSexo, rrCpf, rrNome, rrMenor, rrDocumento, rrNumeroIdentificacao, rrEmissor, rrEmissao, rrTelefone, rrEmail, rrIncerto, rrCep, rrEstado, rrCidade, rrBairro, rrTipoLogradouro, rrLogradouro, rrNumeroEndereco, rrComplemento, rrTipoEndereco, rrReferencia, rrComprovante, rrValorPedido, rrValorLiquido, rrValorCausa, rrPretensao) {
 
             while (this.deRepresentanteReu.length > 0) {
                 this.deRepresentanteReu.pop()
@@ -504,15 +496,7 @@ export default {
                 'rrValorPedido': rrValorPedido,
                 'rrValorLiquido': rrValorLiquido,
                 'rrValorCausa': rrValorCausa,
-                'rrPretensao': rrPretensao,
-                'rrEstadoCivil': rrEstadoCivil,
-                'rrProfissao': rrProfissao,
-                'rrNacionalidade': rrNacionalidade,
-                'rrEstadoNaturalidade': rrEstadoNaturalidade,
-                'rrCidadeNaturalidade': rrCidadeNaturalidade,
-                'rrPai': rrPai,
-                'rrMae': rrMae,
-                'rrNascimento': rrNascimento
+                'rrPretensao': rrPretensao
             })
         },
         excluirRepresentanteReu: function() {

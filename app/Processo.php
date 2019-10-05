@@ -24,9 +24,13 @@ class Processo extends Model
 	    'p_valor',
 	    'p_veracidade'
 	);
-    //Processo 1:N AdvogadoRepresentante
-	public function ar_p(){
-		return $this->hasMany('App\AdvogadoRepresentante', 'ar_processo_id');
+    //Processo 1:N Advogado
+	public function processo_advogado(){
+		return $this->hasMany('App\Advogado', 'ad_processo_id');
+	}
+	//Processo 1:N Defensor
+	public function processo_defensor(){
+		return $this->hasMany('App\Defensor', 'dp_processo_id');
 	}
 	//Processo 1:N Autor
 	public function processo_autor(){

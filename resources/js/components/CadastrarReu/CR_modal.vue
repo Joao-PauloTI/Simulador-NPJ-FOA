@@ -52,7 +52,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Nome </strong> </span>
-                                <input type="text" class="form-control" v-model="rNome" name="r_nome">
+                                <input type="text" class="form-control" v-model="rNome">
                             </div>
                         </div>
                     </div>
@@ -313,101 +313,6 @@
             </div>
         </div>
         <br>
-        <div class="card">
-            <div class="card-header">
-                <h5>
-                    <strong>Dados Complementares</strong>
-                    <a href="#ajuda" v-on:click="ajuda()">(?)</a>
-                </h5>
-            </div>
-            <div class="card-body">
-                <div class="container">
-                    <!-- Estado Civil -->
-                    <div id="alinhado">
-                        <div class="form-inline">
-                            <div class="col-xs-2">
-                                <span><strong>Estado Civil </strong> </span>
-                                <select class="custom-select" v-model="rEstadoCivil" name="r_estadoCivil">
-                                    <option value="">Escolha o estado civil</option>
-                                    <option value="Solteiro">Solteiro</option>
-                                    <option value="Casado">Casado</option>
-                                    <option value="Viúvo">Viúvo</option>
-                                    <option value="Separado Judicialmente">Separado Judicialmente</option>
-                                    <option value="Divorciado">Divorciado</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Profissão -->
-                    <div id="alinhado">
-                        <div class="form-inline">
-                            <div class="col-xs-2">
-                                <span><strong>Profissão </strong> </span>
-                                <input type="text" class="form-control" v-model="rProfissao" name="r_profissao">
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Nacionalidade -->
-                    <div id="alinhado">
-                        <div class="form-inline">
-                            <div class="col-xs-2">
-                                <span><strong>Nacionalidade </strong> </span>
-                                <select class="custom-select" v-model="rNacionalidade" name="r_nacionalidade">
-                                    <option value="Brasileira">Brasileira</option>
-                                    <option value="Naturalizado brasileiro">Naturalizado brasileiro</option>
-                                    <option value="Estrangeira">Estrangeira</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Naturalidade -->
-                    <div id="alinhado">
-                        <div class="form-inline">
-                            <div class="col-xs-2">
-                                <span><strong>Escolha a Naturalidade </strong> </span>
-                                <input type="text" class="form-control" placeholder="Estado" v-model="rEstadoNaturalidade" name="r_estadoNaturalidade">
-                                <input type="text" class="form-control" placeholder="Cidade" v-model="rCidadeNaturalidade" name="r_cidadeNaturalidade">
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Nome do Pai-->
-                    <div id="alinhado">
-                        <div class="form-inline">
-                            <div class="col-xs-2">
-                                <span><strong>Nome do Pai </strong> </span>
-                                <input type="text" class="form-control" v-model="rPai" name="r_pai">
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Nome da Mãe-->
-                    <div id="alinhado">
-                        <div class="form-inline">
-                            <div class="col-xs-2">
-                                <span><strong>Nome da Mãe </strong> </span>
-                                <input type="text" class="form-control" v-model="rMae" name="r_mae">
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Data de Nascimento -->
-                    <div id="alinhado">
-                        <div class="form-inline">
-                            <div class="col-xs-2">
-                                <span><strong>* Data de Nascimento </strong> </span>
-                                <input type="string" class="form-control" v-mask="'##/##/####'" v-model="rNascimento" name="r_nascimento">
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-            </div>
-        </div>
-        <br>
         <!--Botões SALVAR/FECHAR-->
         <div align="center">
             <button type="button" @click="novoReu" data-dismiss="modal" class="btn btn-primary">SALVAR</button>
@@ -444,15 +349,7 @@
             rValorPedido: '',
             rValorLiquido: '',
             rValorCausa: '',
-            rPretensao: '',
-            rEstadoCivil: '',
-            rProfissao: '',
-            rNacionalidade: '',
-            rEstadoNaturalidade: '',
-            rCidadeNaturalidade: '',
-            rPai: '',
-            rMae: '',
-            rNascimento: ''
+            rPretensao: ''
         }
     },
     methods: {
@@ -461,7 +358,7 @@
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
         },
         novoReu: function() {
-            this.$emit('crDados', this.rEstrangeiro, this.rSexo, this.rCpf, this.rNome, this.rDocumento, this.rNumeroIdentificacao, this.rExpedidor, this.rEmissao, this.rEmail, this.rIncerto, this.rCep, this.rEstado, this.rCidade, this.rBairro, this.rTipoLogradouro, this.rLogradouro, this.rNumeroEndereco, this.rComplemento, this.rTipoEndereco, this.rReferencia, this.rComprovante, this.rValorPedido, this.rValorLiquido, this.rValorCausa, this.rPretensao, this.rEstadoCivil, this.rProfissao, this.rNacionalidade, this.rEstadoNaturalidade, this.rCidadeNaturalidade, this.rPai, this.rMae, this.rNascimento)
+            this.$emit('crDados', this.rEstrangeiro, this.rSexo, this.rCpf, this.rNome, this.rDocumento, this.rNumeroIdentificacao, this.rExpedidor, this.rEmissao, this.rEmail, this.rIncerto, this.rCep, this.rEstado, this.rCidade, this.rBairro, this.rTipoLogradouro, this.rLogradouro, this.rNumeroEndereco, this.rComplemento, this.rTipoEndereco, this.rReferencia, this.rComprovante, this.rValorPedido, this.rValorLiquido, this.rValorCausa, this.rPretensao)
         },
         limparReuModal: function() {
             this.rEstrangeiro = '',
@@ -488,15 +385,7 @@
             this.rValorPedido = '',
             this.rValorLiquido = '',
             this.rValorCausa = '',
-            this.rPretensao = '',
-            this.rEstadoCivil = '',
-            this.rProfissao = '',
-            this.rNacionalidade = '',
-            this.rEstadoNaturalidade = '',
-            this.rCidadeNaturalidade = '',
-            this.rPai = '',
-            this.rMae = '',
-            this.rNascimento = ''
+            this.rPretensao = ''
         }
     }
 }

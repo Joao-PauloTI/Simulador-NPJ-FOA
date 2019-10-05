@@ -78,7 +78,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Pessoa Física ou Jurídica </strong> </span>
-                                <select class="custom-select" v-model="raPessoa" name="ra_pessoa">
+                                <select class="custom-select" v-model="raPessoa">
                                     <option value="">Escolha um tipo de pessoa</option>
                                     <option value="Pessoa Física">Pessoa Física</option>
                                     <option value="Pessoa Jurídica">Pessoa Jurídica</option>
@@ -116,7 +116,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Nome </strong> </span>
-                                <input type="text" class="form-control" v-model="raNome" name="ra_nome">
+                                <input type="text" class="form-control" v-model="raNome">
                             </div>
                         </div>
                     </div>

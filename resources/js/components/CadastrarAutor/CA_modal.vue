@@ -57,7 +57,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Pessoa Física ou Jurídica </strong></span>
-                                <select class="custom-select" v-model="aPessoa" name="a_pessoa">
+                                <select class="custom-select" v-model="aPessoa">
                                     <option value="">Escolha um tipo de pessoa</option>
                                     <option value="Pessoa Física">Pessoa Física</option>
                                     <option value="Pessoa Jurídica">Pessoa Jurídica</option>
@@ -105,7 +105,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Nome </strong> </span>
-                                <input type="text" class="form-control" v-model="aNome" name="a_nome">
+                                <input type="text" class="form-control" v-model="aNome">
                             </div>
                         </div>
                     </div>
@@ -212,30 +212,30 @@
                             <td>{{advogado.arNome}}</td>
                             <td>
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" v-model="aRepresenta" name="ar_representa" value="Sim" id="CA_aR1">
-                                    <label class="custom-control-label" for="CA_aR1"></label>
+                                    <input type="checkbox" class="custom-control-input" name="ad_representa[]" value="Sim" v-bind:id="advogado.arNumeroOAB">
+                                    <label class="custom-control-label" v-bind:for="advogado.arNumeroOAB"></label>
                                 </div>
                             </td>
                             <td>
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" v-model="aIntimacao" name="ar_intimacao" value="Sim" id="CA_aR2">
-                                    <label class="custom-control-label" for="CA_aR2"></label>
+                                    <input type="checkbox" class="custom-control-input" name="ad_intimacao[]" value="Sim" v-bind:id="advogado.arNome">
+                                    <label class="custom-control-label" v-bind:for="advogado.arNome"></label>
                                 </div>
                             </td>
                         </tr>
                         <tr v-for="defensor in aDefensorRepresentanteDados">
-                            <td>{{defensor.arMatriculaRepresentante}}</td>
+                            <td>{{defensor.arMatricula}}</td>
                             <td>{{defensor.arNome}}</td>
                             <td>
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" v-model="aRepresenta" name="ar_representa" value="Sim" id="CA_aR1">
-                                    <label class="custom-control-label" for="CA_aR1"></label>
+                                    <input type="checkbox" class="custom-control-input" name="dp_representa[]" value="Sim" v-bind:id="defensor.arMatricula">
+                                    <label class="custom-control-label" v-bind:for="defensor.arMatricula"></label>
                                 </div>
                             </td>
                             <td>
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" v-model="aIntimacao" name="ar_intimacao" value="Sim" id="CA_aR2">
-                                    <label class="custom-control-label" for="CA_aR2"></label>
+                                    <input type="checkbox" class="custom-control-input" name="dp_intimacao[]" value="Sim" v-bind:id="defensor.arNome">
+                                    <label class="custom-control-label" v-bind:for="defensor.arNome"></label>
                                 </div>
                             </td>
                         </tr>
@@ -557,8 +557,6 @@
             aEmissao: '',
             aTelefone: '',
             aEmail: '',
-            aRepresenta: '',
-            aIntimacao: '',
             aCep: '',
             aEstado: '',
             aCidade: '',

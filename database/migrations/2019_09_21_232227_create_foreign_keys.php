@@ -15,9 +15,14 @@ class CreateForeignKeys extends Migration
     {
         Schema::enableForeignKeyConstraints();
 
-        Schema::table('tb_advogado_representante', function (Blueprint $table) {
-            $table->integer('ar_processo_id')->unsigned()->nullable()->after('id');
-            $table->foreign('ar_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
+        Schema::table('tb_advogados', function (Blueprint $table) {
+            $table->integer('ad_processo_id')->unsigned()->nullable()->after('id');
+            $table->foreign('ad_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
+        });
+
+        Schema::table('tb_defensor_publico', function (Blueprint $table) {
+            $table->integer('dp_processo_id')->unsigned()->nullable()->after('id');
+            $table->foreign('dp_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
         });
 
         Schema::table('tb_autores', function (Blueprint $table) {

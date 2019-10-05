@@ -58,7 +58,7 @@
                         <td v-show="arAdvogadoRepresentante === 'Defensor Público'">
                             <div class="form-inline">
                                 <span style="margin-right: 3px"><strong> Matrícula </strong> </span>
-                                <input type="text" class="form-control" v-mask="'##########'" v-model="arMatriculaRepresentante" v-on:input="gerarNome">
+                                <input type="text" class="form-control" v-mask="'##########'" v-model="arMatricula" v-on:input="gerarNome">
                             </div>
                         </td>
                         <td>
@@ -66,7 +66,7 @@
                         </td>
                         <td>
                             <button type="button" class="btn btn-primary" v-if="arAdvogadoRepresentante === 'Advogado' && arEstadoOAB != '' && arNumeroOAB != '' && arNome != ''" v-on:click="adicionarAdvogado">Adicionar</button>
-                            <button type="button" class="btn btn-primary" v-if="arAdvogadoRepresentante === 'Defensor Público' && arMatriculaRepresentante != '' && arNome != ''" v-on:click="adicionarDefensor">Adicionar</button>
+                            <button type="button" class="btn btn-primary" v-if="arAdvogadoRepresentante === 'Defensor Público' && arMatricula != '' && arNome != ''" v-on:click="adicionarDefensor">Adicionar</button>
                         </td>
                     </tr>
                 </table>
@@ -74,25 +74,25 @@
                     <table class="table table-borderless">
                         <tr v-for="advogado, index in arAdvogadoDados">
                             <td>
-                                <input type="text" name="ar_advogadoRepresentante" value="Advogado" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                                <input type="text" name="ad_categoria[]" value="Advogado" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                             </td>
                             <td>
-                                <input type="text" name="ar_estadoOAB" v-bind:value="advogado.arEstadoOAB" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"><input type="text" name="ar_numeroOAB" v-bind:value="advogado.arNumeroOAB" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                                <input type="text" name="ad_estadoOAB[]" v-bind:value="advogado.arEstadoOAB" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"><input type="text" name="ad_numeroOAB[]" v-bind:value="advogado.arNumeroOAB" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                             </td>
                             <td>
-                                <input type="text" name="ar_nome" v-bind:value="advogado.arNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                                <input type="text" name="ad_nome[]" v-bind:value="advogado.arNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                             </td>
                             <td><a href="#" v-on:click="excluirAdvogado(index)">Excluir</a></td>
                         </tr>
                         <tr v-for="defensor, index in arDefensorDados">
                             <td>
-                                <input type="text" name="ar_advogadoRepresentante" value="Defensor Público" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                                <input type="text" name="dp_categoria[]" value="Defensor Público" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                             </td>
                             <td>
-                                <input type="text" name="ar_matriculaRepresentante" v-bind:value="defensor.arMatriculaRepresentante" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                                <input type="text" name="dp_matricula[]" v-bind:value="defensor.arMatricula" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                             </td>
                             <td>
-                                <input type="text" name="ar_nome" v-bind:value="defensor.arNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                                <input type="text" name="dp_nome[]" v-bind:value="defensor.arNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                             </td>
                             <td><a href="#" v-on:click="excluirDefensor(index)">Excluir</a></td>
                         </tr>
@@ -111,7 +111,7 @@ export default {
             arAdvogadoRepresentante: 'Advogado',
             arEstadoOAB: 'RJ',
             arNumeroOAB: '',
-            arMatriculaRepresentante: '',
+            arMatricula: '',
             arNome: '',
             arAdvogadoDados: [],
             arDefensorDados: []
@@ -124,21 +124,21 @@ export default {
         },
         gerarNome: function() {
             if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'RJ' && this.arNumeroOAB === '111111') {
-                this.arMatriculaRepresentante = ''
+                this.arMatricula = ''
                 this.arNome = 'Fernanda Canedo'
             } else if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'RJ' && this.arNumeroOAB === '222222') {
-                this.arMatriculaRepresentante = ''
+                this.arMatricula = ''
                 this.arNome = 'Thainá Brigida'
             } else if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'SP' && this.arNumeroOAB === '333333') {
-                this.arMatriculaRepresentante = ''
+                this.arMatricula = ''
                 this.arNome = 'Daniele Souza'
-            } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatriculaRepresentante === '4444444444') {
+            } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatricula === '4444444444') {
                 this.arNumeroOAB = ''
                 this.arNome = 'Adilson Gustavo'
-            } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatriculaRepresentante === '5555555555') {
+            } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatricula === '5555555555') {
                 this.arNumeroOAB = ''
                 this.arNome = 'Rosenclever Lopes'
-            } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatriculaRepresentante === '6666666666') {
+            } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatricula === '6666666666') {
                 this.arNumeroOAB = ''
                 this.arNome = 'Leonardo Feliciano'
             } else {
@@ -153,7 +153,7 @@ export default {
             })
             this.$eventHub.$emit('enviarAdvogadoDados', this.arAdvogadoDados)
             this.arNumeroOAB = ''
-            this.arMatriculaRepresentante = ''
+            this.arMatricula = ''
             this.arNome = ''
         },
         excluirAdvogado: function(index) {
@@ -161,12 +161,12 @@ export default {
         },
         adicionarDefensor: function() {
             this.arDefensorDados.push({
-                'arMatriculaRepresentante': this.arMatriculaRepresentante,
+                'arMatricula': this.arMatricula,
                 'arNome': this.arNome
             })
             this.$eventHub.$emit('enviarDefensorDados', this.arDefensorDados)
             this.arNumeroOAB = ''
-            this.arMatriculaRepresentante = ''
+            this.arMatricula = ''
             this.arNome = ''
         },
         excluirDefensor: function(index) {

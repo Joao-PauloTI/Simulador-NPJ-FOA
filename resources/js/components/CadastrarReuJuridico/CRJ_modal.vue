@@ -28,7 +28,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* Nome </strong> </span>
-                                <input type="text" class="form-control" v-model="rjNome" name="rj_nome">
+                                <input type="text" class="form-control" v-model="rjNome">
                             </div>
                         </div>
                     </div>

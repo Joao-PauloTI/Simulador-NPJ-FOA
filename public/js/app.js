@@ -2418,8 +2418,6 @@ __webpack_require__.r(__webpack_exports__);
       aEmissao: '',
       aTelefone: '',
       aEmail: '',
-      aRepresenta: '',
-      aIntimacao: '',
       aCep: '',
       aEstado: '',
       aCidade: '',
@@ -3390,101 +3388,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'crrmodal',
   data: function data() {
@@ -3516,15 +3419,7 @@ __webpack_require__.r(__webpack_exports__);
       rrValorPedido: '',
       rrValorLiquido: '',
       rrValorCausa: '',
-      rrPretensao: '',
-      rrEstadoCivil: '',
-      rrProfissao: '',
-      rrNacionalidade: '',
-      rrEstadoNaturalidade: '',
-      rrCidadeNaturalidade: '',
-      rrPai: '',
-      rrMae: '',
-      rrNascimento: ''
+      rrPretensao: ''
     };
   },
   methods: {
@@ -3532,10 +3427,10 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     novoRepresentanteReu: function novoRepresentanteReu() {
-      this.$emit('crrDados', this.rrParte, this.rrPessoa, this.rrSexo, this.rrCpf, this.rrNome, this.rrMenor, this.rrDocumento, this.rrNumeroIdentificacao, this.rrEmissor, this.rrEmissao, this.rrTelefone, this.rrEmail, this.rrIncerto, this.rrCep, this.rrEstado, this.rrCidade, this.rrBairro, this.rrTipoLogradouro, this.rrLogradouro, this.rrNumeroEndereco, this.rrComplemento, this.rrTipoEndereco, this.rrReferencia, this.rrComprovante, this.rrValorPedido, this.rrValorLiquido, this.rrValorCausa, this.rrPretensao, this.rrEstadoCivil, this.rrProfissao, this.rrNacionalidade, this.rrEstadoNaturalidade, this.rrCidadeNaturalidade, this.rrPai, this.rrMae, this.rrNascimento);
+      this.$emit('crrDados', this.rrParte, this.rrPessoa, this.rrSexo, this.rrCpf, this.rrNome, this.rrMenor, this.rrDocumento, this.rrNumeroIdentificacao, this.rrEmissor, this.rrEmissao, this.rrTelefone, this.rrEmail, this.rrIncerto, this.rrCep, this.rrEstado, this.rrCidade, this.rrBairro, this.rrTipoLogradouro, this.rrLogradouro, this.rrNumeroEndereco, this.rrComplemento, this.rrTipoEndereco, this.rrReferencia, this.rrComprovante, this.rrValorPedido, this.rrValorLiquido, this.rrValorCausa, this.rrPretensao);
     },
     limparRepresentanteReuModal: function limparRepresentanteReuModal() {
-      this.rrParte = '', this.rrPessoa = '', this.rrSexo = '', this.rrCpf = '', this.rrNome = '', this.rrMenor = '', this.rrDocumento = '', this.rrNumeroIdentificacao = '', this.rrEmissor = '', this.rrEmissao = '', this.rrTelefone = '', this.rrEmail = '', this.rrIncerto = '', this.rrCep = '', this.rrEstado = '', this.rrCidade = '', this.rrBairro = '', this.rrTipoLogradouro = '', this.rrLogradouro = '', this.rrNumeroEndereco = '', this.rrComplemento = '', this.rrTipoEndereco = '', this.rrReferencia = '', this.rrComprovante = '', this.rrValorPedido = '', this.rrValorLiquido = '', this.rrValorCausa = '', this.rrPretensao = '', this.rrEstadoCivil = '', this.rrProfissao = '', this.rrNacionalidade = '', this.rrEstadoNaturalidade = '', this.rrCidadeNaturalidade = '', this.rrPai = '', this.rrMae = '', this.rrNascimento = '';
+      this.rrParte = '', this.rrPessoa = '', this.rrSexo = '', this.rrCpf = '', this.rrNome = '', this.rrMenor = '', this.rrDocumento = '', this.rrNumeroIdentificacao = '', this.rrEmissor = '', this.rrEmissao = '', this.rrTelefone = '', this.rrEmail = '', this.rrIncerto = '', this.rrCep = '', this.rrEstado = '', this.rrCidade = '', this.rrBairro = '', this.rrTipoLogradouro = '', this.rrLogradouro = '', this.rrNumeroEndereco = '', this.rrComplemento = '', this.rrTipoEndereco = '', this.rrReferencia = '', this.rrComprovante = '', this.rrValorPedido = '', this.rrValorLiquido = '', this.rrValorCausa = '', this.rrPretensao = '';
     }
   }
 });
@@ -3551,101 +3446,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -3996,15 +3796,7 @@ __webpack_require__.r(__webpack_exports__);
       rValorPedido: '',
       rValorLiquido: '',
       rValorCausa: '',
-      rPretensao: '',
-      rEstadoCivil: '',
-      rProfissao: '',
-      rNacionalidade: '',
-      rEstadoNaturalidade: '',
-      rCidadeNaturalidade: '',
-      rPai: '',
-      rMae: '',
-      rNascimento: ''
+      rPretensao: ''
     };
   },
   methods: {
@@ -4012,10 +3804,10 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     novoReu: function novoReu() {
-      this.$emit('crDados', this.rEstrangeiro, this.rSexo, this.rCpf, this.rNome, this.rDocumento, this.rNumeroIdentificacao, this.rExpedidor, this.rEmissao, this.rEmail, this.rIncerto, this.rCep, this.rEstado, this.rCidade, this.rBairro, this.rTipoLogradouro, this.rLogradouro, this.rNumeroEndereco, this.rComplemento, this.rTipoEndereco, this.rReferencia, this.rComprovante, this.rValorPedido, this.rValorLiquido, this.rValorCausa, this.rPretensao, this.rEstadoCivil, this.rProfissao, this.rNacionalidade, this.rEstadoNaturalidade, this.rCidadeNaturalidade, this.rPai, this.rMae, this.rNascimento);
+      this.$emit('crDados', this.rEstrangeiro, this.rSexo, this.rCpf, this.rNome, this.rDocumento, this.rNumeroIdentificacao, this.rExpedidor, this.rEmissao, this.rEmail, this.rIncerto, this.rCep, this.rEstado, this.rCidade, this.rBairro, this.rTipoLogradouro, this.rLogradouro, this.rNumeroEndereco, this.rComplemento, this.rTipoEndereco, this.rReferencia, this.rComprovante, this.rValorPedido, this.rValorLiquido, this.rValorCausa, this.rPretensao);
     },
     limparReuModal: function limparReuModal() {
-      this.rEstrangeiro = '', this.rSexo = '', this.rCpf = '', this.rNome = '', this.rDocumento = '', this.rNumeroIdentificacao = '', this.rExpedidor = '', this.rEmissao = '', this.rEmail = '', this.rIncerto = '', this.rCep = '', this.rEstado = '', this.rCidade = '', this.rBairro = '', this.rTipoLogradouro = '', this.rLogradouro = '', this.rNumeroEndereco = '', this.rComplemento = '', this.rTipoEndereco = '', this.rReferencia = '', this.rComprovante = '', this.rValorPedido = '', this.rValorLiquido = '', this.rValorCausa = '', this.rPretensao = '', this.rEstadoCivil = '', this.rProfissao = '', this.rNacionalidade = '', this.rEstadoNaturalidade = '', this.rCidadeNaturalidade = '', this.rPai = '', this.rMae = '', this.rNascimento = '';
+      this.rEstrangeiro = '', this.rSexo = '', this.rCpf = '', this.rNome = '', this.rDocumento = '', this.rNumeroIdentificacao = '', this.rExpedidor = '', this.rEmissao = '', this.rEmail = '', this.rIncerto = '', this.rCep = '', this.rEstado = '', this.rCidade = '', this.rBairro = '', this.rTipoLogradouro = '', this.rLogradouro = '', this.rNumeroEndereco = '', this.rComplemento = '', this.rTipoEndereco = '', this.rReferencia = '', this.rComprovante = '', this.rValorPedido = '', this.rValorLiquido = '', this.rValorCausa = '', this.rPretensao = '';
     }
   }
 });
@@ -4444,7 +4236,7 @@ __webpack_require__.r(__webpack_exports__);
       arAdvogadoRepresentante: 'Advogado',
       arEstadoOAB: 'RJ',
       arNumeroOAB: '',
-      arMatriculaRepresentante: '',
+      arMatricula: '',
       arNome: '',
       arAdvogadoDados: [],
       arDefensorDados: []
@@ -4456,21 +4248,21 @@ __webpack_require__.r(__webpack_exports__);
     },
     gerarNome: function gerarNome() {
       if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'RJ' && this.arNumeroOAB === '111111') {
-        this.arMatriculaRepresentante = '';
+        this.arMatricula = '';
         this.arNome = 'Fernanda Canedo';
       } else if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'RJ' && this.arNumeroOAB === '222222') {
-        this.arMatriculaRepresentante = '';
+        this.arMatricula = '';
         this.arNome = 'Thainá Brigida';
       } else if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'SP' && this.arNumeroOAB === '333333') {
-        this.arMatriculaRepresentante = '';
+        this.arMatricula = '';
         this.arNome = 'Daniele Souza';
-      } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatriculaRepresentante === '4444444444') {
+      } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatricula === '4444444444') {
         this.arNumeroOAB = '';
         this.arNome = 'Adilson Gustavo';
-      } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatriculaRepresentante === '5555555555') {
+      } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatricula === '5555555555') {
         this.arNumeroOAB = '';
         this.arNome = 'Rosenclever Lopes';
-      } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatriculaRepresentante === '6666666666') {
+      } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatricula === '6666666666') {
         this.arNumeroOAB = '';
         this.arNome = 'Leonardo Feliciano';
       } else {
@@ -4485,7 +4277,7 @@ __webpack_require__.r(__webpack_exports__);
       });
       this.$eventHub.$emit('enviarAdvogadoDados', this.arAdvogadoDados);
       this.arNumeroOAB = '';
-      this.arMatriculaRepresentante = '';
+      this.arMatricula = '';
       this.arNome = '';
     },
     excluirAdvogado: function excluirAdvogado(index) {
@@ -4493,12 +4285,12 @@ __webpack_require__.r(__webpack_exports__);
     },
     adicionarDefensor: function adicionarDefensor() {
       this.arDefensorDados.push({
-        'arMatriculaRepresentante': this.arMatriculaRepresentante,
+        'arMatricula': this.arMatricula,
         'arNome': this.arNome
       });
       this.$eventHub.$emit('enviarDefensorDados', this.arDefensorDados);
       this.arNumeroOAB = '';
-      this.arMatriculaRepresentante = '';
+      this.arMatricula = '';
       this.arNome = '';
     },
     excluirDefensor: function excluirDefensor(index) {
@@ -4924,7 +4716,7 @@ __webpack_require__.r(__webpack_exports__);
       this.$refs.resetarRepresentanteAutor.limparRepresentanteAutorModal();
     },
     //funções para o array deReu
-    adicionarReu: function adicionarReu(rEstrangeiro, rSexo, rCpf, rNome, rDocumento, rNumeroIdentificacao, rExpedidor, rEmissao, rEmail, rIncerto, rCep, rEstado, rCidade, rBairro, rTipoLogradouro, rLogradouro, rNumeroEndereco, rComplemento, rTipoEndereco, rReferencia, rComprovante, rValorPedido, rValorLiquido, rValorCausa, rPretensao, rEstadoCivil, rProfissao, rNacionalidade, rEstadoNaturalidade, rCidadeNaturalidade, rPai, rMae, rNascimento) {
+    adicionarReu: function adicionarReu(rEstrangeiro, rSexo, rCpf, rNome, rDocumento, rNumeroIdentificacao, rExpedidor, rEmissao, rEmail, rIncerto, rCep, rEstado, rCidade, rBairro, rTipoLogradouro, rLogradouro, rNumeroEndereco, rComplemento, rTipoEndereco, rReferencia, rComprovante, rValorPedido, rValorLiquido, rValorCausa, rPretensao) {
       while (this.deReu.length > 0) {
         this.deReu.pop();
       }
@@ -4954,15 +4746,7 @@ __webpack_require__.r(__webpack_exports__);
         'rValorPedido': rValorPedido,
         'rValorLiquido': rValorLiquido,
         'rValorCausa': rValorCausa,
-        'rPretensao': rPretensao,
-        'rEstadoCivil': rEstadoCivil,
-        'rProfissao': rProfissao,
-        'rNacionalidade': rNacionalidade,
-        'rEstadoNaturalidade': rEstadoNaturalidade,
-        'rCidadeNaturalidade': rCidadeNaturalidade,
-        'rPai': rPai,
-        'rMae': rMae,
-        'rNascimento': rNascimento
+        'rPretensao': rPretensao
       });
     },
     excluirReu: function excluirReu() {
@@ -5002,7 +4786,7 @@ __webpack_require__.r(__webpack_exports__);
       this.$refs.resetarReuJuridico.limparReuJuridicoModal();
     },
     //funções para o array deRepresentanteReu
-    adicionarRepresentanteReu: function adicionarRepresentanteReu(rrParte, rrPessoa, rrSexo, rrCpf, rrNome, rrMenor, rrDocumento, rrNumeroIdentificacao, rrEmissor, rrEmissao, rrTelefone, rrEmail, rrIncerto, rrCep, rrEstado, rrCidade, rrBairro, rrTipoLogradouro, rrLogradouro, rrNumeroEndereco, rrComplemento, rrTipoEndereco, rrReferencia, rrComprovante, rrValorPedido, rrValorLiquido, rrValorCausa, rrPretensao, rrEstadoCivil, rrProfissao, rrNacionalidade, rrEstadoNaturalidade, rrCidadeNaturalidade, rrPai, rrMae, rrNascimento) {
+    adicionarRepresentanteReu: function adicionarRepresentanteReu(rrParte, rrPessoa, rrSexo, rrCpf, rrNome, rrMenor, rrDocumento, rrNumeroIdentificacao, rrEmissor, rrEmissao, rrTelefone, rrEmail, rrIncerto, rrCep, rrEstado, rrCidade, rrBairro, rrTipoLogradouro, rrLogradouro, rrNumeroEndereco, rrComplemento, rrTipoEndereco, rrReferencia, rrComprovante, rrValorPedido, rrValorLiquido, rrValorCausa, rrPretensao) {
       while (this.deRepresentanteReu.length > 0) {
         this.deRepresentanteReu.pop();
       }
@@ -5035,15 +4819,7 @@ __webpack_require__.r(__webpack_exports__);
         'rrValorPedido': rrValorPedido,
         'rrValorLiquido': rrValorLiquido,
         'rrValorCausa': rrValorCausa,
-        'rrPretensao': rrPretensao,
-        'rrEstadoCivil': rrEstadoCivil,
-        'rrProfissao': rrProfissao,
-        'rrNacionalidade': rrNacionalidade,
-        'rrEstadoNaturalidade': rrEstadoNaturalidade,
-        'rrCidadeNaturalidade': rrCidadeNaturalidade,
-        'rrPai': rrPai,
-        'rrMae': rrMae,
-        'rrNascimento': rrNascimento
+        'rrPretensao': rrPretensao
       });
     },
     excluirRepresentanteReu: function excluirRepresentanteReu() {
@@ -43241,7 +43017,6 @@ var render = function() {
                       }
                     ],
                     staticClass: "custom-select",
-                    attrs: { name: "a_pessoa" },
                     on: {
                       change: function($event) {
                         var $$selectedVal = Array.prototype.filter
@@ -43451,7 +43226,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", name: "a_nome" },
+                  attrs: { type: "text" },
                   domProps: { value: _vm.aNome },
                   on: {
                     input: function($event) {
@@ -43831,53 +43606,18 @@ var render = function() {
                           { staticClass: "custom-control custom-checkbox" },
                           [
                             _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.aRepresenta,
-                                  expression: "aRepresenta"
-                                }
-                              ],
                               staticClass: "custom-control-input",
                               attrs: {
                                 type: "checkbox",
-                                name: "ar_representa",
+                                name: "ad_representa[]",
                                 value: "Sim",
-                                id: "CA_aR1"
-                              },
-                              domProps: {
-                                checked: Array.isArray(_vm.aRepresenta)
-                                  ? _vm._i(_vm.aRepresenta, "Sim") > -1
-                                  : _vm.aRepresenta
-                              },
-                              on: {
-                                change: function($event) {
-                                  var $$a = _vm.aRepresenta,
-                                    $$el = $event.target,
-                                    $$c = $$el.checked ? true : false
-                                  if (Array.isArray($$a)) {
-                                    var $$v = "Sim",
-                                      $$i = _vm._i($$a, $$v)
-                                    if ($$el.checked) {
-                                      $$i < 0 &&
-                                        (_vm.aRepresenta = $$a.concat([$$v]))
-                                    } else {
-                                      $$i > -1 &&
-                                        (_vm.aRepresenta = $$a
-                                          .slice(0, $$i)
-                                          .concat($$a.slice($$i + 1)))
-                                    }
-                                  } else {
-                                    _vm.aRepresenta = $$c
-                                  }
-                                }
+                                id: advogado.arNumeroOAB
                               }
                             }),
                             _vm._v(" "),
                             _c("label", {
                               staticClass: "custom-control-label",
-                              attrs: { for: "CA_aR1" }
+                              attrs: { for: advogado.arNumeroOAB }
                             })
                           ]
                         )
@@ -43889,53 +43629,18 @@ var render = function() {
                           { staticClass: "custom-control custom-checkbox" },
                           [
                             _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.aIntimacao,
-                                  expression: "aIntimacao"
-                                }
-                              ],
                               staticClass: "custom-control-input",
                               attrs: {
                                 type: "checkbox",
-                                name: "ar_intimacao",
+                                name: "ad_intimacao[]",
                                 value: "Sim",
-                                id: "CA_aR2"
-                              },
-                              domProps: {
-                                checked: Array.isArray(_vm.aIntimacao)
-                                  ? _vm._i(_vm.aIntimacao, "Sim") > -1
-                                  : _vm.aIntimacao
-                              },
-                              on: {
-                                change: function($event) {
-                                  var $$a = _vm.aIntimacao,
-                                    $$el = $event.target,
-                                    $$c = $$el.checked ? true : false
-                                  if (Array.isArray($$a)) {
-                                    var $$v = "Sim",
-                                      $$i = _vm._i($$a, $$v)
-                                    if ($$el.checked) {
-                                      $$i < 0 &&
-                                        (_vm.aIntimacao = $$a.concat([$$v]))
-                                    } else {
-                                      $$i > -1 &&
-                                        (_vm.aIntimacao = $$a
-                                          .slice(0, $$i)
-                                          .concat($$a.slice($$i + 1)))
-                                    }
-                                  } else {
-                                    _vm.aIntimacao = $$c
-                                  }
-                                }
+                                id: advogado.arNome
                               }
                             }),
                             _vm._v(" "),
                             _c("label", {
                               staticClass: "custom-control-label",
-                              attrs: { for: "CA_aR2" }
+                              attrs: { for: advogado.arNome }
                             })
                           ]
                         )
@@ -43945,9 +43650,7 @@ var render = function() {
                   _vm._v(" "),
                   _vm._l(_vm.aDefensorRepresentanteDados, function(defensor) {
                     return _c("tr", [
-                      _c("td", [
-                        _vm._v(_vm._s(defensor.arMatriculaRepresentante))
-                      ]),
+                      _c("td", [_vm._v(_vm._s(defensor.arMatricula))]),
                       _vm._v(" "),
                       _c("td", [_vm._v(_vm._s(defensor.arNome))]),
                       _vm._v(" "),
@@ -43957,53 +43660,18 @@ var render = function() {
                           { staticClass: "custom-control custom-checkbox" },
                           [
                             _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.aRepresenta,
-                                  expression: "aRepresenta"
-                                }
-                              ],
                               staticClass: "custom-control-input",
                               attrs: {
                                 type: "checkbox",
-                                name: "ar_representa",
+                                name: "dp_representa[]",
                                 value: "Sim",
-                                id: "CA_aR1"
-                              },
-                              domProps: {
-                                checked: Array.isArray(_vm.aRepresenta)
-                                  ? _vm._i(_vm.aRepresenta, "Sim") > -1
-                                  : _vm.aRepresenta
-                              },
-                              on: {
-                                change: function($event) {
-                                  var $$a = _vm.aRepresenta,
-                                    $$el = $event.target,
-                                    $$c = $$el.checked ? true : false
-                                  if (Array.isArray($$a)) {
-                                    var $$v = "Sim",
-                                      $$i = _vm._i($$a, $$v)
-                                    if ($$el.checked) {
-                                      $$i < 0 &&
-                                        (_vm.aRepresenta = $$a.concat([$$v]))
-                                    } else {
-                                      $$i > -1 &&
-                                        (_vm.aRepresenta = $$a
-                                          .slice(0, $$i)
-                                          .concat($$a.slice($$i + 1)))
-                                    }
-                                  } else {
-                                    _vm.aRepresenta = $$c
-                                  }
-                                }
+                                id: defensor.arMatricula
                               }
                             }),
                             _vm._v(" "),
                             _c("label", {
                               staticClass: "custom-control-label",
-                              attrs: { for: "CA_aR1" }
+                              attrs: { for: defensor.arMatricula }
                             })
                           ]
                         )
@@ -44015,53 +43683,18 @@ var render = function() {
                           { staticClass: "custom-control custom-checkbox" },
                           [
                             _c("input", {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.aIntimacao,
-                                  expression: "aIntimacao"
-                                }
-                              ],
                               staticClass: "custom-control-input",
                               attrs: {
                                 type: "checkbox",
-                                name: "ar_intimacao",
+                                name: "dp_intimacao[]",
                                 value: "Sim",
-                                id: "CA_aR2"
-                              },
-                              domProps: {
-                                checked: Array.isArray(_vm.aIntimacao)
-                                  ? _vm._i(_vm.aIntimacao, "Sim") > -1
-                                  : _vm.aIntimacao
-                              },
-                              on: {
-                                change: function($event) {
-                                  var $$a = _vm.aIntimacao,
-                                    $$el = $event.target,
-                                    $$c = $$el.checked ? true : false
-                                  if (Array.isArray($$a)) {
-                                    var $$v = "Sim",
-                                      $$i = _vm._i($$a, $$v)
-                                    if ($$el.checked) {
-                                      $$i < 0 &&
-                                        (_vm.aIntimacao = $$a.concat([$$v]))
-                                    } else {
-                                      $$i > -1 &&
-                                        (_vm.aIntimacao = $$a
-                                          .slice(0, $$i)
-                                          .concat($$a.slice($$i + 1)))
-                                    }
-                                  } else {
-                                    _vm.aIntimacao = $$c
-                                  }
-                                }
+                                id: defensor.arNome
                               }
                             }),
                             _vm._v(" "),
                             _c("label", {
                               staticClass: "custom-control-label",
-                              attrs: { for: "CA_aR2" }
+                              attrs: { for: defensor.arNome }
                             })
                           ]
                         )
@@ -46005,7 +45638,6 @@ var render = function() {
                       }
                     ],
                     staticClass: "custom-select",
-                    attrs: { name: "ra_pessoa" },
                     on: {
                       change: function($event) {
                         var $$selectedVal = Array.prototype.filter
@@ -46149,7 +45781,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", name: "ra_nome" },
+                  attrs: { type: "text" },
                   domProps: { value: _vm.raNome },
                   on: {
                     input: function($event) {
@@ -47869,7 +47501,6 @@ var render = function() {
                       }
                     ],
                     staticClass: "custom-select",
-                    attrs: { name: "rr_pessoa" },
                     on: {
                       change: function($event) {
                         var $$selectedVal = Array.prototype.filter
@@ -48013,7 +47644,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", name: "rr_nome" },
+                  attrs: { type: "text" },
                   domProps: { value: _vm.rrNome },
                   on: {
                     input: function($event) {
@@ -49070,353 +48701,6 @@ var render = function() {
     _vm._v(" "),
     _c("br"),
     _vm._v(" "),
-    _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "card-header" }, [
-        _c("h5", [
-          _c("strong", [_vm._v("Dados Complementares")]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              attrs: { href: "#ajuda" },
-              on: {
-                click: function($event) {
-                  return _vm.ajuda()
-                }
-              }
-            },
-            [_vm._v("(?)")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(26),
-                _vm._v(" "),
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.rrEstadoCivil,
-                        expression: "rrEstadoCivil"
-                      }
-                    ],
-                    staticClass: "custom-select",
-                    attrs: { name: "rr_estadoCivil" },
-                    on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.rrEstadoCivil = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      }
-                    }
-                  },
-                  [
-                    _c("option", { attrs: { value: "" } }, [
-                      _vm._v("Escolha o estado civil")
-                    ]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "Solteiro" } }, [
-                      _vm._v("Solteiro")
-                    ]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "Casado" } }, [
-                      _vm._v("Casado")
-                    ]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "Viúvo" } }, [
-                      _vm._v("Viúvo")
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "option",
-                      { attrs: { value: "Separado Judicialmente" } },
-                      [_vm._v("Separado Judicialmente")]
-                    ),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "Divorciado" } }, [
-                      _vm._v("Divorciado")
-                    ])
-                  ]
-                )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(27),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rrProfissao,
-                      expression: "rrProfissao"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "rr_profissao" },
-                  domProps: { value: _vm.rrProfissao },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rrProfissao = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(28),
-                _vm._v(" "),
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.rrNacionalidade,
-                        expression: "rrNacionalidade"
-                      }
-                    ],
-                    staticClass: "custom-select",
-                    attrs: { name: "rr_nacionalidade" },
-                    on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.rrNacionalidade = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      }
-                    }
-                  },
-                  [
-                    _c("option", { attrs: { value: "Brasileira" } }, [
-                      _vm._v("Brasileira")
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "option",
-                      { attrs: { value: "Naturalizado brasileiro" } },
-                      [_vm._v("Naturalizado brasileiro")]
-                    ),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "Estrangeira" } }, [
-                      _vm._v("Estrangeira")
-                    ])
-                  ]
-                )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(29),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rrEstadoNaturalidade,
-                      expression: "rrEstadoNaturalidade"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: {
-                    type: "text",
-                    placeholder: "Cidade",
-                    name: "rr_estadoNaturalidade"
-                  },
-                  domProps: { value: _vm.rrEstadoNaturalidade },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rrEstadoNaturalidade = $event.target.value
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rrCidadeNaturalidade,
-                      expression: "rrCidadeNaturalidade"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: {
-                    type: "text",
-                    placeholder: "Estado",
-                    name: "rr_cidadeNaturalidade"
-                  },
-                  domProps: { value: _vm.rrCidadeNaturalidade },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rrCidadeNaturalidade = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(30),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rrPai,
-                      expression: "rrPai"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "rr_pai" },
-                  domProps: { value: _vm.rrPai },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rrPai = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(31),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rrMae,
-                      expression: "rrMae"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "rr_mae" },
-                  domProps: { value: _vm.rrMae },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rrMae = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(32),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "mask",
-                      rawName: "v-mask",
-                      value: "##/##/####",
-                      expression: "'##/##/####'"
-                    },
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rrNascimento,
-                      expression: "rrNascimento"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "rr_nascimento" },
-                  domProps: { value: _vm.rrNascimento },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rrNascimento = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br")
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
     _c("div", { attrs: { align: "center" } }, [
       _c(
         "button",
@@ -49601,48 +48885,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("span", [_c("strong", [_vm._v("Valor da Causa")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Estado Civil ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Profissão ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Nacionalidade ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Nome do Pai ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])])
   }
 ]
 render._withStripped = true
@@ -49868,7 +49110,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", name: "r_nome" },
+                  attrs: { type: "text" },
                   domProps: { value: _vm.rNome },
                   on: {
                     input: function($event) {
@@ -50887,353 +50129,6 @@ var render = function() {
     _vm._v(" "),
     _c("br"),
     _vm._v(" "),
-    _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "card-header" }, [
-        _c("h5", [
-          _c("strong", [_vm._v("Dados Complementares")]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              attrs: { href: "#ajuda" },
-              on: {
-                click: function($event) {
-                  return _vm.ajuda()
-                }
-              }
-            },
-            [_vm._v("(?)")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(25),
-                _vm._v(" "),
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.rEstadoCivil,
-                        expression: "rEstadoCivil"
-                      }
-                    ],
-                    staticClass: "custom-select",
-                    attrs: { name: "r_estadoCivil" },
-                    on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.rEstadoCivil = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      }
-                    }
-                  },
-                  [
-                    _c("option", { attrs: { value: "" } }, [
-                      _vm._v("Escolha o estado civil")
-                    ]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "Solteiro" } }, [
-                      _vm._v("Solteiro")
-                    ]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "Casado" } }, [
-                      _vm._v("Casado")
-                    ]),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "Viúvo" } }, [
-                      _vm._v("Viúvo")
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "option",
-                      { attrs: { value: "Separado Judicialmente" } },
-                      [_vm._v("Separado Judicialmente")]
-                    ),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "Divorciado" } }, [
-                      _vm._v("Divorciado")
-                    ])
-                  ]
-                )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(26),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rProfissao,
-                      expression: "rProfissao"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "r_profissao" },
-                  domProps: { value: _vm.rProfissao },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rProfissao = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(27),
-                _vm._v(" "),
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.rNacionalidade,
-                        expression: "rNacionalidade"
-                      }
-                    ],
-                    staticClass: "custom-select",
-                    attrs: { name: "r_nacionalidade" },
-                    on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.rNacionalidade = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      }
-                    }
-                  },
-                  [
-                    _c("option", { attrs: { value: "Brasileira" } }, [
-                      _vm._v("Brasileira")
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "option",
-                      { attrs: { value: "Naturalizado brasileiro" } },
-                      [_vm._v("Naturalizado brasileiro")]
-                    ),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "Estrangeira" } }, [
-                      _vm._v("Estrangeira")
-                    ])
-                  ]
-                )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(28),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rEstadoNaturalidade,
-                      expression: "rEstadoNaturalidade"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: {
-                    type: "text",
-                    placeholder: "Estado",
-                    name: "r_estadoNaturalidade"
-                  },
-                  domProps: { value: _vm.rEstadoNaturalidade },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rEstadoNaturalidade = $event.target.value
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rCidadeNaturalidade,
-                      expression: "rCidadeNaturalidade"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: {
-                    type: "text",
-                    placeholder: "Cidade",
-                    name: "r_cidadeNaturalidade"
-                  },
-                  domProps: { value: _vm.rCidadeNaturalidade },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rCidadeNaturalidade = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(29),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rPai,
-                      expression: "rPai"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "r_pai" },
-                  domProps: { value: _vm.rPai },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rPai = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(30),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rMae,
-                      expression: "rMae"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "r_mae" },
-                  domProps: { value: _vm.rMae },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rMae = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(31),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "mask",
-                      rawName: "v-mask",
-                      value: "##/##/####",
-                      expression: "'##/##/####'"
-                    },
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rNascimento,
-                      expression: "rNascimento"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "string", name: "r_nascimento" },
-                  domProps: { value: _vm.rNascimento },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rNascimento = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("br")
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
     _c("div", { attrs: { align: "center" } }, [
       _c(
         "button",
@@ -51423,48 +50318,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("span", [_c("strong", [_vm._v("Valor da Causa")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Estado Civil ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Profissão ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Nacionalidade ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Nome do Pai ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])])
   }
 ]
 render._withStripped = true
@@ -51570,7 +50423,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "form-control",
-                  attrs: { type: "text", name: "rj_nome" },
+                  attrs: { type: "text" },
                   domProps: { value: _vm.rjNome },
                   on: {
                     input: function($event) {
@@ -52736,20 +51589,20 @@ var render = function() {
                       {
                         name: "model",
                         rawName: "v-model",
-                        value: _vm.arMatriculaRepresentante,
-                        expression: "arMatriculaRepresentante"
+                        value: _vm.arMatricula,
+                        expression: "arMatricula"
                       }
                     ],
                     staticClass: "form-control",
                     attrs: { type: "text" },
-                    domProps: { value: _vm.arMatriculaRepresentante },
+                    domProps: { value: _vm.arMatricula },
                     on: {
                       input: [
                         function($event) {
                           if ($event.target.composing) {
                             return
                           }
-                          _vm.arMatriculaRepresentante = $event.target.value
+                          _vm.arMatricula = $event.target.value
                         },
                         _vm.gerarNome
                       ]
@@ -52815,7 +51668,7 @@ var render = function() {
                 : _vm._e(),
               _vm._v(" "),
               _vm.arAdvogadoRepresentante === "Defensor Público" &&
-              _vm.arMatriculaRepresentante != "" &&
+              _vm.arMatricula != "" &&
               _vm.arNome != ""
                 ? _c(
                     "button",
@@ -52857,7 +51710,7 @@ var render = function() {
                           staticStyle: { border: "0", outline: "none" },
                           attrs: {
                             type: "text",
-                            name: "ar_advogadoRepresentante",
+                            name: "ad_categoria[]",
                             value: "Advogado",
                             readonly: ""
                           }
@@ -52882,7 +51735,7 @@ var render = function() {
                           staticStyle: { border: "0", outline: "none" },
                           attrs: {
                             type: "text",
-                            name: "ar_estadoOAB",
+                            name: "ad_estadoOAB[]",
                             readonly: ""
                           },
                           domProps: { value: advogado.arEstadoOAB }
@@ -52904,7 +51757,7 @@ var render = function() {
                           staticStyle: { border: "0", outline: "none" },
                           attrs: {
                             type: "text",
-                            name: "ar_numeroOAB",
+                            name: "ad_numeroOAB[]",
                             readonly: ""
                           },
                           domProps: { value: advogado.arNumeroOAB }
@@ -52929,7 +51782,7 @@ var render = function() {
                           staticStyle: { border: "0", outline: "none" },
                           attrs: {
                             type: "text",
-                            name: "ar_nome",
+                            name: "ad_nome[]",
                             readonly: ""
                           },
                           domProps: { value: advogado.arNome }
@@ -52973,7 +51826,7 @@ var render = function() {
                           staticStyle: { border: "0", outline: "none" },
                           attrs: {
                             type: "text",
-                            name: "ar_advogadoRepresentante",
+                            name: "dp_categoria[]",
                             value: "Defensor Público",
                             readonly: ""
                           }
@@ -52998,10 +51851,10 @@ var render = function() {
                           staticStyle: { border: "0", outline: "none" },
                           attrs: {
                             type: "text",
-                            name: "ar_matriculaRepresentante",
+                            name: "dp_matricula[]",
                             readonly: ""
                           },
-                          domProps: { value: defensor.arMatriculaRepresentante }
+                          domProps: { value: defensor.arMatricula }
                         })
                       ]),
                       _vm._v(" "),
@@ -53023,7 +51876,7 @@ var render = function() {
                           staticStyle: { border: "0", outline: "none" },
                           attrs: {
                             type: "text",
-                            name: "ar_nome",
+                            name: "dp_nome[]",
                             readonly: ""
                           },
                           domProps: { value: defensor.arNome }
@@ -53229,9 +52082,51 @@ var render = function() {
                     return _c("tr", [
                       _c("td", [_vm._v("Autor")]),
                       _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(autor.aPessoa))]),
+                      _c("td", [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "autowidth",
+                              rawName: "v-autowidth",
+                              value: {
+                                maxWidth: "960px",
+                                minWidth: "20px",
+                                comfortZone: 0
+                              },
+                              expression:
+                                "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                            }
+                          ],
+                          staticStyle: { border: "0", outline: "none" },
+                          attrs: {
+                            type: "text",
+                            name: "a_pessoa",
+                            readonly: ""
+                          },
+                          domProps: { value: autor.aPessoa }
+                        })
+                      ]),
                       _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(autor.aNome))]),
+                      _c("td", [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "autowidth",
+                              rawName: "v-autowidth",
+                              value: {
+                                maxWidth: "960px",
+                                minWidth: "20px",
+                                comfortZone: 0
+                              },
+                              expression:
+                                "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                            }
+                          ],
+                          staticStyle: { border: "0", outline: "none" },
+                          attrs: { type: "text", name: "a_nome", readonly: "" },
+                          domProps: { value: autor.aNome }
+                        })
+                      ]),
                       _vm._v(" "),
                       _c("td", [
                         _c(
@@ -53250,9 +52145,55 @@ var render = function() {
                     return _c("tr", [
                       _c("td", [_vm._v("Representante")]),
                       _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(representante.raPessoa))]),
+                      _c("td", [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "autowidth",
+                              rawName: "v-autowidth",
+                              value: {
+                                maxWidth: "960px",
+                                minWidth: "20px",
+                                comfortZone: 0
+                              },
+                              expression:
+                                "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                            }
+                          ],
+                          staticStyle: { border: "0", outline: "none" },
+                          attrs: {
+                            type: "text",
+                            name: "ra_pessoa",
+                            readonly: ""
+                          },
+                          domProps: { value: representante.raPessoa }
+                        })
+                      ]),
                       _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(representante.raNome))]),
+                      _c("td", [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "autowidth",
+                              rawName: "v-autowidth",
+                              value: {
+                                maxWidth: "960px",
+                                minWidth: "20px",
+                                comfortZone: 0
+                              },
+                              expression:
+                                "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                            }
+                          ],
+                          staticStyle: { border: "0", outline: "none" },
+                          attrs: {
+                            type: "text",
+                            name: "ra_nome",
+                            readonly: ""
+                          },
+                          domProps: { value: representante.raNome }
+                        })
+                      ]),
                       _vm._v(" "),
                       _c("td", [
                         _c(
@@ -53506,7 +52447,30 @@ var render = function() {
                         _vm._v(" "),
                         _c("td", [_vm._v("Pessoa Física")]),
                         _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(reu.rNome))]),
+                        _c("td", [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "autowidth",
+                                rawName: "v-autowidth",
+                                value: {
+                                  maxWidth: "960px",
+                                  minWidth: "20px",
+                                  comfortZone: 0
+                                },
+                                expression:
+                                  "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                              }
+                            ],
+                            staticStyle: { border: "0", outline: "none" },
+                            attrs: {
+                              type: "text",
+                              name: "r_nome",
+                              readonly: ""
+                            },
+                            domProps: { value: reu.rNome }
+                          })
+                        ]),
                         _vm._v(" "),
                         _c("td", [
                           _c(
@@ -53527,7 +52491,30 @@ var render = function() {
                         _vm._v(" "),
                         _c("td", [_vm._v("Pessoa Jurídica")]),
                         _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(reuJuridico.rjNome))]),
+                        _c("td", [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "autowidth",
+                                rawName: "v-autowidth",
+                                value: {
+                                  maxWidth: "960px",
+                                  minWidth: "20px",
+                                  comfortZone: 0
+                                },
+                                expression:
+                                  "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                              }
+                            ],
+                            staticStyle: { border: "0", outline: "none" },
+                            attrs: {
+                              type: "text",
+                              name: "rj_nome",
+                              readonly: ""
+                            },
+                            domProps: { value: reuJuridico.rjNome }
+                          })
+                        ]),
                         _vm._v(" "),
                         _c("td", [
                           _c(
@@ -53546,9 +52533,55 @@ var render = function() {
                       return _c("tr", [
                         _c("td", [_vm._v("Representante")]),
                         _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(representante.rrPessoa))]),
+                        _c("td", [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "autowidth",
+                                rawName: "v-autowidth",
+                                value: {
+                                  maxWidth: "960px",
+                                  minWidth: "20px",
+                                  comfortZone: 0
+                                },
+                                expression:
+                                  "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                              }
+                            ],
+                            staticStyle: { border: "0", outline: "none" },
+                            attrs: {
+                              type: "text",
+                              name: "rr_pessoa",
+                              readonly: ""
+                            },
+                            domProps: { value: representante.rrPessoa }
+                          })
+                        ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(representante.rrNome))]),
+                        _c("td", [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "autowidth",
+                                rawName: "v-autowidth",
+                                value: {
+                                  maxWidth: "960px",
+                                  minWidth: "20px",
+                                  comfortZone: 0
+                                },
+                                expression:
+                                  "{maxWidth: '960px', minWidth: '20px', comfortZone: 0}"
+                              }
+                            ],
+                            staticStyle: { border: "0", outline: "none" },
+                            attrs: {
+                              type: "text",
+                              name: "rr_nome",
+                              readonly: ""
+                            },
+                            domProps: { value: representante.rrNome }
+                          })
+                        ]),
                         _vm._v(" "),
                         _c("td", [
                           _c(
