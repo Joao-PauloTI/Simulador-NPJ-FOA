@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-                <div v-if="deAutor != null || deRepresentanteAutor != null">
+                <div v-if="deAutor != '' || deRepresentanteAutor != ''">
                     <table class="table table-borderless">
                         <tr v-for="autor in deAutor">
                             <td>Autor</td>
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <div v-if="deReu != null || deReuJuridico != null || deRepresentanteReu != null">
+                <div v-if="deReu != '' || deReuJuridico != '' || deRepresentanteReu != ''">
                     <table class="table table-borderless">
                         <tr v-for="reu in deReu">
                             <td>Réu</td>
@@ -150,13 +150,7 @@
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-body">
-                                <duploadpeticaoinicial></duploadpeticaoinicial>
-                                <br>
-                                <!--Botões SALVAR/FECHAR-->
-                                <div align="center">
-                                    <button type="button" class="btn btn-primary">SALVAR</button>
-                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
-                                </div>
+                                <duploadpeticaoinicial @nomePeticaoInicial="mostrarPeticaoInicial"></duploadpeticaoinicial>
                             </div>
                         </div>
                     </div>
@@ -168,13 +162,7 @@
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-body">
-                                <denviarcpf></denviarcpf>
-                                <br>
-                                <!--Botões SALVAR/FECHAR-->
-                                <div align="center">
-                                    <button type="button" class="btn btn-primary">SALVAR</button>
-                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
-                                </div>
+                                <denviarcpf @nomeCpf="mostrarCpf"></denviarcpf>
                             </div>
                         </div>
                     </div>
@@ -186,13 +174,7 @@
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-body">
-                                <denviarcomprovanteresidencia></denviarcomprovanteresidencia>
-                                <br>
-                                <!--Botões SALVAR/FECHAR-->
-                                <div align="center">
-                                    <button type="button" class="btn btn-primary">SALVAR</button>
-                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
-                                </div>
+                                <denviarcomprovanteresidencia @nomeComprovanteResidencia="mostrarComprovanteResidencia"></denviarcomprovanteresidencia>
                             </div>
                         </div>
                     </div>
@@ -204,13 +186,7 @@
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-body">
-                                <denviarprocuracao></denviarprocuracao>
-                                <br>
-                                <!--Botões SALVAR/FECHAR-->
-                                <div align="center">
-                                    <button type="button" class="btn btn-primary">SALVAR</button>
-                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
-                                </div>
+                                <denviarprocuracao @nomeProcuracao="mostrarProcuracao"></denviarprocuracao>
                             </div>
                         </div>
                     </div>
@@ -222,16 +198,34 @@
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-body">
-                                <duploadanexopeticao></duploadanexopeticao>
-                                <br>
-                                <!--Botões SALVAR/FECHAR-->
-                                <div align="center">
-                                    <button type="button" class="btn btn-primary">SALVAR</button>
-                                    <button type="button" data-dismiss="modal" class="btn btn-danger">FECHAR</button>
-                                </div>
+                                <duploadanexopeticao @nomeAnexoPeticao="mostrarAnexoPeticao"></duploadanexopeticao>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div v-if="deNomePeticaoInicial != '' || deNomeCpf != '' || deNomeComprovanteResidencia != '' || deNomeProcuracao != '' || deNomeAnexoPeticao != ''">
+                    <table class="table table-borderless">
+                        <tr v-show="deNomePeticaoInicial != ''">
+                            <td>Petição Inicial</td>
+                            <td><a href="#" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#peticaoModal">{{ deNomePeticaoInicial }}</a></td>
+                        </tr>
+                        <tr v-show="deNomeCpf != ''">
+                            <td>CPF</td>
+                            <td><a href="#" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#cpfModal">{{ deNomeCpf }}</a></td>
+                        </tr>
+                        <tr v-show="deNomeComprovanteResidencia != ''">
+                            <td>Comprovante de Residência</td>
+                            <td><a href="#" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#comprovanteModal">{{ deNomeComprovanteResidencia }}</a></td>
+                        </tr>
+                        <tr v-show="deNomeProcuracao != ''">
+                            <td>Procuração</td>
+                            <td><a href="#" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#procuracaoModal">{{ deNomeProcuracao }}</a></td>
+                        </tr>
+                        <tr v-show="deNomeAnexoPeticao != ''">
+                            <td>Anexo da Petição</td>
+                            <td><a href="#" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#anexoModal">{{ deNomeAnexoPeticao }}</a></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -259,11 +253,7 @@ import duploadanexopeticao from '../Documentos/D_uploadAnexoPeticao'
 export default {
     name: 'deautoresReusDocumentos',
     components: {
-        camodal,
-        cramodal,
-        crmodal,
-        crjmodal,
-        crrmodal
+        camodal, cramodal, crmodal, crjmodal, crrmodal, duploadpeticaoinicial, denviarcpf, denviarcomprovanteresidencia, denviarprocuracao, duploadanexopeticao
     },
     data: function() {
         return {
@@ -271,7 +261,12 @@ export default {
             deRepresentanteAutor: [],
             deReu: [],
             deReuJuridico: [],
-            deRepresentanteReu: []
+            deRepresentanteReu: [],
+            deNomePeticaoInicial: '',
+            deNomeCpf: '',
+            deNomeComprovanteResidencia: '',
+            deNomeProcuracao: '',
+            deNomeAnexoPeticao: ''
         }
     },
     methods: {
@@ -504,6 +499,21 @@ export default {
                 this.deRepresentanteReu.pop()
             }
             this.$refs.resetarRepresentanteReu.limparRepresentanteReuModal()
+        },
+        mostrarPeticaoInicial: function(nomePeticaoInicial) {
+            this.deNomePeticaoInicial = nomePeticaoInicial
+        },
+        mostrarCpf: function(nomeCpf) {
+            this.deNomeCpf = nomeCpf
+        },
+        mostrarComprovanteResidencia: function(nomeComprovanteResidencia) {
+            this.deNomeComprovanteResidencia = nomeComprovanteResidencia
+        },
+        mostrarProcuracao: function(nomeProcuracao) {
+            this.deNomeProcuracao = nomeProcuracao
+        },
+        mostrarAnexoPeticao: function(nomeAnexoPeticao) {
+            this.deNomeAnexoPeticao = nomeAnexoPeticao
         }
     }
 }

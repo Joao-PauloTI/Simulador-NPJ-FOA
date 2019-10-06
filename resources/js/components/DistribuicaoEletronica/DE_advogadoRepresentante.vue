@@ -70,7 +70,7 @@
                         </td>
                     </tr>
                 </table>
-                <div v-if="arAdvogadoDados != null || arDefensorDados != null">
+                <div v-if="arAdvogadoDados.length > 0 || arDefensorDados.length > 0">
                     <table class="table table-borderless">
                         <tr v-for="advogado, index in arAdvogadoDados">
                             <td>

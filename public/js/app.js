@@ -4554,12 +4554,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 //Modal de cadastro de autor
  //Modal de cadastro de representante de autor
 
@@ -4583,7 +4577,12 @@ __webpack_require__.r(__webpack_exports__);
     cramodal: _CadastrarRepresentanteAutor_CRA_modal__WEBPACK_IMPORTED_MODULE_1__["default"],
     crmodal: _CadastrarReu_CR_modal__WEBPACK_IMPORTED_MODULE_2__["default"],
     crjmodal: _CadastrarReuJuridico_CRJ_modal__WEBPACK_IMPORTED_MODULE_3__["default"],
-    crrmodal: _CadastrarRepresentanteReu_CRR_modal__WEBPACK_IMPORTED_MODULE_4__["default"]
+    crrmodal: _CadastrarRepresentanteReu_CRR_modal__WEBPACK_IMPORTED_MODULE_4__["default"],
+    duploadpeticaoinicial: _Documentos_D_uploadPeticaoInicial__WEBPACK_IMPORTED_MODULE_5__["default"],
+    denviarcpf: _Documentos_D_enviarCPF__WEBPACK_IMPORTED_MODULE_6__["default"],
+    denviarcomprovanteresidencia: _Documentos_D_enviarComprovanteResidencia__WEBPACK_IMPORTED_MODULE_7__["default"],
+    denviarprocuracao: _Documentos_D_enviarProcuracao__WEBPACK_IMPORTED_MODULE_8__["default"],
+    duploadanexopeticao: _Documentos_D_uploadAnexoPeticao__WEBPACK_IMPORTED_MODULE_9__["default"]
   },
   data: function data() {
     return {
@@ -4591,7 +4590,12 @@ __webpack_require__.r(__webpack_exports__);
       deRepresentanteAutor: [],
       deReu: [],
       deReuJuridico: [],
-      deRepresentanteReu: []
+      deRepresentanteReu: [],
+      deNomePeticaoInicial: '',
+      deNomeCpf: '',
+      deNomeComprovanteResidencia: '',
+      deNomeProcuracao: '',
+      deNomeAnexoPeticao: ''
     };
   },
   methods: {
@@ -4828,6 +4832,21 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       this.$refs.resetarRepresentanteReu.limparRepresentanteReuModal();
+    },
+    mostrarPeticaoInicial: function mostrarPeticaoInicial(nomePeticaoInicial) {
+      this.deNomePeticaoInicial = nomePeticaoInicial;
+    },
+    mostrarCpf: function mostrarCpf(nomeCpf) {
+      this.deNomeCpf = nomeCpf;
+    },
+    mostrarComprovanteResidencia: function mostrarComprovanteResidencia(nomeComprovanteResidencia) {
+      this.deNomeComprovanteResidencia = nomeComprovanteResidencia;
+    },
+    mostrarProcuracao: function mostrarProcuracao(nomeProcuracao) {
+      this.deNomeProcuracao = nomeProcuracao;
+    },
+    mostrarAnexoPeticao: function mostrarAnexoPeticao(nomeAnexoPeticao) {
+      this.deNomeAnexoPeticao = nomeAnexoPeticao;
     }
   }
 });
@@ -5648,14 +5667,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'denviarcpf',
   data: function data() {
-    return {};
+    return {
+      nomeCpf: ''
+    };
   },
   methods: {
     ajuda: function ajuda() {
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    },
+    receberNomeDocumento: function receberNomeDocumento() {
+      this.nomeCpf = document.getElementById('escolherCpfId').value;
+      this.nomeCpf = this.nomeCpf.split("\\").pop();
+    },
+    enviarNomeDocumento: function enviarNomeDocumento() {
+      this.$emit('nomeCpf', this.nomeCpf);
     }
   }
 });
@@ -5700,14 +5733,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'denviarcomprovanteresidencia',
   data: function data() {
-    return {};
+    return {
+      nomeComprovanteResidencia: ''
+    };
   },
   methods: {
     ajuda: function ajuda() {
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    },
+    receberNomeDocumento: function receberNomeDocumento() {
+      this.nomeComprovanteResidencia = document.getElementById('escolherComprovanteResidenciaId').value;
+      this.nomeComprovanteResidencia = this.nomeComprovanteResidencia.split("\\").pop();
+    },
+    enviarNomeDocumento: function enviarNomeDocumento() {
+      this.$emit('nomeComprovanteResidencia', this.nomeComprovanteResidencia);
     }
   }
 });
@@ -5752,14 +5799,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'denviarprocuracao',
   data: function data() {
-    return {};
+    return {
+      nomeProcuracao: ''
+    };
   },
   methods: {
     ajuda: function ajuda() {
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    },
+    receberNomeDocumento: function receberNomeDocumento() {
+      this.nomeProcuracao = document.getElementById('escolherProcuracaoId').value;
+      this.nomeProcuracao = this.nomeProcuracao.split("\\").pop();
+    },
+    enviarNomeDocumento: function enviarNomeDocumento() {
+      this.$emit('nomeProcuracao', this.nomeProcuracao);
     }
   }
 });
@@ -5804,14 +5865,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'duploadanexopeticao',
   data: function data() {
-    return {};
+    return {
+      nomeAnexoPeticao: ''
+    };
   },
   methods: {
     ajuda: function ajuda() {
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    },
+    receberNomeDocumento: function receberNomeDocumento() {
+      this.nomeAnexoPeticao = document.getElementById('escolherAnexoPeticaoId').value;
+      this.nomeAnexoPeticao = this.nomeAnexoPeticao.split("\\").pop();
+    },
+    enviarNomeDocumento: function enviarNomeDocumento() {
+      this.$emit('nomeAnexoPeticao', this.nomeAnexoPeticao);
     }
   }
 });
@@ -5856,14 +5931,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'duploadpeticaoinicial',
   data: function data() {
-    return {};
+    return {
+      nomePeticaoInicial: ''
+    };
   },
   methods: {
     ajuda: function ajuda() {
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+    },
+    receberNomeDocumento: function receberNomeDocumento() {
+      this.nomePeticaoInicial = document.getElementById('escolherPeticaoInicialId').value;
+      this.nomePeticaoInicial = this.nomePeticaoInicial.split("\\").pop();
+    },
+    enviarNomeDocumento: function enviarNomeDocumento() {
+      this.$emit('nomePeticaoInicial', this.nomePeticaoInicial);
     }
   }
 });
@@ -51684,7 +51773,7 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _vm.arAdvogadoDados != null || _vm.arDefensorDados != null
+        _vm.arAdvogadoDados.length > 0 || _vm.arDefensorDados.length > 0
           ? _c("div", [
               _c(
                 "table",
@@ -52072,7 +52161,7 @@ var render = function() {
           ]
         ),
         _vm._v(" "),
-        _vm.deAutor != null || _vm.deRepresentanteAutor != null
+        _vm.deAutor != "" || _vm.deRepresentanteAutor != ""
           ? _c("div", [
               _c(
                 "table",
@@ -52433,9 +52522,9 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _vm.deReu != null ||
-          _vm.deReuJuridico != null ||
-          _vm.deRepresentanteReu != null
+          _vm.deReu != "" ||
+          _vm.deReuJuridico != "" ||
+          _vm.deRepresentanteReu != ""
             ? _c("div", [
                 _c(
                   "table",
@@ -52652,11 +52741,9 @@ var render = function() {
                   "div",
                   { staticClass: "modal-body" },
                   [
-                    _c("duploadpeticaoinicial"),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _vm._m(0)
+                    _c("duploadpeticaoinicial", {
+                      on: { nomePeticaoInicial: _vm.mostrarPeticaoInicial }
+                    })
                   ],
                   1
                 )
@@ -52687,13 +52774,7 @@ var render = function() {
               _c(
                 "div",
                 { staticClass: "modal-body" },
-                [
-                  _c("denviarcpf"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _vm._m(1)
-                ],
+                [_c("denviarcpf", { on: { nomeCpf: _vm.mostrarCpf } })],
                 1
               )
             ])
@@ -52726,11 +52807,12 @@ var render = function() {
                   "div",
                   { staticClass: "modal-body" },
                   [
-                    _c("denviarcomprovanteresidencia"),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _vm._m(2)
+                    _c("denviarcomprovanteresidencia", {
+                      on: {
+                        nomeComprovanteResidencia:
+                          _vm.mostrarComprovanteResidencia
+                      }
+                    })
                   ],
                   1
                 )
@@ -52765,11 +52847,9 @@ var render = function() {
                   "div",
                   { staticClass: "modal-body" },
                   [
-                    _c("denviarprocuracao"),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _vm._m(3)
+                    _c("denviarprocuracao", {
+                      on: { nomeProcuracao: _vm.mostrarProcuracao }
+                    })
                   ],
                   1
                 )
@@ -52801,130 +52881,197 @@ var render = function() {
                 "div",
                 { staticClass: "modal-body" },
                 [
-                  _c("duploadanexopeticao"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _vm._m(4)
+                  _c("duploadanexopeticao", {
+                    on: { nomeAnexoPeticao: _vm.mostrarAnexoPeticao }
+                  })
                 ],
                 1
               )
             ])
           ])
-        ])
+        ]),
+        _vm._v(" "),
+        _vm.deNomePeticaoInicial != "" ||
+        _vm.deNomeCpf != "" ||
+        _vm.deNomeComprovanteResidencia != "" ||
+        _vm.deNomeProcuracao != "" ||
+        _vm.deNomeAnexoPeticao != ""
+          ? _c("div", [
+              _c("table", { staticClass: "table table-borderless" }, [
+                _c(
+                  "tr",
+                  {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: _vm.deNomePeticaoInicial != "",
+                        expression: "deNomePeticaoInicial != ''"
+                      }
+                    ]
+                  },
+                  [
+                    _c("td", [_vm._v("Petição Inicial")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href: "#",
+                            "data-toggle": "modal",
+                            "data-backdrop": "static",
+                            "data-keyboard": "false",
+                            "data-target": "#peticaoModal"
+                          }
+                        },
+                        [_vm._v(_vm._s(_vm.deNomePeticaoInicial))]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "tr",
+                  {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: _vm.deNomeCpf != "",
+                        expression: "deNomeCpf != ''"
+                      }
+                    ]
+                  },
+                  [
+                    _c("td", [_vm._v("CPF")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href: "#",
+                            "data-toggle": "modal",
+                            "data-backdrop": "static",
+                            "data-keyboard": "false",
+                            "data-target": "#cpfModal"
+                          }
+                        },
+                        [_vm._v(_vm._s(_vm.deNomeCpf))]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "tr",
+                  {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: _vm.deNomeComprovanteResidencia != "",
+                        expression: "deNomeComprovanteResidencia != ''"
+                      }
+                    ]
+                  },
+                  [
+                    _c("td", [_vm._v("Comprovante de Residência")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href: "#",
+                            "data-toggle": "modal",
+                            "data-backdrop": "static",
+                            "data-keyboard": "false",
+                            "data-target": "#comprovanteModal"
+                          }
+                        },
+                        [_vm._v(_vm._s(_vm.deNomeComprovanteResidencia))]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "tr",
+                  {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: _vm.deNomeProcuracao != "",
+                        expression: "deNomeProcuracao != ''"
+                      }
+                    ]
+                  },
+                  [
+                    _c("td", [_vm._v("Procuração")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href: "#",
+                            "data-toggle": "modal",
+                            "data-backdrop": "static",
+                            "data-keyboard": "false",
+                            "data-target": "#procuracaoModal"
+                          }
+                        },
+                        [_vm._v(_vm._s(_vm.deNomeProcuracao))]
+                      )
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "tr",
+                  {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: _vm.deNomeAnexoPeticao != "",
+                        expression: "deNomeAnexoPeticao != ''"
+                      }
+                    ]
+                  },
+                  [
+                    _c("td", [_vm._v("Anexo da Petição")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href: "#",
+                            "data-toggle": "modal",
+                            "data-backdrop": "static",
+                            "data-keyboard": "false",
+                            "data-target": "#anexoModal"
+                          }
+                        },
+                        [_vm._v(_vm._s(_vm.deNomeAnexoPeticao))]
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ])
+          : _vm._e()
       ])
     ]),
     _vm._v(" "),
     _c("br")
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c(
-        "button",
-        { staticClass: "btn btn-primary", attrs: { type: "button" } },
-        [_vm._v("SALVAR")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-danger",
-          attrs: { type: "button", "data-dismiss": "modal" }
-        },
-        [_vm._v("FECHAR")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c(
-        "button",
-        { staticClass: "btn btn-primary", attrs: { type: "button" } },
-        [_vm._v("SALVAR")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-danger",
-          attrs: { type: "button", "data-dismiss": "modal" }
-        },
-        [_vm._v("FECHAR")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c(
-        "button",
-        { staticClass: "btn btn-primary", attrs: { type: "button" } },
-        [_vm._v("SALVAR")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-danger",
-          attrs: { type: "button", "data-dismiss": "modal" }
-        },
-        [_vm._v("FECHAR")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c(
-        "button",
-        { staticClass: "btn btn-primary", attrs: { type: "button" } },
-        [_vm._v("SALVAR")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-danger",
-          attrs: { type: "button", "data-dismiss": "modal" }
-        },
-        [_vm._v("FECHAR")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c(
-        "button",
-        { staticClass: "btn btn-primary", attrs: { type: "button" } },
-        [_vm._v("SALVAR")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-danger",
-          attrs: { type: "button", "data-dismiss": "modal" }
-        },
-        [_vm._v("FECHAR")]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -56979,7 +57126,57 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", [
+            _c(
+              "label",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { for: "escolherCpfId" }
+              },
+              [_vm._v("Procurar")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              staticStyle: { display: "none" },
+              attrs: { type: "file", id: "escolherCpfId" },
+              on: { change: _vm.receberNomeDocumento }
+            }),
+            _vm._v(" "),
+            _c("span", { staticStyle: { "margin-left": "10px" } }, [
+              _vm._v(_vm._s(_vm.nomeCpf))
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(0),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { attrs: { align: "center" } }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { type: "button", "data-dismiss": "modal" },
+                on: { click: _vm.enviarNomeDocumento }
+              },
+              [_vm._v("ENVIAR")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-danger",
+                attrs: { type: "button", "data-dismiss": "modal" }
+              },
+              [_vm._v("FECHAR")]
+            )
+          ])
+        ])
+      ])
     ])
   ])
 }
@@ -56988,36 +57185,18 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", [
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "button" } },
-            [_vm._v("Escolher Arquivo")]
-          ),
-          _vm._v(" "),
-          _c("span", [_vm._v("Nenhum arquivo selecionado")])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", [
-          _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "text", required: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("p", { staticStyle: { color: "red" } }, [
-          _vm._v(
-            'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
-          )
-        ])
+    return _c("div", [
+      _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "form-control",
+        attrs: { type: "text", required: "" }
+      }),
+      _vm._v(" "),
+      _c("p", { staticStyle: { color: "red" } }, [
+        _vm._v(
+          'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
+        )
       ])
     ])
   }
@@ -57068,7 +57247,57 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", [
+            _c(
+              "label",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { for: "escolherComprovanteResidenciaId" }
+              },
+              [_vm._v("Procurar")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              staticStyle: { display: "none" },
+              attrs: { type: "file", id: "escolherComprovanteResidenciaId" },
+              on: { change: _vm.receberNomeDocumento }
+            }),
+            _vm._v(" "),
+            _c("span", { staticStyle: { "margin-left": "10px" } }, [
+              _vm._v(_vm._s(_vm.nomeComprovanteResidencia))
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(0),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { attrs: { align: "center" } }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { type: "button", "data-dismiss": "modal" },
+                on: { click: _vm.enviarNomeDocumento }
+              },
+              [_vm._v("ENVIAR")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-danger",
+                attrs: { type: "button", "data-dismiss": "modal" }
+              },
+              [_vm._v("FECHAR")]
+            )
+          ])
+        ])
+      ])
     ])
   ])
 }
@@ -57077,36 +57306,18 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", [
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "button" } },
-            [_vm._v("Escolher Arquivo")]
-          ),
-          _vm._v(" "),
-          _c("span", [_vm._v("Nenhum arquivo selecionado")])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", [
-          _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "text", required: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("p", { staticStyle: { color: "red" } }, [
-          _vm._v(
-            'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
-          )
-        ])
+    return _c("div", [
+      _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "form-control",
+        attrs: { type: "text", required: "" }
+      }),
+      _vm._v(" "),
+      _c("p", { staticStyle: { color: "red" } }, [
+        _vm._v(
+          'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
+        )
       ])
     ])
   }
@@ -57157,7 +57368,57 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", [
+            _c(
+              "label",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { for: "escolherProcuracaoId" }
+              },
+              [_vm._v("Procurar")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              staticStyle: { display: "none" },
+              attrs: { type: "file", id: "escolherProcuracaoId" },
+              on: { change: _vm.receberNomeDocumento }
+            }),
+            _vm._v(" "),
+            _c("span", { staticStyle: { "margin-left": "10px" } }, [
+              _vm._v(_vm._s(_vm.nomeProcuracao))
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(0),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { attrs: { align: "center" } }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { type: "button", "data-dismiss": "modal" },
+                on: { click: _vm.enviarNomeDocumento }
+              },
+              [_vm._v("ENVIAR")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-danger",
+                attrs: { type: "button", "data-dismiss": "modal" }
+              },
+              [_vm._v("FECHAR")]
+            )
+          ])
+        ])
+      ])
     ])
   ])
 }
@@ -57166,36 +57427,18 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", [
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "button" } },
-            [_vm._v("Escolher Arquivo")]
-          ),
-          _vm._v(" "),
-          _c("span", [_vm._v("Nenhum arquivo selecionado")])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", [
-          _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "text", required: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("p", { staticStyle: { color: "red" } }, [
-          _vm._v(
-            'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
-          )
-        ])
+    return _c("div", [
+      _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "form-control",
+        attrs: { type: "text", required: "" }
+      }),
+      _vm._v(" "),
+      _c("p", { staticStyle: { color: "red" } }, [
+        _vm._v(
+          'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
+        )
       ])
     ])
   }
@@ -57246,7 +57489,57 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", [
+            _c(
+              "label",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { for: "escolherAnexoPeticaoId" }
+              },
+              [_vm._v("Procurar")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              staticStyle: { display: "none" },
+              attrs: { type: "file", id: "escolherAnexoPeticaoId" },
+              on: { change: _vm.receberNomeDocumento }
+            }),
+            _vm._v(" "),
+            _c("span", { staticStyle: { "margin-left": "10px" } }, [
+              _vm._v(_vm._s(_vm.nomeAnexoPeticao))
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(0),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { attrs: { align: "center" } }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { type: "button", "data-dismiss": "modal" },
+                on: { click: _vm.enviarNomeDocumento }
+              },
+              [_vm._v("ENVIAR")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-danger",
+                attrs: { type: "button", "data-dismiss": "modal" }
+              },
+              [_vm._v("FECHAR")]
+            )
+          ])
+        ])
+      ])
     ])
   ])
 }
@@ -57255,36 +57548,18 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", [
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "button" } },
-            [_vm._v("Escolher Arquivo")]
-          ),
-          _vm._v(" "),
-          _c("span", [_vm._v("Nenhum arquivo selecionado")])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", [
-          _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "text", required: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("p", { staticStyle: { color: "red" } }, [
-          _vm._v(
-            'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
-          )
-        ])
+    return _c("div", [
+      _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "form-control",
+        attrs: { type: "text", required: "" }
+      }),
+      _vm._v(" "),
+      _c("p", { staticStyle: { color: "red" } }, [
+        _vm._v(
+          'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
+        )
       ])
     ])
   }
@@ -57335,7 +57610,57 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "card-body" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", [
+            _c(
+              "label",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { for: "escolherPeticaoInicialId" }
+              },
+              [_vm._v("Procurar")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              staticStyle: { display: "none" },
+              attrs: { type: "file", id: "escolherPeticaoInicialId" },
+              on: { change: _vm.receberNomeDocumento }
+            }),
+            _vm._v(" "),
+            _c("span", { staticStyle: { "margin-left": "10px" } }, [
+              _vm._v(_vm._s(_vm.nomePeticaoInicial))
+            ])
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(0),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", { attrs: { align: "center" } }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { type: "button", "data-dismiss": "modal" },
+                on: { click: _vm.enviarNomeDocumento }
+              },
+              [_vm._v("ENVIAR")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-danger",
+                attrs: { type: "button", "data-dismiss": "modal" }
+              },
+              [_vm._v("FECHAR")]
+            )
+          ])
+        ])
+      ])
     ])
   ])
 }
@@ -57344,36 +57669,18 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-body" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", [
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", attrs: { type: "button" } },
-            [_vm._v("Escolher Arquivo")]
-          ),
-          _vm._v(" "),
-          _c("span", [_vm._v("Nenhum arquivo selecionado")])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", [
-          _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
-          _vm._v(" "),
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "text", required: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("p", { staticStyle: { color: "red" } }, [
-          _vm._v(
-            'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
-          )
-        ])
+    return _c("div", [
+      _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "form-control",
+        attrs: { type: "text", required: "" }
+      }),
+      _vm._v(" "),
+      _c("p", { staticStyle: { color: "red" } }, [
+        _vm._v(
+          'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
+        )
       ])
     ])
   }

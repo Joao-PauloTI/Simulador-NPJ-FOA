@@ -49,11 +49,6 @@ class CreateForeignKeys extends Migration
             $table->integer('rr_processo_id')->unsigned()->nullable()->after('id');
             $table->foreign('rr_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
         });
-
-        Schema::table('tb_documentos', function (Blueprint $table) {
-            $table->integer('d_processo_id')->unsigned()->nullable()->after('id');
-            $table->foreign('d_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
-        });
     }
 
     /**
@@ -63,6 +58,6 @@ class CreateForeignKeys extends Migration
      */
     public function down()
     {
-        
+
     }
 }

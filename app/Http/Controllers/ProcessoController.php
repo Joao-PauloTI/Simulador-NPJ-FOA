@@ -10,7 +10,6 @@ use App\RepresentanteAutor;
 use App\Reu;
 use App\ReuJuridico;
 use App\RepresentanteReu;
-use App\Documento;
 
 use Illuminate\Http\Request;
 
@@ -33,7 +32,7 @@ class ProcessoController extends Controller
      */
     public function create()
     {
-        
+
     }
 
     /**
@@ -227,10 +226,6 @@ class ProcessoController extends Controller
             'rr_valorLiquido' => 'nullable',
             'rr_valorCausa' => 'nullable',
             'rr_pretensao' => 'nullable',
-            //Documentos
-            'd_arquivo' => 'nullable',
-            'd_descricao' => 'nullable',
-            'd_tipoArquivo' => 'nullable'
         ]);
         $processo = new Processo([
             'p_grerjMotivo' => $request->get('p_grerjMotivo'),
@@ -521,16 +516,7 @@ class ProcessoController extends Controller
         ]);
         $representanteReu->representanteReu_processo()->associate($processo);
         $representanteReu->save();
-        /*
-        $documento = new Documento([
-            'd_arquivo' => $request->get('d_arquivo'),
-            'd_descricao' => $request->get('d_descricao'),
-            'd_tipoArquivo' => $request->get('d_tipoArquivo')
-        ]);
 
-        $documento->documento_processo()->associate($processo);
-        $documento->save();
-        */
         return redirect('/distribuicaoeletronica');
     }
 
