@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-                <div v-if="deAutor != '' || deRepresentanteAutor != ''">
+                <div v-if="deAutor != null || deRepresentanteAutor != null">
                     <table class="table table-borderless">
                         <tr v-for="autor in deAutor">
                             <td>Autor</td>
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <div v-if="deReu != '' || deReuJuridico != '' || deRepresentanteReu != ''">
+                <div v-if="deReu != null || deReuJuridico != null || deRepresentanteReu != null">
                     <table class="table table-borderless">
                         <tr v-for="reu in deReu">
                             <td>Réu</td>

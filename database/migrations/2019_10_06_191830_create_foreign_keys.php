@@ -49,6 +49,31 @@ class CreateForeignKeys extends Migration
             $table->integer('rr_processo_id')->unsigned()->nullable()->after('id');
             $table->foreign('rr_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
         });
+
+        Schema::table('tb_documento_comprovantes_residencia', function (Blueprint $table) {
+            $table->integer('dcr_processo_id')->unsigned()->nullable()->after('id');
+            $table->foreign('dcr_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
+        });
+
+        Schema::table('tb_documento_cpf', function (Blueprint $table) {
+            $table->integer('dcpf_processo_id')->unsigned()->nullable()->after('id');
+            $table->foreign('dcpf_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
+        });
+
+        Schema::table('tb_documento_procuracoes', function (Blueprint $table) {
+            $table->integer('dpr_processo_id')->unsigned()->nullable()->after('id');
+            $table->foreign('dpr_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
+        });
+
+        Schema::table('tb_documento_anexos_peticao', function (Blueprint $table) {
+            $table->integer('dap_processo_id')->unsigned()->nullable()->after('id');
+            $table->foreign('dap_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
+        });
+
+        Schema::table('tb_documento_peticao_inicial', function (Blueprint $table) {
+            $table->integer('dpi_processo_id')->unsigned()->nullable()->after('id');
+            $table->foreign('dpi_processo_id')->references('id')->on('tb_processos')->onUpdate('cascade')->onDelete('cascade');
+        });
     }
 
     /**

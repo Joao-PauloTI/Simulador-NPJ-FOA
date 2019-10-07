@@ -37,9 +37,6 @@ class CreateTbAutores extends Migration
             $table->string('a_emissao')->nullable(); //Data de emissão
             $table->string('a_telefone')->nullable();
             $table->string('a_email')->nullable();
-            //Advogado Representante
-            $table->string('a_representa')->nullable();
-            $table->string('a_intimacao')->nullable();
             //Endereço
             $table->string('a_cep')->nullable();
             $table->string('a_estado')->nullable();

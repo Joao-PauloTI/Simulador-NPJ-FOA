@@ -13,13 +13,13 @@
                 <div class="container">
                     <div>
                         <label for="escolherCpfId" class="btn btn-primary">Procurar</label>
-                        <input type="file" id="escolherCpfId" v-on:change="receberNomeDocumento" style="display: none">
+                        <input type="file" name="dcpf_arquivo" id="escolherCpfId" v-on:change="receberNomeDocumento" style="display: none">
                         <span style="margin-left: 10px">{{nomeCpf}}</span>
                     </div>
                     <br>
                     <div>
                         <span><strong>* Descrição </strong> </span>
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="dcpf_descricao" class="form-control" required>
                         <p style="color: red">Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".</p>
                     </div>
                     <br>

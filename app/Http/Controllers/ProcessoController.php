@@ -10,6 +10,11 @@ use App\RepresentanteAutor;
 use App\Reu;
 use App\ReuJuridico;
 use App\RepresentanteReu;
+use App\DocumentoAnexoPeticao;
+use App\DocumentoComprovanteResidencia;
+use App\DocumentoCpf;
+use App\DocumentoPeticaoInicial;
+use App\DocumentoProcuracao;
 
 use Illuminate\Http\Request;
 
@@ -226,7 +231,23 @@ class ProcessoController extends Controller
             'rr_valorLiquido' => 'nullable',
             'rr_valorCausa' => 'nullable',
             'rr_pretensao' => 'nullable',
+            //Anexo da petição
+            'dap_arquivo' => 'nullable',
+            'dap_descricao' => 'nullable',
+            //Comprovante de Residencia
+            'dcr_arquivo' => 'nullable',
+            'dcr_descricao' => 'nullable',
+            //CPF
+            'dcpf_arquivo' => 'nullable',
+            'dcpf_descricao' => 'nullable',
+            //Petição Inicial
+            'dpi_arquivo' => 'nullable',
+            'dpi_descricao' => 'nullable',
+            //Procuração
+            'dpr_arquivo' => 'nullable',
+            'dpr_descricao' => 'nullable',
         ]);
+
         $processo = new Processo([
             'p_grerjMotivo' => $request->get('p_grerjMotivo'),
             'p_grerjNumero' => $request->get('p_grerjNumero'),
@@ -516,6 +537,61 @@ class ProcessoController extends Controller
         ]);
         $representanteReu->representanteReu_processo()->associate($processo);
         $representanteReu->save();
+
+        if($request->hasFile('dap_arquivo')){
+            $dap_arquivo = $request->file('dap_arquivo')->getClientOriginalName();
+            $dap_caminho = $request->file('dap_arquivo')->storeAs('public/documentos', $dap_arquivo);
+            $documentoAnexoPeticao = new DocumentoAnexoPeticao([
+                'dap_arquivo' => $dap_arquivo,
+                'dap_descricao' => $request->get('dap_descricao')
+            ]);
+            $documentoAnexoPeticao->documentoAnexoPeticao_processo()->associate($processo);
+            $documentoAnexoPeticao->save();
+        }
+
+        if($request->hasFile('dpr_arquivo')){
+            $dpr_arquivo = $request->file('dpr_arquivo')->getClientOriginalName();
+            $dpr_caminho = $request->file('dpr_arquivo')->storeAs('public/documentos', $dpr_arquivo);
+            $documentoProcuracao = new DocumentoProcuracao([
+                'dpr_arquivo' => $dpr_arquivo,
+                'dpr_descricao' => $request->get('dpr_descricao')
+            ]);
+            $documentoProcuracao->documentoProcuracao_processo()->associate($processo);
+            $documentoProcuracao->save();
+        }
+
+        if($request->hasFile('dcpf_arquivo')){
+            $dcpf_arquivo = $request->file('dcpf_arquivo')->getClientOriginalName();
+            $dcpf_caminho = $request->file('dcpf_arquivo')->storeAs('public/documentos', $dcpf_arquivo);
+            $documentoCpf = new DocumentoCpf([
+                'dcpf_arquivo' => $dcpf_arquivo,
+                'dcpf_descricao' => $request->get('dcpf_descricao')
+            ]);
+            $documentoCpf->documentoCpf_processo()->associate($processo);
+            $documentoCpf->save();
+        }
+
+        if($request->hasFile('dcr_arquivo')){
+            $dcr_arquivo = $request->file('dcr_arquivo')->getClientOriginalName();
+            $dcr_caminho = $request->file('dcr_arquivo')->storeAs('public/documentos', $dcr_arquivo);
+            $documentoComprovanteResidencia = new DocumentoComprovanteResidencia([
+                'dcr_arquivo' => $dcr_arquivo,
+                'dcr_descricao' => $request->get('dcr_descricao')
+            ]);
+            $documentoComprovanteResidencia->documentoComprovanteResidencia_processo()->associate($processo);
+            $documentoComprovanteResidencia->save();
+        }
+
+        if($request->hasFile('dpi_arquivo')){
+            $dpi_arquivo = $request->file('dpi_arquivo')->getClientOriginalName();
+            $dpi_caminho = $request->file('dpi_arquivo')->storeAs('public/documentos', $dpi_arquivo);
+            $documentoPeticaoInicial = new DocumentoPeticaoInicial([
+                'dpi_arquivo' => $dpi_arquivo,
+                'dpi_descricao' => $request->get('dpi_descricao')
+            ]);
+            $documentoPeticaoInicial->documentoPeticaoInicial_processo()->associate($processo);
+            $documentoPeticaoInicial->save();
+        }
 
         return redirect('/distribuicaoeletronica');
     }

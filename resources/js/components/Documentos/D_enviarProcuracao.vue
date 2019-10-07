@@ -13,13 +13,13 @@
                 <div class="container">
                     <div>
                         <label for="escolherProcuracaoId" class="btn btn-primary">Procurar</label>
-                        <input type="file" id="escolherProcuracaoId" v-on:change="receberNomeDocumento" style="display: none">
+                        <input type="file" name="dpr_arquivo" id="escolherProcuracaoId" v-on:change="receberNomeDocumento" style="display: none">
                         <span style="margin-left: 10px">{{nomeProcuracao}}</span>
                     </div>
                     <br>
                     <div>
                         <span><strong>* Descrição </strong> </span>
-                        <input type="text" class="form-control" required>
+                        <input type="text" name="dpr_descricao" class="form-control" required>
                         <p style="color: red">Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".</p>
                     </div>
                     <br>

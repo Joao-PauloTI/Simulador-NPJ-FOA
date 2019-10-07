@@ -2435,7 +2435,7 @@ __webpack_require__.r(__webpack_exports__);
       aPretensao: '',
       aEstadoCivil: '',
       aProfissao: '',
-      aNacionalidade: '',
+      aNacionalidade: 'Brasileira',
       aEstadoNaturalidade: '',
       aCidadeNaturalidade: '',
       aPai: '',
@@ -44681,7 +44681,7 @@ var render = function() {
                     }
                   },
                   [
-                    _c("option", { attrs: { value: "" } }, [
+                    _c("option", { attrs: { value: "Brasileira" } }, [
                       _vm._v("Brasileira")
                     ]),
                     _vm._v(" "),
@@ -52161,7 +52161,7 @@ var render = function() {
           ]
         ),
         _vm._v(" "),
-        _vm.deAutor != "" || _vm.deRepresentanteAutor != ""
+        _vm.deAutor != null || _vm.deRepresentanteAutor != null
           ? _c("div", [
               _c(
                 "table",
@@ -52522,9 +52522,9 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _vm.deReu != "" ||
-          _vm.deReuJuridico != "" ||
-          _vm.deRepresentanteReu != ""
+          _vm.deReu != null ||
+          _vm.deReuJuridico != null ||
+          _vm.deRepresentanteReu != null
             ? _c("div", [
                 _c(
                   "table",
@@ -57140,7 +57140,11 @@ var render = function() {
             _vm._v(" "),
             _c("input", {
               staticStyle: { display: "none" },
-              attrs: { type: "file", id: "escolherCpfId" },
+              attrs: {
+                type: "file",
+                name: "dcpf_arquivo",
+                id: "escolherCpfId"
+              },
               on: { change: _vm.receberNomeDocumento }
             }),
             _vm._v(" "),
@@ -57190,7 +57194,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("input", {
         staticClass: "form-control",
-        attrs: { type: "text", required: "" }
+        attrs: { type: "text", name: "dcpf_descricao", required: "" }
       }),
       _vm._v(" "),
       _c("p", { staticStyle: { color: "red" } }, [
@@ -57261,7 +57265,11 @@ var render = function() {
             _vm._v(" "),
             _c("input", {
               staticStyle: { display: "none" },
-              attrs: { type: "file", id: "escolherComprovanteResidenciaId" },
+              attrs: {
+                type: "file",
+                name: "dcr_arquivo",
+                id: "escolherComprovanteResidenciaId"
+              },
               on: { change: _vm.receberNomeDocumento }
             }),
             _vm._v(" "),
@@ -57311,7 +57319,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("input", {
         staticClass: "form-control",
-        attrs: { type: "text", required: "" }
+        attrs: { type: "text", name: "dcr_descricao", required: "" }
       }),
       _vm._v(" "),
       _c("p", { staticStyle: { color: "red" } }, [
@@ -57382,7 +57390,11 @@ var render = function() {
             _vm._v(" "),
             _c("input", {
               staticStyle: { display: "none" },
-              attrs: { type: "file", id: "escolherProcuracaoId" },
+              attrs: {
+                type: "file",
+                name: "dpr_arquivo",
+                id: "escolherProcuracaoId"
+              },
               on: { change: _vm.receberNomeDocumento }
             }),
             _vm._v(" "),
@@ -57432,7 +57444,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("input", {
         staticClass: "form-control",
-        attrs: { type: "text", required: "" }
+        attrs: { type: "text", name: "dpr_descricao", required: "" }
       }),
       _vm._v(" "),
       _c("p", { staticStyle: { color: "red" } }, [
@@ -57503,7 +57515,11 @@ var render = function() {
             _vm._v(" "),
             _c("input", {
               staticStyle: { display: "none" },
-              attrs: { type: "file", id: "escolherAnexoPeticaoId" },
+              attrs: {
+                type: "file",
+                name: "dap_arquivo",
+                id: "escolherAnexoPeticaoId"
+              },
               on: { change: _vm.receberNomeDocumento }
             }),
             _vm._v(" "),
@@ -57553,7 +57569,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("input", {
         staticClass: "form-control",
-        attrs: { type: "text", required: "" }
+        attrs: { type: "text", name: "dap_descricao", required: "" }
       }),
       _vm._v(" "),
       _c("p", { staticStyle: { color: "red" } }, [
@@ -57624,7 +57640,11 @@ var render = function() {
             _vm._v(" "),
             _c("input", {
               staticStyle: { display: "none" },
-              attrs: { type: "file", id: "escolherPeticaoInicialId" },
+              attrs: {
+                type: "file",
+                name: "dpi_arquivo",
+                id: "escolherPeticaoInicialId"
+              },
               on: { change: _vm.receberNomeDocumento }
             }),
             _vm._v(" "),
@@ -57674,7 +57694,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("input", {
         staticClass: "form-control",
-        attrs: { type: "text", required: "" }
+        attrs: { type: "text", name: "dpi_descricao", required: "" }
       }),
       _vm._v(" "),
       _c("p", { staticStyle: { color: "red" } }, [

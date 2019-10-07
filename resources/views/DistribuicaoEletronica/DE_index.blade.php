@@ -6,7 +6,7 @@
 		<pimenulateral id="PI_mostrarEsconderMenu"></pimenulateral>
 		<div class="container">
 			<div class="card">
-				<form action="{{ route('p_processos.store') }}" method="POST" novalidate>
+				<form action="{{ route('p_processos.store') }}" method="POST" enctype="multipart/form-data" novalidate>
 					@csrf
 					<degrerj></degrerj>
 					<deprocessoprincipal></deprocessoprincipal>
