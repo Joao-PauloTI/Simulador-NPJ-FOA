@@ -95,7 +95,9 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CPF/CNPJ </strong> </span>
-                                <input type="text" class="form-control" v-model="aCpf" name="a_cpf" v-mask="'###.###.###-##'">
+                                <input type="text" class="form-control" v-model="aCpf" name="a_cpf" v-if="aPessoa === ''" v-mask="'#################'">
+                                <input type="text" class="form-control" v-model="aCpf" name="a_cpf" v-else-if="aPessoa === 'Pessoa Física'" v-mask="'###.###.###-##'">
+                                <input type="text" class="form-control" v-model="aCpf" name="a_cpf" v-else v-mask="'##.###.###/####-##'">
                             </div>
                         </div>
                     </div>
@@ -131,7 +133,6 @@
                                     <option value="Carteira Nacional de Habilitação">Carteira Nacional de Habilitação</option>
                                     <option value="Passaporte">Passaporte</option>
                                     <option value="Carteira de Trabalho">Carteira de Trabalho</option>
-                                    <option value="Carteira de Identidade">Carteira de Identidade</option>
                                     <option value="Certificado de Dispensa de Incorporação">Certificado de Dispensa de Incorporação</option>
                                 </select>
                             </div>
@@ -143,7 +144,12 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Número </strong> </span>
-                                <input type="text" class="form-control" v-model="aNumeroIdentificacao" name="a_numeroIdentificacao">
+                                <input type="text" class="form-control" v-model="aNumeroIdentificacao" name="a_numeroIdentificacao" v-if="aDocumento === ''" v-mask="'#################'">
+                                <input type="text" class="form-control" v-model="aNumeroIdentificacao" name="a_numeroIdentificacao" v-else-if="aDocumento === 'Passaporte'" v-mask="">
+                                <input type="text" class="form-control" v-model="aNumeroIdentificacao" name="a_numeroIdentificacao" v-else-if="aDocumento === 'Registro Geral'" v-mask="'##.###.###-#'">
+                                <input type="text" class="form-control" v-model="aNumeroIdentificacao" name="a_numeroIdentificacao" v-else-if="aDocumento === 'Carteira Nacional de Habilitação'" v-mask="'###########'">
+                                <input type="text" class="form-control" v-model="aNumeroIdentificacao" name="a_numeroIdentificacao" v-else-if="aDocumento === 'Carteira de Trabalho'" v-mask="'###.#####.##-#'">
+                                <input type="text" class="form-control" v-model="aNumeroIdentificacao" name="a_numeroIdentificacao" v-else v-mask="'############'">
                             </div>
                         </div>
                     </div>

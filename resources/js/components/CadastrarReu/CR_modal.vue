@@ -41,7 +41,7 @@
                     <div id="alinhado">
                         <div class="form-inline">
                             <div class="col-xs-2">
-                                <span><strong>* CPF/CNPJ </strong> </span>
+                                <span><strong>* CPF </strong> </span>
                                 <input type="text" class="form-control" v-mask="'###.###.###-##'" v-model="rCpf" name="r_cpf">
                             </div>
                         </div>

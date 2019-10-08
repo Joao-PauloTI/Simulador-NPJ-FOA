@@ -537,7 +537,7 @@ class ProcessoController extends Controller
         ]);
         $representanteReu->representanteReu_processo()->associate($processo);
         $representanteReu->save();
-
+        /*
         if($request->hasFile('dap_arquivo')){
             $dap_arquivo = $request->file('dap_arquivo')->getClientOriginalName();
             $dap_caminho = $request->file('dap_arquivo')->storeAs('public/documentos', $dap_arquivo);
@@ -547,6 +547,21 @@ class ProcessoController extends Controller
             ]);
             $documentoAnexoPeticao->documentoAnexoPeticao_processo()->associate($processo);
             $documentoAnexoPeticao->save();
+        }
+        */
+        if(isset($request->dap_arquivo)){
+            if($request->hasFile('dap_arquivo')){
+                foreach ($request->dap_arquivo as $key => $arquivo) {
+                    $arquivo = $request->file('dap_arquivo')[$key]->getClientOriginalName();
+                    $dap_caminho = $request->file('dap_arquivo')[$key]->storeAs('public/documentos', $arquivo);
+                    $documentoAnexoPeticao = new DocumentoAnexoPeticao([
+                        'dap_arquivo' => $arquivo,
+                        'dap_descricao' => $request->get('dap_descricao')
+                    ]);
+                    $documentoAnexoPeticao->documentoAnexoPeticao_processo()->associate($processo);
+                    $documentoAnexoPeticao->save();
+                }
+            }
         }
 
         if($request->hasFile('dpr_arquivo')){

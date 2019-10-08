@@ -203,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div v-if="deNomePeticaoInicial != '' || deNomeCpf != '' || deNomeComprovanteResidencia != '' || deNomeProcuracao != '' || deNomeAnexoPeticao != ''">
+                <div v-if="deNomePeticaoInicial != '' || deNomeCpf != '' || deNomeComprovanteResidencia != '' || deNomeProcuracao != '' || deNomeAnexoPeticao != null">
                     <table class="table table-borderless">
                         <tr v-show="deNomePeticaoInicial != ''">
                             <td>Petição Inicial</td>
@@ -221,10 +221,12 @@
                             <td>Procuração</td>
                             <td><a href="#" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#procuracaoModal">{{ deNomeProcuracao }}</a></td>
                         </tr>
-                        <tr v-show="deNomeAnexoPeticao != ''">
-                            <td>Anexo da Petição</td>
-                            <td><a href="#" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#anexoModal">{{ deNomeAnexoPeticao }}</a></td>
-                        </tr>
+                        <template v-show="deNomeAnexoPeticao != null">
+                            <tr v-for="anexo in deNomeAnexoPeticao">
+                                <td>Anexo da Petição</td>
+                                <td><a href="#" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#anexoModal">{{ anexo.name }}</a></td>
+                            </tr>
+                        </template>
                     </table>
                 </div>
             </div>
@@ -253,7 +255,16 @@ import duploadanexopeticao from '../Documentos/D_uploadAnexoPeticao'
 export default {
     name: 'deautoresReusDocumentos',
     components: {
-        camodal, cramodal, crmodal, crjmodal, crrmodal, duploadpeticaoinicial, denviarcpf, denviarcomprovanteresidencia, denviarprocuracao, duploadanexopeticao
+        camodal,
+        cramodal,
+        crmodal,
+        crjmodal,
+        crrmodal,
+        duploadpeticaoinicial,
+        denviarcpf,
+        denviarcomprovanteresidencia,
+        denviarprocuracao,
+        duploadanexopeticao
     },
     data: function() {
         return {
@@ -266,7 +277,7 @@ export default {
             deNomeCpf: '',
             deNomeComprovanteResidencia: '',
             deNomeProcuracao: '',
-            deNomeAnexoPeticao: ''
+            deNomeAnexoPeticao: null
         }
     },
     methods: {
@@ -512,8 +523,8 @@ export default {
         mostrarProcuracao: function(nomeProcuracao) {
             this.deNomeProcuracao = nomeProcuracao
         },
-        mostrarAnexoPeticao: function(nomeAnexoPeticao) {
-            this.deNomeAnexoPeticao = nomeAnexoPeticao
+        mostrarAnexoPeticao: function(anexosPeticao) {
+            this.deNomeAnexoPeticao = anexosPeticao
         }
     }
 }

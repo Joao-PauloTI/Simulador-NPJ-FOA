@@ -13,14 +13,17 @@
                 <div class="container">
                     <div>
                         <label for="escolherAnexoPeticaoId" class="btn btn-primary">Procurar</label>
-                        <input type="file" name="dap_arquivo" id="escolherAnexoPeticaoId" v-on:change="receberNomeDocumento" style="display: none">
-                        <span style="margin-left: 10px">{{nomeAnexoPeticao}}</span>
+                        <input type="file" name="dap_arquivo[]" multiple id="escolherAnexoPeticaoId" v-on:change="receberNomeDocumento" style="display: none">
+                        <br>
+                        <ul v-for="anexo in anexosPeticao">
+                            <li>{{anexo.name}}</li>
+                        </ul>
                     </div>
                     <br>
                     <div>
                         <span><strong>* Descrição </strong> </span>
                         <input type="text" name="dap_descricao" class="form-control" required>
-                        <p style="color: red">Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".</p>
+                        <p style="color: red">Para adicionar mais de um arquivo, basta segurar a tecla Ctrl e selecionar os arquivos. Após selecioná-los, clique no botão "Enviar".</p>
                     </div>
                     <br>
                     <div align="center">
@@ -37,7 +40,7 @@ export default {
     name: 'duploadanexopeticao',
     data: function() {
         return {
-            nomeAnexoPeticao: ''
+            anexosPeticao: null
         }
     },
     methods: {
@@ -46,11 +49,10 @@ export default {
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
         },
         receberNomeDocumento: function() {
-            this.nomeAnexoPeticao = document.getElementById('escolherAnexoPeticaoId').value
-            this.nomeAnexoPeticao = this.nomeAnexoPeticao.split("\\").pop()
+            this.anexosPeticao = document.getElementById('escolherAnexoPeticaoId').files
         },
         enviarNomeDocumento: function() {
-            this.$emit('nomeAnexoPeticao', this.nomeAnexoPeticao)
+            this.$emit('nomeAnexoPeticao', this.anexosPeticao)
         }
     }
 }

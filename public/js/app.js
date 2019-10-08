@@ -2393,6 +2393,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'camodal',
   data: function data() {
@@ -2963,6 +2969,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'cramodal',
   data: function data() {
@@ -3034,6 +3046,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4269,29 +4287,51 @@ __webpack_require__.r(__webpack_exports__);
         this.arNome = '';
       }
     },
-    adicionarAdvogado: function adicionarAdvogado() {
-      this.arAdvogadoDados.push({
-        'arEstadoOAB': this.arEstadoOAB,
-        'arNumeroOAB': this.arNumeroOAB,
-        'arNome': this.arNome
+    adicionarAdvogado: function adicionarAdvogado(estado, numero) {
+      var advogadoRepetido;
+      this.arAdvogadoDados.forEach(function (dados) {
+        if (dados.arEstadoOAB === estado && dados.arNumeroOAB === numero) {
+          advogadoRepetido = 'sim';
+        }
       });
-      this.$eventHub.$emit('enviarAdvogadoDados', this.arAdvogadoDados);
-      this.arNumeroOAB = '';
-      this.arMatricula = '';
-      this.arNome = '';
+
+      if (advogadoRepetido === 'sim') {
+        alert('Este advogado já está adicionado no processo!');
+      } else {
+        this.arAdvogadoDados.push({
+          'arEstadoOAB': this.arEstadoOAB,
+          'arNumeroOAB': this.arNumeroOAB,
+          'arNome': this.arNome
+        });
+        this.$eventHub.$emit('enviarAdvogadoDados', this.arAdvogadoDados);
+        this.arNumeroOAB = '';
+        this.arMatricula = '';
+        this.arNome = '';
+      }
     },
     excluirAdvogado: function excluirAdvogado(index) {
       this.$delete(this.arAdvogadoDados, index);
     },
-    adicionarDefensor: function adicionarDefensor() {
-      this.arDefensorDados.push({
-        'arMatricula': this.arMatricula,
-        'arNome': this.arNome
+    adicionarDefensor: function adicionarDefensor(matricula) {
+      var defensorRepetido;
+      this.arDefensorDados.forEach(function (dados) {
+        if (dados.arMatricula === matricula) {
+          defensorRepetido = 'sim';
+        }
       });
-      this.$eventHub.$emit('enviarDefensorDados', this.arDefensorDados);
-      this.arNumeroOAB = '';
-      this.arMatricula = '';
-      this.arNome = '';
+
+      if (defensorRepetido === 'sim') {
+        alert('Este defensor público já está adicionado no processo!');
+      } else {
+        this.arDefensorDados.push({
+          'arMatricula': this.arMatricula,
+          'arNome': this.arNome
+        });
+        this.$eventHub.$emit('enviarDefensorDados', this.arDefensorDados);
+        this.arNumeroOAB = '';
+        this.arMatricula = '';
+        this.arNome = '';
+      }
     },
     excluirDefensor: function excluirDefensor(index) {
       this.$delete(this.arDefensorDados, index);
@@ -4320,6 +4360,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Documentos_D_enviarComprovanteResidencia__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Documentos/D_enviarComprovanteResidencia */ "./resources/js/components/Documentos/D_enviarComprovanteResidencia.vue");
 /* harmony import */ var _Documentos_D_enviarProcuracao__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Documentos/D_enviarProcuracao */ "./resources/js/components/Documentos/D_enviarProcuracao.vue");
 /* harmony import */ var _Documentos_D_uploadAnexoPeticao__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Documentos/D_uploadAnexoPeticao */ "./resources/js/components/Documentos/D_uploadAnexoPeticao.vue");
+//
+//
 //
 //
 //
@@ -4595,7 +4637,7 @@ __webpack_require__.r(__webpack_exports__);
       deNomeCpf: '',
       deNomeComprovanteResidencia: '',
       deNomeProcuracao: '',
-      deNomeAnexoPeticao: ''
+      deNomeAnexoPeticao: null
     };
   },
   methods: {
@@ -4845,8 +4887,8 @@ __webpack_require__.r(__webpack_exports__);
     mostrarProcuracao: function mostrarProcuracao(nomeProcuracao) {
       this.deNomeProcuracao = nomeProcuracao;
     },
-    mostrarAnexoPeticao: function mostrarAnexoPeticao(nomeAnexoPeticao) {
-      this.deNomeAnexoPeticao = nomeAnexoPeticao;
+    mostrarAnexoPeticao: function mostrarAnexoPeticao(anexosPeticao) {
+      this.deNomeAnexoPeticao = anexosPeticao;
     }
   }
 });
@@ -5870,11 +5912,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'duploadanexopeticao',
   data: function data() {
     return {
-      nomeAnexoPeticao: ''
+      anexosPeticao: null
     };
   },
   methods: {
@@ -5882,11 +5927,10 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     receberNomeDocumento: function receberNomeDocumento() {
-      this.nomeAnexoPeticao = document.getElementById('escolherAnexoPeticaoId').value;
-      this.nomeAnexoPeticao = this.nomeAnexoPeticao.split("\\").pop();
+      this.anexosPeticao = document.getElementById('escolherAnexoPeticaoId').files;
     },
     enviarNomeDocumento: function enviarNomeDocumento() {
-      this.$emit('nomeAnexoPeticao', this.nomeAnexoPeticao);
+      this.$emit('nomeAnexoPeticao', this.anexosPeticao);
     }
   }
 });
@@ -43267,33 +43311,89 @@ var render = function() {
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(5),
                 _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.aCpf,
-                      expression: "aCpf"
-                    },
-                    {
-                      name: "mask",
-                      rawName: "v-mask",
-                      value: "###.###.###-##",
-                      expression: "'###.###.###-##'"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "a_cpf" },
-                  domProps: { value: _vm.aCpf },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                _vm.aPessoa === ""
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.aCpf,
+                          expression: "aCpf"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "#################",
+                          expression: "'#################'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "a_cpf" },
+                      domProps: { value: _vm.aCpf },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.aCpf = $event.target.value
+                        }
                       }
-                      _vm.aCpf = $event.target.value
-                    }
-                  }
-                })
+                    })
+                  : _vm.aPessoa === "Pessoa Física"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.aCpf,
+                          expression: "aCpf"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "###.###.###-##",
+                          expression: "'###.###.###-##'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "a_cpf" },
+                      domProps: { value: _vm.aCpf },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.aCpf = $event.target.value
+                        }
+                      }
+                    })
+                  : _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.aCpf,
+                          expression: "aCpf"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "##.###.###/####-##",
+                          expression: "'##.###.###/####-##'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "a_cpf" },
+                      domProps: { value: _vm.aCpf },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.aCpf = $event.target.value
+                        }
+                      }
+                    })
               ])
             ])
           ]),
@@ -43452,12 +43552,6 @@ var render = function() {
                     _vm._v(" "),
                     _c(
                       "option",
-                      { attrs: { value: "Carteira de Identidade" } },
-                      [_vm._v("Carteira de Identidade")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "option",
                       {
                         attrs: {
                           value: "Certificado de Dispensa de Incorporação"
@@ -43478,27 +43572,168 @@ var render = function() {
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(9),
                 _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.aNumeroIdentificacao,
-                      expression: "aNumeroIdentificacao"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "a_numeroIdentificacao" },
-                  domProps: { value: _vm.aNumeroIdentificacao },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                _vm.aDocumento === ""
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.aNumeroIdentificacao,
+                          expression: "aNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "#################",
+                          expression: "'#################'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "a_numeroIdentificacao" },
+                      domProps: { value: _vm.aNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.aNumeroIdentificacao = $event.target.value
+                        }
                       }
-                      _vm.aNumeroIdentificacao = $event.target.value
-                    }
-                  }
-                })
+                    })
+                  : _vm.aDocumento === "Passaporte"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.aNumeroIdentificacao,
+                          expression: "aNumeroIdentificacao"
+                        },
+                        { name: "mask", rawName: "v-mask" }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "a_numeroIdentificacao" },
+                      domProps: { value: _vm.aNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.aNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
+                  : _vm.aDocumento === "Registro Geral"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.aNumeroIdentificacao,
+                          expression: "aNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "##.###.###-#",
+                          expression: "'##.###.###-#'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "a_numeroIdentificacao" },
+                      domProps: { value: _vm.aNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.aNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
+                  : _vm.aDocumento === "Carteira Nacional de Habilitação"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.aNumeroIdentificacao,
+                          expression: "aNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "###########",
+                          expression: "'###########'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "a_numeroIdentificacao" },
+                      domProps: { value: _vm.aNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.aNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
+                  : _vm.aDocumento === "Carteira de Trabalho"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.aNumeroIdentificacao,
+                          expression: "aNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "###.#####.##-#",
+                          expression: "'###.#####.##-#'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "a_numeroIdentificacao" },
+                      domProps: { value: _vm.aNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.aNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
+                  : _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.aNumeroIdentificacao,
+                          expression: "aNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "############",
+                          expression: "'############'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "a_numeroIdentificacao" },
+                      domProps: { value: _vm.aNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.aNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
               ])
             ])
           ]),
@@ -45822,33 +46057,89 @@ var render = function() {
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(4),
                 _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "mask",
-                      rawName: "v-mask",
-                      value: "###.###.###-##",
-                      expression: "'###.###.###-##'"
-                    },
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.raCpf,
-                      expression: "raCpf"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "ra_cpf" },
-                  domProps: { value: _vm.raCpf },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                _vm.raPessoa === ""
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.raCpf,
+                          expression: "raCpf"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "#################",
+                          expression: "'#################'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "ra_cpf" },
+                      domProps: { value: _vm.raCpf },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.raCpf = $event.target.value
+                        }
                       }
-                      _vm.raCpf = $event.target.value
-                    }
-                  }
-                })
+                    })
+                  : _vm.raPessoa === "Pessoa Física"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.raCpf,
+                          expression: "raCpf"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "###.###.###-##",
+                          expression: "'###.###.###-##'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "ra_cpf" },
+                      domProps: { value: _vm.raCpf },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.raCpf = $event.target.value
+                        }
+                      }
+                    })
+                  : _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.raCpf,
+                          expression: "raCpf"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "##.###.###/####-##",
+                          expression: "'##.###.###/####-##'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "ra_cpf" },
+                      domProps: { value: _vm.raCpf },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.raCpf = $event.target.value
+                        }
+                      }
+                    })
               ])
             ])
           ]),
@@ -45946,12 +46237,6 @@ var render = function() {
                     _vm._v(" "),
                     _c(
                       "option",
-                      { attrs: { value: "Carteira de Identidade" } },
-                      [_vm._v("Carteira de Identidade")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "option",
                       {
                         attrs: {
                           value: "Certificado de Dispensa de Incorporação"
@@ -45972,27 +46257,168 @@ var render = function() {
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(7),
                 _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.raNumeroIdentificacao,
-                      expression: "raNumeroIdentificacao"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "ra_numeroIdentificacao" },
-                  domProps: { value: _vm.raNumeroIdentificacao },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                _vm.raDocumento === ""
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.raNumeroIdentificacao,
+                          expression: "raNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "#################",
+                          expression: "'#################'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "ra_numeroIdentificacao" },
+                      domProps: { value: _vm.raNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.raNumeroIdentificacao = $event.target.value
+                        }
                       }
-                      _vm.raNumeroIdentificacao = $event.target.value
-                    }
-                  }
-                })
+                    })
+                  : _vm.raDocumento === "Passaporte"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.raNumeroIdentificacao,
+                          expression: "raNumeroIdentificacao"
+                        },
+                        { name: "mask", rawName: "v-mask" }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "ra_numeroIdentificacao" },
+                      domProps: { value: _vm.raNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.raNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
+                  : _vm.raDocumento === "Registro Geral"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.raNumeroIdentificacao,
+                          expression: "raNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "##.###.###-#",
+                          expression: "'##.###.###-#'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "ra_numeroIdentificacao" },
+                      domProps: { value: _vm.raNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.raNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
+                  : _vm.raDocumento === "Carteira Nacional de Habilitação"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.raNumeroIdentificacao,
+                          expression: "raNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "###########",
+                          expression: "'###########'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "ra_numeroIdentificacao" },
+                      domProps: { value: _vm.raNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.raNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
+                  : _vm.raDocumento === "Carteira de Trabalho"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.raNumeroIdentificacao,
+                          expression: "raNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "###.#####.##-#",
+                          expression: "'###.#####.##-#'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "ra_numeroIdentificacao" },
+                      domProps: { value: _vm.raNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.raNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
+                  : _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.raNumeroIdentificacao,
+                          expression: "raNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "############",
+                          expression: "'############'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "ra_numeroIdentificacao" },
+                      domProps: { value: _vm.raNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.raNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
               ])
             ])
           ]),
@@ -47685,33 +48111,89 @@ var render = function() {
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(3),
                 _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "mask",
-                      rawName: "v-mask",
-                      value: "###.###.###-##",
-                      expression: "'###.###.###-##'"
-                    },
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rrCpf,
-                      expression: "rrCpf"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "rr_cpf" },
-                  domProps: { value: _vm.rrCpf },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                _vm.rrPessoa === ""
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.rrCpf,
+                          expression: "rrCpf"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "#################",
+                          expression: "'#################'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "rr_cpf" },
+                      domProps: { value: _vm.rrCpf },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.rrCpf = $event.target.value
+                        }
                       }
-                      _vm.rrCpf = $event.target.value
-                    }
-                  }
-                })
+                    })
+                  : _vm.rrPessoa === "Pessoa Física"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.rrCpf,
+                          expression: "rrCpf"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "###.###.###-##",
+                          expression: "'###.###.###-##'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "rr_cpf" },
+                      domProps: { value: _vm.rrCpf },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.rrCpf = $event.target.value
+                        }
+                      }
+                    })
+                  : _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.rrCpf,
+                          expression: "rrCpf"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "##.###.###/####-##",
+                          expression: "'##.###.###/####-##'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "rr_cpf" },
+                      domProps: { value: _vm.rrCpf },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.rrCpf = $event.target.value
+                        }
+                      }
+                    })
               ])
             ])
           ]),
@@ -47809,12 +48291,6 @@ var render = function() {
                     _vm._v(" "),
                     _c(
                       "option",
-                      { attrs: { value: "Carteira de Identidade" } },
-                      [_vm._v("Carteira de Identidade")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "option",
                       {
                         attrs: {
                           value: "Certificado de Dispensa de Incorporação"
@@ -47835,27 +48311,168 @@ var render = function() {
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(6),
                 _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rrNumeroIdentificacao,
-                      expression: "rrNumeroIdentificacao"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "rr_numeroIdentificacao" },
-                  domProps: { value: _vm.rrNumeroIdentificacao },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+                _vm.rrDocumento === ""
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.rrNumeroIdentificacao,
+                          expression: "rrNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "#################",
+                          expression: "'#################'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "rr_numeroIdentificacao" },
+                      domProps: { value: _vm.rrNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.rrNumeroIdentificacao = $event.target.value
+                        }
                       }
-                      _vm.rrNumeroIdentificacao = $event.target.value
-                    }
-                  }
-                })
+                    })
+                  : _vm.rrDocumento === "Passaporte"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.rrNumeroIdentificacao,
+                          expression: "rrNumeroIdentificacao"
+                        },
+                        { name: "mask", rawName: "v-mask" }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "rr_numeroIdentificacao" },
+                      domProps: { value: _vm.rrNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.rrNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
+                  : _vm.rrDocumento === "Registro Geral"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.rrNumeroIdentificacao,
+                          expression: "rrNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "##.###.###-#",
+                          expression: "'##.###.###-#'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "rr_numeroIdentificacao" },
+                      domProps: { value: _vm.rrNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.rrNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
+                  : _vm.rrDocumento === "Carteira Nacional de Habilitação"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.rrNumeroIdentificacao,
+                          expression: "rrNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "###########",
+                          expression: "'###########'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "rr_numeroIdentificacao" },
+                      domProps: { value: _vm.rrNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.rrNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
+                  : _vm.rrDocumento === "Carteira de Trabalho"
+                  ? _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.rrNumeroIdentificacao,
+                          expression: "rrNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "###.#####.##-#",
+                          expression: "'###.#####.##-#'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "rr_numeroIdentificacao" },
+                      domProps: { value: _vm.rrNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.rrNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
+                  : _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.rrNumeroIdentificacao,
+                          expression: "rrNumeroIdentificacao"
+                        },
+                        {
+                          name: "mask",
+                          rawName: "v-mask",
+                          value: "############",
+                          expression: "'############'"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", name: "rr_numeroIdentificacao" },
+                      domProps: { value: _vm.rrNumeroIdentificacao },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.rrNumeroIdentificacao = $event.target.value
+                        }
+                      }
+                    })
               ])
             ])
           ]),
@@ -50274,7 +50891,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* CPF/CNPJ ")])])
+    return _c("span", [_c("strong", [_vm._v("* CPF ")])])
   },
   function() {
     var _vm = this
@@ -51431,20 +52048,22 @@ var render = function() {
                     staticClass: "custom-select",
                     attrs: { id: "DE_aR1" },
                     on: {
-                      blur: _vm.gerarNome,
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.arAdvogadoRepresentante = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      }
+                      change: [
+                        function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.arAdvogadoRepresentante = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        },
+                        _vm.gerarNome
+                      ]
                     }
                   },
                   [
@@ -51491,20 +52110,22 @@ var render = function() {
                         staticClass: "custom-select",
                         attrs: { id: "DE_aR2" },
                         on: {
-                          blur: _vm.gerarNome,
-                          change: function($event) {
-                            var $$selectedVal = Array.prototype.filter
-                              .call($event.target.options, function(o) {
-                                return o.selected
-                              })
-                              .map(function(o) {
-                                var val = "_value" in o ? o._value : o.value
-                                return val
-                              })
-                            _vm.arEstadoOAB = $event.target.multiple
-                              ? $$selectedVal
-                              : $$selectedVal[0]
-                          }
+                          change: [
+                            function($event) {
+                              var $$selectedVal = Array.prototype.filter
+                                .call($event.target.options, function(o) {
+                                  return o.selected
+                                })
+                                .map(function(o) {
+                                  var val = "_value" in o ? o._value : o.value
+                                  return val
+                                })
+                              _vm.arEstadoOAB = $event.target.multiple
+                                ? $$selectedVal
+                                : $$selectedVal[0]
+                            },
+                            _vm.gerarNome
+                          ]
                         }
                       },
                       [
@@ -51750,7 +52371,14 @@ var render = function() {
                     {
                       staticClass: "btn btn-primary",
                       attrs: { type: "button" },
-                      on: { click: _vm.adicionarAdvogado }
+                      on: {
+                        click: function($event) {
+                          return _vm.adicionarAdvogado(
+                            _vm.arEstadoOAB,
+                            _vm.arNumeroOAB
+                          )
+                        }
+                      }
                     },
                     [_vm._v("Adicionar")]
                   )
@@ -51764,7 +52392,11 @@ var render = function() {
                     {
                       staticClass: "btn btn-primary",
                       attrs: { type: "button" },
-                      on: { click: _vm.adicionarDefensor }
+                      on: {
+                        click: function($event) {
+                          return _vm.adicionarDefensor(_vm.arMatricula)
+                        }
+                      }
                     },
                     [_vm._v("Adicionar")]
                   )
@@ -52895,174 +53527,168 @@ var render = function() {
         _vm.deNomeCpf != "" ||
         _vm.deNomeComprovanteResidencia != "" ||
         _vm.deNomeProcuracao != "" ||
-        _vm.deNomeAnexoPeticao != ""
+        _vm.deNomeAnexoPeticao != null
           ? _c("div", [
-              _c("table", { staticClass: "table table-borderless" }, [
-                _c(
-                  "tr",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: _vm.deNomePeticaoInicial != "",
-                        expression: "deNomePeticaoInicial != ''"
-                      }
-                    ]
-                  },
-                  [
-                    _c("td", [_vm._v("Petição Inicial")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "a",
+              _c(
+                "table",
+                { staticClass: "table table-borderless" },
+                [
+                  _c(
+                    "tr",
+                    {
+                      directives: [
                         {
-                          attrs: {
-                            href: "#",
-                            "data-toggle": "modal",
-                            "data-backdrop": "static",
-                            "data-keyboard": "false",
-                            "data-target": "#peticaoModal"
-                          }
-                        },
-                        [_vm._v(_vm._s(_vm.deNomePeticaoInicial))]
-                      )
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "tr",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: _vm.deNomeCpf != "",
-                        expression: "deNomeCpf != ''"
-                      }
+                          name: "show",
+                          rawName: "v-show",
+                          value: _vm.deNomePeticaoInicial != "",
+                          expression: "deNomePeticaoInicial != ''"
+                        }
+                      ]
+                    },
+                    [
+                      _c("td", [_vm._v("Petição Inicial")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "#",
+                              "data-toggle": "modal",
+                              "data-backdrop": "static",
+                              "data-keyboard": "false",
+                              "data-target": "#peticaoModal"
+                            }
+                          },
+                          [_vm._v(_vm._s(_vm.deNomePeticaoInicial))]
+                        )
+                      ])
                     ]
-                  },
-                  [
-                    _c("td", [_vm._v("CPF")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "a",
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "tr",
+                    {
+                      directives: [
                         {
-                          attrs: {
-                            href: "#",
-                            "data-toggle": "modal",
-                            "data-backdrop": "static",
-                            "data-keyboard": "false",
-                            "data-target": "#cpfModal"
-                          }
-                        },
-                        [_vm._v(_vm._s(_vm.deNomeCpf))]
-                      )
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "tr",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: _vm.deNomeComprovanteResidencia != "",
-                        expression: "deNomeComprovanteResidencia != ''"
-                      }
+                          name: "show",
+                          rawName: "v-show",
+                          value: _vm.deNomeCpf != "",
+                          expression: "deNomeCpf != ''"
+                        }
+                      ]
+                    },
+                    [
+                      _c("td", [_vm._v("CPF")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "#",
+                              "data-toggle": "modal",
+                              "data-backdrop": "static",
+                              "data-keyboard": "false",
+                              "data-target": "#cpfModal"
+                            }
+                          },
+                          [_vm._v(_vm._s(_vm.deNomeCpf))]
+                        )
+                      ])
                     ]
-                  },
-                  [
-                    _c("td", [_vm._v("Comprovante de Residência")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "a",
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "tr",
+                    {
+                      directives: [
                         {
-                          attrs: {
-                            href: "#",
-                            "data-toggle": "modal",
-                            "data-backdrop": "static",
-                            "data-keyboard": "false",
-                            "data-target": "#comprovanteModal"
-                          }
-                        },
-                        [_vm._v(_vm._s(_vm.deNomeComprovanteResidencia))]
-                      )
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "tr",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: _vm.deNomeProcuracao != "",
-                        expression: "deNomeProcuracao != ''"
-                      }
+                          name: "show",
+                          rawName: "v-show",
+                          value: _vm.deNomeComprovanteResidencia != "",
+                          expression: "deNomeComprovanteResidencia != ''"
+                        }
+                      ]
+                    },
+                    [
+                      _c("td", [_vm._v("Comprovante de Residência")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "#",
+                              "data-toggle": "modal",
+                              "data-backdrop": "static",
+                              "data-keyboard": "false",
+                              "data-target": "#comprovanteModal"
+                            }
+                          },
+                          [_vm._v(_vm._s(_vm.deNomeComprovanteResidencia))]
+                        )
+                      ])
                     ]
-                  },
-                  [
-                    _c("td", [_vm._v("Procuração")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "a",
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "tr",
+                    {
+                      directives: [
                         {
-                          attrs: {
-                            href: "#",
-                            "data-toggle": "modal",
-                            "data-backdrop": "static",
-                            "data-keyboard": "false",
-                            "data-target": "#procuracaoModal"
-                          }
-                        },
-                        [_vm._v(_vm._s(_vm.deNomeProcuracao))]
-                      )
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "tr",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: _vm.deNomeAnexoPeticao != "",
-                        expression: "deNomeAnexoPeticao != ''"
-                      }
+                          name: "show",
+                          rawName: "v-show",
+                          value: _vm.deNomeProcuracao != "",
+                          expression: "deNomeProcuracao != ''"
+                        }
+                      ]
+                    },
+                    [
+                      _c("td", [_vm._v("Procuração")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "#",
+                              "data-toggle": "modal",
+                              "data-backdrop": "static",
+                              "data-keyboard": "false",
+                              "data-target": "#procuracaoModal"
+                            }
+                          },
+                          [_vm._v(_vm._s(_vm.deNomeProcuracao))]
+                        )
+                      ])
                     ]
-                  },
-                  [
-                    _c("td", [_vm._v("Anexo da Petição")]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _c(
-                        "a",
-                        {
-                          attrs: {
-                            href: "#",
-                            "data-toggle": "modal",
-                            "data-backdrop": "static",
-                            "data-keyboard": "false",
-                            "data-target": "#anexoModal"
-                          }
-                        },
-                        [_vm._v(_vm._s(_vm.deNomeAnexoPeticao))]
-                      )
+                  ),
+                  _vm._v(" "),
+                  _vm._l(_vm.deNomeAnexoPeticao, function(anexo) {
+                    return _c("tr", [
+                      _c("td", [_vm._v("Anexo da Petição")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "#",
+                              "data-toggle": "modal",
+                              "data-backdrop": "static",
+                              "data-keyboard": "false",
+                              "data-target": "#anexoModal"
+                            }
+                          },
+                          [_vm._v(_vm._s(anexo.name))]
+                        )
+                      ])
                     ])
-                  ]
-                )
-              ])
+                  })
+                ],
+                2
+              )
             ])
           : _vm._e()
       ])
@@ -57503,30 +58129,37 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
         _c("div", { staticClass: "container" }, [
-          _c("div", [
-            _c(
-              "label",
-              {
-                staticClass: "btn btn-primary",
-                attrs: { for: "escolherAnexoPeticaoId" }
-              },
-              [_vm._v("Procurar")]
-            ),
-            _vm._v(" "),
-            _c("input", {
-              staticStyle: { display: "none" },
-              attrs: {
-                type: "file",
-                name: "dap_arquivo",
-                id: "escolherAnexoPeticaoId"
-              },
-              on: { change: _vm.receberNomeDocumento }
-            }),
-            _vm._v(" "),
-            _c("span", { staticStyle: { "margin-left": "10px" } }, [
-              _vm._v(_vm._s(_vm.nomeAnexoPeticao))
-            ])
-          ]),
+          _c(
+            "div",
+            [
+              _c(
+                "label",
+                {
+                  staticClass: "btn btn-primary",
+                  attrs: { for: "escolherAnexoPeticaoId" }
+                },
+                [_vm._v("Procurar")]
+              ),
+              _vm._v(" "),
+              _c("input", {
+                staticStyle: { display: "none" },
+                attrs: {
+                  type: "file",
+                  name: "dap_arquivo[]",
+                  multiple: "",
+                  id: "escolherAnexoPeticaoId"
+                },
+                on: { change: _vm.receberNomeDocumento }
+              }),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _vm._l(_vm.anexosPeticao, function(anexo) {
+                return _c("ul", [_c("li", [_vm._v(_vm._s(anexo.name))])])
+              })
+            ],
+            2
+          ),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
@@ -57574,7 +58207,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", { staticStyle: { color: "red" } }, [
         _vm._v(
-          'Para adicionar o arquivo, basta escolhe-lo e clicar no botão "Enviar".'
+          'Para adicionar mais de um arquivo, basta segurar a tecla Ctrl e selecionar os arquivos. Após selecioná-los, clique no botão "Enviar".'
         )
       ])
     ])

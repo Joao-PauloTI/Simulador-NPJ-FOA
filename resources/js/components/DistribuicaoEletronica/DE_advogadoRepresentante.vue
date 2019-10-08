@@ -12,7 +12,7 @@
                     <tr>
                         <td>
                             <label for="DE_aR1">
-                                <select class="custom-select" id="DE_aR1" v-model="arAdvogadoRepresentante" v-on:blur="gerarNome">
+                                <select class="custom-select" id="DE_aR1" v-model="arAdvogadoRepresentante" v-on:change="gerarNome">
                                     <option value="Advogado">Advogado</option>
                                     <option value="Defensor Público">Defensor Público</option>
                                 </select>
@@ -22,7 +22,7 @@
                             <div class="form-inline">
                                 <span style="margin-right: 3px"><strong> Número de OAB </strong> </span>
                                 <label for="DE_aR2">
-                                    <select class="custom-select" id="DE_aR2" v-model="arEstadoOAB" v-on:blur="gerarNome">
+                                    <select class="custom-select" id="DE_aR2" v-model="arEstadoOAB" v-on:change="gerarNome">
                                         <option value="AC">AC</option>
                                         <option value="AL">AL</option>
                                         <option value="AP">AP</option>
@@ -65,8 +65,8 @@
                             <input type="text" v-model="arNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; margin-top: 5px; outline: none">
                         </td>
                         <td>
-                            <button type="button" class="btn btn-primary" v-if="arAdvogadoRepresentante === 'Advogado' && arEstadoOAB != '' && arNumeroOAB != '' && arNome != ''" v-on:click="adicionarAdvogado">Adicionar</button>
-                            <button type="button" class="btn btn-primary" v-if="arAdvogadoRepresentante === 'Defensor Público' && arMatricula != '' && arNome != ''" v-on:click="adicionarDefensor">Adicionar</button>
+                            <button type="button" class="btn btn-primary" v-if="arAdvogadoRepresentante === 'Advogado' && arEstadoOAB != '' && arNumeroOAB != '' && arNome != ''" v-on:click="adicionarAdvogado(arEstadoOAB, arNumeroOAB)">Adicionar</button>
+                            <button type="button" class="btn btn-primary" v-if="arAdvogadoRepresentante === 'Defensor Público' && arMatricula != '' && arNome != ''" v-on:click="adicionarDefensor(arMatricula)">Adicionar</button>
                         </td>
                     </tr>
                 </table>
@@ -145,29 +145,49 @@ export default {
                 this.arNome = ''
             }
         },
-        adicionarAdvogado: function() {
-            this.arAdvogadoDados.push({
-                'arEstadoOAB': this.arEstadoOAB,
-                'arNumeroOAB': this.arNumeroOAB,
-                'arNome': this.arNome
+        adicionarAdvogado: function(estado, numero) {
+            let advogadoRepetido
+            this.arAdvogadoDados.forEach(function(dados) {
+                if (dados.arEstadoOAB === estado && dados.arNumeroOAB === numero) {
+                    advogadoRepetido = 'sim'
+                }
             })
-            this.$eventHub.$emit('enviarAdvogadoDados', this.arAdvogadoDados)
-            this.arNumeroOAB = ''
-            this.arMatricula = ''
-            this.arNome = ''
+            if (advogadoRepetido === 'sim') {
+                alert('Este advogado já está adicionado no processo!')
+            } else {
+                this.arAdvogadoDados.push({
+                    'arEstadoOAB': this.arEstadoOAB,
+                    'arNumeroOAB': this.arNumeroOAB,
+                    'arNome': this.arNome
+                })
+                this.$eventHub.$emit('enviarAdvogadoDados', this.arAdvogadoDados)
+                this.arNumeroOAB = ''
+                this.arMatricula = ''
+                this.arNome = ''
+            }
         },
         excluirAdvogado: function(index) {
             this.$delete(this.arAdvogadoDados, index)
         },
-        adicionarDefensor: function() {
-            this.arDefensorDados.push({
-                'arMatricula': this.arMatricula,
-                'arNome': this.arNome
+        adicionarDefensor: function(matricula) {
+            let defensorRepetido
+            this.arDefensorDados.forEach(function(dados) {
+                if (dados.arMatricula === matricula) {
+                    defensorRepetido = 'sim'
+                }
             })
-            this.$eventHub.$emit('enviarDefensorDados', this.arDefensorDados)
-            this.arNumeroOAB = ''
-            this.arMatricula = ''
-            this.arNome = ''
+            if (defensorRepetido === 'sim') {
+                alert('Este defensor público já está adicionado no processo!')
+            } else {
+                this.arDefensorDados.push({
+                    'arMatricula': this.arMatricula,
+                    'arNome': this.arNome
+                })
+                this.$eventHub.$emit('enviarDefensorDados', this.arDefensorDados)
+                this.arNumeroOAB = ''
+                this.arMatricula = ''
+                this.arNome = ''
+            }
         },
         excluirDefensor: function(index) {
             this.$delete(this.arDefensorDados, index)
