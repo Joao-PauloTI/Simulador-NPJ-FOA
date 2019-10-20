@@ -5417,56 +5417,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'dedadosdoprocesso',
   data: function data() {
@@ -51975,13 +51925,13 @@ var staticRenderFns = [
         _c(
           "button",
           { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_vm._v("PESQUISAR")]
+          [_c("strong", [_vm._v("PESQUISAR")])]
         ),
         _vm._v(" "),
         _c(
           "button",
           { staticClass: "btn btn-danger", attrs: { type: "reset" } },
-          [_vm._v("LIMPAR")]
+          [_c("strong", [_vm._v("LIMPAR")])]
         )
       ])
     ])
@@ -56292,690 +56242,225 @@ var render = function() {
             _c(
               "select",
               {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "" ||
-                      _vm.showCompetencia === "" ||
-                      _vm.showClasse === "",
-                    expression:
-                      "showComarca === '' || showCompetencia === '' || showClasse === ''"
-                  }
-                ],
                 staticClass: "custom-select",
                 attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
               },
               [
-                _c("option", { attrs: { value: "" } }, [
-                  _vm._v("Escolha uma distribuição")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Angra dos Reis" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Angra dos Reis' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Angra dos Reis" } },
-                  [_vm._v("Distribuidor de Angra dos Reis")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Paraty" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Paraty' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c("option", { attrs: { value: "Distribuidor de Paraty" } }, [
-                  _vm._v("Distribuidor de Paraty")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Barra do Piraí" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Barra do Piraí' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Barra do Piraí" } },
-                  [_vm._v("Distribuidor de Barra do Piraí")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Rio das Flores" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Rio das Flores' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Rio das Flores" } },
-                  [_vm._v("Distribuidor de Rio das Flores")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Valença" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Valença' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c("option", { attrs: { value: "Distribuidor de Valença" } }, [
-                  _vm._v("Distribuidor de Valença")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Barra Mansa" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Barra Mansa' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Barra Mansa" } },
-                  [_vm._v("Distribuidor de Barra Mansa")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Itatiaia" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Itatiaia' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c("option", { attrs: { value: "Distribuidor de Itatiaia" } }, [
-                  _vm._v("Distribuidor de Itatiaia")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Pinheiral" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Pinheiral' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Pinheiral" } },
-                  [_vm._v("Distribuidor de Pinheiral")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Porto Real" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Porto Real' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Porto Real" } },
-                  [_vm._v("Distribuidor de Porto Real")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Quatis" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Quatis' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c("option", { attrs: { value: "Distribuidor de Quatis" } }, [
-                  _vm._v("Distribuidor de Quatis")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Resende" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Resende' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c("option", { attrs: { value: "Distribuidor de Resende" } }, [
-                  _vm._v("Distribuidor de Resende")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Rio Claro" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Rio Claro' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Rio Claro" } },
-                  [_vm._v("Distribuidor de Rio Claro")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Piraí" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Piraí' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c("option", { attrs: { value: "Distribuidor de Piraí" } }, [
-                  _vm._v("Distribuidor de Piraí")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Engenheiro Paulo de Frontin" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Engenheiro Paulo de Frontin' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  {
-                    attrs: {
-                      value: "Distribuidor de Engenheiro Paulo de Frontin"
-                    }
-                  },
-                  [_vm._v("Distribuidor de Engenheiro Paulo de Frontin")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Mendes" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Mendes' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c("option", { attrs: { value: "Distribuidor de Mendes" } }, [
-                  _vm._v("Distribuidor de Mendes")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Miguel Pereira" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Miguel Pereira' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Miguel Pereira" } },
-                  [_vm._v("Distribuidor de Miguel Pereira")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Paracambi" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Paracambi' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Paracambi" } },
-                  [_vm._v("Distribuidor de Paracambi")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Paty do Alferes" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Paty do Alferes' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Paty do Alferes" } },
-                  [_vm._v("Distribuidor de Paty do Alferes")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Vassouras" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Vassouras' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Vassouras" } },
-                  [_vm._v("Distribuidor de Vassouras")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Areal" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Areal' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c("option", { attrs: { value: "Distribuidor de Areal" } }, [
-                  _vm._v("Distribuidor de Areal")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Comendador Levy Gasparian" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Comendador Levy Gasparian' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  {
-                    attrs: {
-                      value: "Distribuidor de Comendador Levy Gasparian"
-                    }
-                  },
-                  [_vm._v("Distribuidor de Comendador Levy Gasparian")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Paraíba do Sul" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Paraíba do Sul' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Paraíba do Sul" } },
-                  [_vm._v("Distribuidor de Paraíba do Sul")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Sapucaia" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Sapucaia' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c("option", { attrs: { value: "Distribuidor de Sapucaia" } }, [
-                  _vm._v("Distribuidor de Sapucaia")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Três Rios" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Três Rios' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Três Rios" } },
-                  [_vm._v("Distribuidor de Três Rios")]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value:
-                      _vm.showComarca === "Volta Redonda" &&
-                      _vm.showCompetencia != "" &&
-                      _vm.showClasse != "",
-                    expression:
-                      "showComarca === 'Volta Redonda' && showCompetencia != '' && showClasse != ''"
-                  }
-                ],
-                staticClass: "custom-select",
-                attrs: { name: "p_distribuicao", id: "DE_dDP_distribuicao" }
-              },
-              [
-                _c(
-                  "option",
-                  { attrs: { value: "Distribuidor de Volta Redonda" } },
-                  [_vm._v("Distribuidor de Volta Redonda")]
-                )
+                _vm.showComarca === "" ||
+                _vm.showCompetencia === "" ||
+                _vm.showClasse === ""
+                  ? _c("option", { attrs: { value: "" } }, [
+                      _vm._v("Escolha uma distribuição")
+                    ])
+                  : _vm.showComarca === "Angra dos Reis" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Angra dos Reis" } },
+                      [_vm._v("Distribuidor de Angra dos Reis")]
+                    )
+                  : _vm.showComarca === "Paraty" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Paraty" } },
+                      [_vm._v("Distribuidor de Paraty")]
+                    )
+                  : _vm.showComarca === "Barra do Piraí" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Barra do Piraí" } },
+                      [_vm._v("Distribuidor de Barra do Piraí")]
+                    )
+                  : _vm.showComarca === "Rio das Flores" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Rio das Flores" } },
+                      [_vm._v("Distribuidor de Rio das Flores")]
+                    )
+                  : _vm.showComarca === "Valença" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Valença" } },
+                      [_vm._v("Distribuidor de Valença")]
+                    )
+                  : _vm.showComarca === "Barra Mansa" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Barra Mansa" } },
+                      [_vm._v("Distribuidor de Barra Mansa")]
+                    )
+                  : _vm.showComarca === "Itatiaia" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Itatiaia" } },
+                      [_vm._v("Distribuidor de Itatiaia")]
+                    )
+                  : _vm.showComarca === "Pinheiral" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Pinheiral" } },
+                      [_vm._v("Distribuidor de Pinheiral")]
+                    )
+                  : _vm.showComarca === "Porto Real" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Porto Real" } },
+                      [_vm._v("Distribuidor de Porto Real")]
+                    )
+                  : _vm.showComarca === "Quatis" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Quatis" } },
+                      [_vm._v("Distribuidor de Quatis")]
+                    )
+                  : _vm.showComarca === "Resende" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Resende" } },
+                      [_vm._v("Distribuidor de Resende")]
+                    )
+                  : _vm.showComarca === "Rio Claro" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Rio Claro" } },
+                      [_vm._v("Distribuidor de Rio Claro")]
+                    )
+                  : _vm.showComarca === "Piraí" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Piraí" } },
+                      [_vm._v("Distribuidor de Piraí")]
+                    )
+                  : _vm.showComarca === "Engenheiro Paulo de Frontin" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      {
+                        attrs: {
+                          value: "Distribuidor de Engenheiro Paulo de Frontin"
+                        }
+                      },
+                      [_vm._v("Distribuidor de Engenheiro Paulo de Frontin")]
+                    )
+                  : _vm.showComarca === "Mendes" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Mendes" } },
+                      [_vm._v("Distribuidor de Mendes")]
+                    )
+                  : _vm.showComarca === "Miguel Pereira" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Miguel Pereira" } },
+                      [_vm._v("Distribuidor de Miguel Pereira")]
+                    )
+                  : _vm.showComarca === "Paracambi" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Paracambi" } },
+                      [_vm._v("Distribuidor de Paracambi")]
+                    )
+                  : _vm.showComarca === "Paty do Alferes" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Paty do Alferes" } },
+                      [_vm._v("Distribuidor de Paty do Alferes")]
+                    )
+                  : _vm.showComarca === "Vassouras" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Vassouras" } },
+                      [_vm._v("Distribuidor de Vassouras")]
+                    )
+                  : _vm.showComarca === "Areal" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Areal" } },
+                      [_vm._v("Distribuidor de Areal")]
+                    )
+                  : _vm.showComarca === "Comendador Levy Gasparian" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      {
+                        attrs: {
+                          value: "Distribuidor de Comendador Levy Gasparian"
+                        }
+                      },
+                      [_vm._v("Distribuidor de Comendador Levy Gasparian")]
+                    )
+                  : _vm.showComarca === "Paraíba do Sul" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Paraíba do Sul" } },
+                      [_vm._v("Distribuidor de Paraíba do Sul")]
+                    )
+                  : _vm.showComarca === "Sapucaia" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Sapucaia" } },
+                      [_vm._v("Distribuidor de Sapucaia")]
+                    )
+                  : _vm.showComarca === "Três Rios" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Três Rios" } },
+                      [_vm._v("Distribuidor de Três Rios")]
+                    )
+                  : _vm.showComarca === "Volta Redonda" &&
+                    _vm.showCompetencia != "" &&
+                    _vm.showClasse != ""
+                  ? _c(
+                      "option",
+                      { attrs: { value: "Distribuidor de Volta Redonda" } },
+                      [_vm._v("Distribuidor de Volta Redonda")]
+                    )
+                  : _vm._e()
               ]
             )
           ])

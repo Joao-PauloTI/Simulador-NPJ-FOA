@@ -465,83 +465,33 @@
                 <!--Distribuição-->
                 <div>
                     <label for="DE_dDP_distribuicao"><strong>* Distribuição</strong>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === '' || showCompetencia === '' || showClasse === ''">
-                            <option value="">Escolha uma distribuição</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Angra dos Reis' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Angra dos Reis">Distribuidor de Angra dos Reis</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Paraty' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Paraty">Distribuidor de Paraty</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Barra do Piraí' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Barra do Piraí">Distribuidor de Barra do Piraí</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Rio das Flores' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Rio das Flores">Distribuidor de Rio das Flores</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Valença' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Valença">Distribuidor de Valença</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Barra Mansa' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Barra Mansa">Distribuidor de Barra Mansa</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Itatiaia' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Itatiaia">Distribuidor de Itatiaia</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Pinheiral' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Pinheiral">Distribuidor de Pinheiral</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Porto Real' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Porto Real">Distribuidor de Porto Real</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Quatis' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Quatis">Distribuidor de Quatis</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Resende' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Resende">Distribuidor de Resende</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Rio Claro' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Rio Claro">Distribuidor de Rio Claro</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Piraí' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Piraí">Distribuidor de Piraí</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Engenheiro Paulo de Frontin' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Engenheiro Paulo de Frontin">Distribuidor de Engenheiro Paulo de Frontin</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Mendes' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Mendes">Distribuidor de Mendes</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Miguel Pereira' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Miguel Pereira">Distribuidor de Miguel Pereira</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Paracambi' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Paracambi">Distribuidor de Paracambi</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Paty do Alferes' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Paty do Alferes">Distribuidor de Paty do Alferes</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Vassouras' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Vassouras">Distribuidor de Vassouras</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Areal' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Areal">Distribuidor de Areal</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Comendador Levy Gasparian' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Comendador Levy Gasparian">Distribuidor de Comendador Levy Gasparian</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Paraíba do Sul' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Paraíba do Sul">Distribuidor de Paraíba do Sul</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Sapucaia' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Sapucaia">Distribuidor de Sapucaia</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Três Rios' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Três Rios">Distribuidor de Três Rios</option>
-                        </select>
-                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao" v-show="showComarca === 'Volta Redonda' && showCompetencia != '' && showClasse != ''">
-                            <option value="Distribuidor de Volta Redonda">Distribuidor de Volta Redonda</option>
+                        <select class="custom-select" name="p_distribuicao" id="DE_dDP_distribuicao">
+                            <option value="" v-if="showComarca === '' || showCompetencia === '' || showClasse === ''">Escolha uma distribuição</option>
+                            <option value="Distribuidor de Angra dos Reis" v-else-if="showComarca === 'Angra dos Reis' && showCompetencia != '' && showClasse != ''">Distribuidor de Angra dos Reis</option>
+                            <option value="Distribuidor de Paraty" v-else-if="showComarca === 'Paraty' && showCompetencia != '' && showClasse != ''">Distribuidor de Paraty</option>
+                            <option value="Distribuidor de Barra do Piraí" v-else-if="showComarca === 'Barra do Piraí' && showCompetencia != '' && showClasse != ''">Distribuidor de Barra do Piraí</option>
+                            <option value="Distribuidor de Rio das Flores" v-else-if="showComarca === 'Rio das Flores' && showCompetencia != '' && showClasse != ''">Distribuidor de Rio das Flores</option>
+                            <option value="Distribuidor de Valença" v-else-if="showComarca === 'Valença' && showCompetencia != '' && showClasse != ''">Distribuidor de Valença</option>
+                            <option value="Distribuidor de Barra Mansa" v-else-if="showComarca === 'Barra Mansa' && showCompetencia != '' && showClasse != ''">Distribuidor de Barra Mansa</option>
+                            <option value="Distribuidor de Itatiaia" v-else-if="showComarca === 'Itatiaia' && showCompetencia != '' && showClasse != ''">Distribuidor de Itatiaia</option>
+                            <option value="Distribuidor de Pinheiral" v-else-if="showComarca === 'Pinheiral' && showCompetencia != '' && showClasse != ''">Distribuidor de Pinheiral</option>
+                            <option value="Distribuidor de Porto Real" v-else-if="showComarca === 'Porto Real' && showCompetencia != '' && showClasse != ''">Distribuidor de Porto Real</option>
+                            <option value="Distribuidor de Quatis" v-else-if="showComarca === 'Quatis' && showCompetencia != '' && showClasse != ''">Distribuidor de Quatis</option>
+                            <option value="Distribuidor de Resende" v-else-if="showComarca === 'Resende' && showCompetencia != '' && showClasse != ''">Distribuidor de Resende</option>
+                            <option value="Distribuidor de Rio Claro" v-else-if="showComarca === 'Rio Claro' && showCompetencia != '' && showClasse != ''">Distribuidor de Rio Claro</option>
+                            <option value="Distribuidor de Piraí" v-else-if="showComarca === 'Piraí' && showCompetencia != '' && showClasse != ''">Distribuidor de Piraí</option>
+                            <option value="Distribuidor de Engenheiro Paulo de Frontin" v-else-if="showComarca === 'Engenheiro Paulo de Frontin' && showCompetencia != '' && showClasse != ''">Distribuidor de Engenheiro Paulo de Frontin</option>
+                            <option value="Distribuidor de Mendes" v-else-if="showComarca === 'Mendes' && showCompetencia != '' && showClasse != ''">Distribuidor de Mendes</option>
+                            <option value="Distribuidor de Miguel Pereira" v-else-if="showComarca === 'Miguel Pereira' && showCompetencia != '' && showClasse != ''">Distribuidor de Miguel Pereira</option>
+                            <option value="Distribuidor de Paracambi" v-else-if="showComarca === 'Paracambi' && showCompetencia != '' && showClasse != ''">Distribuidor de Paracambi</option>
+                            <option value="Distribuidor de Paty do Alferes" v-else-if="showComarca === 'Paty do Alferes' && showCompetencia != '' && showClasse != ''">Distribuidor de Paty do Alferes</option>
+                            <option value="Distribuidor de Vassouras" v-else-if="showComarca === 'Vassouras' && showCompetencia != '' && showClasse != ''">Distribuidor de Vassouras</option>
+                            <option value="Distribuidor de Areal" v-else-if="showComarca === 'Areal' && showCompetencia != '' && showClasse != ''">Distribuidor de Areal</option>
+                            <option value="Distribuidor de Comendador Levy Gasparian" v-else-if="showComarca === 'Comendador Levy Gasparian' && showCompetencia != '' && showClasse != ''">Distribuidor de Comendador Levy Gasparian</option>
+                            <option value="Distribuidor de Paraíba do Sul" v-else-if="showComarca === 'Paraíba do Sul' && showCompetencia != '' && showClasse != ''">Distribuidor de Paraíba do Sul</option>
+                            <option value="Distribuidor de Sapucaia" v-else-if="showComarca === 'Sapucaia' && showCompetencia != '' && showClasse != ''">Distribuidor de Sapucaia</option>
+                            <option value="Distribuidor de Três Rios" v-else-if="showComarca === 'Três Rios' && showCompetencia != '' && showClasse != ''">Distribuidor de Três Rios</option>
+                            <option value="Distribuidor de Volta Redonda" v-else-if="showComarca === 'Volta Redonda' && showCompetencia != '' && showClasse != ''">Distribuidor de Volta Redonda</option>
                         </select>
                     </label>
                 </div>

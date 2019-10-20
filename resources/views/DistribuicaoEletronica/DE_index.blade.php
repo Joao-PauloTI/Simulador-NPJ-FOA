@@ -6,7 +6,7 @@
 		<pimenulateral id="PI_mostrarEsconderMenu"></pimenulateral>
 		<div class="container">
 			<div class="card">
-				<form action="{{ route('p_processos.store') }}" method="POST" enctype="multipart/form-data" novalidate>
+				<form action="{{ route('processo.confirmar') }}" method="POST" enctype="multipart/form-data" novalidate>
 					@csrf
 					<degrerj></degrerj>
 					<deprocessoprincipal></deprocessoprincipal>
@@ -17,8 +17,8 @@
 					<br>
 					<!--Botões SALVAR/LIMPAR-->
 					<div align="center">
-						<button type="submit" class="btn btn-primary">SALVAR</button>
-						<button type="reset" class="btn btn-danger">LIMPAR</button>
+						<button type="submit" class="btn btn-primary"><strong>SALVAR</strong></button>
+						<button type="reset" class="btn btn-danger"><strong>LIMPAR</strong></button>
 					</div>
 				</form>
 				<br>

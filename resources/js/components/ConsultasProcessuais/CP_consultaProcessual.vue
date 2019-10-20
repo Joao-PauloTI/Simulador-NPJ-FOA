@@ -45,8 +45,8 @@
                 <!--Botões SALVAR/LIMPAR-->
                 <div align="center">
                     <form action="">
-                        <button type="submit" class="btn btn-primary">PESQUISAR</button>
-                        <button type="reset" class="btn btn-danger">LIMPAR</button>
+                        <button type="submit" class="btn btn-primary"><strong>PESQUISAR</strong></button>
+                        <button type="reset" class="btn btn-danger"><strong>LIMPAR</strong></button>
                     </form>
                 </div>
                 <br>
