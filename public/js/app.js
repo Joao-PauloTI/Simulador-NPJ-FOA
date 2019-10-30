@@ -2918,63 +2918,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'cramodal',
   data: function data() {
@@ -3008,10 +2951,6 @@ __webpack_require__.r(__webpack_exports__);
       raTipoEndereco: '',
       raReferencia: '',
       raComprovante: '',
-      raValorPedido: '',
-      raValorLiquido: '',
-      raValorCausa: '',
-      raPretensao: '',
       raEstadoCivil: '',
       raProfissao: '',
       raNacionalidade: '',
@@ -3027,10 +2966,10 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     novoRepresentanteAutor: function novoRepresentanteAutor() {
-      this.$emit('craDados', this.raIncapaz, this.raMassa, this.raInsolvente, this.raPreso, this.raEspolio, this.raCondominio, this.raParte, this.raMinisterio, this.raPessoa, this.raSexo, this.raCpf, this.raNome, this.raDocumento, this.raNumeroIdentificacao, this.raEmissor, this.raEmissao, this.raTelefone, this.raEmail, this.raCep, this.raEstado, this.raCidade, this.raBairro, this.raTipoLogradouro, this.raLogradouro, this.raNumeroEndereco, this.raComplemento, this.raTipoEndereco, this.raReferencia, this.raComprovante, this.raValorPedido, this.raValorLiquido, this.raValorCausa, this.raPretensao, this.raEstadoCivil, this.raProfissao, this.raNacionalidade, this.raEstadoNaturalidade, this.raCidadeNaturalidade, this.raPai, this.raMae, this.raNascimento);
+      this.$emit('craDados', this.raIncapaz, this.raMassa, this.raInsolvente, this.raPreso, this.raEspolio, this.raCondominio, this.raParte, this.raMinisterio, this.raPessoa, this.raSexo, this.raCpf, this.raNome, this.raDocumento, this.raNumeroIdentificacao, this.raEmissor, this.raEmissao, this.raTelefone, this.raEmail, this.raCep, this.raEstado, this.raCidade, this.raBairro, this.raTipoLogradouro, this.raLogradouro, this.raNumeroEndereco, this.raComplemento, this.raTipoEndereco, this.raReferencia, this.raComprovante, this.raEstadoCivil, this.raProfissao, this.raNacionalidade, this.raEstadoNaturalidade, this.raCidadeNaturalidade, this.raPai, this.raMae, this.raNascimento);
     },
     limparRepresentanteAutorModal: function limparRepresentanteAutorModal() {
-      this.raIncapaz = '', this.raMassa = '', this.raInsolvente = '', this.raPreso = '', this.raEspolio = '', this.raCondominio = '', this.raParte = '', this.raMinisterio = '', this.raPessoa = '', this.raSexo = '', this.raCpf = '', this.raNome = '', this.raDocumento = '', this.raNumeroIdentificacao = '', this.raEmissor = '', this.raEmissao = '', this.raTelefone = '', this.raEmail = '', this.raCep = '', this.raEstado = '', this.raCidade = '', this.raBairro = '', this.raTipoLogradouro = '', this.raLogradouro = '', this.raNumeroEndereco = '', this.raComplemento = '', this.raTipoEndereco = '', this.raReferencia = '', this.raComprovante = '', this.raValorPedido = '', this.raValorLiquido = '', this.raValorCausa = '', this.raPretensao = '', this.raEstadoCivil = '', this.raProfissao = '', this.raNacionalidade = '', this.raEstadoNaturalidade = '', this.raCidadeNaturalidade = '', this.raPai = '', this.raMae = '', this.raNascimento = '';
+      this.raIncapaz = '', this.raMassa = '', this.raInsolvente = '', this.raPreso = '', this.raEspolio = '', this.raCondominio = '', this.raParte = '', this.raMinisterio = '', this.raPessoa = '', this.raSexo = '', this.raCpf = '', this.raNome = '', this.raDocumento = '', this.raNumeroIdentificacao = '', this.raEmissor = '', this.raEmissao = '', this.raTelefone = '', this.raEmail = '', this.raCep = '', this.raEstado = '', this.raCidade = '', this.raBairro = '', this.raTipoLogradouro = '', this.raLogradouro = '', this.raNumeroEndereco = '', this.raComplemento = '', this.raTipoEndereco = '', this.raReferencia = '', this.raComprovante = '', this.raEstadoCivil = '', this.raProfissao = '', this.raNacionalidade = '', this.raEstadoNaturalidade = '', this.raCidadeNaturalidade = '', this.raPai = '', this.raMae = '', this.raNascimento = '';
     }
   }
 });
@@ -3046,62 +2985,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -3433,11 +3316,7 @@ __webpack_require__.r(__webpack_exports__);
       rrComplemento: '',
       rrTipoEndereco: '',
       rrReferencia: '',
-      rrComprovante: '',
-      rrValorPedido: '',
-      rrValorLiquido: '',
-      rrValorCausa: '',
-      rrPretensao: ''
+      rrComprovante: ''
     };
   },
   methods: {
@@ -3445,10 +3324,10 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     novoRepresentanteReu: function novoRepresentanteReu() {
-      this.$emit('crrDados', this.rrParte, this.rrPessoa, this.rrSexo, this.rrCpf, this.rrNome, this.rrMenor, this.rrDocumento, this.rrNumeroIdentificacao, this.rrEmissor, this.rrEmissao, this.rrTelefone, this.rrEmail, this.rrIncerto, this.rrCep, this.rrEstado, this.rrCidade, this.rrBairro, this.rrTipoLogradouro, this.rrLogradouro, this.rrNumeroEndereco, this.rrComplemento, this.rrTipoEndereco, this.rrReferencia, this.rrComprovante, this.rrValorPedido, this.rrValorLiquido, this.rrValorCausa, this.rrPretensao);
+      this.$emit('crrDados', this.rrParte, this.rrPessoa, this.rrSexo, this.rrCpf, this.rrNome, this.rrMenor, this.rrDocumento, this.rrNumeroIdentificacao, this.rrEmissor, this.rrEmissao, this.rrTelefone, this.rrEmail, this.rrIncerto, this.rrCep, this.rrEstado, this.rrCidade, this.rrBairro, this.rrTipoLogradouro, this.rrLogradouro, this.rrNumeroEndereco, this.rrComplemento, this.rrTipoEndereco, this.rrReferencia, this.rrComprovante);
     },
     limparRepresentanteReuModal: function limparRepresentanteReuModal() {
-      this.rrParte = '', this.rrPessoa = '', this.rrSexo = '', this.rrCpf = '', this.rrNome = '', this.rrMenor = '', this.rrDocumento = '', this.rrNumeroIdentificacao = '', this.rrEmissor = '', this.rrEmissao = '', this.rrTelefone = '', this.rrEmail = '', this.rrIncerto = '', this.rrCep = '', this.rrEstado = '', this.rrCidade = '', this.rrBairro = '', this.rrTipoLogradouro = '', this.rrLogradouro = '', this.rrNumeroEndereco = '', this.rrComplemento = '', this.rrTipoEndereco = '', this.rrReferencia = '', this.rrComprovante = '', this.rrValorPedido = '', this.rrValorLiquido = '', this.rrValorCausa = '', this.rrPretensao = '';
+      this.rrParte = '', this.rrPessoa = '', this.rrSexo = '', this.rrCpf = '', this.rrNome = '', this.rrMenor = '', this.rrDocumento = '', this.rrNumeroIdentificacao = '', this.rrEmissor = '', this.rrEmissao = '', this.rrTelefone = '', this.rrEmail = '', this.rrIncerto = '', this.rrCep = '', this.rrEstado = '', this.rrCidade = '', this.rrBairro = '', this.rrTipoLogradouro = '', this.rrLogradouro = '', this.rrNumeroEndereco = '', this.rrComplemento = '', this.rrTipoEndereco = '', this.rrReferencia = '', this.rrComprovante = '';
     }
   }
 });
@@ -3464,62 +3343,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -3810,11 +3633,7 @@ __webpack_require__.r(__webpack_exports__);
       rComplemento: '',
       rTipoEndereco: '',
       rReferencia: '',
-      rComprovante: '',
-      rValorPedido: '',
-      rValorLiquido: '',
-      rValorCausa: '',
-      rPretensao: ''
+      rComprovante: ''
     };
   },
   methods: {
@@ -3822,10 +3641,10 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     novoReu: function novoReu() {
-      this.$emit('crDados', this.rEstrangeiro, this.rSexo, this.rCpf, this.rNome, this.rDocumento, this.rNumeroIdentificacao, this.rExpedidor, this.rEmissao, this.rEmail, this.rIncerto, this.rCep, this.rEstado, this.rCidade, this.rBairro, this.rTipoLogradouro, this.rLogradouro, this.rNumeroEndereco, this.rComplemento, this.rTipoEndereco, this.rReferencia, this.rComprovante, this.rValorPedido, this.rValorLiquido, this.rValorCausa, this.rPretensao);
+      this.$emit('crDados', this.rEstrangeiro, this.rSexo, this.rCpf, this.rNome, this.rDocumento, this.rNumeroIdentificacao, this.rExpedidor, this.rEmissao, this.rEmail, this.rIncerto, this.rCep, this.rEstado, this.rCidade, this.rBairro, this.rTipoLogradouro, this.rLogradouro, this.rNumeroEndereco, this.rComplemento, this.rTipoEndereco, this.rReferencia, this.rComprovante);
     },
     limparReuModal: function limparReuModal() {
-      this.rEstrangeiro = '', this.rSexo = '', this.rCpf = '', this.rNome = '', this.rDocumento = '', this.rNumeroIdentificacao = '', this.rExpedidor = '', this.rEmissao = '', this.rEmail = '', this.rIncerto = '', this.rCep = '', this.rEstado = '', this.rCidade = '', this.rBairro = '', this.rTipoLogradouro = '', this.rLogradouro = '', this.rNumeroEndereco = '', this.rComplemento = '', this.rTipoEndereco = '', this.rReferencia = '', this.rComprovante = '', this.rValorPedido = '', this.rValorLiquido = '', this.rValorCausa = '', this.rPretensao = '';
+      this.rEstrangeiro = '', this.rSexo = '', this.rCpf = '', this.rNome = '', this.rDocumento = '', this.rNumeroIdentificacao = '', this.rExpedidor = '', this.rEmissao = '', this.rEmail = '', this.rIncerto = '', this.rCep = '', this.rEstado = '', this.rCidade = '', this.rBairro = '', this.rTipoLogradouro = '', this.rLogradouro = '', this.rNumeroEndereco = '', this.rComplemento = '', this.rTipoEndereco = '', this.rReferencia = '', this.rComprovante = '';
     }
   }
 });
@@ -4705,7 +4524,7 @@ __webpack_require__.r(__webpack_exports__);
       this.$refs.resetarAutor.limparAutorModal();
     },
     //funções para o array deRepresentanteAutor
-    adicionarRepresentanteAutor: function adicionarRepresentanteAutor(raIncapaz, raMassa, raInsolvente, raPreso, raEspolio, raCondominio, raParte, raMinisterio, raPessoa, raSexo, raCpf, raNome, raDocumento, raNumeroIdentificacao, raEmissor, raEmissao, raTelefone, raEmail, raCep, raEstado, raCidade, raBairro, raTipoLogradouro, raLogradouro, raNumeroEndereco, raComplemento, raTipoEndereco, raReferencia, raComprovante, raValorPedido, raValorLiquido, raValorCausa, raPretensao, raEstadoCivil, raProfissao, raNacionalidade, raEstadoNaturalidade, raCidadeNaturalidade, raPai, raMae, raNascimento) {
+    adicionarRepresentanteAutor: function adicionarRepresentanteAutor(raIncapaz, raMassa, raInsolvente, raPreso, raEspolio, raCondominio, raParte, raMinisterio, raPessoa, raSexo, raCpf, raNome, raDocumento, raNumeroIdentificacao, raEmissor, raEmissao, raTelefone, raEmail, raCep, raEstado, raCidade, raBairro, raTipoLogradouro, raLogradouro, raNumeroEndereco, raComplemento, raTipoEndereco, raReferencia, raComprovante, raEstadoCivil, raProfissao, raNacionalidade, raEstadoNaturalidade, raCidadeNaturalidade, raPai, raMae, raNascimento) {
       while (this.deRepresentanteAutor.length > 0) {
         this.deRepresentanteAutor.pop();
       }
@@ -4740,10 +4559,6 @@ __webpack_require__.r(__webpack_exports__);
         'raTipoEndereco': raTipoEndereco,
         'raReferencia': raReferencia,
         'raComprovante': raComprovante,
-        'raValorPedido': raValorPedido,
-        'raValorLiquido': raValorLiquido,
-        'raValorCausa': raValorCausa,
-        'raPretensao': raPretensao,
         'raEstadoCivil': raEstadoCivil,
         'raProfissao': raProfissao,
         'raNacionalidade': raNacionalidade,
@@ -4762,7 +4577,7 @@ __webpack_require__.r(__webpack_exports__);
       this.$refs.resetarRepresentanteAutor.limparRepresentanteAutorModal();
     },
     //funções para o array deReu
-    adicionarReu: function adicionarReu(rEstrangeiro, rSexo, rCpf, rNome, rDocumento, rNumeroIdentificacao, rExpedidor, rEmissao, rEmail, rIncerto, rCep, rEstado, rCidade, rBairro, rTipoLogradouro, rLogradouro, rNumeroEndereco, rComplemento, rTipoEndereco, rReferencia, rComprovante, rValorPedido, rValorLiquido, rValorCausa, rPretensao) {
+    adicionarReu: function adicionarReu(rEstrangeiro, rSexo, rCpf, rNome, rDocumento, rNumeroIdentificacao, rExpedidor, rEmissao, rEmail, rIncerto, rCep, rEstado, rCidade, rBairro, rTipoLogradouro, rLogradouro, rNumeroEndereco, rComplemento, rTipoEndereco, rReferencia, rComprovante) {
       while (this.deReu.length > 0) {
         this.deReu.pop();
       }
@@ -4788,11 +4603,7 @@ __webpack_require__.r(__webpack_exports__);
         'rComplemento': rComplemento,
         'rTipoEndereco': rTipoEndereco,
         'rReferencia': rReferencia,
-        'rComprovante': rComprovante,
-        'rValorPedido': rValorPedido,
-        'rValorLiquido': rValorLiquido,
-        'rValorCausa': rValorCausa,
-        'rPretensao': rPretensao
+        'rComprovante': rComprovante
       });
     },
     excluirReu: function excluirReu() {
@@ -4832,7 +4643,7 @@ __webpack_require__.r(__webpack_exports__);
       this.$refs.resetarReuJuridico.limparReuJuridicoModal();
     },
     //funções para o array deRepresentanteReu
-    adicionarRepresentanteReu: function adicionarRepresentanteReu(rrParte, rrPessoa, rrSexo, rrCpf, rrNome, rrMenor, rrDocumento, rrNumeroIdentificacao, rrEmissor, rrEmissao, rrTelefone, rrEmail, rrIncerto, rrCep, rrEstado, rrCidade, rrBairro, rrTipoLogradouro, rrLogradouro, rrNumeroEndereco, rrComplemento, rrTipoEndereco, rrReferencia, rrComprovante, rrValorPedido, rrValorLiquido, rrValorCausa, rrPretensao) {
+    adicionarRepresentanteReu: function adicionarRepresentanteReu(rrParte, rrPessoa, rrSexo, rrCpf, rrNome, rrMenor, rrDocumento, rrNumeroIdentificacao, rrEmissor, rrEmissao, rrTelefone, rrEmail, rrIncerto, rrCep, rrEstado, rrCidade, rrBairro, rrTipoLogradouro, rrLogradouro, rrNumeroEndereco, rrComplemento, rrTipoEndereco, rrReferencia, rrComprovante) {
       while (this.deRepresentanteReu.length > 0) {
         this.deRepresentanteReu.pop();
       }
@@ -4861,11 +4672,7 @@ __webpack_require__.r(__webpack_exports__);
         'rrComplemento': rrComplemento,
         'rrTipoEndereco': rrTipoEndereco,
         'rrReferencia': rrReferencia,
-        'rrComprovante': rrComprovante,
-        'rrValorPedido': rrValorPedido,
-        'rrValorLiquido': rrValorLiquido,
-        'rrValorCausa': rrValorCausa,
-        'rrPretensao': rrPretensao
+        'rrComprovante': rrComprovante
       });
     },
     excluirRepresentanteReu: function excluirRepresentanteReu() {
@@ -46979,272 +46786,6 @@ var render = function() {
     _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "card-header" }, [
         _c("h5", [
-          _c("strong", [_vm._v("Valor do Pedido")]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              attrs: { href: "#ajuda" },
-              on: {
-                click: function($event) {
-                  return _vm.ajuda()
-                }
-              }
-            },
-            [_vm._v("(?)")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "custom-control custom-control-inline custom-checkbox"
-                },
-                [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.raValorLiquido,
-                        expression: "raValorLiquido"
-                      }
-                    ],
-                    staticClass: "custom-control-input",
-                    attrs: {
-                      type: "checkbox",
-                      name: "ra_valorLiquido",
-                      value: "O valor postulado é liquido",
-                      id: "CRA_vPC1"
-                    },
-                    domProps: {
-                      checked: Array.isArray(_vm.raValorLiquido)
-                        ? _vm._i(
-                            _vm.raValorLiquido,
-                            "O valor postulado é liquido"
-                          ) > -1
-                        : _vm.raValorLiquido
-                    },
-                    on: {
-                      change: function($event) {
-                        var $$a = _vm.raValorLiquido,
-                          $$el = $event.target,
-                          $$c = $$el.checked ? true : false
-                        if (Array.isArray($$a)) {
-                          var $$v = "O valor postulado é liquido",
-                            $$i = _vm._i($$a, $$v)
-                          if ($$el.checked) {
-                            $$i < 0 && (_vm.raValorLiquido = $$a.concat([$$v]))
-                          } else {
-                            $$i > -1 &&
-                              (_vm.raValorLiquido = $$a
-                                .slice(0, $$i)
-                                .concat($$a.slice($$i + 1)))
-                          }
-                        } else {
-                          _vm.raValorLiquido = $$c
-                        }
-                      }
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "label",
-                    {
-                      staticClass: "custom-control-label",
-                      attrs: { for: "CRA_vPC1" }
-                    },
-                    [_vm._v("O valor postulado é liquido? ")]
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(24),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "money",
-                      rawName: "v-money",
-                      value: "R$",
-                      expression: "'R$'"
-                    },
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.raValorPedido,
-                      expression: "raValorPedido"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "ra_valorPedido" },
-                  domProps: { value: _vm.raValorPedido },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.raValorPedido = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ])
-          ])
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
-    _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "card-header" }, [
-        _c("h5", [
-          _c("strong", [_vm._v("Valor da Causa")]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              attrs: { href: "#ajuda" },
-              on: {
-                click: function($event) {
-                  return _vm.ajuda()
-                }
-              }
-            },
-            [_vm._v("(?)")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(25),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "money",
-                      rawName: "v-money",
-                      value: "R$",
-                      expression: "'R$'"
-                    },
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.raValorCausa,
-                      expression: "raValorCausa"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "ra_valorCausa" },
-                  domProps: { value: _vm.raValorCausa },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.raValorCausa = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "custom-control custom-control-inline custom-checkbox"
-                },
-                [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.raPretensao,
-                        expression: "raPretensao"
-                      }
-                    ],
-                    staticClass: "custom-control-input",
-                    attrs: {
-                      type: "checkbox",
-                      name: "ra_pretensao",
-                      value:
-                        "A pretensão deduzida versa sobre obrigações vincendas",
-                      id: "CRA_vPC2"
-                    },
-                    domProps: {
-                      checked: Array.isArray(_vm.raPretensao)
-                        ? _vm._i(
-                            _vm.raPretensao,
-                            "A pretensão deduzida versa sobre obrigações vincendas"
-                          ) > -1
-                        : _vm.raPretensao
-                    },
-                    on: {
-                      change: function($event) {
-                        var $$a = _vm.raPretensao,
-                          $$el = $event.target,
-                          $$c = $$el.checked ? true : false
-                        if (Array.isArray($$a)) {
-                          var $$v =
-                              "A pretensão deduzida versa sobre obrigações vincendas",
-                            $$i = _vm._i($$a, $$v)
-                          if ($$el.checked) {
-                            $$i < 0 && (_vm.raPretensao = $$a.concat([$$v]))
-                          } else {
-                            $$i > -1 &&
-                              (_vm.raPretensao = $$a
-                                .slice(0, $$i)
-                                .concat($$a.slice($$i + 1)))
-                          }
-                        } else {
-                          _vm.raPretensao = $$c
-                        }
-                      }
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "label",
-                    {
-                      staticClass: "custom-control-label",
-                      attrs: { for: "CRA_vPC2" }
-                    },
-                    [
-                      _vm._v(
-                        "A pretensão deduzida versa sobre obrigações vincendas? "
-                      )
-                    ]
-                  )
-                ]
-              )
-            ])
-          ])
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
-    _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "card-header" }, [
-        _c("h5", [
           _c("strong", [_vm._v("Dados Complementares")]),
           _vm._v(" "),
           _c(
@@ -47267,7 +46808,7 @@ var render = function() {
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(26),
+                _vm._m(24),
                 _vm._v(" "),
                 _c(
                   "select",
@@ -47335,7 +46876,7 @@ var render = function() {
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(27),
+                _vm._m(25),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -47367,7 +46908,7 @@ var render = function() {
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(28),
+                _vm._m(26),
                 _vm._v(" "),
                 _c(
                   "select",
@@ -47399,10 +46940,6 @@ var render = function() {
                     }
                   },
                   [
-                    _c("option", { attrs: { value: "" } }, [
-                      _vm._v("Escolha uma naturalidade")
-                    ]),
-                    _vm._v(" "),
                     _c("option", { attrs: { value: "Brasileira" } }, [
                       _vm._v("Brasileira")
                     ]),
@@ -47427,7 +46964,7 @@ var render = function() {
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(29),
+                _vm._m(27),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -47489,7 +47026,7 @@ var render = function() {
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(30),
+                _vm._m(28),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -47521,7 +47058,7 @@ var render = function() {
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(31),
+                _vm._m(29),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -47553,7 +47090,7 @@ var render = function() {
           _c("div", { attrs: { id: "alinhado" } }, [
             _c("div", { staticClass: "form-inline" }, [
               _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(32),
+                _vm._m(30),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -47765,18 +47302,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("span", [_c("strong", [_vm._v("Referência ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Valor Postulado")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Valor da Causa")])])
   },
   function() {
     var _vm = this
@@ -49091,272 +48616,6 @@ var render = function() {
     _vm._v(" "),
     _c("br"),
     _vm._v(" "),
-    _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "card-header" }, [
-        _c("h5", [
-          _c("strong", [_vm._v("Valor do Pedido")]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              attrs: { href: "#ajuda" },
-              on: {
-                click: function($event) {
-                  return _vm.ajuda()
-                }
-              }
-            },
-            [_vm._v("(?)")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "custom-control custom-control-inline custom-checkbox"
-                },
-                [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.rrValorLiquido,
-                        expression: "rrValorLiquido"
-                      }
-                    ],
-                    staticClass: "custom-control-input",
-                    attrs: {
-                      type: "checkbox",
-                      name: "rr_valorLiquido",
-                      value: "O valor postulado é liquido",
-                      id: "CRR_vPC1"
-                    },
-                    domProps: {
-                      checked: Array.isArray(_vm.rrValorLiquido)
-                        ? _vm._i(
-                            _vm.rrValorLiquido,
-                            "O valor postulado é liquido"
-                          ) > -1
-                        : _vm.rrValorLiquido
-                    },
-                    on: {
-                      change: function($event) {
-                        var $$a = _vm.rrValorLiquido,
-                          $$el = $event.target,
-                          $$c = $$el.checked ? true : false
-                        if (Array.isArray($$a)) {
-                          var $$v = "O valor postulado é liquido",
-                            $$i = _vm._i($$a, $$v)
-                          if ($$el.checked) {
-                            $$i < 0 && (_vm.rrValorLiquido = $$a.concat([$$v]))
-                          } else {
-                            $$i > -1 &&
-                              (_vm.rrValorLiquido = $$a
-                                .slice(0, $$i)
-                                .concat($$a.slice($$i + 1)))
-                          }
-                        } else {
-                          _vm.rrValorLiquido = $$c
-                        }
-                      }
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "label",
-                    {
-                      staticClass: "custom-control-label",
-                      attrs: { for: "CRR_vPC1" }
-                    },
-                    [_vm._v("O valor postulado é liquido? ")]
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(24),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "money",
-                      rawName: "v-money",
-                      value: "R$",
-                      expression: "'R$'"
-                    },
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rrValorPedido,
-                      expression: "rrValorPedido"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "rr_valorPedido" },
-                  domProps: { value: _vm.rrValorPedido },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rrValorPedido = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ])
-          ])
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
-    _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "card-header" }, [
-        _c("h5", [
-          _c("strong", [_vm._v("Valor da Causa")]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              attrs: { href: "#ajuda" },
-              on: {
-                click: function($event) {
-                  return _vm.ajuda()
-                }
-              }
-            },
-            [_vm._v("(?)")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(25),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "money",
-                      rawName: "v-money",
-                      value: "R$",
-                      expression: "'R$'"
-                    },
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rrValorCausa,
-                      expression: "rrValorCausa"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "rr_valorCausa" },
-                  domProps: { value: _vm.rrValorCausa },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rrValorCausa = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "custom-control custom-control-inline custom-checkbox"
-                },
-                [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.rrPretensao,
-                        expression: "rrPretensao"
-                      }
-                    ],
-                    staticClass: "custom-control-input",
-                    attrs: {
-                      type: "checkbox",
-                      name: "rr_pretensao",
-                      value:
-                        "A pretensão deduzida versa sobre obrigações vincendas",
-                      id: "CRR_vPC2"
-                    },
-                    domProps: {
-                      checked: Array.isArray(_vm.rrPretensao)
-                        ? _vm._i(
-                            _vm.rrPretensao,
-                            "A pretensão deduzida versa sobre obrigações vincendas"
-                          ) > -1
-                        : _vm.rrPretensao
-                    },
-                    on: {
-                      change: function($event) {
-                        var $$a = _vm.rrPretensao,
-                          $$el = $event.target,
-                          $$c = $$el.checked ? true : false
-                        if (Array.isArray($$a)) {
-                          var $$v =
-                              "A pretensão deduzida versa sobre obrigações vincendas",
-                            $$i = _vm._i($$a, $$v)
-                          if ($$el.checked) {
-                            $$i < 0 && (_vm.rrPretensao = $$a.concat([$$v]))
-                          } else {
-                            $$i > -1 &&
-                              (_vm.rrPretensao = $$a
-                                .slice(0, $$i)
-                                .concat($$a.slice($$i + 1)))
-                          }
-                        } else {
-                          _vm.rrPretensao = $$c
-                        }
-                      }
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "label",
-                    {
-                      staticClass: "custom-control-label",
-                      attrs: { for: "CRR_vPC2" }
-                    },
-                    [
-                      _vm._v(
-                        "A pretensão deduzida versa sobre obrigações vincendas? "
-                      )
-                    ]
-                  )
-                ]
-              )
-            ])
-          ])
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
     _c("div", { attrs: { align: "center" } }, [
       _c(
         "button",
@@ -49529,18 +48788,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("span", [_c("strong", [_vm._v("Referência ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Valor Postulado")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Valor da Causa")])])
   }
 ]
 render._withStripped = true
@@ -50519,272 +49766,6 @@ var render = function() {
     _vm._v(" "),
     _c("br"),
     _vm._v(" "),
-    _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "card-header" }, [
-        _c("h5", [
-          _c("strong", [_vm._v("Valor do Pedido")]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              attrs: { href: "#ajuda" },
-              on: {
-                click: function($event) {
-                  return _vm.ajuda()
-                }
-              }
-            },
-            [_vm._v("(?)")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "custom-control custom-control-inline custom-checkbox"
-                },
-                [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.rValorLiquido,
-                        expression: "rValorLiquido"
-                      }
-                    ],
-                    staticClass: "custom-control-input",
-                    attrs: {
-                      type: "checkbox",
-                      name: "r_valorLiquido",
-                      value: "O valor postulado é liquido",
-                      id: "CR_vPC1"
-                    },
-                    domProps: {
-                      checked: Array.isArray(_vm.rValorLiquido)
-                        ? _vm._i(
-                            _vm.rValorLiquido,
-                            "O valor postulado é liquido"
-                          ) > -1
-                        : _vm.rValorLiquido
-                    },
-                    on: {
-                      change: function($event) {
-                        var $$a = _vm.rValorLiquido,
-                          $$el = $event.target,
-                          $$c = $$el.checked ? true : false
-                        if (Array.isArray($$a)) {
-                          var $$v = "O valor postulado é liquido",
-                            $$i = _vm._i($$a, $$v)
-                          if ($$el.checked) {
-                            $$i < 0 && (_vm.rValorLiquido = $$a.concat([$$v]))
-                          } else {
-                            $$i > -1 &&
-                              (_vm.rValorLiquido = $$a
-                                .slice(0, $$i)
-                                .concat($$a.slice($$i + 1)))
-                          }
-                        } else {
-                          _vm.rValorLiquido = $$c
-                        }
-                      }
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "label",
-                    {
-                      staticClass: "custom-control-label",
-                      attrs: { for: "CR_vPC1" }
-                    },
-                    [_vm._v("O valor postulado é liquido? ")]
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(23),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "money",
-                      rawName: "v-money",
-                      value: "R$",
-                      expression: "'R$'"
-                    },
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rValorPedido,
-                      expression: "rValorPedido"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "r_valorPedido" },
-                  domProps: { value: _vm.rValorPedido },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rValorPedido = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ])
-          ])
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
-    _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "card-header" }, [
-        _c("h5", [
-          _c("strong", [_vm._v("Valor da Causa")]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              attrs: { href: "#ajuda" },
-              on: {
-                click: function($event) {
-                  return _vm.ajuda()
-                }
-              }
-            },
-            [_vm._v("(?)")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { attrs: { id: "alinhado" } }, [
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(24),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "money",
-                      rawName: "v-money",
-                      value: "R$",
-                      expression: "'R$'"
-                    },
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.rValorCausa,
-                      expression: "rValorCausa"
-                    }
-                  ],
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "r_valorCausa" },
-                  domProps: { value: _vm.rValorCausa },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.rValorCausa = $event.target.value
-                    }
-                  }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "custom-control custom-control-inline custom-checkbox"
-                },
-                [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.rPretensao,
-                        expression: "rPretensao"
-                      }
-                    ],
-                    staticClass: "custom-control-input",
-                    attrs: {
-                      type: "checkbox",
-                      name: "r_pretensao",
-                      value:
-                        "A pretensão deduzida versa sobre obrigações vincendas",
-                      id: "CR_vPC2"
-                    },
-                    domProps: {
-                      checked: Array.isArray(_vm.rPretensao)
-                        ? _vm._i(
-                            _vm.rPretensao,
-                            "A pretensão deduzida versa sobre obrigações vincendas"
-                          ) > -1
-                        : _vm.rPretensao
-                    },
-                    on: {
-                      change: function($event) {
-                        var $$a = _vm.rPretensao,
-                          $$el = $event.target,
-                          $$c = $$el.checked ? true : false
-                        if (Array.isArray($$a)) {
-                          var $$v =
-                              "A pretensão deduzida versa sobre obrigações vincendas",
-                            $$i = _vm._i($$a, $$v)
-                          if ($$el.checked) {
-                            $$i < 0 && (_vm.rPretensao = $$a.concat([$$v]))
-                          } else {
-                            $$i > -1 &&
-                              (_vm.rPretensao = $$a
-                                .slice(0, $$i)
-                                .concat($$a.slice($$i + 1)))
-                          }
-                        } else {
-                          _vm.rPretensao = $$c
-                        }
-                      }
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "label",
-                    {
-                      staticClass: "custom-control-label",
-                      attrs: { for: "CR_vPC2" }
-                    },
-                    [
-                      _vm._v(
-                        "A pretensão deduzida versa sobre obrigações vincendas? "
-                      )
-                    ]
-                  )
-                ]
-              )
-            ])
-          ])
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
     _c("div", { attrs: { align: "center" } }, [
       _c(
         "button",
@@ -50962,18 +49943,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("span", [_c("strong", [_vm._v("Referência ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Valor Postulado")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Valor da Causa")])])
   }
 ]
 render._withStripped = true

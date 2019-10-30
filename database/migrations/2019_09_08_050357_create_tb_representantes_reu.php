@@ -42,12 +42,6 @@ class CreateTbRepresentantesReu extends Migration
             $table->string('rr_tipoEndereco')->nullable();
             $table->string('rr_referencia')->nullable();
             $table->string('rr_comprovante')->nullable(); //O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial?
-            //Valor do Pedido
-            $table->string('rr_valorPedido')->nullable();
-            $table->string('rr_valorLiquido')->nullable(); //O valor postulado é liquido?
-            //Valor da Causa
-            $table->string('rr_valorCausa')->nullable();
-            $table->string('rr_pretensao')->nullable(); //A pretensão deduzida versa sobre obrigações vincendas?
             $table->timestamps(); //Hora e data de cadastro
         });
     }

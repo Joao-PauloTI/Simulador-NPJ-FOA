@@ -135,10 +135,6 @@ class ProcessoController extends Controller
             'ra_tipoEndereco' => 'nullable',
             'ra_referencia' => 'nullable',
             'ra_comprovante' => 'nullable',
-            'ra_valorPedido' => 'nullable',
-            'ra_valorLiquido' => 'nullable',
-            'ra_valorCausa' => 'nullable',
-            'ra_pretensao' => 'nullable',
             'ra_estadoCivil' => 'nullable',
             'ra_profissao' => 'nullable',
             'ra_nacionalidade' => 'nullable',
@@ -169,10 +165,6 @@ class ProcessoController extends Controller
             'r_tipoEndereco' => 'nullable',
             'r_referencia' => 'nullable',
             'r_comprovante' => 'nullable',
-            'r_valorPedido' => 'nullable',
-            'r_valorLiquido' => 'nullable',
-            'r_valorCausa' => 'nullable',
-            'r_pretensao' => 'nullable',
             //Réu - Pessoa Jurídica
             'rj_nome' => 'nullable',
             'rj_cnpj' => 'nullable',
@@ -211,10 +203,6 @@ class ProcessoController extends Controller
             'rr_tipoEndereco' => 'nullable',
             'rr_referencia' => 'nullable',
             'rr_comprovante' => 'nullable',
-            'rr_valorPedido' => 'nullable',
-            'rr_valorLiquido' => 'nullable',
-            'rr_valorCausa' => 'nullable',
-            'rr_pretensao' => 'nullable',
             //Anexo da petição
             'dap_arquivo' => 'nullable',
             'dap_descricao' => 'nullable',
@@ -343,10 +331,6 @@ class ProcessoController extends Controller
             'ra_tipoEndereco' => $request->get('ra_tipoEndereco'),
             'ra_referencia' => $request->get('ra_referencia'),
             'ra_comprovante' => $request->get('ra_comprovante'),
-            'ra_valorPedido' => $request->get('ra_valorPedido'),
-            'ra_valorLiquido' => $request->get('ra_valorLiquido'),
-            'ra_valorCausa' => $request->get('ra_valorCausa'),
-            'ra_pretensao' => $request->get('ra_pretensao'),
             'ra_estadoCivil' => $request->get('ra_estadoCivil'),
             'ra_profissao' => $request->get('ra_profissao'),
             'ra_nacionalidade' => $request->get('ra_nacionalidade'),
@@ -378,11 +362,7 @@ class ProcessoController extends Controller
             'r_complemento' => $request->get('r_complemento'),
             'r_tipoEndereco' => $request->get('r_tipoEndereco'),
             'r_referencia' => $request->get('r_referencia'),
-            'r_comprovante' => $request->get('r_comprovante'),
-            'r_valorPedido' => $request->get('r_valorPedido'),
-            'r_valorLiquido' => $request->get('r_valorLiquido'),
-            'r_valorCausa' => $request->get('r_valorCausa'),
-            'r_pretensao' => $request->get('r_pretensao')
+            'r_comprovante' => $request->get('r_comprovante')
         ]);
 
         $request->session()->put('sessaoReuJuridico', [
@@ -424,18 +404,14 @@ class ProcessoController extends Controller
             'rr_complemento' => $request->get('rr_complemento'),
             'rr_tipoEndereco' => $request->get('rr_tipoEndereco'),
             'rr_referencia' => $request->get('rr_referencia'),
-            'rr_comprovante' => $request->get('rr_comprovante'),
-            'rr_valorPedido' => $request->get('rr_valorPedido'),
-            'rr_valorLiquido' => $request->get('rr_valorLiquido'),
-            'rr_valorCausa' => $request->get('rr_valorCausa'),
-            'rr_pretensao' => $request->get('rr_pretensao')
+            'rr_comprovante' => $request->get('rr_comprovante')
         ]);
 
+        if($request->session()->exists('sessaoDocumentoAnexoPeticao')){
+            $request->session()->forget('sessaoDocumentoAnexoPeticao');
+        }
         if(isset($request->dap_arquivo)){
             if($request->hasFile('dap_arquivo')){
-                if($request->session()->exists('sessaoDocumentoAnexoPeticao')){
-                    $request->session()->forget('sessaoDocumentoAnexoPeticao');
-                }
                 foreach ($request->dap_arquivo as $key => $arquivo) {
                     $arquivo = $request->file('dap_arquivo')[$key]->getClientOriginalName();
                     $dap_caminho = $request->file('dap_arquivo')[$key]->storeAs('public/documentos/anexosPeticao', $arquivo);
@@ -447,6 +423,9 @@ class ProcessoController extends Controller
             }
         }
         
+        if($request->session()->exists('sessaoDocumentoProcuracao')){
+            $request->session()->forget('sessaoDocumentoProcuracao');
+        }
         if($request->hasFile('dpr_arquivo')){
             $dpr_arquivo = $request->file('dpr_arquivo')->getClientOriginalName();
             $dap_caminho = $request->file('dpr_arquivo')->storeAs('public/documentos/procuracoes', $dpr_arquivo);
@@ -456,6 +435,9 @@ class ProcessoController extends Controller
             ]);
         }
         
+        if($request->session()->exists('sessaoDocumentoCpf')){
+            $request->session()->forget('sessaoDocumentoCpf');
+        }
         if($request->hasFile('dcpf_arquivo')){
             $dcpf_arquivo = $request->file('dcpf_arquivo')->getClientOriginalName();
             $dcpf_caminho = $request->file('dcpf_arquivo')->storeAs('public/documentos/cpfs', $dcpf_arquivo);
@@ -465,6 +447,9 @@ class ProcessoController extends Controller
             ]);
         }
 
+        if($request->session()->exists('sessaoDocumentoComprovanteResidencia')){
+            $request->session()->forget('sessaoDocumentoComprovanteResidencia');
+        }
         if($request->hasFile('dcr_arquivo')){
             $dcr_arquivo = $request->file('dcr_arquivo')->getClientOriginalName();
             $dcr_caminho = $request->file('dcr_arquivo')->storeAs('public/documentos/comprovantesResidencia', $dcr_arquivo);
@@ -474,6 +459,9 @@ class ProcessoController extends Controller
             ]);
         }
 
+        if($request->session()->exists('sessaoDocumentoPeticaoInicial')){
+            $request->session()->forget('sessaoDocumentoPeticaoInicial');
+        }
         if($request->hasFile('dpi_arquivo')){
             $dpi_arquivo = $request->file('dpi_arquivo')->getClientOriginalName();
             $dpi_caminho = $request->file('dpi_arquivo')->storeAs('public/documentos/peticoesIniciais', $dpi_arquivo);
@@ -591,10 +579,6 @@ class ProcessoController extends Controller
             'ra_tipoEndereco' => 'nullable',
             'ra_referencia' => 'nullable',
             'ra_comprovante' => 'nullable',
-            'ra_valorPedido' => 'nullable',
-            'ra_valorLiquido' => 'nullable',
-            'ra_valorCausa' => 'nullable',
-            'ra_pretensao' => 'nullable',
             'ra_estadoCivil' => 'nullable',
             'ra_profissao' => 'nullable',
             'ra_nacionalidade' => 'nullable',
@@ -625,10 +609,6 @@ class ProcessoController extends Controller
             'r_tipoEndereco' => 'nullable',
             'r_referencia' => 'nullable',
             'r_comprovante' => 'nullable',
-            'r_valorPedido' => 'nullable',
-            'r_valorLiquido' => 'nullable',
-            'r_valorCausa' => 'nullable',
-            'r_pretensao' => 'nullable',
             //Réu - Pessoa Jurídica
             'rj_nome' => 'nullable',
             'rj_cnpj' => 'nullable',
@@ -667,10 +647,6 @@ class ProcessoController extends Controller
             'rr_tipoEndereco' => 'nullable',
             'rr_referencia' => 'nullable',
             'rr_comprovante' => 'nullable',
-            'rr_valorPedido' => 'nullable',
-            'rr_valorLiquido' => 'nullable',
-            'rr_valorCausa' => 'nullable',
-            'rr_pretensao' => 'nullable',
             //Anexo da petição
             'dap_arquivo' => 'nullable',
             'dap_descricao' => 'nullable',
@@ -882,10 +858,6 @@ class ProcessoController extends Controller
             'ra_tipoEndereco' => $request->get('ra_tipoEndereco'),
             'ra_referencia' => $request->get('ra_referencia'),
             'ra_comprovante' => $request->get('ra_comprovante'),
-            'ra_valorPedido' => $request->get('ra_valorPedido'),
-            'ra_valorLiquido' => $request->get('ra_valorLiquido'),
-            'ra_valorCausa' => $request->get('ra_valorCausa'),
-            'ra_pretensao' => $request->get('ra_pretensao'),
             'ra_estadoCivil' => $request->get('ra_estadoCivil'),
             'ra_profissao' => $request->get('ra_profissao'),
             'ra_nacionalidade' => $request->get('ra_nacionalidade'),
@@ -919,11 +891,7 @@ class ProcessoController extends Controller
             'r_complemento' => $request->get('r_complemento'),
             'r_tipoEndereco' => $request->get('r_tipoEndereco'),
             'r_referencia' => $request->get('r_referencia'),
-            'r_comprovante' => $request->get('r_comprovante'),
-            'r_valorPedido' => $request->get('r_valorPedido'),
-            'r_valorLiquido' => $request->get('r_valorLiquido'),
-            'r_valorCausa' => $request->get('r_valorCausa'),
-            'r_pretensao' => $request->get('r_pretensao')
+            'r_comprovante' => $request->get('r_comprovante')
         ]);
         $reu->reu_processo()->associate($processo);
         $reu->save();
@@ -969,11 +937,7 @@ class ProcessoController extends Controller
             'rr_complemento' => $request->get('rr_complemento'),
             'rr_tipoEndereco' => $request->get('rr_tipoEndereco'),
             'rr_referencia' => $request->get('rr_referencia'),
-            'rr_comprovante' => $request->get('rr_comprovante'),
-            'rr_valorPedido' => $request->get('rr_valorPedido'),
-            'rr_valorLiquido' => $request->get('rr_valorLiquido'),
-            'rr_valorCausa' => $request->get('rr_valorCausa'),
-            'rr_pretensao' => $request->get('rr_pretensao')
+            'rr_comprovante' => $request->get('rr_comprovante')
         ]);
         $representanteReu->representanteReu_processo()->associate($processo);
         $representanteReu->save();

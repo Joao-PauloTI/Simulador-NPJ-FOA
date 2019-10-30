@@ -48,12 +48,6 @@ class CreateTbRepresentantesAutores extends Migration
             $table->string('ra_tipoEndereco')->nullable();
             $table->string('ra_referencia')->nullable();
             $table->string('ra_comprovante')->nullable(); //O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial?
-            //Valor do Pedido
-            $table->string('ra_valorPedido')->nullable();
-            $table->string('ra_valorLiquido')->nullable(); //O valor postulado é liquido?
-            //Valor da Causa
-            $table->string('ra_valorCausa')->nullable();
-            $table->string('ra_pretensao')->nullable(); //A pretensão deduzida versa sobre obrigações vincendas?
             //Dados Complementares
             $table->string('ra_estadoCivil')->nullable();
             $table->string('ra_profissao')->nullable();

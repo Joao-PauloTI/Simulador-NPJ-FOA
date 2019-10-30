@@ -345,7 +345,7 @@ export default {
             this.$refs.resetarAutor.limparAutorModal()
         },
         //funções para o array deRepresentanteAutor
-        adicionarRepresentanteAutor: function(raIncapaz, raMassa, raInsolvente, raPreso, raEspolio, raCondominio, raParte, raMinisterio, raPessoa, raSexo, raCpf, raNome, raDocumento, raNumeroIdentificacao, raEmissor, raEmissao, raTelefone, raEmail, raCep, raEstado, raCidade, raBairro, raTipoLogradouro, raLogradouro, raNumeroEndereco, raComplemento, raTipoEndereco, raReferencia, raComprovante, raValorPedido, raValorLiquido, raValorCausa, raPretensao, raEstadoCivil, raProfissao, raNacionalidade, raEstadoNaturalidade, raCidadeNaturalidade, raPai, raMae, raNascimento) {
+        adicionarRepresentanteAutor: function(raIncapaz, raMassa, raInsolvente, raPreso, raEspolio, raCondominio, raParte, raMinisterio, raPessoa, raSexo, raCpf, raNome, raDocumento, raNumeroIdentificacao, raEmissor, raEmissao, raTelefone, raEmail, raCep, raEstado, raCidade, raBairro, raTipoLogradouro, raLogradouro, raNumeroEndereco, raComplemento, raTipoEndereco, raReferencia, raComprovante, raEstadoCivil, raProfissao, raNacionalidade, raEstadoNaturalidade, raCidadeNaturalidade, raPai, raMae, raNascimento) {
 
             while (this.deRepresentanteAutor.length > 0) {
                 this.deRepresentanteAutor.pop()
@@ -380,10 +380,6 @@ export default {
                 'raTipoEndereco': raTipoEndereco,
                 'raReferencia': raReferencia,
                 'raComprovante': raComprovante,
-                'raValorPedido': raValorPedido,
-                'raValorLiquido': raValorLiquido,
-                'raValorCausa': raValorCausa,
-                'raPretensao': raPretensao,
                 'raEstadoCivil': raEstadoCivil,
                 'raProfissao': raProfissao,
                 'raNacionalidade': raNacionalidade,
@@ -401,7 +397,7 @@ export default {
             this.$refs.resetarRepresentanteAutor.limparRepresentanteAutorModal()
         },
         //funções para o array deReu
-        adicionarReu: function(rEstrangeiro, rSexo, rCpf, rNome, rDocumento, rNumeroIdentificacao, rExpedidor, rEmissao, rEmail, rIncerto, rCep, rEstado, rCidade, rBairro, rTipoLogradouro, rLogradouro, rNumeroEndereco, rComplemento, rTipoEndereco, rReferencia, rComprovante, rValorPedido, rValorLiquido, rValorCausa, rPretensao) {
+        adicionarReu: function(rEstrangeiro, rSexo, rCpf, rNome, rDocumento, rNumeroIdentificacao, rExpedidor, rEmissao, rEmail, rIncerto, rCep, rEstado, rCidade, rBairro, rTipoLogradouro, rLogradouro, rNumeroEndereco, rComplemento, rTipoEndereco, rReferencia, rComprovante) {
 
             while (this.deReu.length > 0) {
                 this.deReu.pop()
@@ -427,11 +423,7 @@ export default {
                 'rComplemento': rComplemento,
                 'rTipoEndereco': rTipoEndereco,
                 'rReferencia': rReferencia,
-                'rComprovante': rComprovante,
-                'rValorPedido': rValorPedido,
-                'rValorLiquido': rValorLiquido,
-                'rValorCausa': rValorCausa,
-                'rPretensao': rPretensao
+                'rComprovante': rComprovante
             })
         },
         excluirReu: function() {
@@ -469,7 +461,7 @@ export default {
             this.$refs.resetarReuJuridico.limparReuJuridicoModal()
         },
         //funções para o array deRepresentanteReu
-        adicionarRepresentanteReu: function(rrParte, rrPessoa, rrSexo, rrCpf, rrNome, rrMenor, rrDocumento, rrNumeroIdentificacao, rrEmissor, rrEmissao, rrTelefone, rrEmail, rrIncerto, rrCep, rrEstado, rrCidade, rrBairro, rrTipoLogradouro, rrLogradouro, rrNumeroEndereco, rrComplemento, rrTipoEndereco, rrReferencia, rrComprovante, rrValorPedido, rrValorLiquido, rrValorCausa, rrPretensao) {
+        adicionarRepresentanteReu: function(rrParte, rrPessoa, rrSexo, rrCpf, rrNome, rrMenor, rrDocumento, rrNumeroIdentificacao, rrEmissor, rrEmissao, rrTelefone, rrEmail, rrIncerto, rrCep, rrEstado, rrCidade, rrBairro, rrTipoLogradouro, rrLogradouro, rrNumeroEndereco, rrComplemento, rrTipoEndereco, rrReferencia, rrComprovante) {
 
             while (this.deRepresentanteReu.length > 0) {
                 this.deRepresentanteReu.pop()
@@ -498,11 +490,7 @@ export default {
                 'rrComplemento': rrComplemento,
                 'rrTipoEndereco': rrTipoEndereco,
                 'rrReferencia': rrReferencia,
-                'rrComprovante': rrComprovante,
-                'rrValorPedido': rrValorPedido,
-                'rrValorLiquido': rrValorLiquido,
-                'rrValorCausa': rrValorCausa,
-                'rrPretensao': rrPretensao
+                'rrComprovante': rrComprovante
             })
         },
         excluirRepresentanteReu: function() {
