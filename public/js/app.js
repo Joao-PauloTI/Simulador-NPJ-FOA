@@ -43692,7 +43692,8 @@ var render = function() {
                                 type: "checkbox",
                                 name: "ad_representa[]",
                                 value: "Sim",
-                                id: advogado.arNumeroOAB
+                                id: advogado.arNumeroOAB,
+                                checked: ""
                               }
                             }),
                             _vm._v(" "),
@@ -43715,7 +43716,8 @@ var render = function() {
                                 type: "checkbox",
                                 name: "ad_intimacao[]",
                                 value: "Sim",
-                                id: advogado.arNome
+                                id: advogado.arNome,
+                                checked: ""
                               }
                             }),
                             _vm._v(" "),
@@ -43746,7 +43748,8 @@ var render = function() {
                                 type: "checkbox",
                                 name: "dp_representa[]",
                                 value: "Sim",
-                                id: defensor.arMatricula
+                                id: defensor.arMatricula,
+                                checked: ""
                               }
                             }),
                             _vm._v(" "),
@@ -43769,7 +43772,8 @@ var render = function() {
                                 type: "checkbox",
                                 name: "dp_intimacao[]",
                                 value: "Sim",
-                                id: defensor.arNome
+                                id: defensor.arNome,
+                                checked: ""
                               }
                             }),
                             _vm._v(" "),

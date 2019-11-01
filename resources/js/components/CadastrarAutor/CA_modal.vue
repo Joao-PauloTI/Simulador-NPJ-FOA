@@ -218,13 +218,13 @@
                             <td>{{advogado.arNome}}</td>
                             <td>
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" name="ad_representa[]" value="Sim" v-bind:id="advogado.arNumeroOAB">
+                                    <input type="checkbox" class="custom-control-input" name="ad_representa[]" value="Sim" v-bind:id="advogado.arNumeroOAB" checked>
                                     <label class="custom-control-label" v-bind:for="advogado.arNumeroOAB"></label>
                                 </div>
                             </td>
                             <td>
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" name="ad_intimacao[]" value="Sim" v-bind:id="advogado.arNome">
+                                    <input type="checkbox" class="custom-control-input" name="ad_intimacao[]" value="Sim" v-bind:id="advogado.arNome" checked>
                                     <label class="custom-control-label" v-bind:for="advogado.arNome"></label>
                                 </div>
                             </td>
@@ -234,13 +234,13 @@
                             <td>{{defensor.arNome}}</td>
                             <td>
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" name="dp_representa[]" value="Sim" v-bind:id="defensor.arMatricula">
+                                    <input type="checkbox" class="custom-control-input" name="dp_representa[]" value="Sim" v-bind:id="defensor.arMatricula" checked>
                                     <label class="custom-control-label" v-bind:for="defensor.arMatricula"></label>
                                 </div>
                             </td>
                             <td>
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" name="dp_intimacao[]" value="Sim" v-bind:id="defensor.arNome">
+                                    <input type="checkbox" class="custom-control-input" name="dp_intimacao[]" value="Sim" v-bind:id="defensor.arNome" checked>
                                     <label class="custom-control-label" v-bind:for="defensor.arNome"></label>
                                 </div>
                             </td>

@@ -13,16 +13,16 @@
 	<title>Guia de Protocolo</title>
 </head>
 <body>
-	<form action="{{ route('processo.salvar') }}" method="POST" enctype="multipart/form-data">
+	<form action="{{ route('processo.salvar') }}" target="_blank" method="POST" enctype="multipart/form-data">
 		@csrf
 		<div class="container">
 			<div align="center" style="background-color: #cccccc">
 				<br>
 				<h5 style="color:red">Antes de imprimir, verifique as informações e confirme clicando no botão abaixo.</h5>
 				<h5 style="color:red">Após a confirmação não será possível alterar esta petição inicial.</h5>
-				<button type="submit" class="btn btn-success"><i class='fas fa-check'></i> <strong>CONFIRMAR</strong></button>
+				<button type="submit" onclick="window.close()" class="btn btn-success"><i class='fas fa-check'></i> <strong>CONFIRMAR</strong></button>
 				<button type="button" onclick="window.close()" class="btn btn-danger"><i class='fas fa-times'></i> <strong>VOLTAR</strong></button>
-				<br>
+				<br><br>
 			</div>
 			<hr style="background-color:black; height:1px; margin-top:5px; margin-bottom:5px;">
 			<div>
@@ -103,7 +103,9 @@
 						<tr>
 							<td>
 								<strong>Representante Legal: {{ Session::get('sessaoRepresentanteReu.rr_nome') }}</strong>,
+								@if(Session::get('sessaoRepresentanteReu.rr_sexo'))
 								Sexo: {{ Session::get('sessaoRepresentanteReu.rr_sexo') }},
+								@endif
 								CPF/CNPJ: {{ Session::get('sessaoRepresentanteReu.rr_cpf') }},
 								@if(Session::get('sessaoRepresentanteReu.rr_email') !== null)
 								E-mail: {{ Session::get('sessaoRepresentanteReu.rr_email') }}
@@ -123,7 +125,9 @@
 						<tr>
 							<td>
 								<strong>Autor: {{ Session::get('sessaoAutor.a_nome') }}</strong>,
+								@if(Session::get('sessaoAutor.a_sexo') !== null)
 								Sexo: {{ Session::get('sessaoAutor.a_sexo') }},
+								@endif
 								CPF/CNPJ: {{ Session::get('sessaoAutor.a_cpf') }},
 								Nacionalidade: {{ Session::get('sessaoAutor.a_nacionalidade') }},
 								@if(Session::get('sessaoAutor.a_email') !== null)
@@ -147,7 +151,9 @@
 						<tr>
 							<td>
 								<strong>Representante Legal: {{ Session::get('sessaoRepresentanteAutor.ra_nome') }}</strong>,
+								@if(Session::get('sessaoRepresentanteAutor.ra_sexo') !== null)
 								Sexo: {{ Session::get('sessaoRepresentanteAutor.ra_sexo') }},
+								@endif
 								CPF/CNPJ: {{ Session::get('sessaoRepresentanteAutor.ra_cpf') }},
 								Nacionalidade: {{ Session::get('sessaoRepresentanteAutor.ra_nacionalidade') }},
 								@if(Session::get('sessaoRepresentanteAutor.ra_email') !== null)

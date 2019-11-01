@@ -7,7 +7,7 @@
     <title>Processo - {{ Session::get('sessaoProcesso.p_numeracaoProcesso') }}</title>
 </head>
 <body style="font-size:12px;">
-    <img style="width:300px;height:100px" src="http://arpenpe.org/wp-content/uploads/2016/04/cgjrj.png">
+    <img style="width:250px;height:78px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBnASlDNpJXtKGMpEDCdHZN8KD-X_H7ZdU5fq1SSnX4cRHS4Q_&<s></s>">
     <hr style="background-color:black; height:1px; margin-top:5px; margin-bottom:5px;">
     <div>
         <h5 align="center" style="background-color: #cccccc"><strong>Número do Processo</strong></h5>
@@ -93,7 +93,9 @@
                 <tr>
                     <td>
                         <strong>Representante Legal: {{ Session::get('sessaoRepresentanteReu.rr_nome') }}</strong>,
+                        @if(Session::get('sessaoRepresentanteReu.rr_sexo'))
                         Sexo: {{ Session::get('sessaoRepresentanteReu.rr_sexo') }},
+                        @endif
                         CPF/CNPJ: {{ Session::get('sessaoRepresentanteReu.rr_cpf') }},
                         @if(Session::get('sessaoRepresentanteReu.rr_email') !== null)
                         E-mail: {{ Session::get('sessaoRepresentanteReu.rr_email') }}
@@ -113,7 +115,9 @@
                 <tr>
                     <td>
                         <strong>Autor: {{ Session::get('sessaoAutor.a_nome') }}</strong>,
+                        @if(Session::get('sessaoAutor.a_sexo') !== null)
                         Sexo: {{ Session::get('sessaoAutor.a_sexo') }},
+                        @endif
                         CPF/CNPJ: {{ Session::get('sessaoAutor.a_cpf') }},
                         Nacionalidade: {{ Session::get('sessaoAutor.a_nacionalidade') }},
                         @if(Session::get('sessaoAutor.a_email') !== null)
@@ -137,7 +141,9 @@
                 <tr>
                     <td>
                         <strong>Representante Legal: {{ Session::get('sessaoRepresentanteAutor.ra_nome') }}</strong>,
+                        @if(Session::get('sessaoRepresentanteAutor.ra_sexo') !== null)
                         Sexo: {{ Session::get('sessaoRepresentanteAutor.ra_sexo') }},
+                        @endif
                         CPF/CNPJ: {{ Session::get('sessaoRepresentanteAutor.ra_cpf') }},
                         Nacionalidade: {{ Session::get('sessaoRepresentanteAutor.ra_nacionalidade') }},
                         @if(Session::get('sessaoRepresentanteAutor.ra_email') !== null)
