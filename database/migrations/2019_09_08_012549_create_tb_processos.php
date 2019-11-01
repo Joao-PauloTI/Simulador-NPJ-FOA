@@ -17,6 +17,8 @@ class CreateTbProcessos extends Migration
 
         Schema::create('tb_processos', function (Blueprint $table){
             $table->increments('id');
+            //Numeração do Processo
+            $table->string('p_numeracaoProcesso')->nullable();
             //GRERJ
             $table->string('p_grerjMotivo')->nullable(); //PossuiGrerj = não -> Motivo
             $table->integer('p_grerjNumero')->nullable(); //PossuiGrerj = sim -> Número

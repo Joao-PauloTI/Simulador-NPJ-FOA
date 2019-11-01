@@ -13,20 +13,21 @@
 	<title>Guia de Protocolo</title>
 </head>
 <body>
-	<form action="{{ route('processo.store') }}" method="POST" enctype="multipart/form-data">
-		<div style="margin-left:20%; margin-right:20%">
+	<form action="{{ route('processo.salvar') }}" method="POST" enctype="multipart/form-data">
+		@csrf
+		<div class="container">
 			<div align="center" style="background-color: #cccccc">
 				<br>
 				<h5 style="color:red">Antes de imprimir, verifique as informações e confirme clicando no botão abaixo.</h5>
 				<h5 style="color:red">Após a confirmação não será possível alterar esta petição inicial.</h5>
 				<button type="submit" class="btn btn-success"><i class='fas fa-check'></i> <strong>CONFIRMAR</strong></button>
-				<button type="button" onclick="window.close()" class="btn btn-danger"><i class='fas fa-times	'></i> <strong>VOLTAR</strong></button>
+				<button type="button" onclick="window.close()" class="btn btn-danger"><i class='fas fa-times'></i> <strong>VOLTAR</strong></button>
 				<br>
 			</div>
 			<hr style="background-color:black; height:1px; margin-top:5px; margin-bottom:5px;">
 			<div>
 				<h5 align="center" style="background-color: #cccccc"><strong>Distribuição Eletrônica de Petição Inicial</strong></h5>
-				<table class="table table-borderless">
+				<table class="table table-borderless table-sm">
 					<tr>
 						<td><strong>Distribuidor:</strong> {{ Session::get('sessaoProcesso.p_distribuicao') }}</td>
 					</tr>
@@ -42,7 +43,7 @@
 			</div>
 			<div>
 				<h5 align="center" style="background-color: #cccccc"><strong>Advogado / Representante</strong></h5>
-				<table class="table table-borderless">
+				<table class="table table-borderless table-sm">
 					@if(Session::get('sessaoAdvogados.ad_numeroOAB') !== null)
 						@foreach(Session::get('sessaoAdvogados.ad_numeroOAB') as $key => $numero)
 							<tr>
@@ -61,7 +62,7 @@
 			</div>
 			<div>
 				<h5 align="center" style="background-color: #cccccc"><strong>Parte(s)</strong></h5>
-				<table class="table table-borderless">
+				<table class="table table-borderless table-sm">
 					@if(Session::get('sessaoReu.r_cpf') !== null)
 						<tr>
 							<td>
@@ -170,7 +171,7 @@
 			</div>
 			<div>
 				<h5 align="center" style="background-color: #cccccc"><strong>Documento(s)</strong></h5>
-				<table class="table table-borderless">
+				<table class="table table-borderless table-sm">
 					@if(is_array(Session::get('sessaoDocumentoAnexoPeticao')))
 						@foreach(Session::get('sessaoDocumentoAnexoPeticao') as $key => $arquivo)
 							@foreach($arquivo as $atributo => $valor)

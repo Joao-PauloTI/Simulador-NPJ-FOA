@@ -8,6 +8,7 @@ class Processo extends Model
 {
     protected $table = 'tb_processos';
     protected $fillable = array(
+		'p_numeracaoProcesso',
     	'p_grerjMotivo',
     	'p_grerjNumero',
 	    'p_dependencia',
