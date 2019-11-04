@@ -465,7 +465,7 @@
             raComprovante: '',
             raEstadoCivil: '',
             raProfissao: '',
-            raNacionalidade: '',
+            raNacionalidade: 'Brasileira',
             raEstadoNaturalidade: '',
             raCidadeNaturalidade: '',
             raPai: '',
