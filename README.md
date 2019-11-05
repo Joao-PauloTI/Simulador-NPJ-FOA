@@ -17,7 +17,7 @@
 - Caso queira acessar a pasta de arquivos enviados pelo formulário da página de Distribuição Eletrônica, use o comando `php artisan storage:link`. A partir de agora, todos os documentos salvos no banco de dados estarão disponíveis na pasta /Simulador-NPJ-FOA/public/storage/Documentos.
 
 # Compilando o Vue.js:
-- Um projeto em Laravel já vem configurado para receber e usar as depêndencias do Vue, React e Bootstrap. Portanto, para criar e utilizar componentes do Vue nas views deste projeto, apenas instale as dependências do Vue com o comando 'npm install' no cmd/terminal.
+- Um projeto em Laravel já vem configurado para receber e usar as depêndencias do Vue, React e Bootstrap. Portanto, para criar e utilizar componentes do Vue nas views deste projeto, apenas instale as dependências do Vue com o comando `npm install` no cmd/terminal.
 - Em seguida, compile as alterações nos arquivos do Vue com o comando `npm run dev`. Quando estiver fazendo várias alterações em um componente ou qualquer arquivo.vue, você pode deixar um cmd/terminal aberto executando o comando `npm run watch` para compilar as alterações automaticamente.
 
 # Principais arquivos e pastas:
