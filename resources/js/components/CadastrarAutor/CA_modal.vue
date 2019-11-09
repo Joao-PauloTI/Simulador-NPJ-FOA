@@ -476,11 +476,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Nacionalidade </strong> </span>
-                                <select class="custom-select" v-model="aNacionalidade" name="a_nacionalidade">
-                                    <option value="Brasileira">Brasileira</option>
-                                    <option value="Naturalizado brasileiro">Naturalizado brasileiro</option>
-                                    <option value="Estrangeira">Estrangeira</option>
-                                </select>
+                                <input type="text" class="form-control" v-model="aNacionalidade" name="a_nacionalidade" value="Brasileira">
                             </div>
                         </div>
                     </div>

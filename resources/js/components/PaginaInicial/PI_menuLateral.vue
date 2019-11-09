@@ -22,7 +22,7 @@
                         </p>
                         <p>
                             <i class="fas fa-file-alt"></i>
-                            <a href="#">Consultar/Excluir Processos</a>
+                            <a href="/consultarexcluirprocessos">Consultar/Excluir Processos</a>
                         </p>
                         <p>
                             <i class="fas fa-file-alt"></i>

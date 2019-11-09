@@ -6,7 +6,16 @@
 		<pimenulateral id="PI_mostrarEsconderMenu"></pimenulateral>
 		<div class="container">
 			<div class="card">
-				<cpconsultaprocessual></cpconsultaprocessual>
+				<form action="">
+					@csrf
+					<cpconsultaprocessual></cpconsultaprocessual>
+					<div align="center">
+						<!--Botões PESQUISAR/LIMPAR-->
+	                    <button type="submit" class="btn btn-primary"><strong>PESQUISAR</strong></button>
+	                    <button type="reset" class="btn btn-danger"><strong>LIMPAR</strong></button>
+	                </div>
+                </form>
+                <br>
 			</div>
 		</div>
 		<br>

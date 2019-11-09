@@ -1,9 +1,8 @@
 <template>
     <div>
-        <div class="container">
+        <div class="card-header">
             <h1>Consulta Processual</h1>
         </div>
-        <hr>
         <div class="card-body" id="alinhado">
             <div class="col-md-8">
                 <div>
@@ -14,15 +13,11 @@
                 </div>
                 <br>
                 <!--Numeração única-->
-                <div v-show="showOpcao === 'showUnica'">
-                    <div class="input-group">
-                        <input type="text" class="form-control" v-mask="'#######-##.####'" required>
-                        <span style="margin-top: 15px; margin: 15px;"><strong> .8.19. </strong></span>
-                        <input type="text" class="form-control" v-mask="'####'" required>
-                    </div>
+                <div v-if="showOpcao === 'showUnica'">
+                    <input type="text" class="form-control" v-mask="'#######-##.####.8.19.####'">
                 </div>
                 <!--Numeração Antiga-->
-                <div v-show="showOpcao === 'showAntiga'">
+                <div v-else="showOpcao === 'showAntiga'">
                     <div>
                         <label for="CP_cP_origem"><strong>Origem:</strong></label>
                         <select class="custom-select" id="CP_cP_origem">
@@ -38,16 +33,8 @@
                     <br>
                     <div>
                         <label for="CP_cP_numeroDeProcesso"><strong>Número de Processo</strong></label>
-                        <input type="text" class="form-control" v-mask="'####.###.######-# ##'" required>
+                        <input type="text" class="form-control" v-mask="'####.###.######-# ##'">
                     </div>
-                </div>
-                <br>
-                <!--Botões SALVAR/LIMPAR-->
-                <div align="center">
-                    <form action="">
-                        <button type="submit" class="btn btn-primary"><strong>PESQUISAR</strong></button>
-                        <button type="reset" class="btn btn-danger"><strong>LIMPAR</strong></button>
-                    </form>
                 </div>
                 <br>
             </div>

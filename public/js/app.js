@@ -2395,10 +2395,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'camodal',
   data: function data() {
@@ -2914,10 +2910,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'cramodal',
   data: function data() {
@@ -2953,7 +2945,7 @@ __webpack_require__.r(__webpack_exports__);
       raComprovante: '',
       raEstadoCivil: '',
       raProfissao: '',
-      raNacionalidade: '',
+      raNacionalidade: 'Brasileira',
       raEstadoNaturalidade: '',
       raCidadeNaturalidade: '',
       raPai: '',
@@ -3885,19 +3877,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -5351,6 +5330,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'degrerj',
   data: function data() {
@@ -5991,6 +5974,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -44647,51 +44634,31 @@ var render = function() {
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(31),
                 _vm._v(" "),
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.aNacionalidade,
-                        expression: "aNacionalidade"
-                      }
-                    ],
-                    staticClass: "custom-select",
-                    attrs: { name: "a_nacionalidade" },
-                    on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.aNacionalidade = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      }
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.aNacionalidade,
+                      expression: "aNacionalidade"
                     }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    name: "a_nacionalidade",
+                    value: "Brasileira"
                   },
-                  [
-                    _c("option", { attrs: { value: "Brasileira" } }, [
-                      _vm._v("Brasileira")
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "option",
-                      { attrs: { value: "Naturalizado brasileiro" } },
-                      [_vm._v("Naturalizado brasileiro")]
-                    ),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "Estrangeira" } }, [
-                      _vm._v("Estrangeira")
-                    ])
-                  ]
-                )
+                  domProps: { value: _vm.aNacionalidade },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.aNacionalidade = $event.target.value
+                    }
+                  }
+                })
               ])
             ])
           ]),
@@ -46914,51 +46881,31 @@ var render = function() {
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(26),
                 _vm._v(" "),
-                _c(
-                  "select",
-                  {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.raNacionalidade,
-                        expression: "raNacionalidade"
-                      }
-                    ],
-                    staticClass: "custom-select",
-                    attrs: { name: "ra_nacionalidade" },
-                    on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.raNacionalidade = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      }
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.raNacionalidade,
+                      expression: "raNacionalidade"
                     }
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "text",
+                    name: "ra_nacionalidade",
+                    value: "Brasileira"
                   },
-                  [
-                    _c("option", { attrs: { value: "Brasileira" } }, [
-                      _vm._v("Brasileira")
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "option",
-                      { attrs: { value: "Naturalizado brasileiro" } },
-                      [_vm._v("Naturalizado brasileiro")]
-                    ),
-                    _vm._v(" "),
-                    _c("option", { attrs: { value: "Estrangeira" } }, [
-                      _vm._v("Estrangeira")
-                    ])
-                  ]
-                )
+                  domProps: { value: _vm.raNacionalidade },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.raNacionalidade = $event.target.value
+                    }
+                  }
+                })
               ])
             ])
           ]),
@@ -50695,8 +50642,6 @@ var render = function() {
   return _c("div", [
     _vm._m(0),
     _vm._v(" "),
-    _c("hr"),
-    _vm._v(" "),
     _c("div", { staticClass: "card-body", attrs: { id: "alinhado" } }, [
       _c("div", { staticClass: "col-md-8" }, [
         _c("div", [
@@ -50742,90 +50687,43 @@ var render = function() {
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
-        _c(
-          "div",
-          {
-            directives: [
-              {
-                name: "show",
-                rawName: "v-show",
-                value: _vm.showOpcao === "showUnica",
-                expression: "showOpcao === 'showUnica'"
-              }
-            ]
-          },
-          [
-            _c("div", { staticClass: "input-group" }, [
+        _vm.showOpcao === "showUnica"
+          ? _c("div", [
               _c("input", {
                 directives: [
                   {
                     name: "mask",
                     rawName: "v-mask",
-                    value: "#######-##.####",
-                    expression: "'#######-##.####'"
+                    value: "#######-##.####.8.19.####",
+                    expression: "'#######-##.####.8.19.####'"
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              }),
-              _vm._v(" "),
+                attrs: { type: "text" }
+              })
+            ])
+          : _c("div", [
               _vm._m(1),
               _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "mask",
-                    rawName: "v-mask",
-                    value: "####",
-                    expression: "'####'"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            directives: [
-              {
-                name: "show",
-                rawName: "v-show",
-                value: _vm.showOpcao === "showAntiga",
-                expression: "showOpcao === 'showAntiga'"
-              }
-            ]
-          },
-          [
-            _vm._m(2),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", [
-              _vm._m(3),
+              _c("br"),
               _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "mask",
-                    rawName: "v-mask",
-                    value: "####.###.######-# ##",
-                    expression: "'####.###.######-# ##'"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: { type: "text", required: "" }
-              })
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _vm._m(4),
+              _c("div", [
+                _vm._m(2),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: "####.###.######-# ##",
+                      expression: "'####.###.######-# ##'"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text" }
+                })
+              ])
+            ]),
         _vm._v(" "),
         _c("br")
       ])
@@ -50837,19 +50735,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
+    return _c("div", { staticClass: "card-header" }, [
       _c("h1", [_vm._v("Consulta Processual")])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "span",
-      { staticStyle: { "margin-top": "15px", margin: "15px" } },
-      [_c("strong", [_vm._v(" .8.19. ")])]
-    )
   },
   function() {
     var _vm = this
@@ -50887,26 +50775,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("label", { attrs: { for: "CP_cP_numeroDeProcesso" } }, [
       _c("strong", [_vm._v("Número de Processo")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { attrs: { align: "center" } }, [
-      _c("form", { attrs: { action: "" } }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-          [_c("strong", [_vm._v("PESQUISAR")])]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "btn btn-danger", attrs: { type: "reset" } },
-          [_c("strong", [_vm._v("LIMPAR")])]
-        )
-      ])
     ])
   }
 ]
@@ -55736,170 +55604,176 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("h1", [_vm._v("Distribuição de Petição Inicial")]),
-    _vm._v(" "),
-    _c("hr"),
-    _vm._v(" "),
+  return _c("div", [
     _vm._m(0),
     _vm._v(" "),
-    _vm._m(1),
+    _c("br"),
     _vm._v(" "),
-    _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "card-header" }, [
-        _c("h5", [
-          _c("strong", [_vm._v("GRERJ")]),
+    _c("div", { staticClass: "container" }, [
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
+      _vm._v(" "),
+      _c("div", { staticClass: "card" }, [
+        _c("div", { staticClass: "card-header" }, [
+          _c("h5", [
+            _c("strong", [_vm._v("GRERJ")]),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                attrs: { href: "#ajuda" },
+                on: {
+                  click: function($event) {
+                    return _vm.ajuda()
+                  }
+                }
+              },
+              [_vm._v("(?)")]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body" }, [
+          _vm._m(3),
           _vm._v(" "),
           _c(
-            "a",
+            "div",
             {
-              attrs: { href: "#ajuda" },
-              on: {
-                click: function($event) {
-                  return _vm.ajuda()
-                }
-              }
+              staticClass: "custom-control custom-control-inline custom-radio"
             },
-            [_vm._v("(?)")]
+            [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showOpcao,
+                    expression: "showOpcao"
+                  }
+                ],
+                staticClass: "custom-control-input",
+                attrs: {
+                  type: "radio",
+                  name: "DE_g_grerj",
+                  id: "DE_g_grerjSim",
+                  value: "showSim"
+                },
+                domProps: { checked: _vm._q(_vm.showOpcao, "showSim") },
+                on: {
+                  change: function($event) {
+                    _vm.showOpcao = "showSim"
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "label",
+                {
+                  staticClass: "custom-control-label",
+                  attrs: { for: "DE_g_grerjSim" }
+                },
+                [_vm._v(" Sim ")]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "custom-control custom-control-inline custom-radio"
+            },
+            [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.showOpcao,
+                    expression: "showOpcao"
+                  }
+                ],
+                staticClass: "custom-control-input",
+                attrs: {
+                  type: "radio",
+                  name: "DE_g_grerj",
+                  id: "DE_g_grerjNao",
+                  value: "showNao"
+                },
+                domProps: { checked: _vm._q(_vm.showOpcao, "showNao") },
+                on: {
+                  change: function($event) {
+                    _vm.showOpcao = "showNao"
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "label",
+                {
+                  staticClass: "custom-control-label",
+                  attrs: { for: "DE_g_grerjNao" }
+                },
+                [_vm._v(" Não ")]
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value: _vm.showOpcao === "showSim",
+                  expression: "showOpcao === 'showSim'"
+                }
+              ]
+            },
+            [
+              _c("br"),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-inline" }, [
+                _c("div", { staticClass: "col-xs-2" }, [
+                  _vm._m(4),
+                  _vm._v(" "),
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "mask",
+                        rawName: "v-mask",
+                        value: "#############",
+                        expression: "'#############'"
+                      }
+                    ],
+                    staticClass: "form-control col-md-5",
+                    attrs: { type: "text", name: "p_grerjNumero" }
+                  })
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              directives: [
+                {
+                  name: "show",
+                  rawName: "v-show",
+                  value: _vm.showOpcao === "showNao",
+                  expression: "showOpcao === 'showNao'"
+                }
+              ]
+            },
+            [_c("br"), _vm._v(" "), _vm._m(5)]
           )
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [
-        _vm._m(2),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "custom-control custom-control-inline custom-radio" },
-          [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.showOpcao,
-                  expression: "showOpcao"
-                }
-              ],
-              staticClass: "custom-control-input",
-              attrs: {
-                type: "radio",
-                name: "DE_g_grerj",
-                id: "DE_g_grerjSim",
-                value: "showSim"
-              },
-              domProps: { checked: _vm._q(_vm.showOpcao, "showSim") },
-              on: {
-                change: function($event) {
-                  _vm.showOpcao = "showSim"
-                }
-              }
-            }),
-            _vm._v(" "),
-            _c(
-              "label",
-              {
-                staticClass: "custom-control-label",
-                attrs: { for: "DE_g_grerjSim" }
-              },
-              [_vm._v(" Sim ")]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "custom-control custom-control-inline custom-radio" },
-          [
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.showOpcao,
-                  expression: "showOpcao"
-                }
-              ],
-              staticClass: "custom-control-input",
-              attrs: {
-                type: "radio",
-                name: "DE_g_grerj",
-                id: "DE_g_grerjNao",
-                value: "showNao"
-              },
-              domProps: { checked: _vm._q(_vm.showOpcao, "showNao") },
-              on: {
-                change: function($event) {
-                  _vm.showOpcao = "showNao"
-                }
-              }
-            }),
-            _vm._v(" "),
-            _c(
-              "label",
-              {
-                staticClass: "custom-control-label",
-                attrs: { for: "DE_g_grerjNao" }
-              },
-              [_vm._v(" Não ")]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            directives: [
-              {
-                name: "show",
-                rawName: "v-show",
-                value: _vm.showOpcao === "showSim",
-                expression: "showOpcao === 'showSim'"
-              }
-            ]
-          },
-          [
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-inline" }, [
-              _c("div", { staticClass: "col-xs-2" }, [
-                _vm._m(3),
-                _vm._v(" "),
-                _c("input", {
-                  directives: [
-                    {
-                      name: "mask",
-                      rawName: "v-mask",
-                      value: "#############",
-                      expression: "'#############'"
-                    }
-                  ],
-                  staticClass: "form-control col-md-5",
-                  attrs: { type: "text", name: "p_grerjNumero" }
-                })
-              ])
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            directives: [
-              {
-                name: "show",
-                rawName: "v-show",
-                value: _vm.showOpcao === "showNao",
-                expression: "showOpcao === 'showNao'"
-              }
-            ]
-          },
-          [_c("br"), _vm._v(" "), _vm._m(4)]
-        )
-      ])
-    ]),
-    _vm._v(" "),
-    _c("br")
+      _c("br")
+    ])
   ])
 }
 var staticRenderFns = [
@@ -55907,10 +55781,18 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h1", [_vm._v("Distribuição de Petição Inicial")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("p", [
       _c("strong", [
         _vm._v(
-          "ATENÇÃO SENHOR ADVOGADO: SE NÃO HOUVER PEDIDO DE JUSTIÇA GRATUITA, ANTES DE REALIZAR O CADASTRAMENTO\n            DE SUA PETIÇÃO, FAÇA O RECOLHIMENTO DO GRERJ, POIS SEU NÚMERO E VALOR SERÃO NECESSÁRIOS."
+          "ATENÇÃO SENHOR ADVOGADO: SE NÃO HOUVER PEDIDO DE JUSTIÇA GRATUITA, ANTES DE REALIZAR O CADASTRAMENTO\n                DE SUA PETIÇÃO, FAÇA O RECOLHIMENTO DO GRERJ, POIS SEU NÚMERO E VALOR SERÃO NECESSÁRIOS."
         )
       ])
     ])
@@ -56904,7 +56786,7 @@ var staticRenderFns = [
             _c("p", [
               _c("i", { staticClass: "fas fa-file-alt" }),
               _vm._v(" "),
-              _c("a", { attrs: { href: "#" } }, [
+              _c("a", { attrs: { href: "/consultarexcluirprocessos" } }, [
                 _vm._v("Consultar/Excluir Processos")
               ])
             ]),
@@ -57288,43 +57170,47 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("h1", [_vm._v("Página Inicial")]),
+    return _c("div", [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h1", [_vm._v("Página Inicial")])
+      ]),
       _vm._v(" "),
-      _c("hr"),
+      _c("br"),
       _vm._v(" "),
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h5", [_c("strong", [_vm._v("Painel de Avisos")])])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("p", [
-            _c("strong", [
-              _vm._v("Poder Judiciário do Estado do Rio de Janeiro")
-            ])
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header" }, [
+            _c("h5", [_c("strong", [_vm._v("Painel de Avisos")])])
           ]),
           _vm._v(" "),
-          _c("p", [_vm._v("Gabinete da Presidência")]),
-          _vm._v(" "),
-          _c("p", { staticStyle: { color: "blue" } }, [
-            _vm._v("Lorem ipsum dolor sit amet")
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n                proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [_vm._v("Rio de Janeiro, 8 de julho de 2019")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v("Desembargadora "),
-            _c("strong", [_vm._v("FULANO DE TAL")])
-          ]),
-          _vm._v(" "),
-          _c("p", [_vm._v("Presidente do Tribunal de Justiça")])
+          _c("div", { staticClass: "card-body" }, [
+            _c("p", [
+              _c("strong", [
+                _vm._v("Poder Judiciário do Estado do Rio de Janeiro")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Gabinete da Presidência")]),
+            _vm._v(" "),
+            _c("p", { staticStyle: { color: "blue" } }, [
+              _vm._v("Lorem ipsum dolor sit amet")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Rio de Janeiro, 8 de julho de 2019")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("Desembargadora "),
+              _c("strong", [_vm._v("FULANO DE TAL")])
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Presidente do Tribunal de Justiça")])
+          ])
         ])
       ])
     ])

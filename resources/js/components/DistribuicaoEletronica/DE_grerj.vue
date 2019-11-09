@@ -1,50 +1,54 @@
 <template>
-    <div class="container">
-        <h1>Distribuição de Petição Inicial</h1>
-        <hr>
-        <p><strong>ATENÇÃO SENHOR ADVOGADO: SE NÃO HOUVER PEDIDO DE JUSTIÇA GRATUITA, ANTES DE REALIZAR O CADASTRAMENTO
-                DE SUA PETIÇÃO, FAÇA O RECOLHIMENTO DO GRERJ, POIS SEU NÚMERO E VALOR SERÃO NECESSÁRIOS.</strong></p>
-        <p>Campos marcados com <strong>*</strong> são de preenchimento obrigatório.</p>
-        <div class="card">
-            <div class="card-header">
-                <h5>
-                    <strong>GRERJ</strong>
-                    <a href="#ajuda" v-on:click="ajuda()">(?)</a>
-                </h5>
-            </div>
-            <div class="card-body">
-                <span><strong>* Possui GRERJ?</strong> </span>
-                <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" class="custom-control-input" name="DE_g_grerj" id="DE_g_grerjSim" value="showSim" v-model="showOpcao">
-                    <label class="custom-control-label" for="DE_g_grerjSim"> Sim </label>
-                </div>
-                <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" class="custom-control-input" name="DE_g_grerj" id="DE_g_grerjNao" value="showNao" v-model="showOpcao">
-                    <label class="custom-control-label" for="DE_g_grerjNao"> Não </label>
-                </div>
-                <div v-show="showOpcao === 'showSim'">
-                    <br>
-                    <div class="form-inline">
-                        <div class="col-xs-2">
-                            <span><strong>* Número da GRERJ:</strong> </span>
-                            <input type="text" name="p_grerjNumero" class="form-control col-md-5" v-mask="'#############'">
-                            <!--<span><strong> Valor da GRERJ: </strong> R$ 999,99</span>-->
-                        </div>
-                    </div>
-                </div>
-                <div v-show="showOpcao === 'showNao'">
-                    <br>
-                    <label for="grerjMotivo"><strong>* Motivo</strong>
-                        <select name="p_grerjMotivo" id="grerjMotivo" class="custom-select">
-                            <option value="">Escolha um motivo</option>
-                            <option value="Juizado Especial Cível">Juizado Especial Cível</option>
-                            <option value="Justiça Gratuita / Pedido de Gratuidade">Justiça Gratuita / Pedido de Gratuidade</option>
-                        </select>
-                    </label>
-                </div>
-            </div>
+    <div>
+        <div class="card-header">
+            <h1>Distribuição de Petição Inicial</h1>
         </div>
         <br>
+        <div class="container">
+            <p><strong>ATENÇÃO SENHOR ADVOGADO: SE NÃO HOUVER PEDIDO DE JUSTIÇA GRATUITA, ANTES DE REALIZAR O CADASTRAMENTO
+                    DE SUA PETIÇÃO, FAÇA O RECOLHIMENTO DO GRERJ, POIS SEU NÚMERO E VALOR SERÃO NECESSÁRIOS.</strong></p>
+            <p>Campos marcados com <strong>*</strong> são de preenchimento obrigatório.</p>
+            <div class="card">
+                <div class="card-header">
+                    <h5>
+                        <strong>GRERJ</strong>
+                        <a href="#ajuda" v-on:click="ajuda()">(?)</a>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <span><strong>* Possui GRERJ?</strong> </span>
+                    <div class="custom-control custom-control-inline custom-radio">
+                        <input type="radio" class="custom-control-input" name="DE_g_grerj" id="DE_g_grerjSim" value="showSim" v-model="showOpcao">
+                        <label class="custom-control-label" for="DE_g_grerjSim"> Sim </label>
+                    </div>
+                    <div class="custom-control custom-control-inline custom-radio">
+                        <input type="radio" class="custom-control-input" name="DE_g_grerj" id="DE_g_grerjNao" value="showNao" v-model="showOpcao">
+                        <label class="custom-control-label" for="DE_g_grerjNao"> Não </label>
+                    </div>
+                    <div v-show="showOpcao === 'showSim'">
+                        <br>
+                        <div class="form-inline">
+                            <div class="col-xs-2">
+                                <span><strong>* Número da GRERJ:</strong> </span>
+                                <input type="text" name="p_grerjNumero" class="form-control col-md-5" v-mask="'#############'">
+                                <!--<span><strong> Valor da GRERJ: </strong> R$ 999,99</span>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div v-show="showOpcao === 'showNao'">
+                        <br>
+                        <label for="grerjMotivo"><strong>* Motivo</strong>
+                            <select name="p_grerjMotivo" id="grerjMotivo" class="custom-select">
+                                <option value="">Escolha um motivo</option>
+                                <option value="Juizado Especial Cível">Juizado Especial Cível</option>
+                                <option value="Justiça Gratuita / Pedido de Gratuidade">Justiça Gratuita / Pedido de Gratuidade</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
     </div>
 </template>
 <script>

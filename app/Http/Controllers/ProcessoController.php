@@ -804,4 +804,51 @@ class ProcessoController extends Controller
         $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->loadView('DistribuicaoEletronica/DE_processoPDF', $dadosProcesso);
         return $pdf->stream("Processo - ". $request->session()->get('sessaoProcesso.p_numeracaoProcesso') .".pdf");
     }
+
+    public function consultarTodos(Request $request)
+    {
+        $request->validate([
+            'comarca_consulta' => 'nullable',
+            'comarca_instancia' => 'nullable'
+        ]);
+        $request->session()->put('consultaFiltros', [
+            'comarca_consulta' => $request->get('comarca_consulta'),
+            'comarca_instancia'  => $request->get('comarca_instancia')
+        ]);
+        if ($request->session()->get('consultaFiltros.comarca_consulta') === 'Todas') {
+            $processos = Processo::with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->get();
+            return view('ConsultarExcluirProcessos/CEP_historico', compact('processos'));
+        } else {
+            $processos = Processo::where('p_comarca', $request->session()->get('consultaFiltros.comarca_consulta'))->with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->get();
+            return view('ConsultarExcluirProcessos/CEP_historico', compact('processos'));
+        }
+    }
+
+    public function excluirSelecionados(Request $request)
+    {
+      $request->validate([
+            'processosSelecionados' => 'nullable'
+      ]);
+      if (is_array($request->processosSelecionados)) {
+            foreach ($request->processosSelecionados as $key => $numero) {
+                  $processosSelecionados = Processo::where('p_numeracaoProcesso', $numero);
+                  $processosSelecionados->delete();
+            }
+      } else {
+            if ($request->session()->get('consultaFiltros.comarca_consulta') === 'Todas') {
+                  $processos = Processo::with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->get();
+                  return view('ConsultarExcluirProcessos/CEP_historico', compact('processos'));
+            } else {
+                  $processos = Processo::where('p_comarca', $request->session()->get('consultaFiltros.comarca_consulta'))->with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->get();
+                  return view('ConsultarExcluirProcessos/CEP_historico', compact('processos'));
+            }
+      }
+      if ($request->session()->get('consultaFiltros.comarca_consulta') === 'Todas') {
+            $processos = Processo::with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->get();
+            return view('ConsultarExcluirProcessos/CEP_historico', compact('processos'));
+      } else {
+            $processos = Processo::where('p_comarca', $request->session()->get('consultaFiltros.comarca_consulta'))->with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->get();
+            return view('ConsultarExcluirProcessos/CEP_historico', compact('processos'));
+      }
+    }
 }
