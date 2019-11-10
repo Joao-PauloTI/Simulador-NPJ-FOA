@@ -78,7 +78,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Pessoa Física ou Jurídica </strong> </span>
-                                <select class="custom-select" v-model="raPessoa">
+                                <select class="custom-select" v-model="raPessoa" v-on:change="gerarModeloRepresentanteAutor">
                                     <option value="">Escolha um tipo de pessoa</option>
                                     <option value="Pessoa Física">Pessoa Física</option>
                                     <option value="Pessoa Jurídica">Pessoa Jurídica</option>
@@ -106,9 +106,9 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CPF/CNPJ </strong> </span>
-                                <input type="text" class="form-control" v-model="raCpf" name="ra_cpf" v-if="raPessoa === ''" v-mask="'#################'">
-                                <input type="text" class="form-control" v-model="raCpf" name="ra_cpf" v-else-if="raPessoa === 'Pessoa Física'" v-mask="'###.###.###-##'">
-                                <input type="text" class="form-control" v-model="raCpf" name="ra_cpf" v-else v-mask="'##.###.###/####-##'">
+                                <input type="text" class="form-control" v-model="raCpf" name="ra_cpf"  v-on:change="gerarModeloRepresentanteAutor" v-if="raPessoa === ''" v-mask="'#################'">
+                                <input type="text" class="form-control" v-model="raCpf" name="ra_cpf"  v-on:change="gerarModeloRepresentanteAutor" v-else-if="raPessoa === 'Pessoa Física'" v-mask="'###.###.###-##'">
+                                <input type="text" class="form-control" v-model="raCpf" name="ra_cpf"  v-on:change="gerarModeloRepresentanteAutor" v-else v-mask="'##.###.###/####-##'">
                             </div>
                         </div>
                     </div>
@@ -515,6 +515,35 @@
             this.raPai = '',
             this.raMae = '',
             this.raNascimento = ''
+        },
+        gerarModeloRepresentanteAutor: function() {
+            if(this.raPessoa === 'Pessoa Física' && this.raCpf === '222.222.222-22'){
+                this.raParte = 'Representante'
+                this.raSexo = 'Feminino'
+                this.raNome = 'Ana Maria Ferreira da Silva'
+                this.raDocumento = 'Registro Geral'
+                this.raNumeroIdentificacao = '14.658.113-2'
+                this.raEmissor = 'DETRAN-RJ'
+                this.raEmissao = '28/04/1990'
+                this.raTelefone = '(24)99973-4441'
+                this.raEmail = 'ana@email.com'
+                this.raCep = '12154-187'
+                this.raEstado = 'Rio de Janeiro'
+                this.raCidade = 'Volta Redonda'
+                this.raBairro = 'Santo Agostinho'
+                this.raTipoLogradouro = 'Rua'
+                this.raLogradouro = 'José Peixoto'
+                this.raNumeroEndereco = '459'
+                this.raTipoEndereco = 'Residencial'
+                this.raEstadoCivil = 'Casado'
+                this.raProfissao = 'Consultora de Vendas'
+                this.raNacionalidade = 'Brasileira'
+                this.raEstadoNaturalidade = 'Rio de Janeiro'
+                this.raCidadeNaturalidade = 'Volta Redonda'
+                this.raPai = 'Isadora Ferreira Castro'
+                this.raMae = 'Joaquim Barros Ferreira Castro'
+                this.raNascimento = '02/04/1973'
+            }
         }
     }
 }

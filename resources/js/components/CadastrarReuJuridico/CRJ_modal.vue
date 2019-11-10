@@ -18,7 +18,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CNPJ </strong> </span>
-                                <input type="text" class="form-control" v-mask="'##.###.###/####-##'" v-model="rjCnpj" name="rj_cnpj">
+                                <input type="text" class="form-control" v-mask="'##.###.###/####-##'" v-model="rjCnpj" name="rj_cnpj" v-on:change="gerarModeloReuJuridico">
                             </div>
                         </div>
                     </div>
@@ -222,6 +222,20 @@
             this.rjComplemento = '',
             this.rjTipoEndereco = '',
             this.rjReferencia = ''
+        },
+        gerarModeloReuJuridico: function() {
+            if(this.rjCnpj === '44.444.444/4444-44') {
+                this.rjNome = 'Correios - Empresa Brasileira de Correios e Telégrafos'
+                this.rjTipoEmpresa = 'Sociedade Empresária Limitada (Ltda.)'
+                this.rjCep = '27215-580'
+                this.rjEstado = 'Rio de Janeiro'
+                this.rjCidade = 'Volta Redonda'
+                this.rjBairro = 'Aterrado'
+                this.rjTipoLogradouro = 'Avenida'
+                this.rjLogradouro = 'Paulo de Frontin'
+                this.rjNumeroEndereco = '897'
+                this.rjTipoEndereco = 'Empresarial'
+            }
         }
     }
 }

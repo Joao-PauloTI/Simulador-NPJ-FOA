@@ -23,22 +23,22 @@
                             </div>
                             <div style="border-style:solid; border-width:1px; margin-left: 10%; margin-right: 10%; padding-top: 1%; padding-left: 2%; padding-right: 2%">
                                 <h5><strong>1ª Instância - <ins><a href="#">{{ $processo->p_numeracaoProcesso }}</ins></a></strong></h5>
-                                <p><strong>Comarca:</strong> {{ $processo->p_comarca }}</p>
-                                <p><strong>Serventia:</strong> Núcleo de Prática Jurídica - UniFOA</p>
-                                <p><strong>Autor:</strong> {{ $processo->processo_autor->a_nome }}</p>
-                                @if ($processo->r_nome !== null)
-                                    <p><strong>Réu:</strong> {{ $processo->processo_reu->r_nome }}</p>                                
+                                <p class="p-0 m-0"><strong>Comarca:</strong> {{ $processo->p_comarca }}</p>
+                                <p class="p-0 m-0"><strong>Serventia:</strong> Núcleo de Prática Jurídica - UniFOA</p>
+                                <p class="p-0 m-0"><strong>Autor:</strong> {{ $processo->processo_autor->a_nome }}</p>
+                                @if ($processo->processo_reu->r_nome !== null)
+                                    <p class="p-0 m-0"><strong>Réu:</strong> {{ $processo->processo_reu->r_nome }}</p>                                
                                 @else
-                                    <p><strong>Réu:</strong> {{ $processo->processo_reuJuridico->rj_nome }}</p>
+                                    <p class="p-0 m-0"><strong>Réu:</strong> {{ $processo->processo_reuJuridico->rj_nome }}</p>
                                 @endif
                                 @if (count($processo->processo_advogado) > 0)
                                     @foreach ($processo->processo_advogado as $advogado)
-                                        <p><strong>Advogado:</strong> {{ $advogado->ad_estadoOAB }}{{ $advogado->ad_numeroOAB }} {{ $advogado->ad_nome }}</p>
+                                        <p class="p-0 m-0"><strong>Advogado:</strong> {{ $advogado->ad_estadoOAB }}{{ $advogado->ad_numeroOAB }} {{ $advogado->ad_nome }}</p>
                                     @endforeach
                                 @endif
                                 @if (count($processo->processo_defensor) > 0)
                                     @foreach ($processo->processo_defensor as $defensor)
-                                        <p><strong>Advogado:</strong> {{ $defensor->dp_matricula }} - {{ $defensor->dp_nome }} - DEFENSOR PÚBLICO</p>
+                                        <p class="p-0 m-0"><strong>Advogado:</strong> {{ $defensor->dp_matricula }} - {{ $defensor->dp_nome }} - DEFENSOR PÚBLICO</p>
                                     @endforeach
                                 @endif
                             </div>

@@ -12,7 +12,7 @@
     <div>
         <h5 align="center" style="background-color: #cccccc"><strong>Número do Processo</strong></h5>
         <h4 align="center"><strong>{{ Session::get('sessaoProcesso.p_numeracaoProcesso') }}</strong></h4>
-        <h5><strong>Núcleo de Prática Jurídica</strong></h5>
+        <h5><strong>Núcleo de Prática Jurídica - UniFOA</strong></h5>
         <table class="m-0 p-0 table table-borderless table-sm">
             <tr>
                 <td><strong>Data de Distribuição: {{ Carbon\Carbon::now('America/Sao_Paulo')->format('d/m/Y') }}</strong></td>

@@ -57,7 +57,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Pessoa Física ou Jurídica </strong></span>
-                                <select class="custom-select" v-model="aPessoa">
+                                <select class="custom-select" v-model="aPessoa" v-on:change="gerarModeloAutor">
                                     <option value="">Escolha um tipo de pessoa</option>
                                     <option value="Pessoa Física">Pessoa Física</option>
                                     <option value="Pessoa Jurídica">Pessoa Jurídica</option>
@@ -95,9 +95,9 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CPF/CNPJ </strong> </span>
-                                <input type="text" class="form-control" v-model="aCpf" name="a_cpf" v-if="aPessoa === ''" v-mask="'#################'">
-                                <input type="text" class="form-control" v-model="aCpf" name="a_cpf" v-else-if="aPessoa === 'Pessoa Física'" v-mask="'###.###.###-##'">
-                                <input type="text" class="form-control" v-model="aCpf" name="a_cpf" v-else v-mask="'##.###.###/####-##'">
+                                <input type="text" class="form-control" v-model="aCpf" name="a_cpf"  v-on:change="gerarModeloAutor" v-if="aPessoa === ''" v-mask="'#################'">
+                                <input type="text" class="form-control" v-model="aCpf" name="a_cpf"  v-on:change="gerarModeloAutor" v-else-if="aPessoa === 'Pessoa Física'" v-mask="'###.###.###-##'">
+                                <input type="text" class="form-control" v-model="aCpf" name="a_cpf"  v-on:change="gerarModeloAutor" v-else v-mask="'##.###.###/####-##'">
                             </div>
                         </div>
                     </div>
@@ -594,8 +594,7 @@
     },
     methods: {
         ajuda: function() {
-            alert(
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+            alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
         },
         receberAdvogadoDados: function(advogado) {
             this.aAdvogadoRepresentanteDados = advogado
@@ -649,6 +648,36 @@
             this.aPai = '',
             this.aMae = '',
             this.aNascimento = ''
+        },
+        gerarModeloAutor: function() {
+            if(this.aPessoa === 'Pessoa Física' && this.aCpf === '111.111.111-11'){
+                this.aSexo = 'Masculino'
+                this.aNome = 'Antônio Pereira da Silva'
+                this.aDocumento = 'Registro Geral'
+                this.aNumeroIdentificacao = '45.489.718-7'
+                this.aExpedidor = 'DETRAN-RJ'
+                this.aEmissao = '11/04/1991'
+                this.aTelefone = '(24)99984-8715'
+                this.aEmail = 'antonio@email.com'
+                this.aCep = '12154-187'
+                this.aEstado = 'Rio de Janeiro'
+                this.aCidade = 'Volta Redonda'
+                this.aBairro = 'Santo Agostinho'
+                this.aTipoLogradouro = 'Rua'
+                this.aLogradouro = 'José Peixoto'
+                this.aNumeroEndereco = '459'
+                this.aTipoEndereco = 'Residencial'
+                this.aValorPedido = '400.00'
+                this.aValorCausa = '254.00'
+                this.aEstadoCivil = 'Casado'
+                this.aProfissao = 'Mecânico'
+                this.aNacionalidade = 'Brasileira'
+                this.aEstadoNaturalidade = 'Rio de Janeiro'
+                this.aCidadeNaturalidade = 'Barra do Piraí'
+                this.aPai = 'Maria Angela Pereira'
+                this.aMae = 'Marcus de Souza Pereira'
+                this.aNascimento = '30/01/1974'
+            }
         }
     }
 }

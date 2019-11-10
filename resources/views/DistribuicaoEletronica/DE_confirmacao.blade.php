@@ -13,14 +13,14 @@
 	<title>Guia de Protocolo</title>
 </head>
 <body>
-	<form action="{{ route('processo.salvar') }}" target="_blank" method="POST" enctype="multipart/form-data">
+	<form action="{{ route('processo.salvar') }}" method="POST" enctype="multipart/form-data">
 		@csrf
 		<div class="container">
 			<div align="center" style="background-color: #cccccc">
 				<br>
 				<h5 style="color:red">Antes de imprimir, verifique as informações e confirme clicando no botão abaixo.</h5>
 				<h5 style="color:red">Após a confirmação não será possível alterar esta petição inicial.</h5>
-				<button type="submit" onclick="window.close()" class="btn btn-success"><i class='fas fa-check'></i> <strong>CONFIRMAR</strong></button>
+				<button type="submit" class="btn btn-success"><i class='fas fa-check'></i> <strong>CONFIRMAR</strong></button>
 				<button type="button" onclick="window.close()" class="btn btn-danger"><i class='fas fa-times'></i> <strong>VOLTAR</strong></button>
 				<br><br>
 			</div>

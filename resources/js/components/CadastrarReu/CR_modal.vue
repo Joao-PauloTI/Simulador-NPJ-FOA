@@ -42,7 +42,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CPF </strong> </span>
-                                <input type="text" class="form-control" v-mask="'###.###.###-##'" v-model="rCpf" name="r_cpf">
+                                <input type="text" class="form-control" v-mask="'###.###.###-##'" v-model="rCpf" name="r_cpf" v-on:change="gerarModeloReu">
                             </div>
                         </div>
                     </div>
@@ -322,6 +322,26 @@
             this.rTipoEndereco = '',
             this.rReferencia = '',
             this.rComprovante = ''
+        },
+        gerarModeloReu: function() {
+            if(this.rCpf === '333.333.333-33'){
+                this.rSexo = 'Masculino'
+                this.rNome = 'Manuel Duarte Oliveira da Cruz'
+                this.rDocumento = 'Registro Geral'
+                this.rNumeroIdentificacao = '27.885.648-1'
+                this.rExpedidor = 'DETRAN-RJ'
+                this.rEmissao = '28/10/1989'
+                this.rTelefone = '(24)99847-8113'
+                this.rEmail = 'manuel@email.com'
+                this.rCep = '28451-845'
+                this.rEstado = 'Rio de Janeiro'
+                this.rCidade = 'Barra Mansa'
+                this.rBairro = '9 de Abril'
+                this.rTipoLogradouro = 'Avenida'
+                this.rLogradouro = '8 de Março'
+                this.rNumeroEndereco = '48'
+                this.rTipoEndereco = 'Residencial'
+            }
         }
     }
 }

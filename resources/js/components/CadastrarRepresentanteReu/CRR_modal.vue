@@ -36,7 +36,7 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>Pessoa Física ou Jurídica </strong> </span>
-                                <select class="custom-select" v-model="rrPessoa">
+                                <select class="custom-select" v-model="rrPessoa" v-on:change="gerarModeloRepresentanteReu">
                                     <option value="">Escolha um tipo de pessoa</option>
                                     <option value="Pessoa Física">Pessoa Física</option>
                                     <option value="Pessoa Jurídica">Pessoa Jurídica</option>
@@ -64,9 +64,9 @@
                         <div class="form-inline">
                             <div class="col-xs-2">
                                 <span><strong>* CPF/CNPJ </strong> </span>
-                                <input type="text" class="form-control" v-model="rrCpf" name="rr_cpf" v-if="rrPessoa === ''" v-mask="'#################'">
-                                <input type="text" class="form-control" v-model="rrCpf" name="rr_cpf" v-else-if="rrPessoa === 'Pessoa Física'" v-mask="'###.###.###-##'">
-                                <input type="text" class="form-control" v-model="rrCpf" name="rr_cpf" v-else v-mask="'##.###.###/####-##'">
+                                <input type="text" class="form-control" v-model="rrCpf" name="rr_cpf"  v-on:change="gerarModeloRepresentanteReu" v-if="rrPessoa === ''" v-mask="'#################'">
+                                <input type="text" class="form-control" v-model="rrCpf" name="rr_cpf"  v-on:change="gerarModeloRepresentanteReu" v-else-if="rrPessoa === 'Pessoa Física'" v-mask="'###.###.###-##'">
+                                <input type="text" class="form-control" v-model="rrCpf" name="rr_cpf"  v-on:change="gerarModeloRepresentanteReu" v-else v-mask="'##.###.###/####-##'">
                             </div>
                         </div>
                     </div>
@@ -366,6 +366,27 @@
             this.rrTipoEndereco = '',
             this.rrReferencia = '',
             this.rrComprovante = ''
+        },
+        gerarModeloRepresentanteReu: function () {
+            if(this.rrPessoa === 'Pessoa Física' && this.rrCpf === '555.555.555-55'){
+                this.rrParte = 'Representante'
+                this.rrSexo = 'Masculino'
+                this.rrNome = 'José Luís Santos Andrade'
+                this.rrDocumento = 'Registro Geral'
+                this.rrNumeroIdentificacao = '74.223.569-8'
+                this.rrEmissor = 'DETRAN-RJ'
+                this.rrEmissao = '14/09/1988'
+                this.rrTelefone = '(24)99988-1231'
+                this.rrEmail = 'jose@email.com'
+                this.rrCep = '65481-254'
+                this.rrEstado = 'Rio de Janeiro'
+                this.rrCidade = 'Volta Redonda'
+                this.rrBairro = 'Vila Santa Secília'
+                this.rrTipoLogradouro = 'Rua'
+                this.rrLogradouro = 'Trinta e Três'
+                this.rrNumeroEndereco = '1494'
+                this.rrTipoEndereco = 'Residencial'
+            }
         }
     }
 }

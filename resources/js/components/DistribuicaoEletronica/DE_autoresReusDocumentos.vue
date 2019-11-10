@@ -282,8 +282,7 @@ export default {
     },
     methods: {
         ajuda: function() {
-            alert(
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+            alert("Dados de cadastro automático: \n\nAutor: Pessoa Física - CPF: 111.111.111-11 \nRepresentante do Autor: Pessoa Física - CPF: 222.222.222-22 \nRéu: Pessoa Física - CPF: 333.333.333-33 \nRéu: Pessoa Jurídica - CNPJ: 44.444.444/4444-44 \nRepresentante do Réu: Pessoa Física - CPF: 555.555.555.55")
         },
         //funções para o array deAutor
         adicionarAutor: function(aIncapaz, aMassa, aInsolvente, aPreso, aEspolio, aCondominio, aMinisterio, aPessoa, aEstrangeiro, aSexo, aCpf, aNome, aMenor, aDocumento, aNumeroIdentificacao, aExpedidor, aEmissao, aTelefone, aEmail, aRepresenta, aIntimacao, aCep, aEstado, aCidade, aBairro, aTipoLogradouro, aLogradouro, aNumeroEndereco, aComplemento, aTipoEndereco, aReferencia, aComprovante, aValorPedido, aValorLiquido, aValorCausa, aPretensao, aEstadoCivil, aProfissao, aNacionalidade, aEstadoNaturalidade, aCidadeNaturalidade, aPai, aMae, aNascimento) {

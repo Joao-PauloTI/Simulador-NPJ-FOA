@@ -6,7 +6,7 @@
 		<pimenulateral id="PI_mostrarEsconderMenu"></pimenulateral>
 		<div class="container">
 			<div class="card">
-				<form action="{{ route('processo.confirmar') }}" target="_popup" method="POST" enctype="multipart/form-data" novalidate>
+				<form action="{{ route('processo.confirmar') }}" target="_popup" onsubmit="window.open(this.action, '_popup', 'width=screen.width, height=screen.height');" method="POST" enctype="multipart/form-data" novalidate>
 					@csrf
 					<degrerj></degrerj>
 					<deprocessoprincipal></deprocessoprincipal>

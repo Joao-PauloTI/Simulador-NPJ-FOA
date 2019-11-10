@@ -2468,6 +2468,36 @@ __webpack_require__.r(__webpack_exports__);
     },
     limparAutorModal: function limparAutorModal() {
       this.aIncapaz = '', this.aMassa = '', this.aInsolvente = '', this.aPreso = '', this.aEspolio = '', this.aCondominio = '', this.aMinisterio = '', this.aPessoa = '', this.aEstrangeiro = '', this.aSexo = '', this.aCpf = '', this.aNome = '', this.aMenor = '', this.aDocumento = '', this.aNumeroIdentificacao = '', this.aExpedidor = '', this.aEmissao = '', this.aTelefone = '', this.aEmail = '', this.aCep = '', this.aEstado = '', this.aCidade = '', this.aBairro = '', this.aTipoLogradouro = '', this.aLogradouro = '', this.aNumeroEndereco = '', this.aComplemento = '', this.aTipoEndereco = '', this.aReferencia = '', this.aComprovante = '', this.aValorPedido = '', this.aValorLiquido = '', this.aValorCausa = '', this.aPretensao = '', this.aEstadoCivil = '', this.aProfissao = '', this.aNacionalidade = '', this.aEstadoNaturalidade = '', this.aCidadeNaturalidade = '', this.aPai = '', this.aMae = '', this.aNascimento = '';
+    },
+    gerarModeloAutor: function gerarModeloAutor() {
+      if (this.aPessoa === 'Pessoa Física' && this.aCpf === '111.111.111-11') {
+        this.aSexo = 'Masculino';
+        this.aNome = 'Antônio Pereira da Silva';
+        this.aDocumento = 'Registro Geral';
+        this.aNumeroIdentificacao = '45.489.718-7';
+        this.aExpedidor = 'DETRAN-RJ';
+        this.aEmissao = '11/04/1991';
+        this.aTelefone = '(24)99984-8715';
+        this.aEmail = 'antonio@email.com';
+        this.aCep = '12154-187';
+        this.aEstado = 'Rio de Janeiro';
+        this.aCidade = 'Volta Redonda';
+        this.aBairro = 'Santo Agostinho';
+        this.aTipoLogradouro = 'Rua';
+        this.aLogradouro = 'José Peixoto';
+        this.aNumeroEndereco = '459';
+        this.aTipoEndereco = 'Residencial';
+        this.aValorPedido = '400.00';
+        this.aValorCausa = '254.00';
+        this.aEstadoCivil = 'Casado';
+        this.aProfissao = 'Mecânico';
+        this.aNacionalidade = 'Brasileira';
+        this.aEstadoNaturalidade = 'Rio de Janeiro';
+        this.aCidadeNaturalidade = 'Barra do Piraí';
+        this.aPai = 'Maria Angela Pereira';
+        this.aMae = 'Marcus de Souza Pereira';
+        this.aNascimento = '30/01/1974';
+      }
     }
   }
 });
@@ -2962,6 +2992,35 @@ __webpack_require__.r(__webpack_exports__);
     },
     limparRepresentanteAutorModal: function limparRepresentanteAutorModal() {
       this.raIncapaz = '', this.raMassa = '', this.raInsolvente = '', this.raPreso = '', this.raEspolio = '', this.raCondominio = '', this.raParte = '', this.raMinisterio = '', this.raPessoa = '', this.raSexo = '', this.raCpf = '', this.raNome = '', this.raDocumento = '', this.raNumeroIdentificacao = '', this.raEmissor = '', this.raEmissao = '', this.raTelefone = '', this.raEmail = '', this.raCep = '', this.raEstado = '', this.raCidade = '', this.raBairro = '', this.raTipoLogradouro = '', this.raLogradouro = '', this.raNumeroEndereco = '', this.raComplemento = '', this.raTipoEndereco = '', this.raReferencia = '', this.raComprovante = '', this.raEstadoCivil = '', this.raProfissao = '', this.raNacionalidade = '', this.raEstadoNaturalidade = '', this.raCidadeNaturalidade = '', this.raPai = '', this.raMae = '', this.raNascimento = '';
+    },
+    gerarModeloRepresentanteAutor: function gerarModeloRepresentanteAutor() {
+      if (this.raPessoa === 'Pessoa Física' && this.raCpf === '222.222.222-22') {
+        this.raParte = 'Representante';
+        this.raSexo = 'Feminino';
+        this.raNome = 'Ana Maria Ferreira da Silva';
+        this.raDocumento = 'Registro Geral';
+        this.raNumeroIdentificacao = '14.658.113-2';
+        this.raEmissor = 'DETRAN-RJ';
+        this.raEmissao = '28/04/1990';
+        this.raTelefone = '(24)99973-4441';
+        this.raEmail = 'ana@email.com';
+        this.raCep = '12154-187';
+        this.raEstado = 'Rio de Janeiro';
+        this.raCidade = 'Volta Redonda';
+        this.raBairro = 'Santo Agostinho';
+        this.raTipoLogradouro = 'Rua';
+        this.raLogradouro = 'José Peixoto';
+        this.raNumeroEndereco = '459';
+        this.raTipoEndereco = 'Residencial';
+        this.raEstadoCivil = 'Casado';
+        this.raProfissao = 'Consultora de Vendas';
+        this.raNacionalidade = 'Brasileira';
+        this.raEstadoNaturalidade = 'Rio de Janeiro';
+        this.raCidadeNaturalidade = 'Volta Redonda';
+        this.raPai = 'Isadora Ferreira Castro';
+        this.raMae = 'Joaquim Barros Ferreira Castro';
+        this.raNascimento = '02/04/1973';
+      }
     }
   }
 });
@@ -3320,6 +3379,27 @@ __webpack_require__.r(__webpack_exports__);
     },
     limparRepresentanteReuModal: function limparRepresentanteReuModal() {
       this.rrParte = '', this.rrPessoa = '', this.rrSexo = '', this.rrCpf = '', this.rrNome = '', this.rrMenor = '', this.rrDocumento = '', this.rrNumeroIdentificacao = '', this.rrEmissor = '', this.rrEmissao = '', this.rrTelefone = '', this.rrEmail = '', this.rrIncerto = '', this.rrCep = '', this.rrEstado = '', this.rrCidade = '', this.rrBairro = '', this.rrTipoLogradouro = '', this.rrLogradouro = '', this.rrNumeroEndereco = '', this.rrComplemento = '', this.rrTipoEndereco = '', this.rrReferencia = '', this.rrComprovante = '';
+    },
+    gerarModeloRepresentanteReu: function gerarModeloRepresentanteReu() {
+      if (this.rrPessoa === 'Pessoa Física' && this.rrCpf === '555.555.555-55') {
+        this.rrParte = 'Representante';
+        this.rrSexo = 'Masculino';
+        this.rrNome = 'José Luís Santos Andrade';
+        this.rrDocumento = 'Registro Geral';
+        this.rrNumeroIdentificacao = '74.223.569-8';
+        this.rrEmissor = 'DETRAN-RJ';
+        this.rrEmissao = '14/09/1988';
+        this.rrTelefone = '(24)99988-1231';
+        this.rrEmail = 'jose@email.com';
+        this.rrCep = '65481-254';
+        this.rrEstado = 'Rio de Janeiro';
+        this.rrCidade = 'Volta Redonda';
+        this.rrBairro = 'Vila Santa Secília';
+        this.rrTipoLogradouro = 'Rua';
+        this.rrLogradouro = 'Trinta e Três';
+        this.rrNumeroEndereco = '1494';
+        this.rrTipoEndereco = 'Residencial';
+      }
     }
   }
 });
@@ -3637,6 +3717,26 @@ __webpack_require__.r(__webpack_exports__);
     },
     limparReuModal: function limparReuModal() {
       this.rEstrangeiro = '', this.rSexo = '', this.rCpf = '', this.rNome = '', this.rDocumento = '', this.rNumeroIdentificacao = '', this.rExpedidor = '', this.rEmissao = '', this.rEmail = '', this.rIncerto = '', this.rCep = '', this.rEstado = '', this.rCidade = '', this.rBairro = '', this.rTipoLogradouro = '', this.rLogradouro = '', this.rNumeroEndereco = '', this.rComplemento = '', this.rTipoEndereco = '', this.rReferencia = '', this.rComprovante = '';
+    },
+    gerarModeloReu: function gerarModeloReu() {
+      if (this.rCpf === '333.333.333-33') {
+        this.rSexo = 'Masculino';
+        this.rNome = 'Manuel Duarte Oliveira da Cruz';
+        this.rDocumento = 'Registro Geral';
+        this.rNumeroIdentificacao = '27.885.648-1';
+        this.rExpedidor = 'DETRAN-RJ';
+        this.rEmissao = '28/10/1989';
+        this.rTelefone = '(24)99847-8113';
+        this.rEmail = 'manuel@email.com';
+        this.rCep = '28451-845';
+        this.rEstado = 'Rio de Janeiro';
+        this.rCidade = 'Barra Mansa';
+        this.rBairro = '9 de Abril';
+        this.rTipoLogradouro = 'Avenida';
+        this.rLogradouro = '8 de Março';
+        this.rNumeroEndereco = '48';
+        this.rTipoEndereco = 'Residencial';
+      }
     }
   }
 });
@@ -3862,6 +3962,20 @@ __webpack_require__.r(__webpack_exports__);
     },
     limparReuJuridicoModal: function limparReuJuridicoModal() {
       this.rjNome = '', this.rjCnpj = '', this.rjTipoEmpresa = '', this.rjCep = '', this.rjEstado = '', this.rjCidade = '', this.rjBairro = '', this.rjTipoLogradouro = '', this.rjLogradouro = '', this.rjNumeroEndereco = '', this.rjComplemento = '', this.rjTipoEndereco = '', this.rjReferencia = '';
+    },
+    gerarModeloReuJuridico: function gerarModeloReuJuridico() {
+      if (this.rjCnpj === '44.444.444/4444-44') {
+        this.rjNome = 'Correios - Empresa Brasileira de Correios e Telégrafos';
+        this.rjTipoEmpresa = 'Sociedade Empresária Limitada (Ltda.)';
+        this.rjCep = '27215-580';
+        this.rjEstado = 'Rio de Janeiro';
+        this.rjCidade = 'Volta Redonda';
+        this.rjBairro = 'Aterrado';
+        this.rjTipoLogradouro = 'Avenida';
+        this.rjLogradouro = 'Paulo de Frontin';
+        this.rjNumeroEndereco = '897';
+        this.rjTipoEndereco = 'Empresarial';
+      }
     }
   }
 });
@@ -4440,7 +4554,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     ajuda: function ajuda() {
-      alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+      alert("Dados de cadastro automático: \n\nAutor: Pessoa Física - CPF: 111.111.111-11 \nRepresentante do Autor: Pessoa Física - CPF: 222.222.222-22 \nRéu: Pessoa Física - CPF: 333.333.333-33 \nRéu: Pessoa Jurídica - CNPJ: 44.444.444/4444-44 \nRepresentante do Réu: Pessoa Física - CPF: 555.555.555.55");
     },
     //funções para o array deAutor
     adicionarAutor: function adicionarAutor(aIncapaz, aMassa, aInsolvente, aPreso, aEspolio, aCondominio, aMinisterio, aPessoa, aEstrangeiro, aSexo, aCpf, aNome, aMenor, aDocumento, aNumeroIdentificacao, aExpedidor, aEmissao, aTelefone, aEmail, aRepresenta, aIntimacao, aCep, aEstado, aCidade, aBairro, aTipoLogradouro, aLogradouro, aNumeroEndereco, aComplemento, aTipoEndereco, aReferencia, aComprovante, aValorPedido, aValorLiquido, aValorCausa, aPretensao, aEstadoCivil, aProfissao, aNacionalidade, aEstadoNaturalidade, aCidadeNaturalidade, aPai, aMae, aNascimento) {
@@ -42895,19 +43009,22 @@ var render = function() {
                     ],
                     staticClass: "custom-select",
                     on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.aPessoa = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      }
+                      change: [
+                        function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.aPessoa = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        },
+                        _vm.gerarModeloAutor
+                      ]
                     }
                   },
                   [
@@ -43075,6 +43192,7 @@ var render = function() {
                       attrs: { type: "text", name: "a_cpf" },
                       domProps: { value: _vm.aCpf },
                       on: {
+                        change: _vm.gerarModeloAutor,
                         input: function($event) {
                           if ($event.target.composing) {
                             return
@@ -43103,6 +43221,7 @@ var render = function() {
                       attrs: { type: "text", name: "a_cpf" },
                       domProps: { value: _vm.aCpf },
                       on: {
+                        change: _vm.gerarModeloAutor,
                         input: function($event) {
                           if ($event.target.composing) {
                             return
@@ -43130,6 +43249,7 @@ var render = function() {
                       attrs: { type: "text", name: "a_cpf" },
                       domProps: { value: _vm.aCpf },
                       on: {
+                        change: _vm.gerarModeloAutor,
                         input: function($event) {
                           if ($event.target.composing) {
                             return
@@ -45691,19 +45811,22 @@ var render = function() {
                     ],
                     staticClass: "custom-select",
                     on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.raPessoa = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      }
+                      change: [
+                        function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.raPessoa = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        },
+                        _vm.gerarModeloRepresentanteAutor
+                      ]
                     }
                   },
                   [
@@ -45805,6 +45928,7 @@ var render = function() {
                       attrs: { type: "text", name: "ra_cpf" },
                       domProps: { value: _vm.raCpf },
                       on: {
+                        change: _vm.gerarModeloRepresentanteAutor,
                         input: function($event) {
                           if ($event.target.composing) {
                             return
@@ -45833,6 +45957,7 @@ var render = function() {
                       attrs: { type: "text", name: "ra_cpf" },
                       domProps: { value: _vm.raCpf },
                       on: {
+                        change: _vm.gerarModeloRepresentanteAutor,
                         input: function($event) {
                           if ($event.target.composing) {
                             return
@@ -45860,6 +45985,7 @@ var render = function() {
                       attrs: { type: "text", name: "ra_cpf" },
                       domProps: { value: _vm.raCpf },
                       on: {
+                        change: _vm.gerarModeloRepresentanteAutor,
                         input: function($event) {
                           if ($event.target.composing) {
                             return
@@ -47443,19 +47569,22 @@ var render = function() {
                     ],
                     staticClass: "custom-select",
                     on: {
-                      change: function($event) {
-                        var $$selectedVal = Array.prototype.filter
-                          .call($event.target.options, function(o) {
-                            return o.selected
-                          })
-                          .map(function(o) {
-                            var val = "_value" in o ? o._value : o.value
-                            return val
-                          })
-                        _vm.rrPessoa = $event.target.multiple
-                          ? $$selectedVal
-                          : $$selectedVal[0]
-                      }
+                      change: [
+                        function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.rrPessoa = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        },
+                        _vm.gerarModeloRepresentanteReu
+                      ]
                     }
                   },
                   [
@@ -47557,6 +47686,7 @@ var render = function() {
                       attrs: { type: "text", name: "rr_cpf" },
                       domProps: { value: _vm.rrCpf },
                       on: {
+                        change: _vm.gerarModeloRepresentanteReu,
                         input: function($event) {
                           if ($event.target.composing) {
                             return
@@ -47585,6 +47715,7 @@ var render = function() {
                       attrs: { type: "text", name: "rr_cpf" },
                       domProps: { value: _vm.rrCpf },
                       on: {
+                        change: _vm.gerarModeloRepresentanteReu,
                         input: function($event) {
                           if ($event.target.composing) {
                             return
@@ -47612,6 +47743,7 @@ var render = function() {
                       attrs: { type: "text", name: "rr_cpf" },
                       domProps: { value: _vm.rrCpf },
                       on: {
+                        change: _vm.gerarModeloRepresentanteReu,
                         input: function($event) {
                           if ($event.target.composing) {
                             return
@@ -48935,6 +49067,7 @@ var render = function() {
                   attrs: { type: "text", name: "r_cpf" },
                   domProps: { value: _vm.rCpf },
                   on: {
+                    change: _vm.gerarModeloReu,
                     input: function($event) {
                       if ($event.target.composing) {
                         return
@@ -49970,6 +50103,7 @@ var render = function() {
                   attrs: { type: "text", name: "rj_cnpj" },
                   domProps: { value: _vm.rjCnpj },
                   on: {
+                    change: _vm.gerarModeloReuJuridico,
                     input: function($event) {
                       if ($event.target.composing) {
                         return
