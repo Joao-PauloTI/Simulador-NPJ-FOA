@@ -10,9 +10,10 @@ class DocumentoPeticaoInicial extends Model
     protected $fillable = array(
         'dpi_arquivo',
         'dpi_descricao'
-	);
+    );
     //DocumentoPeticaoInicial 1:1 Processo
-	public function documentoPeticaoInicial_processo(){
-		return $this->belongsTo('App\Processo', 'dpi_processo_id');
-	}
+    public function documentoPeticaoInicial_processo()
+    {
+        return $this->belongsTo('App\Processo', 'dpi_processo_id');
+    }
 }

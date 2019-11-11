@@ -10,9 +10,10 @@ class DocumentoProcuracao extends Model
     protected $fillable = array(
         'dpr_arquivo',
         'dpr_descricao'
-	);
+    );
     //DocumentoProcuracao 1:1 Processo
-	public function documentoProcuracao_processo(){
-		return $this->belongsTo('App\Processo', 'dpr_processo_id');
-	}
+    public function documentoProcuracao_processo()
+    {
+        return $this->belongsTo('App\Processo', 'dpr_processo_id');
+    }
 }

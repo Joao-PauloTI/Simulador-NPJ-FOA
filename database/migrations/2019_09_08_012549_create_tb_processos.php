@@ -15,7 +15,7 @@ class CreateTbProcessos extends Migration
     {
         Schema::enableForeignKeyConstraints();
 
-        Schema::create('tb_processos', function (Blueprint $table){
+        Schema::create('tb_processos', function (Blueprint $table) {
             $table->increments('id');
             //Numeração do Processo
             $table->string('p_numeracaoProcesso')->nullable();

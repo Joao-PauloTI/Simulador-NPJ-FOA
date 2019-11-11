@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Bootstrap CSS-->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -12,6 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('titulo')</title>
 </head>
+
 <body>
     <!-- Banner -->
     <div id="PI_banner">
@@ -27,7 +29,8 @@
     <script type="text/javascript" src="{{ asset('js/app.js') }} "></script>
     <!--Style para todas as páginas-->
     <style type="text/css">
-        html, body {
+        html,
+        body {
             width: 100%;
             height: 100%;
             margin: 0;
@@ -42,11 +45,13 @@
         #PI_imagem {
             margin: 15px;
         }
+
         /*div de toda a página abaixo do banner*/
         #PI_div_pos_banner {
             margin-top: 5px;
             margin-left: 4px;
         }
+
         /*código para fazer a página se reposicionar quando o menu é aberto/fechado */
         #PI_mostrarEsconderMenu {
             margin-right: 1%;
@@ -54,4 +59,5 @@
         }
     </style>
 </body>
+
 </html>

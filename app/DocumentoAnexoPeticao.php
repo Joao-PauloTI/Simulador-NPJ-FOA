@@ -10,9 +10,10 @@ class DocumentoAnexoPeticao extends Model
     protected $fillable = array(
         'dap_arquivo',
         'dap_descricao'
-	);
+    );
     //DocumentoAnexoPeticao 1:1 Processo
-	public function documentoAnexoPeticao_processo(){
-		return $this->belongsTo('App\Processo', 'dap_processo_id');
-	}
+    public function documentoAnexoPeticao_processo()
+    {
+        return $this->belongsTo('App\Processo', 'dap_processo_id');
+    }
 }

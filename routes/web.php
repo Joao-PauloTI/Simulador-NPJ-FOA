@@ -1,7 +1,7 @@
 <?php
 //Página Inicial
 Route::get('/', function () {
-	return view('PaginaInicial/PI_index');
+    return view('PaginaInicial/PI_index');
 });
 //Distribuição Eletronica
 Route::get('distribuicaoeletronica', function () {
@@ -12,10 +12,10 @@ Route::post('confirmarprocesso', 'ProcessoController@confirmar')->name('processo
 //Salvar processo
 Route::post('salvarprocesso', 'ProcessoController@salvar')->name('processo.salvar');
 //Gerar PDF
-Route::get('processopdf', 'ProcessoController@gerarPDF');
+Route::get('processopdf/{numeracaoProcesso}', 'ProcessoController@gerarPDF');
 //Consultar/Excluir Processos
 Route::get('consultarexcluirprocessos', function () {
-	return view('ConsultarExcluirProcessos/CEP_index');
+    return view('ConsultarExcluirProcessos/CEP_index');
 });
 //Consultar todos os processos
 Route::post('consultartodos', 'ProcessoController@consultarTodos')->name('consulta.todos');

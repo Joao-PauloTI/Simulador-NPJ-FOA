@@ -4159,6 +4159,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'deadvogadoRepresentante',
   data: function data() {
@@ -10587,7 +10588,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-680e94e4] {\n    margin-left: 30%\n}\n\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-680e94e4] {\n    margin-left: 30%\n}\n", ""]);
 
 // exports
 
@@ -10606,7 +10607,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-68a9190c] {\n    margin-left: 30%\n}\n\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-68a9190c] {\n    margin-left: 30%\n}\n", ""]);
 
 // exports
 
@@ -10625,7 +10626,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-1956cb8a] {\n    margin-left: 30%\n}\n\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-1956cb8a] {\n    margin-left: 30%\n}\n", ""]);
 
 // exports
 
@@ -10644,7 +10645,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-5edc6f16] {\n    margin-left: 30%\n}\n\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-5edc6f16] {\n    margin-left: 30%\n}\n", ""]);
 
 // exports
 
@@ -10663,7 +10664,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-87895cda] {\n    margin-left: 30%\n}\n\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-87895cda] {\n    margin-left: 30%\n}\n", ""]);
 
 // exports
 
@@ -10682,7 +10683,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-b0ea708a] {\n    margin-left: 25%;\n}\n\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-b0ea708a] {\n    margin-left: 25%;\n}\n", ""]);
 
 // exports
 
@@ -10701,7 +10702,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*botões*/\n#PI_menu_botao[data-v-62f42706] {\n    border-radius: 6px;\n    border:1px solid;\n    color: white;\n    background-color: #1D4DAE;\n}\n/*tamanho e posição do links do menu*/\n#PI_menu1_opcoes[data-v-62f42706],\n#PI_menu2_opcoes[data-v-62f42706],\n#PI_menu3_opcoes[data-v-62f42706],\n#PI_menu4_opcoes[data-v-62f42706],\n#PI_menu5_opcoes[data-v-62f42706],\n#PI_menu6_opcoes[data-v-62f42706],\n#PI_menu7_opcoes[data-v-62f42706],\n#PI_menu8_opcoes[data-v-62f42706] {\n    margin-left: 7%;\n    line-height: 1;\n}\n\n/*cor dos links do menu*/\n#PI_menu1_opcoes>p>a[data-v-62f42706],\n#PI_menu2_opcoes>p>a[data-v-62f42706],\n#PI_menu3_opcoes>p>a[data-v-62f42706],\n#PI_menu4_opcoes>p>a[data-v-62f42706],\n#PI_menu5_opcoes>p>a[data-v-62f42706],\n#PI_menu6_opcoes>p>a[data-v-62f42706],\n#PI_menu7_opcoes>p>a[data-v-62f42706],\n#PI_menu8_opcoes>p>a[data-v-62f42706],\n#PI_menu1>a[data-v-62f42706],\n#PI_menu2>a[data-v-62f42706],\n#PI_menu3>a[data-v-62f42706],\n#PI_menu4>a[data-v-62f42706],\n#PI_menu5>a[data-v-62f42706],\n#PI_menu6>a[data-v-62f42706],\n#PI_menu7>a[data-v-62f42706],\n#PI_menu8>a[data-v-62f42706],\n#PI_menu9>a[data-v-62f42706],\n#PI_menu10>a[data-v-62f42706],\n#PI_menu11>a[data-v-62f42706],\n#PI_menu12>a[data-v-62f42706],\n#PI_menu13>a[data-v-62f42706] {\n    color: black;\n}\n\n/*tamanho das linhas do menu*/\n#PI_menu1[data-v-62f42706],\n#PI_menu2[data-v-62f42706],\n#PI_menu3[data-v-62f42706],\n#PI_menu4[data-v-62f42706],\n#PI_menu5[data-v-62f42706],\n#PI_menu6[data-v-62f42706],\n#PI_menu7[data-v-62f42706],\n#PI_menu8[data-v-62f42706],\n#PI_menu9[data-v-62f42706],\n#PI_menu10[data-v-62f42706],\n#PI_menu11[data-v-62f42706],\n#PI_menu12[data-v-62f42706],\n#PI_menu13[data-v-62f42706] {\n    line-height: 1;\n}\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*botões*/\n#PI_menu_botao[data-v-62f42706] {\n    border-radius: 6px;\n    border: 1px solid;\n    color: white;\n    background-color: #1D4DAE;\n}\n\n/*tamanho e posição do links do menu*/\n#PI_menu1_opcoes[data-v-62f42706],\n#PI_menu2_opcoes[data-v-62f42706],\n#PI_menu3_opcoes[data-v-62f42706],\n#PI_menu4_opcoes[data-v-62f42706],\n#PI_menu5_opcoes[data-v-62f42706],\n#PI_menu6_opcoes[data-v-62f42706],\n#PI_menu7_opcoes[data-v-62f42706],\n#PI_menu8_opcoes[data-v-62f42706] {\n    margin-left: 7%;\n    line-height: 1;\n}\n\n/*cor dos links do menu*/\n#PI_menu1_opcoes>p>a[data-v-62f42706],\n#PI_menu2_opcoes>p>a[data-v-62f42706],\n#PI_menu3_opcoes>p>a[data-v-62f42706],\n#PI_menu4_opcoes>p>a[data-v-62f42706],\n#PI_menu5_opcoes>p>a[data-v-62f42706],\n#PI_menu6_opcoes>p>a[data-v-62f42706],\n#PI_menu7_opcoes>p>a[data-v-62f42706],\n#PI_menu8_opcoes>p>a[data-v-62f42706],\n#PI_menu1>a[data-v-62f42706],\n#PI_menu2>a[data-v-62f42706],\n#PI_menu3>a[data-v-62f42706],\n#PI_menu4>a[data-v-62f42706],\n#PI_menu5>a[data-v-62f42706],\n#PI_menu6>a[data-v-62f42706],\n#PI_menu7>a[data-v-62f42706],\n#PI_menu8>a[data-v-62f42706],\n#PI_menu9>a[data-v-62f42706],\n#PI_menu10>a[data-v-62f42706],\n#PI_menu11>a[data-v-62f42706],\n#PI_menu12>a[data-v-62f42706],\n#PI_menu13>a[data-v-62f42706] {\n    color: black;\n}\n\n/*tamanho das linhas do menu*/\n#PI_menu1[data-v-62f42706],\n#PI_menu2[data-v-62f42706],\n#PI_menu3[data-v-62f42706],\n#PI_menu4[data-v-62f42706],\n#PI_menu5[data-v-62f42706],\n#PI_menu6[data-v-62f42706],\n#PI_menu7[data-v-62f42706],\n#PI_menu8[data-v-62f42706],\n#PI_menu9[data-v-62f42706],\n#PI_menu10[data-v-62f42706],\n#PI_menu11[data-v-62f42706],\n#PI_menu12[data-v-62f42706],\n#PI_menu13[data-v-62f42706] {\n    line-height: 1;\n}\n", ""]);
 
 // exports
 
@@ -53046,7 +53047,7 @@ var render = function() {
                   {
                     attrs: {
                       value:
-                        "Embargos à Execução (por Título Judicial, Contra a Fazenda Pública\n                            e Carta Precatória)"
+                        "Embargos à Execução (por Título Judicial, Contra a Fazenda Pública\n                                e Carta Precatória)"
                     }
                   },
                   [
@@ -53245,7 +53246,7 @@ var render = function() {
                   {
                     attrs: {
                       value:
-                        "Embargos à execução (por Título Judicial, Contra a Fazenda Pública e\n                            Carta Precatória)"
+                        "Embargos à execução (por Título Judicial, Contra a Fazenda Pública e\n                                Carta Precatória)"
                     }
                   },
                   [
@@ -53284,7 +53285,7 @@ var render = function() {
                   {
                     attrs: {
                       value:
-                        "Falência de Empresários, Socied. Empresárias, Microempresas e Empresas\n                            de Peq. Porte – Requerimento"
+                        "Falência de Empresários, Socied. Empresárias, Microempresas e Empresas\n                                de Peq. Porte – Requerimento"
                     }
                   },
                   [
@@ -53827,7 +53828,7 @@ var render = function() {
                   {
                     attrs: {
                       value:
-                        "Embargos à execução (por Título Judicial, Contra a Fazenda Pública\n                            Pública e Carta Precatória)"
+                        "Embargos à execução (por Título Judicial, Contra a Fazenda Pública\n                                Pública e Carta Precatória)"
                     }
                   },
                   [
@@ -53854,7 +53855,7 @@ var render = function() {
                   {
                     attrs: {
                       value:
-                        "Falência de Empresários, Socied. Empresárias, Microempresas e\n                            Empresas de Peq. Porte – Requerimento"
+                        "Falência de Empresários, Socied. Empresárias, Microempresas e\n                                Empresas de Peq. Porte – Requerimento"
                     }
                   },
                   [
@@ -53963,7 +53964,7 @@ var render = function() {
                   {
                     attrs: {
                       value:
-                        "Restituição de Coisa ou Dinheiro na Falência do Devedor\n                            Empresário"
+                        "Restituição de Coisa ou Dinheiro na Falência do Devedor\n                                Empresário"
                     }
                   },
                   [
@@ -54382,7 +54383,7 @@ var render = function() {
                   {
                     attrs: {
                       value:
-                        "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                        "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                                Fazenda Pública e Carta Precatória)"
                     }
                   },
                   [
@@ -54675,7 +54676,7 @@ var render = function() {
                   {
                     attrs: {
                       value:
-                        "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                        "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                                Fazenda Pública e Carta Precatória)"
                     }
                   },
                   [
@@ -54819,7 +54820,7 @@ var render = function() {
                   {
                     attrs: {
                       value:
-                        "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                        "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                                Fazenda Pública e Carta Precatória)"
                     }
                   },
                   [
@@ -55124,7 +55125,7 @@ var render = function() {
                   {
                     attrs: {
                       value:
-                        "Embargos à Execução Fiscal (com Título Extrajudicial, Contra\n                            a Fazenda Pública e Carta Precatória)"
+                        "Embargos à Execução Fiscal (com Título Extrajudicial, Contra\n                                a Fazenda Pública e Carta Precatória)"
                     }
                   },
                   [
@@ -55614,7 +55615,7 @@ var staticRenderFns = [
             type: "checkbox",
             name: "p_conciliacao",
             value:
-              "Autor opta pela realização de audiência de\n                        conciliação ou de mediação",
+              "Autor opta pela realização de audiência de\n                            conciliação ou de mediação",
             id: "opcaoExtra"
           }
         }),
@@ -55699,7 +55700,7 @@ var staticRenderFns = [
               id: "DE_dDV1",
               name: "p_veracidade",
               value:
-                "Declaro sob as penas da Lei, que as\n                        informações acima prestadas correspondem à verdade, tendo sido prestadas em obediência à\n                        lealdade processual e à boa fé, nos termos do Art.\n                        5º do CPC/15, ciente de que a eventual prestação de informações inverídicas poderá acarretar\n                        a incidência das penalidades previstas em lei."
+                "Declaro sob as penas da Lei, que as\n                            informações acima prestadas correspondem à verdade, tendo sido prestadas em obediência à\n                            lealdade processual e à boa fé, nos termos do Art.\n                            5º do CPC/15, ciente de que a eventual prestação de informações inverídicas poderá acarretar\n                            a incidência das penalidades previstas em lei."
             }
           }),
           _vm._v(" "),
@@ -56865,7 +56866,7 @@ var render = function() {
                   }
                 }
               },
-              [_c("strong", [_vm._v(" << ")])]
+              [_c("strong", [_vm._v("\n                    << ")])]
             ),
             _vm._v(" "),
             _vm._m(0)
@@ -57339,7 +57340,7 @@ var staticRenderFns = [
             _c("p", [_vm._v("Rio de Janeiro, 8 de julho de 2019")]),
             _vm._v(" "),
             _c("p", [
-              _vm._v("Desembargadora "),
+              _vm._v("Desembargador "),
               _c("strong", [_vm._v("FULANO DE TAL")])
             ]),
             _vm._v(" "),

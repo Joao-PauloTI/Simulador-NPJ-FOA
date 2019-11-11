@@ -210,7 +210,7 @@ class ProcessoController extends Controller
             'dpr_arquivo' => 'nullable',
             'dpr_descricao' => 'nullable',
         ]);
-        
+
         $request->session()->put('sessaoProcesso', [
             'p_numeracaoProcesso' => mt_rand(0000000, 9999999)."-".mt_rand(00, 99).".".date("Y").".8.19.0066",
             'p_grerjMotivo' => $request->get('p_grerjMotivo'),
@@ -229,7 +229,7 @@ class ProcessoController extends Controller
             'p_valor' => $request->get('p_valor'),
             'p_veracidade' => $request->get('p_veracidade')
         ]);
-        
+
         $request->session()->put('sessaoAdvogados', [
             'ad_numeroOAB' => $request->ad_numeroOAB,
             'ad_categoria' => $request->ad_categoria,
@@ -399,11 +399,11 @@ class ProcessoController extends Controller
             'rr_comprovante' => $request->get('rr_comprovante')
         ]);
 
-        if($request->session()->exists('sessaoDocumentoAnexoPeticao')){
+        if ($request->session()->exists('sessaoDocumentoAnexoPeticao')) {
             $request->session()->forget('sessaoDocumentoAnexoPeticao');
         }
-        if(isset($request->dap_arquivo)){
-            if($request->hasFile('dap_arquivo')){
+        if (isset($request->dap_arquivo)) {
+            if ($request->hasFile('dap_arquivo')) {
                 foreach ($request->dap_arquivo as $key => $arquivo) {
                     $arquivo = $request->file('dap_arquivo')[$key]->getClientOriginalName();
                     $dap_caminho = $request->file('dap_arquivo')[$key]->storeAs('public/documentos/anexosPeticao', $arquivo);
@@ -414,11 +414,11 @@ class ProcessoController extends Controller
                 }
             }
         }
-        
-        if($request->session()->exists('sessaoDocumentoProcuracao')){
+
+        if ($request->session()->exists('sessaoDocumentoProcuracao')) {
             $request->session()->forget('sessaoDocumentoProcuracao');
         }
-        if($request->hasFile('dpr_arquivo')){
+        if ($request->hasFile('dpr_arquivo')) {
             $dpr_arquivo = $request->file('dpr_arquivo')->getClientOriginalName();
             $dap_caminho = $request->file('dpr_arquivo')->storeAs('public/documentos/procuracoes', $dpr_arquivo);
             $request->session()->put('sessaoDocumentoProcuracao', [
@@ -426,11 +426,11 @@ class ProcessoController extends Controller
                 'dpr_descricao' => $request->get('dpr_descricao')
             ]);
         }
-        
-        if($request->session()->exists('sessaoDocumentoCpf')){
+
+        if ($request->session()->exists('sessaoDocumentoCpf')) {
             $request->session()->forget('sessaoDocumentoCpf');
         }
-        if($request->hasFile('dcpf_arquivo')){
+        if ($request->hasFile('dcpf_arquivo')) {
             $dcpf_arquivo = $request->file('dcpf_arquivo')->getClientOriginalName();
             $dcpf_caminho = $request->file('dcpf_arquivo')->storeAs('public/documentos/cpfs', $dcpf_arquivo);
             $request->session()->put('sessaoDocumentoCpf', [
@@ -439,10 +439,10 @@ class ProcessoController extends Controller
             ]);
         }
 
-        if($request->session()->exists('sessaoDocumentoComprovanteResidencia')){
+        if ($request->session()->exists('sessaoDocumentoComprovanteResidencia')) {
             $request->session()->forget('sessaoDocumentoComprovanteResidencia');
         }
-        if($request->hasFile('dcr_arquivo')){
+        if ($request->hasFile('dcr_arquivo')) {
             $dcr_arquivo = $request->file('dcr_arquivo')->getClientOriginalName();
             $dcr_caminho = $request->file('dcr_arquivo')->storeAs('public/documentos/comprovantesResidencia', $dcr_arquivo);
             $request->session()->put('sessaoDocumentoComprovanteResidencia', [
@@ -451,10 +451,10 @@ class ProcessoController extends Controller
             ]);
         }
 
-        if($request->session()->exists('sessaoDocumentoPeticaoInicial')){
+        if ($request->session()->exists('sessaoDocumentoPeticaoInicial')) {
             $request->session()->forget('sessaoDocumentoPeticaoInicial');
         }
-        if($request->hasFile('dpi_arquivo')){
+        if ($request->hasFile('dpi_arquivo')) {
             $dpi_arquivo = $request->file('dpi_arquivo')->getClientOriginalName();
             $dpi_caminho = $request->file('dpi_arquivo')->storeAs('public/documentos/peticoesIniciais', $dpi_arquivo);
             $request->session()->put('sessaoDocumentoPeticaoInicial', [
@@ -462,7 +462,7 @@ class ProcessoController extends Controller
                 'dpi_descricao' => $request->get('dpi_descricao')
             ]);
         }
-        
+
         return view('DistribuicaoEletronica/DE_confirmacao');
     }
 
@@ -489,9 +489,9 @@ class ProcessoController extends Controller
         $processo->save(); //O processo precisa ser salvo primeiro, senão as chaves estrangeiras não terão referência
 
         //Loops para salvar vários advogados no sistema
-        if($request->session()->get('sessaoAdvogados.ad_numeroOAB') !== null){
-            foreach($request->session()->get('sessaoAdvogados.ad_numeroOAB') as $key => $numero){
-                if($request->session()->get('sessaoAdvogados.ad_intimacao')[$key] !== null && $request->session()->get('sessaoAdvogados.ad_representa')[$key] !== null){
+        if ($request->session()->get('sessaoAdvogados.ad_numeroOAB') !== null) {
+            foreach ($request->session()->get('sessaoAdvogados.ad_numeroOAB') as $key => $numero) {
+                if ($request->session()->get('sessaoAdvogados.ad_intimacao')[$key] !== null && $request->session()->get('sessaoAdvogados.ad_representa')[$key] !== null) {
                     $advogado = new Advogado([
                         'ad_numeroOAB' => $numero,
                         'ad_categoria' => $request->session()->get('sessaoAdvogados.ad_categoria')[$key],
@@ -502,7 +502,7 @@ class ProcessoController extends Controller
                     ]);
                     $advogado->advogado_processo()->associate($processo);
                     $advogado->save();
-                }elseif($request->session()->get('sessaoAdvogados.ad_intimacao')[$key] !== null && $request->session()->get('sessaoAdvogados.ad_representa')[$key] == null){
+                } elseif ($request->session()->get('sessaoAdvogados.ad_intimacao')[$key] !== null && $request->session()->get('sessaoAdvogados.ad_representa')[$key] == null) {
                     $advogado = new Advogado([
                         'ad_numeroOAB' => $numero,
                         'ad_categoria' => $request->session()->get('sessaoAdvogados.ad_categoria')[$key],
@@ -513,7 +513,7 @@ class ProcessoController extends Controller
                     ]);
                     $advogado->advogado_processo()->associate($processo);
                     $advogado->save();
-                }elseif($request->session()->get('sessaoAdvogados.ad_intimacao')[$key] == null && $request->session()->get('sessaoAdvogados.ad_representa')[$key] !== null){
+                } elseif ($request->session()->get('sessaoAdvogados.ad_intimacao')[$key] == null && $request->session()->get('sessaoAdvogados.ad_representa')[$key] !== null) {
                     $advogado = new Advogado([
                         'ad_numeroOAB' => $numero,
                         'ad_categoria' => $request->session()->get('sessaoAdvogados.ad_categoria')[$key],
@@ -524,7 +524,7 @@ class ProcessoController extends Controller
                     ]);
                     $advogado->advogado_processo()->associate($processo);
                     $advogado->save();
-                }elseif($request->session()->get('sessaoAdvogados.ad_intimacao')[$key] == null && $request->session()->get('sessaoAdvogados.ad_representa')[$key] == null){
+                } elseif ($request->session()->get('sessaoAdvogados.ad_intimacao')[$key] == null && $request->session()->get('sessaoAdvogados.ad_representa')[$key] == null) {
                     $advogado = new Advogado([
                         'ad_numeroOAB' => $numero,
                         'ad_categoria' => $request->session()->get('sessaoAdvogados.ad_categoria')[$key],
@@ -540,9 +540,9 @@ class ProcessoController extends Controller
         }
 
         //Loops para salvar vários defensores no sistema
-        if($request->session()->get('sessaoDefensores.dp_matricula') !== null){
-            foreach($request->session()->get('sessaoDefensores.dp_matricula') as $key => $matricula){
-                if($request->session()->get('sessaoDefensores.dp_intimacao')[$key] !== null && $request->session()->get('sessaoDefensores.dp_representa')[$key] !== null){
+        if ($request->session()->get('sessaoDefensores.dp_matricula') !== null) {
+            foreach ($request->session()->get('sessaoDefensores.dp_matricula') as $key => $matricula) {
+                if ($request->session()->get('sessaoDefensores.dp_intimacao')[$key] !== null && $request->session()->get('sessaoDefensores.dp_representa')[$key] !== null) {
                     $defensor = new Defensor([
                         'dp_matricula' => $matricula,
                         'dp_categoria' => $request->session()->get('sessaoDefensores.dp_categoria')[$key],
@@ -552,7 +552,7 @@ class ProcessoController extends Controller
                     ]);
                     $defensor->defensor_processo()->associate($processo);
                     $defensor->save();
-                }elseif($request->session()->get('sessaoDefensores.dp_intimacao')[$key] !== null && $request->session()->get('sessaoDefensores.dp_representa')[$key] == null){
+                } elseif ($request->session()->get('sessaoDefensores.dp_intimacao')[$key] !== null && $request->session()->get('sessaoDefensores.dp_representa')[$key] == null) {
                     $defensor = new Defensor([
                         'dp_matricula' => $matricula,
                         'dp_categoria' => $request->session()->get('sessaoDefensores.dp_categoria')[$key],
@@ -562,7 +562,7 @@ class ProcessoController extends Controller
                     ]);
                     $defensor->defensor_processo()->associate($processo);
                     $defensor->save();
-                }elseif($request->session()->get('sessaoDefensores.dp_intimacao')[$key] == null && $request->session()->get('sessaoDefensores.dp_representa')[$key] !== null){
+                } elseif ($request->session()->get('sessaoDefensores.dp_intimacao')[$key] == null && $request->session()->get('sessaoDefensores.dp_representa')[$key] !== null) {
                     $defensor = new Defensor([
                         'dp_matricula' => $matricula,
                         'dp_categoria' => $request->session()->get('sessaoDefensores.dp_categoria')[$key],
@@ -572,7 +572,7 @@ class ProcessoController extends Controller
                     ]);
                     $defensor->defensor_processo()->associate($processo);
                     $defensor->save();
-                }elseif($request->session()->get('sessaoDefensores.dp_intimacao')[$key] == null && $request->session()->get('sessaoDefensores.dp_representa')[$key] == null){
+                } elseif ($request->session()->get('sessaoDefensores.dp_intimacao')[$key] == null && $request->session()->get('sessaoDefensores.dp_representa')[$key] == null) {
                     $defensor = new Defensor([
                         'dp_matricula' => $matricula,
                         'dp_categoria' => $request->session()->get('sessaoDefensores.dp_categoria')[$key],
@@ -585,7 +585,7 @@ class ProcessoController extends Controller
                 }
             }
         }
-        
+
         $autor = new Autor([
             'a_incapaz' => $request->session()->get('sessaoAutor.a_incapaz'),
             'a_massa' => $request->session()->get('sessaoAutor.a_massa'),
@@ -748,8 +748,8 @@ class ProcessoController extends Controller
         $representanteReu->representanteReu_processo()->associate($processo);
         $representanteReu->save();
 
-        if(is_array($request->session()->get('sessaoDocumentoAnexoPeticao'))){
-            foreach($request->session()->get('sessaoDocumentoAnexoPeticao') as $key => $arquivo){
+        if (is_array($request->session()->get('sessaoDocumentoAnexoPeticao'))) {
+            foreach ($request->session()->get('sessaoDocumentoAnexoPeticao') as $key => $arquivo) {
                 $documentoAnexoPeticao = new DocumentoAnexoPeticao([
                     'dap_arquivo' => $arquivo['dap_arquivo'],
                     'dap_descricao' => $arquivo['dap_descricao']
@@ -759,7 +759,7 @@ class ProcessoController extends Controller
             }
         }
 
-        if($request->session()->get('sessaoDocumentoProcuracao') !== null){
+        if ($request->session()->get('sessaoDocumentoProcuracao') !== null) {
             $documentoProcuracao = new DocumentoProcuracao([
                 'dpr_arquivo' => $request->session()->get('sessaoDocumentoProcuracao.dpr_arquivo'),
                 'dpr_descricao' => $request->session()->get('sessaoDocumentoProcuracao.dpr_descricao')
@@ -768,7 +768,7 @@ class ProcessoController extends Controller
             $documentoProcuracao->save();
         }
 
-        if($request->session()->get('sessaoDocumentoCpf') !== null){
+        if ($request->session()->get('sessaoDocumentoCpf') !== null) {
             $documentoCpf = new DocumentoCpf([
                 'dcpf_arquivo' => $request->session()->get('sessaoDocumentoCpf.dcpf_arquivo'),
                 'dcpf_descricao' => $request->session()->get('sessaoDocumentoCpf.dcpf_descricao')
@@ -777,7 +777,7 @@ class ProcessoController extends Controller
             $documentoCpf->save();
         }
 
-        if($request->session()->get('sessaoDocumentoComprovanteResidencia') !== null){
+        if ($request->session()->get('sessaoDocumentoComprovanteResidencia') !== null) {
             $documentoComprovanteResidencia = new DocumentoComprovanteResidencia([
                 'dcr_arquivo' => $request->session()->get('sessaoDocumentoComprovanteResidencia.dcr_arquivo'),
                 'dcr_descricao' => $request->session()->get('sessaoDocumentoComprovanteResidencia.dcr_descricao')
@@ -786,7 +786,7 @@ class ProcessoController extends Controller
             $documentoComprovanteResidencia->save();
         }
 
-        if($request->session()->get('sessaoDocumentoPeticaoInicial') !== null){
+        if ($request->session()->get('sessaoDocumentoPeticaoInicial') !== null) {
             $documentoPeticaoInicial = new DocumentoPeticaoInicial([
                 'dpi_arquivo' => $request->session()->get('sessaoDocumentoPeticaoInicial.dpi_arquivo'),
                 'dpi_descricao' => $request->session()->get('sessaoDocumentoPeticaoInicial.dpi_descricao')
@@ -795,14 +795,14 @@ class ProcessoController extends Controller
             $documentoPeticaoInicial->save();
         }
 
-        return redirect()->action('ProcessoController@gerarPDF');
+        return redirect()->action('ProcessoController@gerarPDF', $request->session()->get('sessaoProcesso.p_numeracaoProcesso'));
     }
 
-    public function gerarPDF(Request $request)
+    public function gerarPDF($numeracaoProcesso)
     {
-        $dadosProcesso = $request->session()->all();
-        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->loadView('DistribuicaoEletronica/DE_processoPDF', $dadosProcesso);
-        return $pdf->stream("Processo - ". $request->session()->get('sessaoProcesso.p_numeracaoProcesso') .".pdf");
+        $dadosProcesso = Processo::where('p_numeracaoProcesso', $numeracaoProcesso)->with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->first();
+        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->loadView('DistribuicaoEletronica/DE_processoPDF', compact('dadosProcesso'));
+        return $pdf->stream("Processo - ". $dadosProcesso->p_numeracaoProcesso .".pdf");
     }
 
     public function consultarTodos(Request $request)
@@ -826,29 +826,29 @@ class ProcessoController extends Controller
 
     public function excluirSelecionados(Request $request)
     {
-      $request->validate([
+        $request->validate([
             'processosSelecionados' => 'nullable'
       ]);
-      if (is_array($request->processosSelecionados)) {
+        if (is_array($request->processosSelecionados)) {
             foreach ($request->processosSelecionados as $key => $numero) {
-                  $processosSelecionados = Processo::where('p_numeracaoProcesso', $numero);
-                  $processosSelecionados->delete();
+                $processosSelecionados = Processo::where('p_numeracaoProcesso', $numero);
+                $processosSelecionados->delete();
             }
-      } else {
+        } else {
             if ($request->session()->get('consultaFiltros.comarca_consulta') === 'Todas') {
-                  $processos = Processo::with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->get();
-                  return view('ConsultarExcluirProcessos/CEP_historico', compact('processos'));
+                $processos = Processo::with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->get();
+                return view('ConsultarExcluirProcessos/CEP_historico', compact('processos'));
             } else {
-                  $processos = Processo::where('p_comarca', $request->session()->get('consultaFiltros.comarca_consulta'))->with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->get();
-                  return view('ConsultarExcluirProcessos/CEP_historico', compact('processos'));
+                $processos = Processo::where('p_comarca', $request->session()->get('consultaFiltros.comarca_consulta'))->with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->get();
+                return view('ConsultarExcluirProcessos/CEP_historico', compact('processos'));
             }
-      }
-      if ($request->session()->get('consultaFiltros.comarca_consulta') === 'Todas') {
+        }
+        if ($request->session()->get('consultaFiltros.comarca_consulta') === 'Todas') {
             $processos = Processo::with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->get();
             return view('ConsultarExcluirProcessos/CEP_historico', compact('processos'));
-      } else {
+        } else {
             $processos = Processo::where('p_comarca', $request->session()->get('consultaFiltros.comarca_consulta'))->with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->get();
             return view('ConsultarExcluirProcessos/CEP_historico', compact('processos'));
-      }
+        }
     }
 }
