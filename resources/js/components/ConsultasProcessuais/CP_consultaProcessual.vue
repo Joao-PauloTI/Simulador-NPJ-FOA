@@ -14,10 +14,10 @@
             <br>
             <!--Numeração única-->
             <div v-if="showOpcao === 'showUnica'">
-                <input type="text" class="form-control" v-mask="'#######-##.####.8.19.####'">
+                <input type="text" class="form-control" name="cp_numeracaoProcesso" v-mask="'#######-##.####.8.19.####'">
             </div>
             <!--Numeração Antiga-->
-            <div v-else="showOpcao === 'showAntiga'">
+            <div v-else>
                 <div>
                     <label for="CP_cP_origem"><strong>Origem:</strong></label>
                     <select class="custom-select" id="CP_cP_origem">
@@ -33,7 +33,7 @@
                 <br>
                 <div>
                     <label for="CP_cP_numeroDeProcesso"><strong>Número de Processo</strong></label>
-                    <input type="text" class="form-control" v-mask="'####.###.######-# ##'">
+                    <input type="text" class="form-control" id="CP_cP_numeroDeProcesso" v-mask="'####.###.######-# ##'">
                 </div>
             </div>
             <br>

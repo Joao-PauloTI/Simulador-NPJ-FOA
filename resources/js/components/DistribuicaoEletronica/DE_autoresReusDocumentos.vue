@@ -236,21 +236,21 @@
 </template>
 <script>
 //Modal de cadastro de autor
-import camodal from '../CadastrarAutor/CA_modal'
+import camodal from './CadastrarAutor/CA_modal'
 //Modal de cadastro de representante de autor
-import cramodal from '../CadastrarRepresentanteAutor/CRA_modal'
+import cramodal from './CadastrarRepresentanteAutor/CRA_modal'
 //Modal de cadastro de réu
-import crmodal from '../CadastrarReu/CR_modal'
+import crmodal from './CadastrarReu/CR_modal'
 //Modal de cadastro de réu - pessoa jurídica
-import crjmodal from '../CadastrarReuJuridico/CRJ_modal'
+import crjmodal from './CadastrarReuJuridico/CRJ_modal'
 //Modal de cadastro de representante de réu
-import crrmodal from '../CadastrarRepresentanteReu/CRR_modal'
+import crrmodal from './CadastrarRepresentanteReu/CRR_modal'
 //Modals de cadastro de documentos
-import duploadpeticaoinicial from '../Documentos/D_uploadPeticaoInicial'
-import denviarcpf from '../Documentos/D_enviarCPF'
-import denviarcomprovanteresidencia from '../Documentos/D_enviarComprovanteResidencia'
-import denviarprocuracao from '../Documentos/D_enviarProcuracao'
-import duploadanexopeticao from '../Documentos/D_uploadAnexoPeticao'
+import duploadpeticaoinicial from './Documentos/D_uploadPeticaoInicial'
+import denviarcpf from './Documentos/D_enviarCPF'
+import denviarcomprovanteresidencia from './Documentos/D_enviarComprovanteResidencia'
+import denviarprocuracao from './Documentos/D_enviarProcuracao'
+import duploadanexopeticao from './Documentos/D_uploadAnexoPeticao'
 
 export default {
     name: 'deautoresReusDocumentos',

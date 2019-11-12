@@ -47,12 +47,12 @@
                     @endforeach
                     @if (count($processos) > 0)
                     <div align="center">
-                        <button type="submit" class="btn btn-danger">Excluir Processos Selecionados</button>
-                        <a href="/consultarexcluirprocessos" class="btn btn-primary">Voltar</a>
+                        <button type="submit" class="btn btn-danger"><strong>Excluir Processos Selecionados</strong></button>
+                        <a href="/consultarexcluirprocessos" class="btn btn-primary"><strong>Voltar</strong></a>
                     </div>
                     @else
                     <div align="center">
-                        <a href="/consultarexcluirprocessos" class="btn btn-primary">Voltar</a>
+                        <a href="/consultarexcluirprocessos" class="btn btn-primary"><strong>Voltar</strong></a>
                     </div>
                     @endif
                 </form>

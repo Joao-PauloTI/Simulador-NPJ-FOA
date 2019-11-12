@@ -800,9 +800,9 @@ class ProcessoController extends Controller
 
     public function gerarPDF($numeracaoProcesso)
     {
-        $dadosProcesso = Processo::where('p_numeracaoProcesso', $numeracaoProcesso)->with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->first();
-        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->loadView('DistribuicaoEletronica/DE_processoPDF', compact('dadosProcesso'));
-        return $pdf->stream("Processo - ". $dadosProcesso->p_numeracaoProcesso .".pdf");
+        $processo = Processo::where('p_numeracaoProcesso', $numeracaoProcesso)->with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->first();
+        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->loadView('DistribuicaoEletronica/DE_processoPDF', compact('processo'));
+        return $pdf->stream("Processo - ". $processo->p_numeracaoProcesso .".pdf");
     }
 
     public function consultarTodos(Request $request)
@@ -849,6 +849,20 @@ class ProcessoController extends Controller
         } else {
             $processos = Processo::where('p_comarca', $request->session()->get('consultaFiltros.comarca_consulta'))->with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->get();
             return view('ConsultarExcluirProcessos/CEP_historico', compact('processos'));
+        }
+    }
+
+    public function consultar(Request $request)
+    {
+        $request->validate([
+            'cp_numeracaoProcesso' => 'nullable'
+        ]);
+
+        $processo = Processo::where('p_numeracaoProcesso', $request->cp_numeracaoProcesso)->with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->first();
+        if ($processo != null) {
+            return view('ConsultasProcessuais/CP_processo', compact('processo'));
+        } else {
+            return back()->with('mensagemConsulta', "Processo ". $request->cp_numeracaoProcesso ." não encontrado!");
         }
     }
 }

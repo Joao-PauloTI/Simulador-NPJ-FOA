@@ -25,3 +25,4 @@ Route::post('excluirprocessos', 'ProcessoController@excluirSelecionados')->name(
 Route::get('consultasprocessuais', function () {
     return view('ConsultasProcessuais/CP_index');
 });
+Route::post('consultarprocesso', 'ProcessoController@consultar')->name('processo.consultar');

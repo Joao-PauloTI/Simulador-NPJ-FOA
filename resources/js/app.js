@@ -32,23 +32,23 @@ Vue.component('deautoresreusdocumentos', require('./components/DistribuicaoEletr
 Vue.component('dedeclaracaodeveracidade', require('./components/DistribuicaoEletronica/DE_declaracaoDeVeracidade.vue').default);
 
 //Componentes da pasta CadastrarAutor
-Vue.component('camodal', require('./components/CadastrarAutor/CA_modal.vue').default);
+Vue.component('camodal', require('./components/DistribuicaoEletronica/CadastrarAutor/CA_modal.vue').default);
 //Componentes da pasta CadastrarRepresentanteAutor
-Vue.component('cramodal', require('./components/CadastrarRepresentanteAutor/CRA_modal.vue').default);
+Vue.component('cramodal', require('./components/DistribuicaoEletronica/CadastrarRepresentanteAutor/CRA_modal.vue').default);
 //Componentes da pasta CadastrarReu
-Vue.component('crmodal', require('./components/CadastrarReu/CR_modal.vue').default);
+Vue.component('crmodal', require('./components/DistribuicaoEletronica/CadastrarReu/CR_modal.vue').default);
 //Componentes da pasta CadastrarReuJuridico
-Vue.component('crjmodal', require('./components/CadastrarReuJuridico/CRJ_modal.vue').default);
+Vue.component('crjmodal', require('./components/DistribuicaoEletronica/CadastrarReuJuridico/CRJ_modal.vue').default);
 //Componentes da pasta CadastrarRepresentanteReu
-Vue.component('crrmodal', require('./components/CadastrarRepresentanteReu/CRR_modal.vue').default);
+Vue.component('crrmodal', require('./components/DistribuicaoEletronica/CadastrarRepresentanteReu/CRR_modal.vue').default);
 //Componentes da pasta ConsultasProcessuais
 Vue.component('cpconsultaprocessual', require('./components/ConsultasProcessuais/CP_consultaProcessual.vue').default);
 //Componentes da pasta Documentos
-Vue.component('duploadpeticaoinicial', require('./components/Documentos/D_uploadPeticaoInicial.vue').default);
-Vue.component('denviarcpf', require('./components/Documentos/D_enviarCPF.vue').default);
-Vue.component('denviarcomprovanteresidencia', require('./components/Documentos/D_enviarComprovanteResidencia.vue').default);
-Vue.component('denviarprocuracao', require('./components/Documentos/D_enviarProcuracao.vue').default);
-Vue.component('duploadanexopeticao', require('./components/Documentos/D_uploadAnexoPeticao.vue').default);
+Vue.component('duploadpeticaoinicial', require('./components/DistribuicaoEletronica/Documentos/D_uploadPeticaoInicial.vue').default);
+Vue.component('denviarcpf', require('./components/DistribuicaoEletronica/Documentos/D_enviarCPF.vue').default);
+Vue.component('denviarcomprovanteresidencia', require('./components/DistribuicaoEletronica/Documentos/D_enviarComprovanteResidencia.vue').default);
+Vue.component('denviarprocuracao', require('./components/DistribuicaoEletronica/Documentos/D_enviarProcuracao.vue').default);
+Vue.component('duploadanexopeticao', require('./components/DistribuicaoEletronica/Documentos/D_uploadAnexoPeticao.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -69,5 +69,5 @@ Vue.use(VueInputAutowidth)
 
 const app = new Vue({
     el: '#app',
-    
+
 });

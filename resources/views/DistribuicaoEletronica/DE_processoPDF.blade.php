@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <title>Processo - {{ $dadosProcesso->p_numeracaoProcesso }}</title>
+    <title>Processo - {{ $processo->p_numeracaoProcesso }}</title>
 </head>
 
 <body style="font-size:12px;">
@@ -13,7 +13,7 @@
     <hr style="background-color:black; height:1px; margin-top:5px; margin-bottom:5px;">
     <div>
         <h5 align="center" style="background-color: #cccccc"><strong>Número do Processo</strong></h5>
-        <h4 align="center"><strong>{{ $dadosProcesso->p_numeracaoProcesso }}</strong></h4>
+        <h4 align="center"><strong>{{ $processo->p_numeracaoProcesso }}</strong></h4>
         <h5><strong>Núcleo de Prática Jurídica - UniFOA</strong></h5>
         <table class="m-0 p-0 table table-borderless table-sm">
             <tr>
@@ -21,30 +21,30 @@
                 <td><strong>Horário de Distribuição: {{ Carbon\Carbon::now('America/Sao_Paulo')->format('H:i') }}</strong></td>
             </tr>
             <tr>
-                <td><strong>Distribuidor:</strong> {{ $dadosProcesso->p_distribuicao }}</td>
+                <td><strong>Distribuidor:</strong> {{ $processo->p_distribuicao }}</td>
             </tr>
             <tr>
-                <td><strong>Competência:</strong> {{ $dadosProcesso->p_competencia }}</td>
-                <td><strong>Classe:</strong> {{ $dadosProcesso->p_classe }}</td>
+                <td><strong>Competência:</strong> {{ $processo->p_competencia }}</td>
+                <td><strong>Classe:</strong> {{ $processo->p_classe }}</td>
             </tr>
             <tr>
-                <td><strong>Valor da Causa:</strong> {{ $dadosProcesso->p_valor }}</td>
-                <td><strong>Justiça Gratuita:</strong> {{ $dadosProcesso->p_grerjMotivo }}</td>
+                <td><strong>Valor da Causa:</strong> {{ $processo->p_valor }}</td>
+                <td><strong>Justiça Gratuita:</strong> {{ $processo->p_grerjMotivo }}</td>
             </tr>
         </table>
     </div>
     <div>
         <h5 align="center" style="background-color: #cccccc"><strong>Advogado(s) / Representante</strong></h5>
         <table class="m-0 p-0 table table-borderless table-sm">
-            @if(count($dadosProcesso->processo_advogado) > 0)
-            @foreach($dadosProcesso->processo_advogado as $advogado)
+            @if(count($processo->processo_advogado) > 0)
+            @foreach($processo->processo_advogado as $advogado)
             <tr>
                 <td><strong>{{ $advogado->ad_estadoOAB }}{{ $advogado->ad_numeroOAB }}</strong> - {{ $advogado->ad_nome }}</td>
             </tr>
             @endforeach
             @endif
-            @if(count($dadosProcesso->processo_defensor) > 0 )
-            @foreach($dadosProcesso->processo_defensor as $defensor)
+            @if(count($processo->processo_defensor) > 0 )
+            @foreach($processo->processo_defensor as $defensor)
             <tr>
                 <td><strong>{{ $defensor->dp_matricula }}</strong> - {{ $defensor->dp_nome }}</td>
             </tr>
@@ -55,113 +55,113 @@
     <div>
         <h5 align="center" style="background-color: #cccccc"><strong>Parte(s)</strong></h5>
         <table class="m-0 p-0 table table-borderless table-sm">
-            @if($dadosProcesso->processo_reu->r_cpf !== null)
+            @if($processo->processo_reu->r_cpf !== null)
             <tr>
                 <td>
-                    <strong>Réu: {{ $dadosProcesso->processo_reu->r_nome }}</strong>,
-                    Sexo: {{ $dadosProcesso->processo_reu->r_sexo }},
-                    CPF: {{ $dadosProcesso->processo_reu->r_cpf }}
-                    @if($dadosProcesso->processo_reu->r_email !== null),
-                    E-mail: {{ $dadosProcesso->processo_reu->r_email }}
+                    <strong>Réu: {{ $processo->processo_reu->r_nome }}</strong>,
+                    Sexo: {{ $processo->processo_reu->r_sexo }},
+                    CPF: {{ $processo->processo_reu->r_cpf }}
+                    @if($processo->processo_reu->r_email !== null),
+                    E-mail: {{ $processo->processo_reu->r_email }}
                     @endif <br>
-                    Endereço: {{ $dadosProcesso->processo_reu->r_tipoLogradouro }} {{ $dadosProcesso->processo_reu->r_logradouro }},
-                    nº {{ $dadosProcesso->processo_reu->r_numeroEndereco }}
-                    @if($dadosProcesso->processo_reu->r_complemento !== null),
-                    {{ $dadosProcesso->processo_reu->r_complemento }}
+                    Endereço: {{ $processo->processo_reu->r_tipoLogradouro }} {{ $processo->processo_reu->r_logradouro }},
+                    nº {{ $processo->processo_reu->r_numeroEndereco }}
+                    @if($processo->processo_reu->r_complemento !== null),
+                    {{ $processo->processo_reu->r_complemento }}
                     @endif,
-                    {{ $dadosProcesso->processo_reu->r_cidade }},
-                    Bairro: {{ $dadosProcesso->processo_reu->r_bairro }},
-                    CEP: {{ $dadosProcesso->processo_reu->r_cep }}
+                    {{ $processo->processo_reu->r_cidade }},
+                    Bairro: {{ $processo->processo_reu->r_bairro }},
+                    CEP: {{ $processo->processo_reu->r_cep }}
                 </td>
             </tr>
             @endif
-            @if($dadosProcesso->processo_reuJuridico->rj_cnpj !== null)
+            @if($processo->processo_reuJuridico->rj_cnpj !== null)
             <tr>
                 <td>
-                    <strong>Réu: {{ $dadosProcesso->processo_reuJuridico->rj_nome }}</strong>,
-                    CNPJ: {{ $dadosProcesso->processo_reuJuridico->rj_cnpj }} <br>
-                    Endereço: {{ $dadosProcesso->processo_reuJuridico->rj_tipoLogradouro }} {{ $dadosProcesso->processo_reuJuridico->rj_logradouro }},
-                    nº {{ $dadosProcesso->processo_reuJuridico->rj_numeroEndereco }}
-                    @if($dadosProcesso->processo_reuJuridico->rj_complemento !== null),
-                    {{ $dadosProcesso->processo_reuJuridico->rj_complemento }}
+                    <strong>Réu: {{ $processo->processo_reuJuridico->rj_nome }}</strong>,
+                    CNPJ: {{ $processo->processo_reuJuridico->rj_cnpj }} <br>
+                    Endereço: {{ $processo->processo_reuJuridico->rj_tipoLogradouro }} {{ $processo->processo_reuJuridico->rj_logradouro }},
+                    nº {{ $processo->processo_reuJuridico->rj_numeroEndereco }}
+                    @if($processo->processo_reuJuridico->rj_complemento !== null),
+                    {{ $processo->processo_reuJuridico->rj_complemento }}
                     @endif,
-                    {{ $dadosProcesso->processo_reuJuridico->rj_cidade }},
-                    Bairro: {{ $dadosProcesso->processo_reuJuridico->rj_bairro }},
-                    CEP: {{ $dadosProcesso->processo_reuJuridico->rj_cep }}
+                    {{ $processo->processo_reuJuridico->rj_cidade }},
+                    Bairro: {{ $processo->processo_reuJuridico->rj_bairro }},
+                    CEP: {{ $processo->processo_reuJuridico->rj_cep }}
                 </td>
             </tr>
             @endif
-            @if($dadosProcesso->processo_representanteReu->rr_cpf !== null)
+            @if($processo->processo_representanteReu->rr_cpf !== null)
             <tr>
                 <td>
-                    <strong>Representante Legal: {{ $dadosProcesso->processo_representanteReu->rr_nome }}</strong>,
-                    @if($dadosProcesso->processo_representanteReu->rr_sexo)
-                    Sexo: {{ $dadosProcesso->processo_representanteReu->rr_sexo }},
+                    <strong>Representante Legal: {{ $processo->processo_representanteReu->rr_nome }}</strong>,
+                    @if($processo->processo_representanteReu->rr_sexo)
+                    Sexo: {{ $processo->processo_representanteReu->rr_sexo }},
                     @endif
-                    CPF/CNPJ: {{ $dadosProcesso->processo_representanteReu->rr_cpf }},
-                    @if($dadosProcesso->processo_representanteReu->rr_email !== null)
-                    E-mail: {{ $dadosProcesso->processo_representanteReu->rr_email }}
+                    CPF/CNPJ: {{ $processo->processo_representanteReu->rr_cpf }},
+                    @if($processo->processo_representanteReu->rr_email !== null)
+                    E-mail: {{ $processo->processo_representanteReu->rr_email }}
                     @endif <br>
-                    Endereço: {{ $dadosProcesso->processo_representanteReu->rr_tipoLogradouro }} {{ $dadosProcesso->processo_representanteReu->rr_logradouro }},
-                    nº {{ $dadosProcesso->processo_representanteReu->rr_numeroEndereco }}
-                    @if($dadosProcesso->processo_representanteReu->rr_complemento !== null),
-                    {{ $dadosProcesso->processo_representanteReu->rr_complemento }}
+                    Endereço: {{ $processo->processo_representanteReu->rr_tipoLogradouro }} {{ $processo->processo_representanteReu->rr_logradouro }},
+                    nº {{ $processo->processo_representanteReu->rr_numeroEndereco }}
+                    @if($processo->processo_representanteReu->rr_complemento !== null),
+                    {{ $processo->processo_representanteReu->rr_complemento }}
                     @endif,
-                    {{ $dadosProcesso->processo_representanteReu->rr_cidade }},
-                    Bairro: {{ $dadosProcesso->processo_representanteReu->rr_bairro }},
-                    CEP: {{ $dadosProcesso->processo_representanteReu->rr_cep }}
+                    {{ $processo->processo_representanteReu->rr_cidade }},
+                    Bairro: {{ $processo->processo_representanteReu->rr_bairro }},
+                    CEP: {{ $processo->processo_representanteReu->rr_cep }}
                 </td>
             </tr>
             @endif
-            @if($dadosProcesso->processo_autor->a_cpf !== null)
+            @if($processo->processo_autor->a_cpf !== null)
             <tr>
                 <td>
-                    <strong>Autor: {{ $dadosProcesso->processo_autor->a_nome }}</strong>,
-                    @if($dadosProcesso->processo_autor->a_sexo !== null)
-                    Sexo: {{ $dadosProcesso->processo_autor->a_sexo }},
+                    <strong>Autor: {{ $processo->processo_autor->a_nome }}</strong>,
+                    @if($processo->processo_autor->a_sexo !== null)
+                    Sexo: {{ $processo->processo_autor->a_sexo }},
                     @endif
-                    CPF/CNPJ: {{ $dadosProcesso->processo_autor->a_cpf }},
-                    Nacionalidade: {{ $dadosProcesso->processo_autor->a_nacionalidade }},
-                    @if($dadosProcesso->processo_autor->a_email !== null)
-                    E-mail: {{ $dadosProcesso->processo_autor->a_email }},
+                    CPF/CNPJ: {{ $processo->processo_autor->a_cpf }},
+                    Nacionalidade: {{ $processo->processo_autor->a_nacionalidade }},
+                    @if($processo->processo_autor->a_email !== null)
+                    E-mail: {{ $processo->processo_autor->a_email }},
                     @endif
-                    @if($dadosProcesso->processo_autor->a_nascimento !== null)
-                    Data de Nascimento: {{ $dadosProcesso->processo_autor->a_nascimento }}
+                    @if($processo->processo_autor->a_nascimento !== null)
+                    Data de Nascimento: {{ $processo->processo_autor->a_nascimento }}
                     @endif <br>
-                    Endereço: {{ $dadosProcesso->processo_autor->a_tipoLogradouro }} {{ $dadosProcesso->processo_autor->a_logradouro }},
-                    nº {{ $dadosProcesso->processo_autor->a_numeroEndereco }},
-                    @if($dadosProcesso->processo_autor->a_complemento !== null)
-                    {{ $dadosProcesso->processo_autor->a_complemento }},
+                    Endereço: {{ $processo->processo_autor->a_tipoLogradouro }} {{ $processo->processo_autor->a_logradouro }},
+                    nº {{ $processo->processo_autor->a_numeroEndereco }},
+                    @if($processo->processo_autor->a_complemento !== null)
+                    {{ $processo->processo_autor->a_complemento }},
                     @endif
-                    {{ $dadosProcesso->processo_autor->a_cidade }},
-                    Bairro: {{ $dadosProcesso->processo_autor->a_bairro }},
-                    CEP: {{ $dadosProcesso->processo_autor->a_cep }}
+                    {{ $processo->processo_autor->a_cidade }},
+                    Bairro: {{ $processo->processo_autor->a_bairro }},
+                    CEP: {{ $processo->processo_autor->a_cep }}
                 </td>
             </tr>
             @endif
-            @if($dadosProcesso->processo_representanteAutor->ra_cpf !== null)
+            @if($processo->processo_representanteAutor->ra_cpf !== null)
             <tr>
                 <td>
-                    <strong>Representante Legal: {{ $dadosProcesso->processo_representanteAutor->ra_nome }}</strong>,
-                    @if($dadosProcesso->processo_representanteAutor->ra_sexo !== null)
-                    Sexo: {{ $dadosProcesso->processo_representanteAutor->ra_sexo }},
+                    <strong>Representante Legal: {{ $processo->processo_representanteAutor->ra_nome }}</strong>,
+                    @if($processo->processo_representanteAutor->ra_sexo !== null)
+                    Sexo: {{ $processo->processo_representanteAutor->ra_sexo }},
                     @endif
-                    CPF/CNPJ: {{ $dadosProcesso->processo_representanteAutor->ra_cpf }},
-                    Nacionalidade: {{ $dadosProcesso->processo_representanteAutor->ra_nacionalidade }},
-                    @if($dadosProcesso->processo_representanteAutor->ra_email !== null)
-                    E-mail: {{ $dadosProcesso->processo_representanteAutor->ra_email }},
+                    CPF/CNPJ: {{ $processo->processo_representanteAutor->ra_cpf }},
+                    Nacionalidade: {{ $processo->processo_representanteAutor->ra_nacionalidade }},
+                    @if($processo->processo_representanteAutor->ra_email !== null)
+                    E-mail: {{ $processo->processo_representanteAutor->ra_email }},
                     @endif
-                    @if($dadosProcesso->processo_representanteAutor->ra_nascimento !== null)
-                    Data de Nascimento: {{ $dadosProcesso->processo_representanteAutor->ra_nascimento }}
+                    @if($processo->processo_representanteAutor->ra_nascimento !== null)
+                    Data de Nascimento: {{ $processo->processo_representanteAutor->ra_nascimento }}
                     @endif <br>
-                    Endereço: {{ $dadosProcesso->processo_representanteAutor->ra_tipoLogradouro }} {{ $dadosProcesso->processo_representanteAutor->ra_logradouro }},
-                    nº {{ $dadosProcesso->processo_representanteAutor->ra_numeroEndereco }},
-                    @if($dadosProcesso->processo_representanteAutor->ra_complemento !== null)
-                    {{ $dadosProcesso->processo_representanteAutor->ra_complemento }},
+                    Endereço: {{ $processo->processo_representanteAutor->ra_tipoLogradouro }} {{ $processo->processo_representanteAutor->ra_logradouro }},
+                    nº {{ $processo->processo_representanteAutor->ra_numeroEndereco }},
+                    @if($processo->processo_representanteAutor->ra_complemento !== null)
+                    {{ $processo->processo_representanteAutor->ra_complemento }},
                     @endif
-                    {{ $dadosProcesso->processo_representanteAutor->ra_cidade }},
-                    Bairro: {{ $dadosProcesso->processo_representanteAutor->ra_bairro }},
-                    CEP: {{ $dadosProcesso->processo_representanteAutor->ra_cep }}
+                    {{ $processo->processo_representanteAutor->ra_cidade }},
+                    Bairro: {{ $processo->processo_representanteAutor->ra_bairro }},
+                    CEP: {{ $processo->processo_representanteAutor->ra_cep }}
                 </td>
             </tr>
             @endif
@@ -170,31 +170,31 @@
     <div>
         <h5 align="center" style="background-color: #cccccc"><strong>Documento(s)</strong></h5>
         <table class="m-0 p-0 table table-borderless table-sm">
-            @if(count($dadosProcesso->processo_documentoAnexoPeticao) > 0)
-            @foreach($dadosProcesso->processo_documentoAnexoPeticao as $numero => $anexo)
+            @if(count($processo->processo_documentoAnexoPeticao) > 0)
+            @foreach($processo->processo_documentoAnexoPeticao as $numero => $anexo)
             <tr>
                 <td><strong>Anexo - {{ $numero + 1 }}: {{ $anexo->dap_arquivo }}</strong></td>
             </tr>
             @endforeach
             @endif
-            @if($dadosProcesso->processo_documentoPeticaoInicial !== null)
+            @if($processo->processo_documentoPeticaoInicial !== null)
             <tr>
-                <td><strong>Petição Inicial: {{ $dadosProcesso->processo_documentoPeticaoInicial->dpi_arquivo }}</strong></td>
+                <td><strong>Petição Inicial: {{ $processo->processo_documentoPeticaoInicial->dpi_arquivo }}</strong></td>
             </tr>
             @endif
-            @if($dadosProcesso->processo_documentoProcuracao !== null)
+            @if($processo->processo_documentoProcuracao !== null)
             <tr>
-                <td><strong>Procuração: {{ $dadosProcesso->processo_documentoProcuracao->dpr_arquivo }}</strong></td>
+                <td><strong>Procuração: {{ $processo->processo_documentoProcuracao->dpr_arquivo }}</strong></td>
             </tr>
             @endif
-            @if($dadosProcesso->processo_documentoComprovanteResidencia !== null)
+            @if($processo->processo_documentoComprovanteResidencia !== null)
             <tr>
-                <td><strong>Comprovante de Residência: {{ $dadosProcesso->processo_documentoComprovanteResidencia->dcr_arquivo }}</strong></td>
+                <td><strong>Comprovante de Residência: {{ $processo->processo_documentoComprovanteResidencia->dcr_arquivo }}</strong></td>
             </tr>
             @endif
-            @if($dadosProcesso->processo_documentoCpf !== null)
+            @if($processo->processo_documentoCpf !== null)
             <tr>
-                <td><strong>CPF: {{ $dadosProcesso->processo_documentoCpf->dcpf_arquivo }}</strong></td>
+                <td><strong>CPF: {{ $processo->processo_documentoCpf->dcpf_arquivo }}</strong></td>
             </tr>
             @endif
         </table>

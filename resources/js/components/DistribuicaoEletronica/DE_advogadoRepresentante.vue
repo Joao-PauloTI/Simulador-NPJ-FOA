@@ -52,17 +52,17 @@
                                     <option value="TO">TO</option>
                                 </select>
                             </label>
-                            <input type="text" class="form-control col-md-5" v-mask="'######'" v-model="arNumeroOAB" v-on:input="gerarNome">
+                            <input type="text" class="form-control col-md-3" v-mask="'######'" v-model="arNumeroOAB" v-on:input="gerarNome">
                         </div>
                     </td>
                     <td v-show="arAdvogadoRepresentante === 'Defensor Público'">
                         <div class="form-inline">
                             <span style="margin-right: 3px"><strong> Matrícula </strong> </span>
-                            <input type="text" class="form-control" v-mask="'##########'" v-model="arMatricula" v-on:input="gerarNome">
+                            <input type="text" class="form-control col-md-5" v-mask="'##########'" v-model="arMatricula" v-on:input="gerarNome">
                         </div>
                     </td>
                     <td>
-                        <input type="text" v-model="arNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; margin-top: 5px; outline: none">
+                        <input type="text" v-model="arNome" readonly v-autowidth="{maxWidth: '200px', minWidth: '140px', comfortZone: 0}" style="border: 0; margin-top: 5px; outline: none">
                     </td>
                     <td>
                         <button type="button" class="btn btn-primary" v-if="arAdvogadoRepresentante === 'Advogado' && arEstadoOAB != '' && arNumeroOAB != '' && arNome != ''" v-on:click="adicionarAdvogado(arEstadoOAB, arNumeroOAB)">Adicionar</button>
@@ -74,26 +74,26 @@
                 <table class="table table-borderless">
                     <tr v-for="advogado, index in arAdvogadoDados">
                         <td>
-                            <input type="text" name="ad_categoria[]" value="Advogado" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                            <input type="text" name="ad_categoria[]" value="Advogado" readonly v-autowidth="{maxWidth: '200px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                         </td>
                         <td>
-                            <input type="text" name="ad_estadoOAB[]" v-bind:value="advogado.arEstadoOAB" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"><input type="text"
-                              name="ad_numeroOAB[]" v-bind:value="advogado.arNumeroOAB" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                            <input type="text" name="ad_estadoOAB[]" v-bind:value="advogado.arEstadoOAB" readonly v-autowidth="{maxWidth: '200px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none"><input type="text"
+                              name="ad_numeroOAB[]" v-bind:value="advogado.arNumeroOAB" readonly v-autowidth="{maxWidth: '200px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                         </td>
                         <td>
-                            <input type="text" name="ad_nome[]" v-bind:value="advogado.arNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                            <input type="text" name="ad_nome[]" v-bind:value="advogado.arNome" readonly v-autowidth="{maxWidth: '200px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                         </td>
                         <td><a href="#" v-on:click="excluirAdvogado(index)">Excluir</a></td>
                     </tr>
                     <tr v-for="defensor, index in arDefensorDados">
                         <td>
-                            <input type="text" name="dp_categoria[]" value="Defensor Público" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                            <input type="text" name="dp_categoria[]" value="Defensor Público" readonly v-autowidth="{maxWidth: '200px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                         </td>
                         <td>
-                            <input type="text" name="dp_matricula[]" v-bind:value="defensor.arMatricula" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                            <input type="text" name="dp_matricula[]" v-bind:value="defensor.arMatricula" readonly v-autowidth="{maxWidth: '200px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                         </td>
                         <td>
-                            <input type="text" name="dp_nome[]" v-bind:value="defensor.arNome" readonly v-autowidth="{maxWidth: '960px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
+                            <input type="text" name="dp_nome[]" v-bind:value="defensor.arNome" readonly v-autowidth="{maxWidth: '200px', minWidth: '20px', comfortZone: 0}" style="border: 0; outline: none">
                         </td>
                         <td><a href="#" v-on:click="excluirDefensor(index)">Excluir</a></td>
                     </tr>

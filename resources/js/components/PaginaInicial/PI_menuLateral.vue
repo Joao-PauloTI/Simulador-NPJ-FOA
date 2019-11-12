@@ -5,8 +5,7 @@
     </div>
     <div class="card" v-if="mostrarMenu">
         <div class="card-header">
-            <button id="PI_menu_botao" v-on:click="mostrarMenu = !mostrarMenu" style="float: right;"><strong>
-                    << </strong> </button> <h5><strong>Portal de Serviços</strong></h5>
+            <button id="PI_menu_botao" v-on:click="mostrarMenu = !mostrarMenu" style="float: right;"><strong> << </strong> </button> <h5><strong>Portal de Serviços</strong></h5>
         </div>
         <div class="card-body">
             <!--PUSH-->

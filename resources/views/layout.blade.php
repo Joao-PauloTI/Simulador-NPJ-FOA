@@ -36,6 +36,8 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
+            font-family: sans-serif;
+            font-size: small;
         }
 
         #PI_banner {
