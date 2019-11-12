@@ -2456,8 +2456,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'camodal',
   data: function data() {
@@ -3001,8 +2999,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'cramodal',
   data: function data() {
@@ -3099,8 +3095,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -42580,7 +42574,11 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "text", name: "cp_numeracaoProcesso" }
+                attrs: {
+                  type: "text",
+                  name: "cp_numeracaoProcesso",
+                  placeholder: "ex: 1111111-11.1111.8.19.1111"
+                }
               })
             ])
           : _c("div", [
@@ -43332,92 +43330,34 @@ var render = function() {
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(5),
                 _vm._v(" "),
-                _vm.aPessoa === ""
-                  ? _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.aCpf,
-                          expression: "aCpf"
-                        },
-                        {
-                          name: "mask",
-                          rawName: "v-mask",
-                          value: "#################",
-                          expression: "'#################'"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      attrs: { type: "text", name: "a_cpf" },
-                      domProps: { value: _vm.aCpf },
-                      on: {
-                        change: _vm.gerarModeloAutor,
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.aCpf = $event.target.value
-                        }
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.aCpf,
+                      expression: "aCpf"
+                    },
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: ["###.###.###-##", "##.###.###/####-##"],
+                      expression: "['###.###.###-##', '##.###.###/####-##']"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "a_cpf" },
+                  domProps: { value: _vm.aCpf },
+                  on: {
+                    change: _vm.gerarModeloAutor,
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
                       }
-                    })
-                  : _vm.aPessoa === "Pessoa Física"
-                  ? _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.aCpf,
-                          expression: "aCpf"
-                        },
-                        {
-                          name: "mask",
-                          rawName: "v-mask",
-                          value: "###.###.###-##",
-                          expression: "'###.###.###-##'"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      attrs: { type: "text", name: "a_cpf" },
-                      domProps: { value: _vm.aCpf },
-                      on: {
-                        change: _vm.gerarModeloAutor,
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.aCpf = $event.target.value
-                        }
-                      }
-                    })
-                  : _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.aCpf,
-                          expression: "aCpf"
-                        },
-                        {
-                          name: "mask",
-                          rawName: "v-mask",
-                          value: "##.###.###/####-##",
-                          expression: "'##.###.###/####-##'"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      attrs: { type: "text", name: "a_cpf" },
-                      domProps: { value: _vm.aCpf },
-                      on: {
-                        change: _vm.gerarModeloAutor,
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.aCpf = $event.target.value
-                        }
-                      }
-                    })
+                      _vm.aCpf = $event.target.value
+                    }
+                  }
+                })
               ])
             ])
           ]),
@@ -46068,92 +46008,34 @@ var render = function() {
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(4),
                 _vm._v(" "),
-                _vm.raPessoa === ""
-                  ? _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.raCpf,
-                          expression: "raCpf"
-                        },
-                        {
-                          name: "mask",
-                          rawName: "v-mask",
-                          value: "#################",
-                          expression: "'#################'"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      attrs: { type: "text", name: "ra_cpf" },
-                      domProps: { value: _vm.raCpf },
-                      on: {
-                        change: _vm.gerarModeloRepresentanteAutor,
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.raCpf = $event.target.value
-                        }
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.raCpf,
+                      expression: "raCpf"
+                    },
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: ["###.###.###-##", "##.###.###/####-##"],
+                      expression: "['###.###.###-##', '##.###.###/####-##']"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "ra_cpf" },
+                  domProps: { value: _vm.raCpf },
+                  on: {
+                    change: _vm.gerarModeloRepresentanteAutor,
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
                       }
-                    })
-                  : _vm.raPessoa === "Pessoa Física"
-                  ? _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.raCpf,
-                          expression: "raCpf"
-                        },
-                        {
-                          name: "mask",
-                          rawName: "v-mask",
-                          value: "###.###.###-##",
-                          expression: "'###.###.###-##'"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      attrs: { type: "text", name: "ra_cpf" },
-                      domProps: { value: _vm.raCpf },
-                      on: {
-                        change: _vm.gerarModeloRepresentanteAutor,
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.raCpf = $event.target.value
-                        }
-                      }
-                    })
-                  : _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.raCpf,
-                          expression: "raCpf"
-                        },
-                        {
-                          name: "mask",
-                          rawName: "v-mask",
-                          value: "##.###.###/####-##",
-                          expression: "'##.###.###/####-##'"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      attrs: { type: "text", name: "ra_cpf" },
-                      domProps: { value: _vm.raCpf },
-                      on: {
-                        change: _vm.gerarModeloRepresentanteAutor,
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.raCpf = $event.target.value
-                        }
-                      }
-                    })
+                      _vm.raCpf = $event.target.value
+                    }
+                  }
+                })
               ])
             ])
           ]),
@@ -47826,92 +47708,34 @@ var render = function() {
               _c("div", { staticClass: "col-xs-2" }, [
                 _vm._m(3),
                 _vm._v(" "),
-                _vm.rrPessoa === ""
-                  ? _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.rrCpf,
-                          expression: "rrCpf"
-                        },
-                        {
-                          name: "mask",
-                          rawName: "v-mask",
-                          value: "#################",
-                          expression: "'#################'"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      attrs: { type: "text", name: "rr_cpf" },
-                      domProps: { value: _vm.rrCpf },
-                      on: {
-                        change: _vm.gerarModeloRepresentanteReu,
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.rrCpf = $event.target.value
-                        }
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.rrCpf,
+                      expression: "rrCpf"
+                    },
+                    {
+                      name: "mask",
+                      rawName: "v-mask",
+                      value: ["###.###.###-##", "##.###.###/####-##"],
+                      expression: "['###.###.###-##', '##.###.###/####-##']"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "rr_cpf" },
+                  domProps: { value: _vm.rrCpf },
+                  on: {
+                    change: _vm.gerarModeloRepresentanteReu,
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
                       }
-                    })
-                  : _vm.rrPessoa === "Pessoa Física"
-                  ? _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.rrCpf,
-                          expression: "rrCpf"
-                        },
-                        {
-                          name: "mask",
-                          rawName: "v-mask",
-                          value: "###.###.###-##",
-                          expression: "'###.###.###-##'"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      attrs: { type: "text", name: "rr_cpf" },
-                      domProps: { value: _vm.rrCpf },
-                      on: {
-                        change: _vm.gerarModeloRepresentanteReu,
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.rrCpf = $event.target.value
-                        }
-                      }
-                    })
-                  : _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.rrCpf,
-                          expression: "rrCpf"
-                        },
-                        {
-                          name: "mask",
-                          rawName: "v-mask",
-                          value: "##.###.###/####-##",
-                          expression: "'##.###.###/####-##'"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      attrs: { type: "text", name: "rr_cpf" },
-                      domProps: { value: _vm.rrCpf },
-                      on: {
-                        change: _vm.gerarModeloRepresentanteReu,
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.rrCpf = $event.target.value
-                        }
-                      }
-                    })
+                      _vm.rrCpf = $event.target.value
+                    }
+                  }
+                })
               ])
             ])
           ]),

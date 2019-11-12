@@ -14,7 +14,7 @@
             <br>
             <!--Numeração única-->
             <div v-if="showOpcao === 'showUnica'">
-                <input type="text" class="form-control" name="cp_numeracaoProcesso" v-mask="'#######-##.####.8.19.####'">
+                <input type="text" class="form-control" name="cp_numeracaoProcesso" v-mask="'#######-##.####.8.19.####'" placeholder="ex: 1111111-11.1111.8.19.1111">
             </div>
             <!--Numeração Antiga-->
             <div v-else>

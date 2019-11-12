@@ -106,9 +106,7 @@
                     <div class="form-inline">
                         <div class="col-xs-2">
                             <span><strong>* CPF/CNPJ </strong> </span>
-                            <input type="text" class="form-control" v-model="raCpf" name="ra_cpf" v-on:change="gerarModeloRepresentanteAutor" v-if="raPessoa === ''" v-mask="'#################'">
-                            <input type="text" class="form-control" v-model="raCpf" name="ra_cpf" v-on:change="gerarModeloRepresentanteAutor" v-else-if="raPessoa === 'Pessoa Física'" v-mask="'###.###.###-##'">
-                            <input type="text" class="form-control" v-model="raCpf" name="ra_cpf" v-on:change="gerarModeloRepresentanteAutor" v-else v-mask="'##.###.###/####-##'">
+                            <input type="text" class="form-control" v-model="raCpf" name="ra_cpf" v-on:change="gerarModeloRepresentanteAutor" v-mask="['###.###.###-##', '##.###.###/####-##']">
                         </div>
                     </div>
                 </div>

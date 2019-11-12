@@ -95,9 +95,7 @@
                     <div class="form-inline">
                         <div class="col-xs-2">
                             <span><strong>* CPF/CNPJ </strong> </span>
-                            <input type="text" class="form-control" v-model="aCpf" name="a_cpf" v-on:change="gerarModeloAutor" v-if="aPessoa === ''" v-mask="'#################'">
-                            <input type="text" class="form-control" v-model="aCpf" name="a_cpf" v-on:change="gerarModeloAutor" v-else-if="aPessoa === 'Pessoa Física'" v-mask="'###.###.###-##'">
-                            <input type="text" class="form-control" v-model="aCpf" name="a_cpf" v-on:change="gerarModeloAutor" v-else v-mask="'##.###.###/####-##'">
+                            <input type="text" class="form-control" v-model="aCpf" name="a_cpf" v-on:change="gerarModeloAutor" v-mask="['###.###.###-##', '##.###.###/####-##']">
                         </div>
                     </div>
                 </div>
