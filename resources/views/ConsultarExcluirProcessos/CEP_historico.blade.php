@@ -27,9 +27,9 @@
                         <p class="p-0 m-0"><strong>Comarca:</strong> {{ $processo->p_comarca }}</p>
                         <p class="p-0 m-0"><strong>Serventia:</strong> Núcleo de Prática Jurídica - UniFOA</p>
                         <p class="p-0 m-0"><strong>Autor:</strong> {{ $processo->processo_autor->a_nome }}</p>
-                        @if ($processo->processo_reu->r_nome !== null)
+                        @if ($processo->processo_reu)
                         <p class="p-0 m-0"><strong>Réu:</strong> {{ $processo->processo_reu->r_nome }}</p>
-                        @else
+                        @elseif ($processo->processo_reuJuridico)
                         <p class="p-0 m-0"><strong>Réu:</strong> {{ $processo->processo_reuJuridico->rj_nome }}</p>
                         @endif
                         @if (count($processo->processo_advogado) > 0)

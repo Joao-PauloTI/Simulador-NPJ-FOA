@@ -17,6 +17,7 @@ use App\DocumentoPeticaoInicial;
 use App\DocumentoProcuracao;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use PDF;
 
 class ProcessoController extends Controller
@@ -406,7 +407,7 @@ class ProcessoController extends Controller
             if ($request->hasFile('dap_arquivo')) {
                 foreach ($request->dap_arquivo as $key => $arquivo) {
                     $arquivo = $request->file('dap_arquivo')[$key]->getClientOriginalName();
-                    $dap_caminho = $request->file('dap_arquivo')[$key]->storeAs('public/documentos/anexosPeticao', $arquivo);
+                    $dap_caminho = $request->file('dap_arquivo')[$key]->storeAs('public/documentos/anexosPeticao', $request->session()->get('sessaoProcesso.p_numeracaoProcesso')." - ".$arquivo);
                     $request->session()->push('sessaoDocumentoAnexoPeticao', [
                         'dap_arquivo' => $arquivo,
                         'dap_descricao' => $request->get('dap_descricao')
@@ -420,7 +421,7 @@ class ProcessoController extends Controller
         }
         if ($request->hasFile('dpr_arquivo')) {
             $dpr_arquivo = $request->file('dpr_arquivo')->getClientOriginalName();
-            $dap_caminho = $request->file('dpr_arquivo')->storeAs('public/documentos/procuracoes', $dpr_arquivo);
+            $dap_caminho = $request->file('dpr_arquivo')->storeAs('public/documentos/procuracoes', $request->session()->get('sessaoProcesso.p_numeracaoProcesso')." - ".$dpr_arquivo);
             $request->session()->put('sessaoDocumentoProcuracao', [
                 'dpr_arquivo' => $dpr_arquivo,
                 'dpr_descricao' => $request->get('dpr_descricao')
@@ -432,7 +433,7 @@ class ProcessoController extends Controller
         }
         if ($request->hasFile('dcpf_arquivo')) {
             $dcpf_arquivo = $request->file('dcpf_arquivo')->getClientOriginalName();
-            $dcpf_caminho = $request->file('dcpf_arquivo')->storeAs('public/documentos/cpfs', $dcpf_arquivo);
+            $dcpf_caminho = $request->file('dcpf_arquivo')->storeAs('public/documentos/cpfs', $request->session()->get('sessaoProcesso.p_numeracaoProcesso')." - ".$dcpf_arquivo);
             $request->session()->put('sessaoDocumentoCpf', [
                 'dcpf_arquivo' => $dcpf_arquivo,
                 'dcpf_descricao' => $request->get('dcpf_descricao')
@@ -444,7 +445,7 @@ class ProcessoController extends Controller
         }
         if ($request->hasFile('dcr_arquivo')) {
             $dcr_arquivo = $request->file('dcr_arquivo')->getClientOriginalName();
-            $dcr_caminho = $request->file('dcr_arquivo')->storeAs('public/documentos/comprovantesResidencia', $dcr_arquivo);
+            $dcr_caminho = $request->file('dcr_arquivo')->storeAs('public/documentos/comprovantesResidencia', $request->session()->get('sessaoProcesso.p_numeracaoProcesso')." - ".$dcr_arquivo);
             $request->session()->put('sessaoDocumentoComprovanteResidencia', [
                 'dcr_arquivo' => $dcr_arquivo,
                 'dcr_descricao' => $request->get('dcr_descricao')
@@ -456,7 +457,7 @@ class ProcessoController extends Controller
         }
         if ($request->hasFile('dpi_arquivo')) {
             $dpi_arquivo = $request->file('dpi_arquivo')->getClientOriginalName();
-            $dpi_caminho = $request->file('dpi_arquivo')->storeAs('public/documentos/peticoesIniciais', $dpi_arquivo);
+            $dpi_caminho = $request->file('dpi_arquivo')->storeAs('public/documentos/peticoesIniciais', $request->session()->get('sessaoProcesso.p_numeracaoProcesso')." - ".$dpi_arquivo);
             $request->session()->put('sessaoDocumentoPeticaoInicial', [
                 'dpi_arquivo' => $dpi_arquivo,
                 'dpi_descricao' => $request->get('dpi_descricao')
@@ -633,120 +634,128 @@ class ProcessoController extends Controller
         $autor->autor_processo()->associate($processo);
         $autor->save();
 
-        $representanteAutor = new RepresentanteAutor([
-            'ra_incapaz' => $request->session()->get('sessaoRepresentanteAutor.ra_incapaz'),
-            'ra_massa' => $request->session()->get('sessaoRepresentanteAutor.ra_massa'),
-            'ra_insolvente' => $request->session()->get('sessaoRepresentanteAutor.ra_insolvente'),
-            'ra_preso' => $request->session()->get('sessaoRepresentanteAutor.ra_preso'),
-            'ra_espolio' => $request->session()->get('sessaoRepresentanteAutor.ra_espolio'),
-            'ra_condominio' => $request->session()->get('sessaoRepresentanteAutor.ra_condominio'),
-            'ra_parte' => $request->session()->get('sessaoRepresentanteAutor.ra_parte'),
-            'ra_ministerio' => $request->session()->get('sessaoRepresentanteAutor.ra_ministerio'),
-            'ra_pessoa' => $request->session()->get('sessaoRepresentanteAutor.ra_pessoa'),
-            'ra_estrangeiro' => $request->session()->get('sessaoRepresentanteAutor.ra_estrangeiro'),
-            'ra_sexo' => $request->session()->get('sessaoRepresentanteAutor.ra_sexo'),
-            'ra_cpf' => $request->session()->get('sessaoRepresentanteAutor.ra_cpf'),
-            'ra_nome' => $request->session()->get('sessaoRepresentanteAutor.ra_nome'),
-            'ra_documento' => $request->session()->get('sessaoRepresentanteAutor.ra_documento'),
-            'ra_numeroIdentificacao' => $request->session()->get('sessaoRepresentanteAutor.ra_numeroIdentificacao'),
-            'ra_emissor' => $request->session()->get('sessaoRepresentanteAutor.ra_emissor'),
-            'ra_emissao' => $request->session()->get('sessaoRepresentanteAutor.ra_emissao'),
-            'ra_telefone' => $request->session()->get('sessaoRepresentanteAutor.ra_telefone'),
-            'ra_email' => $request->session()->get('sessaoRepresentanteAutor.ra_email'),
-            'ra_cep' => $request->session()->get('sessaoRepresentanteAutor.ra_cep'),
-            'ra_estado' => $request->session()->get('sessaoRepresentanteAutor.ra_estado'),
-            'ra_cidade' => $request->session()->get('sessaoRepresentanteAutor.ra_cidade'),
-            'ra_bairro' => $request->session()->get('sessaoRepresentanteAutor.ra_bairro'),
-            'ra_tipoLogradouro' => $request->session()->get('sessaoRepresentanteAutor.ra_tipoLogradouro'),
-            'ra_logradouro' => $request->session()->get('sessaoRepresentanteAutor.ra_logradouro'),
-            'ra_numeroEndereco' => $request->session()->get('sessaoRepresentanteAutor.ra_numeroEndereco'),
-            'ra_complemento' => $request->session()->get('sessaoRepresentanteAutor.ra_complemento'),
-            'ra_tipoEndereco' => $request->session()->get('sessaoRepresentanteAutor.ra_tipoEndereco'),
-            'ra_referencia' => $request->session()->get('sessaoRepresentanteAutor.ra_referencia'),
-            'ra_comprovante' => $request->session()->get('sessaoRepresentanteAutor.ra_comprovante'),
-            'ra_estadoCivil' => $request->session()->get('sessaoRepresentanteAutor.ra_estadoCivil'),
-            'ra_profissao' => $request->session()->get('sessaoRepresentanteAutor.ra_profissao'),
-            'ra_nacionalidade' => $request->session()->get('sessaoRepresentanteAutor.ra_nacionalidade'),
-            'ra_estadoNaturalidade' => $request->session()->get('sessaoRepresentanteAutor.ra_estadoNaturalidade'),
-            'ra_cidadeNaturalidade' => $request->session()->get('sessaoRepresentanteAutor.ra_cidadeNaturalidade'),
-            'ra_pai' => $request->session()->get('sessaoRepresentanteAutor.ra_pai'),
-            'ra_mae' => $request->session()->get('sessaoRepresentanteAutor.ra_mae'),
-            'ra_nascimento' => $request->session()->get('sessaoRepresentanteAutor.ra_nascimento')
-        ]);
-        $representanteAutor->representanteAutor_processo()->associate($processo);
-        $representanteAutor->save();
+        if ($request->session()->get('sessaoRepresentanteAutor.ra_cpf') != null) {
+            $representanteAutor = new RepresentanteAutor([
+                'ra_incapaz' => $request->session()->get('sessaoRepresentanteAutor.ra_incapaz'),
+                'ra_massa' => $request->session()->get('sessaoRepresentanteAutor.ra_massa'),
+                'ra_insolvente' => $request->session()->get('sessaoRepresentanteAutor.ra_insolvente'),
+                'ra_preso' => $request->session()->get('sessaoRepresentanteAutor.ra_preso'),
+                'ra_espolio' => $request->session()->get('sessaoRepresentanteAutor.ra_espolio'),
+                'ra_condominio' => $request->session()->get('sessaoRepresentanteAutor.ra_condominio'),
+                'ra_parte' => $request->session()->get('sessaoRepresentanteAutor.ra_parte'),
+                'ra_ministerio' => $request->session()->get('sessaoRepresentanteAutor.ra_ministerio'),
+                'ra_pessoa' => $request->session()->get('sessaoRepresentanteAutor.ra_pessoa'),
+                'ra_estrangeiro' => $request->session()->get('sessaoRepresentanteAutor.ra_estrangeiro'),
+                'ra_sexo' => $request->session()->get('sessaoRepresentanteAutor.ra_sexo'),
+                'ra_cpf' => $request->session()->get('sessaoRepresentanteAutor.ra_cpf'),
+                'ra_nome' => $request->session()->get('sessaoRepresentanteAutor.ra_nome'),
+                'ra_documento' => $request->session()->get('sessaoRepresentanteAutor.ra_documento'),
+                'ra_numeroIdentificacao' => $request->session()->get('sessaoRepresentanteAutor.ra_numeroIdentificacao'),
+                'ra_emissor' => $request->session()->get('sessaoRepresentanteAutor.ra_emissor'),
+                'ra_emissao' => $request->session()->get('sessaoRepresentanteAutor.ra_emissao'),
+                'ra_telefone' => $request->session()->get('sessaoRepresentanteAutor.ra_telefone'),
+                'ra_email' => $request->session()->get('sessaoRepresentanteAutor.ra_email'),
+                'ra_cep' => $request->session()->get('sessaoRepresentanteAutor.ra_cep'),
+                'ra_estado' => $request->session()->get('sessaoRepresentanteAutor.ra_estado'),
+                'ra_cidade' => $request->session()->get('sessaoRepresentanteAutor.ra_cidade'),
+                'ra_bairro' => $request->session()->get('sessaoRepresentanteAutor.ra_bairro'),
+                'ra_tipoLogradouro' => $request->session()->get('sessaoRepresentanteAutor.ra_tipoLogradouro'),
+                'ra_logradouro' => $request->session()->get('sessaoRepresentanteAutor.ra_logradouro'),
+                'ra_numeroEndereco' => $request->session()->get('sessaoRepresentanteAutor.ra_numeroEndereco'),
+                'ra_complemento' => $request->session()->get('sessaoRepresentanteAutor.ra_complemento'),
+                'ra_tipoEndereco' => $request->session()->get('sessaoRepresentanteAutor.ra_tipoEndereco'),
+                'ra_referencia' => $request->session()->get('sessaoRepresentanteAutor.ra_referencia'),
+                'ra_comprovante' => $request->session()->get('sessaoRepresentanteAutor.ra_comprovante'),
+                'ra_estadoCivil' => $request->session()->get('sessaoRepresentanteAutor.ra_estadoCivil'),
+                'ra_profissao' => $request->session()->get('sessaoRepresentanteAutor.ra_profissao'),
+                'ra_nacionalidade' => $request->session()->get('sessaoRepresentanteAutor.ra_nacionalidade'),
+                'ra_estadoNaturalidade' => $request->session()->get('sessaoRepresentanteAutor.ra_estadoNaturalidade'),
+                'ra_cidadeNaturalidade' => $request->session()->get('sessaoRepresentanteAutor.ra_cidadeNaturalidade'),
+                'ra_pai' => $request->session()->get('sessaoRepresentanteAutor.ra_pai'),
+                'ra_mae' => $request->session()->get('sessaoRepresentanteAutor.ra_mae'),
+                'ra_nascimento' => $request->session()->get('sessaoRepresentanteAutor.ra_nascimento')
+            ]);
+            $representanteAutor->representanteAutor_processo()->associate($processo);
+            $representanteAutor->save();
+        }
 
-        $reu = new Reu([
-            'r_estrangeiro' => $request->session()->get('sessaoReu.r_estrangeiro'),
-            'r_sexo' => $request->session()->get('sessaoReu.r_sexo'),
-            'r_cpf' => $request->session()->get('sessaoReu.r_cpf'),
-            'r_nome' => $request->session()->get('sessaoReu.r_nome'),
-            'r_documento' => $request->session()->get('sessaoReu.r_documento'),
-            'r_numeroIdentificacao' => $request->session()->get('sessaoReu.r_numeroIdentificacao'),
-            'r_expedidor' => $request->session()->get('sessaoReu.r_expedidor'),
-            'r_emissao' => $request->session()->get('sessaoReu.r_emissao'),
-            'r_email' => $request->session()->get('sessaoReu.r_email'),
-            'r_incerto' => $request->session()->get('sessaoReu.r_incerto'),
-            'r_cep' => $request->session()->get('sessaoReu.r_cep'),
-            'r_estado' => $request->session()->get('sessaoReu.r_estado'),
-            'r_cidade' => $request->session()->get('sessaoReu.r_cidade'),
-            'r_bairro' => $request->session()->get('sessaoReu.r_bairro'),
-            'r_tipoLogradouro' => $request->session()->get('sessaoReu.r_tipoLogradouro'),
-            'r_logradouro' => $request->session()->get('sessaoReu.r_logradouro'),
-            'r_numeroEndereco' => $request->session()->get('sessaoReu.r_numeroEndereco'),
-            'r_complemento' => $request->session()->get('sessaoReu.r_complemento'),
-            'r_tipoEndereco' => $request->session()->get('sessaoReu.r_tipoEndereco'),
-            'r_referencia' => $request->session()->get('sessaoReu.r_referencia'),
-            'r_comprovante' => $request->session()->get('sessaoReu.r_comprovante')
-        ]);
-        $reu->reu_processo()->associate($processo);
-        $reu->save();
+        if ($request->session()->get('sessaoReu.r_cpf') != null) {
+            $reu = new Reu([
+                'r_estrangeiro' => $request->session()->get('sessaoReu.r_estrangeiro'),
+                'r_sexo' => $request->session()->get('sessaoReu.r_sexo'),
+                'r_cpf' => $request->session()->get('sessaoReu.r_cpf'),
+                'r_nome' => $request->session()->get('sessaoReu.r_nome'),
+                'r_documento' => $request->session()->get('sessaoReu.r_documento'),
+                'r_numeroIdentificacao' => $request->session()->get('sessaoReu.r_numeroIdentificacao'),
+                'r_expedidor' => $request->session()->get('sessaoReu.r_expedidor'),
+                'r_emissao' => $request->session()->get('sessaoReu.r_emissao'),
+                'r_email' => $request->session()->get('sessaoReu.r_email'),
+                'r_incerto' => $request->session()->get('sessaoReu.r_incerto'),
+                'r_cep' => $request->session()->get('sessaoReu.r_cep'),
+                'r_estado' => $request->session()->get('sessaoReu.r_estado'),
+                'r_cidade' => $request->session()->get('sessaoReu.r_cidade'),
+                'r_bairro' => $request->session()->get('sessaoReu.r_bairro'),
+                'r_tipoLogradouro' => $request->session()->get('sessaoReu.r_tipoLogradouro'),
+                'r_logradouro' => $request->session()->get('sessaoReu.r_logradouro'),
+                'r_numeroEndereco' => $request->session()->get('sessaoReu.r_numeroEndereco'),
+                'r_complemento' => $request->session()->get('sessaoReu.r_complemento'),
+                'r_tipoEndereco' => $request->session()->get('sessaoReu.r_tipoEndereco'),
+                'r_referencia' => $request->session()->get('sessaoReu.r_referencia'),
+                'r_comprovante' => $request->session()->get('sessaoReu.r_comprovante')
+            ]);
+            $reu->reu_processo()->associate($processo);
+            $reu->save();
+        }
 
-        $reuJuridico = new ReuJuridico([
-            'rj_nome' => $request->session()->get('sessaoReuJuridico.rj_nome'),
-            'rj_cnpj' => $request->session()->get('sessaoReuJuridico.rj_cnpj'),
-            'rj_tipoEmpresa' => $request->session()->get('sessaoReuJuridico.rj_tipoEmpresa'),
-            'rj_cep' => $request->session()->get('sessaoReuJuridico.rj_cep'),
-            'rj_estado' => $request->session()->get('sessaoReuJuridico.rj_estado'),
-            'rj_cidade' => $request->session()->get('sessaoReuJuridico.rj_cidade'),
-            'rj_bairro' => $request->session()->get('sessaoReuJuridico.rj_bairro'),
-            'rj_tipoLogradouro' => $request->session()->get('sessaoReuJuridico.rj_tipoLogradouro'),
-            'rj_logradouro' => $request->session()->get('sessaoReuJuridico.rj_logradouro'),
-            'rj_numeroEndereco' => $request->session()->get('sessaoReuJuridico.rj_numeroEndereco'),
-            'rj_complemento' => $request->session()->get('sessaoReuJuridico.rj_complemento'),
-            'rj_tipoEndereco' => $request->session()->get('sessaoReuJuridico.rj_tipoEndereco'),
-            'rj_referencia' => $request->session()->get('sessaoReuJuridico.rj_referencia')
-        ]);
-        $reuJuridico->reuJuridico_processo()->associate($processo);
-        $reuJuridico->save();
+        if ($request->session()->get('sessaoReuJuridico.rj_cnpj') != null) {
+            $reuJuridico = new ReuJuridico([
+                'rj_nome' => $request->session()->get('sessaoReuJuridico.rj_nome'),
+                'rj_cnpj' => $request->session()->get('sessaoReuJuridico.rj_cnpj'),
+                'rj_tipoEmpresa' => $request->session()->get('sessaoReuJuridico.rj_tipoEmpresa'),
+                'rj_cep' => $request->session()->get('sessaoReuJuridico.rj_cep'),
+                'rj_estado' => $request->session()->get('sessaoReuJuridico.rj_estado'),
+                'rj_cidade' => $request->session()->get('sessaoReuJuridico.rj_cidade'),
+                'rj_bairro' => $request->session()->get('sessaoReuJuridico.rj_bairro'),
+                'rj_tipoLogradouro' => $request->session()->get('sessaoReuJuridico.rj_tipoLogradouro'),
+                'rj_logradouro' => $request->session()->get('sessaoReuJuridico.rj_logradouro'),
+                'rj_numeroEndereco' => $request->session()->get('sessaoReuJuridico.rj_numeroEndereco'),
+                'rj_complemento' => $request->session()->get('sessaoReuJuridico.rj_complemento'),
+                'rj_tipoEndereco' => $request->session()->get('sessaoReuJuridico.rj_tipoEndereco'),
+                'rj_referencia' => $request->session()->get('sessaoReuJuridico.rj_referencia')
+            ]);
+            $reuJuridico->reuJuridico_processo()->associate($processo);
+            $reuJuridico->save();
+        }
 
-        $representanteReu = new RepresentanteReu([
-            'rr_parte' => $request->session()->get('sessaoRepresentanteReu.rr_parte'),
-            'rr_pessoa' => $request->session()->get('sessaoRepresentanteReu.rr_pessoa'),
-            'rr_sexo' => $request->session()->get('sessaoRepresentanteReu.rr_sexo'),
-            'rr_cpf' => $request->session()->get('sessaoRepresentanteReu.rr_cpf'),
-            'rr_nome' => $request->session()->get('sessaoRepresentanteReu.rr_nome'),
-            'rr_documento' => $request->session()->get('sessaoRepresentanteReu.rr_documento'),
-            'rr_numeroIdentificacao' => $request->session()->get('sessaoRepresentanteReu.rr_numeroIdentificacao'),
-            'rr_emissor' => $request->session()->get('sessaoRepresentanteReu.rr_emissor'),
-            'rr_emissao' => $request->session()->get('sessaoRepresentanteReu.rr_emissao'),
-            'rr_telefone' => $request->session()->get('sessaoRepresentanteReu.rr_telefone'),
-            'rr_email' => $request->session()->get('sessaoRepresentanteReu.rr_email'),
-            'rr_incerto' => $request->session()->get('sessaoRepresentanteReu.rr_incerto'),
-            'rr_cep' => $request->session()->get('sessaoRepresentanteReu.rr_cep'),
-            'rr_estado' => $request->session()->get('sessaoRepresentanteReu.rr_estado'),
-            'rr_cidade' => $request->session()->get('sessaoRepresentanteReu.rr_cidade'),
-            'rr_bairro' => $request->session()->get('sessaoRepresentanteReu.rr_bairro'),
-            'rr_tipoLogradouro' => $request->session()->get('sessaoRepresentanteReu.rr_tipoLogradouro'),
-            'rr_logradouro' => $request->session()->get('sessaoRepresentanteReu.rr_logradouro'),
-            'rr_numeroEndereco' => $request->session()->get('sessaoRepresentanteReu.rr_numeroEndereco'),
-            'rr_complemento' => $request->session()->get('sessaoRepresentanteReu.rr_complemento'),
-            'rr_tipoEndereco' => $request->session()->get('sessaoRepresentanteReu.rr_tipoEndereco'),
-            'rr_referencia' => $request->session()->get('sessaoRepresentanteReu.rr_referencia'),
-            'rr_comprovante' => $request->session()->get('sessaoRepresentanteReu.rr_comprovante')
-        ]);
-        $representanteReu->representanteReu_processo()->associate($processo);
-        $representanteReu->save();
+        if ($request->session()->get('sessaoRepresentanteReu.rr_cpf') != null) {
+            $representanteReu = new RepresentanteReu([
+                'rr_parte' => $request->session()->get('sessaoRepresentanteReu.rr_parte'),
+                'rr_pessoa' => $request->session()->get('sessaoRepresentanteReu.rr_pessoa'),
+                'rr_sexo' => $request->session()->get('sessaoRepresentanteReu.rr_sexo'),
+                'rr_cpf' => $request->session()->get('sessaoRepresentanteReu.rr_cpf'),
+                'rr_nome' => $request->session()->get('sessaoRepresentanteReu.rr_nome'),
+                'rr_documento' => $request->session()->get('sessaoRepresentanteReu.rr_documento'),
+                'rr_numeroIdentificacao' => $request->session()->get('sessaoRepresentanteReu.rr_numeroIdentificacao'),
+                'rr_emissor' => $request->session()->get('sessaoRepresentanteReu.rr_emissor'),
+                'rr_emissao' => $request->session()->get('sessaoRepresentanteReu.rr_emissao'),
+                'rr_telefone' => $request->session()->get('sessaoRepresentanteReu.rr_telefone'),
+                'rr_email' => $request->session()->get('sessaoRepresentanteReu.rr_email'),
+                'rr_incerto' => $request->session()->get('sessaoRepresentanteReu.rr_incerto'),
+                'rr_cep' => $request->session()->get('sessaoRepresentanteReu.rr_cep'),
+                'rr_estado' => $request->session()->get('sessaoRepresentanteReu.rr_estado'),
+                'rr_cidade' => $request->session()->get('sessaoRepresentanteReu.rr_cidade'),
+                'rr_bairro' => $request->session()->get('sessaoRepresentanteReu.rr_bairro'),
+                'rr_tipoLogradouro' => $request->session()->get('sessaoRepresentanteReu.rr_tipoLogradouro'),
+                'rr_logradouro' => $request->session()->get('sessaoRepresentanteReu.rr_logradouro'),
+                'rr_numeroEndereco' => $request->session()->get('sessaoRepresentanteReu.rr_numeroEndereco'),
+                'rr_complemento' => $request->session()->get('sessaoRepresentanteReu.rr_complemento'),
+                'rr_tipoEndereco' => $request->session()->get('sessaoRepresentanteReu.rr_tipoEndereco'),
+                'rr_referencia' => $request->session()->get('sessaoRepresentanteReu.rr_referencia'),
+                'rr_comprovante' => $request->session()->get('sessaoRepresentanteReu.rr_comprovante')
+            ]);
+            $representanteReu->representanteReu_processo()->associate($processo);
+            $representanteReu->save();
+        }
 
         if (is_array($request->session()->get('sessaoDocumentoAnexoPeticao'))) {
             foreach ($request->session()->get('sessaoDocumentoAnexoPeticao') as $key => $arquivo) {
@@ -831,7 +840,24 @@ class ProcessoController extends Controller
       ]);
         if (is_array($request->processosSelecionados)) {
             foreach ($request->processosSelecionados as $key => $numero) {
-                $processosSelecionados = Processo::where('p_numeracaoProcesso', $numero);
+                $processosSelecionados = Processo::where('p_numeracaoProcesso', $numero)->with('processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->first();
+                if ($processosSelecionados->processo_documentoComprovanteResidencia) {
+                    Storage::delete("public/documentos/comprovantesResidencia/".$numero." - ".$processosSelecionados->processo_documentoComprovanteResidencia->dcr_arquivo);
+                }
+                if ($processosSelecionados->processo_documentoCpf) {
+                    Storage::delete("public/documentos/cpfs/".$numero." - ".$processosSelecionados->processo_documentoCpf->dcpf_arquivo);
+                }
+                if ($processosSelecionados->processo_documentoProcuracao) {
+                    Storage::delete("public/documentos/procuracoes/".$numero." - ".$processosSelecionados->processo_documentoProcuracao->dpr_arquivo);
+                }
+                if (count($processosSelecionados->processo_documentoAnexoPeticao) > 0) {
+                    foreach ($processosSelecionados->processo_documentoAnexoPeticao as $i => $anexo) {
+                        Storage::delete("public/documentos/anexosPeticao/".$numero." - ".$anexo->dap_arquivo);
+                    }
+                }
+                if ($processosSelecionados->processo_documentoPeticaoInicial) {
+                    Storage::delete("public/documentos/peticoesIniciais/".$numero." - ".$processosSelecionados->processo_documentoPeticaoInicial->dpi_arquivo);
+                }
                 $processosSelecionados->delete();
             }
         } else {

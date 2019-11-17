@@ -55,7 +55,7 @@
     <div>
         <h5 align="center" style="background-color: #cccccc"><strong>Parte(s)</strong></h5>
         <table class="m-0 p-0 table table-borderless table-sm">
-            @if($processo->processo_reu->r_cpf !== null)
+            @if($processo->processo_reu)
             <tr>
                 <td>
                     <strong>Réu: {{ $processo->processo_reu->r_nome }}</strong>,
@@ -75,7 +75,7 @@
                 </td>
             </tr>
             @endif
-            @if($processo->processo_reuJuridico->rj_cnpj !== null)
+            @if($processo->processo_reuJuridico)
             <tr>
                 <td>
                     <strong>Réu: {{ $processo->processo_reuJuridico->rj_nome }}</strong>,
@@ -91,7 +91,7 @@
                 </td>
             </tr>
             @endif
-            @if($processo->processo_representanteReu->rr_cpf !== null)
+            @if($processo->processo_representanteReu)
             <tr>
                 <td>
                     <strong>Representante Legal: {{ $processo->processo_representanteReu->rr_nome }}</strong>,
@@ -113,7 +113,6 @@
                 </td>
             </tr>
             @endif
-            @if($processo->processo_autor->a_cpf !== null)
             <tr>
                 <td>
                     <strong>Autor: {{ $processo->processo_autor->a_nome }}</strong>,
@@ -138,8 +137,7 @@
                     CEP: {{ $processo->processo_autor->a_cep }}
                 </td>
             </tr>
-            @endif
-            @if($processo->processo_representanteAutor->ra_cpf !== null)
+            @if($processo->processo_representanteAutor)
             <tr>
                 <td>
                     <strong>Representante Legal: {{ $processo->processo_representanteAutor->ra_nome }}</strong>,
@@ -177,22 +175,22 @@
             </tr>
             @endforeach
             @endif
-            @if($processo->processo_documentoPeticaoInicial !== null)
+            @if($processo->processo_documentoPeticaoInicial)
             <tr>
                 <td><strong>Petição Inicial: {{ $processo->processo_documentoPeticaoInicial->dpi_arquivo }}</strong></td>
             </tr>
             @endif
-            @if($processo->processo_documentoProcuracao !== null)
+            @if($processo->processo_documentoProcuracao)
             <tr>
                 <td><strong>Procuração: {{ $processo->processo_documentoProcuracao->dpr_arquivo }}</strong></td>
             </tr>
             @endif
-            @if($processo->processo_documentoComprovanteResidencia !== null)
+            @if($processo->processo_documentoComprovanteResidencia)
             <tr>
                 <td><strong>Comprovante de Residência: {{ $processo->processo_documentoComprovanteResidencia->dcr_arquivo }}</strong></td>
             </tr>
             @endif
-            @if($processo->processo_documentoCpf !== null)
+            @if($processo->processo_documentoCpf)
             <tr>
                 <td><strong>CPF: {{ $processo->processo_documentoCpf->dcpf_arquivo }}</strong></td>
             </tr>

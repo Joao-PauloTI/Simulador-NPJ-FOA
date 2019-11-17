@@ -1903,8 +1903,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'cpconsultaprocessual',
+  name: "cpconsultaprocessual",
   data: function data() {
     return {
       showOpcao: "showUnica"
@@ -2456,63 +2471,353 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'camodal',
+  name: "camodal",
   data: function data() {
     return {
       aAdvogadoRepresentanteDados: [],
       aDefensorRepresentanteDados: [],
-      aIncapaz: '',
-      aMassa: '',
-      aInsolvente: '',
-      aPreso: '',
-      aEspolio: '',
-      aCondominio: '',
-      aMinisterio: '',
-      aPessoa: '',
-      aEstrangeiro: '',
-      aSexo: '',
-      aCpf: '',
-      aNome: '',
-      aMenor: '',
-      aDocumento: '',
-      aNumeroIdentificacao: '',
-      aExpedidor: '',
-      aEmissao: '',
-      aTelefone: '',
-      aEmail: '',
-      aCep: '',
-      aEstado: '',
-      aCidade: '',
-      aBairro: '',
-      aTipoLogradouro: '',
-      aLogradouro: '',
-      aNumeroEndereco: '',
-      aComplemento: '',
-      aTipoEndereco: '',
-      aReferencia: '',
-      aComprovante: '',
-      aValorPedido: '',
-      aValorLiquido: '',
-      aValorCausa: '',
-      aPretensao: '',
-      aEstadoCivil: '',
-      aProfissao: '',
-      aNacionalidade: 'Brasileira',
-      aEstadoNaturalidade: '',
-      aCidadeNaturalidade: '',
-      aPai: '',
-      aMae: '',
-      aNascimento: ''
+      aIncapaz: "",
+      aMassa: "",
+      aInsolvente: "",
+      aPreso: "",
+      aEspolio: "",
+      aCondominio: "",
+      aMinisterio: "",
+      aPessoa: "",
+      aEstrangeiro: "",
+      aSexo: "",
+      aCpf: "",
+      aNome: "",
+      aMenor: "",
+      aDocumento: "",
+      aNumeroIdentificacao: "",
+      aExpedidor: "",
+      aEmissao: "",
+      aTelefone: "",
+      aEmail: "",
+      aCep: "",
+      aEstado: "",
+      aCidade: "",
+      aBairro: "",
+      aTipoLogradouro: "",
+      aLogradouro: "",
+      aNumeroEndereco: "",
+      aComplemento: "",
+      aTipoEndereco: "",
+      aReferencia: "",
+      aComprovante: "",
+      aValorPedido: "",
+      aValorLiquido: "",
+      aValorCausa: "",
+      aPretensao: "",
+      aEstadoCivil: "",
+      aProfissao: "",
+      aNacionalidade: "Brasileira",
+      aEstadoNaturalidade: "",
+      aCidadeNaturalidade: "",
+      aPai: "",
+      aMae: "",
+      aNascimento: ""
     };
   },
   created: function created() {
-    this.$eventHub.$on('enviarAdvogadoDados', this.receberAdvogadoDados);
-    this.$eventHub.$on('enviarDefensorDados', this.receberDefensorDados);
+    this.$eventHub.$on("enviarAdvogadoDados", this.receberAdvogadoDados);
+    this.$eventHub.$on("enviarDefensorDados", this.receberDefensorDados);
   },
   beforeDestroy: function beforeDestroy() {
-    this.$eventHub.$off('enviarAdvogadoDados');
-    this.$eventHub.$off('enviarDefensorDados');
+    this.$eventHub.$off("enviarAdvogadoDados");
+    this.$eventHub.$off("enviarDefensorDados");
   },
   methods: {
     ajuda: function ajuda() {
@@ -2525,39 +2830,39 @@ __webpack_require__.r(__webpack_exports__);
       this.aDefensorRepresentanteDados = defensor;
     },
     novoAutor: function novoAutor() {
-      this.$emit('caDados', this.aIncapaz, this.aMassa, this.aInsolvente, this.aPreso, this.aEspolio, this.aCondominio, this.aMinisterio, this.aPessoa, this.aEstrangeiro, this.aSexo, this.aCpf, this.aNome, this.aMenor, this.aDocumento, this.aNumeroIdentificacao, this.aExpedidor, this.aEmissao, this.aTelefone, this.aEmail, this.aCep, this.aEstado, this.aCidade, this.aBairro, this.aTipoLogradouro, this.aLogradouro, this.aNumeroEndereco, this.aComplemento, this.aTipoEndereco, this.aReferencia, this.aComprovante, this.aValorPedido, this.aValorLiquido, this.aValorCausa, this.aPretensao, this.aEstadoCivil, this.aProfissao, this.aNacionalidade, this.aEstadoNaturalidade, this.aCidadeNaturalidade, this.aPai, this.aMae, this.aNascimento);
+      this.$emit("caDados", this.aIncapaz, this.aMassa, this.aInsolvente, this.aPreso, this.aEspolio, this.aCondominio, this.aMinisterio, this.aPessoa, this.aEstrangeiro, this.aSexo, this.aCpf, this.aNome, this.aMenor, this.aDocumento, this.aNumeroIdentificacao, this.aExpedidor, this.aEmissao, this.aTelefone, this.aEmail, this.aCep, this.aEstado, this.aCidade, this.aBairro, this.aTipoLogradouro, this.aLogradouro, this.aNumeroEndereco, this.aComplemento, this.aTipoEndereco, this.aReferencia, this.aComprovante, this.aValorPedido, this.aValorLiquido, this.aValorCausa, this.aPretensao, this.aEstadoCivil, this.aProfissao, this.aNacionalidade, this.aEstadoNaturalidade, this.aCidadeNaturalidade, this.aPai, this.aMae, this.aNascimento);
     },
     limparAutorModal: function limparAutorModal() {
-      this.aIncapaz = '', this.aMassa = '', this.aInsolvente = '', this.aPreso = '', this.aEspolio = '', this.aCondominio = '', this.aMinisterio = '', this.aPessoa = '', this.aEstrangeiro = '', this.aSexo = '', this.aCpf = '', this.aNome = '', this.aMenor = '', this.aDocumento = '', this.aNumeroIdentificacao = '', this.aExpedidor = '', this.aEmissao = '', this.aTelefone = '', this.aEmail = '', this.aCep = '', this.aEstado = '', this.aCidade = '', this.aBairro = '', this.aTipoLogradouro = '', this.aLogradouro = '', this.aNumeroEndereco = '', this.aComplemento = '', this.aTipoEndereco = '', this.aReferencia = '', this.aComprovante = '', this.aValorPedido = '', this.aValorLiquido = '', this.aValorCausa = '', this.aPretensao = '', this.aEstadoCivil = '', this.aProfissao = '', this.aNacionalidade = '', this.aEstadoNaturalidade = '', this.aCidadeNaturalidade = '', this.aPai = '', this.aMae = '', this.aNascimento = '';
+      this.aIncapaz = "", this.aMassa = "", this.aInsolvente = "", this.aPreso = "", this.aEspolio = "", this.aCondominio = "", this.aMinisterio = "", this.aPessoa = "", this.aEstrangeiro = "", this.aSexo = "", this.aCpf = "", this.aNome = "", this.aMenor = "", this.aDocumento = "", this.aNumeroIdentificacao = "", this.aExpedidor = "", this.aEmissao = "", this.aTelefone = "", this.aEmail = "", this.aCep = "", this.aEstado = "", this.aCidade = "", this.aBairro = "", this.aTipoLogradouro = "", this.aLogradouro = "", this.aNumeroEndereco = "", this.aComplemento = "", this.aTipoEndereco = "", this.aReferencia = "", this.aComprovante = "", this.aValorPedido = "", this.aValorLiquido = "", this.aValorCausa = "", this.aPretensao = "", this.aEstadoCivil = "", this.aProfissao = "", this.aNacionalidade = "", this.aEstadoNaturalidade = "", this.aCidadeNaturalidade = "", this.aPai = "", this.aMae = "", this.aNascimento = "";
     },
     gerarModeloAutor: function gerarModeloAutor() {
-      if (this.aPessoa === 'Pessoa Física' && this.aCpf === '111.111.111-11') {
-        this.aSexo = 'Masculino';
-        this.aNome = 'Antônio Pereira da Silva';
-        this.aDocumento = 'Registro Geral';
-        this.aNumeroIdentificacao = '45.489.718-7';
-        this.aExpedidor = 'DETRAN-RJ';
-        this.aEmissao = '11/04/1991';
-        this.aTelefone = '(24)99984-8715';
-        this.aEmail = 'antonio@email.com';
-        this.aCep = '12154-187';
-        this.aEstado = 'Rio de Janeiro';
-        this.aCidade = 'Volta Redonda';
-        this.aBairro = 'Santo Agostinho';
-        this.aTipoLogradouro = 'Rua';
-        this.aLogradouro = 'José Peixoto';
-        this.aNumeroEndereco = '459';
-        this.aTipoEndereco = 'Residencial';
-        this.aValorPedido = '400.00';
-        this.aValorCausa = '254.00';
-        this.aEstadoCivil = 'Casado';
-        this.aProfissao = 'Mecânico';
-        this.aNacionalidade = 'Brasileira';
-        this.aEstadoNaturalidade = 'Rio de Janeiro';
-        this.aCidadeNaturalidade = 'Barra do Piraí';
-        this.aPai = 'Maria Angela Pereira';
-        this.aMae = 'Marcus de Souza Pereira';
-        this.aNascimento = '30/01/1974';
+      if (this.aPessoa === "Pessoa Física" && this.aCpf === "111.111.111-11") {
+        this.aSexo = "Masculino";
+        this.aNome = "Antônio Pereira da Silva";
+        this.aDocumento = "Registro Geral";
+        this.aNumeroIdentificacao = "45.489.718-7";
+        this.aExpedidor = "DETRAN-RJ";
+        this.aEmissao = "11/04/1991";
+        this.aTelefone = "(24)99984-8715";
+        this.aEmail = "antonio@email.com";
+        this.aCep = "12154-187";
+        this.aEstado = "Rio de Janeiro";
+        this.aCidade = "Volta Redonda";
+        this.aBairro = "Santo Agostinho";
+        this.aTipoLogradouro = "Rua";
+        this.aLogradouro = "José Peixoto";
+        this.aNumeroEndereco = "459";
+        this.aTipoEndereco = "Residencial";
+        this.aValorPedido = "400.00";
+        this.aValorCausa = "254.00";
+        this.aEstadoCivil = "Casado";
+        this.aProfissao = "Mecânico";
+        this.aNacionalidade = "Brasileira";
+        this.aEstadoNaturalidade = "Rio de Janeiro";
+        this.aCidadeNaturalidade = "Barra do Piraí";
+        this.aPai = "Maria Angela Pereira";
+        this.aMae = "Marcus de Souza Pereira";
+        this.aNascimento = "30/01/1974";
       }
     }
   }
@@ -2999,47 +3304,262 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'cramodal',
+  name: "cramodal",
   data: function data() {
     return {
-      raIncapaz: '',
-      raMassa: '',
-      raInsolvente: '',
-      raPreso: '',
-      raEspolio: '',
-      raCondominio: '',
-      raParte: '',
-      raMinisterio: '',
-      raPessoa: '',
-      raSexo: '',
-      raCpf: '',
-      raNome: '',
-      raDocumento: '',
-      raNumeroIdentificacao: '',
-      raEmissor: '',
-      raEmissao: '',
-      raTelefone: '',
-      raEmail: '',
-      raCep: '',
-      raEstado: '',
-      raCidade: '',
-      raBairro: '',
-      raTipoLogradouro: '',
-      raLogradouro: '',
-      raNumeroEndereco: '',
-      raComplemento: '',
-      raTipoEndereco: '',
-      raReferencia: '',
-      raComprovante: '',
-      raEstadoCivil: '',
-      raProfissao: '',
-      raNacionalidade: 'Brasileira',
-      raEstadoNaturalidade: '',
-      raCidadeNaturalidade: '',
-      raPai: '',
-      raMae: '',
-      raNascimento: ''
+      raIncapaz: "",
+      raMassa: "",
+      raInsolvente: "",
+      raPreso: "",
+      raEspolio: "",
+      raCondominio: "",
+      raParte: "",
+      raMinisterio: "",
+      raPessoa: "",
+      raSexo: "",
+      raCpf: "",
+      raNome: "",
+      raDocumento: "",
+      raNumeroIdentificacao: "",
+      raEmissor: "",
+      raEmissao: "",
+      raTelefone: "",
+      raEmail: "",
+      raCep: "",
+      raEstado: "",
+      raCidade: "",
+      raBairro: "",
+      raTipoLogradouro: "",
+      raLogradouro: "",
+      raNumeroEndereco: "",
+      raComplemento: "",
+      raTipoEndereco: "",
+      raReferencia: "",
+      raComprovante: "",
+      raEstadoCivil: "",
+      raProfissao: "",
+      raNacionalidade: "Brasileira",
+      raEstadoNaturalidade: "",
+      raCidadeNaturalidade: "",
+      raPai: "",
+      raMae: "",
+      raNascimento: ""
     };
   },
   methods: {
@@ -3047,38 +3567,38 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     novoRepresentanteAutor: function novoRepresentanteAutor() {
-      this.$emit('craDados', this.raIncapaz, this.raMassa, this.raInsolvente, this.raPreso, this.raEspolio, this.raCondominio, this.raParte, this.raMinisterio, this.raPessoa, this.raSexo, this.raCpf, this.raNome, this.raDocumento, this.raNumeroIdentificacao, this.raEmissor, this.raEmissao, this.raTelefone, this.raEmail, this.raCep, this.raEstado, this.raCidade, this.raBairro, this.raTipoLogradouro, this.raLogradouro, this.raNumeroEndereco, this.raComplemento, this.raTipoEndereco, this.raReferencia, this.raComprovante, this.raEstadoCivil, this.raProfissao, this.raNacionalidade, this.raEstadoNaturalidade, this.raCidadeNaturalidade, this.raPai, this.raMae, this.raNascimento);
+      this.$emit("craDados", this.raIncapaz, this.raMassa, this.raInsolvente, this.raPreso, this.raEspolio, this.raCondominio, this.raParte, this.raMinisterio, this.raPessoa, this.raSexo, this.raCpf, this.raNome, this.raDocumento, this.raNumeroIdentificacao, this.raEmissor, this.raEmissao, this.raTelefone, this.raEmail, this.raCep, this.raEstado, this.raCidade, this.raBairro, this.raTipoLogradouro, this.raLogradouro, this.raNumeroEndereco, this.raComplemento, this.raTipoEndereco, this.raReferencia, this.raComprovante, this.raEstadoCivil, this.raProfissao, this.raNacionalidade, this.raEstadoNaturalidade, this.raCidadeNaturalidade, this.raPai, this.raMae, this.raNascimento);
     },
     limparRepresentanteAutorModal: function limparRepresentanteAutorModal() {
-      this.raIncapaz = '', this.raMassa = '', this.raInsolvente = '', this.raPreso = '', this.raEspolio = '', this.raCondominio = '', this.raParte = '', this.raMinisterio = '', this.raPessoa = '', this.raSexo = '', this.raCpf = '', this.raNome = '', this.raDocumento = '', this.raNumeroIdentificacao = '', this.raEmissor = '', this.raEmissao = '', this.raTelefone = '', this.raEmail = '', this.raCep = '', this.raEstado = '', this.raCidade = '', this.raBairro = '', this.raTipoLogradouro = '', this.raLogradouro = '', this.raNumeroEndereco = '', this.raComplemento = '', this.raTipoEndereco = '', this.raReferencia = '', this.raComprovante = '', this.raEstadoCivil = '', this.raProfissao = '', this.raNacionalidade = '', this.raEstadoNaturalidade = '', this.raCidadeNaturalidade = '', this.raPai = '', this.raMae = '', this.raNascimento = '';
+      this.raIncapaz = "", this.raMassa = "", this.raInsolvente = "", this.raPreso = "", this.raEspolio = "", this.raCondominio = "", this.raParte = "", this.raMinisterio = "", this.raPessoa = "", this.raSexo = "", this.raCpf = "", this.raNome = "", this.raDocumento = "", this.raNumeroIdentificacao = "", this.raEmissor = "", this.raEmissao = "", this.raTelefone = "", this.raEmail = "", this.raCep = "", this.raEstado = "", this.raCidade = "", this.raBairro = "", this.raTipoLogradouro = "", this.raLogradouro = "", this.raNumeroEndereco = "", this.raComplemento = "", this.raTipoEndereco = "", this.raReferencia = "", this.raComprovante = "", this.raEstadoCivil = "", this.raProfissao = "", this.raNacionalidade = "", this.raEstadoNaturalidade = "", this.raCidadeNaturalidade = "", this.raPai = "", this.raMae = "", this.raNascimento = "";
     },
     gerarModeloRepresentanteAutor: function gerarModeloRepresentanteAutor() {
-      if (this.raPessoa === 'Pessoa Física' && this.raCpf === '222.222.222-22') {
-        this.raParte = 'Representante';
-        this.raSexo = 'Feminino';
-        this.raNome = 'Ana Maria Ferreira da Silva';
-        this.raDocumento = 'Registro Geral';
-        this.raNumeroIdentificacao = '14.658.113-2';
-        this.raEmissor = 'DETRAN-RJ';
-        this.raEmissao = '28/04/1990';
-        this.raTelefone = '(24)99973-4441';
-        this.raEmail = 'ana@email.com';
-        this.raCep = '12154-187';
-        this.raEstado = 'Rio de Janeiro';
-        this.raCidade = 'Volta Redonda';
-        this.raBairro = 'Santo Agostinho';
-        this.raTipoLogradouro = 'Rua';
-        this.raLogradouro = 'José Peixoto';
-        this.raNumeroEndereco = '459';
-        this.raTipoEndereco = 'Residencial';
-        this.raEstadoCivil = 'Casado';
-        this.raProfissao = 'Consultora de Vendas';
-        this.raNacionalidade = 'Brasileira';
-        this.raEstadoNaturalidade = 'Rio de Janeiro';
-        this.raCidadeNaturalidade = 'Volta Redonda';
-        this.raPai = 'Isadora Ferreira Castro';
-        this.raMae = 'Joaquim Barros Ferreira Castro';
-        this.raNascimento = '02/04/1973';
+      if (this.raPessoa === "Pessoa Física" && this.raCpf === "222.222.222-22") {
+        this.raParte = "Representante";
+        this.raSexo = "Feminino";
+        this.raNome = "Ana Maria Ferreira da Silva";
+        this.raDocumento = "Registro Geral";
+        this.raNumeroIdentificacao = "14.658.113-2";
+        this.raEmissor = "DETRAN-RJ";
+        this.raEmissao = "28/04/1990";
+        this.raTelefone = "(24)99973-4441";
+        this.raEmail = "ana@email.com";
+        this.raCep = "12154-187";
+        this.raEstado = "Rio de Janeiro";
+        this.raCidade = "Volta Redonda";
+        this.raBairro = "Santo Agostinho";
+        this.raTipoLogradouro = "Rua";
+        this.raLogradouro = "José Peixoto";
+        this.raNumeroEndereco = "459";
+        this.raTipoEndereco = "Residencial";
+        this.raEstadoCivil = "Casado";
+        this.raProfissao = "Consultora de Vendas";
+        this.raNacionalidade = "Brasileira";
+        this.raEstadoNaturalidade = "Rio de Janeiro";
+        this.raCidadeNaturalidade = "Volta Redonda";
+        this.raPai = "Isadora Ferreira Castro";
+        this.raMae = "Joaquim Barros Ferreira Castro";
+        this.raNascimento = "02/04/1973";
       }
     }
   }
@@ -3397,34 +3917,167 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'crrmodal',
+  name: "crrmodal",
   data: function data() {
     return {
-      rrParte: '',
-      rrPessoa: '',
-      rrSexo: '',
-      rrCpf: '',
-      rrNome: '',
-      rrMenor: '',
-      rrDocumento: '',
-      rrNumeroIdentificacao: '',
-      rrEmissor: '',
-      rrEmissao: '',
-      rrTelefone: '',
-      rrEmail: '',
-      rrIncerto: '',
-      rrCep: '',
-      rrEstado: '',
-      rrCidade: '',
-      rrBairro: '',
-      rrTipoLogradouro: '',
-      rrLogradouro: '',
-      rrNumeroEndereco: '',
-      rrComplemento: '',
-      rrTipoEndereco: '',
-      rrReferencia: '',
-      rrComprovante: ''
+      rrParte: "",
+      rrPessoa: "",
+      rrSexo: "",
+      rrCpf: "",
+      rrNome: "",
+      rrMenor: "",
+      rrDocumento: "",
+      rrNumeroIdentificacao: "",
+      rrEmissor: "",
+      rrEmissao: "",
+      rrTelefone: "",
+      rrEmail: "",
+      rrIncerto: "",
+      rrCep: "",
+      rrEstado: "",
+      rrCidade: "",
+      rrBairro: "",
+      rrTipoLogradouro: "",
+      rrLogradouro: "",
+      rrNumeroEndereco: "",
+      rrComplemento: "",
+      rrTipoEndereco: "",
+      rrReferencia: "",
+      rrComprovante: ""
     };
   },
   methods: {
@@ -3432,30 +4085,30 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     novoRepresentanteReu: function novoRepresentanteReu() {
-      this.$emit('crrDados', this.rrParte, this.rrPessoa, this.rrSexo, this.rrCpf, this.rrNome, this.rrMenor, this.rrDocumento, this.rrNumeroIdentificacao, this.rrEmissor, this.rrEmissao, this.rrTelefone, this.rrEmail, this.rrIncerto, this.rrCep, this.rrEstado, this.rrCidade, this.rrBairro, this.rrTipoLogradouro, this.rrLogradouro, this.rrNumeroEndereco, this.rrComplemento, this.rrTipoEndereco, this.rrReferencia, this.rrComprovante);
+      this.$emit("crrDados", this.rrParte, this.rrPessoa, this.rrSexo, this.rrCpf, this.rrNome, this.rrMenor, this.rrDocumento, this.rrNumeroIdentificacao, this.rrEmissor, this.rrEmissao, this.rrTelefone, this.rrEmail, this.rrIncerto, this.rrCep, this.rrEstado, this.rrCidade, this.rrBairro, this.rrTipoLogradouro, this.rrLogradouro, this.rrNumeroEndereco, this.rrComplemento, this.rrTipoEndereco, this.rrReferencia, this.rrComprovante);
     },
     limparRepresentanteReuModal: function limparRepresentanteReuModal() {
-      this.rrParte = '', this.rrPessoa = '', this.rrSexo = '', this.rrCpf = '', this.rrNome = '', this.rrMenor = '', this.rrDocumento = '', this.rrNumeroIdentificacao = '', this.rrEmissor = '', this.rrEmissao = '', this.rrTelefone = '', this.rrEmail = '', this.rrIncerto = '', this.rrCep = '', this.rrEstado = '', this.rrCidade = '', this.rrBairro = '', this.rrTipoLogradouro = '', this.rrLogradouro = '', this.rrNumeroEndereco = '', this.rrComplemento = '', this.rrTipoEndereco = '', this.rrReferencia = '', this.rrComprovante = '';
+      this.rrParte = "", this.rrPessoa = "", this.rrSexo = "", this.rrCpf = "", this.rrNome = "", this.rrMenor = "", this.rrDocumento = "", this.rrNumeroIdentificacao = "", this.rrEmissor = "", this.rrEmissao = "", this.rrTelefone = "", this.rrEmail = "", this.rrIncerto = "", this.rrCep = "", this.rrEstado = "", this.rrCidade = "", this.rrBairro = "", this.rrTipoLogradouro = "", this.rrLogradouro = "", this.rrNumeroEndereco = "", this.rrComplemento = "", this.rrTipoEndereco = "", this.rrReferencia = "", this.rrComprovante = "";
     },
     gerarModeloRepresentanteReu: function gerarModeloRepresentanteReu() {
-      if (this.rrPessoa === 'Pessoa Física' && this.rrCpf === '555.555.555-55') {
-        this.rrParte = 'Representante';
-        this.rrSexo = 'Masculino';
-        this.rrNome = 'José Luís Santos Andrade';
-        this.rrDocumento = 'Registro Geral';
-        this.rrNumeroIdentificacao = '74.223.569-8';
-        this.rrEmissor = 'DETRAN-RJ';
-        this.rrEmissao = '14/09/1988';
-        this.rrTelefone = '(24)99988-1231';
-        this.rrEmail = 'jose@email.com';
-        this.rrCep = '65481-254';
-        this.rrEstado = 'Rio de Janeiro';
-        this.rrCidade = 'Volta Redonda';
-        this.rrBairro = 'Vila Santa Secília';
-        this.rrTipoLogradouro = 'Rua';
-        this.rrLogradouro = 'Trinta e Três';
-        this.rrNumeroEndereco = '1494';
-        this.rrTipoEndereco = 'Residencial';
+      if (this.rrPessoa === "Pessoa Física" && this.rrCpf === "555.555.555-55") {
+        this.rrParte = "Representante";
+        this.rrSexo = "Masculino";
+        this.rrNome = "José Luís Santos Andrade";
+        this.rrDocumento = "Registro Geral";
+        this.rrNumeroIdentificacao = "74.223.569-8";
+        this.rrEmissor = "DETRAN-RJ";
+        this.rrEmissao = "14/09/1988";
+        this.rrTelefone = "(24)99988-1231";
+        this.rrEmail = "jose@email.com";
+        this.rrCep = "65481-254";
+        this.rrEstado = "Rio de Janeiro";
+        this.rrCidade = "Volta Redonda";
+        this.rrBairro = "Vila Santa Secília";
+        this.rrTipoLogradouro = "Rua";
+        this.rrLogradouro = "Trinta e Três";
+        this.rrNumeroEndereco = "1494";
+        this.rrTipoEndereco = "Residencial";
       }
     }
   }
@@ -3738,31 +4391,121 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'crmodal',
+  name: "crmodal",
   data: function data() {
     return {
-      rEstrangeiro: '',
-      rSexo: '',
-      rCpf: '',
-      rNome: '',
-      rDocumento: '',
-      rNumeroIdentificacao: '',
-      rExpedidor: '',
-      rEmissao: '',
-      rEmail: '',
-      rIncerto: '',
-      rCep: '',
-      rEstado: '',
-      rCidade: '',
-      rBairro: '',
-      rTipoLogradouro: '',
-      rLogradouro: '',
-      rNumeroEndereco: '',
-      rComplemento: '',
-      rTipoEndereco: '',
-      rReferencia: '',
-      rComprovante: ''
+      rEstrangeiro: "",
+      rSexo: "",
+      rCpf: "",
+      rNome: "",
+      rDocumento: "",
+      rNumeroIdentificacao: "",
+      rExpedidor: "",
+      rEmissao: "",
+      rEmail: "",
+      rIncerto: "",
+      rCep: "",
+      rEstado: "",
+      rCidade: "",
+      rBairro: "",
+      rTipoLogradouro: "",
+      rLogradouro: "",
+      rNumeroEndereco: "",
+      rComplemento: "",
+      rTipoEndereco: "",
+      rReferencia: "",
+      rComprovante: ""
     };
   },
   methods: {
@@ -3770,29 +4513,29 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     novoReu: function novoReu() {
-      this.$emit('crDados', this.rEstrangeiro, this.rSexo, this.rCpf, this.rNome, this.rDocumento, this.rNumeroIdentificacao, this.rExpedidor, this.rEmissao, this.rEmail, this.rIncerto, this.rCep, this.rEstado, this.rCidade, this.rBairro, this.rTipoLogradouro, this.rLogradouro, this.rNumeroEndereco, this.rComplemento, this.rTipoEndereco, this.rReferencia, this.rComprovante);
+      this.$emit("crDados", this.rEstrangeiro, this.rSexo, this.rCpf, this.rNome, this.rDocumento, this.rNumeroIdentificacao, this.rExpedidor, this.rEmissao, this.rEmail, this.rIncerto, this.rCep, this.rEstado, this.rCidade, this.rBairro, this.rTipoLogradouro, this.rLogradouro, this.rNumeroEndereco, this.rComplemento, this.rTipoEndereco, this.rReferencia, this.rComprovante);
     },
     limparReuModal: function limparReuModal() {
-      this.rEstrangeiro = '', this.rSexo = '', this.rCpf = '', this.rNome = '', this.rDocumento = '', this.rNumeroIdentificacao = '', this.rExpedidor = '', this.rEmissao = '', this.rEmail = '', this.rIncerto = '', this.rCep = '', this.rEstado = '', this.rCidade = '', this.rBairro = '', this.rTipoLogradouro = '', this.rLogradouro = '', this.rNumeroEndereco = '', this.rComplemento = '', this.rTipoEndereco = '', this.rReferencia = '', this.rComprovante = '';
+      this.rEstrangeiro = "", this.rSexo = "", this.rCpf = "", this.rNome = "", this.rDocumento = "", this.rNumeroIdentificacao = "", this.rExpedidor = "", this.rEmissao = "", this.rEmail = "", this.rIncerto = "", this.rCep = "", this.rEstado = "", this.rCidade = "", this.rBairro = "", this.rTipoLogradouro = "", this.rLogradouro = "", this.rNumeroEndereco = "", this.rComplemento = "", this.rTipoEndereco = "", this.rReferencia = "", this.rComprovante = "";
     },
     gerarModeloReu: function gerarModeloReu() {
-      if (this.rCpf === '333.333.333-33') {
-        this.rSexo = 'Masculino';
-        this.rNome = 'Manuel Duarte Oliveira da Cruz';
-        this.rDocumento = 'Registro Geral';
-        this.rNumeroIdentificacao = '27.885.648-1';
-        this.rExpedidor = 'DETRAN-RJ';
-        this.rEmissao = '28/10/1989';
-        this.rTelefone = '(24)99847-8113';
-        this.rEmail = 'manuel@email.com';
-        this.rCep = '28451-845';
-        this.rEstado = 'Rio de Janeiro';
-        this.rCidade = 'Barra Mansa';
-        this.rBairro = '9 de Abril';
-        this.rTipoLogradouro = 'Avenida';
-        this.rLogradouro = '8 de Março';
-        this.rNumeroEndereco = '48';
-        this.rTipoEndereco = 'Residencial';
+      if (this.rCpf === "333.333.333-33") {
+        this.rSexo = "Masculino";
+        this.rNome = "Manuel Duarte Oliveira da Cruz";
+        this.rDocumento = "Registro Geral";
+        this.rNumeroIdentificacao = "27.885.648-1";
+        this.rExpedidor = "DETRAN-RJ";
+        this.rEmissao = "28/10/1989";
+        this.rTelefone = "(24)99847-8113";
+        this.rEmail = "manuel@email.com";
+        this.rCep = "28451-845";
+        this.rEstado = "Rio de Janeiro";
+        this.rCidade = "Barra Mansa";
+        this.rBairro = "9 de Abril";
+        this.rTipoLogradouro = "Avenida";
+        this.rLogradouro = "8 de Março";
+        this.rNumeroEndereco = "48";
+        this.rTipoEndereco = "Residencial";
       }
     }
   }
@@ -3991,23 +4734,69 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'crjmodal',
+  name: "crjmodal",
   data: function data() {
     return {
-      rjNome: '',
-      rjCnpj: '',
-      rjTipoEmpresa: '',
-      rjCep: '',
-      rjEstado: '',
-      rjCidade: '',
-      rjBairro: '',
-      rjTipoLogradouro: '',
-      rjLogradouro: '',
-      rjNumeroEndereco: '',
-      rjComplemento: '',
-      rjTipoEndereco: '',
-      rjReferencia: ''
+      rjNome: "",
+      rjCnpj: "",
+      rjTipoEmpresa: "",
+      rjCep: "",
+      rjEstado: "",
+      rjCidade: "",
+      rjBairro: "",
+      rjTipoLogradouro: "",
+      rjLogradouro: "",
+      rjNumeroEndereco: "",
+      rjComplemento: "",
+      rjTipoEndereco: "",
+      rjReferencia: ""
     };
   },
   methods: {
@@ -4015,23 +4804,23 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     novoReuJuridico: function novoReuJuridico() {
-      this.$emit('crjDados', this.rjNome, this.rjCnpj, this.rjTipoEmpresa, this.rjCep, this.rjEstado, this.rjCidade, this.rjBairro, this.rjTipoLogradouro, this.rjLogradouro, this.rjNumeroEndereco, this.rjComplemento, this.rjTipoEndereco, this.rjReferencia);
+      this.$emit("crjDados", this.rjNome, this.rjCnpj, this.rjTipoEmpresa, this.rjCep, this.rjEstado, this.rjCidade, this.rjBairro, this.rjTipoLogradouro, this.rjLogradouro, this.rjNumeroEndereco, this.rjComplemento, this.rjTipoEndereco, this.rjReferencia);
     },
     limparReuJuridicoModal: function limparReuJuridicoModal() {
-      this.rjNome = '', this.rjCnpj = '', this.rjTipoEmpresa = '', this.rjCep = '', this.rjEstado = '', this.rjCidade = '', this.rjBairro = '', this.rjTipoLogradouro = '', this.rjLogradouro = '', this.rjNumeroEndereco = '', this.rjComplemento = '', this.rjTipoEndereco = '', this.rjReferencia = '';
+      this.rjNome = "", this.rjCnpj = "", this.rjTipoEmpresa = "", this.rjCep = "", this.rjEstado = "", this.rjCidade = "", this.rjBairro = "", this.rjTipoLogradouro = "", this.rjLogradouro = "", this.rjNumeroEndereco = "", this.rjComplemento = "", this.rjTipoEndereco = "", this.rjReferencia = "";
     },
     gerarModeloReuJuridico: function gerarModeloReuJuridico() {
-      if (this.rjCnpj === '44.444.444/4444-44') {
-        this.rjNome = 'Correios - Empresa Brasileira de Correios e Telégrafos';
-        this.rjTipoEmpresa = 'Sociedade Empresária Limitada (Ltda.)';
-        this.rjCep = '27215-580';
-        this.rjEstado = 'Rio de Janeiro';
-        this.rjCidade = 'Volta Redonda';
-        this.rjBairro = 'Aterrado';
-        this.rjTipoLogradouro = 'Avenida';
-        this.rjLogradouro = 'Paulo de Frontin';
-        this.rjNumeroEndereco = '897';
-        this.rjTipoEndereco = 'Empresarial';
+      if (this.rjCnpj === "44.444.444/4444-44") {
+        this.rjNome = "Correios - Empresa Brasileira de Correios e Telégrafos";
+        this.rjTipoEmpresa = "Sociedade Empresária Limitada (Ltda.)";
+        this.rjCep = "27215-580";
+        this.rjEstado = "Rio de Janeiro";
+        this.rjCidade = "Volta Redonda";
+        this.rjBairro = "Aterrado";
+        this.rjTipoLogradouro = "Avenida";
+        this.rjLogradouro = "Paulo de Frontin";
+        this.rjNumeroEndereco = "897";
+        this.rjTipoEndereco = "Empresarial";
       }
     }
   }
@@ -4154,15 +4943,105 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'deadvogadoRepresentante',
+  name: "deadvogadoRepresentante",
   data: function data() {
     return {
-      arAdvogadoRepresentante: 'Advogado',
-      arEstadoOAB: 'RJ',
-      arNumeroOAB: '',
-      arMatricula: '',
-      arNome: '',
+      arAdvogadoRepresentante: "Advogado",
+      arEstadoOAB: "RJ",
+      arNumeroOAB: "",
+      arMatricula: "",
+      arNome: "",
       arAdvogadoDados: [],
       arDefensorDados: []
     };
@@ -4172,48 +5051,48 @@ __webpack_require__.r(__webpack_exports__);
       alert("Advogado - RJ 111111 - Fernanda Canedo; \nAdvogado - RJ 222222 - Thainá Brigida; \nAdvogado - SP 333333 - Daniele Souza; \nDefensor Público - 4444444444 - Adilson Gustavo; \nDefensor Público - 5555555555 - Rosenclever Lopes; \nDefensor Público - 6666666666 - Leonardo Feliciano");
     },
     gerarNome: function gerarNome() {
-      if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'RJ' && this.arNumeroOAB === '111111') {
-        this.arMatricula = '';
-        this.arNome = 'Fernanda Canedo';
-      } else if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'RJ' && this.arNumeroOAB === '222222') {
-        this.arMatricula = '';
-        this.arNome = 'Thainá Brigida';
-      } else if (this.arAdvogadoRepresentante === 'Advogado' && this.arEstadoOAB === 'SP' && this.arNumeroOAB === '333333') {
-        this.arMatricula = '';
-        this.arNome = 'Daniele Souza';
-      } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatricula === '4444444444') {
-        this.arNumeroOAB = '';
-        this.arNome = 'Adilson Gustavo';
-      } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatricula === '5555555555') {
-        this.arNumeroOAB = '';
-        this.arNome = 'Rosenclever Lopes';
-      } else if (this.arAdvogadoRepresentante === 'Defensor Público' && this.arMatricula === '6666666666') {
-        this.arNumeroOAB = '';
-        this.arNome = 'Leonardo Feliciano';
+      if (this.arAdvogadoRepresentante === "Advogado" && this.arEstadoOAB === "RJ" && this.arNumeroOAB === "111111") {
+        this.arMatricula = "";
+        this.arNome = "Fernanda Canedo";
+      } else if (this.arAdvogadoRepresentante === "Advogado" && this.arEstadoOAB === "RJ" && this.arNumeroOAB === "222222") {
+        this.arMatricula = "";
+        this.arNome = "Thainá Brigida";
+      } else if (this.arAdvogadoRepresentante === "Advogado" && this.arEstadoOAB === "SP" && this.arNumeroOAB === "333333") {
+        this.arMatricula = "";
+        this.arNome = "Daniele Souza";
+      } else if (this.arAdvogadoRepresentante === "Defensor Público" && this.arMatricula === "4444444444") {
+        this.arNumeroOAB = "";
+        this.arNome = "Adilson Gustavo";
+      } else if (this.arAdvogadoRepresentante === "Defensor Público" && this.arMatricula === "5555555555") {
+        this.arNumeroOAB = "";
+        this.arNome = "Rosenclever Lopes";
+      } else if (this.arAdvogadoRepresentante === "Defensor Público" && this.arMatricula === "6666666666") {
+        this.arNumeroOAB = "";
+        this.arNome = "Leonardo Feliciano";
       } else {
-        this.arNome = '';
+        this.arNome = "";
       }
     },
     adicionarAdvogado: function adicionarAdvogado(estado, numero) {
       var advogadoRepetido;
       this.arAdvogadoDados.forEach(function (dados) {
         if (dados.arEstadoOAB === estado && dados.arNumeroOAB === numero) {
-          advogadoRepetido = 'sim';
+          advogadoRepetido = "sim";
         }
       });
 
-      if (advogadoRepetido === 'sim') {
-        alert('Este advogado já está adicionado no processo!');
+      if (advogadoRepetido === "sim") {
+        alert("Este advogado já está adicionado no processo!");
       } else {
         this.arAdvogadoDados.push({
-          'arEstadoOAB': this.arEstadoOAB,
-          'arNumeroOAB': this.arNumeroOAB,
-          'arNome': this.arNome
+          arEstadoOAB: this.arEstadoOAB,
+          arNumeroOAB: this.arNumeroOAB,
+          arNome: this.arNome
         });
-        this.$eventHub.$emit('enviarAdvogadoDados', this.arAdvogadoDados);
-        this.arNumeroOAB = '';
-        this.arMatricula = '';
-        this.arNome = '';
+        this.$eventHub.$emit("enviarAdvogadoDados", this.arAdvogadoDados);
+        this.arNumeroOAB = "";
+        this.arMatricula = "";
+        this.arNome = "";
       }
     },
     excluirAdvogado: function excluirAdvogado(index) {
@@ -4223,21 +5102,21 @@ __webpack_require__.r(__webpack_exports__);
       var defensorRepetido;
       this.arDefensorDados.forEach(function (dados) {
         if (dados.arMatricula === matricula) {
-          defensorRepetido = 'sim';
+          defensorRepetido = "sim";
         }
       });
 
-      if (defensorRepetido === 'sim') {
-        alert('Este defensor público já está adicionado no processo!');
+      if (defensorRepetido === "sim") {
+        alert("Este defensor público já está adicionado no processo!");
       } else {
         this.arDefensorDados.push({
-          'arMatricula': this.arMatricula,
-          'arNome': this.arNome
+          arMatricula: this.arMatricula,
+          arNome: this.arNome
         });
-        this.$eventHub.$emit('enviarDefensorDados', this.arDefensorDados);
-        this.arNumeroOAB = '';
-        this.arMatricula = '';
-        this.arNome = '';
+        this.$eventHub.$emit("enviarDefensorDados", this.arDefensorDados);
+        this.arNumeroOAB = "";
+        this.arMatricula = "";
+        this.arNome = "";
       }
     },
     excluirDefensor: function excluirDefensor(index) {
@@ -4503,6 +5382,236 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //Modal de cadastro de autor
  //Modal de cadastro de representante de autor
 
@@ -4520,7 +5629,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'deautoresReusDocumentos',
+  name: "deautoresReusDocumentos",
   components: {
     camodal: _CadastrarAutor_CA_modal__WEBPACK_IMPORTED_MODULE_0__["default"],
     cramodal: _CadastrarRepresentanteAutor_CRA_modal__WEBPACK_IMPORTED_MODULE_1__["default"],
@@ -4540,10 +5649,10 @@ __webpack_require__.r(__webpack_exports__);
       deReu: [],
       deReuJuridico: [],
       deRepresentanteReu: [],
-      deNomePeticaoInicial: '',
-      deNomeCpf: '',
-      deNomeComprovanteResidencia: '',
-      deNomeProcuracao: '',
+      deNomePeticaoInicial: "",
+      deNomeCpf: "",
+      deNomeComprovanteResidencia: "",
+      deNomeProcuracao: "",
       deNomeAnexoPeticao: null
     };
   },
@@ -4558,50 +5667,50 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       this.deAutor.push({
-        'aIncapaz': aIncapaz,
-        'aMassa': aMassa,
-        'aInsolvente': aInsolvente,
-        'aPreso': aPreso,
-        'aEspolio': aEspolio,
-        'aCondominio': aCondominio,
-        'aMinisterio': aMinisterio,
-        'aPessoa': aPessoa,
-        'aEstrangeiro': aEstrangeiro,
-        'aSexo': aSexo,
-        'aCpf': aCpf,
-        'aNome': aNome,
-        'aMenor': aMenor,
-        'aDocumento': aDocumento,
-        'aNumeroIdentificacao': aNumeroIdentificacao,
-        'aExpedidor': aExpedidor,
-        'aEmissao': aEmissao,
-        'aTelefone': aTelefone,
-        'aEmail': aEmail,
-        'aRepresenta': aRepresenta,
-        'aIntimacao': aIntimacao,
-        'aCep': aCep,
-        'aEstado': aEstado,
-        'aCidade': aCidade,
-        'aBairro': aBairro,
-        'aTipoLogradouro': aTipoLogradouro,
-        'aLogradouro': aLogradouro,
-        'aNumeroEndereco': aNumeroEndereco,
-        'aComplemento': aComplemento,
-        'aTipoEndereco': aTipoEndereco,
-        'aReferencia': aReferencia,
-        'aComprovante': aComprovante,
-        'aValorPedido': aValorPedido,
-        'aValorLiquido': aValorLiquido,
-        'aValorCausa': aValorCausa,
-        'aPretensao': aPretensao,
-        'aEstadoCivil': aEstadoCivil,
-        'aProfissao': aProfissao,
-        'aNacionalidade': aNacionalidade,
-        'aEstadoNaturalidade': aEstadoNaturalidade,
-        'aCidadeNaturalidade': aCidadeNaturalidade,
-        'aPai': aPai,
-        'aMae': aMae,
-        'aNascimento': aNascimento
+        aIncapaz: aIncapaz,
+        aMassa: aMassa,
+        aInsolvente: aInsolvente,
+        aPreso: aPreso,
+        aEspolio: aEspolio,
+        aCondominio: aCondominio,
+        aMinisterio: aMinisterio,
+        aPessoa: aPessoa,
+        aEstrangeiro: aEstrangeiro,
+        aSexo: aSexo,
+        aCpf: aCpf,
+        aNome: aNome,
+        aMenor: aMenor,
+        aDocumento: aDocumento,
+        aNumeroIdentificacao: aNumeroIdentificacao,
+        aExpedidor: aExpedidor,
+        aEmissao: aEmissao,
+        aTelefone: aTelefone,
+        aEmail: aEmail,
+        aRepresenta: aRepresenta,
+        aIntimacao: aIntimacao,
+        aCep: aCep,
+        aEstado: aEstado,
+        aCidade: aCidade,
+        aBairro: aBairro,
+        aTipoLogradouro: aTipoLogradouro,
+        aLogradouro: aLogradouro,
+        aNumeroEndereco: aNumeroEndereco,
+        aComplemento: aComplemento,
+        aTipoEndereco: aTipoEndereco,
+        aReferencia: aReferencia,
+        aComprovante: aComprovante,
+        aValorPedido: aValorPedido,
+        aValorLiquido: aValorLiquido,
+        aValorCausa: aValorCausa,
+        aPretensao: aPretensao,
+        aEstadoCivil: aEstadoCivil,
+        aProfissao: aProfissao,
+        aNacionalidade: aNacionalidade,
+        aEstadoNaturalidade: aEstadoNaturalidade,
+        aCidadeNaturalidade: aCidadeNaturalidade,
+        aPai: aPai,
+        aMae: aMae,
+        aNascimento: aNascimento
       });
     },
     excluirAutor: function excluirAutor() {
@@ -4618,43 +5727,43 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       this.deRepresentanteAutor.push({
-        'raIncapaz': raIncapaz,
-        'raMassa': raMassa,
-        'raInsolvente': raInsolvente,
-        'raPreso': raPreso,
-        'raEspolio': raEspolio,
-        'raCondominio': raCondominio,
-        'raParte': raParte,
-        'raMinisterio': raMinisterio,
-        'raPessoa': raPessoa,
-        'raSexo': raSexo,
-        'raCpf': raCpf,
-        'raNome': raNome,
-        'raDocumento': raDocumento,
-        'raNumeroIdentificacao': raNumeroIdentificacao,
-        'raEmissor': raEmissor,
-        'raEmissao': raEmissao,
-        'raTelefone': raTelefone,
-        'raEmail': raEmail,
-        'raCep': raCep,
-        'raEstado': raEstado,
-        'raCidade': raCidade,
-        'raBairro': raBairro,
-        'raTipoLogradouro': raTipoLogradouro,
-        'raLogradouro': raLogradouro,
-        'raNumeroEndereco': raNumeroEndereco,
-        'raComplemento': raComplemento,
-        'raTipoEndereco': raTipoEndereco,
-        'raReferencia': raReferencia,
-        'raComprovante': raComprovante,
-        'raEstadoCivil': raEstadoCivil,
-        'raProfissao': raProfissao,
-        'raNacionalidade': raNacionalidade,
-        'raEstadoNaturalidade': raEstadoNaturalidade,
-        'raCidadeNaturalidade': raCidadeNaturalidade,
-        'raPai': raPai,
-        'raMae': raMae,
-        'raNascimento': raNascimento
+        raIncapaz: raIncapaz,
+        raMassa: raMassa,
+        raInsolvente: raInsolvente,
+        raPreso: raPreso,
+        raEspolio: raEspolio,
+        raCondominio: raCondominio,
+        raParte: raParte,
+        raMinisterio: raMinisterio,
+        raPessoa: raPessoa,
+        raSexo: raSexo,
+        raCpf: raCpf,
+        raNome: raNome,
+        raDocumento: raDocumento,
+        raNumeroIdentificacao: raNumeroIdentificacao,
+        raEmissor: raEmissor,
+        raEmissao: raEmissao,
+        raTelefone: raTelefone,
+        raEmail: raEmail,
+        raCep: raCep,
+        raEstado: raEstado,
+        raCidade: raCidade,
+        raBairro: raBairro,
+        raTipoLogradouro: raTipoLogradouro,
+        raLogradouro: raLogradouro,
+        raNumeroEndereco: raNumeroEndereco,
+        raComplemento: raComplemento,
+        raTipoEndereco: raTipoEndereco,
+        raReferencia: raReferencia,
+        raComprovante: raComprovante,
+        raEstadoCivil: raEstadoCivil,
+        raProfissao: raProfissao,
+        raNacionalidade: raNacionalidade,
+        raEstadoNaturalidade: raEstadoNaturalidade,
+        raCidadeNaturalidade: raCidadeNaturalidade,
+        raPai: raPai,
+        raMae: raMae,
+        raNascimento: raNascimento
       });
     },
     excluirRepresentanteAutor: function excluirRepresentanteAutor() {
@@ -4671,27 +5780,27 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       this.deReu.push({
-        'rEstrangeiro': rEstrangeiro,
-        'rSexo': rSexo,
-        'rCpf': rCpf,
-        'rNome': rNome,
-        'rDocumento': rDocumento,
-        'rNumeroIdentificacao': rNumeroIdentificacao,
-        'rExpedidor': rExpedidor,
-        'rEmissao': rEmissao,
-        'rEmail': rEmail,
-        'rIncerto': rIncerto,
-        'rCep': rCep,
-        'rEstado': rEstado,
-        'rCidade': rCidade,
-        'rBairro': rBairro,
-        'rTipoLogradouro': rTipoLogradouro,
-        'rLogradouro': rLogradouro,
-        'rNumeroEndereco': rNumeroEndereco,
-        'rComplemento': rComplemento,
-        'rTipoEndereco': rTipoEndereco,
-        'rReferencia': rReferencia,
-        'rComprovante': rComprovante
+        rEstrangeiro: rEstrangeiro,
+        rSexo: rSexo,
+        rCpf: rCpf,
+        rNome: rNome,
+        rDocumento: rDocumento,
+        rNumeroIdentificacao: rNumeroIdentificacao,
+        rExpedidor: rExpedidor,
+        rEmissao: rEmissao,
+        rEmail: rEmail,
+        rIncerto: rIncerto,
+        rCep: rCep,
+        rEstado: rEstado,
+        rCidade: rCidade,
+        rBairro: rBairro,
+        rTipoLogradouro: rTipoLogradouro,
+        rLogradouro: rLogradouro,
+        rNumeroEndereco: rNumeroEndereco,
+        rComplemento: rComplemento,
+        rTipoEndereco: rTipoEndereco,
+        rReferencia: rReferencia,
+        rComprovante: rComprovante
       });
     },
     excluirReu: function excluirReu() {
@@ -4708,19 +5817,19 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       this.deReuJuridico.push({
-        'rjNome': rjNome,
-        'rjCnpj': rjCnpj,
-        'rjTipoEmpresa': rjTipoEmpresa,
-        'rjCep': rjCep,
-        'rjEstado': rjEstado,
-        'rjCidade': rjCidade,
-        'rjBairro': rjBairro,
-        'rjTipoLogradouro': rjTipoLogradouro,
-        'rjLogradouro': rjLogradouro,
-        'rjNumeroEndereco': rjNumeroEndereco,
-        'rjComplemento': rjComplemento,
-        'rjTipoEndereco': rjTipoEndereco,
-        'rjReferencia': rjReferencia
+        rjNome: rjNome,
+        rjCnpj: rjCnpj,
+        rjTipoEmpresa: rjTipoEmpresa,
+        rjCep: rjCep,
+        rjEstado: rjEstado,
+        rjCidade: rjCidade,
+        rjBairro: rjBairro,
+        rjTipoLogradouro: rjTipoLogradouro,
+        rjLogradouro: rjLogradouro,
+        rjNumeroEndereco: rjNumeroEndereco,
+        rjComplemento: rjComplemento,
+        rjTipoEndereco: rjTipoEndereco,
+        rjReferencia: rjReferencia
       });
     },
     excluirReuJuridico: function excluirReuJuridico() {
@@ -4737,30 +5846,30 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       this.deRepresentanteReu.push({
-        'rrParte': rrParte,
-        'rrPessoa': rrPessoa,
-        'rrSexo': rrSexo,
-        'rrCpf': rrCpf,
-        'rrNome': rrNome,
-        'rrMenor': rrMenor,
-        'rrDocumento': rrDocumento,
-        'rrNumeroIdentificacao': rrNumeroIdentificacao,
-        'rrEmissor': rrEmissor,
-        'rrEmissao': rrEmissao,
-        'rrTelefone': rrTelefone,
-        'rrEmail': rrEmail,
-        'rrIncerto': rrIncerto,
-        'rrCep': rrCep,
-        'rrEstado': rrEstado,
-        'rrCidade': rrCidade,
-        'rrBairro': rrBairro,
-        'rrTipoLogradouro': rrTipoLogradouro,
-        'rrLogradouro': rrLogradouro,
-        'rrNumeroEndereco': rrNumeroEndereco,
-        'rrComplemento': rrComplemento,
-        'rrTipoEndereco': rrTipoEndereco,
-        'rrReferencia': rrReferencia,
-        'rrComprovante': rrComprovante
+        rrParte: rrParte,
+        rrPessoa: rrPessoa,
+        rrSexo: rrSexo,
+        rrCpf: rrCpf,
+        rrNome: rrNome,
+        rrMenor: rrMenor,
+        rrDocumento: rrDocumento,
+        rrNumeroIdentificacao: rrNumeroIdentificacao,
+        rrEmissor: rrEmissor,
+        rrEmissao: rrEmissao,
+        rrTelefone: rrTelefone,
+        rrEmail: rrEmail,
+        rrIncerto: rrIncerto,
+        rrCep: rrCep,
+        rrEstado: rrEstado,
+        rrCidade: rrCidade,
+        rrBairro: rrBairro,
+        rrTipoLogradouro: rrTipoLogradouro,
+        rrLogradouro: rrLogradouro,
+        rrNumeroEndereco: rrNumeroEndereco,
+        rrComplemento: rrComplemento,
+        rrTipoEndereco: rrTipoEndereco,
+        rrReferencia: rrReferencia,
+        rrComprovante: rrComprovante
       });
     },
     excluirRepresentanteReu: function excluirRepresentanteReu() {
@@ -5312,8 +6421,306 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'dedadosdoprocesso',
+  name: "dedadosdoprocesso",
   data: function data() {
     return {
       showCompetencia: "",
@@ -5367,8 +6774,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'dedeclaracaoDeVeracidade',
+  name: "dedeclaracaoDeVeracidade",
   data: function data() {
     return {};
   },
@@ -5443,8 +6858,41 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'degrerj',
+  name: "degrerj",
   data: function data() {
     return {
       showOpcao: ""
@@ -5504,8 +6952,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'deprocessoprincipal',
+  name: "deprocessoprincipal",
   data: function data() {
     return {
       showDpd: ""
@@ -5563,11 +7029,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'denviarcpf',
+  name: "denviarcpf",
   data: function data() {
     return {
-      nomeCpf: ''
+      nomeCpf: ""
     };
   },
   methods: {
@@ -5575,11 +7054,11 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     receberNomeDocumento: function receberNomeDocumento() {
-      this.nomeCpf = document.getElementById('escolherCpfId').value;
+      this.nomeCpf = document.getElementById("escolherCpfId").value;
       this.nomeCpf = this.nomeCpf.split("\\").pop();
     },
     enviarNomeDocumento: function enviarNomeDocumento() {
-      this.$emit('nomeCpf', this.nomeCpf);
+      this.$emit("nomeCpf", this.nomeCpf);
     }
   }
 });
@@ -5629,11 +7108,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'denviarcomprovanteresidencia',
+  name: "denviarcomprovanteresidencia",
   data: function data() {
     return {
-      nomeComprovanteResidencia: ''
+      nomeComprovanteResidencia: ""
     };
   },
   methods: {
@@ -5641,11 +7133,11 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     receberNomeDocumento: function receberNomeDocumento() {
-      this.nomeComprovanteResidencia = document.getElementById('escolherComprovanteResidenciaId').value;
+      this.nomeComprovanteResidencia = document.getElementById("escolherComprovanteResidenciaId").value;
       this.nomeComprovanteResidencia = this.nomeComprovanteResidencia.split("\\").pop();
     },
     enviarNomeDocumento: function enviarNomeDocumento() {
-      this.$emit('nomeComprovanteResidencia', this.nomeComprovanteResidencia);
+      this.$emit("nomeComprovanteResidencia", this.nomeComprovanteResidencia);
     }
   }
 });
@@ -5695,11 +7187,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'denviarprocuracao',
+  name: "denviarprocuracao",
   data: function data() {
     return {
-      nomeProcuracao: ''
+      nomeProcuracao: ""
     };
   },
   methods: {
@@ -5707,11 +7212,11 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     receberNomeDocumento: function receberNomeDocumento() {
-      this.nomeProcuracao = document.getElementById('escolherProcuracaoId').value;
+      this.nomeProcuracao = document.getElementById("escolherProcuracaoId").value;
       this.nomeProcuracao = this.nomeProcuracao.split("\\").pop();
     },
     enviarNomeDocumento: function enviarNomeDocumento() {
-      this.$emit('nomeProcuracao', this.nomeProcuracao);
+      this.$emit("nomeProcuracao", this.nomeProcuracao);
     }
   }
 });
@@ -5764,8 +7269,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'duploadanexopeticao',
+  name: "duploadanexopeticao",
   data: function data() {
     return {
       anexosPeticao: null
@@ -5776,10 +7297,10 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     receberNomeDocumento: function receberNomeDocumento() {
-      this.anexosPeticao = document.getElementById('escolherAnexoPeticaoId').files;
+      this.anexosPeticao = document.getElementById("escolherAnexoPeticaoId").files;
     },
     enviarNomeDocumento: function enviarNomeDocumento() {
-      this.$emit('nomeAnexoPeticao', this.anexosPeticao);
+      this.$emit("nomeAnexoPeticao", this.anexosPeticao);
     }
   }
 });
@@ -5829,11 +7350,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'duploadpeticaoinicial',
+  name: "duploadpeticaoinicial",
   data: function data() {
     return {
-      nomePeticaoInicial: ''
+      nomePeticaoInicial: ""
     };
   },
   methods: {
@@ -5841,11 +7375,11 @@ __webpack_require__.r(__webpack_exports__);
       alert("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
     },
     receberNomeDocumento: function receberNomeDocumento() {
-      this.nomePeticaoInicial = document.getElementById('escolherPeticaoInicialId').value;
+      this.nomePeticaoInicial = document.getElementById("escolherPeticaoInicialId").value;
       this.nomePeticaoInicial = this.nomePeticaoInicial.split("\\").pop();
     },
     enviarNomeDocumento: function enviarNomeDocumento() {
-      this.$emit('nomePeticaoInicial', this.nomePeticaoInicial);
+      this.$emit("nomePeticaoInicial", this.nomePeticaoInicial);
     }
   }
 });
@@ -6062,8 +7596,63 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'pimenulateral',
+  name: "pimenulateral",
   data: function data() {
     return {
       mostrarMenu: true
@@ -6115,8 +7704,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'pipainelavisos',
+  name: "pipainelavisos",
   data: function data() {
     return {};
   }
@@ -10581,7 +12175,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-b0ea708a] {\n    margin-left: 25%;\n}\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-b0ea708a] {\n\tmargin-left: 25%;\n}\n", ""]);
 
 // exports
 
@@ -10600,7 +12194,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-3522077f] {\n    margin-left: 30%\n}\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-3522077f] {\n\tmargin-left: 30%;\n}\n", ""]);
 
 // exports
 
@@ -10619,7 +12213,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-4eae8a56] {\n    margin-left: 30%\n}\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-4eae8a56] {\n\tmargin-left: 30%;\n}\n", ""]);
 
 // exports
 
@@ -10638,7 +12232,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-b7b7a4b6] {\n    margin-left: 30%\n}\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-b7b7a4b6] {\n\tmargin-left: 30%;\n}\n", ""]);
 
 // exports
 
@@ -10657,7 +12251,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-d85c671e] {\n    margin-left: 30%\n}\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-d85c671e] {\n\tmargin-left: 30%;\n}\n", ""]);
 
 // exports
 
@@ -10676,7 +12270,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n#alinhado[data-v-61cc6ad0] {\n    margin-left: 30%\n}\n", ""]);
+exports.push([module.i, "\n#alinhado[data-v-61cc6ad0] {\n\tmargin-left: 30%;\n}\n", ""]);
 
 // exports
 
@@ -10695,7 +12289,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*botões*/\n#PI_menu_botao[data-v-62f42706] {\n    border-radius: 6px;\n    border: 1px solid;\n    color: white;\n    background-color: #1D4DAE;\n}\n\n/*tamanho e posição do links do menu*/\n#PI_menu1_opcoes[data-v-62f42706],\n#PI_menu2_opcoes[data-v-62f42706],\n#PI_menu3_opcoes[data-v-62f42706],\n#PI_menu4_opcoes[data-v-62f42706],\n#PI_menu5_opcoes[data-v-62f42706],\n#PI_menu6_opcoes[data-v-62f42706],\n#PI_menu7_opcoes[data-v-62f42706],\n#PI_menu8_opcoes[data-v-62f42706] {\n    margin-left: 7%;\n    line-height: 1;\n}\n\n/*cor dos links do menu*/\n#PI_menu1_opcoes>p>a[data-v-62f42706],\n#PI_menu2_opcoes>p>a[data-v-62f42706],\n#PI_menu3_opcoes>p>a[data-v-62f42706],\n#PI_menu4_opcoes>p>a[data-v-62f42706],\n#PI_menu5_opcoes>p>a[data-v-62f42706],\n#PI_menu6_opcoes>p>a[data-v-62f42706],\n#PI_menu7_opcoes>p>a[data-v-62f42706],\n#PI_menu8_opcoes>p>a[data-v-62f42706],\n#PI_menu1>a[data-v-62f42706],\n#PI_menu2>a[data-v-62f42706],\n#PI_menu3>a[data-v-62f42706],\n#PI_menu4>a[data-v-62f42706],\n#PI_menu5>a[data-v-62f42706],\n#PI_menu6>a[data-v-62f42706],\n#PI_menu7>a[data-v-62f42706],\n#PI_menu8>a[data-v-62f42706],\n#PI_menu9>a[data-v-62f42706],\n#PI_menu10>a[data-v-62f42706],\n#PI_menu11>a[data-v-62f42706],\n#PI_menu12>a[data-v-62f42706],\n#PI_menu13>a[data-v-62f42706] {\n    color: black;\n}\n\n/*tamanho das linhas do menu*/\n#PI_menu1[data-v-62f42706],\n#PI_menu2[data-v-62f42706],\n#PI_menu3[data-v-62f42706],\n#PI_menu4[data-v-62f42706],\n#PI_menu5[data-v-62f42706],\n#PI_menu6[data-v-62f42706],\n#PI_menu7[data-v-62f42706],\n#PI_menu8[data-v-62f42706],\n#PI_menu9[data-v-62f42706],\n#PI_menu10[data-v-62f42706],\n#PI_menu11[data-v-62f42706],\n#PI_menu12[data-v-62f42706],\n#PI_menu13[data-v-62f42706] {\n    line-height: 1;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*botões*/\n#PI_menu_botao[data-v-62f42706] {\n\tborder-radius: 5px;\n\tborder: 1px;\n\tcolor: white;\n\tbackground-color: #1d4dae;\n}\n\n/*tamanho e posição do links do menu*/\n#PI_menu1_opcoes[data-v-62f42706],\n#PI_menu2_opcoes[data-v-62f42706],\n#PI_menu3_opcoes[data-v-62f42706],\n#PI_menu4_opcoes[data-v-62f42706],\n#PI_menu5_opcoes[data-v-62f42706],\n#PI_menu6_opcoes[data-v-62f42706],\n#PI_menu7_opcoes[data-v-62f42706],\n#PI_menu8_opcoes[data-v-62f42706] {\n\tmargin-left: 7%;\n\tline-height: 1;\n}\n\n/*cor dos links do menu*/\n#PI_menu1_opcoes > p > a[data-v-62f42706],\n#PI_menu2_opcoes > p > a[data-v-62f42706],\n#PI_menu3_opcoes > p > a[data-v-62f42706],\n#PI_menu4_opcoes > p > a[data-v-62f42706],\n#PI_menu5_opcoes > p > a[data-v-62f42706],\n#PI_menu6_opcoes > p > a[data-v-62f42706],\n#PI_menu7_opcoes > p > a[data-v-62f42706],\n#PI_menu8_opcoes > p > a[data-v-62f42706],\n#PI_menu1 > a[data-v-62f42706],\n#PI_menu2 > a[data-v-62f42706],\n#PI_menu3 > a[data-v-62f42706],\n#PI_menu4 > a[data-v-62f42706],\n#PI_menu5 > a[data-v-62f42706],\n#PI_menu6 > a[data-v-62f42706],\n#PI_menu7 > a[data-v-62f42706],\n#PI_menu8 > a[data-v-62f42706],\n#PI_menu9 > a[data-v-62f42706],\n#PI_menu10 > a[data-v-62f42706],\n#PI_menu11 > a[data-v-62f42706],\n#PI_menu12 > a[data-v-62f42706],\n#PI_menu13 > a[data-v-62f42706] {\n\tcolor: black;\n}\n\n/*tamanho das linhas do menu*/\n#PI_menu1[data-v-62f42706],\n#PI_menu2[data-v-62f42706],\n#PI_menu3[data-v-62f42706],\n#PI_menu4[data-v-62f42706],\n#PI_menu5[data-v-62f42706],\n#PI_menu6[data-v-62f42706],\n#PI_menu7[data-v-62f42706],\n#PI_menu8[data-v-62f42706],\n#PI_menu9[data-v-62f42706],\n#PI_menu10[data-v-62f42706],\n#PI_menu11[data-v-62f42706],\n#PI_menu12[data-v-62f42706],\n#PI_menu13[data-v-62f42706] {\n\tline-height: 1;\n}\n", ""]);
 
 // exports
 
@@ -42766,7 +44360,7 @@ var render = function() {
                       staticClass: "custom-control-label",
                       attrs: { for: "CA_dP1" }
                     },
-                    [_vm._v(" Incapaz ")]
+                    [_vm._v("Incapaz")]
                   )
                 ]
               ),
@@ -42828,7 +44422,7 @@ var render = function() {
                       staticClass: "custom-control-label",
                       attrs: { for: "CA_dP2" }
                     },
-                    [_vm._v(" Massa Falida ")]
+                    [_vm._v("Massa Falida")]
                   )
                 ]
               ),
@@ -42890,7 +44484,7 @@ var render = function() {
                       staticClass: "custom-control-label",
                       attrs: { for: "CA_dP3" }
                     },
-                    [_vm._v(" Insolvente Civil")]
+                    [_vm._v("Insolvente Civil")]
                   )
                 ]
               ),
@@ -42952,7 +44546,7 @@ var render = function() {
                       staticClass: "custom-control-label",
                       attrs: { for: "CA_dP4" }
                     },
-                    [_vm._v(" Preso ")]
+                    [_vm._v("Preso")]
                   )
                 ]
               ),
@@ -43017,7 +44611,7 @@ var render = function() {
                       staticClass: "custom-control-label",
                       attrs: { for: "CA_dP5" }
                     },
-                    [_vm._v(" Espólio com interesse de Incapaz ")]
+                    [_vm._v("Espólio com interesse de Incapaz")]
                   )
                 ]
               ),
@@ -43079,7 +44673,7 @@ var render = function() {
                       staticClass: "custom-control-label",
                       attrs: { for: "CA_dP6" }
                     },
-                    [_vm._v(" Condomínio ")]
+                    [_vm._v("Condomínio")]
                   )
                 ]
               )
@@ -44447,7 +46041,7 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial? "
+                        "O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial?"
                       )
                     ]
                   )
@@ -44545,7 +46139,7 @@ var render = function() {
                       staticClass: "custom-control-label",
                       attrs: { for: "CA_vPC1" }
                     },
-                    [_vm._v("O valor postulado é liquido? ")]
+                    [_vm._v("O valor postulado é liquido?")]
                   )
                 ]
               )
@@ -44713,7 +46307,7 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "A pretensão deduzida versa sobre obrigações vincendas? "
+                        "A pretensão deduzida versa sobre obrigações vincendas?"
                       )
                     ]
                   )
@@ -45083,7 +46677,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("p", { attrs: { align: "center" } }, [
       _c("strong", [_vm._v("Tipo")]),
-      _vm._v(" Autor")
+      _vm._v(" Autor\n\t\t\t")
     ])
   },
   function() {
@@ -45093,14 +46687,14 @@ var staticRenderFns = [
     return _c(
       "label",
       { staticClass: "custom-control-label", attrs: { for: "CA_dP7" } },
-      [_c("strong", [_vm._v("Ministério Público? ")])]
+      [_c("strong", [_vm._v("Ministério Público?")])]
     )
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Pessoa Física ou Jurídica ")])])
+    return _c("span", [_c("strong", [_vm._v("Pessoa Física ou Jurídica")])])
   },
   function() {
     var _vm = this
@@ -45111,7 +46705,7 @@ var staticRenderFns = [
       { staticClass: "custom-control-label", attrs: { for: "CA_dP8" } },
       [
         _c("strong", [
-          _vm._v("Estrangeiro e/ou brasileiro residente no exterior? ")
+          _vm._v("Estrangeiro e/ou brasileiro residente no exterior?")
         ])
       ]
     )
@@ -45120,19 +46714,19 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Sexo ")])])
+    return _c("span", [_c("strong", [_vm._v("* Sexo")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* CPF/CNPJ ")])])
+    return _c("span", [_c("strong", [_vm._v("* CPF/CNPJ")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Nome ")])])
+    return _c("span", [_c("strong", [_vm._v("* Nome")])])
   },
   function() {
     var _vm = this
@@ -45148,37 +46742,37 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Documento de identificação ")])])
+    return _c("span", [_c("strong", [_vm._v("Documento de identificação")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Número ")])])
+    return _c("span", [_c("strong", [_vm._v("Número")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Órgão Expedidor ")])])
+    return _c("span", [_c("strong", [_vm._v("Órgão Expedidor")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Data de Emissão ")])])
+    return _c("span", [_c("strong", [_vm._v("Data de Emissão")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Telefone ")])])
+    return _c("span", [_c("strong", [_vm._v("Telefone")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("E-mail ")])])
+    return _c("span", [_c("strong", [_vm._v("E-mail")])])
   },
   function() {
     var _vm = this
@@ -45198,75 +46792,75 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* CEP ")])])
+    return _c("span", [_c("strong", [_vm._v("* CEP")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("a", { attrs: { href: "" } }, [
-      _c("ins", [_vm._v(" verificar CEP")])
+      _c("ins", [_vm._v("verificar CEP")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "" } }, [_c("ins", [_vm._v(" Correios")])])
+    return _c("a", { attrs: { href: "" } }, [_c("ins", [_vm._v("Correios")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Estado ")])])
+    return _c("span", [_c("strong", [_vm._v("* Estado")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Cidade ")])])
+    return _c("span", [_c("strong", [_vm._v("* Cidade")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Bairro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Bairro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Logradouro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Logradouro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Número ")])])
+    return _c("span", [_c("strong", [_vm._v("* Número")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Complemento ")])])
+    return _c("span", [_c("strong", [_vm._v("Complemento")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Tipo de Endereço ")])])
+    return _c("span", [_c("strong", [_vm._v("* Tipo de Endereço")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Referência ")])])
+    return _c("span", [_c("strong", [_vm._v("Referência")])])
   },
   function() {
     var _vm = this
@@ -45284,43 +46878,43 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Estado Civil ")])])
+    return _c("span", [_c("strong", [_vm._v("Estado Civil")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Profissão ")])])
+    return _c("span", [_c("strong", [_vm._v("Profissão")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Nacionalidade ")])])
+    return _c("span", [_c("strong", [_vm._v("Nacionalidade")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])])
+    return _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Nome do Pai ")])])
+    return _c("span", [_c("strong", [_vm._v("Nome do Pai")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])])
+    return _c("span", [_c("strong", [_vm._v("Nome da Mãe")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])])
+    return _c("span", [_c("strong", [_vm._v("* Data de Nascimento")])])
   }
 ]
 render._withStripped = true
@@ -45430,7 +47024,7 @@ var render = function() {
                       staticClass: "custom-control-label",
                       attrs: { for: "CRA_dP1" }
                     },
-                    [_vm._v(" Incapaz\n                            ")]
+                    [_vm._v("Incapaz")]
                   )
                 ]
               ),
@@ -45492,7 +47086,7 @@ var render = function() {
                       staticClass: "custom-control-label",
                       attrs: { for: "CRA_dP2" }
                     },
-                    [_vm._v(" Massa Falida ")]
+                    [_vm._v("Massa Falida")]
                   )
                 ]
               ),
@@ -45554,7 +47148,7 @@ var render = function() {
                       staticClass: "custom-control-label",
                       attrs: { for: "CRA_dP3" }
                     },
-                    [_vm._v(" Insolvente Civil\n                            ")]
+                    [_vm._v("Insolvente Civil")]
                   )
                 ]
               ),
@@ -45616,7 +47210,7 @@ var render = function() {
                       staticClass: "custom-control-label",
                       attrs: { for: "CRA_dP4" }
                     },
-                    [_vm._v(" Preso ")]
+                    [_vm._v("Preso")]
                   )
                 ]
               ),
@@ -45681,7 +47275,7 @@ var render = function() {
                       staticClass: "custom-control-label",
                       attrs: { for: "CRA_dP5" }
                     },
-                    [_vm._v(" Espólio com interesse de Incapaz ")]
+                    [_vm._v("Espólio com interesse de Incapaz")]
                   )
                 ]
               ),
@@ -45743,7 +47337,7 @@ var render = function() {
                       staticClass: "custom-control-label",
                       attrs: { for: "CRA_dP6" }
                     },
-                    [_vm._v(" Condomínio ")]
+                    [_vm._v("Condomínio")]
                   )
                 ]
               )
@@ -46908,7 +48502,7 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial? "
+                        "O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial?"
                       )
                     ]
                   )
@@ -47276,7 +48870,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Parte ")])])
+    return _c("span", [_c("strong", [_vm._v("* Parte")])])
   },
   function() {
     var _vm = this
@@ -47285,184 +48879,184 @@ var staticRenderFns = [
     return _c(
       "label",
       { staticClass: "custom-control-label", attrs: { for: "CRA_dP7" } },
-      [_c("strong", [_vm._v("Ministério Público? ")])]
+      [_c("strong", [_vm._v("Ministério Público?")])]
     )
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Pessoa Física ou Jurídica ")])])
+    return _c("span", [_c("strong", [_vm._v("Pessoa Física ou Jurídica")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Sexo ")])])
+    return _c("span", [_c("strong", [_vm._v("* Sexo")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* CPF/CNPJ ")])])
+    return _c("span", [_c("strong", [_vm._v("* CPF/CNPJ")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Nome ")])])
+    return _c("span", [_c("strong", [_vm._v("* Nome")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Documento de identificação ")])])
+    return _c("span", [_c("strong", [_vm._v("Documento de identificação")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Número ")])])
+    return _c("span", [_c("strong", [_vm._v("Número")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Órgão Emissor ")])])
+    return _c("span", [_c("strong", [_vm._v("Órgão Emissor")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Data de Emissão ")])])
+    return _c("span", [_c("strong", [_vm._v("Data de Emissão")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Telefone ")])])
+    return _c("span", [_c("strong", [_vm._v("Telefone")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("E-mail ")])])
+    return _c("span", [_c("strong", [_vm._v("E-mail")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* CEP ")])])
+    return _c("span", [_c("strong", [_vm._v("* CEP")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("a", { attrs: { href: "" } }, [
-      _c("ins", [_vm._v(" verificar CEP")])
+      _c("ins", [_vm._v("verificar CEP")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "" } }, [_c("ins", [_vm._v(" Correios")])])
+    return _c("a", { attrs: { href: "" } }, [_c("ins", [_vm._v("Correios")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Estado ")])])
+    return _c("span", [_c("strong", [_vm._v("* Estado")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Cidade ")])])
+    return _c("span", [_c("strong", [_vm._v("* Cidade")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Bairro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Bairro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Logradouro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Logradouro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Número ")])])
+    return _c("span", [_c("strong", [_vm._v("* Número")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Complemento ")])])
+    return _c("span", [_c("strong", [_vm._v("Complemento")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Tipo de Endereço ")])])
+    return _c("span", [_c("strong", [_vm._v("* Tipo de Endereço")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Referência ")])])
+    return _c("span", [_c("strong", [_vm._v("Referência")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Estado Civil ")])])
+    return _c("span", [_c("strong", [_vm._v("Estado Civil")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Profissão ")])])
+    return _c("span", [_c("strong", [_vm._v("Profissão")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Nacionalidade ")])])
+    return _c("span", [_c("strong", [_vm._v("Nacionalidade")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade ")])])
+    return _c("span", [_c("strong", [_vm._v("Escolha a Naturalidade")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Nome do Pai ")])])
+    return _c("span", [_c("strong", [_vm._v("Nome do Pai")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Nome da Mãe ")])])
+    return _c("span", [_c("strong", [_vm._v("Nome da Mãe")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Data de Nascimento ")])])
+    return _c("span", [_c("strong", [_vm._v("* Data de Nascimento")])])
   }
 ]
 render._withStripped = true
@@ -48669,7 +50263,7 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial? "
+                        "O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial?"
                       )
                     ]
                   )
@@ -48710,67 +50304,67 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Parte ")])])
+    return _c("span", [_c("strong", [_vm._v("* Parte")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Pessoa Física ou Jurídica ")])])
+    return _c("span", [_c("strong", [_vm._v("Pessoa Física ou Jurídica")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Sexo ")])])
+    return _c("span", [_c("strong", [_vm._v("* Sexo")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* CPF/CNPJ ")])])
+    return _c("span", [_c("strong", [_vm._v("* CPF/CNPJ")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Nome ")])])
+    return _c("span", [_c("strong", [_vm._v("* Nome")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Documento de identificação ")])])
+    return _c("span", [_c("strong", [_vm._v("Documento de identificação")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Número ")])])
+    return _c("span", [_c("strong", [_vm._v("Número")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Órgão Emissor ")])])
+    return _c("span", [_c("strong", [_vm._v("Órgão Emissor")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Data de Emissão ")])])
+    return _c("span", [_c("strong", [_vm._v("Data de Emissão")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Telefone ")])])
+    return _c("span", [_c("strong", [_vm._v("Telefone")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("E-mail ")])])
+    return _c("span", [_c("strong", [_vm._v("E-mail")])])
   },
   function() {
     var _vm = this
@@ -48779,82 +50373,82 @@ var staticRenderFns = [
     return _c(
       "label",
       { staticClass: "custom-control-label", attrs: { for: "CRR_e1" } },
-      [_c("strong", [_vm._v("Endereco Incerto ")])]
+      [_c("strong", [_vm._v("Endereco Incerto")])]
     )
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* CEP ")])])
+    return _c("span", [_c("strong", [_vm._v("* CEP")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("a", { attrs: { href: "" } }, [
-      _c("ins", [_vm._v(" verificar CEP")])
+      _c("ins", [_vm._v("verificar CEP")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "" } }, [_c("ins", [_vm._v(" Correios")])])
+    return _c("a", { attrs: { href: "" } }, [_c("ins", [_vm._v("Correios")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Estado ")])])
+    return _c("span", [_c("strong", [_vm._v("* Estado")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Cidade ")])])
+    return _c("span", [_c("strong", [_vm._v("* Cidade")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Bairro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Bairro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Logradouro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Logradouro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Número ")])])
+    return _c("span", [_c("strong", [_vm._v("* Número")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Complemento ")])])
+    return _c("span", [_c("strong", [_vm._v("Complemento")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Tipo de Endereço ")])])
+    return _c("span", [_c("strong", [_vm._v("* Tipo de Endereço")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Referência ")])])
+    return _c("span", [_c("strong", [_vm._v("Referência")])])
   }
 ]
 render._withStripped = true
@@ -49820,7 +51414,7 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial? "
+                        "O comprovante de residência deste endereço cadastrado será anexado nesta Petição Inicial?"
                       )
                     ]
                   )
@@ -49863,7 +51457,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("p", { attrs: { align: "center" } }, [
       _c("strong", [_vm._v("Tipo")]),
-      _vm._v(" Réu - Pessoa Física")
+      _vm._v(" Réu - Pessoa Física\n\t\t\t\t")
     ])
   },
   function() {
@@ -49875,7 +51469,7 @@ var staticRenderFns = [
       { staticClass: "custom-control-label", attrs: { for: "CR_dP1" } },
       [
         _c("strong", [
-          _vm._v("Estrangeiro e/ou brasileiro residente no exterior? ")
+          _vm._v("Estrangeiro e/ou brasileiro residente no exterior?")
         ])
       ]
     )
@@ -49884,49 +51478,49 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Sexo ")])])
+    return _c("span", [_c("strong", [_vm._v("* Sexo")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* CPF ")])])
+    return _c("span", [_c("strong", [_vm._v("* CPF")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Nome ")])])
+    return _c("span", [_c("strong", [_vm._v("* Nome")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Documento de identificação ")])])
+    return _c("span", [_c("strong", [_vm._v("Documento de identificação")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Número ")])])
+    return _c("span", [_c("strong", [_vm._v("Número")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Órgão Expedidor ")])])
+    return _c("span", [_c("strong", [_vm._v("Órgão Expedidor")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Data de Emissão ")])])
+    return _c("span", [_c("strong", [_vm._v("Data de Emissão")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("E-mail ")])])
+    return _c("span", [_c("strong", [_vm._v("E-mail")])])
   },
   function() {
     var _vm = this
@@ -49935,82 +51529,82 @@ var staticRenderFns = [
     return _c(
       "label",
       { staticClass: "custom-control-label", attrs: { for: "CR_e1" } },
-      [_c("strong", [_vm._v("Endereco Incerto ")])]
+      [_c("strong", [_vm._v("Endereco Incerto")])]
     )
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* CEP ")])])
+    return _c("span", [_c("strong", [_vm._v("* CEP")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("a", { attrs: { href: "" } }, [
-      _c("ins", [_vm._v(" verificar CEP")])
+      _c("ins", [_vm._v("verificar CEP")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "" } }, [_c("ins", [_vm._v(" Correios")])])
+    return _c("a", { attrs: { href: "" } }, [_c("ins", [_vm._v("Correios")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Estado ")])])
+    return _c("span", [_c("strong", [_vm._v("* Estado")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Cidade ")])])
+    return _c("span", [_c("strong", [_vm._v("* Cidade")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Bairro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Bairro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Logradouro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Logradouro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Número ")])])
+    return _c("span", [_c("strong", [_vm._v("* Número")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Complemento ")])])
+    return _c("span", [_c("strong", [_vm._v("Complemento")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Tipo de Endereço ")])])
+    return _c("span", [_c("strong", [_vm._v("* Tipo de Endereço")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Referência ")])])
+    return _c("span", [_c("strong", [_vm._v("Referência")])])
   }
 ]
 render._withStripped = true
@@ -50640,100 +52234,100 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("p", { attrs: { align: "center" } }, [
       _c("strong", [_vm._v("Tipo")]),
-      _vm._v(" Réu - Pessoa Jurídica")
+      _vm._v(" Réu - Pessoa Jurídica\n\t\t\t\t")
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* CNPJ ")])])
+    return _c("span", [_c("strong", [_vm._v("* CNPJ")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Nome ")])])
+    return _c("span", [_c("strong", [_vm._v("* Nome")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Tipo de Empresa ")])])
+    return _c("span", [_c("strong", [_vm._v("Tipo de Empresa")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* CEP ")])])
+    return _c("span", [_c("strong", [_vm._v("* CEP")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("a", { attrs: { href: "" } }, [
-      _c("ins", [_vm._v(" verificar CEP")])
+      _c("ins", [_vm._v("verificar CEP")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "" } }, [_c("ins", [_vm._v(" Correios")])])
+    return _c("a", { attrs: { href: "" } }, [_c("ins", [_vm._v("Correios")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Estado ")])])
+    return _c("span", [_c("strong", [_vm._v("* Estado")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Cidade ")])])
+    return _c("span", [_c("strong", [_vm._v("* Cidade")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Bairro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Bairro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Tipo de Logradouro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Logradouro ")])])
+    return _c("span", [_c("strong", [_vm._v("* Logradouro")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Número ")])])
+    return _c("span", [_c("strong", [_vm._v("* Número")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Complemento ")])])
+    return _c("span", [_c("strong", [_vm._v("Complemento")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("* Tipo de Endereço ")])])
+    return _c("span", [_c("strong", [_vm._v("* Tipo de Endereço")])])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("span", [_c("strong", [_vm._v("Referência ")])])
+    return _c("span", [_c("strong", [_vm._v("Referência")])])
   }
 ]
 render._withStripped = true
@@ -51210,6 +52804,7 @@ var render = function() {
                           },
                           domProps: { value: advogado.arEstadoOAB }
                         }),
+                        _vm._v(" "),
                         _c("input", {
                           directives: [
                             {
@@ -51386,7 +52981,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("span", { staticStyle: { "margin-right": "3px" } }, [
-      _c("strong", [_vm._v(" Número de OAB ")])
+      _c("strong", [_vm._v("Número de OAB")])
     ])
   },
   function() {
@@ -51394,7 +52989,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("span", { staticStyle: { "margin-right": "3px" } }, [
-      _c("strong", [_vm._v(" Matrícula ")])
+      _c("strong", [_vm._v("Matrícula")])
     ])
   }
 ]
@@ -51487,7 +53082,7 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("span", [_vm._v(" | ")]),
+        _c("span", [_vm._v("|")]),
         _vm._v(" "),
         _vm.deRepresentanteAutor.length < 1
           ? _c(
@@ -51777,7 +53372,7 @@ var render = function() {
                 )
               ],
           _vm._v(" "),
-          _c("span", [_vm._v(" | ")]),
+          _c("span", [_vm._v("|")]),
           _vm._v(" "),
           _vm.deReu.length > 0
             ? [
@@ -51848,7 +53443,7 @@ var render = function() {
                 )
               ],
           _vm._v(" "),
-          _c("span", [_vm._v(" | ")]),
+          _c("span", [_vm._v("|")]),
           _vm._v(" "),
           _vm.deRepresentanteReu.length < 1
             ? _c(
@@ -52133,7 +53728,7 @@ var render = function() {
           ]
         ),
         _vm._v(" "),
-        _c("span", [_vm._v(" | ")]),
+        _c("span", [_vm._v("|")]),
         _vm._v(" "),
         _c(
           "a",
@@ -52162,7 +53757,7 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("span", [_vm._v(" | ")]),
+        _c("span", [_vm._v("|")]),
         _vm._v(" "),
         _c(
           "a",
@@ -52202,7 +53797,7 @@ var render = function() {
           ]
         ),
         _vm._v(" "),
-        _c("span", [_vm._v(" | ")]),
+        _c("span", [_vm._v("|")]),
         _vm._v(" "),
         _c(
           "a",
@@ -52239,7 +53834,7 @@ var render = function() {
           ]
         ),
         _vm._v(" "),
-        _c("span", [_vm._v(" | ")]),
+        _c("span", [_vm._v("|")]),
         _vm._v(" "),
         _c(
           "a",
@@ -52875,7 +54470,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "Embargos à Execução (por Título Judicial, Contra a Fazenda Pública\n                            e Carta Precatória)"
+                      "\n\t\t\t\t\t\t\t\tEmbargos à Execução (por Título Judicial, Contra a Fazenda Pública\n\t\t\t\t\t\t\t\te Carta Precatória)\n\t\t\t\t\t\t\t"
                     )
                   ]
                 ),
@@ -53074,7 +54669,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "Embargos à execução (por Título Judicial, Contra a Fazenda Pública e\n                            Carta Precatória)"
+                      "\n\t\t\t\t\t\t\t\tEmbargos à execução (por Título Judicial, Contra a Fazenda Pública e\n\t\t\t\t\t\t\t\tCarta Precatória)\n\t\t\t\t\t\t\t"
                     )
                   ]
                 ),
@@ -53113,7 +54708,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "Falência de Empresários, Socied. Empresárias, Microempresas e Empresas\n                            de Peq. Porte – Requerimento"
+                      "\n\t\t\t\t\t\t\t\tFalência de Empresários, Socied. Empresárias, Microempresas e Empresas\n\t\t\t\t\t\t\t\tde Peq. Porte – Requerimento\n\t\t\t\t\t\t\t"
                     )
                   ]
                 ),
@@ -53656,7 +55251,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "Embargos à execução (por Título Judicial, Contra a Fazenda Pública\n                            Pública e Carta Precatória)"
+                      "\n\t\t\t\t\t\t\t\tEmbargos à execução (por Título Judicial, Contra a Fazenda Pública\n\t\t\t\t\t\t\t\tPública e Carta Precatória)\n\t\t\t\t\t\t\t"
                     )
                   ]
                 ),
@@ -53683,7 +55278,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "Falência de Empresários, Socied. Empresárias, Microempresas e\n                            Empresas de Peq. Porte – Requerimento"
+                      "\n\t\t\t\t\t\t\t\tFalência de Empresários, Socied. Empresárias, Microempresas e\n\t\t\t\t\t\t\t\tEmpresas de Peq. Porte – Requerimento\n\t\t\t\t\t\t\t"
                     )
                   ]
                 ),
@@ -53743,7 +55338,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "Liquidação Provisória de Sentença pelo procedimento comum\n                        "
+                      "Liquidação Provisória de Sentença pelo procedimento comum"
                     )
                   ]
                 ),
@@ -53792,7 +55387,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "Restituição de Coisa ou Dinheiro na Falência do Devedor\n                            Empresário"
+                      "\n\t\t\t\t\t\t\t\tRestituição de Coisa ou Dinheiro na Falência do Devedor\n\t\t\t\t\t\t\t\tEmpresário\n\t\t\t\t\t\t\t"
                     )
                   ]
                 ),
@@ -54211,7 +55806,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                      "\n\t\t\t\t\t\t\t\tEmbargos à Execução Fiscal (com Título Extrajudicial, Contra a\n\t\t\t\t\t\t\t\tFazenda Pública e Carta Precatória)\n\t\t\t\t\t\t\t"
                     )
                   ]
                 ),
@@ -54504,7 +56099,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                      "\n\t\t\t\t\t\t\t\tEmbargos à Execução Fiscal (com Título Extrajudicial, Contra a\n\t\t\t\t\t\t\t\tFazenda Pública e Carta Precatória)\n\t\t\t\t\t\t\t"
                     )
                   ]
                 ),
@@ -54648,7 +56243,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "Embargos à Execução Fiscal (com Título Extrajudicial, Contra a\n                            Fazenda Pública e Carta Precatória)"
+                      "\n\t\t\t\t\t\t\t\tEmbargos à Execução Fiscal (com Título Extrajudicial, Contra a\n\t\t\t\t\t\t\t\tFazenda Pública e Carta Precatória)\n\t\t\t\t\t\t\t"
                     )
                   ]
                 ),
@@ -54869,7 +56464,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "Retificação ou Suprimento ou Restauração do Registo Cível\n                        "
+                      "Retificação ou Suprimento ou Restauração do Registo Cível"
                     )
                   ]
                 )
@@ -54953,7 +56548,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "Embargos à Execução Fiscal (com Título Extrajudicial, Contra\n                            a Fazenda Pública e Carta Precatória)"
+                      "\n\t\t\t\t\t\t\t\tEmbargos à Execução Fiscal (com Título Extrajudicial, Contra\n\t\t\t\t\t\t\t\ta Fazenda Pública e Carta Precatória)\n\t\t\t\t\t\t\t"
                     )
                   ]
                 ),
@@ -55322,11 +56917,7 @@ var staticRenderFns = [
           _c(
             "label",
             { staticClass: "custom-control-label", attrs: { for: "DE_dDP1" } },
-            [
-              _vm._v(
-                " Prioridade p/ deficiente físico ou mental\n                    "
-              )
-            ]
+            [_vm._v("Prioridade p/ deficiente físico ou mental")]
           )
         ]
       ),
@@ -55348,7 +56939,7 @@ var staticRenderFns = [
           _c(
             "label",
             { staticClass: "custom-control-label", attrs: { for: "DE_dDP2" } },
-            [_vm._v(" Tutela de Urgência ")]
+            [_vm._v("Tutela de Urgência")]
           )
         ]
       ),
@@ -55370,11 +56961,7 @@ var staticRenderFns = [
           _c(
             "label",
             { staticClass: "custom-control-label", attrs: { for: "DE_dDP3" } },
-            [
-              _vm._v(
-                " Prioridade p/ portador de doença grave\n                    "
-              )
-            ]
+            [_vm._v("Prioridade p/ portador de doença grave")]
           )
         ]
       ),
@@ -55396,7 +56983,7 @@ var staticRenderFns = [
           _c(
             "label",
             { staticClass: "custom-control-label", attrs: { for: "DE_dDP4" } },
-            [_vm._v(" Gratuidade de Justiça ")]
+            [_vm._v("Gratuidade de Justiça")]
           )
         ]
       ),
@@ -55418,7 +57005,7 @@ var staticRenderFns = [
           _c(
             "label",
             { staticClass: "custom-control-label", attrs: { for: "DE_dDP5" } },
-            [_vm._v(" Exame Técnico ")]
+            [_vm._v("Exame Técnico")]
           )
         ]
       )
@@ -55448,7 +57035,7 @@ var staticRenderFns = [
           { staticClass: "custom-control-label", attrs: { for: "opcaoExtra" } },
           [
             _vm._v(
-              "Autor opta pela realização de audiência de\n                        conciliação ou de mediação?"
+              "\n\t\t\t\t\t\t\tAutor opta pela realização de audiência de\n\t\t\t\t\t\t\tconciliação ou de mediação?\n\t\t\t\t\t\t"
             )
           ]
         )
@@ -55532,7 +57119,7 @@ var staticRenderFns = [
             { staticClass: "custom-control-label", attrs: { for: "DE_dDV1" } },
             [
               _vm._v(
-                ' "Declaro sob as penas da Lei, que as\n                        informações acima prestadas correspondem à verdade, tendo sido prestadas em obediência à\n                        lealdade processual e à boa fé, nos termos do Art.\n                        5º do CPC/15, ciente de que a eventual prestação de informações inverídicas poderá acarretar\n                        a incidência das penalidades previstas em lei."'
+                '\n\t\t\t\t\t\t\t"Declaro sob as penas da Lei, que as\n\t\t\t\t\t\t\tinformações acima prestadas correspondem à verdade, tendo sido prestadas em obediência à\n\t\t\t\t\t\t\tlealdade processual e à boa fé, nos termos do Art.\n\t\t\t\t\t\t\t5º do CPC/15, ciente de que a eventual prestação de informações inverídicas poderá acarretar\n\t\t\t\t\t\t\ta incidência das penalidades previstas em lei."\n\t\t\t\t\t\t'
               )
             ]
           )
@@ -55631,7 +57218,7 @@ var render = function() {
                   staticClass: "custom-control-label",
                   attrs: { for: "DE_g_grerjSim" }
                 },
-                [_vm._v(" Sim ")]
+                [_vm._v("Sim")]
               )
             ]
           ),
@@ -55672,7 +57259,7 @@ var render = function() {
                   staticClass: "custom-control-label",
                   attrs: { for: "DE_g_grerjNao" }
                 },
-                [_vm._v(" Não ")]
+                [_vm._v("Não")]
               )
             ]
           ),
@@ -55750,7 +57337,7 @@ var staticRenderFns = [
     return _c("p", [
       _c("strong", [
         _vm._v(
-          "ATENÇÃO SENHOR ADVOGADO: SE NÃO HOUVER PEDIDO DE JUSTIÇA GRATUITA, ANTES DE REALIZAR O CADASTRAMENTO\n                DE SUA PETIÇÃO, FAÇA O RECOLHIMENTO DO GRERJ, POIS SEU NÚMERO E VALOR SERÃO NECESSÁRIOS."
+          "\n\t\t\t\tATENÇÃO SENHOR ADVOGADO: SE NÃO HOUVER PEDIDO DE JUSTIÇA GRATUITA, ANTES DE REALIZAR O CADASTRAMENTO\n\t\t\t\tDE SUA PETIÇÃO, FAÇA O RECOLHIMENTO DO GRERJ, POIS SEU NÚMERO E VALOR SERÃO NECESSÁRIOS.\n\t\t\t"
         )
       ])
     ])
@@ -55760,9 +57347,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("p", [
-      _vm._v("Campos marcados com "),
+      _vm._v("\n\t\t\tCampos marcados com\n\t\t\t"),
       _c("strong", [_vm._v("*")]),
-      _vm._v(" são de preenchimento obrigatório.")
+      _vm._v(" são de preenchimento obrigatório.\n\t\t")
     ])
   },
   function() {
@@ -55883,7 +57470,7 @@ var render = function() {
             _c(
               "label",
               { staticClass: "custom-control-label", attrs: { for: "dpdSim" } },
-              [_vm._v(" Sim ")]
+              [_vm._v("Sim")]
             )
           ]
         ),
@@ -55919,7 +57506,7 @@ var render = function() {
             _c(
               "label",
               { staticClass: "custom-control-label", attrs: { for: "dpdNao" } },
-              [_vm._v(" Não ")]
+              [_vm._v("Não")]
             )
           ]
         ),
@@ -55956,7 +57543,7 @@ var render = function() {
                   attrs: { type: "text" }
                 }),
                 _vm._v(" "),
-                _c("span", [_vm._v(" .8.19. ")]),
+                _c("span", [_vm._v(".8.19.")]),
                 _vm._v(" "),
                 _c("input", {
                   directives: [
@@ -56114,7 +57701,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
+      _c("span", [_c("strong", [_vm._v("* Descrição")])]),
       _vm._v(" "),
       _c("input", {
         staticClass: "form-control",
@@ -56239,7 +57826,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
+      _c("span", [_c("strong", [_vm._v("* Descrição")])]),
       _vm._v(" "),
       _c("input", {
         staticClass: "form-control",
@@ -56364,7 +57951,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
+      _c("span", [_c("strong", [_vm._v("* Descrição")])]),
       _vm._v(" "),
       _c("input", {
         staticClass: "form-control",
@@ -56496,7 +58083,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
+      _c("span", [_c("strong", [_vm._v("* Descrição")])]),
       _vm._v(" "),
       _c("input", {
         staticClass: "form-control",
@@ -56621,7 +58208,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("span", [_c("strong", [_vm._v("* Descrição ")])]),
+      _c("span", [_c("strong", [_vm._v("* Descrição")])]),
       _vm._v(" "),
       _c("input", {
         staticClass: "form-control",
@@ -56670,7 +58257,7 @@ var render = function() {
                 }
               }
             },
-            [_c("strong", [_vm._v(" >> ")])]
+            [_c("i", { staticClass: "fa fa-angle-double-right" })]
           )
         ])
       : _vm._e(),
@@ -56689,7 +58276,7 @@ var render = function() {
                   }
                 }
               },
-              [_c("strong", [_vm._v(" << ")])]
+              [_c("i", { staticClass: "fa fa-angle-double-left" })]
             ),
             _vm._v(" "),
             _vm._m(0)
@@ -56970,7 +58557,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", [
         _c("p", { attrs: { id: "PI_menu7" } }, [
-          _c("i", { staticClass: "fas fa-wrench " }),
+          _c("i", { staticClass: "fas fa-wrench" }),
           _vm._v(" "),
           _c(
             "a",
@@ -57156,14 +58743,14 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("p", [
               _vm._v(
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n\t\t\t\t\ttempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n\t\t\t\t\tquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n\t\t\t\t\tconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n\t\t\t\t\tcillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n\t\t\t\t\tproident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\t\t\t\t"
               )
             ]),
             _vm._v(" "),
             _c("p", [_vm._v("Rio de Janeiro, 8 de julho de 2019")]),
             _vm._v(" "),
             _c("p", [
-              _vm._v("Desembargador "),
+              _vm._v("\n\t\t\t\t\tDesembargador\n\t\t\t\t\t"),
               _c("strong", [_vm._v("FULANO DE TAL")])
             ]),
             _vm._v(" "),

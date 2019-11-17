@@ -43,7 +43,7 @@
                         <td class="pt-0 pb-0 mt-0 mb-0"><strong>Autor:</strong></td>
                         <td class="pt-0 pb-0 mt-0 mb-0">{{ $processo->processo_autor->a_nome }}</td>
                     </tr>
-                    @if($processo->processo_representanteAutor->ra_cpf !== null)
+                    @if($processo->processo_representanteAutor)
                     <tr>
                         <td class="pt-0 pb-0 mt-0 mb-0"><strong>Representante do Autor:</strong></td>
                         <td class="pt-0 pb-0 mt-0 mb-0">{{ $processo->processo_representanteAutor->ra_nome }}</td>
@@ -51,13 +51,13 @@
                     @endif
                     <tr>
                         <td class="pt-0 pb-0 mt-0 mb-0"><strong>Réu:</strong></td>
-                        @if ($processo->processo_reu->r_cpf !== null)
+                        @if ($processo->processo_reu)
                         <td class="pt-0 pb-0 mt-0 mb-0">{{ $processo->processo_reu->r_nome }}</td>
-                        @elseif($processo->processo_reuJuridico->rj_cnpj !== null)
+                        @elseif($processo->processo_reuJuridico)
                         <td class="pt-0 pb-0 mt-0 mb-0">{{ $processo->processo_reuJuridico->rj_nome }}</td>
                         @endif
                     </tr>
-                    @if($processo->processo_representanteReu->rr_cpf !== null)
+                    @if($processo->processo_representanteReu)
                     <tr>
                         <td class="pt-0 pb-0 mt-0 mb-0"><strong>Representante do Réu:</strong></td>
                         <td class="pt-0 pb-0 mt-0 mb-0">{{ $processo->processo_representanteReu->rr_nome }}</td>
