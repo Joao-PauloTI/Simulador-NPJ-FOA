@@ -82,6 +82,5 @@ class CreateForeignKeys extends Migration
      * @return void
      */
     public function down()
-    {
-    }
+    { }
 }

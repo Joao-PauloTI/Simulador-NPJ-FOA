@@ -213,7 +213,7 @@ class ProcessoController extends Controller
         ]);
 
         $request->session()->put('sessaoProcesso', [
-            'p_numeracaoProcesso' => mt_rand(0000000, 9999999)."-".mt_rand(00, 99).".".date("Y").".8.19.0066",
+            'p_numeracaoProcesso' => mt_rand(0000000, 9999999) . "-" . mt_rand(00, 99) . "." . date("Y") . ".8.19.0066",
             'p_grerjMotivo' => $request->get('p_grerjMotivo'),
             'p_grerjNumero' => $request->get('p_grerjNumero'),
             'p_dependencia' => $request->get('p_dependencia'),
@@ -407,7 +407,7 @@ class ProcessoController extends Controller
             if ($request->hasFile('dap_arquivo')) {
                 foreach ($request->dap_arquivo as $key => $arquivo) {
                     $arquivo = $request->file('dap_arquivo')[$key]->getClientOriginalName();
-                    $dap_caminho = $request->file('dap_arquivo')[$key]->storeAs('public/documentos/anexosPeticao', $request->session()->get('sessaoProcesso.p_numeracaoProcesso')." - ".$arquivo);
+                    $dap_caminho = $request->file('dap_arquivo')[$key]->storeAs('public/documentos/anexosPeticao', $request->session()->get('sessaoProcesso.p_numeracaoProcesso') . " - " . $arquivo);
                     $request->session()->push('sessaoDocumentoAnexoPeticao', [
                         'dap_arquivo' => $arquivo,
                         'dap_descricao' => $request->get('dap_descricao')
@@ -421,7 +421,7 @@ class ProcessoController extends Controller
         }
         if ($request->hasFile('dpr_arquivo')) {
             $dpr_arquivo = $request->file('dpr_arquivo')->getClientOriginalName();
-            $dap_caminho = $request->file('dpr_arquivo')->storeAs('public/documentos/procuracoes', $request->session()->get('sessaoProcesso.p_numeracaoProcesso')." - ".$dpr_arquivo);
+            $dpr_caminho = $request->file('dpr_arquivo')->storeAs('public/documentos/procuracoes', $request->session()->get('sessaoProcesso.p_numeracaoProcesso') . " - " . $dpr_arquivo);
             $request->session()->put('sessaoDocumentoProcuracao', [
                 'dpr_arquivo' => $dpr_arquivo,
                 'dpr_descricao' => $request->get('dpr_descricao')
@@ -433,7 +433,7 @@ class ProcessoController extends Controller
         }
         if ($request->hasFile('dcpf_arquivo')) {
             $dcpf_arquivo = $request->file('dcpf_arquivo')->getClientOriginalName();
-            $dcpf_caminho = $request->file('dcpf_arquivo')->storeAs('public/documentos/cpfs', $request->session()->get('sessaoProcesso.p_numeracaoProcesso')." - ".$dcpf_arquivo);
+            $dcpf_caminho = $request->file('dcpf_arquivo')->storeAs('public/documentos/cpfs', $request->session()->get('sessaoProcesso.p_numeracaoProcesso') . " - " . $dcpf_arquivo);
             $request->session()->put('sessaoDocumentoCpf', [
                 'dcpf_arquivo' => $dcpf_arquivo,
                 'dcpf_descricao' => $request->get('dcpf_descricao')
@@ -445,7 +445,7 @@ class ProcessoController extends Controller
         }
         if ($request->hasFile('dcr_arquivo')) {
             $dcr_arquivo = $request->file('dcr_arquivo')->getClientOriginalName();
-            $dcr_caminho = $request->file('dcr_arquivo')->storeAs('public/documentos/comprovantesResidencia', $request->session()->get('sessaoProcesso.p_numeracaoProcesso')." - ".$dcr_arquivo);
+            $dcr_caminho = $request->file('dcr_arquivo')->storeAs('public/documentos/comprovantesResidencia', $request->session()->get('sessaoProcesso.p_numeracaoProcesso') . " - " . $dcr_arquivo);
             $request->session()->put('sessaoDocumentoComprovanteResidencia', [
                 'dcr_arquivo' => $dcr_arquivo,
                 'dcr_descricao' => $request->get('dcr_descricao')
@@ -457,7 +457,7 @@ class ProcessoController extends Controller
         }
         if ($request->hasFile('dpi_arquivo')) {
             $dpi_arquivo = $request->file('dpi_arquivo')->getClientOriginalName();
-            $dpi_caminho = $request->file('dpi_arquivo')->storeAs('public/documentos/peticoesIniciais', $request->session()->get('sessaoProcesso.p_numeracaoProcesso')." - ".$dpi_arquivo);
+            $dpi_caminho = $request->file('dpi_arquivo')->storeAs('public/documentos/peticoesIniciais', $request->session()->get('sessaoProcesso.p_numeracaoProcesso') . " - " . $dpi_arquivo);
             $request->session()->put('sessaoDocumentoPeticaoInicial', [
                 'dpi_arquivo' => $dpi_arquivo,
                 'dpi_descricao' => $request->get('dpi_descricao')
@@ -811,7 +811,7 @@ class ProcessoController extends Controller
     {
         $processo = Processo::where('p_numeracaoProcesso', $numeracaoProcesso)->with('processo_advogado', 'processo_defensor', 'processo_autor', 'processo_representanteAutor', 'processo_reu', 'processo_reuJuridico', 'processo_representanteReu', 'processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->first();
         $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->loadView('DistribuicaoEletronica/DE_processoPDF', compact('processo'));
-        return $pdf->stream("Processo - ". $processo->p_numeracaoProcesso .".pdf");
+        return $pdf->stream("Processo - " . $processo->p_numeracaoProcesso . ".pdf");
     }
 
     public function consultarTodos(Request $request)
@@ -837,26 +837,26 @@ class ProcessoController extends Controller
     {
         $request->validate([
             'processosSelecionados' => 'nullable'
-      ]);
+        ]);
         if (is_array($request->processosSelecionados)) {
             foreach ($request->processosSelecionados as $key => $numero) {
                 $processosSelecionados = Processo::where('p_numeracaoProcesso', $numero)->with('processo_documentoComprovanteResidencia', 'processo_documentoCpf', 'processo_documentoProcuracao', 'processo_documentoAnexoPeticao', 'processo_documentoPeticaoInicial')->first();
                 if ($processosSelecionados->processo_documentoComprovanteResidencia) {
-                    Storage::delete("public/documentos/comprovantesResidencia/".$numero." - ".$processosSelecionados->processo_documentoComprovanteResidencia->dcr_arquivo);
+                    Storage::delete("public/documentos/comprovantesResidencia/" . $numero . " - " . $processosSelecionados->processo_documentoComprovanteResidencia->dcr_arquivo);
                 }
                 if ($processosSelecionados->processo_documentoCpf) {
-                    Storage::delete("public/documentos/cpfs/".$numero." - ".$processosSelecionados->processo_documentoCpf->dcpf_arquivo);
+                    Storage::delete("public/documentos/cpfs/" . $numero . " - " . $processosSelecionados->processo_documentoCpf->dcpf_arquivo);
                 }
                 if ($processosSelecionados->processo_documentoProcuracao) {
-                    Storage::delete("public/documentos/procuracoes/".$numero." - ".$processosSelecionados->processo_documentoProcuracao->dpr_arquivo);
+                    Storage::delete("public/documentos/procuracoes/" . $numero . " - " . $processosSelecionados->processo_documentoProcuracao->dpr_arquivo);
                 }
                 if (count($processosSelecionados->processo_documentoAnexoPeticao) > 0) {
                     foreach ($processosSelecionados->processo_documentoAnexoPeticao as $i => $anexo) {
-                        Storage::delete("public/documentos/anexosPeticao/".$numero." - ".$anexo->dap_arquivo);
+                        Storage::delete("public/documentos/anexosPeticao/" . $numero . " - " . $anexo->dap_arquivo);
                     }
                 }
                 if ($processosSelecionados->processo_documentoPeticaoInicial) {
-                    Storage::delete("public/documentos/peticoesIniciais/".$numero." - ".$processosSelecionados->processo_documentoPeticaoInicial->dpi_arquivo);
+                    Storage::delete("public/documentos/peticoesIniciais/" . $numero . " - " . $processosSelecionados->processo_documentoPeticaoInicial->dpi_arquivo);
                 }
                 $processosSelecionados->delete();
             }
@@ -888,7 +888,7 @@ class ProcessoController extends Controller
         if ($processo != null) {
             return view('ConsultasProcessuais/CP_processo', compact('processo'));
         } else {
-            return back()->with('mensagemConsulta', "Processo ". $request->cp_numeracaoProcesso ." não encontrado!");
+            return back()->with('mensagemConsulta', "Processo " . $request->cp_numeracaoProcesso . " não encontrado!");
         }
     }
 }

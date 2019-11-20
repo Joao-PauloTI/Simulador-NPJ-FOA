@@ -6782,6 +6782,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "dedeclaracaoDeVeracidade",
   data: function data() {
@@ -57092,7 +57102,11 @@ var render = function() {
       ]),
       _vm._v(" "),
       _vm._m(0)
-    ])
+    ]),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _vm._m(1)
   ])
 }
 var staticRenderFns = [
@@ -57125,6 +57139,27 @@ var staticRenderFns = [
           )
         ])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { align: "center" } }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+        [_c("strong", [_vm._v("SALVAR")])]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-danger",
+          attrs: { type: "button", onclick: "window.location.reload()" }
+        },
+        [_c("strong", [_vm._v("LIMPAR")])]
+      )
     ])
   }
 ]
@@ -70989,7 +71024,9 @@ Vue.use(vue_the_mask__WEBPACK_IMPORTED_MODULE_0___default.a);
  //dependência para criar mascaras de input para dinheiro
 
 Vue.use(v_money__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  precision: 2
+  precision: 2,
+  decimal: ',',
+  thousands: '.'
 });
  //dependência para criar inputs que se ajustam de acordo com o conteúdo inserido
 

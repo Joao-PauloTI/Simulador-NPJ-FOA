@@ -15,12 +15,6 @@
 				<deadvogadorepresentante></deadvogadorepresentante>
 				<deautoresreusdocumentos></deautoresreusdocumentos>
 				<dedeclaracaodeveracidade></dedeclaracaodeveracidade>
-				<br>
-				<!--Botões SALVAR/LIMPAR-->
-				<div align="center">
-					<button type="submit" class="btn btn-primary"><strong>SALVAR</strong></button>
-					<button type="button" onclick="window.location.reload()" class="btn btn-danger"><strong>LIMPAR</strong></button>
-				</div>
 			</form>
 			<br>
 		</div>

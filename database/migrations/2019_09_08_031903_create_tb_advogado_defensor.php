@@ -14,7 +14,7 @@ class CreateTbAdvogadoDefensor extends Migration
     public function up()
     {
         Schema::enableForeignKeyConstraints();
-        
+
         Schema::create('tb_advogados', function (Blueprint $table) {
             $table->increments('id');
             //Advogado
