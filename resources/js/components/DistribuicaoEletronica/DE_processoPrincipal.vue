@@ -43,7 +43,7 @@
 							<input type="text" class="form-control col-md-3" v-mask="'#######-##.####'" />
 							<span>.8.19.</span>
 							<input type="text" class="form-control col-md-1" v-mask="'####'" />
-							<button type="submit" class="btn btn-primary">Consultar</button>
+							<button type="button" class="btn btn-primary">Consultar</button>
 						</div>
 					</div>
 				</div>

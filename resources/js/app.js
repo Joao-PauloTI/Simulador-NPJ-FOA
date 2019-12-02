@@ -62,7 +62,7 @@ import VueTheMask from 'vue-the-mask' //dependência para criar mascaras de inpu
 Vue.use(VueTheMask)
 
 import money from 'v-money' //dependência para criar mascaras de input para dinheiro
-Vue.use(money, {precision: 2, decimal: ',', thousands: '.'})
+Vue.use(money, { precision: 2, decimal: ',', thousands: '.' })
 
 import VueInputAutowidth from 'vue-input-autowidth' //dependência para criar inputs que se ajustam de acordo com o conteúdo inserido
 Vue.use(VueInputAutowidth)
