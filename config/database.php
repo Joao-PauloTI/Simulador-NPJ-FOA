@@ -41,14 +41,14 @@ return [
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
-        //www.db4free.net/phpMyAdmin/
+        //remotemysql.com
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'db4free.net'),
+            'host' => env('DB_HOST', 'remotemysql.com'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'db_simulador'),
-            'username' => env('DB_USERNAME', 'joaopaulo_ti'),
-            'password' => env('DB_PASSWORD', 'jp23021999'),
+            'database' => env('DB_DATABASE', '87Gp39oqfC'),
+            'username' => env('DB_USERNAME', '87Gp39oqfC'),
+            'password' => env('DB_PASSWORD', 'p2XagkWN17'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
