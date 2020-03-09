@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class DocumentoProcuracao extends Model
 {
-    protected $table = 'tb_documento_procuracoes';
+    protected $table = 'tb_procuracoes';
     protected $fillable = array(
         'dpr_arquivo',
         'dpr_descricao'

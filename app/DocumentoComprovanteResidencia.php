@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class DocumentoComprovanteResidencia extends Model
 {
-    protected $table = 'tb_documento_comprovantes_residencia';
+    protected $table = 'tb_comprovantes_residencia';
     protected $fillable = array(
         'dcr_arquivo',
         'dcr_descricao'

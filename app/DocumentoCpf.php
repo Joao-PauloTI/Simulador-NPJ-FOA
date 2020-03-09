@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class DocumentoCpf extends Model
 {
-    protected $table = 'tb_documento_cpf';
+    protected $table = 'tb_cpf';
     protected $fillable = array(
         'dcpf_arquivo',
         'dcpf_descricao'

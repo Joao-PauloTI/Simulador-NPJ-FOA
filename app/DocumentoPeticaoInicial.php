@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class DocumentoPeticaoInicial extends Model
 {
-    protected $table = 'tb_documento_peticao_inicial';
+    protected $table = 'tb_peticao_inicial';
     protected $fillable = array(
         'dpi_arquivo',
         'dpi_descricao'

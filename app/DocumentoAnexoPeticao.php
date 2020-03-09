@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class DocumentoAnexoPeticao extends Model
 {
-    protected $table = 'tb_documento_anexos_peticao';
+    protected $table = 'tb_anexos_peticao';
     protected $fillable = array(
         'dap_arquivo',
         'dap_descricao'

@@ -136,6 +136,7 @@ return [
 
     'providers' => [
 
+        Yajra\Oci8\Oci8ServiceProvider::class,
         /*
          * Laravel Framework Service Providers...
          */

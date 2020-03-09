@@ -13,8 +13,6 @@ class CreateTbRepresentantesAutores extends Migration
      */
     public function up()
     {
-        Schema::enableForeignKeyConstraints();
-
         Schema::create('tb_representantes_autores', function (Blueprint $table) {
             $table->increments('id');
             //Dados Pessoais

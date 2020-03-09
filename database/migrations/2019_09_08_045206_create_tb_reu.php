@@ -13,8 +13,6 @@ class CreateTbReu extends Migration
      */
     public function up()
     {
-        Schema::enableForeignKeyConstraints();
-        
         Schema::create('tb_reus', function (Blueprint $table) {
             $table->increments('id');
             //Dados Pessoais
